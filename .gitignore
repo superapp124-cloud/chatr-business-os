@@ -73,3 +73,36 @@ vite.config.ts.timestamp-*.mjs
 
 # Local config overrides
 *.local
+
+# Build outputs
+dist/
+dist-desktop/
+dist-electron/
+.next/
+.turbo/
+
+# Dependencies
+node_modules/
+
+# Android
+android/.gradle/
+android/app/build/
+*.apk
+*.aab
+
+# Electron
+electron/dist/
+
+# Release archives
+*.zip
+
+# Logs
+*.log
+call_logs*.txt
+live_calling*.txt
+
+# Test output
+coverage/
+playwright-report/
+test-results/
+
