@@ -1,0 +1,21 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install production deps only
+COPY package.json package-lock.json* ./
+RUN npm ci --omit=dev
+
+COPY . .
+
+# Create non-root user
+RUN addgroup -S chatr && adduser -S chatr -G chatr
+USER chatr
+
+# Health check endpoint
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD wget -qO- http://localhost:${PORT:-3000}/health || exit 1
+
+EXPOSE ${PORT:-3000}
+
+CMD ["node", "server-enhanced.js"]

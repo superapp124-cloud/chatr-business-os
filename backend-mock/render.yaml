@@ -1,0 +1,34 @@
+# ─── Render Deployment — CHATR Real-Time Backend ─────────────────────────────
+#
+# To deploy:
+# 1. Push this repo to GitHub
+# 2. Go to https://dashboard.render.com → New → Web Service
+# 3. Connect the repo, set root directory to "backend-mock"
+# 4. Render will auto-detect this render.yaml
+#
+# Set these Secret Variables in Render Dashboard:
+#   SUPABASE_JWT_SECRET   → Supabase Dashboard → Settings → API → JWT Secret
+#   REDIS_URL             → Upstash rediss://...  (free tier works)
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+  - type: web
+    name: chatr-realtime
+    runtime: node
+    rootDir: backend-mock
+    buildCommand: npm ci --omit=dev
+    startCommand: node server-enhanced.js
+    plan: starter                     # $7/mo — upgrade for more RAM
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: CORS_ORIGIN
+        value: https://chatr.chat     # update to your real domain
+      - key: SUPABASE_JWT_SECRET
+        sync: false                   # set manually in Render dashboard
+      - key: REDIS_URL
+        sync: false                   # set manually in Render dashboard

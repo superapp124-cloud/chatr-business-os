@@ -1,0 +1,13 @@
+{
+  "name": "sense",
+  "version": "0.3.0",
+  "codename": "Sense",
+  "description": "The Intent Observer watches conversation messages for meeting, task, reminder and contact patterns. It only suggests — it never executes. Zero side effects.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable",
+  "magic": "Notices patterns without interrupting.",
+  "endpoints": [
+    "POST /intent/observe",
+    "GET  /intent/version"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Razorpay",
+  "version": "1.0.0",
+  "description": "Auto-generated provider plugin for Razorpay",
+  "author": "CHATR Onboarding Agent",
+  "endpoints": [],
+  "capabilities": [
+    "discover",
+    "execute"
+  ]
+}

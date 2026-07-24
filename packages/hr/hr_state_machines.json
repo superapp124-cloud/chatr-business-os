@@ -1,0 +1,39 @@
+{
+  "state_machines": [
+    {
+      "object_id": "hr_obj_employee",
+      "states": [
+        { "name": "Onboarding", "is_initial": true, "is_terminal": false },
+        { "name": "Active", "is_initial": false, "is_terminal": false },
+        { "name": "Leave_of_Absence", "is_initial": false, "is_terminal": false },
+        { "name": "Offboarding", "is_initial": false, "is_terminal": false },
+        { "name": "Terminated", "is_initial": false, "is_terminal": true }
+      ],
+      "transitions": [
+        { "from": "Onboarding", "to": "Active", "policy_id": "pol_hr_base_access" },
+        { "from": "Active", "to": "Leave_of_Absence", "policy_id": "pol_hr_base_access" },
+        { "from": "Leave_of_Absence", "to": "Active", "policy_id": "pol_hr_base_access" },
+        { "from": "Active", "to": "Offboarding", "policy_id": "pol_hr_termination_approval" },
+        { "from": "Offboarding", "to": "Terminated", "policy_id": "pol_hr_base_access" }
+      ]
+    },
+    {
+      "object_id": "hr_obj_leave_request",
+      "states": [
+        { "name": "Draft", "is_initial": true, "is_terminal": false },
+        { "name": "Pending_Manager", "is_initial": false, "is_terminal": false },
+        { "name": "Pending_HR", "is_initial": false, "is_terminal": false },
+        { "name": "Approved", "is_initial": false, "is_terminal": true },
+        { "name": "Rejected", "is_initial": false, "is_terminal": true }
+      ],
+      "transitions": [
+        { "from": "Draft", "to": "Pending_Manager", "policy_id": "pol_hr_base_access" },
+        { "from": "Pending_Manager", "to": "Approved", "policy_id": "pol_hr_leave_approval" },
+        { "from": "Pending_Manager", "to": "Pending_HR", "policy_id": "pol_hr_extended_leave_approval" },
+        { "from": "Pending_HR", "to": "Approved", "policy_id": "pol_hr_extended_leave_approval" },
+        { "from": "Pending_Manager", "to": "Rejected", "policy_id": "pol_hr_leave_approval" },
+        { "from": "Pending_HR", "to": "Rejected", "policy_id": "pol_hr_extended_leave_approval" }
+      ]
+    }
+  ]
+}

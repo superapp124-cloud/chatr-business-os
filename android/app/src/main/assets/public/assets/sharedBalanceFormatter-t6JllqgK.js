@@ -1,0 +1,1 @@
+const o=t=>{if(typeof t=="number"&&Number.isFinite(t))return Math.max(0,Math.floor(t));if(typeof t=="string"){const n=Number(t.replace(/[^\d.-]/g,""));return Number.isFinite(n)?Math.max(0,Math.floor(n)):0}return 0},r=t=>o(t).toLocaleString("en-IN"),e=t=>{const n=o(t);return`${n.toLocaleString("en-IN")} ${n===1?"point":"points"}`};export{e as a,r as f};

@@ -1,0 +1,2 @@
+﻿05-20 10:58:24.671 I/ActivityManager( 1140): Start proc 20099:com.chatr.app:prewarm/u0a266 for service {com.chatr.app/com.chatr.app.services.VoIPPrewarmService}
+05-20 11:02:11.212 I/ActivityManager( 1140): Killing 20099:com.chatr.app:prewarm/u0a266 (adj 975): stop com.chatr.app

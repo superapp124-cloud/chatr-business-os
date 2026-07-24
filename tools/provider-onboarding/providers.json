@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Razorpay",
+    "url": "https://dashboard.razorpay.com/signup"
+  },
+  {
+    "name": "Stripe",
+    "url": "https://dashboard.stripe.com/register"
+  },
+  {
+    "name": "Twilio",
+    "url": "https://www.twilio.com/try-twilio"
+  }
+]

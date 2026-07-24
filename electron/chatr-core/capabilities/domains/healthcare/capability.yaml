@@ -1,0 +1,30 @@
+identity:
+  id: health.appointment
+  version: 1.0.0
+  displayName: "Healthcare Appointment Lifecycle"
+  description: "Manages privacy-constrained, scheduled health visits and document verification."
+  author: "CHATR Health"
+  license: "MIT"
+  category: "Healthcare"
+  tags: ["health", "appointment", "medical"]
+
+runtime:
+  intentTypes: ["health.appointment"]
+  permissions: ["calendar", "health_records", "location"]
+  inputs: ["patientId", "doctorId", "time"]
+  outputs: ["appointmentConfirmation", "visitSummary"]
+  events: ["health.appointment.scheduled", "health.appointment.completed"]
+  policies: ["health.privacy.hipaa"]
+  verification:
+    strategy: emr_sync@1.0
+  stewardship:
+    renewable: false
+    expiration: post_visit_followup
+
+metadata:
+  minKernelVersion: "1.0"
+  maxKernelVersion: "2.0"
+  dependencies: []
+  supportedPlatforms: ["mobile"]
+  securityClassification: "phi"
+  profile: "Full"

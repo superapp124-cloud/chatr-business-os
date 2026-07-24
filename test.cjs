@@ -1,0 +1,1 @@
+const { detectIntents } = require('./electron/chatr-core/modules/sense/patterns.cjs'); console.log(detectIntents('Remind me to call John tomorrow at 2 PM')); console.log(detectIntents('"Remind me to call John tomorrow at 2 PM"'));

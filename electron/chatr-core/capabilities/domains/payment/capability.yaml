@@ -1,0 +1,30 @@
+identity:
+  id: payment.process
+  version: 1.0.0
+  displayName: "Payment Processing"
+  description: "Processes payments"
+  author: "CHATR"
+  license: "MIT"
+  category: "Finance"
+  tags: ["payment"]
+
+runtime:
+  intentTypes: ["payment.process"]
+  permissions: []
+  inputs: []
+  outputs: []
+  events: []
+  policies: []
+  verification:
+    strategy: webhook
+  stewardship:
+    renewable: false
+    expiration: never
+
+metadata:
+  minKernelVersion: "1.0"
+  maxKernelVersion: "2.0"
+  dependencies: []
+  supportedPlatforms: []
+  securityClassification: "standard"
+  profile: "Transaction"

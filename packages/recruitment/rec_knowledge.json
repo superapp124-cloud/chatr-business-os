@@ -1,0 +1,32 @@
+{
+  "knowledge_sources": [
+    {
+      "id": "know_rec_interview_transcripts",
+      "source_type": "document",
+      "embedding_model": "nomic-embed-text",
+      "vector_store": "typesense_local",
+      "sync_frequency": "real_time"
+    },
+    {
+      "id": "know_rec_market_benchmarks",
+      "source_type": "document",
+      "embedding_model": "nomic-embed-text",
+      "vector_store": "typesense_local",
+      "sync_frequency": "scheduled_batch_daily"
+    }
+  ],
+  "situation_signals": [
+    {
+      "id": "sig_rec_candidate_stalled",
+      "trigger_condition": "application.last_activity_date < now() - 7.days && application.state == 'Interviewing'",
+      "priority": "high",
+      "action_type": "raise_decision_card"
+    },
+    {
+      "id": "sig_rec_offer_accepted",
+      "trigger_condition": "application.state == 'Hired'",
+      "priority": "medium",
+      "action_type": "broadcast_event"
+    }
+  ]
+}

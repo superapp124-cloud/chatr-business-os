@@ -1,0 +1,171 @@
+{
+  "provider": "irctc",
+  "version": "1.0",
+  "runtime_version": "1.0",
+  "maturity": "experimental",
+  "description": "IRCTC provider manifest. Covers train and flight booking. Introduces: multi-step forms, stateful navigation, seat availability, captcha classification, multi-page workflows.",
+
+  "flows": {
+    "discover_trains": [
+      {
+        "step": "navigate",
+        "url": "https://www.irctc.co.in/nget/train-search",
+        "comment": "IRCTC train search home. Stateful — query params alone are insufficient."
+      },
+      {
+        "step": "observe",
+        "selector": "input[placeholder='From Station'], #origin",
+        "timeout_ms": 5000,
+        "comment": "Wait for search form to render"
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": "input[placeholder='From Station'], #origin",
+        "comment": "Focus origin field"
+      },
+      {
+        "step": "act",
+        "action": "type",
+        "target": "input[placeholder='From Station'], #origin",
+        "value": "{{origin}}",
+        "comment": "Type origin station. Variable: {{origin}} e.g. 'NDLS'"
+      },
+      {
+        "step": "observe",
+        "selector": ".ui-autocomplete li, .ng-autocomplete-items li",
+        "timeout_ms": 3000,
+        "comment": "Wait for autocomplete suggestions"
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": ".ui-autocomplete li:first-child, .ng-autocomplete-items li:first-child",
+        "comment": "Select first suggestion"
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": "input[placeholder='To Station'], #destination"
+      },
+      {
+        "step": "act",
+        "action": "type",
+        "target": "input[placeholder='To Station'], #destination",
+        "value": "{{destination}}",
+        "comment": "Variable: {{destination}} e.g. 'MAS'"
+      },
+      {
+        "step": "observe",
+        "selector": ".ui-autocomplete li, .ng-autocomplete-items li",
+        "timeout_ms": 3000
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": ".ui-autocomplete li:first-child, .ng-autocomplete-items li:first-child"
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": "button[type='submit'], .search-btn, #search-train",
+        "comment": "Submit search form"
+      },
+      {
+        "step": "observe",
+        "selector": ".train-list, .train-details, app-train-avl-enq",
+        "timeout_ms": 8000,
+        "comment": "Wait for results. Longer timeout — IRCTC can be slow."
+      },
+      {
+        "step": "extract",
+        "selector": ".train-list app-train-avl-enq, .train-details",
+        "schema": {
+          "train_number": ".trainNo, .train-number",
+          "train_name":   ".trainName, .train-name",
+          "departure":    ".departTime, .depart-time",
+          "arrival":      ".arrivTime, .arrive-time",
+          "duration":     ".duration",
+          "availability": ".AVAILABLE, .WL, .RAC, .availability-status",
+          "price":        ".fare, .price"
+        },
+        "comment": "Extract train results. Availability may be AVAILABLE / WL / RAC — all valid."
+      },
+      {
+        "step": "verify",
+        "condition": "count > 0",
+        "comment": "Semantic check: at least one train extracted"
+      }
+    ],
+
+    "check_captcha": [
+      {
+        "step": "observe",
+        "selector": ".captcha, #captchaImage, img[alt*='captcha' i]",
+        "timeout_ms": 2000,
+        "comment": "Detect CAPTCHA presence. If found, connector triggers Human Assist fallback."
+      }
+    ],
+
+    "authenticate": [
+      {
+        "step": "navigate",
+        "url": "https://www.irctc.co.in/nget/profile/login",
+        "comment": "IRCTC login page"
+      },
+      {
+        "step": "observe",
+        "selector": "input[name='userid'], #userid",
+        "timeout_ms": 5000
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": "input[name='userid'], #userid"
+      },
+      {
+        "step": "observe",
+        "selector": ".captcha, #captchaImage",
+        "timeout_ms": 1000,
+        "comment": "Check for CAPTCHA — if present, connector falls back to Human Assist"
+      }
+    ],
+
+    "extract_session": [
+      {
+        "step": "navigate",
+        "url": "https://www.irctc.co.in/nget/profile/my-profile",
+        "comment": "Profile page confirms authenticated state"
+      },
+      {
+        "step": "observe",
+        "selector": ".user-name, .profile-name, app-profile",
+        "timeout_ms": 4000,
+        "comment": "Presence of user profile confirms session"
+      }
+    ],
+
+    "check_seat_availability": [
+      {
+        "step": "observe",
+        "selector": ".AVAILABLE, .WL, .RAC",
+        "timeout_ms": 3000,
+        "comment": "Check seat availability status. All three are valid stateful outcomes."
+      },
+      {
+        "step": "extract",
+        "selector": ".quota-availability",
+        "schema": {
+          "quota":        ".quota-name",
+          "available":    ".available-count",
+          "class":        ".class-name",
+          "fare":         ".total-fare"
+        }
+      },
+      {
+        "step": "verify",
+        "condition": "count > 0"
+      }
+    ]
+  }
+}

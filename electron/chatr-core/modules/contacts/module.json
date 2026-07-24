@@ -1,0 +1,8 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "codename": "Contacts Capability",
+  "description": "Handles contact sharing and lookups.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable"
+}

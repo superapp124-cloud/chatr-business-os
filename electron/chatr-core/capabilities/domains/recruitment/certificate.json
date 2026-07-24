@@ -1,0 +1,12 @@
+{
+  "capabilityId": "hr.job.application",
+  "version": "1.0.0",
+  "manifestHash": "168ceb20049914ad990169f9de901f9a54a259b824fb27f2559bda865f2ef30f",
+  "interfaceHash": "af1aa43099aa84c79e3d60c1e7439d3c05f6bc59d8a166248c00a1edac332ab0",
+  "schemaVersion": "1.0",
+  "abiVersion": "1.0",
+  "certificationDate": "2026-07-17T06:30:16.181Z",
+  "certificationToolVersion": "1.0.0",
+  "result": "CERTIFIED",
+  "warnings": []
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shield_bg">#0D0B14</color>
+    <color name="shield_accent">#7C3AED</color>
+    <color name="shield_text_primary">#FFFFFF</color>
+    <color name="shield_text_secondary">#9CA3AF</color>
+    
+    <!-- Action buttons -->
+    <color name="shield_accept_start">#10B981</color>
+    <color name="shield_accept_end">#059669</color>
+    <color name="shield_decline">#EF4444</color>
+    
+    <!-- Glassmorphism overlays -->
+    <color name="shield_glass_bg">#2A1A4A</color>
+    <color name="shield_glass_stroke">#3D2470</color>
+</resources>

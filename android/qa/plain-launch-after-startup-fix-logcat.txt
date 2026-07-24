@@ -1,0 +1,205 @@
+--------- beginning of main
+05-20 17:01:40.319 I/com.chatr.app(23910): Late-enabling -Xcheck:jni
+05-20 17:01:40.354 E/com.chatr.app(23910): Unknown bits set in runtime_flags: 0x8000
+05-20 17:01:42.785 I/FirebaseApp(23910): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-20 17:01:42.812 I/FirebaseCrashlytics(23910): Initializing Firebase Crashlytics 19.4.0 for com.chatr.app
+05-20 17:01:42.952 I/DynamiteModule(23910): Considering local module com.google.android.gms.measurement.dynamite:136 and remote module com.google.android.gms.measurement.dynamite:191
+05-20 17:01:42.953 I/DynamiteModule(23910): Selected remote version of com.google.android.gms.measurement.dynamite, version >= 191
+05-20 17:01:43.163 I/FirebaseCrashlytics(23910): No version control information found
+05-20 17:01:43.186 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.186 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+05-20 17:01:43.186 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapInt(Ljava/lang/Object;JII)Z (greylist, linking, allowed)
+05-20 17:01:43.186 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z (greylist, linking, allowed)
+05-20 17:01:43.186 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.186 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.187 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.187 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObjectVolatile(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:43.187 W/com.chatr.app(23910): Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+05-20 17:01:43.212 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 17:01:43.213 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.327 W/com.chatr.app(23910): Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (greylist, linking, allowed)
+05-20 17:01:43.333 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.333 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.333 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:01:43.333 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 17:01:43.333 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:43.333 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putOrderedInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:01:43.334 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putOrderedLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 17:01:43.334 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putOrderedObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:43.337 I/FirebaseInitProvider(23910): FirebaseApp initialization successful
+05-20 17:01:43.358 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.358 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:43.361 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.362 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.365 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:01:43.365 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.366 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 17:01:43.375 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.377 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+05-20 17:01:43.377 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+05-20 17:01:43.377 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+05-20 17:01:43.378 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+05-20 17:01:43.378 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 17:01:43.378 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 17:01:43.378 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+05-20 17:01:43.378 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+05-20 17:01:43.379 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 17:01:43.380 W/com.chatr.app(23910): Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+05-20 17:01:43.380 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 17:01:43.380 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 17:01:43.380 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 17:01:43.380 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 17:01:43.381 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 17:01:43.381 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 17:01:43.419 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.419 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.420 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:43.421 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.422 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 17:01:43.423 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.427 I/FA      (23910): App measurement initialized, version: 167000
+05-20 17:01:43.427 I/FA      (23910): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-20 17:01:43.428 I/FA      (23910): To enable faster debug mode event logging run:
+05-20 17:01:43.428 I/FA      (23910):   adb shell setprop debug.firebase.analytics.app com.chatr.app
+05-20 17:01:43.441 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:43.442 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.442 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:01:43.443 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.452 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:43.453 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 17:01:43.460 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.460 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 17:01:43.465 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 17:01:43.465 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 17:01:43.465 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 17:01:43.466 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 17:01:43.466 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 17:01:43.467 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 17:01:43.467 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 17:01:43.467 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 17:01:43.467 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 17:01:43.467 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 17:01:43.471 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:43.520 I/com.chatr.app(23910): Waiting for a blocking GC ClassLinker
+05-20 17:01:43.552 I/com.chatr.app(23910): WaitForGcToComplete blocked ClassLinker on ClassLinker for 31.468ms
+05-20 17:01:43.560 I/ChatrApplication(23910): ?? CHATR+ Application starting...
+05-20 17:01:43.561 I/ChatrApplication(23910): ? Firebase initialized
+05-20 17:01:43.570 I/ChatrApplication(23910): ? All notification channels created
+05-20 17:01:43.576 I/ChatrApplication(23910): ? PhoneAccount registered with TelecomManager
+05-20 17:01:43.588 I/NativeCallSyncWorker(23910): Skipped native call sync enqueue reason=app_start bucket=startup
+05-20 17:01:43.590 I/ChatrApplication(23910): ? CHATR+ Application initialized successfully
+05-20 17:01:43.609 I/libMEOW_gift(23910): open /vendor/etc/arc.ini
+05-20 17:01:43.954 W/com.chatr.app(23910): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+05-20 17:01:43.993 I/WebViewFactory(23910): Loading com.google.android.webview version 148.0.7778.120 (code 777812003)
+05-20 17:01:44.006 W/linker  (23910): Warning: "/data/app/com.google.android.webview-Vew6vFYlrIraywuxQdO2GQ==/base.apk!/lib/arm64-v8a/libwebviewchromium.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+05-20 17:01:44.066 I/cr_WVCFactoryProvider(23910): version=148.0.7778.120 (777812003) minSdkVersion=29 multiprocess=true packageId=127 splits=<none>
+05-20 17:01:44.081 E/chromium(23910): [0520/170144.081164:ERROR:android_webview/browser/variations/variations_seed_loader.cc:39] Seed missing signature.
+05-20 17:01:44.123 I/cr_LibraryLoader(23910): Successfully loaded native library
+05-20 17:01:44.125 I/cr_CachingUmaRecorder(23910): Flushed 14 samples from 13 histograms, 0 samples were dropped.
+05-20 17:01:44.129 I/cr_ChildProcLH(23910): ScopedServiceBindingBatch.tryActivate: false
+05-20 17:01:44.133 I/cr_CombinedPProvider(23910): #registerProvider() provider:WV.wk@c0c9cad isPolicyCacheEnabled:false policyProvidersSize:0
+05-20 17:01:44.136 I/cr_PolicyProvider(23910): #setManagerAndSource() 0
+05-20 17:01:44.143 I/cr_DisplayManager(23910): Is Display Topology available: false
+05-20 17:01:44.171 I/cr_CombinedPProvider(23910): #linkNativeInternal() 1
+05-20 17:01:44.173 I/cr_AppResProvider(23910): #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+05-20 17:01:44.173 I/cr_PolicyProvider(23910): #notifySettingsAvailable() 0
+05-20 17:01:44.173 I/cr_CombinedPProvider(23910): #onSettingsAvailable() 0
+05-20 17:01:44.173 I/cr_CombinedPProvider(23910): #flushPolicies()
+05-20 17:01:44.233 E/libc    (23910): Access denied finding property "ro.vendor.api_level"
+05-20 17:01:44.259 W/chromium(23910): [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+05-20 17:01:44.446 I/com.chatr.app(23910): Waiting for a blocking GC ClassLinker
+05-20 17:01:44.456 I/com.chatr.app(23910): WaitForGcToComplete blocked ClassLinker on ClassLinker for 9.948ms
+05-20 17:01:44.771 W/com.chatr.app(23910): Accessing hidden method Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController; (blacklist, linking, allowed)
+05-20 17:01:44.771 W/com.chatr.app(23910): Accessing hidden method Landroid/view/WindowInsetsController;->hide(I)V (blacklist, linking, allowed)
+05-20 17:01:44.927 W/Capacitor(23910): Unable to read file at path public/plugins
+05-20 17:01:44.991 I/GPUD    (23910): @gpudInitialize: successfully initialized with GL, dbg=0 mmdump_dbg=0 mmpath_dbg=0
+05-20 17:01:45.007 I/libMEOW_gift(23910): ctx:0x790b635d00, ARC not Enabled.
+05-20 17:01:45.019 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.019 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.022 I/ChatrMainActivity(23910): MainActivity onNewIntent: null
+05-20 17:01:45.030 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.102 I/ChatrMainActivity(23910): Handling action=null intentAction=null data=null
+05-20 17:01:45.103 I/ChatrMainActivity(23910): MainActivity onCreate
+05-20 17:01:45.110 I/CallForegroundService(23910): Clearing stale call notification (main_activity_start)
+05-20 17:01:45.118 I/ChatrMainActivity(23910): All permissions already granted
+05-20 17:01:45.126 I/ChatrCallScreening(23910): Block anonymous: false
+05-20 17:01:45.126 I/ChatrCallScreening(23910): Block unknown: false
+05-20 17:01:45.126 I/ChatrCallScreening(23910): Require name announcement: false
+05-20 17:01:45.126 I/CallBlockingManager(23910): Call blocking settings loaded
+05-20 17:01:45.126 I/ChatrMainActivity(23910): VoIP services initialized
+05-20 17:01:45.139 I/CallForwardingManager(23910): ?? CallForwardingManager initialized
+05-20 17:01:45.141 I/CallParkService(23910): ?? CallParkService initialized
+05-20 17:01:45.144 I/CallQueueService(23910): ?? CallQueueService initialized
+05-20 17:01:45.148 I/SpeedDialService(23910): ?? SpeedDialService initialized
+05-20 17:01:45.149 I/VoIPBridgeService(23910): ?? VoIPBridgeService initialized
+05-20 17:01:45.160 I/ChatrMainActivity(23910): WebView configured with native bridges
+05-20 17:01:45.160 I/ChatrMainActivity(23910): Handling action=null intentAction=null data=null
+05-20 17:01:45.176 I/ChatrMainActivity(23910): MainActivity onStart: isActivityVisible=true
+05-20 17:01:45.194 I/FA      (23910): Tag Manager is not found and thus will not be used
+05-20 17:01:45.211 I/SurfaceFactory(23910): [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@91f1acf
+05-20 17:01:45.234 I/InputTransport(23910): Create ARC handle: 0x791060d8e0
+05-20 17:01:45.255 I/CameraManagerGlobal(23910): Connecting to camera service
+05-20 17:01:45.256 I/Choreographer(23910): Skipped 113 frames!  The application may be doing too much work on its main thread.
+05-20 17:01:45.259 I/libMEOW_gift(23910): ctx:0x790b78f580, ARC not Enabled.
+05-20 17:01:45.261 W/CameraManagerGlobal(23910): [soar.cts] ignore the status update of camera: 2
+05-20 17:01:45.272 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.272 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.285 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.287 I/chatty  (23910): uid=10267(com.chatr.app) Chrome_InProcGp identical 1 line
+05-20 17:01:45.287 W/IMGSRV  (23910): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 17:01:45.291 W/com.chatr.app(23910): Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+05-20 17:01:45.291 W/com.chatr.app(23910): Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+05-20 17:01:45.291 W/com.chatr.app(23910): Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+05-20 17:01:45.327 I/libMEOW_gift(23910): ctx:0x789eb5b080, ARC not Enabled.
+05-20 17:01:45.347 W/Gralloc3(23910): mapper 3.x is not supported
+05-20 17:01:45.350 E/ion     (23910): ioctl c0044901 failed with code -1: Invalid argument
+05-20 17:01:45.410 I/OpenGLRenderer(23910): Davey! duration=2035ms; Flags=1, IntendedVsync=23763068143694, Vsync=23764951477065, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=23764959664184, AnimationStart=23764959763646, PerformTraversalsStart=23764961281800, DrawStart=23765039353107, SyncQueued=23765046397646, SyncStart=23765055240800, IssueDrawCommandsStart=23765058930030, SwapBuffers=23765110440800, FrameCompleted=23765112781415, DequeueBufferDuration=0, QueueBufferDuration=1521000, 
+05-20 17:01:45.439 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:45.439 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:45.440 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:01:45.441 I/ChatrApplication(23910): ?? FCM Token: cNPTkk-CQViSaUObArL4...
+05-20 17:01:45.478 I/Capacitor/SpeechRecognition(23910): Instantiated SpeechRecognizer in load()
+05-20 17:01:45.535 W/com.chatr.app(23910): Accessing hidden field Landroid/content/pm/ApplicationInfo;->primaryCpuAbi:Ljava/lang/String; (greylist, reflection, allowed)
+05-20 17:01:45.567 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:01:45.603 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:45.604 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:01:45.610 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:01:45.611 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:01:45.739 I/com.chatr.app(23910): Background concurrent copying GC freed 15169(1254KB) AllocSpace objects, 15(724KB) LOS objects, 49% free, 4505KB/9011KB, paused 1.439ms total 103.160ms
+05-20 17:01:46.060 W/ChatrMainActivity(23910): WebView early startup check: url=https://localhost/ progress=10
+05-20 17:01:53.162 W/ChatrMainActivity(23910): Capacitor localhost document is still stalled; restarting localhost load
+05-20 17:02:00.543 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 17:02:00.544 W/com.chatr.app(23910): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 17:02:00.545 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 17:02:00.545 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 17:02:00.545 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 17:02:00.545 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 17:02:00.546 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 17:02:00.546 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 17:02:00.546 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 17:02:00.547 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 17:02:00.549 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:02:00.550 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 17:02:00.551 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:02:00.551 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 17:02:00.566 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 17:02:00.591 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:02:00.596 E/FilePhenotypeFlags(23910): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 17:02:00.633 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:02:00.636 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 17:02:00.637 E/FilePhenotypeFlags(23910): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 17:02:00.637 E/FilePhenotypeFlags(23910): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 17:02:03.601 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 17:02:03.602 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:02:03.659 W/com.chatr.app(23910): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 17:02:15.780 I/TRuntime.CctTransportBackend(23910): Making request to: https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog
+05-20 17:02:15.801 I/CapacitorCookies(23910): Getting cookies at: 'https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog'
+05-20 17:02:15.808 I/System.out(23910): [okhttp]:check permission begin!
+05-20 17:02:15.809 W/System  (23910): ClassLoader referenced unknown path: system/framework/mediatek-cta.jar
+05-20 17:02:15.811 I/System.out(23910): [okhttp] e:java.lang.ClassNotFoundException: com.mediatek.cta.CtaUtils
+05-20 17:02:15.819 I/System.out(23910): [socket]:check permission begin!
+05-20 17:02:15.819 W/System  (23910): ClassLoader referenced unknown path: system/framework/mediatek-cta.jar
+05-20 17:02:15.820 I/System.out(23910): [socket] e:java.lang.ClassNotFoundException: com.mediatek.cta.CtaUtils
+05-20 17:02:16.510 I/System.out(23910): [OkHttp] sendRequest>>
+05-20 17:02:16.511 I/System.out(23910): [OkHttp] sendRequest<<
+05-20 17:02:20.137 I/TRuntime.CctTransportBackend(23910): Status Code: 200

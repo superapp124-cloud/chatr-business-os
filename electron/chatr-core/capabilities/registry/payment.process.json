@@ -1,0 +1,53 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "payment.process",
+      "version": "1.0.0",
+      "displayName": "Payment Processing",
+      "description": "Processes payments",
+      "author": "CHATR",
+      "license": "MIT",
+      "category": "Finance",
+      "tags": [
+        "payment"
+      ]
+    },
+    "runtime": {
+      "intentTypes": [
+        "payment.process"
+      ],
+      "permissions": [],
+      "inputs": [],
+      "outputs": [],
+      "events": [],
+      "policies": [],
+      "verification": {
+        "strategy": "webhook"
+      },
+      "stewardship": {
+        "renewable": false,
+        "expiration": "never"
+      }
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "maxKernelVersion": "2.0",
+      "dependencies": [],
+      "supportedPlatforms": [],
+      "securityClassification": "standard",
+      "profile": "Transaction"
+    }
+  },
+  "certificate": {
+    "capabilityId": "payment.process",
+    "version": "1.0.0",
+    "manifestHash": "c318e306681e93277c3c3325aa088283ef60187778738f73ede83aa764a3b042",
+    "interfaceHash": "ea388c0e18c829586ef6680ecbe03fc69b8185a26440c56517f07ad861aad419",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:41:57.547Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

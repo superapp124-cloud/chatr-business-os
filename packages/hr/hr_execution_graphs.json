@@ -1,0 +1,87 @@
+{
+  "execution_graphs": [
+    {
+      "id": "dag_hr_onboarding",
+      "intent_id": "intent_onboard_employee",
+      "nodes": [
+        {
+          "id": "node_send_welcome_packet",
+          "type": "system_action",
+          "depends_on": [],
+          "participant_id": "system_workflow_engine",
+          "sla": "1m"
+        },
+        {
+          "id": "node_provision_hardware",
+          "type": "human_approval",
+          "depends_on": ["node_send_welcome_packet"],
+          "participant_id": "role_it_admin",
+          "sla": "48h"
+        },
+        {
+          "id": "node_schedule_manager_sync",
+          "type": "agent_task",
+          "depends_on": ["node_send_welcome_packet"],
+          "participant_id": "agent_onboarding_coordinator",
+          "sla": "2h"
+        },
+        {
+          "id": "node_verify_compliance",
+          "type": "policy_gate",
+          "depends_on": ["node_send_welcome_packet"],
+          "participant_id": "system_policy_engine",
+          "sla": "1m"
+        }
+      ],
+      "error_handling": {
+        "on_timeout": "escalate_to_hr_manager",
+        "on_reject": "fallback_manual_intervention"
+      }
+    },
+    {
+      "id": "dag_hr_leave_approval",
+      "intent_id": "intent_resolve_leave",
+      "nodes": [
+        {
+          "id": "node_check_leave_balance",
+          "type": "agent_task",
+          "depends_on": [],
+          "participant_id": "agent_hr_assistant",
+          "sla": "5m"
+        },
+        {
+          "id": "node_manager_approval",
+          "type": "human_approval",
+          "depends_on": ["node_check_leave_balance"],
+          "participant_id": "role_manager",
+          "sla": "24h"
+        },
+        {
+          "id": "node_policy_check_extended_leave",
+          "type": "policy_gate",
+          "depends_on": ["node_manager_approval"],
+          "participant_id": "system_policy_engine",
+          "sla": "1s"
+        },
+        {
+          "id": "node_hr_approval",
+          "type": "human_approval",
+          "depends_on": ["node_policy_check_extended_leave"],
+          "participant_id": "role_hr_manager",
+          "sla": "24h"
+        },
+        {
+          "id": "node_update_payroll",
+          "type": "system_action",
+          "depends_on": ["node_manager_approval", "node_hr_approval"],
+          "participant_id": "system_workflow_engine",
+          "sla": "1m"
+        }
+      ],
+      "error_handling": {
+        "on_timeout": "escalate_to_hr_director",
+        "on_reject": "notify_employee"
+      }
+    }
+  ]
+}

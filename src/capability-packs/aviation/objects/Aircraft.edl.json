@@ -1,0 +1,28 @@
+{
+  "urn": "urn:chatr:object:aviation:aircraft",
+  "type": "Aircraft",
+  "name": "Commercial Aircraft",
+  "primitiveType": "LivingObject",
+  "metadata": {},
+  "properties": [
+    { "key": "tailNumber", "type": "string", "required": true },
+    { "key": "model", "type": "string", "required": true }
+  ],
+  "relationships": [],
+  "lifecycle": {
+    "initialState": "Grounded",
+    "states": [
+      { "name": "Grounded" },
+      { "name": "Maintenance" },
+      { "name": "Inspected" },
+      { "name": "Cleared" }
+    ],
+    "transitions": [
+      { "from": ["Grounded", "Cleared"], "to": "Maintenance", "triggeredByEvent": "AircraftMaintenanceStarted" },
+      { "from": ["Maintenance"], "to": "Inspected", "triggeredByEvent": "AircraftInspected" },
+      { "from": ["Inspected"], "to": "Cleared", "triggeredByEvent": "AircraftCleared" },
+      { "from": ["Inspected"], "to": "Grounded", "triggeredByEvent": "AircraftGrounded" }
+    ]
+  },
+  "eventsProduced": ["AircraftCreated", "AircraftMaintenanceStarted", "AircraftInspected", "AircraftCleared", "AircraftGrounded"]
+}

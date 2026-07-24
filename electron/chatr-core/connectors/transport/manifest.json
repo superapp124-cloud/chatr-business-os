@@ -1,0 +1,16 @@
+{
+  "id": "transport",
+  "version": "2.0.0",
+  "category": "transport",
+  "description": "Unified transport connector — cab, train, auto, bike, flight.",
+  "maintainer": "CHATR Foundation",
+  "trust": "CONFIRM",
+  "permissions": ["geolocation", "payment", "calendar"],
+  "signature": "sha256:abcd1234efgh5678ijkl9012mnop3456",
+  "capabilities": ["transport.search", "transport.book"],
+  "executionMethods": ["browser", "simulation"],
+  "schema": {
+    "required_constraints": ["from", "to", "mode"],
+    "optional_constraints": ["date", "class", "passengers", "returnDate"]
+  }
+}

@@ -1,0 +1,12 @@
+﻿05-20 10:35:19.773 I/TelecomFramework(12873): ChatrConnectionService: notifyCreateConnectionComplete TC@3_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-AVk
+05-20 10:37:28.099 D/MtkConnectivityService( 1140): requestNetwork for uid/pid:10266/12873 NetworkRequest [ TRACK_DEFAULT id=248, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10266] ]
+05-20 10:37:28.439 I/TelecomFramework(12873): ChatrConnectionService: notifyCreateConnectionComplete TC@4_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-AX0
+05-20 10:37:32.645 D/MtkConnectivityService( 1140): requestNetwork for uid/pid:10266/12873 NetworkRequest [ TRACK_DEFAULT id=249, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10266] ]
+05-20 10:38:12.995 D/MtkConnectivityService( 1140): requestNetwork for uid/pid:10266/12873 NetworkRequest [ TRACK_DEFAULT id=250, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10266] ]
+05-20 10:38:13.598 I/TelecomFramework(12873): ChatrConnectionService: notifyCreateConnectionComplete TC@5_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-AZk
+05-20 10:38:19.257 D/MtkConnectivityService( 1140): requestNetwork for uid/pid:10266/12873 NetworkRequest [ TRACK_DEFAULT id=251, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10266] ]
+05-20 10:57:10.157 I/TelecomFramework(12873): ChatrConnectionService: notifyCreateConnectionComplete TC@6_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-Acc
+05-20 10:57:16.867 I/TelecomFramework(12873): ChatrConnectionService: notifyCreateConnectionComplete TC@7_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-AdI
+05-20 10:58:25.265 I/TelecomFramework(12873): ChatrConnectionService: notifyCreateConnectionComplete TC@8_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-AeY
+05-20 11:02:11.217 I/ActivityManager( 1140): Killing 12873:com.chatr.app/u0a266 (adj 100): stop com.chatr.app
+05-20 11:02:11.336 W/ActivityManager( 1140): setHasOverlayUi called on unknown pid: 12873

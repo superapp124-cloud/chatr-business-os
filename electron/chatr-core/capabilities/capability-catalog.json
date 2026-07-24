@@ -1,0 +1,44 @@
+{
+  "abi": "chatr.capability_catalog.v1_0_rc",
+  "description": "Universal Capability Catalog — CHATR Kernel v1.0. A stable hierarchical taxonomy of capabilities serving as the ABI for the CHATR Universal Capability Platform.",
+  "generated_at": "2026-07-20T00:00:00Z",
+  "capabilities": {
+    "Knowledge": {
+      "Discover": { "purpose": "Find possible information, facts, or resources." },
+      "Store": { "purpose": "Save knowledge for long-term durable recall." },
+      "Retrieve": { "purpose": "Fetch specific stored knowledge." },
+      "Summarize": { "purpose": "Condense large information sets." }
+    },
+    "Communication": {
+      "Send": { "purpose": "Transmit a message to a recipient." },
+      "Receive": { "purpose": "Collect incoming messages." },
+      "Translate": { "purpose": "Convert content between formats or languages." }
+    },
+    "Planning": {
+      "Schedule": { "purpose": "Create or modify time-bound commitments." },
+      "Prioritize": { "purpose": "Rank tasks or options." }
+    },
+    "Finance": {
+      "Pay": { "purpose": "Move money or initiate payment." },
+      "Transfer": { "purpose": "Move value between accounts." }
+    },
+    "Transport": {
+      "Route": { "purpose": "Determine an optimal path." },
+      "Book": { "purpose": "Reserve a vehicle or trip." }
+    },
+    "Automation": {
+      "Execute": { "purpose": "Commit a general automated action." },
+      "Observe": { "purpose": "Read external state during or after execution." },
+      "Verify": { "purpose": "Confirm real-world completion." }
+    },
+    "System": {
+      "Notify": { "purpose": "Inform the user or another actor." },
+      "Persist": { "purpose": "Save raw data or system state." },
+      "Search": { "purpose": "Index and query local or remote assets." }
+    }
+  },
+  "lint_rules": {
+    "require_hierarchical_namespace": true,
+    "reject_flat_ids": true
+  }
+}

@@ -1,0 +1,1249 @@
+--------- beginning of main
+05-01 14:19:33.459 14614  3615 I ADB_SERVICES: post waitpid (pid=3614) status=0000
+05-01 14:19:33.459 14614 14614 I ADB_SERVICES: for fd 35, revents = 2011
+05-01 14:19:33.460 14614 14614 I ADB_SERVICES: for fd 35, revents = 2011
+05-01 14:19:33.522 14614 14614 I ADB_SERVICES: service_to_fd shell,v2,raw:am force-stop com.chatr.app
+--------- beginning of system
+05-01 14:19:33.605  1138  1459 I ActivityManager: Force stopping com.chatr.app appid=10248 user=0: from pid 3618
+05-01 14:19:33.615 14614  3617 I ADB_SERVICES: post waitpid (pid=3616) status=0000
+05-01 14:19:33.615 14614 14614 I ADB_SERVICES: for fd 35, revents = 2011
+05-01 14:19:33.620  1491  1491 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+05-01 14:19:33.688 14614 14614 I ADB_SERVICES: service_to_fd shell,v2,raw:am start -W -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.chatr.app/.MainActivity
+05-01 14:19:33.769  1138  3815 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.chatr.app/.MainActivity} from uid 2000
+05-01 14:19:33.784   543   613 I hwcomposer: [HWC] (0) displayGetActiveConfig config:0  
+05-01 14:19:33.793   558   602 I power@1.3-impl: powerHintInternal hint:8, data:1
+05-01 14:19:33.795   558   601 I libPowerHal: 8: cpu_ctrl set freq: 2001000 -1 1500000 -1
+05-01 14:19:33.803   543   613 I hwcomposer: [HWCDisplay] [Display_2 (type:2)] fps:1.117195,dur:1790.20,max:1774.58,min:15.62  
+05-01 14:19:33.806   543   613 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:1.118058,dur:1788.82,max:1774.02,min:14.80  
+05-01 14:19:33.826  1138  1156 E system_server: Invalid ID 0x00000000.
+05-01 14:19:33.832  1138  1162 I ActivityManager: Start proc 3626:com.chatr.app/u0a248 for activity {com.chatr.app/com.chatr.app.MainActivity}
+05-01 14:19:33.835  1138  1156 I InputTransport: Create ARC handle: 0x7e8fcda5a0
+05-01 14:19:33.836  3626  3626 I com.chatr.app: Late-enabling -Xcheck:jni
+05-01 14:19:33.842   582  1649 I BufferQueue: [unnamed-582-2010](this:0x7342b0e800,id:2010,api:0,p:-1,c:-1) BufferQueue core=(582:/system/bin/surfaceflinger)
+05-01 14:19:33.842   582  1649 I BufferQueueConsumer: [unnamed-582-2010](this:0x7342b0e800,id:2010,api:0,p:-1,c:582) connect(C): consumer=(582:/system/bin/surfaceflinger) controlledByApp=false
+05-01 14:19:33.842   582  1649 I BufferQueueConsumer: [unnamed-582-1724](this:0x7342b0e800,id:2010,api:0,p:-1,c:582) setConsumerName: unnamed-582-1724
+05-01 14:19:33.842   582  1649 I BufferQueueConsumer: [Splash Screen com.chatr.app#0](this:0x7342b0e800,id:2010,api:0,p:-1,c:582) setConsumerName: Splash Screen com.chatr.app#0
+05-01 14:19:33.843   582  1649 I BufferQueueConsumer: [Splash Screen com.chatr.app#0](this:0x7342b0e800,id:2010,api:0,p:-1,c:582) setDefaultBufferSize: width=720 height=1600
+05-01 14:19:33.848   582  1649 I BufferQueueProducer: [Splash Screen com.chatr.app#0](this:0x7342b0e800,id:2010,api:2,p:1138,c:582) connect(P): api=2 producer=(1138:system_server) producerControlledByApp=false
+05-01 14:19:33.850   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786826): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:33.857   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:33.857   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:33.857   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:33.873  3626  3626 E com.chatr.app: Unknown bits set in runtime_flags: 0x8000
+05-01 14:19:33.874   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786827): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:33.881   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:33.881   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:33.881   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:33.888 14614 14614 I ADB_SERVICES: service_to_fd shell:stat -c %u /proc/3626 | xargs -n 1 cmd package list packages --uid
+05-01 14:19:33.903 14045 14045 I bqwu    : onPause
+05-01 14:19:33.918   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786828): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:33.921   558   601 I libPowerHal: [perfNotifyAppState] foreground:com.chatr.app, pid:3626, uid:10248
+05-01 14:19:33.922   558   601 I UxUtility: notifyForegroundApp pack:com.chatr.app, uid:10248
+05-01 14:19:33.922   558   601 I powerd  : [powerd_req] POWER_MSG_NOTIFY_STATE, pc:1, com.motorola.launcher3 => com.chatr.app
+05-01 14:19:33.924   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:33.924   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:33.924   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:33.942   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786829): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:33.948   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:33.948   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:33.948   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:33.963   582   618 I BufferQueueProducer: [StatusBar#0](this:0x733653c000,id:5,api:1,p:1305,c:582) queueBuffer: fps=1.02 dur=1967.95 max=1956.14 min=11.80
+05-01 14:19:33.966   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786830): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:33.969   582   618 I BufferQueueProducer: [NavigationBar0#0](this:0x7342b0a000,id:1749,api:1,p:1305,c:582) queueBuffer: fps=0.99 dur=9133.07 max=9002.70 min=13.81
+05-01 14:19:33.972   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:33.972   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:33.972   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:33.977   582   582 I BufferQueueProducer: [FramebufferSurface](this:0x7344534800,id:0,api:1,p:582,c:582) queueBuffer: fps=0.10 dur=216279.28 max=215869.96 min=12.49
+05-01 14:19:33.999   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:33.999   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:33.999   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.006 14614  3644 I ADB_SERVICES: post waitpid (pid=3643) status=0000
+05-01 14:19:34.043   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.044   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.044   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.068   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.068   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.068   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.108   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.108   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.108   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.151   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.151   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.151   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.198   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.198   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.198   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.240   582  1637 I BufferQueueProducer: [com.motorola.launcher3/com.android.launcher3.CustomizationPanelLauncher#0](this:0x733653d800,id:2008,api:1,p:14045,c:582) disconnect(P): api 1
+05-01 14:19:34.240   582  1649 I BufferQueueProducer: [com.motorola.launcher3/com.android.launcher3.CustomizationPanelLauncher#1](this:0x7336597800,id:2009,api:1,p:1677,c:582) disconnect(P): api 1
+05-01 14:19:34.247   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.247   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.247   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.290   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.291   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.291   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.337   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.337   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.337   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.338   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 0 is dropped, handle=0xf23bc180
+05-01 14:19:34.371   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.379   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.379   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.379   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.405   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.411   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.411   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.411   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.438   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.441   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.441   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.441   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.472   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.474   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.474   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.474   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.505   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.505   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.505   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.505   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.539   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.539   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.539   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.539   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.572   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.572   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.572   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.572   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.606   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.606   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:34.606   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.606   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.634   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.634   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.634   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.656   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 5 is dropped, handle=0xf23bd200
+05-01 14:19:34.660   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.660   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.660   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.686   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.686   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.686   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.706   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 10 is dropped, handle=0xf23be340
+05-01 14:19:34.711   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.711   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.711   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.736   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.736   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.736   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.756   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 9 is dropped, handle=0xf23be280
+05-01 14:19:34.761   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.761   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.761   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.786   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.786   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.786   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.806   543   613 I hwcomposer: [HWCDisplay] [Display_2 (type:2)] fps:57.875553,dur:1002.15,max:34.28,min:14.68  
+05-01 14:19:34.806   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 16 is dropped, handle=0xf23bd500
+05-01 14:19:34.807   543   613 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:57.925026,dur:1001.29,max:34.28,min:13.73  
+05-01 14:19:34.811   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.811   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.811   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.838   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.838   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.838   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.857   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 11 is dropped, handle=0xf23be4c0
+05-01 14:19:34.858   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786857): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:34.863   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.863   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.863   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.882   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786858): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:34.888   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.888   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.888   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.906   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786859): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:34.907   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 4 is dropped, handle=0xf23be100
+05-01 14:19:34.913   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.913   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.913   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.934   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786860): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:34.938   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.938   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.938   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.957   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 7 is dropped, handle=0xf23bd140
+05-01 14:19:34.958   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786861): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:34.963   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.963   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.963   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.969  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:34.973   582  1649 I BufferQueueProducer: [NavigationBar0#0](this:0x7342b0a000,id:1749,api:1,p:1305,c:582) queueBuffer: fps=52.78 dur=1004.22 max=140.17 min=13.50
+05-01 14:19:34.988   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:34.988   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:34.988   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:34.999   582  1649 I BufferQueueProducer: [StatusBar#0](this:0x733653c000,id:5,api:1,p:1305,c:582) queueBuffer: fps=8.68 dur=1036.58 max=906.83 min=13.14
+05-01 14:19:35.007   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 6 is dropped, handle=0xf23bd2c0
+05-01 14:19:35.015   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.015   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.015   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.040   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.041   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.041   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.041   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 6 is dropped, handle=0xf23bd2c0
+05-01 14:19:35.070   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.070   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.070   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.091   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:35.098   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.098   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.098   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.124   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:35.128   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.128   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.128   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.155   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.155   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.155   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.175   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 15 is dropped, handle=0xf23be1c0
+05-01 14:19:35.183   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.183   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.183   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.208   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 15 is dropped, handle=0xf23be1c0
+05-01 14:19:35.212   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.212   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.212   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.240   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.240   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.240   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.259   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 9 is dropped, handle=0xf23be280
+05-01 14:19:35.268   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.269   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.269   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.275  2168  2180 I /vendor/bin/charon: 01[JOB] [schedule()  269] Job timer expiry(now:93726, event->time:93726), queuing job for execution
+05-01 14:19:35.292   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 9 is dropped, handle=0xf23be280
+05-01 14:19:35.297   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.297   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.297   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.324   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.324   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.324   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.342   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 0 is dropped, handle=0xf23bc180
+05-01 14:19:35.352   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.352   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.352   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.375   693   693 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 0 is dropped, handle=0xf23bc180
+05-01 14:19:35.379   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.379   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.379   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.407   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.407   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.407   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.426   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 4 is dropped, handle=0xf23be100
+05-01 14:19:35.436   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.436   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.436   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.459   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 4 is dropped, handle=0xf23be100
+05-01 14:19:35.465   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.465   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.465   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.493   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 4 is dropped, handle=0xf23be100
+05-01 14:19:35.494   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.494   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.494   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.523   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.523   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.523   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.543   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 12 is dropped, handle=0xf23be580
+05-01 14:19:35.552   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.552   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.552   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.576   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 12 is dropped, handle=0xf23be580
+05-01 14:19:35.582   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.583   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.583   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.610   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 12 is dropped, handle=0xf23be580
+05-01 14:19:35.612   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.612   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.612   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.641   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.641   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.641   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.660   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 13 is dropped, handle=0xf23be640
+05-01 14:19:35.677   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 10 is dropped, handle=0xf23be340
+05-01 14:19:35.684   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.684   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.684   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.710   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.710   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.710   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.710   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 10 is dropped, handle=0xf23be340
+05-01 14:19:35.744   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 10 is dropped, handle=0xf23be340
+05-01 14:19:35.761   693 12865 I BufferQueueProducer: [GraphicBufferSource](this:0xf238f000,id:279,api:1,p:693,c:693) queueBuffer: slot 15 is dropped, handle=0xf23be1c0
+05-01 14:19:35.768   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.768   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.768   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.797   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.797   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.797   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.814   528  1038 I netd    : networkCreatePhysical(8776, 2) <0.05ms>
+05-01 14:19:35.814   528  1038 I netd    : createNetworkCache(8776) <0.09ms>
+05-01 14:19:35.818   528  1038 I netd    : networkAddInterface(8776, "ccmni0") <2.54ms>
+05-01 14:19:35.819   528  1038 I netd    : interfaceSetMtu("ccmni0", 1280) <0.20ms>
+05-01 14:19:35.820   528  1038 E Netd    : Error adding route ::/0 -> (null) ccmni0 to table 1002: File exists
+05-01 14:19:35.820   528  1038 I netd    : networkAddRoute(8776, "ccmni0", "::/0", "") <0.42ms>
+05-01 14:19:35.821   889   900 I [BIP]   :  [BIP NL] IPv6: *:*:*:*:*:*:*:*
+05-01 14:19:35.821   528  1038 I netd    : networkAddRoute(8776, "ccmni0", "2401:4900:427a:73d7::/64", "") <0.46ms>
+05-01 14:19:35.822   528  1038 I netd    : DnsResolverService::setResolverConfiguration(8776, [], [], 1800, 25, 8, 64, 0, 0, "", []) -> (0) (0.08ms)
+05-01 14:19:35.822   528  1038 I netd    : setResolverConfiguration() <0.28ms>
+05-01 14:19:35.826   528  1038 I netd    : trafficSwapActiveStatsMap() <0.27ms>
+05-01 14:19:35.826   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.826   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.826   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.829   528  1038 I netd    : tetherGetStats() <1.25ms>
+05-01 14:19:35.838  1826  1859 I VT      : [JNI] Entering UpdateNetworkTable
+05-01 14:19:35.839   659  1006 I VT      : [SRV] [OPERATION][NETWORK_ID=8776] Add if_name:ccmni0
+05-01 14:19:35.839   659  1006 E VT      : [SRV]   [MAP OPERATION] [ID=8776] check (entry not exist)
+05-01 14:19:35.839   659  1006 I VT      : [SRV]   [MAP OPERATION]  [ID=8776] AddNetworkInfoRecord ifname=ccmni0
+05-01 14:19:35.840  1826  1859 I VT      : [JNI] Leaving UpdateNetworkTable
+05-01 14:19:35.841   528  1038 I netd    : trafficSwapActiveStatsMap() <0.25ms>
+05-01 14:19:35.844   528  1038 I netd    : tetherGetStats() <1.36ms>
+05-01 14:19:35.852  1826  1859 I VT      : [JNI] Entering UpdateNetworkTable
+05-01 14:19:35.852   659  1006 I VT      : [SRV] [OPERATION][NETWORK_ID=8776] Remove
+05-01 14:19:35.852   659  1006 E VT      : [SRV]   [MAP OPERATION] [ID=8776] checkNetworkInfRecordExist (entry exist)
+05-01 14:19:35.852   659  1006 I VT      : [SRV]   [MAP OPERATION] [ID=8776] RemoveNetworkInfoRecord (Success)
+05-01 14:19:35.852  1826  1859 I VT      : [JNI] Leaving UpdateNetworkTable
+05-01 14:19:35.854   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.855   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.855   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.855   528  1038 W Netd    : Flushing routes: No such process
+05-01 14:19:35.855   889   900 I [BIP]   :  [BIP NL] IPv6: *:*:*:*:*:*:*:*
+05-01 14:19:35.856   528  1038 I netd    : networkDestroy(8776) <3.60ms>
+05-01 14:19:35.857   528  1038 I netd    : destroyNetworkCache(8776) <0.12ms>
+05-01 14:19:35.878   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786892): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:35.882   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.882   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.882   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.902   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786893): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:35.909   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.909   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.909   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.930   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786894): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:35.936   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.936   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.936   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.958   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786895): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:35.963   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.964   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.964   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:35.986   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786896): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:35.990   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:35.990   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:35.991   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.017   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.017   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.017   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.044   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.044   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.044   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.070   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.071   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.071   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.098   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.098   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.098   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.125   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.125   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.125   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.151   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.151   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.151   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.178   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.178   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.178   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.205   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.205   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.205   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.232   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.232   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.232   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.259   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.259   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.259   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.287   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.287   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.287   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.314   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.315   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.315   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.342   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.342   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.342   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.376  3626  3626 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-01 14:19:36.404   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.404   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.404   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.439  3626  3626 I FirebaseCrashlytics: Initializing Firebase Crashlytics 19.4.0 for com.chatr.app
+05-01 14:19:36.522   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.523   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.523   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.531  3626  3663 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:136 and remote module com.google.android.gms.measurement.dynamite:189
+05-01 14:19:36.531  3626  3663 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 189
+05-01 14:19:36.619   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.619   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.619   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.726   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.726   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.726   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.745  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapInt(Ljava/lang/Object;JII)Z (greylist, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z (greylist, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObjectVolatile(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:36.746  3626  3663 W com.chatr.app: Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+05-01 14:19:36.752  3626  3675 I FirebaseCrashlytics: No version control information found
+05-01 14:19:36.768  3626  3674 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-01 14:19:36.769  3626  3674 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:36.805  1921  9508 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.chatr.app
+05-01 14:19:36.823   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:36.823   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:36.823   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:36.871   699   699 I thermal_repeater: [recvMdThermalInfo] ret=27, strLen=127,  3, 45, 1, -28407, 32767, 0
+05-01 14:19:36.887  3626  3678 W com.chatr.app: Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (greylist, linking, allowed)
+05-01 14:19:36.891  3626  3626 I FirebaseInitProvider: FirebaseApp initialization successful
+05-01 14:19:36.892  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:36.892  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:36.892  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:36.892  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-01 14:19:36.892  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:36.893  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putOrderedInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:36.893  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putOrderedLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-01 14:19:36.893  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putOrderedObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:36.922  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:36.922  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:36.925  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:36.926  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:36.928  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:36.928  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:36.928  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-01 14:19:36.938   543   613 I hwcomposer: [HWC] (0) displayGetActiveConfig config:0  
+05-01 14:19:36.938  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:36.939  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+05-01 14:19:36.940  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+05-01 14:19:36.940  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+05-01 14:19:36.940  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+05-01 14:19:36.941  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-01 14:19:36.941  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-01 14:19:36.941  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+05-01 14:19:36.941  3626  3676 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+05-01 14:19:36.942  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-01 14:19:36.943  3626  3676 W com.chatr.app: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+05-01 14:19:36.943  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-01 14:19:36.944  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-01 14:19:36.944  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-01 14:19:36.944  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-01 14:19:36.944  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-01 14:19:36.944  3626  3676 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-01 14:19:36.992  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:36.993  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:36.994  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:36.994  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:37.004  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:37.005  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-01 14:19:37.015  3626  3681 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-01 14:19:37.016  3626  3681 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-01 14:19:37.016  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-01 14:19:37.017  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-01 14:19:37.017  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-01 14:19:37.017  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-01 14:19:37.017  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-01 14:19:37.017  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-01 14:19:37.017  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-01 14:19:37.022  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:37.034  3626  3674 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:37.034  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+05-01 14:19:37.034  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:37.036  3626  3674 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:37.036  3626  3674 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:37.039  3626  3678 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-01 14:19:37.041  3626  3676 I FA      : App measurement initialized, version: 165000
+05-01 14:19:37.041  3626  3676 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-01 14:19:37.042  3626  3676 I FA      : To enable faster debug mode event logging run:
+05-01 14:19:37.042  3626  3676 I FA      :   adb shell setprop debug.firebase.analytics.app com.chatr.app
+05-01 14:19:37.050  3626  3645 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-01 14:19:37.083  3626  3626 I ChatrApplication: ?? CHATR+ Application starting...
+05-01 14:19:37.084  3626  3626 I ChatrApplication: ? Firebase initialized
+05-01 14:19:37.111  3626  3626 I ChatrApplication: ? All notification channels created
+05-01 14:19:37.119  1138  1459 I Telecom-PhoneAccountRegistrar: Modify account: [ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0}(lbl: Chatr+ Calls -> Chatr+)]: TSI.rPA@Dyg
+05-01 14:19:37.123  1138  1459 I Telecom-CallsManager: handlePhoneAccountChanged: phoneAccount=[[X] PhoneAccount: ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0} Capabilities: SelfManaged SuppVideo Video  Audio Routes: BESW Schemes: tel chatr  Extras: Bundle[{android.telecom.extra.LOG_SELF_MANAGED_CALLS=true}] GroupId: ***]: TSI.rPA@Dyg
+05-01 14:19:37.124  3626  3626 I ChatrApplication: ? PhoneAccount registered with TelecomManager
+05-01 14:19:37.256  3626  3626 I ChatrApplication: ? CHATR+ Application initialized successfully
+05-01 14:19:37.300  3626  3688 I libMEOW_gift: open /vendor/etc/arc.ini
+05-01 14:19:37.704  3626  3626 W com.chatr.app: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+05-01 14:19:37.752  3626  3626 I WebViewFactory: Loading com.google.android.webview version 147.0.7727.111 (code 772711103)
+05-01 14:19:37.768  3626  3626 W linker  : Warning: "/data/app/com.google.android.webview-LDwOctLdkjg4wOfqQ-Sexg==/base.apk!/lib/arm64-v8a/libwebviewchromium.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+05-01 14:19:37.840  3626  3626 I cr_WVCFactoryProvider: version=147.0.7727.111 (772711103) minSdkVersion=29 multiprocess=true packageId=127 splits=<none>
+05-01 14:19:37.856  3626  3695 I chromium: [0501/141937.856081:INFO:android_webview/browser/variations/variations_seed_loader.cc:67] Failed to open file for reading.: No such file or directory (2)
+05-01 14:19:37.906  3626  3626 I cr_LibraryLoader: Successfully loaded native library
+05-01 14:19:37.908  3626  3626 I cr_CachingUmaRecorder: Flushed 14 samples from 13 histograms, 0 samples were dropped.
+05-01 14:19:37.912  3626  3626 I cr_ChildProcLH: ScopedServiceBindingBatch.tryActivate: false
+05-01 14:19:37.916  3626  3626 I cr_CombinedPProvider: #registerProvider() provider:WV.yk@270d883 isPolicyCacheEnabled:false policyProvidersSize:0
+05-01 14:19:37.918  3626  3626 I cr_PolicyProvider: #setManagerAndSource() 0
+05-01 14:19:37.923  3626  3626 I cr_DisplayManager: Is Display Topology available: false
+05-01 14:19:37.956  3626  3626 I cr_CombinedPProvider: #linkNativeInternal() 1
+05-01 14:19:37.959  3626  3626 I cr_AppResProvider: #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+05-01 14:19:37.959  3626  3626 I cr_PolicyProvider: #notifySettingsAvailable() 0
+05-01 14:19:37.960  3626  3626 I cr_CombinedPProvider: #onSettingsAvailable() 0
+05-01 14:19:37.960  3626  3626 I cr_CombinedPProvider: #flushPolicies()
+05-01 14:19:37.981  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:38.018  3626  3626 W ThreadPoolForeg: type=1400 audit(0.0:786915): avc: denied { read } for name="u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=11228 scontext=u:r:untrusted_app:s0:c248,c256,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=0
+05-01 14:19:38.023  3626  3703 E libc    : Access denied finding property "ro.vendor.api_level"
+05-01 14:19:38.047  3626  3626 W chromium: [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 47118249
+05-01 14:19:38.248 20709 20709 I Finsky  : [2] SCH: job service start with id 9061.
+05-01 14:19:38.258 20709  3542 I Finsky  : [7641] SCH: Satisfied jobs for 9061 are: 12-1
+05-01 14:19:38.259 20709  3724 I Finsky  : [7646] SCH: Job 12-1 starting
+05-01 14:19:38.260 20709 20709 I Finsky  : [2] WM::SCH: Logging work start for 12-1
+05-01 14:19:38.260 20709 20709 I Finsky  : [2] [ContentSync] job started
+05-01 14:19:38.405  1138  1146 I system_server: Background young concurrent copying GC freed 73096(4880KB) AllocSpace objects, 22(888KB) LOS objects, 14% free, 32MB/38MB, paused 258us total 102.495ms
+05-01 14:19:38.608  3626  3626 W com.chatr.app: Accessing hidden method Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController; (blacklist, linking, allowed)
+05-01 14:19:38.608  3626  3626 W com.chatr.app: Accessing hidden method Landroid/view/WindowInsetsController;->hide(I)V (blacklist, linking, allowed)
+05-01 14:19:38.617 20709 20709 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.tzdata' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-01 14:19:38.664   468   468 E beanpodkeymaster: Received 302 byte response
+05-01 14:19:38.780  3626  3626 W Capacitor: Unable to read file at path public/plugins
+05-01 14:19:38.853  3626  3746 I GPUD    : @gpudInitialize: successfully initialized with GL, dbg=0 mmdump_dbg=0 mmpath_dbg=0
+05-01 14:19:38.873  3626  3746 I libMEOW_gift: ctx:0x7e8fc0d080, ARC not Enabled.
+05-01 14:19:38.885  3626  3626 I ChatrMainActivity: MainActivity onNewIntent: android.intent.action.MAIN
+05-01 14:19:38.885  3626  3746 W IMGSRV  : glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-01 14:19:38.885  3626  3746 W IMGSRV  : glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-01 14:19:38.888  3626  3626 I ChatrMainActivity: Handling action=null intentAction=android.intent.action.MAIN data=null
+05-01 14:19:38.888  3626  3626 I ChatrMainActivity: MainActivity onCreate
+05-01 14:19:38.894  3626  3746 W IMGSRV  : glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-01 14:19:38.899  3626  3626 I ChatrMainActivity: All permissions already granted
+05-01 14:19:38.908  3626  3626 I ChatrCallScreening: Block anonymous: false
+05-01 14:19:38.908  3626  3626 I ChatrCallScreening: Block unknown: false
+05-01 14:19:38.908  3626  3626 I ChatrCallScreening: Require name announcement: false
+05-01 14:19:38.908  3626  3626 I CallBlockingManager: Call blocking settings loaded
+05-01 14:19:38.908  3626  3626 I ChatrMainActivity: VoIP services initialized
+05-01 14:19:38.925  3626  3626 I CallForwardingManager: ?? CallForwardingManager initialized
+05-01 14:19:38.928  3626  3626 I CallParkService: ?? CallParkService initialized
+05-01 14:19:38.932  3626  3626 I CallQueueService: ?? CallQueueService initialized
+05-01 14:19:38.937  3626  3626 I SpeedDialService: ?? SpeedDialService initialized
+05-01 14:19:38.937  3626  3626 I VoIPBridgeService: ?? VoIPBridgeService initialized
+05-01 14:19:38.951  3626  3626 I ChatrMainActivity: WebView configured with native bridges
+05-01 14:19:38.952  3626  3626 I ChatrMainActivity: Skipping duplicate intent action=null intentAction=android.intent.action.MAIN callId=null
+05-01 14:19:38.998  3626  3676 I FA      : Tag Manager is not found and thus will not be used
+05-01 14:19:39.019  3626  3626 I SurfaceFactory: [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@abfd3fb
+05-01 14:19:39.035  1138  1459 E WindowManager: App trying to use insecure INPUT_FEATURE_NO_INPUT_CHANNEL flag. Ignoring
+05-01 14:19:39.037   582  1649 I SurfaceFlinger: [SF client] NEW(0x7342a5bdc0) for (1138:system_server)
+05-01 14:19:39.039   543   613 I hwcomposer: [HWC] (0) displayGetActiveConfig config:0  
+05-01 14:19:39.044  3626  3626 I InputTransport: Create ARC handle: 0x7e8b4eab60
+05-01 14:19:39.059   543   613 I hwcomposer: [HWCDisplay] [Display_2 (type:2)] fps:13.637170,dur:4253.08,max:3298.58,min:16.34  
+05-01 14:19:39.062   543   613 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:13.632399,dur:4254.57,max:3299.80,min:15.90  
+05-01 14:19:39.070  3626  3626 I Choreographer: Skipped 127 frames!  The application may be doing too much work on its main thread.
+05-01 14:19:39.073  3626  3756 I CameraManagerGlobal: Connecting to camera service
+05-01 14:19:39.073  3626  3746 I libMEOW_gift: ctx:0x7e8fc0d900, ARC not Enabled.
+05-01 14:19:39.085  3626  3756 W CameraManagerGlobal: [soar.cts] ignore the status update of camera: 2
+05-01 14:19:39.090  3626  3746 W IMGSRV  : glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-01 14:19:39.102  3626  3746 I chatty  : uid=10248(com.chatr.app) Chrome_InProcGp identical 3 lines
+05-01 14:19:39.102  3626  3746 W IMGSRV  : glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-01 14:19:39.104  3626  3626 W com.chatr.app: Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+05-01 14:19:39.104  3626  3626 W com.chatr.app: Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+05-01 14:19:39.105  3626  3626 W com.chatr.app: Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+05-01 14:19:39.114   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786916): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.119   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.119   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.119   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.123  1138  1459 I WindowManager: Relayout Window{629c457 u0 com.chatr.app/com.chatr.app.MainActivity}: oldVis=4 newVis=0 focusMayChange = true
+05-01 14:19:39.127   582  1649 I BufferQueue: [unnamed-582-2011](this:0x7342afb000,id:2011,api:0,p:-1,c:-1) BufferQueue core=(582:/system/bin/surfaceflinger)
+05-01 14:19:39.127   582  1649 I BufferQueueConsumer: [unnamed-582-2011](this:0x7342afb000,id:2011,api:0,p:-1,c:582) connect(C): consumer=(582:/system/bin/surfaceflinger) controlledByApp=false
+05-01 14:19:39.127   582  1649 I BufferQueueConsumer: [unnamed-582-1725](this:0x7342afb000,id:2011,api:0,p:-1,c:582) setConsumerName: unnamed-582-1725
+05-01 14:19:39.127   582  1649 I BufferQueueConsumer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7342afb000,id:2011,api:0,p:-1,c:582) setConsumerName: com.chatr.app/com.chatr.app.MainActivity#0
+05-01 14:19:39.127   582  1649 I BufferQueueConsumer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7342afb000,id:2011,api:0,p:-1,c:582) setDefaultBufferSize: width=720 height=1600
+05-01 14:19:39.128  1138  1459 I WindowManager: ***** PhoneWindowManager, focusChangedLw, newFocus=Token{172e3c4 ActivityRecord{6846ed7 u0 com.chatr.app/.MainActivity t395}}
+05-01 14:19:39.138   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786917): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.145   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.145   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.145   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.146  3626  3686 I libMEOW_gift: ctx:0x7e8fdde100, ARC not Enabled.
+05-01 14:19:39.154   582  1649 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7342afb000,id:2011,api:1,p:3626,c:582) connect(P): api=1 producer=(3626:com.chatr.app) producerControlledByApp=false
+05-01 14:19:39.166   404   404 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+05-01 14:19:39.167  3626  3686 W Gralloc3: mapper 3.x is not supported
+05-01 14:19:39.170  3626  3686 E ion     : ioctl c0044901 failed with code -1: Invalid argument
+05-01 14:19:39.190   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786918): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.194   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.194   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.194   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.214   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786919): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.220   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.220   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.220   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.242  3626  3686 I OpenGLRenderer: Davey! duration=2289ms; Flags=1, IntendedVsync=93100819097105, Vsync=93102935763814, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=93102945509010, AnimationStart=93102945634548, PerformTraversalsStart=93102947737010, DrawStart=93103030510241, SyncQueued=93103037595779, SyncStart=93103045453549, IssueDrawCommandsStart=93103045558087, SwapBuffers=93103114133779, FrameCompleted=93103116116395, DequeueBufferDuration=0, QueueBufferDuration=976000, 
+05-01 14:19:39.254  1138  1160 I ActivityTaskManager: Displayed com.chatr.app/.MainActivity: +5s482ms
+05-01 14:19:39.255   582  1649 I BufferQueueProducer: [Splash Screen com.chatr.app#0](this:0x7342b0e800,id:2010,api:2,p:1138,c:582) disconnect(P): api 2
+05-01 14:19:39.256  1138  1156 I InputTransport: Destroy ARC handle: 0x7e8fcda5a0
+05-01 14:19:39.257 14614  3622 I ADB_SERVICES: post waitpid (pid=3621) status=0000
+05-01 14:19:39.257 14614 14614 I ADB_SERVICES: for fd 35, revents = 2011
+05-01 14:19:39.258 14614 14614 I ADB_SERVICES: for fd 35, revents = 2011
+05-01 14:19:39.278  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:39.279  3626  3626 I ChatrApplication: ?? FCM Token: e-QZlN4OTr2szf_stdZF...
+05-01 14:19:39.279  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:39.279  3626  3681 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:39.298   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786920): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.305   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.305   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.305   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.326   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786921): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.331  3626  3626 I Capacitor/SpeechRecognition: Instantiated SpeechRecognizer in load()
+05-01 14:19:39.331   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.331   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.331   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.354   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786922): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.359   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.359   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.359   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.364  2410  2410 I InputTransport: Create ARC handle: 0x7e90534aa0
+05-01 14:19:39.365  3626  3626 W com.chatr.app: Accessing hidden field Landroid/content/pm/ApplicationInfo;->primaryCpuAbi:Ljava/lang/String; (greylist, reflection, allowed)
+05-01 14:19:39.368  2410  2410 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2186 
+05-01 14:19:39.369  2410  2410 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-01 14:19:39.370  2410  2410 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1444 onStartInput(EditorInfo{EditorInfo{packageName=com.chatr.app, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=2131362515, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-01 14:19:39.371  2410  2410 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-01 14:19:39.382   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786923): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.386   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.386   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.386   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.396   558   602 I power@1.3-impl: powerHintInternal hint:8, data:0
+05-01 14:19:39.414   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786924): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:39.414  3626  3680 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:39.414  3626  3680 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:39.419 14045 14045 I bqwu    : onStop
+05-01 14:19:39.421   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.421   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.421   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.431   546   546 W IMGMemtrackHAL: hal_get_memory: memtrack cache rebuild was required
+05-01 14:19:39.442   582   582 I BufferQueue: [Splash Screen com.chatr.app#0](this:0x7342b0e800,id:2010,api:2,p:-1,c:-1) ~BufferQueueCore
+05-01 14:19:39.444  3626  3680 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:39.453  3626  3680 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:39.454  3626  3680 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:39.454   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.454   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.454   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.456   582   582 I BufferQueue: [com.motorola.launcher3/com.android.launcher3.CustomizationPanelLauncher#1](this:0x7336597800,id:2009,api:1,p:-1,c:-1) ~BufferQueueCore
+05-01 14:19:39.459   582   582 I BufferQueue: [com.motorola.launcher3/com.android.launcher3.CustomizationPanelLauncher#0](this:0x733653d800,id:2008,api:1,p:-1,c:-1) ~BufferQueueCore
+05-01 14:19:39.470   582  1649 I BufferQueueProducer: [StatusBar#0](this:0x733653c000,id:5,api:1,p:1305,c:582) queueBuffer: fps=0.45 dur=4470.58 max=4459.79 min=10.79
+05-01 14:19:39.483   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.483   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.483   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.496  9130  3762 I AdvertisingIdClient: shouldSendLog 92645987
+05-01 14:19:39.496  9130  3762 I AdvertisingIdClient: GetInfoInternal elapse 39ms
+05-01 14:19:39.510   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.511   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.511   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.538   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.538   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.538   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.547  1921  2801 I FontLog : (REDACTED) Received query %s, URI %s
+05-01 14:19:39.547  1921  2801 I FontLog : (REDACTED) Query [%s] resolved to %s
+05-01 14:19:39.550  1921  2801 I FontLog : (REDACTED) Fetch %s end status %s
+05-01 14:19:39.566   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.566   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.566   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.566  1921  2801 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+05-01 14:19:39.580  1921  2801 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+05-01 14:19:39.596   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.596   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.596   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.599  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:39.614  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:39.615  3626  3682 W System  : ClassLoader referenced unknown path: system/framework/mediatek-cta.jar
+05-01 14:19:39.620  3626  3682 I System.out: [okhttp] e:java.lang.ClassNotFoundException: com.mediatek.cta.CtaUtils
+05-01 14:19:39.625   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.625   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.625   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.635  3626  3639 I com.chatr.app: NativeAlloc concurrent copying GC freed 14783(924KB) AllocSpace objects, 10(264KB) LOS objects, 49% free, 4776KB/9553KB, paused 495us total 200.028ms
+05-01 14:19:39.652   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.652   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.652   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.679   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.680   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.680   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.706   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.706   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.706   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.734   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.734   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.734   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.762   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.762   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.762   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.787 20709 20709 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media.swcodec' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-01 14:19:39.789   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.789   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.789   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.816   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.816   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.816   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.843   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.843   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.843   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.854 20709 20709 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.resolv' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-01 14:19:39.870   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.870   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.870   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.881 20709 20709 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.media' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-01 14:19:39.882 20709 20709 W Finsky  : [2] STU: Failed to get storage stats for package 'com.google.android.conscrypt' (1601: Error getting stats: android.content.pm.PackageManager.NameNotFoundException)
+05-01 14:19:39.896   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.896   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.896   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.923   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.923   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.923   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.949   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.949   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.949   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:39.976   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:39.976   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:39.976   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.003   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.003   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.003   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.042   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.042   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.042   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.142   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.142   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.142   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.176 20709 20709 I Finsky  : [2] App states replicator found 10 unowned apps
+05-01 14:19:40.185 20709 20756 I Finsky  : [7347] Completed 0 account content syncs with 0 successful.
+05-01 14:19:40.186 20709 20709 I Finsky  : [2] [ContentSync] Installation state replication succeeded.
+05-01 14:19:40.186 20709 20709 I Finsky  : [2] SCH: jobFinished: 12-1. TimeElapsed: 1927ms.
+05-01 14:19:40.186 20709 20709 I Finsky  : [2] WM::SCH: Logging work end for 12-1
+05-01 14:19:40.198 20709 20754 I Finsky  : [7345] SCH: Scheduling phonesky job Id: 1-1337, CT: 1777595256978, Constraints: [{ L: 43195123, D: 86395123, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-01 14:19:40.199 20709 20754 I Finsky  : [7345] SCH: Scheduling phonesky job Id: 34-2581, CT: 1777552068271, Constraints: [{ L: 604800000, D: 2573595727, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-01 14:19:40.199 20709 20754 I Finsky  : [7345] SCH: Scheduling phonesky job Id: 34-2584, CT: 1777612865339, Constraints: [{ L: 79199808, D: 1375199808, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-01 14:19:40.199 20709 20754 I Finsky  : [7345] SCH: Scheduling phonesky job Id: 34-2585, CT: 1777612865565, Constraints: [{ L: 604800000, D: 2591999844, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+05-01 14:19:40.204 20709 20756 I Finsky  : [7347] SCH: Scheduling 1 system job(s)
+05-01 14:19:40.204 20709 20756 I Finsky  : [7347] SCH: Scheduling system job Id: 9067, L: 13071897, D: 56271897, C: false, I: false, N: 1
+05-01 14:19:40.210 20709  3724 I Finsky  : [7646] SCH: job service finished with id 9061.
+05-01 14:19:40.242   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.243   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.243   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.338   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786949): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:40.344   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.344   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.344   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.438   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786950): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:40.445   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.445   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.445   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.542   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786951): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:40.546   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.546   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.546   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.642   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786952): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:40.647   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.647   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.647   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.662   543   613 I hwcomposer: [HWC] (0) displayGetActiveConfig config:0  
+05-01 14:19:40.687   582  1649 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7342afb000,id:2011,api:1,p:3626,c:582) queueBuffer: fps=2.07 dur=1446.70 max=1290.48 min=43.05
+05-01 14:19:40.698   543   613 I hwcomposer: [HWCDisplay] [Display_2 (type:2)] fps:15.860167,dur:1639.33,max:1087.96,min:12.57  
+05-01 14:19:40.700   543   613 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:15.867356,dur:1638.58,max:1087.84,min:12.38  
+05-01 14:19:40.750   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786953): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:40.756   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.756   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.756   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.784   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.784   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.784   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.813   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.813   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.813   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.841   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.841   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.841   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.869   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.869   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.869   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.897   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.897   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.897   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.926   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.926   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.926   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.953   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.953   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.953   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.979   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:40.979   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:40.979   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:40.988  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:41.004   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.004   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.004   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.029   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.029   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.029   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.055   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.055   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.055   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.080   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.080   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.080   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.105   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.105   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.105   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.131   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.131   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.131   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.156   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.156   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.156   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.181   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.182   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.182   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.207   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.207   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.207   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.279   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.279   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.279   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.374   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786972): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:41.380   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.380   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.380   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.474   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786973): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:41.481   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.481   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.481   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.578   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786974): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:41.582   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.582   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.582   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.678   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786975): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:41.684   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.684   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.684   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.778   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786976): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:41.785   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.785   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.785   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.886   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.886   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.886   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:41.987   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:41.987   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:41.987   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:43.998  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:44.669   546   546 W IMGMemtrackHAL: hal_get_memory: memtrack cache rebuild was required
+05-01 14:19:44.952  3626  3626 W ChatrMainActivity: WebView did not report ready; loading bundled index fallback. url=https://localhost/index.html progress=10
+05-01 14:19:45.046  9130  9150 W gle.android.gm: Profile data size exceeds 500000 bytes
+05-01 14:19:45.414   558   601 I libPowerHal: 31: cpu_ctrl set freq: -1 -1 -1 -1
+05-01 14:19:45.966   528  1038 I netd    : networkCreatePhysical(8777, 2) <0.06ms>
+05-01 14:19:45.966   528  1038 I netd    : createNetworkCache(8777) <0.09ms>
+05-01 14:19:45.969   528  1038 I netd    : networkAddInterface(8777, "ccmni0") <2.58ms>
+05-01 14:19:45.970   528  1038 I netd    : interfaceSetMtu("ccmni0", 1280) <0.18ms>
+05-01 14:19:45.971   528  1038 E Netd    : Error adding route ::/0 -> (null) ccmni0 to table 1002: File exists
+05-01 14:19:45.971   528  1038 I netd    : networkAddRoute(8777, "ccmni0", "::/0", "") <0.39ms>
+05-01 14:19:45.972   889   900 I [BIP]   :  [BIP NL] IPv6: *:*:*:*:*:*:*:*
+05-01 14:19:45.972   528  1038 I netd    : networkAddRoute(8777, "ccmni0", "2401:4900:427a:73d7::/64", "") <0.37ms>
+05-01 14:19:45.973   528  1038 I netd    : DnsResolverService::setResolverConfiguration(8777, [], [], 1800, 25, 8, 64, 0, 0, "", []) -> (0) (0.08ms)
+05-01 14:19:45.973   528  1038 I netd    : setResolverConfiguration() <0.26ms>
+05-01 14:19:45.975   528  1038 I netd    : trafficSwapActiveStatsMap() <0.27ms>
+05-01 14:19:45.978   528  1038 I netd    : tetherGetStats() <1.19ms>
+05-01 14:19:45.987  1826  1859 I VT      : [JNI] Entering UpdateNetworkTable
+05-01 14:19:45.988   659  1006 I VT      : [SRV] [OPERATION][NETWORK_ID=8777] Add if_name:ccmni0
+05-01 14:19:45.988   659  1006 E VT      : [SRV]   [MAP OPERATION] [ID=8777] check (entry not exist)
+05-01 14:19:45.988   659  1006 I VT      : [SRV]   [MAP OPERATION]  [ID=8777] AddNetworkInfoRecord ifname=ccmni0
+05-01 14:19:45.988  1826  1859 I VT      : [JNI] Leaving UpdateNetworkTable
+05-01 14:19:45.991   528  1038 I netd    : trafficSwapActiveStatsMap() <0.42ms>
+05-01 14:19:45.994   528  1038 I netd    : tetherGetStats() <1.29ms>
+05-01 14:19:46.000  1826  1859 I VT      : [JNI] Entering UpdateNetworkTable
+05-01 14:19:46.001   659  1006 I VT      : [SRV] [OPERATION][NETWORK_ID=8777] Remove
+05-01 14:19:46.001   659  1006 E VT      : [SRV]   [MAP OPERATION] [ID=8777] checkNetworkInfRecordExist (entry exist)
+05-01 14:19:46.001   659  1006 I VT      : [SRV]   [MAP OPERATION] [ID=8777] RemoveNetworkInfoRecord (Success)
+05-01 14:19:46.001  1826  1859 I VT      : [JNI] Leaving UpdateNetworkTable
+05-01 14:19:46.004   528  1038 W Netd    : Flushing routes: No such process
+05-01 14:19:46.004   889   900 I [BIP]   :  [BIP NL] IPv6: *:*:*:*:*:*:*:*
+05-01 14:19:46.004   528  1038 I netd    : networkDestroy(8777) <3.35ms>
+05-01 14:19:46.005   528  1038 I netd    : destroyNetworkCache(8777) <0.11ms>
+05-01 14:19:46.888   699   699 I thermal_repeater: [recvMdThermalInfo] ret=29, strLen=127,  3, 44, -50, -28407, 32767, 0
+05-01 14:19:47.007  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:49.393 14614 14614 I ADB_SERVICES: for fd 28, revents = 2011
+05-01 14:19:49.640  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:49.641  3626  3682 W System  : ClassLoader referenced unknown path: system/framework/mediatek-cta.jar
+05-01 14:19:49.643  3626  3682 I System.out: [socket] e:java.lang.ClassNotFoundException: com.mediatek.cta.CtaUtils
+05-01 14:19:49.695   528  1038 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=1393
+05-01 14:19:49.696   528  1038 I netd    : setProcSysNet(4, 2, "wlan0", "retrans_time_ms", "750") <1.03ms>
+05-01 14:19:49.697   528  1038 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=1393
+05-01 14:19:49.698   528  1038 I netd    : setProcSysNet(4, 2, "wlan0", "ucast_solicit", "10") <0.86ms>
+05-01 14:19:49.699   528  1038 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=1393
+05-01 14:19:49.699   528  1038 I netd    : setProcSysNet(6, 2, "wlan0", "retrans_time_ms", "750") <0.81ms>
+05-01 14:19:49.700   528  1038 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=1393
+05-01 14:19:49.701   528  1038 I netd    : setProcSysNet(6, 2, "wlan0", "ucast_solicit", "10") <0.80ms>
+05-01 14:19:50.017  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:50.906  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:50.906  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:51.146  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=xhlYWk2MXWiFSDXOSuFSsQBXe_pV0Q_XKVFSY7kVEXI-1777625393.9538443-1.0.1.1-HxM602JpTOa34xFJs_yM9D5IBeJf4oDB0QrxhTzOGs0yyc4vd2GLor9MNHFQ7zq9nPFnExvK.QqMCRFjAjC1m9qz4C15Hav8wbbaR179TGPP8Cun0ReFF4pdim5JvorT; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:54 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:51.151  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=xhlYWk2MXWiFSDXOSuFSsQBXe_pV0Q_XKVFSY7kVEXI-1777625393.9538443-1.0.1.1-HxM602JpTOa34xFJs_yM9D5IBeJf4oDB0QrxhTzOGs0yyc4vd2GLor9MNHFQ7zq9nPFnExvK.QqMCRFjAjC1m9qz4C15Hav8wbbaR179TGPP8Cun0ReFF4pdim5JvorT; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:54 GMT' at: 'https://supabase.co'
+05-01 14:19:51.163  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:51.165  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:51.165  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:51.165  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:51.169  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:51.192  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:51.193  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:51.640  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=g6qHg1WSboYOTsjJelewfptORdH2.rAYUsW1Wj7ubzg-1777625394.247325-1.0.1.1-6oqqqbJZKAG8WdYlshXz1gfRv3iJv2Tz3T3BKBCKVKJUSDBtViZd91OPCLgxnSQ0K4xFPyMUQJzbt.TpS1t4z8jWYQDroFboiB9fglmeBNnL7R5as0yELgAzPa21g17g; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:54 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:51.644  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=g6qHg1WSboYOTsjJelewfptORdH2.rAYUsW1Wj7ubzg-1777625394.247325-1.0.1.1-6oqqqbJZKAG8WdYlshXz1gfRv3iJv2Tz3T3BKBCKVKJUSDBtViZd91OPCLgxnSQ0K4xFPyMUQJzbt.TpS1t4z8jWYQDroFboiB9fglmeBNnL7R5as0yELgAzPa21g17g; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:54 GMT' at: 'https://supabase.co'
+05-01 14:19:51.660  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.7dd828d2f2688be1ee0149a965e9c349ddc05ee0f8594f88cad1d219ba28367f&select=name,trust_score&limit=1'
+05-01 14:19:51.662  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:51.663  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:51.663  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:51.663  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:51.664  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:51.873  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=qGBt62LuEshvC7CpNojmECykyYv2j4Q5mesZbIymR6c-1777625394.67415-1.0.1.1-3q9aVjOISEgpOs3IN5THw0OXlm2kl.KBCuVGwzan9O5lwLq8ZEXL3Tve7k542HjYrLTkjbDHK684CKD0P0xGsJUaAmYSV7birRB1QFvQ6faC6p8iV8p1vhwOlWSKg268; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:54 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.7dd828d2f2688be1ee0149a965e9c349ddc05ee0f8594f88cad1d219ba28367f&select=name,trust_score&limit=1'
+05-01 14:19:51.876  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=qGBt62LuEshvC7CpNojmECykyYv2j4Q5mesZbIymR6c-1777625394.67415-1.0.1.1-3q9aVjOISEgpOs3IN5THw0OXlm2kl.KBCuVGwzan9O5lwLq8ZEXL3Tve7k542HjYrLTkjbDHK684CKD0P0xGsJUaAmYSV7birRB1QFvQ6faC6p8iV8p1vhwOlWSKg268; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:54 GMT' at: 'https://supabase.co'
+05-01 14:19:51.922  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:51.924  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:51.924  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:51.924  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:51.935  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:51.971  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:51.972  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:52.119  1305  1662 E Tile.FlashlightTile: onBatteryLevelChanged: 100 mState.value false
+05-01 14:19:52.286  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=cwmkacW9JpQAxTOQ._0sYJGZbcChgEs2eyKFVaHVzjw-1777625395.0269227-1.0.1.1-yFV0A79jhKkoeoMuktiTJ7obZNYZuFB4hCy7JZ.GZbcC2QYyEejJzCDe.ExybpsJpCrW5HTERTKAj3ayF75sIudzNqxUfVSdXznLR3DLCHDMwJ5.blePqQhMKUk75NUc; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:55 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:52.291  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=cwmkacW9JpQAxTOQ._0sYJGZbcChgEs2eyKFVaHVzjw-1777625395.0269227-1.0.1.1-yFV0A79jhKkoeoMuktiTJ7obZNYZuFB4hCy7JZ.GZbcC2QYyEejJzCDe.ExybpsJpCrW5HTERTKAj3ayF75sIudzNqxUfVSdXznLR3DLCHDMwJ5.blePqQhMKUk75NUc; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:55 GMT' at: 'https://supabase.co'
+05-01 14:19:52.302  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:52.304  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:52.304  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:52.304  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:52.306  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:52.331  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:52.331  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:52.607  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=onZb06w.UkGHHwKZorol1.CaKxeJsBj32I.zLz0O9KY-1777625395.3837047-1.0.1.1-An549Qz4HrqnuDAkluChr9Qe.6A1b2zNwyrnqQtKWBDk6guoG2Yt4.BH4vNZLadpMapoFUN7qGa8sM9igVNe1G1ztBOfsS6aQwipy.1EYjFNQJ1bEE63AORoZQUMmmWs; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:55 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:52.612  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=onZb06w.UkGHHwKZorol1.CaKxeJsBj32I.zLz0O9KY-1777625395.3837047-1.0.1.1-An549Qz4HrqnuDAkluChr9Qe.6A1b2zNwyrnqQtKWBDk6guoG2Yt4.BH4vNZLadpMapoFUN7qGa8sM9igVNe1G1ztBOfsS6aQwipy.1EYjFNQJ1bEE63AORoZQUMmmWs; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:55 GMT' at: 'https://supabase.co'
+05-01 14:19:52.624  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.7dd828d2f2688be1ee0149a965e9c349ddc05ee0f8594f88cad1d219ba28367f&select=name,trust_score&limit=1'
+05-01 14:19:52.627  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:52.627  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:52.627  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:52.628  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:52.628  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:52.927  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=GKC61mOJWrziz3VKoAHNS5zu3unFnJfIoD_bUNKXq6o-1777625395.6405296-1.0.1.1-wrIkaq_l2RF.FkcrKhReiBIx1FQzR3jUBgITNcQpL_iYlPz8BgxnPUIp5lP2xNUAToAgdz.c6fEXZhZQXICuNroTP08wKHifdoKnChn3._ZQXZIbK9WDQCqnzVeNEjM3; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:55 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.7dd828d2f2688be1ee0149a965e9c349ddc05ee0f8594f88cad1d219ba28367f&select=name,trust_score&limit=1'
+05-01 14:19:52.932  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=GKC61mOJWrziz3VKoAHNS5zu3unFnJfIoD_bUNKXq6o-1777625395.6405296-1.0.1.1-wrIkaq_l2RF.FkcrKhReiBIx1FQzR3jUBgITNcQpL_iYlPz8BgxnPUIp5lP2xNUAToAgdz.c6fEXZhZQXICuNroTP08wKHifdoKnChn3._ZQXZIbK9WDQCqnzVeNEjM3; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:55 GMT' at: 'https://supabase.co'
+05-01 14:19:52.978  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:52.980  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:52.980  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:52.980  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:52.982  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:53.007  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:53.008  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:53.027  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:53.235  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=bwgB9ChmEm1U_RmNmf4SN9UINTYdZsS27KDRNyeMu6Y-1777625396.0609639-1.0.1.1-GvHmhxhQ7He0PtK3MsrHH702tXydERQvxJ_xTKGEIMho_XKpoXuJEQuwWVZfQ5tgnhowF_gXD7JIewZV6Mn31HvA8QISgFS_KIzXkx6ll9Hy1orXetIPGZ4kHSbvSP1E; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:56 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:53.239  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=bwgB9ChmEm1U_RmNmf4SN9UINTYdZsS27KDRNyeMu6Y-1777625396.0609639-1.0.1.1-GvHmhxhQ7He0PtK3MsrHH702tXydERQvxJ_xTKGEIMho_XKpoXuJEQuwWVZfQ5tgnhowF_gXD7JIewZV6Mn31HvA8QISgFS_KIzXkx6ll9Hy1orXetIPGZ4kHSbvSP1E; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:56 GMT' at: 'https://supabase.co'
+05-01 14:19:53.249  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:53.251  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:53.251  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:53.252  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:53.253  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:53.277  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:53.278  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:53.603  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=Im8.cRMpjdQke83gB_UALPWF5L8N646RwQbN6MU45Vo-1777625396.3301272-1.0.1.1-T1VyDJGiuipSyYRTCtlrytS56A7HuPhfC160c.udiH5y76MT6Z_jADigxzUm75unu_iCaVHHga0e2JMd56sMqXdtC2SqRErsNkH6cZeJuUQQAztoCVQOepio1LqpLEMd; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:56 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:53.606  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=Im8.cRMpjdQke83gB_UALPWF5L8N646RwQbN6MU45Vo-1777625396.3301272-1.0.1.1-T1VyDJGiuipSyYRTCtlrytS56A7HuPhfC160c.udiH5y76MT6Z_jADigxzUm75unu_iCaVHHga0e2JMd56sMqXdtC2SqRErsNkH6cZeJuUQQAztoCVQOepio1LqpLEMd; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:56 GMT' at: 'https://supabase.co'
+05-01 14:19:53.617  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.7dd828d2f2688be1ee0149a965e9c349ddc05ee0f8594f88cad1d219ba28367f&select=name,trust_score&limit=1'
+05-01 14:19:53.619  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:53.619  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:53.619  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:53.620  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:53.620  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:53.886  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=HsLDsjizp6EHzKss.wf4ua8VPlCq_JiBu1d.Dkb5NSo-1777625396.6337137-1.0.1.1-CI3ZM7zILjNypOPDxpNN2Oi4JufDZLJsSd63s__qUOEpJTNgc4oiRl9Ol4lDaWnqU.VDf0e8OlIiTgh68vFIjiHXkmmZoHnz.fDctm8VE5CMaOIhijgETZgtnYB4Bzkn; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:56 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.7dd828d2f2688be1ee0149a965e9c349ddc05ee0f8594f88cad1d219ba28367f&select=name,trust_score&limit=1'
+05-01 14:19:53.890  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=HsLDsjizp6EHzKss.wf4ua8VPlCq_JiBu1d.Dkb5NSo-1777625396.6337137-1.0.1.1-CI3ZM7zILjNypOPDxpNN2Oi4JufDZLJsSd63s__qUOEpJTNgc4oiRl9Ol4lDaWnqU.VDf0e8OlIiTgh68vFIjiHXkmmZoHnz.fDctm8VE5CMaOIhijgETZgtnYB4Bzkn; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:56 GMT' at: 'https://supabase.co'
+05-01 14:19:53.932  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:53.933  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:53.934  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:53.934  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:53.938  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:53.962  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:53.963  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:54.264  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=kYMhZApMQw5uXRMhmle6PW4DZvI7DxfRQfqRe4LjQUU-1777625397.021409-1.0.1.1-iv4.gyai4FKcbmJEX.PVyPSG6rNKzsNLbGFAmMdSNggYJzZaM8UqN5mCMwFPi2Nt9NSR.J2eJyr_n5a6N.9Z4kyn0WZdPnXXdv1w7QovZdiMLyoryYljpYvS8BO96nUi; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:57 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:54.269  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=kYMhZApMQw5uXRMhmle6PW4DZvI7DxfRQfqRe4LjQUU-1777625397.021409-1.0.1.1-iv4.gyai4FKcbmJEX.PVyPSG6rNKzsNLbGFAmMdSNggYJzZaM8UqN5mCMwFPi2Nt9NSR.J2eJyr_n5a6N.9Z4kyn0WZdPnXXdv1w7QovZdiMLyoryYljpYvS8BO96nUi; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:57 GMT' at: 'https://supabase.co'
+05-01 14:19:54.279  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:54.281  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:54.281  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:54.281  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:54.283  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:54.318  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:54.318  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:54.374  3626  3703 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-01 14:19:54.374  3626  3703 W com.chatr.app: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-01 14:19:54.375  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-01 14:19:54.376  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-01 14:19:54.376  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-01 14:19:54.376  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-01 14:19:54.376  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-01 14:19:54.376  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-01 14:19:54.376  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-01 14:19:54.378  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.380  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:54.381  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-01 14:19:54.382  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:54.382  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-01 14:19:54.437  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.437  3626  3703 I chatty  : uid=10248(com.chatr.app) ThreadPoolForeg identical 1 line
+05-01 14:19:54.438  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.439  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:54.444  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.448  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-01 14:19:54.464  3626  3781 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-01 14:19:54.466  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:54.467  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.468  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-01 14:19:54.468  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-01 14:19:54.515  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.516  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.516  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:54.519  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:54.519  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:54.520  3626  3781 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-01 14:19:54.521  3626  3781 E FilePhenotypeFlags: Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-01 14:19:54.727  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=WiruaAIekkuEX_iN5tTKHlzLpXXKYL4bPe28AyJ8YTg-1777625397.4873688-1.0.1.1-CY0NERUJIdtKKjQlMZJ3f7FoAug79NhT_MI2bDNSbbPH3AS9Zw_7U9iOLDFQ3ZggcW0LOF8Xsf.fulzoxSOmOcM_a997RNVZ1xnI.OMRzqX47ecweM4jixKBOc8xqI_.; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:57 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:54.731  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=WiruaAIekkuEX_iN5tTKHlzLpXXKYL4bPe28AyJ8YTg-1777625397.4873688-1.0.1.1-CY0NERUJIdtKKjQlMZJ3f7FoAug79NhT_MI2bDNSbbPH3AS9Zw_7U9iOLDFQ3ZggcW0LOF8Xsf.fulzoxSOmOcM_a997RNVZ1xnI.OMRzqX47ecweM4jixKBOc8xqI_.; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:57 GMT' at: 'https://supabase.co'
+05-01 14:19:54.744  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:54.746  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:54.746  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:54.746  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:54.746  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:54.747  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:55.121  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=Sz5VUJ_y2d53tAMV9BuwHGZ0DCCuBtD5onm2eh6y_m0-1777625397.7582896-1.0.1.1-U.WabCjrcSdZWT2O9wqIDiOypEQgUb1Oc63hNP6R5akPo0lxTIKvCVdBDkR_jr_bM378xrK2fSDNC57Z5OR32bow9cPVq3hIYdbLRhVqmekyq7WnxmzaLm2tm8v.awDc; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:57 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:55.125  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=Sz5VUJ_y2d53tAMV9BuwHGZ0DCCuBtD5onm2eh6y_m0-1777625397.7582896-1.0.1.1-U.WabCjrcSdZWT2O9wqIDiOypEQgUb1Oc63hNP6R5akPo0lxTIKvCVdBDkR_jr_bM378xrK2fSDNC57Z5OR32bow9cPVq3hIYdbLRhVqmekyq7WnxmzaLm2tm8v.awDc; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:57 GMT' at: 'https://supabase.co'
+05-01 14:19:55.168  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:55.170  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:55.170  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:55.170  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:55.173  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:55.197  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:55.198  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:55.436  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=TLbWav8jupZ36A_6oO.mtkraNc_uoIaqAkAcU3G0HVY-1777625398.251167-1.0.1.1-W_fNDNxqMJv9NRT5gQpUcl.7GkFMD4Pkos.UyfVuGxLFkqosvxJO9Cb0_7nyp2Bg8wPbFXbM8WqkozyL2bKpp6T47.JsbhxAMFX3MA7DDiit9sDf3Qr2viNjelLEwIo1; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:58 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:55.441  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=TLbWav8jupZ36A_6oO.mtkraNc_uoIaqAkAcU3G0HVY-1777625398.251167-1.0.1.1-W_fNDNxqMJv9NRT5gQpUcl.7GkFMD4Pkos.UyfVuGxLFkqosvxJO9Cb0_7nyp2Bg8wPbFXbM8WqkozyL2bKpp6T47.JsbhxAMFX3MA7DDiit9sDf3Qr2viNjelLEwIo1; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:58 GMT' at: 'https://supabase.co'
+05-01 14:19:55.451  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:55.453  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:55.453  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:55.453  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:55.455  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:55.481  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:55.482  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:55.518   546   546 W IMGMemtrackHAL: hal_get_memory: memtrack cache rebuild was required
+05-01 14:19:55.804  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=KzwD8YxdNJrhhLtra5vzCe35ZP_Oh.z92NrrgeorePk-1777625398.5333261-1.0.1.1-CG0ep53OFP9keNorryJwB7VWi5pdGk4Rhdja42Q3U6UDlWtCHgri5v0gkCd8UCLoOenWhzilJR2kRkgFllQ7gszFNcL.hhQFhGhxh8h.joIRHDhTMTaTLlC7jFEtFTZs; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:58 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:55.808  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=KzwD8YxdNJrhhLtra5vzCe35ZP_Oh.z92NrrgeorePk-1777625398.5333261-1.0.1.1-CG0ep53OFP9keNorryJwB7VWi5pdGk4Rhdja42Q3U6UDlWtCHgri5v0gkCd8UCLoOenWhzilJR2kRkgFllQ7gszFNcL.hhQFhGhxh8h.joIRHDhTMTaTLlC7jFEtFTZs; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:58 GMT' at: 'https://supabase.co'
+05-01 14:19:55.817  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:55.819  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:55.820  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:55.820  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:55.820  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:55.821  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:55.840   543   613 I hwcomposer: [HWC] (0) displayGetActiveConfig config:0  
+05-01 14:19:55.851   582  1649 I BufferQueueProducer: [StatusBar#0](this:0x733653c000,id:5,api:1,p:1305,c:582) queueBuffer: fps=0.55 dur=16380.75 max=16249.18 min=12.57
+05-01 14:19:55.863   543   613 I hwcomposer: [HWCDisplay] [Display_2 (type:2)] fps:1.055070,dur:15164.86,max:14914.37,min:16.27  
+05-01 14:19:55.866   543   613 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:1.055033,dur:15165.40,max:14915.16,min:16.02  
+05-01 14:19:55.922   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786979): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:55.926   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:55.926   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:55.926   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:55.998   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786980): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:56.004   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.004   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.004   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.035  1138  1257 E WifiVendorHal: getWifiLinkLayerStats_1_3_Internal(l.927) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+05-01 14:19:56.039  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=63gSqk2dMsM_ePp9oKayPnQnZuri8cYLvZhllHSrBww-1777625398.8312013-1.0.1.1-eX.E3xJuxDVvrqHw0TukFk_AL98rgD4WBdGUqYwJMyHMFgb3kTq8J9yvnVOxFH2jy68QSHrzTRjd1e1EhQULMcEPR0xVKNwZnBHFTZuiYefGogUN3W7tdWA4mjZFIpvu; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:56.043  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=63gSqk2dMsM_ePp9oKayPnQnZuri8cYLvZhllHSrBww-1777625398.8312013-1.0.1.1-eX.E3xJuxDVvrqHw0TukFk_AL98rgD4WBdGUqYwJMyHMFgb3kTq8J9yvnVOxFH2jy68QSHrzTRjd1e1EhQULMcEPR0xVKNwZnBHFTZuiYefGogUN3W7tdWA4mjZFIpvu; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://supabase.co'
+05-01 14:19:56.079  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:56.081  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:56.081  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:56.081  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:56.087  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:56.090   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786981): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:56.095   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.095   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.095   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.105   528  1038 I netd    : networkCreatePhysical(8778, 2) <0.05ms>
+05-01 14:19:56.106   528  1038 I netd    : createNetworkCache(8778) <0.09ms>
+05-01 14:19:56.109   528  1038 I netd    : networkAddInterface(8778, "ccmni0") <2.61ms>
+05-01 14:19:56.110   528  1038 I netd    : interfaceSetMtu("ccmni0", 1280) <0.15ms>
+05-01 14:19:56.111   528  1038 E Netd    : Error adding route ::/0 -> (null) ccmni0 to table 1002: File exists
+05-01 14:19:56.111   528  1038 I netd    : networkAddRoute(8778, "ccmni0", "::/0", "") <0.44ms>
+05-01 14:19:56.112   889   900 I [BIP]   :  [BIP NL] IPv6: *:*:*:*:*:*:*:*
+05-01 14:19:56.112   528  1038 I netd    : networkAddRoute(8778, "ccmni0", "2401:4900:427a:73d7::/64", "") <0.47ms>
+05-01 14:19:56.113   528  1038 I netd    : DnsResolverService::setResolverConfiguration(8778, [], [], 1800, 25, 8, 64, 0, 0, "", []) -> (0) (0.08ms)
+05-01 14:19:56.114   528  1038 I netd    : setResolverConfiguration() <0.36ms>
+05-01 14:19:56.115  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:56.115  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:56.116   528  1038 I netd    : trafficSwapActiveStatsMap() <0.43ms>
+05-01 14:19:56.119   528  1038 I netd    : tetherGetStats() <1.21ms>
+05-01 14:19:56.120  3626  3641 W System  : A resource failed to call end. 
+05-01 14:19:56.121  3626  3641 I chatty  : uid=10248(com.chatr.app) FinalizerDaemon identical 8 lines
+05-01 14:19:56.121  3626  3641 W System  : A resource failed to call end. 
+05-01 14:19:56.128  1826  1859 I VT      : [JNI] Entering UpdateNetworkTable
+05-01 14:19:56.128   659  1006 I VT      : [SRV] [OPERATION][NETWORK_ID=8778] Add if_name:ccmni0
+05-01 14:19:56.128   659  1006 E VT      : [SRV]   [MAP OPERATION] [ID=8778] check (entry not exist)
+05-01 14:19:56.128   659  1006 I VT      : [SRV]   [MAP OPERATION]  [ID=8778] AddNetworkInfoRecord ifname=ccmni0
+05-01 14:19:56.128  1826  1859 I VT      : [JNI] Leaving UpdateNetworkTable
+05-01 14:19:56.131   528  1038 I netd    : trafficSwapActiveStatsMap() <0.24ms>
+05-01 14:19:56.133   528  1038 I netd    : tetherGetStats() <1.14ms>
+05-01 14:19:56.139  1826  1859 I VT      : [JNI] Entering UpdateNetworkTable
+05-01 14:19:56.140   659  1006 I VT      : [SRV] [OPERATION][NETWORK_ID=8778] Remove
+05-01 14:19:56.140   659  1006 E VT      : [SRV]   [MAP OPERATION] [ID=8778] checkNetworkInfRecordExist (entry exist)
+05-01 14:19:56.140   659  1006 I VT      : [SRV]   [MAP OPERATION] [ID=8778] RemoveNetworkInfoRecord (Success)
+05-01 14:19:56.140  1826  1859 I VT      : [JNI] Leaving UpdateNetworkTable
+05-01 14:19:56.142   528  1038 W Netd    : Flushing routes: No such process
+05-01 14:19:56.142   889   900 I [BIP]   :  [BIP NL] IPv6: *:*:*:*:*:*:*:*
+05-01 14:19:56.142   528  1038 I netd    : networkDestroy(8778) <2.71ms>
+05-01 14:19:56.143   528  1038 I netd    : destroyNetworkCache(8778) <0.10ms>
+05-01 14:19:56.194   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786982): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:56.198   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.198   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.198   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.306   735   735 W oid.vp8.encoder: type=1400 audit(0.0:786983): avc: denied { read } for name="ged" dev="proc" ino=4026532212 scontext=u:r:mediaswcodec:s0 tcontext=u:object_r:proc_ged:s0 tclass=file permissive=0
+05-01 14:19:56.310   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.310   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.310   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.352  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=cIN98KMpMIv7rvTNuAWyzoEykBhExotEDlGGpoP4Y9o-1777625399.1655712-1.0.1.1-XahilL4ip7HxR5QQs_r5jDJOMqOOm8iAiFNo1uyJzJfhqvCIzO3r9LBIFpDMAEBMlIDypBSrNs9mp0Cri0jVgSOunVOUlqk6bNSSbrKM_oK.eKKNHXDcVsiw.UOZQyjv; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:56.355  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=cIN98KMpMIv7rvTNuAWyzoEykBhExotEDlGGpoP4Y9o-1777625399.1655712-1.0.1.1-XahilL4ip7HxR5QQs_r5jDJOMqOOm8iAiFNo1uyJzJfhqvCIzO3r9LBIFpDMAEBMlIDypBSrNs9mp0Cri0jVgSOunVOUlqk6bNSSbrKM_oK.eKKNHXDcVsiw.UOZQyjv; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://supabase.co'
+05-01 14:19:56.364  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:56.366  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:56.366  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:56.366  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:56.373  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:56.396  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:56.396  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:56.423   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.423   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.423   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.514   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.514   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.514   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.608   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.608   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.608   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.690  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=D5BBsBIblq2_8_cNiXY94QfJ9dTYqrd6PlBxh9GQjfw-1777625399.466163-1.0.1.1-21M7kW3ZIDvvGbw6BGC4Two4KKPh9fihsgjejVMJow7_pNk0df_ynPEwtZ_cT4GW8axW9jrAYAy5hR9fAJmTrZacajbh.DaaPbdceskQM6tgqQN06XWQMsB3v1KDYL79; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:56.693  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=D5BBsBIblq2_8_cNiXY94QfJ9dTYqrd6PlBxh9GQjfw-1777625399.466163-1.0.1.1-21M7kW3ZIDvvGbw6BGC4Two4KKPh9fihsgjejVMJow7_pNk0df_ynPEwtZ_cT4GW8axW9jrAYAy5hR9fAJmTrZacajbh.DaaPbdceskQM6tgqQN06XWQMsB3v1KDYL79; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://supabase.co'
+05-01 14:19:56.704  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:56.707  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:56.707  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:56.707  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:56.707  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:56.708  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:56.708   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.708   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.708   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.808   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.808   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.808   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.905   699   699 I thermal_repeater: [recvMdThermalInfo] ret=29, strLen=127,  3, 44, -50, -28407, 32767, 0
+05-01 14:19:56.911   735  3003 E GED     : failed to open /proc/ged
+05-01 14:19:56.911   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:30cannot open ged_bridge, please check permission for /proc/ged
+05-01 14:19:56.911   735  3003 E GED     : [GE]vendor/mediatek/proprietary/hardware/gpu_ext/ged/lib/ged_ge.cpp:78ged_bridge is not init
+05-01 14:19:56.926  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=jTD5YCLczVOjMkJFm1j7hu8URp23rcHmdWVXF8Q_sLM-1777625399.717807-1.0.1.1-N2jXfQdQYU4jUqPHViRpwpnmMQxn6XmK.MjT9kcrFGsQNjfTFpUPDYPSzAqUvs0NdR7XPfNQRH3Sd8ajNT8SX6nrMm7ToTxgxd7KsxivqMNZI9CCIzjY5DlDwb8OZz5l; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:56.928  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=jTD5YCLczVOjMkJFm1j7hu8URp23rcHmdWVXF8Q_sLM-1777625399.717807-1.0.1.1-N2jXfQdQYU4jUqPHViRpwpnmMQxn6XmK.MjT9kcrFGsQNjfTFpUPDYPSzAqUvs0NdR7XPfNQRH3Sd8ajNT8SX6nrMm7ToTxgxd7KsxivqMNZI9CCIzjY5DlDwb8OZz5l; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:19:59 GMT' at: 'https://supabase.co'
+05-01 14:19:56.963  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:56.965  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:56.965  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:56.965  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:56.967  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:56.990  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:56.991  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:57.312  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=NRL9v3fCVpl_zrP.EGqMwuUlP.qcUJOIuG1CBebWzzA-1777625400.046753-1.0.1.1-65m5hmIJdEnnhxubk30rGpt1LQ24nTnMvjXc1wsw.HT71A8HMGfuN_gqZw9WjovPQGkN4t95B8Jbp7VL0FKzU7pxCjib829MSfyixe4AB3XT2NhWeUGZuyEqS8HvMSdR; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:00 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:57.316  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=NRL9v3fCVpl_zrP.EGqMwuUlP.qcUJOIuG1CBebWzzA-1777625400.046753-1.0.1.1-65m5hmIJdEnnhxubk30rGpt1LQ24nTnMvjXc1wsw.HT71A8HMGfuN_gqZw9WjovPQGkN4t95B8Jbp7VL0FKzU7pxCjib829MSfyixe4AB3XT2NhWeUGZuyEqS8HvMSdR; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:00 GMT' at: 'https://supabase.co'
+05-01 14:19:57.326  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:57.329  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:57.329  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:57.329  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:57.331  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:57.354  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:57.355  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:57.476  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.477  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-01 14:19:57.482 14614 14614 I ADB_SERVICES: service_to_fd shell,v2,raw:screencap -p /sdcard/chatr_index_start_repro.png
+05-01 14:19:57.503  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.504  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.505  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:57.506  3626  3703 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.508  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.508  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.509  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:57.510  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-01 14:19:57.510  3626  3720 W com.chatr.app: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-01 14:19:57.610  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=h6SataudGPt7uthlW7fBqz97kq9AB15y_AH61PvHTF8-1777625400.40618-1.0.1.1-xXCt2ojhD4j2zLar0fOGrwTjUaYHBKq4EJSt8KZZdMAHjSPuf3pDAmOjifCZQMXnAD5WIUp3JryrDOh2LkbBTdy3XYhT8pEt4NRBaqo15hPxzX1gHUb2wHiezlhBfZlu; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:00 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:57.614  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=h6SataudGPt7uthlW7fBqz97kq9AB15y_AH61PvHTF8-1777625400.40618-1.0.1.1-xXCt2ojhD4j2zLar0fOGrwTjUaYHBKq4EJSt8KZZdMAHjSPuf3pDAmOjifCZQMXnAD5WIUp3JryrDOh2LkbBTdy3XYhT8pEt4NRBaqo15hPxzX1gHUb2wHiezlhBfZlu; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:00 GMT' at: 'https://supabase.co'
+05-01 14:19:57.623  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:57.625  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:57.625  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:57.625  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:57.626  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:57.626  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:57.686   582   582 I SurfaceFlinger: screenshot (com.chatr.app/com.chatr.app.MainActivity#0)
+05-01 14:19:57.686   582   582 I SurfaceFlinger: screenshot (StatusBar#0)
+05-01 14:19:57.686   582   582 I SurfaceFlinger: screenshot (NavigationBar0#0)
+05-01 14:19:57.692   404   404 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+05-01 14:19:57.692  3792  3792 W Gralloc3: mapper 3.x is not supported
+05-01 14:19:57.710  3792  3792 W screencap: type=1400 audit(0.0:786990): avc: denied { search } for name="clients" dev="debugfs" ino=6948 scontext=u:r:shell:s0 tcontext=u:object_r:debugfs_ion:s0 tclass=dir permissive=0
+05-01 14:19:57.714  3792  3792 E ion     : ioctl c0044901 failed with code -1: Invalid argument
+05-01 14:19:57.843  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=f3b9.t6XJk.NewRD88wI5SMuD1ph.cNpIYuQRF.Z_BU-1777625400.6358273-1.0.1.1-fphucL.rzHpKgwEbhsICbJ6XieJKgPal62kZ_6LpWmhK7XfdnVLqwhHpzbHmpx.c3R38W9J3YLoENLIJWsm9tI77f0oj2g9hgB6bhbynPoPuBTk9_OTVC9QHccbXbvva; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:00 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/contacts_hash?hashed_number=eq.f85b1b513db267f19bc63a5171c4527cf3b4e344709725d77109648d33293e0a&select=name,trust_score&limit=1'
+05-01 14:19:57.846  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=f3b9.t6XJk.NewRD88wI5SMuD1ph.cNpIYuQRF.Z_BU-1777625400.6358273-1.0.1.1-fphucL.rzHpKgwEbhsICbJ6XieJKgPal62kZ_6LpWmhK7XfdnVLqwhHpzbHmpx.c3R38W9J3YLoENLIJWsm9tI77f0oj2g9hgB6bhbynPoPuBTk9_OTVC9QHccbXbvva; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:00 GMT' at: 'https://supabase.co'
+05-01 14:19:57.879  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:57.881  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:57.881  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:57.881  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:57.883  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:58.026  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:58.027  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:58.041 19518  3801 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/chatr_index_start_repro.png flg=0x1400010 cmp=com.android.providers.media/.MediaService }
+05-01 14:19:58.041  3792  3792 E IMGSRV  : :0: GrallocUnregisterBuffer: Cannot free a locked buffer (ID=490615)
+05-01 14:19:58.041  3792  3792 E Gralloc2: freeBuffer(0x7b64060380) failed with 2
+05-01 14:19:58.043  3792  3792 W RefBase : CallStack::getCurrentInternal not linked, returning null
+05-01 14:19:58.043  3792  3792 W RefBase : CallStack::logStackInternal not linked
+05-01 14:19:58.051 14614  3793 I ADB_SERVICES: post waitpid (pid=3792) status=0000
+05-01 14:19:58.052 14614 14614 I ADB_SERVICES: for fd 36, revents = 2011
+05-01 14:19:58.052 14614 14614 I ADB_SERVICES: for fd 36, revents = 2011
+05-01 14:19:58.069 19518  3801 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+05-01 14:19:58.069 19518  3801 W ExifInterface: java.io.IOException: Invalid byte order: ffff8950
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:3128)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.media.ExifInterface.isOrfFormat(ExifInterface.java:2443)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.media.ExifInterface.getMimeType(ExifInterface.java:2321)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:1755)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1449)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:729)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:502)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.access$500(ModernMediaScanner.java:118)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:406)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:207)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:267)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:245)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:174)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.MediaService.onScanFile(MediaService.java:177)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at com.android.providers.media.MediaService.onHandleIntent(MediaService.java:103)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:78)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.os.Looper.loop(Looper.java:214)
+05-01 14:19:58.069 19518  3801 W ExifInterface: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+05-01 14:19:58.109 19518  3801 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/chatr_index_start_repro.png flg=0x1400010 cmp=com.android.providers.media/.MediaService }
+05-01 14:19:58.114 14614 14614 I ADB_SERVICES: service_to_fd sync:
+05-01 14:19:58.121 14614  3802 I ADB_SERVICES: sync: stat_v2('/sdcard/chatr_index_start_repro.png')
+05-01 14:19:58.125 14614  3802 I ADB_SERVICES: sync: recv('/sdcard/chatr_index_start_repro.png')
+05-01 14:19:58.130 14614  3802 I ADB_SERVICES: sync: quit('')
+05-01 14:19:58.130 14614 14614 I ADB_SERVICES: for fd 16, revents = 2011
+05-01 14:19:58.130 14614 14614 I ADB_SERVICES: for fd 16, revents = 2011
+05-01 14:19:58.184  1921  3561 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+05-01 14:19:58.189  1921  3419 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+05-01 14:19:58.254  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=eg1aOvQS7Sa8I0ry6HsyoVjPPiOnHJbK1BlQyEN36sc-1777625401.0813117-1.0.1.1-qIPJQj1fDV8cjNmVo4jeo8AcZXtp92iP83BxxdgoExgbLDmjuo.fil9bqkoN4J4D.Z.8_blg5WzySI8Mz1wog5bPQmK8_VvwY2L1GQgYrk4qeg4NEgrtjAu8Y5P1PvXR; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:01 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:58.258  3626  3682 I CapacitorCookies: Setting cookie '__cf_bm=eg1aOvQS7Sa8I0ry6HsyoVjPPiOnHJbK1BlQyEN36sc-1777625401.0813117-1.0.1.1-qIPJQj1fDV8cjNmVo4jeo8AcZXtp92iP83BxxdgoExgbLDmjuo.fil9bqkoN4J4D.Z.8_blg5WzySI8Mz1wog5bPQmK8_VvwY2L1GQgYrk4qeg4NEgrtjAu8Y5P1PvXR; HttpOnly; Secure; Path=/; Domain=supabase.co; Expires=Fri, 01 May 2026 09:20:01 GMT' at: 'https://supabase.co'
+05-01 14:19:58.268  3626  3682 I CapacitorCookies: Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/lookup_caller_id'
+05-01 14:19:58.270  3626  3682 I System.out: [okhttp]:check permission begin!
+05-01 14:19:58.270  3626  3682 I System.out: [okhttp]:not MMS!
+05-01 14:19:58.270  3626  3682 I System.out: [okhttp]:not Email!
+05-01 14:19:58.271  1921  3803 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+05-01 14:19:58.273  3626  3682 I System.out: [socket]:check permission begin!
+05-01 14:19:58.292  1921  1921 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.findmydevice.spot.locationreporting.LocationReportUploadGmsTaskService.ACTION_TASK_READY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+05-01 14:19:58.296  1921  3807 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+05-01 14:19:58.301  1921  3561 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+05-01 14:19:58.301  3626  3682 I System.out: [OkHttp] sendRequest>>
+05-01 14:19:58.302  3626  3682 I System.out: [OkHttp] sendRequest<<
+05-01 14:19:58.308  1921  1921 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.findmydevice.spot.locationreporting.LocationReportUploadGmsTaskService.ACTION_TASK_READY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+05-01 14:19:58.311  1921  3561 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s

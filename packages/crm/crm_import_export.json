@@ -1,0 +1,23 @@
+{
+  "import": {
+    "supported_formats": ["csv", "json", "rest_api"],
+    "mapping_templates": [
+      {
+        "name": "salesforce_contact",
+        "mapping": {
+          "FirstName": "first_name",
+          "LastName": "last_name",
+          "Email": "email"
+        }
+      }
+    ],
+    "validation_rules": [
+      { "field": "email", "rule": "is_valid_email" }
+    ],
+    "incremental": true
+  },
+  "export": {
+    "supported_formats": ["csv", "json", "pdf"],
+    "incremental": true
+  }
+}

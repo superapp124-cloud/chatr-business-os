@@ -1,0 +1,12 @@
+{
+  "capabilityId": "travel.hotel.booking",
+  "version": "1.0.0",
+  "manifestHash": "51b47e359e7b690dd318813668af491cc522640e38cc3daeef423b578814c4a0",
+  "interfaceHash": "cc0ef6af6400e09f667f4023d154ab3f971dd3e13caac48a28429f7abda9c3b4",
+  "schemaVersion": "1.0",
+  "abiVersion": "1.0",
+  "certificationDate": "2026-07-17T06:30:16.281Z",
+  "certificationToolVersion": "1.0.0",
+  "result": "CERTIFIED",
+  "warnings": []
+}

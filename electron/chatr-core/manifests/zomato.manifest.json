@@ -1,0 +1,99 @@
+{
+  "provider": "zomato",
+  "version": "1.0",
+  "runtime_version": "1.0",
+  "maturity": "experimental",
+  "description": "Zomato provider manifest — Gate 1 uses public discovery pages only. No authentication required for discovery.",
+  "flows": {
+    "discover": [
+      {
+        "step": "navigate",
+        "url": "https://www.zomato.com/{{city}}/restaurants?q={{query}}",
+        "comment": "Navigate to Zomato search. Variables: city (e.g. 'bangalore'), query (e.g. 'biryani')"
+      },
+      {
+        "step": "observe",
+        "selector": ".jumbo-tracker, .sc-eqIVtm, [data-testid='restaurant-card'], .res-cell",
+        "timeout_ms": 5000,
+        "comment": "Wait for restaurant cards to render"
+      },
+      {
+        "step": "extract",
+        "selector": ".jumbo-tracker",
+        "schema": {
+          "name":   "name",
+          "rating": "rating",
+          "eta":    "eta",
+          "price":  "price"
+        },
+        "comment": "Extract restaurant data. Schema keys are normalized field names; values are CSS selectors."
+      },
+      {
+        "step": "verify",
+        "condition": "count > 0",
+        "comment": "Semantic check: at least one restaurant extracted, not DOM presence"
+      }
+    ],
+    "fetch_menu": [
+      {
+        "step": "navigate",
+        "url": "https://www.zomato.com/{{city}}/{{restaurant_slug}}/order",
+        "comment": "Navigate to restaurant menu page"
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='menu-section'], .sc-1s0saks-0",
+        "timeout_ms": 5000
+      },
+      {
+        "step": "extract",
+        "selector": "[data-testid='dish-card'], .sc-1s0saks-0",
+        "schema": {
+          "name":        "[data-testid='dish-name'], .sc-1s0saks-3",
+          "price":       "[data-testid='dish-price'], .sc-1s0saks-1",
+          "description": "[data-testid='dish-desc']"
+        }
+      },
+      {
+        "step": "verify",
+        "condition": "count > 0"
+      }
+    ],
+    "authenticate": [
+      {
+        "step": "navigate",
+        "url": "https://www.zomato.com",
+        "comment": "Start authentication from home page. No credentials captured in manifest."
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='login-btn'], .loginBtn",
+        "timeout_ms": 3000
+      },
+      {
+        "step": "act",
+        "action": "click",
+        "target": "[data-testid='login-btn'], .loginBtn",
+        "comment": "Trigger login modal. Connector handles OTP/credential entry separately."
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='phone-input'], input[type='tel']",
+        "timeout_ms": 5000
+      }
+    ],
+    "extract_session": [
+      {
+        "step": "navigate",
+        "url": "https://www.zomato.com",
+        "comment": "Generic session evidence extraction. Returns cookies and storage — connector maps to SessionEvidence."
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='user-avatar'], .user-profile",
+        "timeout_ms": 3000,
+        "comment": "Presence of user avatar indicates authenticated state"
+      }
+    ]
+  }
+}

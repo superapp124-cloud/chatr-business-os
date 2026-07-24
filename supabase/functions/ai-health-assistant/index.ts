@@ -1,0 +1,121 @@
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { z } from 'https://deno.land/x/zod@v3.22.4/mod.ts';
+
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+};
+
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
+
+// Input validation schema
+const inputSchema = z.object({
+  message: z.string().min(1, 'Message required').max(5000, 'Message too long'),
+  history: z.array(z.object({
+    role: z.enum(['user', 'assistant', 'system']),
+    content: z.string().max(5000)
+  })).max(50).optional(),
+  latitude: z.number().nullable().optional(),
+  longitude: z.number().nullable().optional(),
+  city: z.string().nullable().optional()
+});
+
+serve(async (req) => {
+  if (req.method === 'OPTIONS') {
+    return new Response(null, { headers: corsHeaders });
+  }
+
+  try {
+    const body = await req.json();
+    
+    // Validate input
+    const validationResult = inputSchema.safeParse(body);
+    if (!validationResult.success) {
+      return new Response(
+        JSON.stringify({ error: 'Validation failed', details: validationResult.error.errors }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+    
+    const { message, history, latitude, longitude, city } = validationResult.data;
+    
+    // Check if this is a location-dependent query
+    const isLocationQuery = message.toLowerCase().includes('near') || 
+                            message.toLowerCase().includes('nearby') || 
+                            message.toLowerCase().includes('local') ||
+                            message.toLowerCase().includes('around me') ||
+                            message.toLowerCase().includes('close to me');
+    
+    if (isLocationQuery && (!latitude || !longitude)) {
+      console.warn('Location-dependent health query without coordinates:', message);
+      // Don't block, but log and inform in response
+    }
+    
+    const OPENROUTER_API_KEY = Deno.env.get('OPENROUTER_API_KEY');
+
+    if (!OPENROUTER_API_KEY) {
+      throw new Error('OPENROUTER_API_KEY is not configured');
+    }
+
+    const messages = [
+      {
+        role: 'system',
+        content: `You are a helpful health assistant. Provide general health information and guidance in a clear, human tone.
+        ${city ? `\nUser is currently in: ${city}. When recommending healthcare providers or services, mention they can find nearby options using the Healthcare or Chatr World features.` : ''}
+        
+        Communication style:
+        - Write like a knowledgeable person, not a robot
+        - NO markdown formatting (no asterisks, bold, or code-like text)
+        - NO phrases like "As an AI" or robotic disclaimers
+        - Use natural transitions like "Overall," "In summary," "Here's what I'd suggest"
+        - Keep it professional yet conversational
+        
+        Important rules:
+        - Always remind users to consult healthcare professionals for medical advice
+        - Be empathetic, clear, and concise
+        - If symptoms are serious, urgently recommend seeing a doctor
+        - Suggest specific specialists when relevant (general practitioner, cardiologist, etc.)
+        - Prioritize clarity over formality`
+      },
+      ...(history || []),
+      { role: 'user', content: message }
+    ];
+
+    const response = await fetch(OPENROUTER_API_URL, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
+        'Content-Type': 'application/json',
+        'HTTP-Referer': 'https://chatr.chat',
+        'X-Title': 'Chatr Health Assistant',
+      },
+      body: JSON.stringify({
+        model: 'google/gemini-2.5-flash-preview',
+        messages,
+        temperature: 0.7,
+        max_tokens: 500
+      }),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('AI gateway error:', response.status, errorText);
+      throw new Error(`AI gateway error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const assistantMessage = data.choices[0].message.content;
+
+    return new Response(
+      JSON.stringify({ response: assistantMessage }),
+      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    );
+  } catch (error) {
+    console.error('Error in ai-health-assistant:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    return new Response(
+      JSON.stringify({ error: errorMessage }),
+      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    );
+  }
+});

@@ -1,0 +1,16 @@
+export const WALLPAPER_KEY = 'chatr-chat-wallpaper';
+
+export const wallpapers = [
+  { id: 'default', name: 'Default', class: 'bg-background' },
+  { id: 'amoled', name: 'AMOLED Black', class: 'bg-black' },
+  { id: 'mesh-1', name: 'Mesh Sunrise', class: 'bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-400 via-rose-400 to-red-500' },
+  { id: 'mesh-2', name: 'Mesh Ocean', class: 'bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-cyan-400 via-blue-500 to-indigo-600' },
+  { id: 'mesh-3', name: 'Mesh Forest', class: 'bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-emerald-400 via-green-500 to-teal-600' },
+  { id: 'mesh-4', name: 'Mesh Purple', class: 'bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-fuchsia-400 via-purple-500 to-violet-600' },
+  { id: 'aurora', name: 'Aurora Borealis', class: 'bg-gradient-to-br from-indigo-900 via-emerald-900 to-cyan-900 animate-gradient-slow' },
+  { id: 'particles', name: 'Dark Particles', class: 'bg-slate-900 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.1)_1px,_transparent_1px)] bg-[size:24px_24px]' },
+];
+
+export const getWallpaperClass = (id: string) => {
+  return wallpapers.find(w => w.id === id)?.class || 'bg-background';
+};

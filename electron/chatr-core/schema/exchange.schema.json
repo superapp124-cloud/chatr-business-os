@@ -1,0 +1,89 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Platform Exchange Schema",
+  "description": "Schemas for CHATR Platform Exchange and Software Supply Chain",
+  "definitions": {
+    "PackageIdentity": {
+      "type": "object",
+      "required": ["publisher", "namespace", "name", "version", "channel", "hash"],
+      "properties": {
+        "publisher": { "type": "string" },
+        "namespace": { "type": "string" },
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "channel": { "type": "string", "enum": ["Experimental", "Preview", "Stable", "LTS", "Enterprise Certified"] },
+        "hash": { "type": "string" }
+      }
+    },
+    "Package": {
+      "type": "object",
+      "required": ["identity", "type", "provides", "requires", "provenance"],
+      "properties": {
+        "identity": { "$ref": "#/definitions/PackageIdentity" },
+        "type": { "type": "string", "enum": ["Capability", "Provider", "Template", "PolicyPack", "IntentLibrary", "TypeLibrary", "PromptPack", "IndustryPack", "UIExtension", "Bundle"] },
+        "provides": { "type": "array", "items": { "type": "object" } },
+        "requires": { "type": "array", "items": { "type": "object" } },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "sourceRepository": { "type": "string" },
+            "commit": { "type": "string" },
+            "buildPipeline": { "type": "string" },
+            "buildHash": { "type": "string" }
+          }
+        },
+        "lifecycleState": { "type": "string", "enum": ["Draft", "Validated", "Certified", "Signed", "Published", "Deprecated", "Archived", "Revoked"] }
+      }
+    },
+    "PackageCertificate": {
+      "type": "object",
+      "required": ["packageHash", "publisher", "signature", "compatibility", "trustScore", "issuedAt"],
+      "properties": {
+        "packageHash": { "type": "string" },
+        "publisher": { "type": "string" },
+        "signature": { "type": "string" },
+        "compatibility": { "type": "object" },
+        "trustScore": {
+          "type": "object",
+          "properties": {
+            "signatureValid": { "type": "boolean" },
+            "securityScanPassed": { "type": "boolean" },
+            "governanceApproved": { "type": "boolean" },
+            "overallTrustLevel": { "type": "string" }
+          }
+        },
+        "issuedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "InstallationRecord": {
+      "type": "object",
+      "required": ["id", "installationPlanHash", "packagesInstalled", "targetScope", "installerPrincipal", "timestamp", "result"],
+      "properties": {
+        "id": { "type": "string" },
+        "installationPlanHash": { "type": "string" },
+        "packagesInstalled": { "type": "array", "items": { "$ref": "#/definitions/PackageIdentity" } },
+        "targetScope": { "type": "string" },
+        "installerPrincipal": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "result": { "type": "string", "enum": ["SUCCESS", "ROLLED_BACK", "FAILED"] },
+        "rollbackReference": { "type": "string" }
+      }
+    },
+    "PlatformManifest": {
+      "type": "object",
+      "required": ["platform", "packages", "policies", "providers"],
+      "properties": {
+        "platform": {
+          "type": "object",
+          "properties": {
+            "kernel": { "type": "string" },
+            "planner": { "type": "string" }
+          }
+        },
+        "packages": { "type": "array", "items": { "type": "string" } },
+        "policies": { "type": "array", "items": { "type": "string" } },
+        "providers": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

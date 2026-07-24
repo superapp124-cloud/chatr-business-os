@@ -1,0 +1,64 @@
+{
+  "business_objects": [
+    {
+      "id": "rec_obj_candidate",
+      "name": "Candidate",
+      "type": "system",
+      "fields": [
+        { "name": "first_name", "type": "string" },
+        { "name": "last_name", "type": "string" },
+        { "name": "email", "type": "email" },
+        { "name": "resume_url", "type": "url" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "has_many", "target": "rec_obj_application", "alias": "applications" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "rec_obj_requisition",
+      "name": "Job Requisition",
+      "type": "system",
+      "fields": [
+        { "name": "title", "type": "string" },
+        { "name": "department", "type": "string" },
+        { "name": "budget_max", "type": "currency" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "has_many", "target": "rec_obj_application", "alias": "applications" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "rec_obj_application",
+      "name": "Application",
+      "type": "system",
+      "fields": [
+        { "name": "source", "type": "string" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "rec_obj_candidate", "alias": "candidate" },
+        { "type": "belongs_to", "target": "rec_obj_requisition", "alias": "requisition" },
+        { "type": "has_many", "target": "rec_obj_interview", "alias": "interviews" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "rec_obj_interview",
+      "name": "Interview",
+      "type": "system",
+      "fields": [
+        { "name": "scheduled_time", "type": "datetime" },
+        { "name": "feedback_score", "type": "float" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "rec_obj_application", "alias": "application" }
+      ],
+      "audit": true
+    }
+  ]
+}

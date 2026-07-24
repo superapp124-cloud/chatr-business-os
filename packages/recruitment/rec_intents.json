@@ -1,0 +1,18 @@
+{
+  "intents": [
+    {
+      "id": "intent_hire_candidate",
+      "name": "Hire Target Candidate",
+      "goals": [
+        { "metric": "Time to Fill", "threshold": "< 45 days" },
+        { "metric": "Budget Compliance", "threshold": "Offer Salary <= Requisition Budget" },
+        { "metric": "Candidate Experience", "threshold": "Interview score > 4.5/5" }
+      ],
+      "reasoning_schema": [
+        "Candidate Feedback Average",
+        "Salary Expectation vs Budget",
+        "Competitor Offers (Self-Reported)"
+      ]
+    }
+  ]
+}

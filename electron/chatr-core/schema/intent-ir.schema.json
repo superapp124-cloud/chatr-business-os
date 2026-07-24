@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Intent IR Schema",
+  "description": "Normalized Intermediate Representation for Intent Graphs",
+  "type": "object",
+  "required": ["irVersion", "metadata", "variables", "blocks"],
+  "properties": {
+    "irVersion": { "type": "string" },
+    "metadata": {
+      "type": "object",
+      "required": ["authoringSource", "id", "timestamp"],
+      "properties": {
+        "authoringSource": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "id": { "type": "string" },
+        "templateId": { "type": "string" }
+      }
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "scope", "source"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string", "enum": ["String", "Number", "Boolean", "Date", "Duration", "Binary", "Object", "Composite"] },
+          "domainType": { "type": "string" },
+          "scope": { "type": "string", "enum": ["global", "local", "ephemeral"] },
+          "source": { "type": "string" },
+          "default": {},
+          "validation": { "type": "object" }
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string", "enum": ["Intent", "Wait", "Human", "Decision", "Parallel", "Repeat", "End"] },
+          "dependencies": { "type": "array", "items": { "type": "string" } },
+          "capability": { "type": "string" },
+          "inputs": { "type": "object" },
+          "outputs": { "type": "object" },
+          "conditions": { "type": "array" }
+        }
+      }
+    }
+  }
+}

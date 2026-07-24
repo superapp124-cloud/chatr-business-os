@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Standard Intelligence Contract",
+  "description": "Schema for standardized intelligence signals emitted by all capabilities.",
+  "version": "15.0",
+  "definitions": {
+    "IntelligenceContract": {
+      "type": "object",
+      "required": ["capabilityId", "executionMetrics"],
+      "properties": {
+        "capabilityId": { "type": "string" },
+        "executionMetrics": {
+          "type": "object",
+          "properties": {
+            "latencyMs": { "type": "number" },
+            "cost": { "$ref": "../ontology/types.schema.json#/definitions/MoneyTypes/Money" },
+            "resourceUtilization": { "type": "string" }
+          }
+        },
+        "businessMetrics": {
+          "type": "object",
+          "description": "Metrics impacting business KPIs directly"
+        },
+        "optimizationCandidates": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Hints for the Intelligence Plane where performance can be optimized"
+        },
+        "anomalyIndicators": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Flags indicating unexpected execution paths"
+        },
+        "predictionInputs": {
+          "type": "object",
+          "description": "Context passed to predictive models"
+        },
+        "recommendationContext": {
+          "type": "object",
+          "description": "Context enabling AI to generate next-best-action recommendations"
+        },
+        "learningArtifacts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "URNs of generated Learning Artifacts for the Knowledge Engine"
+        }
+      }
+    }
+  }
+}

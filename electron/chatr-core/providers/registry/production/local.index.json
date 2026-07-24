@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "local-index",
+      "version": "1.0.0",
+      "displayName": "Local Index (Semantic)",
+      "description": "Fast offline search and embeddings retrieval.",
+      "author": "CHATR Core",
+      "license": "MIT"
+    },
+    "executionStrategy": "Local Code",
+    "capabilities": [
+      "System.Search"
+    ],
+    "dependencies": [],
+    "lifecycle": "stable",
+    "authentication": { "type": "none" },
+    "permissions": ["read_filesystem"],
+    "health": "healthy",
+    "trust": 1.0,
+    "latency": 15,
+    "cost": 0,
+    "offline": true,
+    "jurisdiction": "local",
+    "certification": "Core",
+    "evidence": "detailed",
+    "supportedABI": "chatr.capability_catalog.v1_0_rc",
+    "lastValidation": "2026-07-20T00:00:00Z",
+    "deprecationStatus": "active"
+  },
+  "certificate": {
+    "providerId": "local-index",
+    "version": "1.0.0",
+    "manifestHash": "auto",
+    "schemaVersion": "1.1",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-20T00:00:00Z",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

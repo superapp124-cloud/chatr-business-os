@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Capability Manifest",
+  "description": "Declarative contract for CHATR Capabilities",
+  "type": "object",
+  "required": ["identity", "runtime", "metadata"],
+  "properties": {
+    "identity": {
+      "type": "object",
+      "required": ["id", "version", "displayName", "author"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_\\.]+$" },
+        "version": { "type": "string" },
+        "displayName": { "type": "string" },
+        "description": { "type": "string" },
+        "author": { "type": "string" },
+        "license": { "type": "string" },
+        "category": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "required": ["intentTypes"],
+      "properties": {
+        "intentTypes": { "type": "array", "items": { "type": "string" } },
+        "permissions": { "type": "array", "items": { "type": "string" } },
+        "inputs": { "type": "array", "items": { "type": "string" } },
+        "outputs": { "type": "array", "items": { "type": "string" } },
+        "events": { "type": "array", "items": { "type": "string" } },
+        "policies": { "type": "array", "items": { "type": "string" } },
+        "verification": {
+          "type": "object",
+          "properties": {
+            "strategy": { "type": "string" }
+          }
+        },
+        "stewardship": {
+          "type": "object",
+          "properties": {
+            "renewable": { "type": "boolean" },
+            "expiration": { "type": "string" }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["minKernelVersion", "profile"],
+      "properties": {
+        "minKernelVersion": { "type": "string" },
+        "maxKernelVersion": { "type": "string" },
+        "dependencies": { "type": "array", "items": { "type": "string" } },
+        "supportedPlatforms": { "type": "array", "items": { "type": "string" } },
+        "securityClassification": { "type": "string" },
+        "profile": { "type": "string", "enum": ["Transaction", "Information", "Monitoring", "Automation", "Full"] }
+      }
+    }
+  }
+}

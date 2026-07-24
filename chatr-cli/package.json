@@ -1,0 +1,14 @@
+{
+  "name": "chatr-cli",
+  "version": "1.0.0",
+  "description": "CHATR OS Metadata Capability Compiler",
+  "main": "index.js",
+  "bin": {
+    "chatr": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "type": "module"
+}

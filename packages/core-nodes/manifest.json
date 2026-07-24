@@ -1,0 +1,14 @@
+{
+  "id": "com.chatr.nodes.core",
+  "type": "node-pack",
+  "version": "1.0.0",
+  "abiVersion": "1.0.0",
+  "name": "Core Nodes",
+  "description": "Essential OS nodes (Trigger, AI, Condition)",
+  "publisher": "CHATR Core Team",
+  "license": "MIT",
+  "permissions": ["execute:local", "provider.ai"],
+  "dependencies": [],
+  "checksum": "mock-checksum-over-payload-generated-at-build",
+  "signature": "mock-signature-over-payload-generated-at-build"
+}

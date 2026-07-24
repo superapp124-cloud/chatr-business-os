@@ -1,0 +1,1112 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '@/integrations/supabase/client';
+import chatrBrandLogo from '@/assets/chatr-brand-logo.png';
+import chatrIconLogo from '@/assets/chatr-icon-logo.png';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { toast } from 'sonner';
+import { 
+ Bot, 
+ Stethoscope, 
+ AlertTriangle, 
+ MessageCircle, 
+ Heart, 
+ Mic, 
+ Paperclip, 
+ LogOut, 
+ Users,
+ Coins,
+ QrCode,
+ Utensils,
+ Percent,
+ Flame,
+ Grid3x3,
+ CheckCircle,
+ Building2,
+ Share2,
+ Search,
+ Sparkles,
+ Zap,
+ Store,
+ Briefcase,
+ Crown,
+ Gamepad2,
+ Ghost,
+ ChevronRight,
+ Gift,
+ Globe,
+ Brain,
+ Wallet,
+ Palette,
+ Siren,
+ IndianRupee,
+ GraduationCap,
+ Pill,
+ Fingerprint
+} from 'lucide-react';
+import { PersonalizedSection } from '@/components/home/PersonalizedSection';
+import { PersonalizedGreeting } from '@/components/home/PersonalizedGreeting';
+import { ActivityWidgets } from '@/components/home/ActivityWidgets';
+import { QuickActions } from '@/components/home/QuickActions';
+import { RecentActivity } from '@/components/home/RecentActivity';
+import { useStealthMode, StealthModeType } from '@/hooks/useStealthMode';
+import logo from '@/assets/chatr-logo.png';
+import { QuickAccessMenu } from '@/components/QuickAccessMenu';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { QRCodeSVG } from 'qrcode.react';
+import { Copy, Share } from 'lucide-react';
+import { SEOHead } from '@/components/SEOHead';
+import { BottomNav } from '@/components/BottomNav';
+
+// Import ServiceCard directly (small component, no need for lazy loading)
+import ServiceCard from '@/components/ServiceCard';
+import { formatCoinAmount } from '@/core/platformParity/sharedBalanceFormatter';
+import { StoriesCarousel } from '@/components/stories/StoriesCarousel';
+
+const Index = () => {
+ const navigate = useNavigate();
+ const [user, setUser] = React.useState<any>(null);
+ const [pointsBalance, setPointsBalance] = React.useState<number>(0);
+ const [currentStreak, setCurrentStreak] = React.useState<number>(0);
+ const [mounted, setMounted] = React.useState(false);
+ const [showShareDialog, setShowShareDialog] = React.useState(false);
+ const [referralCode, setReferralCode] = React.useState<string>('');
+ const [qrCodeUrl, setQrCodeUrl] = React.useState<string>('');
+ const [searchQuery, setSearchQuery] = React.useState('');
+ const [searchSuggestions, setSearchSuggestions] = React.useState<string[]>([]);
+ const [showSuggestions, setShowSuggestions] = React.useState(false);
+ const [isListening, setIsListening] = React.useState(false);
+ const [recentSearches, setRecentSearches] = React.useState<string[]>([]);
+ 
+ // Stealth Mode hook
+ const { mode } = useStealthMode();
+ 
+ const getModeLabel = (modeType: StealthModeType): string => {
+ switch (modeType) {
+ case 'seller': return 'Seller Mode';
+ case 'rewards': return 'Rewards Mode';
+ default: return 'Default Mode';
+ }
+ };
+ 
+ const getModeIcon = (modeType: StealthModeType) => {
+ switch (modeType) {
+ case 'seller': return Store;
+ case 'rewards': return Gift;
+ default: return Ghost;
+ }
+ };
+
+ // Load recent searches from localStorage
+ React.useEffect(() => {
+ const saved = localStorage.getItem('recent_searches');
+ if (saved) {
+ try {
+ setRecentSearches(JSON.parse(saved));
+ } catch (e) {
+ console.error('Error loading recent searches:', e);
+ }
+ }
+ }, []);
+
+ // Voice search using Web Speech API
+ const startVoiceSearch = () => {
+ if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+ toast.error('Voice search not supported in this browser');
+ return;
+ }
+
+ const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+ const recognition = new SpeechRecognition();
+ 
+ recognition.lang = 'en-IN';
+ recognition.interimResults = false;
+ recognition.maxAlternatives = 1;
+
+ recognition.onstart = () => {
+ setIsListening(true);
+ toast.info('Listening... Speak now!');
+ };
+
+ recognition.onresult = (event: any) => {
+ const transcript = event.results[0][0].transcript;
+ setSearchQuery(transcript);
+ setIsListening(false);
+ 
+ // Auto search after voice input
+ setTimeout(() => {
+ handleSearch(transcript);
+ }, 500);
+ };
+
+ recognition.onerror = (event: any) => {
+ setIsListening(false);
+ console.error('Speech recognition error:', event.error);
+ toast.error('Voice search failed. Please try again.');
+ };
+
+ recognition.onend = () => {
+ setIsListening(false);
+ };
+
+ recognition.start();
+ };
+
+ // Fetch AI search suggestions
+ const fetchSuggestions = React.useCallback(async (query: string) => {
+ if (!query || query.length < 2) {
+ setSearchSuggestions([]);
+ return;
+ }
+
+ try {
+ const { data, error } = await supabase.functions.invoke('search-suggestions', {
+ body: { query, recentSearches }
+ });
+
+ if (error) throw error;
+ setSearchSuggestions(data.suggestions || []);
+ } catch (error) {
+ console.error('Error fetching suggestions:', error);
+ }
+ }, [recentSearches]);
+
+ // Debounce search suggestions
+ React.useEffect(() => {
+ const timer = setTimeout(() => {
+ if (searchQuery) {
+ fetchSuggestions(searchQuery);
+ }
+ }, 300);
+
+ return () => clearTimeout(timer);
+ }, [searchQuery, fetchSuggestions]);
+
+ const handleSearch = (query?: string) => {
+ const searchText = query || searchQuery;
+ if (!searchText.trim()) return;
+
+ // Save to recent searches
+ const updated = [searchText, ...recentSearches.filter(s => s !== searchText)].slice(0, 10);
+ setRecentSearches(updated);
+ localStorage.setItem('recent_searches', JSON.stringify(updated));
+
+ // Navigate to search
+ navigate(`/search?q=${encodeURIComponent(searchText)}`);
+ setShowSuggestions(false);
+ setSearchQuery('');
+ };
+
+ const trendingSearches = [
+ { query: 'Plumber near me', icon: '🔧' },
+ { query: 'Biryani delivery', icon: '🍛' },
+ { query: 'Doctor consultation', icon: '👨‍⚕️' },
+ { query: 'Electrician services', icon: '⚡' },
+ { query: 'Salon near me', icon: '💇' },
+ { query: 'Home cleaning', icon: '🧹' },
+ { query: 'Pizza delivery', icon: '🍕' },
+ { query: 'AC repair', icon: '❄️' },
+ ];
+
+ React.useEffect(() => {
+ let isCancelled = false;
+ 
+ // Set up auth listener FIRST (before checking session)
+ const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+ if (isCancelled) return;
+ 
+ console.log('[Index] Auth state:', event, session?.user?.id);
+ 
+ if (event === 'TOKEN_REFRESHED') return;
+ 
+ if (event === 'SIGNED_IN' && session) {
+ setUser(session.user);
+ setMounted(true);
+ console.log('[Index] User signed in:', session.user.id);
+ } else if (!session && event !== 'INITIAL_SESSION') {
+ setUser(null);
+ navigate('/auth', { replace: true });
+ }
+ });
+
+ // THEN check for existing session (this also parses OAuth hash)
+ const initAuth = async () => {
+ // Check if URL has OAuth hash params - give Supabase time to parse them
+ const hasOAuthHash = window.location.hash.includes('access_token');
+ if (hasOAuthHash) {
+ console.log('[Index] OAuth hash detected, waiting for session...');
+ // Supabase will parse hash and fire SIGNED_IN event
+ return;
+ }
+ 
+ const { data: { session } } = await supabase.auth.getSession();
+ if (isCancelled) return;
+ 
+ if (session) {
+ setUser(session.user);
+ setMounted(true);
+ } else {
+ navigate('/auth', { replace: true });
+ }
+ };
+ 
+ initAuth();
+
+ return () => {
+ isCancelled = true;
+ subscription.unsubscribe();
+ };
+ }, [navigate]);
+
+ // Defer all heavy operations to after page is visible
+ React.useEffect(() => {
+ if (!user || !mounted) return;
+ 
+ let cancelled = false;
+ 
+ // CRITICAL: Use requestIdleCallback for non-critical operations
+ // This prevents blocking the main thread during initial render
+ if ('requestIdleCallback' in window) {
+ requestIdleCallback(() => {
+ if (cancelled) return;
+ loadPointsData();
+ // Process daily login after points load
+ setTimeout(() => {
+ if (!cancelled) processDailyLogin();
+ }, 500);
+ });
+ 
+ // Contact sync is critical for new users - defer slightly
+ requestIdleCallback(() => {
+ setTimeout(() => {
+ if (!cancelled) autoSyncContactsOnLoad(user.id);
+ }, 3000); // 3 seconds
+ });
+ } else {
+ // Fallback for browsers without requestIdleCallback
+ setTimeout(() => {
+ if (cancelled) return;
+ loadPointsData();
+ setTimeout(() => {
+ if (!cancelled) processDailyLogin();
+ }, 500);
+ setTimeout(() => {
+ if (!cancelled) autoSyncContactsOnLoad(user.id);
+ }, 3000); // 3 seconds
+ }, 300);
+ }
+
+ return () => {
+ cancelled = true;
+ };
+ }, [user, mounted]);
+
+ const autoSyncContactsOnLoad = async (userId: string) => {
+ // Auto-sync contacts on first load (background)
+ setTimeout(async () => {
+ try {
+ const [{ Contacts }, { Capacitor }] = await Promise.all([
+ import('@capacitor-community/contacts'),
+ import('@capacitor/core')
+ ]);
+ 
+ if (!Capacitor.isNativePlatform()) return;
+ 
+ const lastSync = localStorage.getItem(`last_sync_${userId}`);
+ const now = new Date().getTime();
+ 
+ // Auto-sync every 6 hours or on first launch
+ if (!lastSync || (now - parseInt(lastSync)) > 6 * 60 * 60 * 1000) {
+ const permission = await Contacts.requestPermissions();
+ if (permission.contacts !== 'granted') {
+ console.log('Contacts permission not granted - sync skipped');
+ return;
+ }
+ 
+ const result = await Contacts.getContacts({
+ projection: { name: true, phones: true, emails: true }
+ });
+ 
+ if (!result.contacts || result.contacts.length === 0) return;
+ 
+ // Process in batches of 100 for better performance
+ const batchSize = 100;
+ for (let i = 0; i < result.contacts.length; i += batchSize) {
+ const batch = result.contacts.slice(i, i + batchSize);
+ 
+ const contactData = batch
+ .map((contact) => {
+ const name = contact.name?.display || 'Unknown';
+ const phone = contact.phones?.[0]?.number;
+ const email = contact.emails?.[0]?.address;
+ 
+ if (!phone && !email) return null;
+ 
+ return {
+ name: name,
+ phone: phone || '',
+ email: email || ''
+ };
+ })
+ .filter(c => c !== null);
+ 
+ if (contactData.length > 0) {
+ // Use the database function for efficient sync
+ await supabase.rpc('sync_user_contacts', {
+ user_uuid: userId,
+ contact_list: contactData
+ });
+ }
+ }
+ 
+ localStorage.setItem(`last_sync_${userId}`, now.toString());
+ console.log(`✅ Synced ${result.contacts.length} contacts successfully`);
+ }
+ } catch (error) {
+ console.log('Auto-sync error:', error);
+ }
+ }, 3000); // Delay 3 seconds after page load
+ };
+
+ const loadPointsData = async () => {
+ try {
+ const { data: { user } } = await supabase.auth.getUser();
+ if (!user) return;
+
+ // Check localStorage cache first (3 min TTL)
+ const cacheKey = 'ic_index-points';
+ try {
+ const raw = localStorage.getItem(cacheKey);
+ if (raw) {
+ const { d, t } = JSON.parse(raw);
+ if (Date.now() - t < 180000) {
+ setPointsBalance(d.balance || 0);
+ setCurrentStreak(d.streak || 0);
+ if (d.referralCode) setReferralCode(d.referralCode);
+ if (d.qrCodeUrl) setQrCodeUrl(d.qrCodeUrl);
+ return; // Cache hit — skip network
+ }
+ }
+ } catch {}
+
+ // Fetch all data in parallel for speed
+ const [pointsData, streakData, referralData] = await Promise.all([
+ supabase.from('user_points').select('balance').eq('user_id', user.id).maybeSingle().then(r => r.data),
+ supabase.from('user_streaks').select('current_streak').eq('user_id', user.id).maybeSingle().then(r => r.data),
+ supabase.from('chatr_referral_codes').select('code, qr_code_url').eq('user_id', user.id).maybeSingle().then(r => r.data)
+ ]);
+
+ setPointsBalance(pointsData?.balance || 0);
+ setCurrentStreak(streakData?.current_streak || 0);
+ 
+ if (referralData) {
+ setReferralCode(referralData.code);
+ setQrCodeUrl(referralData.qr_code_url || '');
+ }
+
+ // Write to cache
+ try {
+ localStorage.setItem(cacheKey, JSON.stringify({
+ d: { balance: pointsData?.balance || 0, streak: streakData?.current_streak || 0, referralCode: referralData?.code, qrCodeUrl: referralData?.qr_code_url },
+ t: Date.now()
+ }));
+ } catch {}
+ } catch (error) {
+ console.error('Error loading points:', error);
+ }
+ };
+
+ const processDailyLogin = async () => {
+ try {
+ const { data: { user } } = await supabase.auth.getUser();
+ if (!user) return;
+
+ // Check if already processed today to avoid redundant calls
+ const lastProcessed = localStorage.getItem('last_daily_login');
+ const today = new Date().toDateString();
+ if (lastProcessed === today) return;
+
+ const { data, error } = await supabase.functions.invoke('process-daily-login');
+ 
+ if (error) throw error;
+ 
+ if (data?.pointsAwarded > 0) {
+ console.log(`[Index] Daily login bonus: ${data.pointsAwarded} points`);
+ loadPointsData();
+ }
+ 
+ localStorage.setItem('last_daily_login', today);
+ } catch (error) {
+ console.error('Error processing daily login:', error);
+ }
+ };
+
+
+ const handleSignOut = async () => {
+ await supabase.auth.signOut();
+ navigate('/auth');
+ };
+
+ const handleShareClick = async () => {
+ if (!referralCode) {
+ try {
+ const { data, error } = await supabase.functions.invoke('generate-referral-code');
+ if (error) throw error;
+ if (data) {
+ setReferralCode(data.referralCode);
+ setQrCodeUrl(data.qrCodeUrl || '');
+ }
+ } catch (error) {
+ console.error('Error generating referral code:', error);
+ toast.error('Failed to load referral code');
+ return;
+ }
+ }
+ setShowShareDialog(true);
+ };
+
+ const copyReferralLink = async () => {
+ const link = `https://chatr.chat/auth?ref=${referralCode}`;
+ try {
+ await navigator.clipboard.writeText(link);
+ toast.success('Referral link copied!');
+ } catch (error) {
+ toast.error('Failed to copy link');
+ }
+ };
+
+ const shareReferralLink = async () => {
+ const link = `https://chatr.chat/auth?ref=${referralCode}`;
+ const text = `Join me on Chatr+ and earn rewards! Use my code: ${referralCode}`;
+ 
+ if (navigator.share) {
+ try {
+ await navigator.share({ title: 'Join Chatr+', text, url: link });
+ } catch (error) {
+ if ((error as Error).name !== 'AbortError') {
+ copyReferralLink();
+ }
+ }
+ } else {
+ copyReferralLink();
+ }
+ };
+
+ const mainHubs = [
+ // Row 1 — Identity & Communication (core)
+ {
+ icon: MessageCircle,
+ title: 'Chat',
+ description: 'Messages, calls & video',
+ iconColor: 'bg-gradient-to-br from-green-400 to-emerald-600',
+ route: '/chat'
+ },
+ {
+ icon: Fingerprint,
+ title: 'Chatr++ Identity',
+ description: 'Multi-layer identity & trust',
+ iconColor: 'bg-gradient-to-br from-teal-400 via-cyan-500 to-blue-600',
+ route: '/identity'
+ },
+ {
+ icon: Globe,
+ title: 'Discover',
+ description: 'Find people by skill, city',
+ iconColor: 'bg-gradient-to-br from-sky-400 via-blue-500 to-indigo-600',
+ route: '/discover'
+ },
+ {
+ icon: Users,
+ title: 'Community',
+ description: 'Groups & stories',
+ iconColor: 'bg-gradient-to-br from-purple-400 to-pink-600',
+ route: '/community'
+ },
+
+ // Row 2 — Intelligence & Discovery
+ {
+ icon: Brain,
+ title: 'Chatr Intelligence',
+ description: 'Unified AI brain — 6 agents',
+ iconColor: 'bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600',
+ route: '/chat-ai'
+ },
+ {
+ icon: Sparkles,
+ title: 'AI Agents',
+ description: 'Create your AI self',
+ iconColor: 'bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-600',
+ route: '/ai-agents'
+ },
+ {
+ icon: Zap,
+ title: 'Chatr World',
+ description: 'AI search + nearby',
+ iconColor: 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-600',
+ route: '/chatr-world'
+ },
+ {
+ icon: Gamepad2,
+ title: 'Chatr Games',
+ description: 'AI-native games',
+ iconColor: 'bg-gradient-to-br from-violet-500 via-purple-500 to-pink-600',
+ route: '/chatr-games'
+ },
+
+ // Row 3 — Healthcare suite
+ {
+ icon: Heart,
+ title: 'Health Hub',
+ description: 'Records, vitals & reports',
+ iconColor: 'bg-gradient-to-br from-red-500 via-rose-500 to-pink-600',
+ route: '/health'
+ },
+ {
+ icon: Stethoscope,
+ title: 'Care Access',
+ description: 'Book doctors & emergency',
+ iconColor: 'bg-gradient-to-br from-blue-400 to-indigo-600',
+ route: '/care'
+ },
+ {
+ icon: Pill,
+ title: 'Healthcare',
+ description: 'Medicines & pharmacy',
+ iconColor: 'bg-gradient-to-br from-emerald-400 to-teal-600',
+ route: '/local-healthcare'
+ },
+
+ // Row 4 — Work & Commerce
+ {
+ icon: Briefcase,
+ title: 'Jobs',
+ description: 'Jobs near you',
+ iconColor: 'bg-gradient-to-br from-green-500 via-emerald-500 to-teal-600',
+ route: '/jobs'
+ },
+ {
+ icon: Building2,
+ title: 'Business',
+ description: 'CRM, inbox & analytics',
+ iconColor: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+ route: '/business'
+ },
+ {
+ icon: Store,
+ title: 'Vendor Portal',
+ description: 'Manage your storefront',
+ iconColor: 'bg-gradient-to-br from-amber-500 to-orange-600',
+ route: '/dhandha'
+ },
+
+ // Row 5 — Platform & Trust
+ {
+ icon: Grid3x3,
+ title: 'Chatr Store',
+ description: 'Discover & install apps',
+ iconColor: 'bg-gradient-to-br from-purple-400 to-purple-600',
+ route: '/native-apps'
+ },
+ {
+ icon: CheckCircle,
+ title: 'Official',
+ description: 'Verified accounts & services',
+ iconColor: 'bg-gradient-to-br from-indigo-400 to-indigo-600',
+ route: '/official-accounts'
+ },
+ {
+ icon: Globe,
+ title: 'Chatr Browser',
+ description: 'Search & browse with AI',
+ iconColor: 'bg-gradient-to-br from-blue-400 to-cyan-500',
+ route: '/ai-browser-home'
+ },
+ ];
+
+ const quickAccessServices = [
+ {
+ icon: Coins,
+ title: 'ChatrPay Wallet',
+ description: 'UPI, cashback & rewards',
+ iconColor: 'bg-gradient-to-br from-green-400 to-emerald-500',
+ route: '/wallet'
+ },
+ {
+ icon: QrCode,
+ title: 'Chatr Studio',
+ description: 'Build your own mini-apps',
+ iconColor: 'bg-gradient-to-br from-purple-400 to-pink-500',
+ route: '/chatr-studio'
+ },
+ {
+ icon: Bot,
+ title: 'AI Assistant',
+ description: 'Instant health advice',
+ iconColor: 'bg-gradient-to-br from-teal-400 to-emerald-500',
+ route: '/ai-assistant'
+ },
+ {
+ icon: AlertTriangle,
+ title: 'Emergency',
+ description: 'Quick emergency access',
+ iconColor: 'bg-gradient-to-br from-red-400 to-red-600',
+ route: '/emergency'
+ },
+ ];
+
+ const ecosystemServices = [
+ {
+ icon: Utensils,
+ title: 'Food Ordering',
+ description: 'Order from local restaurants',
+ iconColor: 'bg-gradient-to-br from-orange-400 to-red-500',
+ route: '/food-ordering'
+ },
+ {
+ icon: Percent,
+ title: 'Local Deals',
+ description: 'Exclusive community offers',
+ iconColor: 'bg-gradient-to-br from-green-400 to-emerald-500',
+ route: '/local-deals'
+ },
+ {
+ icon: Crown,
+ title: 'Chatr Premium',
+ description: 'Upgrade to unlock everything',
+ iconColor: 'bg-gradient-to-br from-purple-400 to-pink-500',
+ route: '/subscription',
+ badge: '₹99/mo'
+ },
+ ];
+
+ const growthPrograms = [
+ {
+ icon: Flame,
+ title: 'Chatr Champions',
+ description: 'Referral network & earnings dashboard',
+ iconColor: 'bg-gradient-to-br from-orange-400 to-red-500',
+ route: '/growth',
+ badge: 'Earn ₹'
+ },
+ {
+ icon: Users,
+ title: 'Chatr Partner',
+ description: 'Join our campus partner program',
+ iconColor: 'bg-gradient-to-br from-purple-400 to-pink-500',
+ route: '/ambassador-program',
+ badge: 'Apply'
+ },
+ {
+ icon: Stethoscope,
+ title: 'Doctor Portal',
+ description: 'Healthcare provider registration',
+ iconColor: 'bg-gradient-to-br from-cyan-400 to-blue-500',
+ route: '/doctor-onboarding',
+ badge: 'Join'
+ },
+ ];
+
+ // Show minimal skeleton while checking auth (no animations for speed)
+ if (!mounted || !user) {
+ return (
+ <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-cyan-500/5">
+ <div className="bg-background/95 backdrop-blur-xl border-b border-border/40">
+ <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-center gap-3">
+ <img 
+ src={chatrIconLogo} 
+ alt="Chatr" 
+ className="h-12 w-12" 
+ width={48}
+ height={48}
+ loading="eager" 
+ />
+ <div>
+ <div className="text-page font-bold bg-gradient-to-r from-primary via-primary to-cyan-500 bg-clip-text text-transparent">
+ Chatr
+ </div>
+ <div className="text-label text-muted-foreground">The Communication OS</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ );
+ }
+
+ return (
+ <>
+ <SEOHead
+ title="Chatr — Communication OS | Chat, Healthcare, Jobs & More"
+ description="Chatr is the universal Communication OS. Chat with friends, find healthcare providers, discover local jobs, order food, and access 100+ services - all in one app."
+ keywords="chatr, superapp, india, messaging app, healthcare app, job search, food delivery, AI assistant, local services, telemedicine"
+ schemaData={{
+ "@context": "https://schema.org",
+ "@type": "MobileApplication",
+ "name": "Chatr",
+ "description": "Communication OS - Chat, Healthcare, Jobs & More",
+ "applicationCategory": "LifestyleApplication",
+ "operatingSystem": "Android, iOS, Web",
+ "offers": {
+ "@type": "Offer",
+ "price": "0",
+ "priceCurrency": "INR"
+ },
+ "aggregateRating": {
+ "@type": "AggregateRating",
+ "ratingValue": "4.8",
+ "reviewCount": "10000"
+ }
+ }}
+ />
+ <div className="min-h-screen bg-background pb-0">{/* Removed pb-32 for full screen */}
+ {/* Enhanced Header */}
+ <div className="bg-background/95 backdrop-blur-xl border-b border-border/40 sticky top-0 z-50 transition-all duration-300">
+ <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+ <div 
+ className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity group"
+ onClick={() => navigate('/stealth-mode')}
+ role="button"
+ tabIndex={0}
+ onKeyDown={(e) => e.key === 'Enter' && navigate('/stealth-mode')}
+ >
+ <img src={chatrIconLogo} alt="Chatr Logo" className="h-10 w-10" loading="eager" />
+ <div>
+ <div className="text-workspace font-bold bg-gradient-to-r from-primary via-primary to-cyan-500 bg-clip-text text-transparent">
+ Chatr
+ </div>
+ <div className="flex items-center gap-1.5 text-[10px] font-medium text-muted-foreground group-hover:text-primary transition-colors">
+ {mode && (() => {
+ const ModeIcon = getModeIcon(mode.current_mode);
+ return (
+ <>
+ <ModeIcon className="w-3 h-3" />
+ <span>{getModeLabel(mode.current_mode)}</span>
+ <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+ </>
+ );
+ })()}
+ {!mode && <span>The Communication OS</span>}
+ </div>
+ </div>
+ </div>
+ <div className="flex items-center gap-2">
+ <QuickAccessMenu />
+ <Button
+ variant="ghost"
+ size="sm"
+ onClick={() => navigate('/chatr-points')}
+ className="h-9 px-3 gap-1.5 rounded-full bg-gradient-to-br from-amber-500/10 to-yellow-500/10 hover:from-amber-500/20 hover:to-yellow-500/20 transition-all hover:shadow-md"
+ >
+ <Coins className="w-4 h-4 text-amber-500" />
+ <span className="text-secondary font-bold text-amber-600 dark:text-amber-400">
+ {formatCoinAmount(pointsBalance)}
+ </span>
+ {currentStreak > 0 && (
+ <div className="flex items-center gap-0.5 ml-0.5">
+ <Flame className="w-4 h-4 text-orange-500" />
+ <span className="text-secondary font-bold text-orange-600 dark:text-orange-400">{currentStreak}</span>
+ </div>
+ )}
+ </Button>
+ <Button
+ variant="ghost"
+ size="sm"
+ onClick={handleShareClick}
+ className="rounded-full h-9 px-4 text-secondary font-medium bg-gradient-to-r from-orange-500/10 to-red-500/10 hover:from-orange-500/20 hover:to-red-500/20 text-orange-600 dark:text-orange-400 transition-all gap-1.5"
+ >
+ <Share2 className="w-4 h-4" />
+ <span>Share & Earn</span>
+ </Button>
+ {user && (
+ <>
+ <Button
+ variant="ghost"
+ size="icon"
+ onClick={handleSignOut}
+ className="rounded-full h-9 w-9 hover:bg-red-50 transition-colors"
+ >
+ <LogOut className="h-4 w-4 text-destructive" />
+ </Button>
+ </>
+ )}
+ </div>
+ </div>
+ </div>
+
+ <div className="max-w-2xl mx-auto px-4 space-y-5 mt-4 pb-24">
+
+ {/* Personalized Greeting */}
+ <PersonalizedGreeting />
+
+ {/* Stories / Status Updates */}
+ {user?.id && (
+ <div>
+ <h2 className="text-secondary font-semibold text-muted-foreground mb-2 px-1">Updates</h2>
+ <StoriesCarousel userId={user.id} />
+ </div>
+ )}
+
+ {/* Activity Widgets - Dynamic Content */}
+ <ActivityWidgets />
+
+ {/* Quick Actions Row */}
+ <div>
+ <h2 className="text-secondary font-semibold text-muted-foreground mb-2">Quick Actions</h2>
+ <QuickActions />
+ </div>
+
+ {/* Search Bar - Compact */}
+ <div className="bg-gradient-to-r from-primary/10 via-purple-500/10 to-blue-500/10 rounded-2xl border border-primary/20 p-3 relative">
+ <div className="flex gap-2">
+ <div className="flex-1 relative">
+ <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+ <Input 
+ value={searchQuery}
+ onChange={(e) => {
+ setSearchQuery(e.target.value);
+ setShowSuggestions(true);
+ }}
+ onFocus={() => setShowSuggestions(true)}
+ onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+ placeholder="Search chats, jobs, people, services..."
+ className="pl-9 pr-10 h-11 bg-background/80 backdrop-blur text-secondary"
+ onKeyDown={(e) => {
+ if (e.key === 'Enter') {
+ handleSearch();
+ }
+ }}
+ />
+ <button
+ onClick={startVoiceSearch}
+ disabled={isListening}
+ className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full hover:bg-muted/50 transition-colors disabled:opacity-50"
+ >
+ <Mic className={`w-4 h-4 ${isListening ? 'text-destructive animate-pulse' : 'text-muted-foreground'}`} />
+ </button>
+ </div>
+ <Button onClick={() => handleSearch()} size="sm" className="h-11 px-4">
+ <Search className="w-4 h-4" />
+ </Button>
+ </div>
+ </div>
+
+ {/* Recent Activity */}
+ <div>
+ <h2 className="text-secondary font-semibold text-muted-foreground mb-2">Recent Activity</h2>
+ <RecentActivity />
+ </div>
+
+ {/* Main Category Grid */}
+ <div>
+ <h2 className="text-secondary font-semibold text-muted-foreground mb-2">All Services</h2>
+ <div className="grid grid-cols-4 gap-3">
+ {mainHubs.map((category, index) => (
+ <button
+ key={category.title}
+ onClick={() => {
+ if ('external' in category && category.external) {
+ window.open(category.route, '_blank', 'noopener,noreferrer');
+ } else {
+ navigate(category.route);
+ }
+ }}
+ className="group flex flex-col items-center gap-2 p-2.5 rounded-xl bg-card hover:bg-muted/50 border border-border/50 hover:border-primary/30 transition-all active:scale-95"
+ >
+ <div className={`w-9 h-9 rounded-lg ${category.iconColor} flex items-center justify-center shadow-md`}>
+ <category.icon className="w-4 h-4 text-white" strokeWidth={2.5} />
+ </div>
+ <span className="text-[10px] font-semibold text-center leading-tight">
+ {category.title}
+ </span>
+ </button>
+ ))}
+ </div>
+ </div>
+
+ {/* Programs Section - Apple-style pills */}
+ <div className="grid grid-cols-3 gap-3">
+ <button
+ onClick={() => navigate('/chatr-growth')}
+ className="h-16 rounded-[28px] bg-gradient-to-r from-orange-400 to-orange-500 px-3 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all relative overflow-hidden"
+ >
+ <span className="absolute top-1 bg-red-500 text-white text-[8px] px-2 py-0.5 rounded-full font-bold">Earn ₹</span>
+ <Flame className="w-6 h-6 text-white/90 mt-1" strokeWidth={1.5} />
+ <span className="text-[11px] text-white font-medium mt-0.5">Champions</span>
+ </button>
+ <button
+ onClick={() => navigate('/ambassador-program')}
+ className="h-16 rounded-[28px] bg-gradient-to-r from-fuchsia-500 to-purple-500 px-3 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all relative overflow-hidden"
+ >
+ <span className="absolute top-1 bg-purple-700 text-white text-[8px] px-2 py-0.5 rounded-full font-bold">Apply</span>
+ <Users className="w-6 h-6 text-white/90 mt-1" strokeWidth={1.5} />
+ <span className="text-[11px] text-white font-medium mt-0.5">Partner</span>
+ </button>
+ <button
+ onClick={() => navigate('/doctor-onboarding')}
+ className="h-16 rounded-[28px] bg-gradient-to-r from-blue-400 to-blue-600 px-3 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all relative overflow-hidden"
+ >
+ <span className="absolute top-1 bg-emerald-500 text-white text-[8px] px-2 py-0.5 rounded-full font-bold">Join</span>
+ <Stethoscope className="w-6 h-6 text-white/90 mt-1" strokeWidth={1.5} />
+ <span className="text-[11px] text-white font-medium mt-0.5">Doctor Portal</span>
+ </button>
+ </div>
+
+ {/* Ecosystem Section - Apple-style pills */}
+ <div className="mt-5">
+ <h2 className="text-body font-bold mb-3">
+ <span className="bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">Ecosystem</span>
+ </h2>
+ <div className="grid grid-cols-3 gap-3">
+ <button
+ onClick={() => navigate('/food-ordering')}
+ className="h-14 rounded-[24px] bg-gradient-to-r from-orange-400 to-orange-500 px-3 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Utensils className="w-6 h-6 text-white/90" strokeWidth={1.5} />
+ <span className="text-[10px] text-white font-medium mt-0.5">Food Ordering</span>
+ </button>
+ <button
+ onClick={() => navigate('/local-deals')}
+ className="h-14 rounded-[24px] bg-gradient-to-r from-green-400 to-green-500 px-3 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Percent className="w-6 h-6 text-white/90" strokeWidth={1.5} />
+ <span className="text-[10px] text-white font-medium mt-0.5">Local Deals</span>
+ </button>
+ <button
+ onClick={() => navigate('/chatr-plus-subscribe')}
+ className="h-14 rounded-[24px] bg-gradient-to-r from-fuchsia-500 to-purple-500 px-3 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Crown className="w-6 h-6 text-white/90" strokeWidth={1.5} />
+ <span className="text-[10px] text-white font-medium mt-0.5">Chatr Premium</span>
+ </button>
+ </div>
+ </div>
+
+ {/* Quick Access Section - Apple-style pills */}
+ <div className="mt-5 mb-8">
+ <h2 className="text-body font-bold mb-3">
+ <span className="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">Quick Access</span>
+ </h2>
+ <div className="grid grid-cols-4 gap-2">
+ <button
+ onClick={() => navigate('/chatr-wallet')}
+ className="h-14 rounded-[22px] bg-gradient-to-r from-teal-400 to-teal-500 px-2 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Wallet className="w-5 h-5 text-white/90" strokeWidth={1.5} />
+ <span className="text-[9px] text-white font-medium mt-0.5">ChatrPay</span>
+ </button>
+ <button
+ onClick={() => navigate('/chatr-studio')}
+ className="h-14 rounded-[22px] bg-gradient-to-r from-purple-400 to-purple-500 px-2 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Palette className="w-5 h-5 text-white/90" strokeWidth={1.5} />
+ <span className="text-[9px] text-white font-medium mt-0.5">Studio</span>
+ </button>
+ <button
+ onClick={() => navigate('/ai-assistant')}
+ className="h-14 rounded-[22px] bg-gradient-to-r from-cyan-400 to-cyan-500 px-2 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Bot className="w-5 h-5 text-white/90" strokeWidth={1.5} />
+ <span className="text-[9px] text-white font-medium mt-0.5">AI Assistant</span>
+ </button>
+ <button
+ onClick={() => navigate('/emergency-services')}
+ className="h-14 rounded-[22px] bg-gradient-to-r from-red-400 to-red-500 px-2 flex flex-col items-center justify-center shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+ >
+ <Siren className="w-5 h-5 text-white/90" strokeWidth={1.5} />
+ <span className="text-[9px] text-white font-medium mt-0.5">Emergency</span>
+ </button>
+ </div>
+ </div>
+ </div>
+
+ {/* Share Dialog */}
+ <Dialog open={showShareDialog} onOpenChange={setShowShareDialog}>
+ <DialogContent className="max-w-md">
+ <DialogHeader>
+ <DialogTitle className="text-center text-page bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent font-bold">
+ Chatr Champions
+ </DialogTitle>
+ </DialogHeader>
+ 
+ <div className="space-y-6">
+ {/* Referral Code Display */}
+ {referralCode && (
+ <div className="text-center space-y-2">
+ <p className="text-secondary text-muted-foreground">Your Referral Code</p>
+ <p className="text-label text-muted-foreground">Your unique code</p>
+ <div className="bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 rounded-xl p-4">
+ <p className="text-display bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent tracking-wider">
+ {referralCode}
+ </p>
+ </div>
+ </div>
+ )}
+
+ {/* QR Code */}
+ <div className="flex flex-col items-center gap-3">
+ <div className="bg-white p-4 rounded-2xl shadow-lg">
+ {qrCodeUrl ? (
+ <img src={qrCodeUrl} alt="Referral QR Code" className="w-48 h-48" />
+ ) : referralCode ? (
+ <QRCodeSVG 
+ value={`https://chatr.chat/auth?ref=${referralCode}`}
+ size={192}
+ level="H"
+ includeMargin
+ />
+ ) : (
+ <div className="w-48 h-48 flex items-center justify-center bg-muted rounded-lg">
+ <p className="text-secondary text-muted-foreground">Loading...</p>
+ </div>
+ )}
+ </div>
+ <p className="text-label text-muted-foreground">Scan to join with your code</p>
+ </div>
+
+ {/* Action Buttons */}
+ <div className="grid grid-cols-2 gap-3">
+ <Button
+ onClick={copyReferralLink}
+ className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 gap-2"
+ >
+ <Copy className="w-4 h-4" />
+ Copy Link
+ </Button>
+ <Button
+ onClick={shareReferralLink}
+ className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 gap-2"
+ >
+ <Share className="w-4 h-4" />
+ Share
+ </Button>
+ </div>
+
+ {/* Info */}
+ <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-xl p-4">
+ <p className="text-secondary text-center text-muted-foreground">
+ Share your code and earn <span className="font-bold text-orange-600 dark:text-orange-400">₹50</span> per referral + network bonuses!
+ </p>
+ <Button
+ variant="link"
+ onClick={() => {
+ setShowShareDialog(false);
+ navigate('/growth');
+ }}
+ className="w-full mt-2 text-orange-600 dark:text-orange-400"
+ >
+ View Full Dashboard →
+ </Button>
+ </div>
+ </div>
+ </DialogContent>
+ </Dialog>
+ 
+ {/* Bottom Navigation for Native Apps */}
+ <BottomNav />
+ </div>
+ </>
+ );
+};
+
+export default Index;
+

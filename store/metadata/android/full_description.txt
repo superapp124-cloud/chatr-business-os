@@ -1,0 +1,82 @@
+Chatr — Where Every Connection Feels Alive! 🌟
+
+A product of Talentxcel Services Pvt Ltd
+
+Experience conversations like never before — smooth, secure, and full of heart. Your all-in-one smart connection hub for modern communication.
+
+Chatr is a VoIP communication app and does not replace your mobile carrier or emergency calling services.
+
+KEY FEATURES:
+
+📞 Caller Display Magic
+Instantly see who's calling with live name, profile, and location updates. Know where your contacts are calling from in real-time.
+
+🔔 Smart Notifications
+Never miss a moment with real-time message and call alerts, personalized just for you with intelligent priority handling.
+
+📍 GPS & IP Location Insights
+Stay connected with context — see approximate location and presence awareness of your contacts, all while maintaining your privacy.
+
+📸 Camera Auto-Enable
+Jump into face-to-face video calls instantly — no setup, just smiles. Seamless video calling experience.
+
+👥 Auto Contact Sync
+All your friends, one tap away. Automatic synchronization with your phone contacts.
+
+💬 Crystal-Clear Calls
+FaceTime-style HD calling (voice & video) that feels real, not robotic. Professional-grade WebRTC technology.
+
+💗 Health & Wellness Tracker
+Integrated with Google Health — track your wellness, mood, and activity because your well-being matters too.
+
+🚀 Lightning Fast Performance
+Optimized messaging engine with offline support and intelligent data saving for 2G networks.
+
+🔒 Privacy & Security
+End-to-end encryption, customizable location sharing, and granular privacy controls keep you safe.
+
+WHY CHATR?
+
+✓ AI-powered smart features
+✓ Real-time location presence
+✓ Professional HD calling (voice & video)
+✓ Health & wellness integration
+✓ Auto contact sync
+✓ Smart notifications
+✓ Privacy-first design with customizable location sharing
+✓ Works great on slow networks (2G optimized)
+✓ Free to use
+✓ Regular updates with new features
+
+PERFECT FOR:
+
+• Personal messaging with location context
+• HD video & voice calls
+• Family wellness tracking
+• Team communication
+• Community groups
+• Health-conscious users
+• Anyone who values privacy and smart features
+
+Join Chatr today and experience communication that truly connects — fast, intelligent, and heartfelt.
+
+PERMISSIONS:
+
+• Internet - To send and receive messages & calls
+• Storage - To save media and offline messages
+• Notifications - For real-time message and call alerts
+• Camera - For video calls and photo sharing
+• Microphone - For voice and video calls
+• Location (Optional) - To share your presence with contacts (fully customizable)
+• Contacts (Optional) - For automatic contact synchronization
+
+SUPPORT:
+
+Have questions or feedback? Contact us at support@chatr.chat
+
+Privacy Policy: https://chatr.chat/privacy
+Terms of Service: https://chatr.chat/terms
+
+---
+Chatr is a product of Talentxcel Services Pvt Ltd
+© 2026 Talentxcel Services Pvt Ltd. All rights reserved.

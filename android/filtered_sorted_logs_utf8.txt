@@ -1,0 +1,136 @@
+﻿05-19 15:13:42.642  1147  2795 I Telecom-Common: Adding new incoming call with phoneAccountHandle ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0}: TSI.aNIC@HLI
+05-19 15:13:42.650  1147  2795 I Telecom-CreateConnectionProcessor: Trying attempt CallAttemptRecord(ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0},ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0}): TSI.aNIC@HLI
+05-19 15:13:42.654  1147  2795 I Telecom : Event: RecordEntry TC@203: BIND_CS, ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}: TSI.aNIC@HLI
+05-19 15:13:42.686  1147  1147 I Telecom-ServiceBinderConnection: Service bound ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}: SBC.oSC@HLM
+05-19 15:13:42.687  1147  1147 I Telecom : Event: RecordEntry TC@203: CS_BOUND, ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}: SBC.oSC@HLM
+05-19 15:13:42.721  1147  2795 I ActivityTaskManager: START u0 {flg=0x34000000 cmp=com.chatr.app/.IncomingCallActivity (has extras)} from uid 10266
+05-19 15:13:42.731  1147  1599 I Telecom-CallsManager: setCallState NEW -> RINGING, call: [TC@203, NEW, com.chatr.app/.services.ChatrConnectionService, tel:**********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]: (...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-HLM
+05-19 15:13:42.746  1147  3738 I ActivityTaskManager: START u0 {flg=0x34000000 cmp=com.chatr.app/.IncomingCallActivity (has extras)} from uid 10266
+05-19 15:13:42.748  1147  1599 I Telecom-InCallController: onCallAdded: [TC@203, RINGING, com.chatr.app/.services.ChatrConnectionService, tel:**********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]; not bound or connected.: (...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-HLM
+05-19 15:13:42.795  1147  1170 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.PHONE_STATE flg=0x1000010 (has extras) } to com.chatr.app/.receivers.CallStateReceiver requires android.permission.READ_PRIVILEGED_PHONE_STATE due to sender android (uid 1000)
+05-19 15:13:42.941  1147  3740 I ActivityTaskManager: Activity requesting to dismiss Keyguard: ActivityRecord{f3246d4 u0 com.chatr.app/.IncomingCallActivity t397}
+05-19 15:13:43.604  3461  3461 I TelecomFramework: ChatrConnectionService: notifyCreateConnectionComplete TC@203_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-HLM
+05-19 15:13:43.615  1147  4487 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW flg=0x30040000 cmp=com.chatr.app/.MainActivity (has extras)} from uid 10266
+05-19 15:13:44.065  1147  1599 I WindowManager: Relayout Window{4ea64e8 u0 com.chatr.app/com.chatr.app.IncomingCallActivity}: oldVis=4 newVis=0 focusMayChange = true
+05-19 15:13:45.217  1147  1171 I ActivityManager: Start proc 3842:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i220 for  {com.chatr.app/org.chromium.content.app.SandboxedProcessService0:0}
+05-19 15:13:46.233  1147  4484 I ActivityTaskManager: moveTaskToBack: TaskRecord{3808d8b #398 A=com.chatr.app U=0 StackId=398 sz=1}
+05-19 15:13:46.567  1147  1599 I WindowManager: Relayout Window{3c11cfe u0 com.chatr.app/com.chatr.app.MainActivity}: oldVis=4 newVis=0 focusMayChange = true
+05-19 15:13:46.745  1147  1164 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{81fdfe7 u0 com.chatr.app/.MainActivity t398}
+05-19 15:13:46.747  1147  1164 W ActivityTaskManager: Activity pause timeout for ActivityRecord{81fdfe7 u0 com.chatr.app/.MainActivity t398}
+05-19 15:13:46.970  1147  4486 I ActivityTaskManager: Activity reported stop, but no longer stopping: ActivityRecord{f3246d4 u0 com.chatr.app/.IncomingCallActivity t397}
+05-19 15:13:47.277  1147  1599 I WindowManager: Relayout Window{4ea64e8 u0 com.chatr.app/com.chatr.app.IncomingCallActivity}: oldVis=8 newVis=0 focusMayChange = true
+05-19 15:13:47.807  1147  1165 I WindowManager: Screen frozen for +1s58ms due to Window{4ea64e8 u0 com.chatr.app/com.chatr.app.IncomingCallActivity}
+05-19 15:13:51.597  1147  3738 I ActivityTaskManager: START u0 {flg=0x14000000 cmp=com.chatr.app/.MainActivity (has extras)} from uid 10266
+05-19 15:13:51.696  1147  1656 I Telecom-CallsManager: setCallState RINGING -> ACTIVE, call: [TC@203, RINGING, com.chatr.app/.services.ChatrConnectionService, tel:**********, A, childs(0), has_parent(false), [Capabilities: CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]: CSW.sA->CSFM.rF@HLo
+05-19 15:13:51.724  1147  1170 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.PHONE_STATE flg=0x1000010 (has extras) } to com.chatr.app/.receivers.CallStateReceiver requires android.permission.READ_PRIVILEGED_PHONE_STATE due to sender android (uid 1000)
+05-19 15:13:51.808  1147  1599 I WindowManager: Relayout Window{3c11cfe u0 com.chatr.app/com.chatr.app.MainActivity}: oldVis=8 newVis=0 focusMayChange = true
+05-19 15:13:51.912  1147  3738 W ActivityTaskManager: Duplicate finish request for ActivityRecord{f3246d4 u0 com.chatr.app/.IncomingCallActivity t397 f}
+05-19 15:13:51.936  1147  4486 W ActivityTaskManager: Duplicate finish request for ActivityRecord{f3246d4 u0 com.chatr.app/.IncomingCallActivity t397 f}
+05-19 15:13:52.027  1147  3740 W ActivityTaskManager: Duplicate finish request for ActivityRecord{f3246d4 u0 com.chatr.app/.IncomingCallActivity t397 f}
+05-19 15:13:52.040  1147  3740 W ActivityTaskManager: Duplicate finish request for ActivityRecord{f3246d4 u0 com.chatr.app/.IncomingCallActivity t397 f}
+05-19 15:14:50.147   582  1854 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=21.63 dur=1017.23 max=62.60 min=38.86
+05-19 15:14:50.473  3461  3461 I ChatrMainActivity: WebView console: ≡ƒöò [Global] Emergency ringtone stop (https://localhost/assets/index-CGBh2N-9.js:2488)
+05-19 15:14:50.474  3461  3461 I ChatrMainActivity: WebView console: [NativeCall] Syncing call state: 72e4ba1b -> ended (https://localhost/assets/index-CGBh2N-9.js:42)
+05-19 15:14:50.474  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2488 - Msg: ≡ƒöò [Global] Emergency ringtone stop
+05-19 15:14:50.475  3461  3461 I ChatrMainActivity: WebView console: [NativeCall] Call state synced via ChatrCall bridge (https://localhost/assets/index-CGBh2N-9.js:42)
+05-19 15:14:50.475  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 42 - Msg: [NativeCall] Syncing call state: 72e4ba1b -> ended
+05-19 15:14:50.476  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 42 - Msg: [NativeCall] Call state synced via ChatrCall bridge
+05-19 15:14:50.512  3461  3929 I chatty  : uid=10266(com.chatr.app) RenderThread identical 3 lines
+05-19 15:14:50.520  1147  1606 I MediaFocusControl: requestAudioFocus() from uid/pid 10266/3461 clientId=android.media.AudioManager@48f1ec7com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@13aecf4 callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 15:14:50.578  1147  1606 I MediaFocusControl: abandonAudioFocus() from uid/pid 10266/3461 clientId=android.media.AudioManager@48f1ec7com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@13aecf4
+05-19 15:14:50.580  1147  1606 I MediaFocusControl: requestAudioFocus() from uid/pid 10266/3461 clientId=android.media.AudioManager@48f1ec7com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@13aecf4 callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 15:14:51.174   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=27.25 dur=1027.43 max=81.96 min=29.34
+05-19 15:14:51.272  1147  1491 I MediaFocusControl: abandonAudioFocus() from uid/pid 10266/3461 clientId=android.media.AudioManager@48f1ec7com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@13aecf4
+05-19 15:14:52.189   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=29.56 dur=1014.98 max=47.61 min=26.50
+05-19 15:14:53.209   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=30.38 dur=1020.32 max=37.88 min=30.20
+05-19 15:14:53.312  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: active
+05-19 15:14:53.312  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: active (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:53.313  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒôí [UnifiedCall] Call status update: active
+05-19 15:14:53.313  3461  3461 I ChatrMainActivity: WebView console: ≡ƒôí [UnifiedCall] Call status update: active (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:53.314  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: active
+05-19 15:14:53.314  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: active (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:53.347  3461  3461 I ChatrMainActivity: WebView console: ≡ƒôí [UnifiedCall] Call status update: active (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:53.348  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒôí [UnifiedCall] Call status update: active
+05-19 15:14:53.571  3461  3461 I ChatrMainActivity: WebView console: ≡ƒÆô [CallKeepAlive] Heartbeat (10000ms since last) (https://localhost/assets/index-CGBh2N-9.js:2562)
+05-19 15:14:53.572  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2562 - Msg: ≡ƒÆô [CallKeepAlive] Heartbeat (10000ms since last)
+05-19 15:14:54.224   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=29.57 dur=1014.69 max=42.70 min=26.35
+05-19 15:14:54.558  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended
+05-19 15:14:54.558  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.559  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Already have active call for this ID, skipping
+05-19 15:14:54.559  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Already have active call for this ID, skipping (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.560  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô╡ [GlobalCallListener] Active call ended by partner (receiver side)
+05-19 15:14:54.560  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô╡ [GlobalCallListener] Active call ended by partner (receiver side) (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.561  3461  3461 I ChatrMainActivity: WebView console: ≡ƒôí [UnifiedCall] Call status update: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.562  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒôí [UnifiedCall] Call status update: ended
+05-19 15:14:54.563  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô╡ [UnifiedCall] Call ended by partner
+05-19 15:14:54.563  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô╡ [UnifiedCall] Call ended by partner (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.564  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2488 - Msg: ≡ƒöò [Global] Emergency ringtone stop
+05-19 15:14:54.564  3461  3461 I ChatrMainActivity: WebView console: ≡ƒöò [Global] Emergency ringtone stop (https://localhost/assets/index-CGBh2N-9.js:2488)
+05-19 15:14:54.565  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô╡ Ending active call: 72e4ba1b-c43e-4db3-8a53-30615adcf59f
+05-19 15:14:54.565  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô╡ Ending active call: 72e4ba1b-c43e-4db3-8a53-30615adcf59f (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.566  3461  3461 I ChatrMainActivity: WebView console: [NativeCall] Native call state cleared (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.567  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: [NativeCall] Native call state cleared
+05-19 15:14:54.568  3461  3461 I ChatrMainActivity: WebView console: ≡ƒÆô [CallKeepAlive] Stopping keepalive (https://localhost/assets/index-CGBh2N-9.js:2562)
+05-19 15:14:54.569  3461  3461 I ChatrMainActivity: WebView console: ≡ƒöï [Thermal] Monitor stopped. (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.569  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2562 - Msg: ≡ƒÆô [CallKeepAlive] Stopping keepalive
+05-19 15:14:54.570  3461  3461 I ChatrMainActivity: WebView console: ≡ƒôí [LANMode] Discovery stopped (https://localhost/assets/index-CGBh2N-9.js:2564)
+05-19 15:14:54.570  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒöï [Thermal] Monitor stopped.
+05-19 15:14:54.571  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2564 - Msg: ≡ƒôí [LANMode] Discovery stopped
+05-19 15:14:54.573  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2564 - Msg: ≡ƒôí [ULB] Cleaned up
+05-19 15:14:54.573  3461  3461 I ChatrMainActivity: WebView console: ≡ƒôí [ULB] Cleaned up (https://localhost/assets/index-CGBh2N-9.js:2564)
+05-19 15:14:54.575  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:54.576  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended
+05-19 15:14:54.599  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 42 - Msg: [NativeCall] Requested native incoming call dismissal via ChatrCall bridge
+05-19 15:14:54.599  3461  3461 I ChatrMainActivity: WebView console: [NativeCall] Requested native incoming call dismissal via ChatrCall bridge (https://localhost/assets/index-CGBh2N-9.js:42)
+05-19 15:14:54.604  1147  1606 I MediaFocusControl: requestAudioFocus() from uid/pid 10266/3461 clientId=android.media.AudioManager@48f1ec7com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@13aecf4 callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 15:14:54.657  1147  1606 I MediaFocusControl: abandonAudioFocus() from uid/pid 10266/3461 clientId=android.media.AudioManager@48f1ec7com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@13aecf4
+05-19 15:14:55.233  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended
+05-19 15:14:55.233  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:55.234   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=33.67 dur=1009.85 max=239.29 min=5.34
+05-19 15:14:55.365  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:55.366  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended
+05-19 15:14:55.369  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:55.370  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended
+05-19 15:14:55.392  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 2568 - Msg: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended
+05-19 15:14:55.392  3461  3461 I ChatrMainActivity: WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 72e4ba1b-c43e-4db3-8a53-30615adcf59f status: ended (https://localhost/assets/index-CGBh2N-9.js:2568)
+05-19 15:14:56.251   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=47.17 dur=1017.57 max=237.31 min=13.57
+05-19 15:14:57.253   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=48.93 dur=1001.41 max=148.89 min=13.81
+05-19 15:14:57.443  3461  3785 V Capacitor/NetworkPlugin: Notifying listeners for event networkStatusChange
+05-19 15:14:57.448  3461  3461 I ChatrMainActivity: WebView console: [object Object] (:333)
+05-19 15:14:57.448  3461  3461 I ChatrMainActivity: WebView console: %cresult %cNetwork.addListener (#53710991) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 15:14:57.449  3461  3461 I ChatrMainActivity: WebView console: console.groupEnd (:335)
+05-19 15:14:57.602  3461  3461 W Capacitor/Console: File: https://localhost/#/home - Line 0 - Msg: The resource https://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-19 15:14:57.602  3461  3461 I ChatrMainActivity: WebView console: The resource https://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 15:14:57.603  3461  3461 W Capacitor/Console: File: https://localhost/#/home - Line 0 - Msg: The resource https://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-19 15:14:57.603  3461  3461 I ChatrMainActivity: WebView console: The resource https://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 15:14:57.604  3461  3461 W Capacitor/Console: File: https://localhost/#/home - Line 0 - Msg: The resource https://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-19 15:14:57.604  3461  3461 I ChatrMainActivity: WebView console: The resource https://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 15:14:58.258   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=46.77 dur=1004.83 max=240.95 min=13.07
+05-19 15:14:59.261   582   630 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) queueBuffer: fps=46.85 dur=1003.19 max=241.70 min=11.78
+05-19 15:14:59.301  1147  1606 D PowerHalWrapper: <amsBoostResume> last:com.chatr.app, next:com.motorola.launcher3 
+05-19 15:14:59.302  1147  1606 D PowerHalWrapper: amsBoostNotify pid:26323,activity:com.android.launcher3.CustomizationPanelLauncher, package:com.motorola.launcher3, mProcessCreatePackcom.chatr.app 
+05-19 15:14:59.304   564   594 I powerd  : [powerd_req] POWER_MSG_NOTIFY_STATE, pc:0, com.chatr.app => com.motorola.launcher3
+05-19 15:14:59.315  3461  3461 D Capacitor/AppPlugin: No listeners found for event pause
+05-19 15:14:59.315  3461  3461 V Capacitor/AppPlugin: Notifying listeners for event pause
+05-19 15:14:59.333  3461  3461 I ChatrMainActivity: MainActivity onPause
+05-19 15:14:59.333  3461  3461 D Capacitor: App paused
+05-19 15:14:59.334  3461  3461 I ChatrMainActivity: Forcing WebView to remain resumed in onPause
+05-19 15:14:59.514   582   582 I SurfaceFlinger: screenshot (com.chatr.app/com.chatr.app.MainActivity#0)
+05-19 15:14:59.867   582   582 E Layer   : [Surface(name=AppWindowToken{3cde23d token=Token{f74e794 ActivityRecord{81fdfe7 u0 com.chatr.app/.MainActivity t398}}})/@0xb76fe93 - animation-leash#0] No local sync point found
+05-19 15:14:59.868   582   582 E Layer   : [Surface(name=AppWindowToken{3cde23d token=Token{f74e794 ActivityRecord{81fdfe7 u0 com.chatr.app/.MainActivity t398}}})/@0xb76fe93 - animation-leash#0] No local sync point found
+05-19 15:14:59.904   582   582 E Layer   : [Surface(name=AppWindowToken{3cde23d token=Token{f74e794 ActivityRecord{81fdfe7 u0 com.chatr.app/.MainActivity t398}}})/@0xb76fe93 - animation-leash#0] No local sync point found
+05-19 15:14:59.954   582  1854 I BufferQueueProducer: [com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb42a5000,id:2209,api:1,p:3461,c:582) disconnect(P): api 1
+05-19 15:14:59.980  3461  3461 V Capacitor/AppPlugin: Notifying listeners for event appStateChange
+05-19 15:14:59.980  3461  3461 D Capacitor/AppPlugin: Firing change: false
+05-19 15:14:59.982  3461  3461 I ChatrMainActivity: MainActivity onStop: isActivityVisible=false
+05-19 15:14:59.982  3461  3461 D Capacitor: App stopped
+05-19 15:14:59.983  3461  3461 I ChatrMainActivity: Forcing WebView to remain resumed in onStop
+05-19 15:14:59.993  3461  3461 D Capacitor: Saving instance state!
+05-19 15:14:59.996  3461  3461 I ChatrMainActivity: WebView console: %cnative %cFirebaseAnalytics.logEvent (#53711016) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 15:14:59.997  3461  3461 I ChatrMainActivity: WebView console: console.groupEnd (:350)
+05-19 15:14:59.997  3461  3461 I ChatrMainActivity: WebView console: [object Object] (:349)
+05-19 15:14:59.998  3461  3461 I ChatrMainActivity: WebView console: console.groupEnd (:335)
+05-19 15:14:59.998  3461  3461 I ChatrMainActivity: WebView console: [object Object] (:333)
+05-19 15:14:59.998  3461  3461 I ChatrMainActivity: WebView console: %cresult %cApp.addListener (#53710992) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 15:14:59.999  3461  3461 I Capacitor/Console: File: https://localhost/assets/index-CGBh2N-9.js - Line 42 - Msg: App state changed. Active: false
+05-19 15:14:59.999  3461  3461 I ChatrMainActivity: WebView console: App state changed. Active: false (https://localhost/assets/index-CGBh2N-9.js:42)

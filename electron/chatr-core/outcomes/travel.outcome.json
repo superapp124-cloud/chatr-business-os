@@ -1,0 +1,50 @@
+{
+  "id": "outcome.travel",
+  "name": "Travel Workflow",
+  "trigger": ["transport.book", "travel"],
+  "steps": [
+    {
+      "id": "step_search",
+      "capability": "transport.search",
+      "requiresApproval": false,
+      "passConstraints": true
+    },
+    {
+      "id": "step_book",
+      "capability": "transport.book",
+      "requiresApproval": true,
+      "dependsOn": ["step_search"],
+      "passConstraints": true
+    },
+    {
+      "id": "step_calendar",
+      "capability": "calendar.create_event",
+      "requiresApproval": false,
+      "dependsOn": ["step_book"],
+      "mapping": {
+        "title": "Travel to {to}",
+        "time": "{date}"
+      }
+    },
+    {
+      "id": "step_reminder",
+      "capability": "reminder.create",
+      "requiresApproval": false,
+      "dependsOn": ["step_calendar"],
+      "mapping": {
+        "text": "Upcoming trip to {to}",
+        "time": "-2h"
+      }
+    },
+    {
+      "id": "step_expense",
+      "capability": "expense.log",
+      "requiresApproval": false,
+      "dependsOn": ["step_book"],
+      "mapping": {
+        "amount": "{step_book.output.cost}",
+        "category": "Travel"
+      }
+    }
+  ]
+}

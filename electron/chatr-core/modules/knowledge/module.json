@@ -1,0 +1,8 @@
+{
+  "name": "knowledge",
+  "version": "0.1.0",
+  "codename": "Knowledge",
+  "description": "Zero Mock Data stub for resolving contacts, organizations, and past context.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable"
+}

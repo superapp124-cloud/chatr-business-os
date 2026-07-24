@@ -1,0 +1,33 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.chatr.app",
+        "paths": [
+          "/join",
+          "/join/*",
+          "/chat/*",
+          "/profile/*",
+          "/communities/*",
+          "/jobs/*",
+          "/health/*",
+          "/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "TEAMID.com.chatr.app"
+    ]
+  },
+  "appclips": {
+    "apps": []
+  },
+  "activitycontinuation": {
+    "apps": [
+      "TEAMID.com.chatr.app"
+    ]
+  }
+}

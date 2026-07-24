@@ -1,0 +1,9 @@
+{
+  "id": "core.calendar",
+  "version": "1.0.0",
+  "category": "productivity",
+  "permissions": [],
+  "supportsUndo": true,
+  "supportsScheduling": false,
+  "executionPolicy": "immediate"
+}

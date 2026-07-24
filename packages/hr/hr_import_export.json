@@ -1,0 +1,24 @@
+{
+  "import": {
+    "supported_formats": ["csv", "json"],
+    "mapping_templates": [
+      {
+        "name": "bamboo_hr_employee",
+        "mapping": {
+          "firstName": "first_name",
+          "lastName": "last_name",
+          "workEmail": "work_email",
+          "department": "department"
+        }
+      }
+    ],
+    "validation_rules": [
+      { "field": "work_email", "rule": "is_valid_email" }
+    ],
+    "incremental": true
+  },
+  "export": {
+    "supported_formats": ["csv", "json", "pdf"],
+    "incremental": true
+  }
+}

@@ -1,0 +1,213 @@
+project_id = "sbayuqgomlflmxgicplz"
+
+[functions.perplexity-search]
+verify_jwt = false
+
+[functions.geo-search]
+verify_jwt = false
+
+[functions.scrape-jobs]
+verify_jwt = false
+
+[functions.ai-assistant]
+verify_jwt = false
+
+[functions.universal-search-engine]
+verify_jwt = false
+
+[functions.web-search-aggregator]
+verify_jwt = false
+
+[functions.visual-search]
+verify_jwt = false
+
+[functions.search-alerts-notifier]
+verify_jwt = false
+
+[functions.ai-browser-search]
+verify_jwt = true
+
+[functions.ai-health-assistant]
+verify_jwt = false
+
+[functions.ai-smart-reply]
+verify_jwt = false
+
+[functions.transcribe-voice]
+verify_jwt = true
+
+[functions.smart-compose]
+verify_jwt = true
+
+[functions.translate-message]
+verify_jwt = true
+
+[functions.summarize-chat]
+verify_jwt = true
+
+[functions.auto-translate]
+verify_jwt = true
+
+[functions.send-whatsapp-invite]
+verify_jwt = true
+
+[functions.webrtc-signaling]
+verify_jwt = false
+
+[functions.process-daily-login]
+verify_jwt = true
+
+[functions.qr-payment]
+verify_jwt = true
+
+[functions.realtime-token]
+verify_jwt = true
+
+[functions.symptom-checker]
+verify_jwt = true
+
+[functions.universal-search]
+verify_jwt = false
+
+[functions.click-log]
+verify_jwt = false
+
+[functions.ai-answer]
+verify_jwt = false
+
+[functions.chatr-world-search]
+verify_jwt = false
+
+[functions.chatr-world-ai]
+verify_jwt = false
+
+[functions.healthcare-booking]
+verify_jwt = true
+
+[functions.sync-google-contacts]
+verify_jwt = true
+
+[functions.send-invite]
+verify_jwt = true
+
+[functions.cleanup-expired-messages]
+verify_jwt = false
+
+[functions.notify-referral-join]
+verify_jwt = false
+
+[functions.qr-login]
+verify_jwt = false
+
+[functions.generate-sticker]
+verify_jwt = true
+
+[functions.chatr-brain]
+verify_jwt = false
+
+[functions.app-version]
+verify_jwt = false
+
+[functions.fcm-notify]
+verify_jwt = false
+
+[functions.send-push-notification]
+verify_jwt = false
+
+[functions.send-chat-notification]
+verify_jwt = false
+
+[functions.register-device-token]
+verify_jwt = false
+
+[functions.crawl-jobs]
+verify_jwt = false
+
+[functions.websocket-signaling]
+verify_jwt = false
+
+[functions.send-call-notification]
+verify_jwt = true
+
+[functions.send-push]
+verify_jwt = false
+
+[functions.send-sms]
+verify_jwt = true
+
+[functions.pstn-call]
+verify_jwt = true
+
+[functions.chatr-mcp-server]
+verify_jwt = false
+
+[functions.desktop-session-revoke]
+enabled = true
+verify_jwt = false
+import_map = "./functions/desktop-session-revoke/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/desktop-session-revoke/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/desktop-session-revoke/*.html" ]
+
+[functions.business-workflow-engine]
+enabled = true
+verify_jwt = false
+import_map = "./functions/business-workflow-engine/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/business-workflow-engine/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/business-workflow-engine/*.html" ]
+
+[functions.business-ivr-webhook]
+enabled = true
+verify_jwt = false
+import_map = "./functions/business-ivr-webhook/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/business-ivr-webhook/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/business-ivr-webhook/*.html" ]
+
+[functions.business-campaign-runner]
+enabled = true
+verify_jwt = false
+import_map = "./functions/business-campaign-runner/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/business-campaign-runner/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/business-campaign-runner/*.html" ]
+
+[functions.device-auth]
+enabled = true
+verify_jwt = false
+import_map = "./functions/device-auth/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/device-auth/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/device-auth/*.html" ]
+
+[functions.identity-exchange]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/identity-exchange/index.ts"
+
+[functions.schema-dumper]
+enabled = true
+verify_jwt = false
+import_map = "./functions/schema-dumper/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/schema-dumper/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/schema-dumper/*.html" ]

@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Canonical Event Library",
+  "description": "Standardized event vocabulary describing business reality changes, not UI interactions.",
+  "version": "15.0",
+  "law": "Events must describe state transitions of canonical objects. They must never describe presentation layer mechanics.",
+  "events": {
+    "IdentityEvents": {
+      "description": "Events related to people and organizations.",
+      "list": [
+        "PersonCreated", "PersonUpdated", "PersonDeceased",
+        "OrganizationCreated", "OrganizationUpdated", "OrganizationDissolved",
+        "RoleAssigned", "RoleRevoked",
+        "CredentialIssued", "CredentialRevoked", "CredentialExpired",
+        "IdentitySuspended", "IdentityRestored"
+      ]
+    },
+    "WorkEvents": {
+      "description": "Events related to tasks, projects, and workflows.",
+      "list": [
+        "ProjectCreated", "ProjectCompleted", "ProjectCancelled",
+        "TaskCreated", "TaskAssigned", "TaskReassigned", "TaskCompleted", "TaskOverdue",
+        "WorkflowStarted", "WorkflowPaused", "WorkflowResumed", "WorkflowCompleted", "WorkflowFailed",
+        "ApprovalRequested", "ApprovalGranted", "ApprovalDenied", "ApprovalEscalated",
+        "MilestoneReached"
+      ]
+    },
+    "CommerceEvents": {
+      "description": "Events related to sales and agreements.",
+      "list": [
+        "LeadCreated", "LeadQualified", "LeadConverted", "LeadLost",
+        "OpportunityCreated", "OpportunityWon", "OpportunityLost",
+        "OrderPlaced", "OrderApproved", "OrderFulfilled", "OrderCancelled",
+        "ContractDrafted", "ContractSigned", "ContractExpired", "ContractTerminated",
+        "SubscriptionStarted", "SubscriptionRenewed", "SubscriptionCancelled"
+      ]
+    },
+    "FinanceEvents": {
+      "description": "Events related to money and billing.",
+      "list": [
+        "InvoiceIssued", "InvoicePaid", "InvoiceOverdue", "InvoiceCancelled",
+        "PaymentReceived", "PaymentFailed", "PaymentRefunded",
+        "ExpenseSubmitted", "ExpenseApproved", "ExpenseRejected",
+        "BudgetCreated", "BudgetExceeded",
+        "TransactionSettled"
+      ]
+    },
+    "KnowledgeEvents": {
+      "description": "Events related to documents and intellectual property.",
+      "list": [
+        "DocumentCreated", "DocumentUpdated", "DocumentVersioned", "DocumentPublished", "DocumentArchived",
+        "KnowledgeIndexed", "KnowledgeDeprecated",
+        "PolicyRatified", "PolicyViolated"
+      ]
+    },
+    "PlatformEvents": {
+      "description": "Events related to the operating system mechanics.",
+      "list": [
+        "IntentCaptured", "IntentResolved", "IntentFailed",
+        "ExecutionPlanGenerated", "ExecutionPlanCompleted", "ExecutionPlanFailed",
+        "CapabilityRegistered", "CapabilityInvoked", "CapabilityDeprecated",
+        "ProviderConnected", "ProviderDisconnected", "ProviderFailed",
+        "PackagePublished", "PackageInstalled", "PackageRevoked",
+        "TrustProposed", "TrustEstablished", "TrustRevoked",
+        "FederationSessionOpened", "FederationSessionClosed"
+      ]
+    },
+    "AIEvents": {
+      "description": "Events related to intelligence generation.",
+      "list": [
+        "RecommendationGenerated", "RecommendationAccepted", "RecommendationRejected",
+        "PredictionProduced", "SimulationCompleted",
+        "LearningArtifactCreated", "KnowledgeGraphUpdated"
+      ]
+    }
+  },
+  "eventPayloadTemplate": {
+    "type": "object",
+    "required": ["eventId", "eventType", "timestamp", "source", "subject"],
+    "properties": {
+      "eventId": { "type": "string", "description": "Unique UUID for the event occurrence" },
+      "eventType": { "type": "string", "description": "The canonical event name (e.g., InvoiceIssued)" },
+      "timestamp": { "type": "string", "format": "date-time" },
+      "source": { "type": "string", "description": "URN of the capability or system that emitted the event" },
+      "subject": { "type": "string", "description": "URN of the canonical object this event is about" },
+      "actor": { "type": "string", "description": "URN of the principal who caused the event (if applicable)" },
+      "context": { "type": "object", "description": "Additional context (e.g., workspaceId, orgId)" },
+      "data": { "type": "object", "description": "Delta or state of the object" }
+    }
+  }
+}

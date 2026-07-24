@@ -1,0 +1,22 @@
+{
+  "participants": [
+    {
+      "id": "role_sdr",
+      "type": "human_role",
+      "capabilities": ["propose_quote", "update_record"],
+      "escalation_path": "role_sales_manager"
+    },
+    {
+      "id": "role_sales_manager",
+      "type": "human_role",
+      "capabilities": ["approve_standard_discount"],
+      "escalation_path": "role_cro"
+    },
+    {
+      "id": "role_cfo",
+      "type": "human_role",
+      "capabilities": ["approve_high_discount", "override_policy"],
+      "escalation_path": "role_ceo"
+    }
+  ]
+}

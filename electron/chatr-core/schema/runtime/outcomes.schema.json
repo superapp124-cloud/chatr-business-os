@@ -1,0 +1,75 @@
+{
+  "": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Business Outcomes Schema",
+  "description": "Formal end-state definition for business runtime execution",
+  "version": "15.0",
+  "definitions": {
+    "BusinessOutcome": {
+      "type": "object",
+      "required": [
+        "outcomeId",
+        "status",
+        "canonicalObjects",
+        "eventsProduced",
+        "auditTrail"
+      ],
+      "properties": {
+        "outcomeId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "Success",
+            "Failure",
+            "PartialSuccess"
+          ]
+        },
+        "businessKPIs": {
+          "type": "object",
+          "description": "Metrics impacted by this outcome"
+        },
+        "businessStateChanges": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Human-readable state changes"
+        },
+        "canonicalObjects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "URNs of mutated canonical objects"
+        },
+        "eventsProduced": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "URNs of canonical events emitted"
+        },
+        "documentsProduced": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recommendations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Intelligence plane hooks generated"
+        },
+        "auditTrail": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

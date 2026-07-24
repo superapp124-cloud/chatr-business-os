@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Semantic UX System",
+  "description": "Schema for generating presentation metadata from ontology entities",
+  "version": "15.0",
+  "definitions": {
+    "SemanticUX": {
+      "type": "object",
+      "properties": {
+        "presentation": {
+          "type": "object",
+          "properties": {
+            "displayName": { "type": "string" },
+            "description": { "type": "string" },
+            "icon": { "type": "string", "description": "Material or Phosphor icon name" },
+            "themeColor": { "type": "string" },
+            "accessibility": {
+              "type": "object",
+              "properties": {
+                "ariaLabel": { "type": "string" },
+                "role": { "type": "string" }
+              }
+            }
+          }
+        },
+        "layouts": {
+          "type": "object",
+          "properties": {
+            "preferredLayout": { "type": "string", "enum": ["Grid", "List", "Kanban", "Table", "Card"] },
+            "detailView": { "type": "array", "items": { "type": "string", "description": "Field names to show in detail view" } },
+            "compactView": { "type": "array", "items": { "type": "string", "description": "Field names for cards/lists" } },
+            "mobilePresentation": { "type": "string", "enum": ["Stack", "Swipeable", "Accordion"] }
+          }
+        },
+        "interactions": {
+          "type": "object",
+          "properties": {
+            "searchFacets": { "type": "array", "items": { "type": "string", "description": "Fields that are filterable" } },
+            "commandPaletteActions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "action": { "type": "string" },
+                  "capability": { "type": "string" }
+                }
+              }
+            },
+            "keyboardShortcuts": { "type": "object", "additionalProperties": { "type": "string" } },
+            "voicePhrases": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "forms": {
+          "type": "object",
+          "properties": {
+            "createForm": { "type": "array", "items": { "type": "string" } },
+            "updateForm": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "ai": {
+          "type": "object",
+          "properties": {
+            "autoSummarizeFields": { "type": "array", "items": { "type": "string" } },
+            "suggestedActions": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}

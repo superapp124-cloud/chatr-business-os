@@ -1,0 +1,15 @@
+{
+  "id": "policy.travel.cancellation",
+  "name": "Travel Cancellation Policy",
+  "domain": "travel",
+  "rules": [
+    {
+      "condition": "time_to_flight < 24h",
+      "action": "DENY_REFUND"
+    },
+    {
+      "condition": "time_to_flight >= 24h",
+      "action": "ALLOW_REFUND"
+    }
+  ]
+}

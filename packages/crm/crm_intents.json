@@ -1,0 +1,18 @@
+{
+  "intents": [
+    {
+      "id": "intent_close_deal",
+      "name": "Close Enterprise Deal",
+      "goals": [
+        { "metric": "Win Deal", "threshold": "> 90% Probability" },
+        { "metric": "Protect Margin", "threshold": "> 20% Net Margin" },
+        { "metric": "Follow Pricing Rules", "threshold": "0 Unapproved Policy Violations" }
+      ],
+      "reasoning_schema": [
+        "Customer LTV",
+        "Past Deals Average Discount",
+        "Margin Impact"
+      ]
+    }
+  ]
+}

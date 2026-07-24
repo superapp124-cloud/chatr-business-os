@@ -1,0 +1,12 @@
+{
+  "id": "core.crm",
+  "name": "CRM",
+  "version": "1.0.0",
+  "category": "business",
+  "tags": [
+    "crm"
+  ],
+  "keywords": [
+    "crm"
+  ]
+}

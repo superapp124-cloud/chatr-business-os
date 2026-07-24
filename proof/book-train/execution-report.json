@@ -1,0 +1,12 @@
+{
+  "journey": "Book Train",
+  "intentId": "INT-1784279828655",
+  "workflowId": "WF-1784279828656",
+  "executionId": "EXE-1784279828657",
+  "startedAt": 1784279828657,
+  "completedAt": 1784279828661,
+  "durationMs": 4,
+  "result": "SUCCESS",
+  "persisted": "YES",
+  "recoveryTested": "PASS"
+}

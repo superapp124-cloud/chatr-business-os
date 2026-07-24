@@ -1,0 +1,49 @@
+{
+  "execution_graphs": [
+    {
+      "id": "dag_rec_offer_generation",
+      "intent_id": "intent_hire_candidate",
+      "nodes": [
+        {
+          "id": "node_gather_feedback",
+          "type": "agent_task",
+          "depends_on": [],
+          "participant_id": "agent_resume_screener",
+          "sla": "10m"
+        },
+        {
+          "id": "node_propose_offer",
+          "type": "human_approval",
+          "depends_on": ["node_gather_feedback"],
+          "participant_id": "role_hiring_manager",
+          "sla": "24h"
+        },
+        {
+          "id": "node_policy_check_budget",
+          "type": "policy_gate",
+          "depends_on": ["node_propose_offer"],
+          "participant_id": "system_policy_engine",
+          "sla": "1s"
+        },
+        {
+          "id": "node_hr_approval",
+          "type": "human_approval",
+          "depends_on": ["node_policy_check_budget"],
+          "participant_id": "role_hr_director",
+          "sla": "12h"
+        },
+        {
+          "id": "node_issue_offer",
+          "type": "system_action",
+          "depends_on": ["node_hr_approval"],
+          "participant_id": "system_workflow_engine",
+          "sla": "1m"
+        }
+      ],
+      "error_handling": {
+        "on_timeout": "escalate_to_vp_hr",
+        "on_reject": "fallback_renegotiate_offer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Canonical Type System",
+  "description": "The formal Semantic Type System for the CHATR Business Ontology. Defines Primitive, Money, Composite, and Domain types.",
+  "version": "15.0",
+  "definitions": {
+    "PrimitiveTypes": {
+      "description": "Atomic scalar types. All other types are built from these.",
+      "types": {
+        "String": { "type": "string" },
+        "Number": { "type": "number" },
+        "Boolean": { "type": "boolean" },
+        "Date": { "type": "string", "format": "date" },
+        "Time": { "type": "string", "format": "time" },
+        "Timestamp": { "type": "string", "format": "date-time" },
+        "Duration": { "type": "string", "description": "ISO 8601 Duration e.g. P1Y2M3DT4H5M6S" },
+        "UUID": { "type": "string", "format": "uuid" },
+        "Email": { "type": "string", "format": "email" },
+        "Phone": { "type": "string", "pattern": "^\\+?[1-9]\\d{1,14}$" },
+        "URL": { "type": "string", "format": "uri" },
+        "Percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+        "GeoPoint": {
+          "type": "object",
+          "required": ["lat", "lng"],
+          "properties": {
+            "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+            "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+            "altitude": { "type": "number" }
+          }
+        }
+      }
+    },
+    "MoneyTypes": {
+      "description": "Money and currency are first-class types in the business ontology.",
+      "Currency": {
+        "type": "string",
+        "description": "ISO 4217 currency code",
+        "examples": ["USD", "EUR", "INR", "GBP"]
+      },
+      "Money": {
+        "type": "object",
+        "required": ["amount", "currency"],
+        "properties": {
+          "amount": { "type": "number" },
+          "currency": { "$ref": "#/definitions/MoneyTypes/Currency" }
+        }
+      }
+    },
+    "CompositeTypes": {
+      "description": "Structured types composed from primitives and MoneyTypes.",
+      "PersonName": {
+        "type": "object",
+        "required": ["first", "last"],
+        "properties": {
+          "prefix": { "type": "string" },
+          "first": { "type": "string" },
+          "middle": { "type": "string" },
+          "last": { "type": "string" },
+          "suffix": { "type": "string" },
+          "preferred": { "type": "string" }
+        }
+      },
+      "Address": {
+        "type": "object",
+        "properties": {
+          "line1": { "type": "string" },
+          "line2": { "type": "string" },
+          "city": { "type": "string" },
+          "state": { "type": "string" },
+          "country": { "type": "string", "description": "ISO 3166-1 alpha-2" },
+          "postal": { "type": "string" },
+          "geo": { "$ref": "#/definitions/PrimitiveTypes/types/GeoPoint" }
+        }
+      },
+      "Price": {
+        "type": "object",
+        "required": ["money"],
+        "properties": {
+          "money": { "$ref": "#/definitions/MoneyTypes/Money" },
+          "taxInclusive": { "type": "boolean" },
+          "taxRate": { "$ref": "#/definitions/PrimitiveTypes/types/Percentage" },
+          "pricingRuleId": { "type": "string" }
+        }
+      },
+      "Schedule": {
+        "type": "object",
+        "required": ["start"],
+        "properties": {
+          "start": { "$ref": "#/definitions/PrimitiveTypes/types/Timestamp" },
+          "end": { "$ref": "#/definitions/PrimitiveTypes/types/Timestamp" },
+          "duration": { "$ref": "#/definitions/PrimitiveTypes/types/Duration" },
+          "recurrence": { "type": "string", "description": "RFC 5545 RRULE" },
+          "timezone": { "type": "string", "description": "IANA timezone e.g. Asia/Kolkata" }
+        }
+      },
+      "Availability": {
+        "type": "object",
+        "properties": {
+          "slots": { "type": "array", "items": { "$ref": "#/definitions/CompositeTypes/Schedule" } },
+          "blackouts": { "type": "array", "items": { "$ref": "#/definitions/CompositeTypes/Schedule" } }
+        }
+      }
+    },
+    "SemanticMetadata": {
+      "description": "Universal metadata every canonical object must carry.",
+      "type": "object",
+      "required": ["canonicalId", "ontologyVersion", "layer", "domain", "type", "traits", "lifecycle", "lifecycleState"],
+      "properties": {
+        "canonicalId": { "type": "string", "description": "urn:chatr:entity:{domain}:{type}:{id}" },
+        "ontologyVersion": { "type": "string" },
+        "layer": { "type": "string", "enum": ["Reality", "Business", "Platform"] },
+        "domain": { "type": "string" },
+        "aggregateRoot": { "type": "string" },
+        "type": { "type": "string" },
+        "traits": { "type": "array", "items": { "type": "string" } },
+        "lifecycle": { "type": "string" },
+        "lifecycleState": { "type": "string" },
+        "relationships": { "type": "array", "items": { "type": "string" } },
+        "searchIndex": { "type": "string" },
+        "vectorEmbeddingEnabled": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "workflow.travel.flight.book",
+  "goal_type": "goal.travel.flight.book",
+  "mappings": [
+    {
+      "goal_node": "search_flights",
+      "capability": "System.Search",
+      "requiresApproval": false,
+      "defaultParameters": {
+        "index": "flights"
+      }
+    },
+    {
+      "goal_node": "pay_ticket",
+      "capability": "Finance.Pay",
+      "requiresApproval": true,
+      "defaultParameters": {
+        "currency": "USD"
+      }
+    },
+    {
+      "goal_node": "schedule_trip",
+      "capability": "Planning.Schedule",
+      "requiresApproval": false,
+      "defaultParameters": {}
+    },
+    {
+      "goal_node": "store_receipt",
+      "capability": "Knowledge.Store",
+      "requiresApproval": false,
+      "defaultParameters": {}
+    }
+  ]
+}

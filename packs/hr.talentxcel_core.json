@@ -1,0 +1,54 @@
+{
+  "id": "hr.talentxcel_core",
+  "name": "Talentxcel Core Recruitment Suite",
+  "version": "1.0.0",
+  "category": "Recruitment",
+  "description": "Core capability pack for Talentxcel Services managing candidates, campus partners, and placements.",
+  "author": "CHATR OS Professional Services",
+  "certification": "Verified",
+  "status": "Available",
+  "objects": [
+    {
+      "name": "Candidates",
+      "fields": [
+        { "name": "first_name", "type": "string" },
+        { "name": "last_name", "type": "string" },
+        { "name": "email", "type": "string" },
+        { "name": "resume_url", "type": "string" },
+        { "name": "years_experience", "type": "number" },
+        { "name": "is_active", "type": "boolean" },
+        { "name": "skills", "type": "json" }
+      ]
+    },
+    {
+      "name": "Campus_Partners",
+      "fields": [
+        { "name": "university_name", "type": "string" },
+        { "name": "poc_name", "type": "string" },
+        { "name": "poc_email", "type": "string" },
+        { "name": "partnership_tier", "type": "string" },
+        { "name": "active_students_enrolled", "type": "number" }
+      ]
+    },
+    {
+      "name": "Placements",
+      "fields": [
+        { "name": "candidate_id", "type": "string" },
+        { "name": "client_company", "type": "string" },
+        { "name": "role_title", "type": "string" },
+        { "name": "offer_accepted", "type": "boolean" },
+        { "name": "salary_ctc", "type": "number" }
+      ]
+    }
+  ],
+  "ui_schemas": {
+    "candidates_table": {
+      "columns": ["first_name", "last_name", "email", "years_experience", "is_active"],
+      "default_sort": "created_at DESC"
+    },
+    "candidate_form": {
+      "layout": "two_column",
+      "fields": ["first_name", "last_name", "email", "resume_url", "skills"]
+    }
+  }
+}

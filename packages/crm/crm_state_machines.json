@@ -1,0 +1,24 @@
+{
+  "state_machines": [
+    {
+      "object_id": "crm_obj_opportunity",
+      "states": [
+        { "name": "New", "is_initial": true, "is_terminal": false },
+        { "name": "Contacted", "is_initial": false, "is_terminal": false },
+        { "name": "Qualified", "is_initial": false, "is_terminal": false },
+        { "name": "Proposal", "is_initial": false, "is_terminal": false },
+        { "name": "Negotiation", "is_initial": false, "is_terminal": false },
+        { "name": "Won", "is_initial": false, "is_terminal": true },
+        { "name": "Lost", "is_initial": false, "is_terminal": true }
+      ],
+      "transitions": [
+        { "from": "New", "to": "Contacted", "policy_id": "pol_crm_base_access" },
+        { "from": "Contacted", "to": "Qualified", "policy_id": "pol_crm_base_access" },
+        { "from": "Qualified", "to": "Proposal", "policy_id": "pol_crm_base_access" },
+        { "from": "Proposal", "to": "Negotiation", "policy_id": "pol_crm_base_access" },
+        { "from": "Negotiation", "to": "Won", "policy_id": "pol_crm_won_approval" },
+        { "from": "Negotiation", "to": "Lost", "policy_id": "pol_crm_base_access" }
+      ]
+    }
+  ]
+}

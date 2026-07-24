@@ -1,0 +1,71 @@
+[
+  {
+    "id": "resume_extraction_001",
+    "description": "Senior engineer with TypeScript and distributed systems",
+    "input": "John Smith is applying for a Senior Engineer role. He has 8 years of experience in TypeScript and distributed systems. His email is john.smith@example.com.",
+    "task": "extractStructuredData",
+    "schema": "CandidateProfile",
+    "requiredFields": ["name", "role", "yearsExperience"],
+    "expectedPartial": { "name": "John Smith", "role": "Senior Engineer" }
+  },
+  {
+    "id": "resume_extraction_002",
+    "description": "Product Manager with MBA",
+    "input": "Sarah Chen is applying for a Senior Product Manager role. 6 years in B2B SaaS. Education: MBA, Stanford 2018.",
+    "task": "extractStructuredData",
+    "schema": "CandidateProfile",
+    "requiredFields": ["name", "role", "yearsExperience"],
+    "expectedPartial": { "name": "Sarah Chen", "role": "Product Manager" }
+  },
+  {
+    "id": "classification_001",
+    "description": "Finance document",
+    "input": "Invoice #4421 for $8,500 due October 15.",
+    "task": "classify",
+    "categories": ["Finance", "HR", "CRM", "Travel", "Engineering"],
+    "expectedCategory": "Finance"
+  },
+  {
+    "id": "classification_002",
+    "description": "HR leave request",
+    "input": "John requests 5 days annual leave from Dec 23.",
+    "task": "classify",
+    "categories": ["Finance", "HR", "CRM", "Travel", "Engineering"],
+    "expectedCategory": "HR"
+  },
+  {
+    "id": "classification_003",
+    "description": "CRM sales lead",
+    "input": "New lead: Acme Corp is interested in our Enterprise plan.",
+    "task": "classify",
+    "categories": ["Finance", "HR", "CRM", "Travel", "Engineering"],
+    "expectedCategory": "CRM"
+  },
+  {
+    "id": "classification_004",
+    "description": "Travel booking",
+    "input": "Book flights to Singapore for the Q4 sales summit.",
+    "task": "classify",
+    "categories": ["Finance", "HR", "CRM", "Travel", "Engineering"],
+    "expectedCategory": "Travel"
+  },
+  {
+    "id": "summarization_001",
+    "description": "Resume summary — gold standard",
+    "input": "Sarah Chen is applying for a Senior Product Manager role. She has 6 years in B2B SaaS product management, skills in roadmapping, stakeholder management, SQL, and user research. Education: MBA, Stanford 2018.",
+    "task": "summarize",
+    "goldStandard": "Sarah Chen, Senior PM, 6 years SaaS experience, MBA Stanford.",
+    "acceptanceCriteria": ["Senior", "Product Manager", "6", "SaaS", "MBA"],
+    "subjectiveReview": true
+  },
+  {
+    "id": "reasoning_001",
+    "description": "Hiring decision reasoning — gold standard",
+    "input": "Sarah Chen, 6 years PM experience, strong SaaS background, MBA. Role requires 5+ years and enterprise product experience.",
+    "task": "reason",
+    "goal": "Should this candidate proceed to interview?",
+    "goldStandard": "Candidate meets experience threshold. Should proceed to interview.",
+    "requiredElements": ["decision", "reasoning"],
+    "subjectiveReview": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "Stripe",
+  "version": "1.0.0",
+  "description": "Auto-generated provider plugin for Stripe",
+  "author": "CHATR Onboarding Agent",
+  "endpoints": [],
+  "capabilities": [
+    "discover",
+    "execute"
+  ]
+}

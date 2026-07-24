@@ -1,0 +1,73 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "health.appointment",
+      "version": "1.0.0",
+      "displayName": "Healthcare Appointment Lifecycle",
+      "description": "Manages privacy-constrained, scheduled health visits and document verification.",
+      "author": "CHATR Health",
+      "license": "MIT",
+      "category": "Healthcare",
+      "tags": [
+        "health",
+        "appointment",
+        "medical"
+      ]
+    },
+    "runtime": {
+      "intentTypes": [
+        "health.appointment"
+      ],
+      "permissions": [
+        "calendar",
+        "health_records",
+        "location"
+      ],
+      "inputs": [
+        "patientId",
+        "doctorId",
+        "time"
+      ],
+      "outputs": [
+        "appointmentConfirmation",
+        "visitSummary"
+      ],
+      "events": [
+        "health.appointment.scheduled",
+        "health.appointment.completed"
+      ],
+      "policies": [
+        "health.privacy.hipaa"
+      ],
+      "verification": {
+        "strategy": "emr_sync@1.0"
+      },
+      "stewardship": {
+        "renewable": false,
+        "expiration": "post_visit_followup"
+      }
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "maxKernelVersion": "2.0",
+      "dependencies": [],
+      "supportedPlatforms": [
+        "mobile"
+      ],
+      "securityClassification": "phi",
+      "profile": "Full"
+    }
+  },
+  "certificate": {
+    "capabilityId": "health.appointment",
+    "version": "1.0.0",
+    "manifestHash": "1f29ab89ea58eae2c08d8522993934e1f19e2f06d7b8b24118fbc5a518f0f17d",
+    "interfaceHash": "4c3c5020e9d6a943567c49d8728791c03aba5dfa95f049bf697066b64b22e1f8",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:30:16.529Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

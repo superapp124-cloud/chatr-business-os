@@ -1,0 +1,44 @@
+{
+  "irctc": {
+    "searchUrl":        "https://www.irctc.co.in/nget/train-search",
+    "fromField":        "#origin",
+    "toField":          "#destination",
+    "dateField":        "#jorneyDate",
+    "searchButton":     "button.train_Search",
+    "resultsPanel":     ".search_result_section",
+    "optionRow":        ".train-row",
+    "bookButton":       ".book-btn",
+    "confirmationPanel": ".pnr-confirmation"
+  },
+  "ixigo": {
+    "searchUrl":        "https://www.ixigo.com/trains",
+    "fromField":        "#from-train",
+    "toField":          "#to-train",
+    "dateField":        "#date-train",
+    "searchButton":     "button.search-button",
+    "resultsPanel":     ".train-list",
+    "optionRow":        ".train-item",
+    "bookButton":       ".book-now-btn",
+    "confirmationPanel": ".booking-success"
+  },
+  "uber": {
+    "searchUrl":        "https://m.uber.com/go",
+    "fromField":        "input[data-testid='pickup-input']",
+    "toField":          "input[data-testid='destination-input']",
+    "searchButton":     "button[data-testid='request-button']",
+    "resultsPanel":     "[data-testid='product-list']",
+    "optionRow":        "[data-testid='product-item']",
+    "bookButton":       "[data-testid='confirm-button']",
+    "confirmationPanel": "[data-testid='trip-confirmation']"
+  },
+  "ola": {
+    "searchUrl":        "https://www.olacabs.com",
+    "fromField":        "#pickup-input",
+    "toField":          "#drop-input",
+    "searchButton":     ".request-cab-btn",
+    "resultsPanel":     ".cab-options",
+    "optionRow":        ".cab-type-item",
+    "bookButton":       ".confirm-booking",
+    "confirmationPanel": ".booking-confirmed"
+  }
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/call_bg_gradient_new"
+    android:paddingTop="28dp"
+    android:paddingBottom="24dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:elevation="8dp">
+
+    <!-- Top Section: Identity & Trust Band -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/callerIcon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:padding="2dp"
+            android:background="@drawable/avatar_gradient_border"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/callerIcon"
+            android:layout_toStartOf="@+id/spamBadge"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/callerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chatr AI Scanning..."
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/callerNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identifying..."
+                android:textSize="14sp"
+                android:textColor="#A0AEC0"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/spamBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANALYZING"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            android:background="@drawable/verified_badge_bg"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <!-- Chatr AI Live Analysis Panel -->
+    <LinearLayout
+        android:id="@+id/sourceIntelligencePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#A855F7"
+                android:layout_marginEnd="6dp" />
+                
+            <TextView
+                android:id="@+id/aiScanningText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="live AI analysis..."
+                android:textSize="12sp"
+                android:textColor="#A855F7"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/globalSearchProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="6dp"
+            android:indeterminate="true"
+            android:progressTint="#A855F7" />
+    </LinearLayout>
+
+    <!-- AI Insight Section -->
+    <LinearLayout
+        android:id="@+id/aiInsightPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/ai_card_bg"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+        
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@android:drawable/ic_menu_info_details"
+            app:tint="#A0AEC0"/>
+            
+        <TextView
+            android:id="@+id/aiSummaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chatr AI is evaluating this call..."
+            android:textSize="13sp"
+            android:textColor="#CBD5E1"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <!-- Live Transcript -->
+    <LinearLayout
+        android:id="@+id/liveTranscriptContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIVE SCREENING TRANSCRIPT"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#A0AEC0"
+            android:letterSpacing="0.1"/>
+            
+        <TextView
+            android:id="@+id/liveTranscriptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"
+            android:fontFamily="serif"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <!-- System Native Action Pills -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnGuideDelivery"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Guide Delivery"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            android:backgroundTint="#3B82F6"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnAiBouncer"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="AI Bouncer"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#EF4444"
+            android:layout_marginStart="6dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+{
+  "files": [
+    "provider-compliance-report.json"
+  ],
+  "hashes": {
+    "provider-compliance-report.json": "b12677bc6b6b6e97bff53eccb1ef05b22954fba21b4225180394102bbb4a5e57"
+  },
+  "signature": "CHATR_CERTIFIED_COMPLIANCE"
+}

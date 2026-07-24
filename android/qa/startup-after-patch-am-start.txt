@@ -1,0 +1,7 @@
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.chatr.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.chatr.app/.MainActivity
+TotalTime: 5801
+WaitTime: 5803
+Complete

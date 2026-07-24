@@ -1,0 +1,44 @@
+{
+  "id": "core.reminder",
+  "name": "Reminder",
+  "version": "1.0.0",
+  "category": "productivity",
+  "outcomeType": "SCHEDULE",
+  "providerName": "PersistenceProvider",
+  "maxExecutionTime": "2s",
+  "requiresNetwork": false,
+  "requiresAuthentication": true,
+  "supportsRetry": true,
+  "supportsOfflineQueue": true,
+  "estimatedLatency": "50ms",
+  "maturity": 3,
+  "permissions": [
+    "notifications"
+  ],
+  "executionPolicy": "confirmation_required",
+  "capabilityVersion": "1.0.0",
+  "sdkVersion": "1.0.0",
+  "minimumKernel": "1.0.0",
+  "description": "Sets a scheduled reminder that alerts the user at a specified time.",
+  "examples": [
+    "Remind me to call John tomorrow at 2 PM",
+    "Set a reminder for the team meeting next Friday"
+  ],
+  "tags": [
+    "productivity",
+    "scheduling",
+    "alerts"
+  ],
+  "keywords": [
+    "remind",
+    "reminder",
+    "alert",
+    "notify"
+  ],
+  "edges": [
+    {
+      "type": "suggests",
+      "target": "core.task"
+    }
+  ]
+}

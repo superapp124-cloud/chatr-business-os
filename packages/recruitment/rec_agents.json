@@ -1,0 +1,37 @@
+{
+  "agents": [
+    {
+      "id": "agent_resume_screener",
+      "role": "Initial resume parsing and semantic matching against job requirements",
+      "model_requirements": {
+        "reasoning": "llama3.1:8b",
+        "context_window": 16384
+      },
+      "tools": ["mcp_rec_parse_resume", "mcp_rec_calculate_match_score"],
+      "memory_strategy": ["working", "semantic"],
+      "latency_sla": 15000
+    },
+    {
+      "id": "agent_interview_scheduler",
+      "role": "Coordinates calendars between candidate and interview panel",
+      "model_requirements": {
+        "reasoning": "qwen2.5:14b",
+        "context_window": 8192
+      },
+      "tools": ["mcp_cal_find_slot", "mcp_email_send_invite"],
+      "memory_strategy": ["working", "observational"],
+      "latency_sla": 5000
+    },
+    {
+      "id": "agent_offer_negotiator",
+      "role": "Provides benchmarking data for compensation discussions",
+      "model_requirements": {
+        "reasoning": "llama3.1:8b",
+        "context_window": 4096
+      },
+      "tools": ["mcp_rec_fetch_market_comp"],
+      "memory_strategy": ["semantic"],
+      "latency_sla": 2000
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "time",
+  "version": "0.1.0",
+  "codename": "Chronos",
+  "description": "Zero Mock Data stub for resolving relative time.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable"
+}

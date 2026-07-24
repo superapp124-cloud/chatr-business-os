@@ -1,0 +1,28 @@
+{
+  "urn": "urn:chatr:object:aviation:workorder",
+  "type": "MaintenanceWorkOrder",
+  "name": "Aviation Maintenance Work Order",
+  "primitiveType": "LivingObject",
+  "metadata": {},
+  "properties": [
+    { "key": "description", "type": "string", "required": true },
+    { "key": "priority", "type": "string", "required": true }
+  ],
+  "relationships": [
+    { "predicate": "repairs", "class": "target", "targetType": "Aircraft", "required": true, "multiple": false },
+    { "predicate": "assigned_to", "class": "authority", "targetType": "Employee", "required": false, "multiple": false }
+  ],
+  "lifecycle": {
+    "initialState": "Open",
+    "states": [
+      { "name": "Open" },
+      { "name": "InProgress" },
+      { "name": "Resolved" }
+    ],
+    "transitions": [
+      { "from": ["Open"], "to": "InProgress", "triggeredByEvent": "WorkOrderStarted" },
+      { "from": ["InProgress"], "to": "Resolved", "triggeredByEvent": "WorkOrderResolved" }
+    ]
+  },
+  "eventsProduced": ["WorkOrderCreated", "WorkOrderStarted", "WorkOrderResolved"]
+}

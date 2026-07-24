@@ -1,0 +1,754 @@
+--------- beginning of main
+05-20 18:14:16.073 I/com.chatr.app(27714): Late-enabling -Xcheck:jni
+05-20 18:14:16.107 E/com.chatr.app(27714): Unknown bits set in runtime_flags: 0x8000
+05-20 18:14:18.449 D/SessionsDependencies(27714): Dependency to CRASHLYTICS added.
+05-20 18:14:18.472 I/FirebaseApp(27714): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-20 18:14:18.501 I/FirebaseCrashlytics(27714): Initializing Firebase Crashlytics 19.4.0 for com.chatr.app
+05-20 18:14:18.610 D/SessionsDependencies(27714): Subscriber CRASHLYTICS registered.
+05-20 18:14:18.641 I/DynamiteModule(27714): Considering local module com.google.android.gms.measurement.dynamite:136 and remote module com.google.android.gms.measurement.dynamite:191
+05-20 18:14:18.641 I/DynamiteModule(27714): Selected remote version of com.google.android.gms.measurement.dynamite, version >= 191
+05-20 18:14:18.641 V/DynamiteModule(27714): Dynamite loader version >= 2, using loadModule2NoCrashUtils
+05-20 18:14:18.828 I/FirebaseCrashlytics(27714): No version control information found
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapInt(Ljava/lang/Object;JII)Z (greylist, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z (greylist, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObjectVolatile(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:18.837 W/com.chatr.app(27714): Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+05-20 18:14:18.857 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 18:14:18.857 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:18.958 D/FirebaseSessions(27714): Initializing Firebase Sessions SDK.
+05-20 18:14:18.964 W/com.chatr.app(27714): Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (greylist, linking, allowed)
+05-20 18:14:18.968 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:18.968 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:14:18.969 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:14:18.969 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:14:18.969 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:18.969 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putOrderedInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:14:18.969 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putOrderedLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:14:18.969 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putOrderedObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:18.979 I/FirebaseInitProvider(27714): FirebaseApp initialization successful
+05-20 18:14:18.997 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:18.997 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:19.000 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:19.000 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:14:19.003 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:14:19.003 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:19.004 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:14:19.013 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:19.014 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+05-20 18:14:19.015 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+05-20 18:14:19.017 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:14:19.017 W/com.chatr.app(27714): Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+05-20 18:14:19.017 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 18:14:19.017 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 18:14:19.018 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:14:19.018 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 18:14:19.018 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 18:14:19.018 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 18:14:19.024 D/WM-WrkMgrInitializer(27714): Initializing WorkManager with default configuration.
+05-20 18:14:19.057 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:19.059 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+05-20 18:14:19.060 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:19.060 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:19.063 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 18:14:19.065 I/FA      (27714): App measurement initialized, version: 167000
+05-20 18:14:19.066 I/FA      (27714): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-20 18:14:19.066 I/FA      (27714): To enable faster debug mode event logging run:
+05-20 18:14:19.066 I/FA      (27714):   adb shell setprop debug.firebase.analytics.app com.chatr.app
+05-20 18:14:19.082 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:19.082 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:19.083 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:14:19.083 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:14:19.092 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:19.093 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:14:19.103 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 18:14:19.103 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 18:14:19.104 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:14:19.105 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 18:14:19.105 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 18:14:19.105 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:14:19.105 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 18:14:19.105 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 18:14:19.105 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 18:14:19.110 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:19.116 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:19.133 D/LifecycleServiceBinder(27714): Binding service to application.
+05-20 18:14:19.136 D/WM-PackageManagerHelper(27714): Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-20 18:14:19.136 D/WM-Schedulers(27714): Created SystemJobScheduler and enabled SystemJobService
+05-20 18:14:19.158 I/ChatrApplication(27714): ?? CHATR+ Application starting...
+05-20 18:14:19.160 I/ChatrApplication(27714): ? Firebase initialized
+05-20 18:14:19.163 D/ChatrApplication(27714): ?? Created notification channel: calls
+05-20 18:14:19.164 D/ChatrApplication(27714): ?? Created notification channel: calls_high_v2
+05-20 18:14:19.165 D/ChatrApplication(27714): ?? Created notification channel: messages
+05-20 18:14:19.166 D/ChatrApplication(27714): ?? Created notification channel: urgent
+05-20 18:14:19.167 D/ChatrApplication(27714): ?? Created notification channel: location
+05-20 18:14:19.168 D/ChatrApplication(27714): ?? Created notification channel: health
+05-20 18:14:19.170 D/ChatrApplication(27714): ?? Created notification channel: foreground_service
+05-20 18:14:19.170 I/ChatrApplication(27714): ? All notification channels created
+05-20 18:14:19.180 I/ChatrApplication(27714): ? PhoneAccount registered with TelecomManager
+05-20 18:14:19.205 I/FA      (27714): Tag Manager is not found and thus will not be used
+05-20 18:14:19.326 I/ChatrApplication(27714): ? CHATR+ Application initialized successfully
+05-20 18:14:19.345 I/libMEOW_gift(27714): open /vendor/etc/arc.ini
+05-20 18:14:19.346 D/libMEOW (27714): applied 1 plugins for [com.chatr.app]:
+05-20 18:14:19.346 D/libMEOW (27714):   plugin 1: [libMEOW_gift.so]:
+05-20 18:14:19.521 D/AppCompatDelegate(27714): Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-20 18:14:19.669 W/com.chatr.app(27714): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+05-20 18:14:19.709 I/WebViewFactory(27714): Loading com.google.android.webview version 148.0.7778.120 (code 777812003)
+05-20 18:14:19.724 W/linker  (27714): Warning: "/data/app/com.google.android.webview-Vew6vFYlrIraywuxQdO2GQ==/base.apk!/lib/arm64-v8a/libwebviewchromium.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+05-20 18:14:19.783 I/cr_WVCFactoryProvider(27714): version=148.0.7778.120 (777812003) minSdkVersion=29 multiprocess=true packageId=127 splits=<none>
+05-20 18:14:19.805 E/chromium(27714): [0520/181419.801642:ERROR:android_webview/browser/variations/variations_seed_loader.cc:39] Seed missing signature.
+05-20 18:14:19.849 I/cr_LibraryLoader(27714): Successfully loaded native library
+05-20 18:14:19.854 I/cr_CachingUmaRecorder(27714): Flushed 14 samples from 13 histograms, 0 samples were dropped.
+05-20 18:14:19.858 I/cr_ChildProcLH(27714): ScopedServiceBindingBatch.tryActivate: false
+05-20 18:14:19.863 I/cr_CombinedPProvider(27714): #registerProvider() provider:WV.wk@a823c19 isPolicyCacheEnabled:false policyProvidersSize:0
+05-20 18:14:19.864 I/cr_PolicyProvider(27714): #setManagerAndSource() 0
+05-20 18:14:19.871 I/cr_DisplayManager(27714): Is Display Topology available: false
+05-20 18:14:19.919 I/cr_CombinedPProvider(27714): #linkNativeInternal() 1
+05-20 18:14:19.921 I/cr_AppResProvider(27714): #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+05-20 18:14:19.921 I/cr_PolicyProvider(27714): #notifySettingsAvailable() 0
+05-20 18:14:19.921 I/cr_CombinedPProvider(27714): #onSettingsAvailable() 0
+05-20 18:14:19.921 I/cr_CombinedPProvider(27714): #flushPolicies()
+05-20 18:14:20.010 E/libc    (27714): Access denied finding property "ro.vendor.api_level"
+05-20 18:14:20.008 W/ThreadPoolForeg(27714): type=1400 audit(0.0:405667): avc: denied { read } for name="u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=12143 scontext=u:r:untrusted_app:s0:c11,c257,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=0
+05-20 18:14:20.028 W/chromium(27714): [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+05-20 18:14:20.179 I/com.chatr.app(27714): Waiting for a blocking GC ClassLinker
+05-20 18:14:20.199 I/com.chatr.app(27714): WaitForGcToComplete blocked ClassLinker on ClassLinker for 19.947ms
+05-20 18:14:20.237 D/Capacitor(27714): Starting BridgeActivity
+05-20 18:14:20.310 D/Capacitor(27714): Registering plugin instance: CapacitorCookies
+05-20 18:14:20.321 D/Capacitor(27714): Registering plugin instance: WebView
+05-20 18:14:20.327 D/Capacitor(27714): Registering plugin instance: CapacitorHttp
+05-20 18:14:20.333 D/Capacitor(27714): Registering plugin instance: BarcodeScanner
+05-20 18:14:20.340 D/Capacitor(27714): Registering plugin instance: BluetoothLe
+05-20 18:14:20.350 D/Capacitor(27714): Registering plugin instance: Contacts
+05-20 18:14:20.359 D/Capacitor(27714): Registering plugin instance: FileOpener
+05-20 18:14:20.362 D/Capacitor(27714): Registering plugin instance: SpeechRecognition
+05-20 18:14:20.367 D/Capacitor(27714): Registering plugin instance: FirebaseAnalytics
+05-20 18:14:20.372 D/Capacitor(27714): Registering plugin instance: FirebaseCrashlytics
+05-20 18:14:20.378 D/Capacitor(27714): Registering plugin instance: App
+05-20 18:14:20.384 D/Capacitor(27714): Registering plugin instance: Browser
+05-20 18:14:20.390 D/Capacitor(27714): Registering plugin instance: Camera
+05-20 18:14:20.399 D/Capacitor(27714): Registering plugin instance: Clipboard
+05-20 18:14:20.404 D/Capacitor(27714): Registering plugin instance: Device
+05-20 18:14:20.409 D/Capacitor(27714): Registering plugin instance: Filesystem
+05-20 18:14:20.419 D/Capacitor(27714): Registering plugin instance: Geolocation
+05-20 18:14:20.522 D/Capacitor(27714): Registering plugin instance: Haptics
+05-20 18:14:20.530 D/Capacitor(27714): Registering plugin instance: Keyboard
+05-20 18:14:20.535 D/Capacitor(27714): Registering plugin instance: LocalNotifications
+05-20 18:14:20.552 D/Capacitor(27714): Registering plugin instance: Network
+05-20 18:14:20.558 D/Capacitor(27714): Registering plugin instance: Preferences
+05-20 18:14:20.565 D/Capacitor(27714): Registering plugin instance: PushNotifications
+05-20 18:14:20.576 D/Capacitor(27714): Registering plugin instance: ScreenReader
+05-20 18:14:20.581 D/Capacitor(27714): Registering plugin instance: Share
+05-20 18:14:20.587 D/Capacitor(27714): Registering plugin instance: SplashScreen
+05-20 18:14:20.596 W/com.chatr.app(27714): Accessing hidden method Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController; (blacklist, linking, allowed)
+05-20 18:14:20.596 W/com.chatr.app(27714): Accessing hidden method Landroid/view/WindowInsetsController;->hide(I)V (blacklist, linking, allowed)
+05-20 18:14:20.604 D/Capacitor(27714): Registering plugin instance: StatusBar
+05-20 18:14:20.618 V/Capacitor/StatusBarPlugin(27714): Notifying listeners for event statusBarOverlayChanged
+05-20 18:14:20.618 D/Capacitor/StatusBarPlugin(27714): No listeners found for event statusBarOverlayChanged
+05-20 18:14:20.619 V/Capacitor/StatusBarPlugin(27714): Notifying listeners for event statusBarOverlayChanged
+05-20 18:14:20.619 D/Capacitor/StatusBarPlugin(27714): No listeners found for event statusBarOverlayChanged
+05-20 18:14:20.621 D/Capacitor(27714): Registering plugin instance: Toast
+05-20 18:14:20.624 D/Capacitor(27714): Registering plugin instance: BackgroundTask
+05-20 18:14:20.628 D/Capacitor(27714): Registering plugin instance: NativeBiometric
+05-20 18:14:20.632 D/Capacitor(27714): Registering plugin instance: SecureStoragePlugin
+05-20 18:14:20.663 D/Capacitor(27714): Registering plugin instance: CapacitorVideoPlayer
+05-20 18:14:20.760 W/Capacitor(27714): Unable to read file at path public/plugins
+05-20 18:14:20.779 D/Capacitor(27714): Loading app at https://localhost
+05-20 18:14:20.822 D/libMEOW (27714): applied 1 plugins for [com.chatr.app]:
+05-20 18:14:20.822 D/libMEOW (27714):   plugin 1: [libMEOW_gift.so]:
+05-20 18:14:20.835 I/GPUD    (27714): @gpudInitialize: successfully initialized with GL, dbg=0 mmdump_dbg=0 mmpath_dbg=0
+05-20 18:14:20.856 I/libMEOW_gift(27714): ctx:0x7910601400, ARC not Enabled.
+05-20 18:14:20.868 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:20.868 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:20.868 D/Capacitor/LN(27714): LocalNotification received: null
+05-20 18:14:20.869 D/Capacitor/LN(27714): Activity started without notification attached
+05-20 18:14:20.869 I/ChatrMainActivity(27714): MainActivity onNewIntent: android.intent.action.MAIN
+05-20 18:14:20.870 D/Capacitor(27714): Handling local request: https://localhost/
+05-20 18:14:20.872 I/ChatrMainActivity(27714): Handling action=null intentAction=android.intent.action.MAIN data=null
+05-20 18:14:20.872 I/ChatrMainActivity(27714): MainActivity onCreate
+05-20 18:14:20.878 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:20.882 I/CallForegroundService(27714): Clearing stale call notification (main_activity_start)
+05-20 18:14:20.890 I/ChatrMainActivity(27714): All permissions already granted
+05-20 18:14:20.898 I/ChatrCallScreening(27714): Block anonymous: false
+05-20 18:14:20.899 I/ChatrCallScreening(27714): Block unknown: false
+05-20 18:14:20.899 I/ChatrCallScreening(27714): Require name announcement: false
+05-20 18:14:20.899 I/CallBlockingManager(27714): Call blocking settings loaded
+05-20 18:14:20.899 I/ChatrMainActivity(27714): VoIP services initialized
+05-20 18:14:20.915 I/CallForwardingManager(27714): ?? CallForwardingManager initialized
+05-20 18:14:20.918 I/CallParkService(27714): ?? CallParkService initialized
+05-20 18:14:20.921 I/CallQueueService(27714): ?? CallQueueService initialized
+05-20 18:14:20.926 I/SpeedDialService(27714): ?? SpeedDialService initialized
+05-20 18:14:20.926 I/VoIPBridgeService(27714): ?? VoIPBridgeService initialized
+05-20 18:14:20.941 I/ChatrMainActivity(27714): WebView configured with native bridges
+05-20 18:14:20.942 I/ChatrMainActivity(27714): Skipping duplicate intent action=null intentAction=android.intent.action.MAIN callId=null
+05-20 18:14:20.957 D/Capacitor(27714): App started
+05-20 18:14:20.957 I/ChatrMainActivity(27714): MainActivity onStart: isActivityVisible=true
+05-20 18:14:20.964 D/Capacitor/AppPlugin(27714): Firing change: true
+05-20 18:14:20.965 V/Capacitor/AppPlugin(27714): Notifying listeners for event appStateChange
+05-20 18:14:20.965 D/Capacitor/AppPlugin(27714): No listeners found for event appStateChange
+05-20 18:14:20.966 D/SessionLifecycleClient(27714): Queued message 1. Queue size 1
+05-20 18:14:20.983 V/Capacitor/NetworkPlugin(27714): Notifying listeners for event networkStatusChange
+05-20 18:14:20.983 D/Capacitor/NetworkPlugin(27714): No listeners found for event networkStatusChange
+05-20 18:14:20.990 V/Capacitor/BrowserPlugin(27714): Notifying listeners for event browserFinished
+05-20 18:14:20.990 D/Capacitor/BrowserPlugin(27714): No listeners found for event browserFinished
+05-20 18:14:20.991 D/Capacitor(27714): App resumed
+05-20 18:14:20.997 I/SurfaceFactory(27714): [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@1f08edb
+05-20 18:14:21.012 D/ViewRootImpl[MainActivity](27714): hardware acceleration = true , fakeHwAccelerated = false, sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-20 18:14:21.020 D/libMEOW (27714): applied 1 plugins for [com.chatr.app]:
+05-20 18:14:21.020 D/libMEOW (27714):   plugin 1: [libMEOW_gift.so]:
+05-20 18:14:21.021 I/InputTransport(27714): Create ARC handle: 0x79105ef840
+05-20 18:14:21.021 D/libMEOW_gift(27714): etEventThreadFunc()::thread Begin. eventRefCnt: 1
+05-20 18:14:21.022 V/PhoneWindow(27714): DecorView setVisiblity: visibility = 0, Parent = android.view.ViewRootImpl@19ffe53, this = DecorView@7cec390[MainActivity]
+05-20 18:14:21.045 I/CameraManagerGlobal(27714): Connecting to camera service
+05-20 18:14:21.048 I/Choreographer(27714): Skipped 122 frames!  The application may be doing too much work on its main thread.
+05-20 18:14:21.052 I/libMEOW_gift(27714): ctx:0x7910601c80, ARC not Enabled.
+05-20 18:14:21.064 W/CameraManagerGlobal(27714): [soar.cts] ignore the status update of camera: 2
+05-20 18:14:21.066 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:21.067 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:21.081 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:21.081 W/com.chatr.app(27714): Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+05-20 18:14:21.082 W/com.chatr.app(27714): Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+05-20 18:14:21.082 W/com.chatr.app(27714): Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+05-20 18:14:21.091 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:21.091 W/IMGSRV  (27714): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:14:21.116 D/libMEOW (27714): applied 1 plugins for [com.chatr.app]:
+05-20 18:14:21.116 D/libMEOW (27714):   plugin 1: [libMEOW_gift.so]:
+05-20 18:14:21.123 I/libMEOW_gift(27714): ctx:0x790b4a7c00, ARC not Enabled.
+05-20 18:14:21.129 D/Surface (27714): Surface::connect(this=0x79104fd000,api=1)
+05-20 18:14:21.131 D/Surface (27714): Surface::setBufferCount(this=0x79104fd000,bufferCount=3)
+05-20 18:14:21.132 D/Surface (27714): Surface::allocateBuffers(this=0x79104fd000)
+05-20 18:14:21.143 W/Gralloc3(27714): mapper 3.x is not supported
+05-20 18:14:21.146 E/ion     (27714): ioctl c0044901 failed with code -1: Invalid argument
+05-20 18:14:21.240 I/OpenGLRenderer(27714): Davey! duration=2231ms; Flags=1, IntendedVsync=28118702822251, Vsync=28120736155625, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=28120751216059, AnimationStart=28120751319367, PerformTraversalsStart=28120752443213, DrawStart=28120835185751, SyncQueued=28120842824675, SyncStart=28120850403444, IssueDrawCommandsStart=28120855774675, SwapBuffers=28120940127905, FrameCompleted=28120942376521, DequeueBufferDuration=0, QueueBufferDuration=1269000, 
+05-20 18:14:21.253 D/SessionLifecycleService(27714): Service bound to new client on process 27714
+05-20 18:14:21.267 D/SessionLifecycleService(27714): App has not yet foregrounded. Using previously stored session.
+05-20 18:14:21.268 D/SessionLifecycleService(27714): Client android.os.Messenger@e6f74a8 bound at 28120956. Clients: 1
+05-20 18:14:21.274 I/ChatrApplication(27714): ?? FCM Token: cNPTkk-CQViSaUObArL4...
+05-20 18:14:21.290 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:21.290 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:21.291 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:14:21.312 I/Capacitor/SpeechRecognition(27714): Instantiated SpeechRecognizer in load()
+05-20 18:14:21.336 D/SessionLifecycleClient(27714): Connected to SessionLifecycleService. Queue size 1
+05-20 18:14:21.338 D/SessionLifecycleClient(27714): Sending lifecycle 1 to service
+05-20 18:14:21.339 D/SessionLifecycleService(27714): Activity foregrounding at 28121042.
+05-20 18:14:21.339 D/SessionLifecycleService(27714): Cold start detected.
+05-20 18:14:21.344 D/SessionLifecycleService(27714): Generated new session.
+05-20 18:14:21.344 D/SessionLifecycleService(27714): Broadcasting new session
+05-20 18:14:21.359 D/SessionFirelogPublisher(27714): Data Collection is enabled for at least one Subscriber
+05-20 18:14:21.361 D/SessionLifecycleClient(27714): Session update received.
+05-20 18:14:21.370 D/SessionLifecycleClient(27714): Notified CRASHLYTICS of new session 81250c8725964f37806650d39687d880
+05-20 18:14:21.394 W/com.chatr.app(27714): Accessing hidden field Landroid/content/pm/ApplicationInfo;->primaryCpuAbi:Ljava/lang/String; (greylist, reflection, allowed)
+05-20 18:14:21.420 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:21.468 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:21.476 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:21.518 D/EventGDTLogger(27714): Session Event Type: SESSION_START
+05-20 18:14:21.523 D/SessionFirelogPublisher(27714): Successfully logged Session Start event.
+05-20 18:14:21.842 W/ChatrMainActivity(27714): WebView early startup check: url=https://localhost/ progress=10
+05-20 18:14:22.518 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 18:14:22.518 W/com.chatr.app(27714): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 18:14:22.519 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:14:22.519 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 18:14:22.520 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 18:14:22.520 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:14:22.520 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 18:14:22.520 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 18:14:22.520 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 18:14:22.521 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:22.522 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:22.522 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:14:22.522 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:14:22.522 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:24.942 W/ChatrMainActivity(27714): Initial Capacitor WebView load is still pending after bridge setup; reloading app URL
+05-20 18:14:24.943 W/ChatrMainActivity(27714): Restarting Capacitor localhost load current=https://localhost/ progress=10 appUrl=https://localhost
+05-20 18:14:25.087 D/Capacitor(27714): Handling local request: https://localhost/
+05-20 18:14:26.168 D/ProfileInstaller(27714): Installing profile for com.chatr.app
+05-20 18:14:26.999 D/NetworkSecurityConfig(27714): Using Network Security Config from resource network_security_config debugBuild: true
+05-20 18:14:27.008 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:27.015 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:27.015 W/System  (27714): ClassLoader referenced unknown path: system/framework/mediatek-cta.jar
+05-20 18:14:27.018 I/System.out(27714): [okhttp] e:java.lang.ClassNotFoundException: com.mediatek.cta.CtaUtils
+05-20 18:14:27.050 I/System.out(27714): [socket]:check permission begin!
+05-20 18:14:27.050 W/System  (27714): ClassLoader referenced unknown path: system/framework/mediatek-cta.jar
+05-20 18:14:27.051 I/System.out(27714): [socket] e:java.lang.ClassNotFoundException: com.mediatek.cta.CtaUtils
+05-20 18:14:27.202 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:27.203 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:27.533 I/CapacitorCookies(27714): Setting cookie '__cf_bm=gvZKt_i6RfarD3Xw6CxMymVc5h1.97GPS8_Te4BjX6M-1779281067.5366266-1.0.1.1-jI.cUCqzz830o_JYRiiDHmUkPQrc.4GXfASEHCe7ZqjDi_yPAuEMlTH7DSe3k0FcrXR7kuPvFBF48IP8YQyJFl.u27f.rvthitZyr.ez0DrWSZhX9L34h4l7C7PakTKz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:27 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:27.540 I/CapacitorCookies(27714): Setting cookie '__cf_bm=gvZKt_i6RfarD3Xw6CxMymVc5h1.97GPS8_Te4BjX6M-1779281067.5366266-1.0.1.1-jI.cUCqzz830o_JYRiiDHmUkPQrc.4GXfASEHCe7ZqjDi_yPAuEMlTH7DSe3k0FcrXR7kuPvFBF48IP8YQyJFl.u27f.rvthitZyr.ez0DrWSZhX9L34h4l7C7PakTKz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:27 GMT' at: 'https://supabase.co'
+05-20 18:14:27.552 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:27.559 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:27.561 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:27.561 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:27.562 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:27.565 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:27.566 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:27.881 I/CapacitorCookies(27714): Setting cookie '__cf_bm=8Sc1mU35jbAaEHP2IuamBoKDClBSyZUW5AbaGesz6po-1779281067.8930902-1.0.1.1-vLveAg8p0ez7uzxVNjB47aQAByY82kYEqG9BFT7e_azWgL3F3rUsK6HO6_eYJyzm8UqMC7T39Uqz8WY40v_QT_y1VAQukUTKdkC8jpfQku3sukVbaBh7Nl_.ZBRXOw5K; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:28 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:27.886 I/CapacitorCookies(27714): Setting cookie '__cf_bm=8Sc1mU35jbAaEHP2IuamBoKDClBSyZUW5AbaGesz6po-1779281067.8930902-1.0.1.1-vLveAg8p0ez7uzxVNjB47aQAByY82kYEqG9BFT7e_azWgL3F3rUsK6HO6_eYJyzm8UqMC7T39Uqz8WY40v_QT_y1VAQukUTKdkC8jpfQku3sukVbaBh7Nl_.ZBRXOw5K; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:28 GMT' at: 'https://supabase.co'
+05-20 18:14:27.895 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:27.903 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:27.905 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:27.905 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:27.905 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:27.909 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:27.909 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:28.365 I/CapacitorCookies(27714): Setting cookie '__cf_bm=3InZ7Gx2l30_g6dPQN5mfQV1heJsSFW.IbZQfZtsHf4-1779281068.2367086-1.0.1.1-.6bso.4jRzawb.XLdxyI6qc1gwmO_xDnxV1qUOivR.N.WDHHbdGva3MkROOM7NMYMM20iYSCKFhQFLEKFxXy7Gd04gaPvHY2O_5BoytIkARoJ_3TSD4l0aEIQa8l9lPU; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:28 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:28.370 I/CapacitorCookies(27714): Setting cookie '__cf_bm=3InZ7Gx2l30_g6dPQN5mfQV1heJsSFW.IbZQfZtsHf4-1779281068.2367086-1.0.1.1-.6bso.4jRzawb.XLdxyI6qc1gwmO_xDnxV1qUOivR.N.WDHHbdGva3MkROOM7NMYMM20iYSCKFhQFLEKFxXy7Gd04gaPvHY2O_5BoytIkARoJ_3TSD4l0aEIQa8l9lPU; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:28 GMT' at: 'https://supabase.co'
+05-20 18:14:28.378 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:28.386 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:28.389 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:28.389 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:28.389 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:28.392 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:28.393 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:29.255 I/CapacitorCookies(27714): Setting cookie '__cf_bm=ZGascCNJgT77u4HnSAyyOw1WbbRWhzFS1xw0TVc6m.4-1779281068.7205513-1.0.1.1-mrjvnotmJsRHkDQ8KyRGG41tNTenQxHxB1d5V7toTM8pLJf6.1VupnRnwKwD350ccBerOfoGe9Y7a2lKTsOsMnIDbkbWg2q_aKJqvMt5FAGK6_R_GHc80mkJ9IHY.H7H; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:29 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:29.259 I/CapacitorCookies(27714): Setting cookie '__cf_bm=ZGascCNJgT77u4HnSAyyOw1WbbRWhzFS1xw0TVc6m.4-1779281068.7205513-1.0.1.1-mrjvnotmJsRHkDQ8KyRGG41tNTenQxHxB1d5V7toTM8pLJf6.1VupnRnwKwD350ccBerOfoGe9Y7a2lKTsOsMnIDbkbWg2q_aKJqvMt5FAGK6_R_GHc80mkJ9IHY.H7H; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:29 GMT' at: 'https://supabase.co'
+05-20 18:14:29.267 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:29.274 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:29.276 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:29.276 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:29.277 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:29.280 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:29.280 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:29.578 I/CapacitorCookies(27714): Setting cookie '__cf_bm=r0lQbNP8.SBBQG37PpPsHQpbNU_57R0QFI2Aaw9KS9k-1779281069.6076994-1.0.1.1-vN.D4paRmq9TZyDPrURQ1ES5jmpNbNuzx_uv5uTnNhiZmwcEWHpaE3bUtl6Cb.jFuj9Cop3tz83AuI0zYYah8TxTEsXUKlgmBtof8FmLu6NyY4PaTW.qdEJHyBPxfqMv; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:29 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:29.583 I/CapacitorCookies(27714): Setting cookie '__cf_bm=r0lQbNP8.SBBQG37PpPsHQpbNU_57R0QFI2Aaw9KS9k-1779281069.6076994-1.0.1.1-vN.D4paRmq9TZyDPrURQ1ES5jmpNbNuzx_uv5uTnNhiZmwcEWHpaE3bUtl6Cb.jFuj9Cop3tz83AuI0zYYah8TxTEsXUKlgmBtof8FmLu6NyY4PaTW.qdEJHyBPxfqMv; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:29 GMT' at: 'https://supabase.co'
+05-20 18:14:29.591 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:29.598 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:29.600 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:29.601 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:29.601 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:29.604 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:29.604 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:29.906 I/CapacitorCookies(27714): Setting cookie '__cf_bm=k10jzgNfL9Ttd9DLXE8owWWIXPBakIsoEiy_qT4znDk-1779281069.9321153-1.0.1.1-tymMNp9pE.Scms6lsAZ2Y_AmgYul.nqv2QrQncPbBtP5Wzi9SGcWrfJs6jD6qjFovLlUM7I4uccsdm1KwMbqwb_wtTTE7UdY2X6JKGfOOlV4v8tFEB1hLdW94Z7G5ZAQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:30 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:29.910 I/CapacitorCookies(27714): Setting cookie '__cf_bm=k10jzgNfL9Ttd9DLXE8owWWIXPBakIsoEiy_qT4znDk-1779281069.9321153-1.0.1.1-tymMNp9pE.Scms6lsAZ2Y_AmgYul.nqv2QrQncPbBtP5Wzi9SGcWrfJs6jD6qjFovLlUM7I4uccsdm1KwMbqwb_wtTTE7UdY2X6JKGfOOlV4v8tFEB1hLdW94Z7G5ZAQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:30 GMT' at: 'https://supabase.co'
+05-20 18:14:29.918 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:29.926 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:29.928 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:29.928 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:29.928 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:29.931 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:29.932 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:30.223 I/CapacitorCookies(27714): Setting cookie '__cf_bm=7g54vx7w5fm4fktJ2xnxDNx3woqQOSf5ZVdKKHvay3E-1779281070.2595541-1.0.1.1-jL.Nk08xvhuY1NI95s.wPLPNVXmUGS2SxYqKukKSz6W2aDDLNe_spiQjU2SrLyv2SmcT5XuyqbKRa0axDfoo2NXFkyIqdVxSc5AAePO4cUicoB_dZvIELNn_Yn6ia_E4; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:30 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:30.228 I/CapacitorCookies(27714): Setting cookie '__cf_bm=7g54vx7w5fm4fktJ2xnxDNx3woqQOSf5ZVdKKHvay3E-1779281070.2595541-1.0.1.1-jL.Nk08xvhuY1NI95s.wPLPNVXmUGS2SxYqKukKSz6W2aDDLNe_spiQjU2SrLyv2SmcT5XuyqbKRa0axDfoo2NXFkyIqdVxSc5AAePO4cUicoB_dZvIELNn_Yn6ia_E4; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:30 GMT' at: 'https://supabase.co'
+05-20 18:14:30.236 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:30.243 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:30.245 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:30.245 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:30.245 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:30.249 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:30.249 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:31.083 I/CapacitorCookies(27714): Setting cookie '__cf_bm=XdiEpkCAESAH2CFdRagUtodrRu4X7ibWo7CIKwGh8SQ-1779281070.5767875-1.0.1.1-t2exUZGCyPrWHtbT_QVZeyq3xhiHE12xbCXs5fIPlJTJE_6oAwzpx4t1knj0sthilRV431JoExKC9LW6imYE3XmU2.ZXQ9NAVK_Uq_oAv0Pl8Quu0.lfGBnGpq_1hZR7; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:31 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:31.087 I/CapacitorCookies(27714): Setting cookie '__cf_bm=XdiEpkCAESAH2CFdRagUtodrRu4X7ibWo7CIKwGh8SQ-1779281070.5767875-1.0.1.1-t2exUZGCyPrWHtbT_QVZeyq3xhiHE12xbCXs5fIPlJTJE_6oAwzpx4t1knj0sthilRV431JoExKC9LW6imYE3XmU2.ZXQ9NAVK_Uq_oAv0Pl8Quu0.lfGBnGpq_1hZR7; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:31 GMT' at: 'https://supabase.co'
+05-20 18:14:31.096 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:31.104 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:31.106 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:31.106 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:31.106 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:31.110 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:31.110 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:31.516 I/CapacitorCookies(27714): Setting cookie '__cf_bm=2L0uodIk5jvE2SHbjKG1bKnoJJ7Uwkxs0RhGCVOvcSc-1779281071.4380229-1.0.1.1-NtE26mI46ImjTNQKbjp8EOopiohws7Ej_5jlvWc90fF6PnJU81lqIdSZ4eI0Te5nXcGcl0e.1b1sq7MhzsL4xpQ6pJr9dAaCeMz_IOeIRnw4wi9R_6fsKXCUhjtHxIZd; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:31 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:31.520 I/CapacitorCookies(27714): Setting cookie '__cf_bm=2L0uodIk5jvE2SHbjKG1bKnoJJ7Uwkxs0RhGCVOvcSc-1779281071.4380229-1.0.1.1-NtE26mI46ImjTNQKbjp8EOopiohws7Ej_5jlvWc90fF6PnJU81lqIdSZ4eI0Te5nXcGcl0e.1b1sq7MhzsL4xpQ6pJr9dAaCeMz_IOeIRnw4wi9R_6fsKXCUhjtHxIZd; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:31 GMT' at: 'https://supabase.co'
+05-20 18:14:31.528 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:31.535 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:31.537 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:31.537 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:31.538 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:31.541 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:31.542 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:31.828 I/CapacitorCookies(27714): Setting cookie '__cf_bm=pGGSxv4KUzgijRt5SGyIvIESLMY6Fe8D2Zp9bNwoD1A-1779281071.8690705-1.0.1.1-GOpWKQUmgFjctEGCpbMmed0TgJ_zd61.pcE9yO3FAOc7dRjOLWhFEtSvffcHdL9foy7wqqePooONowqhQ0IWhaMAQWQMt79wxsJFhCqi3_7.Npugewbz5QgrgtymAUGU; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:32 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:31.833 I/CapacitorCookies(27714): Setting cookie '__cf_bm=pGGSxv4KUzgijRt5SGyIvIESLMY6Fe8D2Zp9bNwoD1A-1779281071.8690705-1.0.1.1-GOpWKQUmgFjctEGCpbMmed0TgJ_zd61.pcE9yO3FAOc7dRjOLWhFEtSvffcHdL9foy7wqqePooONowqhQ0IWhaMAQWQMt79wxsJFhCqi3_7.Npugewbz5QgrgtymAUGU; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:32 GMT' at: 'https://supabase.co'
+05-20 18:14:31.841 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:31.847 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:31.849 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:31.850 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:31.850 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:31.853 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:31.854 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:32.142 I/CapacitorCookies(27714): Setting cookie '__cf_bm=PK4WJT8ohYcw3X9nJKaJgrpme4qz49j012AAWt7wP.k-1779281072.181051-1.0.1.1-F4v_FtihYKDBGb6E97PjqErT5zuYTqmRJ9sOw94DltzNREa3cJCLAnCMqI2BAyiYK659mU1LZt85DIugZg7cqho7M7TQANJRWcAutO.CRVit3mUPPF537MpCNYiHSKcL; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:32 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:32.147 I/CapacitorCookies(27714): Setting cookie '__cf_bm=PK4WJT8ohYcw3X9nJKaJgrpme4qz49j012AAWt7wP.k-1779281072.181051-1.0.1.1-F4v_FtihYKDBGb6E97PjqErT5zuYTqmRJ9sOw94DltzNREa3cJCLAnCMqI2BAyiYK659mU1LZt85DIugZg7cqho7M7TQANJRWcAutO.CRVit3mUPPF537MpCNYiHSKcL; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:32 GMT' at: 'https://supabase.co'
+05-20 18:14:32.156 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:32.163 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:32.165 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:32.166 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:32.166 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:32.169 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:32.170 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:32.989 I/CapacitorCookies(27714): Setting cookie '__cf_bm=vxLlccPgDL23CCHISbnnSbmwJnl09opywqUHiIwfmoA-1779281072.497079-1.0.1.1-c8eJ_n3EHe.Ybk2mMAH_IR6XDZ3p65tC9wFHd.9HLFMSQ5kD8IbKbI3jD8ctaFd62md24VgRpHjLfotPWZ7zwCUltv_83PyJ_KjhsVuU4Y0p6XmodfWh9o2UXl6my7gM; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:33 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:32.994 I/CapacitorCookies(27714): Setting cookie '__cf_bm=vxLlccPgDL23CCHISbnnSbmwJnl09opywqUHiIwfmoA-1779281072.497079-1.0.1.1-c8eJ_n3EHe.Ybk2mMAH_IR6XDZ3p65tC9wFHd.9HLFMSQ5kD8IbKbI3jD8ctaFd62md24VgRpHjLfotPWZ7zwCUltv_83PyJ_KjhsVuU4Y0p6XmodfWh9o2UXl6my7gM; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:33 GMT' at: 'https://supabase.co'
+05-20 18:14:33.002 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:33.008 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:33.010 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:33.010 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:33.010 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:33.013 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:33.014 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:33.301 I/CapacitorCookies(27714): Setting cookie '__cf_bm=c0j3XVbYVygFu7N9irBJMgKSUZV1p.NFm5B3eOGUIq8-1779281073.341136-1.0.1.1-E94kv7BU1ZWSn_OUISvSmEwf20yjbexUivt8Gp1rPZZCxEwHQvOjZfE7MsQ9iuuxG_JJ8NghIhjCVA8mcscA.fwX0keqn6Q2M0L5umxOLNDAw17tB2pu0bJVoeMkQyM7; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:33 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:33.306 I/CapacitorCookies(27714): Setting cookie '__cf_bm=c0j3XVbYVygFu7N9irBJMgKSUZV1p.NFm5B3eOGUIq8-1779281073.341136-1.0.1.1-E94kv7BU1ZWSn_OUISvSmEwf20yjbexUivt8Gp1rPZZCxEwHQvOjZfE7MsQ9iuuxG_JJ8NghIhjCVA8mcscA.fwX0keqn6Q2M0L5umxOLNDAw17tB2pu0bJVoeMkQyM7; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:33 GMT' at: 'https://supabase.co'
+05-20 18:14:33.314 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:33.321 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:33.323 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:33.323 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:33.323 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:33.326 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:33.327 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:33.708 I/CapacitorCookies(27714): Setting cookie '__cf_bm=P1KzQDY5euEzNrhV.rxd9UYZ4ZbJxmZH1xXg5FrsOls-1779281073.748334-1.0.1.1-QRruH1.6ST7YW6NnqJz13dABN0sRyzTkDV146pJMV0D0a1QAOs187tlHPnTEKCYjVVG8dhM1eOvCtBKZCw2ZoOuk6kXrzjNi0pHKDdVFzVx2WYOpIL9CxIpsiCRWLpda; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:34 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:33.713 I/CapacitorCookies(27714): Setting cookie '__cf_bm=P1KzQDY5euEzNrhV.rxd9UYZ4ZbJxmZH1xXg5FrsOls-1779281073.748334-1.0.1.1-QRruH1.6ST7YW6NnqJz13dABN0sRyzTkDV146pJMV0D0a1QAOs187tlHPnTEKCYjVVG8dhM1eOvCtBKZCw2ZoOuk6kXrzjNi0pHKDdVFzVx2WYOpIL9CxIpsiCRWLpda; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:34 GMT' at: 'https://supabase.co'
+05-20 18:14:33.722 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:33.729 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:33.731 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:33.731 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:33.731 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:33.735 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:33.735 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:34.024 I/CapacitorCookies(27714): Setting cookie '__cf_bm=MiKz8M8rVUnu0D7oGL03vaFvomiaIq6cbt19AxmZeuY-1779281074.064731-1.0.1.1-ut7y7fJ87zG9wDbyEa43MCoYfcr9GAL9.MhyX2Xip9.h1a1iO1GOFlYrtm4gfiIwWuoccXbNfohIO0TYT2E1diR3o8MV7kpy_8K7Q6pGDNN1Joc8UM04I3V5rZdIRw9O; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:34 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:34.028 I/CapacitorCookies(27714): Setting cookie '__cf_bm=MiKz8M8rVUnu0D7oGL03vaFvomiaIq6cbt19AxmZeuY-1779281074.064731-1.0.1.1-ut7y7fJ87zG9wDbyEa43MCoYfcr9GAL9.MhyX2Xip9.h1a1iO1GOFlYrtm4gfiIwWuoccXbNfohIO0TYT2E1diR3o8MV7kpy_8K7Q6pGDNN1Joc8UM04I3V5rZdIRw9O; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:34 GMT' at: 'https://supabase.co'
+05-20 18:14:34.037 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:34.044 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:34.046 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:34.047 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:34.047 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:34.050 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:34.050 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:34.962 I/CapacitorCookies(27714): Setting cookie '__cf_bm=JVAthKGwFou6qwXiqeufN3FIBfVB0dCIgFL1Uns__9Y-1779281074.404357-1.0.1.1-g3kFYvWxcb2dwyLpIb4gm1bKhVYWQ9il5UobHDWdKNim8wn8vrzb3AIB0XwNgcMl3YKfkxh5EBaBWsNLhcz2lr4DjUQP4FWxHYzTmCArHzSPbRnewoKlW1UEQai4F6Ha; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:35 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:34.966 I/CapacitorCookies(27714): Setting cookie '__cf_bm=JVAthKGwFou6qwXiqeufN3FIBfVB0dCIgFL1Uns__9Y-1779281074.404357-1.0.1.1-g3kFYvWxcb2dwyLpIb4gm1bKhVYWQ9il5UobHDWdKNim8wn8vrzb3AIB0XwNgcMl3YKfkxh5EBaBWsNLhcz2lr4DjUQP4FWxHYzTmCArHzSPbRnewoKlW1UEQai4F6Ha; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:35 GMT' at: 'https://supabase.co'
+05-20 18:14:34.975 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:34.981 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:34.984 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:34.984 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:34.984 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:34.987 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:34.988 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:35.276 I/CapacitorCookies(27714): Setting cookie '__cf_bm=ULz2QBBJFS2eWRr3jkqfcYzMeDzp1QFvc.3MHsxFY5w-1779281075.3178847-1.0.1.1-Ttc5rM4KPlCFyEntD8v3XSHVvGKubtq4AQkfXlxcAb4rU7WoTO3BMtPuizcGtgaOosOZNao9smnXhw7mCkQoax6eNJr4l4KTC9JR.VzytJD_DydHL1SNHzp88o7z.3xK; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:35 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:35.280 I/CapacitorCookies(27714): Setting cookie '__cf_bm=ULz2QBBJFS2eWRr3jkqfcYzMeDzp1QFvc.3MHsxFY5w-1779281075.3178847-1.0.1.1-Ttc5rM4KPlCFyEntD8v3XSHVvGKubtq4AQkfXlxcAb4rU7WoTO3BMtPuizcGtgaOosOZNao9smnXhw7mCkQoax6eNJr4l4KTC9JR.VzytJD_DydHL1SNHzp88o7z.3xK; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:35 GMT' at: 'https://supabase.co'
+05-20 18:14:35.288 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:35.295 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:35.297 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:35.298 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:35.298 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:35.301 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:35.301 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:35.624 I/CapacitorCookies(27714): Setting cookie '__cf_bm=_66MtbCSU8wQ2R7rlMF_CyFj2vjq0Gi.ERlofxsrNEQ-1779281075.6285207-1.0.1.1-.IcZKWd8_hjryagVA6wYMIIZ1j.cRdwp9LlIjEBFjllzUoeEMLoL.FiUswxXDk53pvPO8SK25lZ5rmxnW4kOGKCsbrX_za8Ks9Y.oeZDavFZZQtO8DL5qcIXtoXnz0L1; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:35 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:35.630 I/CapacitorCookies(27714): Setting cookie '__cf_bm=_66MtbCSU8wQ2R7rlMF_CyFj2vjq0Gi.ERlofxsrNEQ-1779281075.6285207-1.0.1.1-.IcZKWd8_hjryagVA6wYMIIZ1j.cRdwp9LlIjEBFjllzUoeEMLoL.FiUswxXDk53pvPO8SK25lZ5rmxnW4kOGKCsbrX_za8Ks9Y.oeZDavFZZQtO8DL5qcIXtoXnz0L1; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:35 GMT' at: 'https://supabase.co'
+05-20 18:14:35.638 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:35.645 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:35.647 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:35.647 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:35.647 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:35.650 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:35.651 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:35.953 I/CapacitorCookies(27714): Setting cookie '__cf_bm=XWcEB.J4mWI5p7n9fQf1fJogHl8zfCE6.7uMkC.4aiM-1779281075.9803278-1.0.1.1-ppnOrRp.EVJudYwikA3OaKKFw7JQWv76KIjeVZ404xEAjknQJJx.eBlU9rbBKcJBLhBUlHdQD1ZCO.S2oMCqhuKKFiq.1nAmz9d2tMqKvvduZ1ZG4s2jbZXoFqPcT6.p; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:36 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:35.958 I/CapacitorCookies(27714): Setting cookie '__cf_bm=XWcEB.J4mWI5p7n9fQf1fJogHl8zfCE6.7uMkC.4aiM-1779281075.9803278-1.0.1.1-ppnOrRp.EVJudYwikA3OaKKFw7JQWv76KIjeVZ404xEAjknQJJx.eBlU9rbBKcJBLhBUlHdQD1ZCO.S2oMCqhuKKFiq.1nAmz9d2tMqKvvduZ1ZG4s2jbZXoFqPcT6.p; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:36 GMT' at: 'https://supabase.co'
+05-20 18:14:35.967 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:35.974 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:35.976 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:35.976 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:35.976 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:35.979 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:35.980 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:36.404 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:36.407 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:36.410 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:36.410 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:14:36.431 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 18:14:36.469 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:36.477 E/FilePhenotypeFlags(27714): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 18:14:36.508 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:36.511 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:14:36.512 E/FilePhenotypeFlags(27714): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 18:14:36.513 E/FilePhenotypeFlags(27714): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 18:14:36.861 I/CapacitorCookies(27714): Setting cookie '__cf_bm=N5d.K5_2uXiEa1T5OZwTGurS.bZIFa1nl9sO5UjwsRQ-1779281076.307383-1.0.1.1-7mGQbHW823T6zhwxDtqVBCc9iNwJXHBdo5RYalHrbTC9r6cBJs6TIRZamNs3bMNEJ8Mi0pVzzKVvumGvLXO3xUOoHm_ZZ0nDqMjEbhQcOtqW5cMBntgS3rIqOXTIkczQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:37 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:36.867 I/CapacitorCookies(27714): Setting cookie '__cf_bm=N5d.K5_2uXiEa1T5OZwTGurS.bZIFa1nl9sO5UjwsRQ-1779281076.307383-1.0.1.1-7mGQbHW823T6zhwxDtqVBCc9iNwJXHBdo5RYalHrbTC9r6cBJs6TIRZamNs3bMNEJ8Mi0pVzzKVvumGvLXO3xUOoHm_ZZ0nDqMjEbhQcOtqW5cMBntgS3rIqOXTIkczQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:37 GMT' at: 'https://supabase.co'
+05-20 18:14:36.893 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:36.898 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:36.900 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:36.901 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:36.901 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:36.904 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:36.904 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:37.204 I/CapacitorCookies(27714): Setting cookie '__cf_bm=lexIYKZIZJavlYnOt1Oon7OUs3qR03M4eajOaTJnxOE-1779281077.2318938-1.0.1.1-jAFf8x16rRFVLpX8gB5z76Y2qtO5WXw2IPqlRexx5_zBwSTRZlEKqEpvrVarQyVyin9.q9cxk53_o_HTVkMtDe8kGfhEAI5HfWJRcf5lh1lSy0nkqiwwWRCQKe9XEDIi; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:37 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:37.209 I/CapacitorCookies(27714): Setting cookie '__cf_bm=lexIYKZIZJavlYnOt1Oon7OUs3qR03M4eajOaTJnxOE-1779281077.2318938-1.0.1.1-jAFf8x16rRFVLpX8gB5z76Y2qtO5WXw2IPqlRexx5_zBwSTRZlEKqEpvrVarQyVyin9.q9cxk53_o_HTVkMtDe8kGfhEAI5HfWJRcf5lh1lSy0nkqiwwWRCQKe9XEDIi; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:37 GMT' at: 'https://supabase.co'
+05-20 18:14:37.218 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:37.225 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:37.228 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:37.228 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:37.228 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:37.231 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:37.232 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:37.533 I/CapacitorCookies(27714): Setting cookie '__cf_bm=gYs0KUWs4uHrOcXDDtXjzMbLTMs8nfxE0jiWyIm8oGc-1779281077.5588555-1.0.1.1-1hGJzHwpIN3p.ItioBWj90LgUii3SSMWpGKIE6MVSNetKaKybskbz2uDyPzIxdEvr5E_ftMIGbeDVVHuh0jXUW1b9sYzrDZ_I3R8fsCWY8l5MLFtMZLUFi2TfpR2MeMO; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:37 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:37.537 I/CapacitorCookies(27714): Setting cookie '__cf_bm=gYs0KUWs4uHrOcXDDtXjzMbLTMs8nfxE0jiWyIm8oGc-1779281077.5588555-1.0.1.1-1hGJzHwpIN3p.ItioBWj90LgUii3SSMWpGKIE6MVSNetKaKybskbz2uDyPzIxdEvr5E_ftMIGbeDVVHuh0jXUW1b9sYzrDZ_I3R8fsCWY8l5MLFtMZLUFi2TfpR2MeMO; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:37 GMT' at: 'https://supabase.co'
+05-20 18:14:37.545 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:37.551 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:37.553 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:37.553 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:37.553 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:37.556 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:37.557 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:37.857 I/CapacitorCookies(27714): Setting cookie '__cf_bm=XvmserSsCslnhapQzlao5V4CximBMUwYpHhMigEQJdU-1779281077.8876195-1.0.1.1-rgQ31078XzYxsmyTUMCls17783gZfY67NEW6wtxPQvOaw15y4gaoLaxlfCa9SciK_qPlE6catsGNiwzxed96x_ljhR2jRls6cFQjvOczlJqlZvntSAHM.iYnH7MCU1in; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:38 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:37.861 I/CapacitorCookies(27714): Setting cookie '__cf_bm=XvmserSsCslnhapQzlao5V4CximBMUwYpHhMigEQJdU-1779281077.8876195-1.0.1.1-rgQ31078XzYxsmyTUMCls17783gZfY67NEW6wtxPQvOaw15y4gaoLaxlfCa9SciK_qPlE6catsGNiwzxed96x_ljhR2jRls6cFQjvOczlJqlZvntSAHM.iYnH7MCU1in; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:38 GMT' at: 'https://supabase.co'
+05-20 18:14:37.870 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:37.876 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:37.879 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:37.879 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:37.879 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:37.882 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:37.882 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:38.188 I/CapacitorCookies(27714): Setting cookie '__cf_bm=BKqr_DHo3Hcz44Iv.opuxVdsjTojAoSn.yOw_DkMxlg-1779281078.2096548-1.0.1.1-DALrBn7H0N2g3pVeI2.M8a_zVpZi4cGc5cADhbPnosInYxj0r5USg528a7tdPf.GmialoNgCiFNXJaCFNM_1zcAQYP0XBg2HiL5LC9fHGg3JYaRogdhZCN4ExkBItlUm; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:38 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:38.192 I/CapacitorCookies(27714): Setting cookie '__cf_bm=BKqr_DHo3Hcz44Iv.opuxVdsjTojAoSn.yOw_DkMxlg-1779281078.2096548-1.0.1.1-DALrBn7H0N2g3pVeI2.M8a_zVpZi4cGc5cADhbPnosInYxj0r5USg528a7tdPf.GmialoNgCiFNXJaCFNM_1zcAQYP0XBg2HiL5LC9fHGg3JYaRogdhZCN4ExkBItlUm; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:38 GMT' at: 'https://supabase.co'
+05-20 18:14:38.201 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:38.207 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:38.210 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:38.210 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:38.210 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:38.213 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:38.214 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:38.518 I/CapacitorCookies(27714): Setting cookie '__cf_bm=897i8iETVnxoo4X.h3C1Nyw2nwGWkffWtXTvPTiYx0Q-1779281078.5414665-1.0.1.1-J2fIBWr2S6FZ_CeUOsU9UuHRskXsDAlvrTNx5Fp5FOWhKHSfe.j6i3mk8j3xwRJPyoY91E4AljoFMhcNas5VLjAWKOIGuarqAcPAkprWTTwDWfCqA_Cfa4hZCAIyYCD7; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:38 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:38.523 I/CapacitorCookies(27714): Setting cookie '__cf_bm=897i8iETVnxoo4X.h3C1Nyw2nwGWkffWtXTvPTiYx0Q-1779281078.5414665-1.0.1.1-J2fIBWr2S6FZ_CeUOsU9UuHRskXsDAlvrTNx5Fp5FOWhKHSfe.j6i3mk8j3xwRJPyoY91E4AljoFMhcNas5VLjAWKOIGuarqAcPAkprWTTwDWfCqA_Cfa4hZCAIyYCD7; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:38 GMT' at: 'https://supabase.co'
+05-20 18:14:38.530 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:38.538 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:38.540 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:38.540 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:38.540 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:38.543 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:38.544 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:38.843 I/CapacitorCookies(27714): Setting cookie '__cf_bm=mclnz1kMG4Kk.1Bqdfdsx3pLrU6D9UxO2pK3Xf4zEVo-1779281078.871195-1.0.1.1-4jmWfR5t5KXJmHlUfzNPTQuE6KJOj9vDFJrUw3imIfp8ap1vakTC.2TH5sanRDNmcRwhCaKRM1ke3R_M4LP2E110YHlX8eIFa0A9oXnNDLFPVQmI7nI0wPjxG.JJTGCK; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:39 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:38.847 I/CapacitorCookies(27714): Setting cookie '__cf_bm=mclnz1kMG4Kk.1Bqdfdsx3pLrU6D9UxO2pK3Xf4zEVo-1779281078.871195-1.0.1.1-4jmWfR5t5KXJmHlUfzNPTQuE6KJOj9vDFJrUw3imIfp8ap1vakTC.2TH5sanRDNmcRwhCaKRM1ke3R_M4LP2E110YHlX8eIFa0A9oXnNDLFPVQmI7nI0wPjxG.JJTGCK; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:39 GMT' at: 'https://supabase.co'
+05-20 18:14:38.855 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:38.863 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:38.865 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:38.865 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:38.865 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:38.868 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:38.869 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:39.482 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:14:39.483 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:14:39.484 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:39.535 W/com.chatr.app(27714): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:14:39.721 I/CapacitorCookies(27714): Setting cookie '__cf_bm=x0XlaTlxnvVifhsjEFPKM.eUIxHCRlOeeLBh8OcWHZA-1779281079.1960156-1.0.1.1-6AAfQXm.3S_w7AkbCFlrrmWTXaCYPJCRXyAMktW51uVBTSarmnTeqvS9uzV0YJ5OVvKwBZsTgYmvT279ML7NpDzl1upDFOS0UJ50SLonj9wQuYJ.KDXJ5Md4_oqUPLje; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:40 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:39.726 I/CapacitorCookies(27714): Setting cookie '__cf_bm=x0XlaTlxnvVifhsjEFPKM.eUIxHCRlOeeLBh8OcWHZA-1779281079.1960156-1.0.1.1-6AAfQXm.3S_w7AkbCFlrrmWTXaCYPJCRXyAMktW51uVBTSarmnTeqvS9uzV0YJ5OVvKwBZsTgYmvT279ML7NpDzl1upDFOS0UJ50SLonj9wQuYJ.KDXJ5Md4_oqUPLje; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:40 GMT' at: 'https://supabase.co'
+05-20 18:14:39.734 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:39.742 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:39.745 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:39.745 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:39.745 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:39.748 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:39.748 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:40.046 I/CapacitorCookies(27714): Setting cookie '__cf_bm=IWA8iu9WPqGLDJUArVJRfS4q.sTzlNF2GVv39BNHi0I-1779281080.0759103-1.0.1.1-mzwuvnm.5iIdP_wGRosGCOZPPbzIeGvYR..LCqFyz0Ite7X5bWNtg4y3eDMFyhz_hmYevBa3AjtdxzbNgZc.GR.7Ra.YIYDElFCIXe17TL.KHqKBSBU2Vl4qCbCb_stn; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:40 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:40.050 I/CapacitorCookies(27714): Setting cookie '__cf_bm=IWA8iu9WPqGLDJUArVJRfS4q.sTzlNF2GVv39BNHi0I-1779281080.0759103-1.0.1.1-mzwuvnm.5iIdP_wGRosGCOZPPbzIeGvYR..LCqFyz0Ite7X5bWNtg4y3eDMFyhz_hmYevBa3AjtdxzbNgZc.GR.7Ra.YIYDElFCIXe17TL.KHqKBSBU2Vl4qCbCb_stn; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:40 GMT' at: 'https://supabase.co'
+05-20 18:14:40.059 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:40.066 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:40.068 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:40.068 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:40.068 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:40.071 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:40.071 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:40.936 I/CapacitorCookies(27714): Setting cookie '__cf_bm=pXOc8SeSEAdughB7jjSeZuDCsTj5139RTz4Xtl.Dkcs-1779281080.3984938-1.0.1.1-bHD5i.ODUn8jfjV51s_WQdrSszsaBCn57A0hO139M9ozKQRxJ.GNdTENyJq_Q2VlJPLZNXZUAH7nF7NZbBP7HUX.07lTQWnhgmkXHNORDm7S0A1F3zwJZ0cPTlbWxc5Q; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:41 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:40.940 I/CapacitorCookies(27714): Setting cookie '__cf_bm=pXOc8SeSEAdughB7jjSeZuDCsTj5139RTz4Xtl.Dkcs-1779281080.3984938-1.0.1.1-bHD5i.ODUn8jfjV51s_WQdrSszsaBCn57A0hO139M9ozKQRxJ.GNdTENyJq_Q2VlJPLZNXZUAH7nF7NZbBP7HUX.07lTQWnhgmkXHNORDm7S0A1F3zwJZ0cPTlbWxc5Q; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:41 GMT' at: 'https://supabase.co'
+05-20 18:14:40.947 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:40.952 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:40.954 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:40.954 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:40.954 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:40.957 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:40.957 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:41.257 I/CapacitorCookies(27714): Setting cookie '__cf_bm=bRZMDO2Vwnpx5sFxZEaSsnAVNKUXeg9s.7z66hJ9r1g-1779281081.2852075-1.0.1.1-0rFOiBYJazG5T4H6CorBBw.MI78AwKv0adr6SAA9PVtEa2Jslp9XyQnxwbMuJRLrsT1kD60SJtqUrZ.4BnlLsd0aiFhgfrOMIb_d8HN_CdGHu6AMF6HK8EhzAim_Bslj; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:41 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:41.262 I/CapacitorCookies(27714): Setting cookie '__cf_bm=bRZMDO2Vwnpx5sFxZEaSsnAVNKUXeg9s.7z66hJ9r1g-1779281081.2852075-1.0.1.1-0rFOiBYJazG5T4H6CorBBw.MI78AwKv0adr6SAA9PVtEa2Jslp9XyQnxwbMuJRLrsT1kD60SJtqUrZ.4BnlLsd0aiFhgfrOMIb_d8HN_CdGHu6AMF6HK8EhzAim_Bslj; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:41 GMT' at: 'https://supabase.co'
+05-20 18:14:41.269 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:41.274 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:41.276 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:41.276 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:41.276 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:41.279 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:41.280 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:41.578 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Hvu3peI9k16v4FKRFdoI6gFnv7c6Jk6Tu5iSca6WY4M-1779281081.608985-1.0.1.1-pu0___Xl0TmLj2i6Rq7LgwTmIyvl2LIt3o_3SCF5IUOCJxXTO.3f3REvYhnAkgbGEPFTNapGQ5hLqhXYwla4swCLRKdehgFsE9JnTH5U.JPffNFK2RYQIqflATqUNv2I; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:41 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:41.582 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Hvu3peI9k16v4FKRFdoI6gFnv7c6Jk6Tu5iSca6WY4M-1779281081.608985-1.0.1.1-pu0___Xl0TmLj2i6Rq7LgwTmIyvl2LIt3o_3SCF5IUOCJxXTO.3f3REvYhnAkgbGEPFTNapGQ5hLqhXYwla4swCLRKdehgFsE9JnTH5U.JPffNFK2RYQIqflATqUNv2I; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:41 GMT' at: 'https://supabase.co'
+05-20 18:14:41.589 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:41.594 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:41.597 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:41.597 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:41.597 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:41.600 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:41.600 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:41.894 I/CapacitorCookies(27714): Setting cookie '__cf_bm=ztov3f5b8.IPgcnP6tBbFE8vGqK2AECebpjIOpt_G0Q-1779281081.9274526-1.0.1.1-F0mEGWKt1U8EOBU..IHnvW1n2rCjxu7p6nAUjRdrJ.9g61a0KU140D6q8yf66K4Z8v2DtHeB3yj1mPQzWfAaMhmJsv0EQbcAkLv1h9duYoF7AQ58GTJVd5TGvouCpAhx; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:42 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:41.897 I/CapacitorCookies(27714): Setting cookie '__cf_bm=ztov3f5b8.IPgcnP6tBbFE8vGqK2AECebpjIOpt_G0Q-1779281081.9274526-1.0.1.1-F0mEGWKt1U8EOBU..IHnvW1n2rCjxu7p6nAUjRdrJ.9g61a0KU140D6q8yf66K4Z8v2DtHeB3yj1mPQzWfAaMhmJsv0EQbcAkLv1h9duYoF7AQ58GTJVd5TGvouCpAhx; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:42 GMT' at: 'https://supabase.co'
+05-20 18:14:41.905 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:41.910 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:41.912 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:41.913 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:41.913 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:41.915 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:41.916 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:42.762 I/CapacitorCookies(27714): Setting cookie '__cf_bm=2duObHz68YyL3A9ozuB32cU5pc8VdSRTjt3upfQi9jE-1779281082.2448363-1.0.1.1-cZrQp5pKEFYR.OmnupHPQD3SRxvX8dWpNajpn5O4NUwxf7J3LwaEUEnnrKz9XZSfAtfrpNYBBrUPdyDIvOXzjSqInkIjqnYMVKvltZ48r2WaU83k_4JQ6_aNCtLqpvrn; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:43 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:42.766 I/CapacitorCookies(27714): Setting cookie '__cf_bm=2duObHz68YyL3A9ozuB32cU5pc8VdSRTjt3upfQi9jE-1779281082.2448363-1.0.1.1-cZrQp5pKEFYR.OmnupHPQD3SRxvX8dWpNajpn5O4NUwxf7J3LwaEUEnnrKz9XZSfAtfrpNYBBrUPdyDIvOXzjSqInkIjqnYMVKvltZ48r2WaU83k_4JQ6_aNCtLqpvrn; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:43 GMT' at: 'https://supabase.co'
+05-20 18:14:42.773 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:42.777 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:42.779 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:42.779 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:42.780 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:42.782 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:42.783 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:43.097 I/CapacitorCookies(27714): Setting cookie '__cf_bm=McLmaSk01UswZ5_e_uISeY44Vd04KNe1nv89qguZFrg-1779281083.1105566-1.0.1.1-To9yV_oaMHn2ojxebjXn0A4pP5KPNFjloVZzMsE1aLlVLrBTNPWyNczMFlBGsiE_a.uqEgZiv3muk534VVo_tqLMo5o7hRAmr4eihTAOUTi8dWGCPzTwVt59Ui8XKDqw; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:43 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:43.102 I/CapacitorCookies(27714): Setting cookie '__cf_bm=McLmaSk01UswZ5_e_uISeY44Vd04KNe1nv89qguZFrg-1779281083.1105566-1.0.1.1-To9yV_oaMHn2ojxebjXn0A4pP5KPNFjloVZzMsE1aLlVLrBTNPWyNczMFlBGsiE_a.uqEgZiv3muk534VVo_tqLMo5o7hRAmr4eihTAOUTi8dWGCPzTwVt59Ui8XKDqw; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:43 GMT' at: 'https://supabase.co'
+05-20 18:14:43.110 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:43.115 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:43.118 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:43.118 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:43.118 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:43.121 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:43.121 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:43.413 I/CapacitorCookies(27714): Setting cookie '__cf_bm=gQNwMcqFNDhygtX6lETL7fQ6tcjj0LdYJBFyY3k44oc-1779281083.4485376-1.0.1.1-rJ2v8mEaqFs17t0STphUKA6gx37Xrd2lC6wxiEkS6j9eERaPcEX0DB_p79xwMqvqToDzbtHqKk8mhSgtm2xUUdDu_6FOQWFc6x2vp.E9Aqnx5f.Bl4IMOFQn8Zx6HsqP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:43 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:43.418 I/CapacitorCookies(27714): Setting cookie '__cf_bm=gQNwMcqFNDhygtX6lETL7fQ6tcjj0LdYJBFyY3k44oc-1779281083.4485376-1.0.1.1-rJ2v8mEaqFs17t0STphUKA6gx37Xrd2lC6wxiEkS6j9eERaPcEX0DB_p79xwMqvqToDzbtHqKk8mhSgtm2xUUdDu_6FOQWFc6x2vp.E9Aqnx5f.Bl4IMOFQn8Zx6HsqP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:43 GMT' at: 'https://supabase.co'
+05-20 18:14:43.426 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:43.431 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:43.433 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:43.433 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:43.433 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:43.436 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:43.436 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:43.763 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Kb82R98OdlLcnDwyhU2g6ykzHKgDZVNpqnWwlZOs.Hw-1779281083.763545-1.0.1.1-6mXTWEjM26vhRNG3JSv54WRb_RDq2fL1cBgPsKGyue5cANyK69fRMpLg14KR.6eTqq5irJ4eFHYv79ydnowjBZT45UG8RTVV.TcCsGZJZhCJtj1rGd1y8OBXoVeDKYwz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:44 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:43.767 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Kb82R98OdlLcnDwyhU2g6ykzHKgDZVNpqnWwlZOs.Hw-1779281083.763545-1.0.1.1-6mXTWEjM26vhRNG3JSv54WRb_RDq2fL1cBgPsKGyue5cANyK69fRMpLg14KR.6eTqq5irJ4eFHYv79ydnowjBZT45UG8RTVV.TcCsGZJZhCJtj1rGd1y8OBXoVeDKYwz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:44 GMT' at: 'https://supabase.co'
+05-20 18:14:43.774 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:43.779 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:43.782 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:43.782 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:43.782 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:43.785 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:43.785 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:44.603 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Zb1u3ksC4vFpImPfDtS84mf3YW10op1_T_lagHl2zoc-1779281084.1125402-1.0.1.1-M86qSUMlJOqdRePUDnngJZa5ZkWMFvwBnAKbXf7bT5R0cFpSNH79TPsmmJQT6bKBDzW1Krb1Jm.kWrrYA2vnGAwd6cpUBy6sTxWkHOhyLKITm5u1FG5m8nUN82Sme9uK; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:44 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:44.607 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Zb1u3ksC4vFpImPfDtS84mf3YW10op1_T_lagHl2zoc-1779281084.1125402-1.0.1.1-M86qSUMlJOqdRePUDnngJZa5ZkWMFvwBnAKbXf7bT5R0cFpSNH79TPsmmJQT6bKBDzW1Krb1Jm.kWrrYA2vnGAwd6cpUBy6sTxWkHOhyLKITm5u1FG5m8nUN82Sme9uK; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:44 GMT' at: 'https://supabase.co'
+05-20 18:14:44.616 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:44.624 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:44.626 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:44.626 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:44.627 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:44.630 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:44.630 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:44.922 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Tq4WzY_hC6HiyEJsxekeyS1Nr1ND.N6HYpTZTzTPCkQ-1779281084.9580245-1.0.1.1-VgLHwqB0zkRdcBPznTm5_whX5rjc0YjFttHoH1dZzJcmyjcHlLsnmuJf.oGnZ_bqppL2b6kBTy6EHLwUrweNsSmVTgR7dTjTxcKBmuvx4xYxWqGvnqF0Tkg.Ryk78OCv; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:45 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:44.927 I/CapacitorCookies(27714): Setting cookie '__cf_bm=Tq4WzY_hC6HiyEJsxekeyS1Nr1ND.N6HYpTZTzTPCkQ-1779281084.9580245-1.0.1.1-VgLHwqB0zkRdcBPznTm5_whX5rjc0YjFttHoH1dZzJcmyjcHlLsnmuJf.oGnZ_bqppL2b6kBTy6EHLwUrweNsSmVTgR7dTjTxcKBmuvx4xYxWqGvnqF0Tkg.Ryk78OCv; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:45 GMT' at: 'https://supabase.co'
+05-20 18:14:44.936 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:44.943 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:44.947 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:44.947 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:44.947 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:44.950 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:44.950 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:45.292 I/CapacitorCookies(27714): Setting cookie '__cf_bm=KM_fFKr16vlhK8_B5XJzPv.2GTrYTkQi8cq_YbuSEbU-1779281085.2774694-1.0.1.1-6sgsTIn7vZNeb1yl8QC2WVh9gyiPDIBVDyOjHyc83T_x6XS93sOC5pBxeRlmR0cAf0yjccZc52HU2lvR8jJBhg1.BkxdSmMlfTwo25lD1F0af3amP5BcKilnC7ul7Bui; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:45 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:45.295 I/CapacitorCookies(27714): Setting cookie '__cf_bm=KM_fFKr16vlhK8_B5XJzPv.2GTrYTkQi8cq_YbuSEbU-1779281085.2774694-1.0.1.1-6sgsTIn7vZNeb1yl8QC2WVh9gyiPDIBVDyOjHyc83T_x6XS93sOC5pBxeRlmR0cAf0yjccZc52HU2lvR8jJBhg1.BkxdSmMlfTwo25lD1F0af3amP5BcKilnC7ul7Bui; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:45 GMT' at: 'https://supabase.co'
+05-20 18:14:45.302 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:45.309 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:45.311 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:45.311 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:45.311 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:45.314 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:45.315 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:46.170 I/CapacitorCookies(27714): Setting cookie '__cf_bm=B2BL4J0NbxD8wbr57UpshRaCIOR4Ipp5L54gjif51RE-1779281085.6422842-1.0.1.1-kAulFnB5FGSAnznRfhrvWOTtIpzmDOE0y1D3pF2.QNdJ8YLNWHgIDZOW79wfHpj9Cr1Yi1XkVxrV_5LYknwwnqRwmYcCZGCB8SWwQBRxQ9jeJS05oSi12FW8QxiNjqTm; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:46 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:46.175 I/CapacitorCookies(27714): Setting cookie '__cf_bm=B2BL4J0NbxD8wbr57UpshRaCIOR4Ipp5L54gjif51RE-1779281085.6422842-1.0.1.1-kAulFnB5FGSAnznRfhrvWOTtIpzmDOE0y1D3pF2.QNdJ8YLNWHgIDZOW79wfHpj9Cr1Yi1XkVxrV_5LYknwwnqRwmYcCZGCB8SWwQBRxQ9jeJS05oSi12FW8QxiNjqTm; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:46 GMT' at: 'https://supabase.co'
+05-20 18:14:46.183 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:46.189 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:46.191 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:46.192 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:46.192 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:46.195 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:46.196 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:46.624 I/CapacitorCookies(27714): Setting cookie '__cf_bm=7N44qRgQGcmPSnSeDRAbOxatKidSccEomWrSUGXM9vw-1779281086.5253124-1.0.1.1-52xbdDngRCL0sCRymgAEYTgD8upGxVxj199gzKZFtaF0bPpkonFaNDjqWECJ0kNqhN12h7ypXrwhdXj8eF_FNn8ywG8FMcaHMElJs8rDoP3kojGNGnY7VC03JNZ9bRa4; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:46 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:46.628 I/CapacitorCookies(27714): Setting cookie '__cf_bm=7N44qRgQGcmPSnSeDRAbOxatKidSccEomWrSUGXM9vw-1779281086.5253124-1.0.1.1-52xbdDngRCL0sCRymgAEYTgD8upGxVxj199gzKZFtaF0bPpkonFaNDjqWECJ0kNqhN12h7ypXrwhdXj8eF_FNn8ywG8FMcaHMElJs8rDoP3kojGNGnY7VC03JNZ9bRa4; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:46 GMT' at: 'https://supabase.co'
+05-20 18:14:46.636 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:46.643 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:46.645 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:46.645 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:46.645 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:46.648 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:46.649 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:46.948 I/CapacitorCookies(27714): Setting cookie '__cf_bm=0KxaZhqsKEaEmNrnGjVKTi8HdZ05i9Q66KNM6J17tRk-1779281086.9765143-1.0.1.1-fyhNsbdfxiWPDcSCc45QRwu63p5KSuUKJ69jyYKrwqls0k708prYqNSBEvpZ4BGU5maPo.JpWZd78I7qKzqRRyiLzKG4JcC3FioOQWD1BFBq68yooogD1yz9MAFnG99U; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:47 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:46.952 I/CapacitorCookies(27714): Setting cookie '__cf_bm=0KxaZhqsKEaEmNrnGjVKTi8HdZ05i9Q66KNM6J17tRk-1779281086.9765143-1.0.1.1-fyhNsbdfxiWPDcSCc45QRwu63p5KSuUKJ69jyYKrwqls0k708prYqNSBEvpZ4BGU5maPo.JpWZd78I7qKzqRRyiLzKG4JcC3FioOQWD1BFBq68yooogD1yz9MAFnG99U; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:47 GMT' at: 'https://supabase.co'
+05-20 18:14:46.960 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:46.966 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:46.969 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:46.969 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:46.969 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:46.973 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:46.973 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:47.793 I/CapacitorCookies(27714): Setting cookie '__cf_bm=3fCJ2QIuMqdsKMA43f6tz_BUdRWxynOndAE8xypoqEw-1779281087.3006332-1.0.1.1-oML7pFt2SVXwH0LtiFLmZt.JIIvmOjAU1ZyV3z4chWR9gA4vRTouDqnGt3fhjOozznExC9dJPb7WHeU2QUjAFx3PTai43fA8Yf6sogSo7CXEC_ort.CEFLdbYHfFvW.C; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:48 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:47.798 I/CapacitorCookies(27714): Setting cookie '__cf_bm=3fCJ2QIuMqdsKMA43f6tz_BUdRWxynOndAE8xypoqEw-1779281087.3006332-1.0.1.1-oML7pFt2SVXwH0LtiFLmZt.JIIvmOjAU1ZyV3z4chWR9gA4vRTouDqnGt3fhjOozznExC9dJPb7WHeU2QUjAFx3PTai43fA8Yf6sogSo7CXEC_ort.CEFLdbYHfFvW.C; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:48 GMT' at: 'https://supabase.co'
+05-20 18:14:47.805 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:47.811 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:47.814 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:47.814 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:47.814 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:47.817 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:47.818 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:48.164 I/CapacitorCookies(27714): Setting cookie '__cf_bm=SCH30Qsp4Vlp_5w8LoYgtPtZ5ViZMit446G5iRTtZiA-1779281088.14536-1.0.1.1-W7MtqFUyKhxx5YnEsPbeEd8a68GaXz4melgyBI_TPTY3l_pkKByJVry1ryTtQOqDxYuW1DlQJu53HxMUoWptnaecW3Ft4jfv_rZhRW0T0zj79PVb.O3S6FPvzjyRBr9d; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:48 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:48.169 I/CapacitorCookies(27714): Setting cookie '__cf_bm=SCH30Qsp4Vlp_5w8LoYgtPtZ5ViZMit446G5iRTtZiA-1779281088.14536-1.0.1.1-W7MtqFUyKhxx5YnEsPbeEd8a68GaXz4melgyBI_TPTY3l_pkKByJVry1ryTtQOqDxYuW1DlQJu53HxMUoWptnaecW3Ft4jfv_rZhRW0T0zj79PVb.O3S6FPvzjyRBr9d; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:48 GMT' at: 'https://supabase.co'
+05-20 18:14:48.178 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:48.184 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:48.187 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:48.187 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:48.187 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:48.190 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:48.191 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:48.489 I/CapacitorCookies(27714): Setting cookie '__cf_bm=2gqrbwIYRToq43B3dvT4PB6yaIrYGKjvlbzYBajCrHQ-1779281088.5186315-1.0.1.1-Jd6ZYdsa.ifVTkia80d63_WSNQvLgQQTOzLYhhWhMIPUfm0TUm1ZZX8eIvYb9kjFd6elQsQ5e3QxHiMaj03n1OG8lPIkDG8LM258lcygO2ba2NjFln6FJlrsH_gggpkz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:48 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:48.493 I/CapacitorCookies(27714): Setting cookie '__cf_bm=2gqrbwIYRToq43B3dvT4PB6yaIrYGKjvlbzYBajCrHQ-1779281088.5186315-1.0.1.1-Jd6ZYdsa.ifVTkia80d63_WSNQvLgQQTOzLYhhWhMIPUfm0TUm1ZZX8eIvYb9kjFd6elQsQ5e3QxHiMaj03n1OG8lPIkDG8LM258lcygO2ba2NjFln6FJlrsH_gggpkz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:48 GMT' at: 'https://supabase.co'
+05-20 18:14:48.502 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:48.508 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:48.510 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:48.510 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:48.510 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:48.513 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:48.514 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:48.838 I/CapacitorCookies(27714): Setting cookie '__cf_bm=xzXf0xbwpmUrWRPHOS2EMvNygtrs8UZFUV8Id7_HUNg-1779281088.8415222-1.0.1.1-r8oreuYf7UrNBWzyZWPxsrbokErpzRpL6euvFKqsA8gYLsnWx.ogG_ghZ4Pdn_kia0mM084RZj6_lUTr6EoU_bamEw6H_EGKFE1NQ7yuO5glAnBoBrTF76EEpurEJjes; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:49 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:48.843 I/CapacitorCookies(27714): Setting cookie '__cf_bm=xzXf0xbwpmUrWRPHOS2EMvNygtrs8UZFUV8Id7_HUNg-1779281088.8415222-1.0.1.1-r8oreuYf7UrNBWzyZWPxsrbokErpzRpL6euvFKqsA8gYLsnWx.ogG_ghZ4Pdn_kia0mM084RZj6_lUTr6EoU_bamEw6H_EGKFE1NQ7yuO5glAnBoBrTF76EEpurEJjes; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:49 GMT' at: 'https://supabase.co'
+05-20 18:14:48.852 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:48.858 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:48.861 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:48.861 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:48.861 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:48.864 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:48.864 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:49.161 I/CapacitorCookies(27714): Setting cookie '__cf_bm=43ou6l9sQP0rTvLm8Y2P2rHThHAI0NZTuyQw2on1PbA-1779281089.19185-1.0.1.1-u_ZzLFAU_97vTgBxPtJq0Hl.LOQ.6Hn0hYnDn9v.MbYdRnpZribMKOFWGa1WD6a1Djc5DdiKlD5NulX.JwzVOSalqfNLstZBdaJBMiOnKgZ8jP3luJURsQ44NfkMrpnG; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:49 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:49.165 I/CapacitorCookies(27714): Setting cookie '__cf_bm=43ou6l9sQP0rTvLm8Y2P2rHThHAI0NZTuyQw2on1PbA-1779281089.19185-1.0.1.1-u_ZzLFAU_97vTgBxPtJq0Hl.LOQ.6Hn0hYnDn9v.MbYdRnpZribMKOFWGa1WD6a1Djc5DdiKlD5NulX.JwzVOSalqfNLstZBdaJBMiOnKgZ8jP3luJURsQ44NfkMrpnG; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:49 GMT' at: 'https://supabase.co'
+05-20 18:14:49.173 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:49.181 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:49.183 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:49.183 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:49.183 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:49.187 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:49.188 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:49.483 I/CapacitorCookies(27714): Setting cookie '__cf_bm=BV3FdwW7lLuOl9x9DN3c0zp6NwwCmAvc4wUwdlMAtV0-1779281089.5154746-1.0.1.1-Sgn.nbLahi36L_3dEFEA3fifDJWPffmMCA71dNCw71wYCT6xlM3pmaaij2k.Xkls11OkiZhrAoteX2.KvqFYMzKYeTz3uOVIh5q7MDfSEuAI2S.pvPWqfQOVAPv6NaBc; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:49 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:49.488 I/CapacitorCookies(27714): Setting cookie '__cf_bm=BV3FdwW7lLuOl9x9DN3c0zp6NwwCmAvc4wUwdlMAtV0-1779281089.5154746-1.0.1.1-Sgn.nbLahi36L_3dEFEA3fifDJWPffmMCA71dNCw71wYCT6xlM3pmaaij2k.Xkls11OkiZhrAoteX2.KvqFYMzKYeTz3uOVIh5q7MDfSEuAI2S.pvPWqfQOVAPv6NaBc; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:49 GMT' at: 'https://supabase.co'
+05-20 18:14:49.496 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:49.504 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:49.506 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:49.506 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:49.506 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:49.509 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:49.510 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:49.808 I/CapacitorCookies(27714): Setting cookie '__cf_bm=BywCzSN5wY4r8jS.qFN.vhnj2RxOmWU7eyg7i24ycjw-1779281089.8372962-1.0.1.1-irowgnf7Ja1t.Ax8fCMebufHVLgJIoXtySgPrxsFUUn.VqC8AOOrWvOGoJswIuRldrqvRJaRksRBKncRiATu.W9ZYUa6_aNCKUH3IACQm9Y_S92hDlUI6uyVAE078nx.; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:50 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:49.812 I/CapacitorCookies(27714): Setting cookie '__cf_bm=BywCzSN5wY4r8jS.qFN.vhnj2RxOmWU7eyg7i24ycjw-1779281089.8372962-1.0.1.1-irowgnf7Ja1t.Ax8fCMebufHVLgJIoXtySgPrxsFUUn.VqC8AOOrWvOGoJswIuRldrqvRJaRksRBKncRiATu.W9ZYUa6_aNCKUH3IACQm9Y_S92hDlUI6uyVAE078nx.; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:50 GMT' at: 'https://supabase.co'
+05-20 18:14:49.819 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:49.825 I/CapacitorCookies(27714): Getting cookies at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:49.828 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:49.828 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:49.828 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:49.831 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:49.832 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:50.143 I/CapacitorCookies(27714): Setting cookie '__cf_bm=bFIUd1GF2BVRuVxHo.gOg.eno7W.ir.ZDUENKqCwz0c-1779281090.1822364-1.0.1.1-j9_e2QtEV6tQ6BjJMJa7ha5rzbP3..7OAwQQlMqWlwAUhm6olwFi5OMXmEaJHt.Fk1D4xxsQlOnmjHYgtND59C02aCnUCf1upFQsipA0c5ISuohZzi4EOzWXjpLFKZZ3; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:50 GMT' at: 'https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/native_call_events?on_conflict=user_id,device_event_id'
+05-20 18:14:50.148 I/CapacitorCookies(27714): Setting cookie '__cf_bm=bFIUd1GF2BVRuVxHo.gOg.eno7W.ir.ZDUENKqCwz0c-1779281090.1822364-1.0.1.1-j9_e2QtEV6tQ6BjJMJa7ha5rzbP3..7OAwQQlMqWlwAUhm6olwFi5OMXmEaJHt.Fk1D4xxsQlOnmjHYgtND59C02aCnUCf1upFQsipA0c5ISuohZzi4EOzWXjpLFKZZ3; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 20 May 2026 13:14:50 GMT' at: 'https://supabase.co'
+05-20 18:14:50.157 W/SupabaseNativeCalls(27714): Supabase sync failed 401: {"code":"PGRST303","details":null,"hint":null,"message":"JWT expired"}
+05-20 18:14:50.157 I/NativeCallLogSync(27714): Native call sync finished. imported=60 pending=50 remoteLookups=0 reason=app_start
+05-20 18:14:50.171 I/WM-WorkerWrapper(27714): Worker result SUCCESS for Work [ id=47ca8e36-4177-4bbe-b875-279bc6fc6aab, tags={ com.chatr.app.nativecalls.NativeCallSyncWorker } ]
+05-20 18:14:51.710 I/TRuntime.CctTransportBackend(27714): Making request to: https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog
+05-20 18:14:51.713 I/CapacitorCookies(27714): Getting cookies at: 'https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog'
+05-20 18:14:51.715 I/System.out(27714): [okhttp]:check permission begin!
+05-20 18:14:51.715 I/System.out(27714): [okhttp]:not MMS!
+05-20 18:14:51.715 I/System.out(27714): [okhttp]:not Email!
+05-20 18:14:51.731 I/System.out(27714): [socket]:check permission begin!
+05-20 18:14:51.819 I/System.out(27714): [OkHttp] sendRequest>>
+05-20 18:14:51.819 I/System.out(27714): [OkHttp] sendRequest<<
+05-20 18:14:54.409 I/TRuntime.CctTransportBackend(27714): Status Code: 200

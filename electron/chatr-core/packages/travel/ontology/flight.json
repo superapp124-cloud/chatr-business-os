@@ -1,0 +1,13 @@
+{
+  "id": "ontology.travel.flight",
+  "name": "Flight",
+  "fields": {
+    "flightNumber": "string",
+    "airline": "string",
+    "origin": "string",
+    "destination": "string",
+    "departureTime": "datetime",
+    "arrivalTime": "datetime",
+    "price": "number"
+  }
+}

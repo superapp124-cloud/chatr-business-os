@@ -1,0 +1,29 @@
+{
+  "id": "core.expense",
+  "name": "Expense",
+  "version": "1.0.0",
+  "category": "business",
+  "outcomeType": "CREATE",
+  "providerName": "FinanceProvider",
+  "maxExecutionTime": "2s",
+  "requiresNetwork": true,
+  "requiresAuthentication": true,
+  "supportsRetry": true,
+  "supportsOfflineQueue": false,
+  "estimatedLatency": "500ms",
+  "maturity": 0,
+  "permissions": [],
+  "executionPolicy": "confirmation_required",
+  "capabilityVersion": "1.0.0",
+  "sdkVersion": "1.0.0",
+  "minimumKernel": "1.0.0",
+  "description": "Manages Expense commitments.",
+  "examples": [],
+  "tags": [
+    "business"
+  ],
+  "keywords": [
+    "expense"
+  ],
+  "edges": []
+}

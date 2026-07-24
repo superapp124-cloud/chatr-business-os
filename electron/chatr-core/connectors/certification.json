@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "certificationLevels": {
+    "VERIFIED": {
+      "description": "Officially tested, maintained, and signed by the CHATR team.",
+      "badge": "✓ Verified",
+      "autoInstall": true,
+      "requiresSignature": true
+    },
+    "ENTERPRISE": {
+      "description": "Private connector for an organization. Signed by the org's certificate.",
+      "badge": "⬡ Enterprise",
+      "autoInstall": false,
+      "requiresSignature": true
+    },
+    "COMMUNITY": {
+      "description": "Submitted by the community. Reviewed but not maintained by CHATR.",
+      "badge": "◈ Community",
+      "autoInstall": false,
+      "requiresSignature": true
+    },
+    "EXPERIMENTAL": {
+      "description": "AI-generated or unreviewed connector. Use at your own risk.",
+      "badge": "⚗ Experimental",
+      "autoInstall": false,
+      "requiresSignature": false,
+      "warningRequired": true
+    }
+  },
+  "trustedSigners": [
+    {
+      "id": "chatr-core",
+      "name": "CHATR Core Team",
+      "publicKeyFingerprint": "CHATR-CORE-2026-PLACEHOLDER"
+    }
+  ]
+}

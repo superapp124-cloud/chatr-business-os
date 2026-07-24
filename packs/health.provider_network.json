@@ -1,0 +1,48 @@
+{
+  "id": "health.provider_network",
+  "name": "Chatr+ Healthcare Provider Network",
+  "version": "1.0.0",
+  "category": "Healthcare",
+  "description": "Healthcare backend for Chatr+ managing doctors, clinics, and consultation logs.",
+  "author": "CHATR OS Professional Services",
+  "certification": "Verified",
+  "status": "Available",
+  "objects": [
+    {
+      "name": "Verified_Doctors",
+      "fields": [
+        { "name": "doctor_name", "type": "string" },
+        { "name": "specialty", "type": "string" },
+        { "name": "medical_license_number", "type": "string" },
+        { "name": "years_experience", "type": "number" },
+        { "name": "is_verified", "type": "boolean" },
+        { "name": "consultation_fee", "type": "number" }
+      ]
+    },
+    {
+      "name": "Clinic_Locations",
+      "fields": [
+        { "name": "clinic_name", "type": "string" },
+        { "name": "city", "type": "string" },
+        { "name": "address", "type": "string" },
+        { "name": "has_emergency_ward", "type": "boolean" }
+      ]
+    },
+    {
+      "name": "Consultation_Logs",
+      "fields": [
+        { "name": "patient_id", "type": "string" },
+        { "name": "doctor_id", "type": "string" },
+        { "name": "consultation_date", "type": "string" },
+        { "name": "symptoms_summary", "type": "string" },
+        { "name": "is_completed", "type": "boolean" }
+      ]
+    }
+  ],
+  "ui_schemas": {
+    "doctor_directory_table": {
+      "columns": ["doctor_name", "specialty", "is_verified", "consultation_fee"],
+      "default_sort": "doctor_name ASC"
+    }
+  }
+}

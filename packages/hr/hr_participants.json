@@ -1,0 +1,28 @@
+{
+  "participants": [
+    {
+      "id": "role_employee",
+      "type": "human_role",
+      "capabilities": ["submit_request", "acknowledge_policy"],
+      "escalation_path": "role_manager"
+    },
+    {
+      "id": "role_manager",
+      "type": "human_role",
+      "capabilities": ["approve_standard_leave", "conduct_review"],
+      "escalation_path": "role_hr_manager"
+    },
+    {
+      "id": "role_hr_manager",
+      "type": "human_role",
+      "capabilities": ["approve_extended_leave", "initiate_onboarding", "initiate_offboarding"],
+      "escalation_path": "role_hr_director"
+    },
+    {
+      "id": "role_it_admin",
+      "type": "human_role",
+      "capabilities": ["provision_equipment", "revoke_access"],
+      "escalation_path": "role_it_director"
+    }
+  ]
+}

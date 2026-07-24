@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Universal Workflow Patterns Schema",
+  "description": "Platform-native orchestration patterns that sequence capabilities.",
+  "version": "15.0",
+  "definitions": {
+    "WorkflowPattern": {
+      "type": "object",
+      "required": ["patternId", "patternType", "steps"],
+      "properties": {
+        "patternId": { "type": "string" },
+        "patternType": {
+          "type": "string",
+          "enum": [
+            "Approval",
+            "Escalation",
+            "Review",
+            "HumanConfirmation",
+            "AIAssisted",
+            "BatchProcessing",
+            "EventDriven",
+            "LongRunningProcess",
+            "Compensation",
+            "FederatedWorkflow"
+          ]
+        },
+        "description": { "type": "string" },
+        "trigger": {
+          "type": "object",
+          "properties": {
+            "intent": { "type": "string" },
+            "event": { "type": "string" }
+          }
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stepId": { "type": "string" },
+              "capability": { "type": "string" },
+              "fallback": { "type": "string" },
+              "compensation": { "type": "string" }
+            }
+          }
+        },
+        "policies": { "type": "array", "items": { "type": "string" } },
+        "outcomes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

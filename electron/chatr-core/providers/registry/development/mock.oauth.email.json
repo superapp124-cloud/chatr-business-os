@@ -1,0 +1,45 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "mock.oauth.email",
+      "version": "1.0.0",
+      "displayName": "Mock OAuth Email Provider",
+      "description": "OAuth-based email provider.",
+      "author": "CHATR",
+      "license": "MIT"
+    },
+    "capabilities": [
+      "email.send"
+    ],
+    "authentication": {
+      "type": "oauth2",
+      "scopes": [
+        "email.send"
+      ]
+    },
+    "operations": {
+      "patterns": [
+        "Synchronous"
+      ],
+      "rateLimits": "100/min",
+      "regions": [
+        "global"
+      ]
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "securityClassification": "standard"
+    }
+  },
+  "certificate": {
+    "providerId": "mock.oauth.email",
+    "version": "1.0.0",
+    "manifestHash": "b7a1ffd076439f6f8d7392d1c530a3ae377260e2faf3e4febc23e4cbc6ad387b",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:40:52.382Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

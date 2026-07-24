@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "mock.human.approval",
+      "version": "1.0.0",
+      "displayName": "Mock Human Approval Provider",
+      "description": "Human approval workflow provider.",
+      "author": "CHATR",
+      "license": "MIT"
+    },
+    "capabilities": [
+      "workflow.approval"
+    ],
+    "authentication": {
+      "type": "oauth2",
+      "scopes": []
+    },
+    "operations": {
+      "patterns": [
+        "Human"
+      ],
+      "rateLimits": "100/min",
+      "regions": [
+        "global"
+      ]
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "securityClassification": "standard"
+    }
+  },
+  "certificate": {
+    "providerId": "mock.human.approval",
+    "version": "1.0.0",
+    "manifestHash": "5acb4fd23b35a27375eb315d9a3cd3edb87b642f909161c1aedee29d879415da",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:40:52.962Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

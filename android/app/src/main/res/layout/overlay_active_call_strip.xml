@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CHATR AI GSM Layer — Floating Bubble
+     A compact draggable icon sitting over the native dialer.
+     Tap → opens full AI Assist Drawer.
+     Color changes to signal trust level / scam warnings. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <!-- Outer glow ring (animates on scam detection) -->
+    <View
+        android:id="@+id/bubbleGlowRing"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bubble_glow_ring"
+        android:alpha="0.5"/>
+
+    <!-- Main bubble body -->
+    <FrameLayout
+        android:id="@+id/bubbleBody"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bubble_bg"
+        android:elevation="8dp">
+
+        <!-- CHATR AI icon text -->
+        <TextView
+            android:id="@+id/bubbleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AI"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"/>
+
+    </FrameLayout>
+
+    <!-- Status dot (top-right corner) -->
+    <View
+        android:id="@+id/bubbleStatusDot"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/status_dot_green"/>
+
+</FrameLayout>

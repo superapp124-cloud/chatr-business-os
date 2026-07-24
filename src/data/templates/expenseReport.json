@@ -1,0 +1,52 @@
+{
+  "id": "def_expense_report",
+  "name": "Expense Report",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "expense_category": {
+        "type": "string",
+        "enum": ["Travel", "Meals", "Software", "Office Supplies", "Other"]
+      },
+      "amount": {
+        "type": "number"
+      },
+      "date_incurred": {
+        "type": "string",
+        "format": "date"
+      },
+      "description": {
+        "type": "string"
+      }
+    },
+    "required": ["expense_category", "amount", "date_incurred", "description"]
+  },
+  "relationships": [
+    {
+      "targetObjectId": "Employee",
+      "type": "one_to_one",
+      "label": "Submitted By"
+    }
+  ],
+  "permissions": {
+    "roles": ["employee", "manager", "finance"],
+    "actions": ["create", "read", "update"]
+  },
+  "validation": [
+    {
+      "field": "amount",
+      "rule": "amount > 0",
+      "errorMessage": "Amount must be greater than 0"
+    }
+  ],
+  "lifecycle": {
+    "states": ["Draft", "Pending Approval", "Approved", "Paid", "Rejected"],
+    "transitions": {
+      "Draft": ["Pending Approval"],
+      "Pending Approval": ["Approved", "Rejected"],
+      "Approved": ["Paid"],
+      "Rejected": []
+    },
+    "initialState": "Pending Approval"
+  }
+}

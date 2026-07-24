@@ -1,0 +1,8 @@
+{
+  "name": "documents",
+  "version": "1.0.0",
+  "codename": "Documents Capability",
+  "description": "Handles document retrieval and attachment intents.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable"
+}

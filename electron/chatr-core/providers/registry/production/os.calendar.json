@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "os-calendar",
+      "version": "1.0.0",
+      "displayName": "OS Calendar Integration",
+      "description": "Reads and writes to the local OS calendar.",
+      "author": "CHATR Core",
+      "license": "MIT"
+    },
+    "executionStrategy": "Local Code",
+    "capabilities": [
+      "Planning.Schedule"
+    ],
+    "dependencies": [],
+    "lifecycle": "stable",
+    "authentication": { "type": "os_prompt" },
+    "permissions": ["read_calendar", "write_calendar"],
+    "health": "healthy",
+    "trust": 1.0,
+    "latency": 20,
+    "cost": 0,
+    "offline": true,
+    "jurisdiction": "local",
+    "certification": "Core",
+    "evidence": "detailed",
+    "supportedABI": "chatr.capability_catalog.v1_0_rc",
+    "lastValidation": "2026-07-20T00:00:00Z",
+    "deprecationStatus": "active"
+  },
+  "certificate": {
+    "providerId": "os-calendar",
+    "version": "1.0.0",
+    "manifestHash": "auto",
+    "schemaVersion": "1.1",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-20T00:00:00Z",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

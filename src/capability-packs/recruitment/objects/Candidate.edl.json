@@ -1,0 +1,36 @@
+{
+  "urn": "urn:chatr:object:candidate",
+  "type": "Candidate",
+  "name": "Job Candidate",
+  "primitiveType": "LivingObject",
+  "metadata": {},
+  "properties": [
+    { "key": "name", "type": "string", "required": true },
+    { "key": "email", "type": "string", "required": true },
+    { "key": "role", "type": "string", "required": false },
+    { "key": "stage", "type": "string", "required": true },
+    { "key": "score", "type": "number", "required": false }
+  ],
+  "relationships": [
+    { "predicate": "assigned_to", "class": "authority", "targetType": "Employee", "required": true, "multiple": false }
+  ],
+  "lifecycle": {
+    "initialState": "applied",
+    "states": [
+      { "name": "applied" },
+      { "name": "screening" },
+      { "name": "interview" },
+      { "name": "offer" },
+      { "name": "hired" },
+      { "name": "rejected" }
+    ],
+    "transitions": [
+      { "from": ["applied"], "to": "screening", "triggeredByEvent": "CandidateScreeningStarted" },
+      { "from": ["screening"], "to": "interview", "triggeredByEvent": "CandidateInterviewScheduled" },
+      { "from": ["interview"], "to": "offer", "triggeredByEvent": "CandidateOffered", "requiredPolicies": ["urn:chatr:policy:background-check"] },
+      { "from": ["offer"], "to": "hired", "triggeredByEvent": "CandidateHired" },
+      { "from": ["applied", "screening", "interview", "offer"], "to": "rejected", "triggeredByEvent": "CandidateRejected" }
+    ]
+  },
+  "eventsProduced": ["CandidateCreated", "CandidateTransitioned"]
+}

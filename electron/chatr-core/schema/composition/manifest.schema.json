@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Solution Pack Manifest",
+  "description": "Standardized metadata for a Composable Business Solution pack.",
+  "version": "15.0",
+  "definitions": {
+    "SolutionPack": {
+      "type": "object",
+      "required": ["identity", "category", "publisher", "dependencies", "extensions", "governance"],
+      "properties": {
+        "identity": {
+          "type": "object",
+          "properties": {
+            "packId": { "type": "string" },
+            "version": { "type": "string" },
+            "canonicalName": { "type": "string", "description": "e.g., chatr.industry.healthcare" }
+          },
+          "required": ["packId", "version", "canonicalName"]
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "Industry",
+            "Business",
+            "Enterprise",
+            "AI",
+            "Experience",
+            "Regional",
+            "Compliance",
+            "Marketplace"
+          ]
+        },
+        "publisher": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "signature": { "type": "string" },
+            "trustedLevel": { "type": "string", "enum": ["Verified", "Partner", "Community", "Core"] }
+          }
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "packId": { "type": "string" },
+              "versionConstraint": { "type": "string" }
+            }
+          },
+          "description": "Defines the incoming edges in the Composition Graph"
+        },
+        "extensions": {
+          "type": "object",
+          "properties": {
+            "canonicalObjectsExtended": { "type": "array", "items": { "type": "string" } },
+            "capabilitiesAdded": { "type": "array", "items": { "type": "string" } },
+            "policiesAdded": { "type": "array", "items": { "type": "string" } },
+            "providersAdded": { "type": "array", "items": { "type": "string" } },
+            "aiModelsAdded": { "type": "array", "items": { "type": "string" } },
+            "workflowsAdded": { "type": "array", "items": { "type": "string" } },
+            "journeysAdded": { "type": "array", "items": { "type": "string" } },
+            "dashboardsAdded": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "governance": {
+          "type": "object",
+          "properties": {
+            "compatibilityMatrix": { "type": "object" },
+            "migrationStrategy": { "type": "string" },
+            "license": { "type": "string" },
+            "certification": { "type": "string" },
+            "trustRequirements": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}

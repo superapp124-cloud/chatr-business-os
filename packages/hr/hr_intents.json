@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {
+      "id": "intent_onboard_employee",
+      "name": "Onboard New Hire",
+      "goals": [
+        { "metric": "Time to Productivity", "threshold": "< 14 days" },
+        { "metric": "Compliance", "threshold": "All Legal Documents Signed" },
+        { "metric": "Equipment Provisioned", "threshold": "Day 1 Hardware Readiness" }
+      ],
+      "reasoning_schema": [
+        "Onboarding Task Completion %",
+        "Hardware Delivery Status",
+        "Manager Sync Completion"
+      ]
+    },
+    {
+      "id": "intent_resolve_leave",
+      "name": "Resolve Leave Request",
+      "goals": [
+        { "metric": "Approval SLA", "threshold": "< 48 hours" },
+        { "metric": "Coverage Risk", "threshold": "Department active head count > 80%" }
+      ],
+      "reasoning_schema": [
+        "Manager Approval Status",
+        "Historical Leave Balance",
+        "Team Coverage Impact"
+      ]
+    }
+  ]
+}

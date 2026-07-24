@@ -1,0 +1,22 @@
+{
+  "state_machines": [
+    {
+      "object_id": "rec_obj_application",
+      "states": [
+        { "name": "Applied", "is_initial": true, "is_terminal": false },
+        { "name": "Screening", "is_initial": false, "is_terminal": false },
+        { "name": "Interviewing", "is_initial": false, "is_terminal": false },
+        { "name": "Offer_Extended", "is_initial": false, "is_terminal": false },
+        { "name": "Hired", "is_initial": false, "is_terminal": true },
+        { "name": "Rejected", "is_initial": false, "is_terminal": true }
+      ],
+      "transitions": [
+        { "from": "Applied", "to": "Screening", "policy_id": "pol_rec_base_access" },
+        { "from": "Screening", "to": "Interviewing", "policy_id": "pol_rec_base_access" },
+        { "from": "Interviewing", "to": "Offer_Extended", "policy_id": "pol_rec_offer_approval" },
+        { "from": "Offer_Extended", "to": "Hired", "policy_id": "pol_rec_base_access" },
+        { "from": "Offer_Extended", "to": "Rejected", "policy_id": "pol_rec_base_access" }
+      ]
+    }
+  ]
+}

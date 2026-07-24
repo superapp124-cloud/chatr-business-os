@@ -1,0 +1,45 @@
+{
+  "contacts": [
+    {
+      "id": "c_1",
+      "name": "John Smith",
+      "email": "john@example.com"
+    },
+    {
+      "id": "c_2",
+      "name": "Sarah Connor",
+      "email": "sarah@example.com"
+    }
+  ],
+  "documents": [
+    {
+      "id": "d_1",
+      "title": "Project Genesis",
+      "type": "proposal"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "m_1",
+      "title": "Weekly Planning",
+      "time": "Monday 9:00 AM"
+    },
+    {
+      "id": "m_1783326077748",
+      "title": "Meeting with John Smith",
+      "time": "Tomorrow"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t_1783326077870",
+      "summary": "Create a task from that",
+      "status": "pending"
+    },
+    {
+      "id": "t_1783326078088",
+      "summary": "Remind me after the meeting",
+      "status": "pending"
+    }
+  ]
+}

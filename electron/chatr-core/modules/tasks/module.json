@@ -1,0 +1,8 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "codename": "Tasks Capability",
+  "description": "Handles task creation and management intents.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable"
+}

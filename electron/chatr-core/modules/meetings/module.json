@@ -1,0 +1,8 @@
+{
+  "name": "meetings",
+  "version": "1.0.0",
+  "codename": "Meetings Capability",
+  "description": "Handles meeting scheduling and management intents.",
+  "dependencies": ["runtime", "events"],
+  "status": "stable"
+}

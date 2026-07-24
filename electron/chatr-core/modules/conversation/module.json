@@ -1,0 +1,16 @@
+{
+  "name": "conversation",
+  "version": "1.0.0",
+  "codename": "Genesis",
+  "description": "The first module of CHATR Kernel. Handles AI-powered conversation routing, context resolution, streaming, and persistence.",
+  "dependencies": ["runtime", "events", "providers", "context", "transport"],
+  "status": "stable",
+  "endpoints": [
+    "POST /conversation/chat",
+    "POST /conversation/stream",
+    "GET  /conversation/health",
+    "GET  /conversation/models",
+    "GET  /conversation/version",
+    "GET  /conversation/metrics"
+  ]
+}

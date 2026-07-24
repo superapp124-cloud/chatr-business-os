@@ -1,0 +1,29 @@
+{
+  "id": "core.call",
+  "name": "Call",
+  "version": "1.0.0",
+  "category": "communication",
+  "outcomeType": "COMMUNICATE",
+  "providerName": "CommunicationProvider",
+  "maxExecutionTime": "2s",
+  "requiresNetwork": true,
+  "requiresAuthentication": true,
+  "supportsRetry": true,
+  "supportsOfflineQueue": false,
+  "estimatedLatency": "500ms",
+  "maturity": 0,
+  "permissions": [],
+  "executionPolicy": "confirmation_required",
+  "capabilityVersion": "1.0.0",
+  "sdkVersion": "1.0.0",
+  "minimumKernel": "1.0.0",
+  "description": "Manages Call commitments.",
+  "examples": [],
+  "tags": [
+    "communication"
+  ],
+  "keywords": [
+    "call"
+  ],
+  "edges": []
+}

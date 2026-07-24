@@ -1,0 +1,154 @@
+/* ── Inbox Tokens ────────────────────────────────────────────────────────────── */
+:root {
+  --inbox-bg:           #070711;
+  --inbox-surface:      #0e0e1a;
+  --inbox-surface-2:    #13131f;
+  --inbox-border:       rgba(255,255,255,0.07);
+  --inbox-text:         #f1f1f7;
+  --inbox-text-dim:     #9898b3;
+  --inbox-purple:       #8b5cf6;
+}
+
+/* ── Container ───────────────────────────────────────────────────────────────── */
+.inbox-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--inbox-text);
+  padding: 24px;
+}
+
+.inbox-header {
+  margin-bottom: 32px;
+}
+
+.inbox-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* ── Sections ────────────────────────────────────────────────────────────────── */
+.inbox-section {
+  margin-bottom: 36px;
+}
+
+.inbox-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--inbox-text-dim);
+  margin: 0 0 16px 0;
+}
+
+/* ── Repeat Templates ────────────────────────────────────────────────────────── */
+.inbox-templates-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.inbox-templates-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.inbox-templates-scroll::-webkit-scrollbar-thumb {
+  background: var(--inbox-border);
+  border-radius: 4px;
+}
+
+.inbox-template-card {
+  flex: 0 0 200px;
+  background: var(--inbox-surface);
+  border: 1px solid var(--inbox-border);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.inbox-template-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(139,92,246,0.3);
+  box-shadow: 0 8px 24px rgba(139,92,246,0.1);
+}
+
+.template-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.template-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.template-subtitle {
+  font-size: 11px;
+  color: var(--inbox-text-dim);
+}
+
+/* ── Goal Cards ──────────────────────────────────────────────────────────────── */
+.inbox-goal-card {
+  background: var(--inbox-surface);
+  border: 1px solid var(--inbox-border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: background 0.2s;
+}
+
+.inbox-goal-card:hover {
+  background: var(--inbox-surface-2);
+}
+
+.goal-status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.goal-content {
+  flex: 1;
+}
+
+.goal-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.goal-detail {
+  font-size: 13px;
+  color: var(--inbox-text-dim);
+}
+
+.goal-meta {
+  font-size: 11px;
+  color: var(--inbox-text-dim);
+  font-weight: 500;
+}
+
+.done-goal {
+  opacity: 0.7;
+}
+
+.done-goal .goal-title {
+  color: var(--inbox-text-dim);
+}

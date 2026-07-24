@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Composition Graph Schema",
+  "description": "Defines the non-linear dependency graph between solution packs.",
+  "version": "15.0",
+  "definitions": {
+    "CompositionGraph": {
+      "type": "object",
+      "required": ["nodes", "edges"],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["nodeId", "packRef", "nodeType"],
+            "properties": {
+              "nodeId": { "type": "string" },
+              "packRef": { "type": "string", "description": "URN of the installed pack" },
+              "nodeType": { "type": "string", "enum": ["Foundation", "Domain", "Experience", "Integration", "Extension"] }
+            }
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["source", "target", "relationshipType"],
+            "properties": {
+              "source": { "type": "string", "description": "nodeId of the dependent pack" },
+              "target": { "type": "string", "description": "nodeId of the required pack" },
+              "relationshipType": {
+                "type": "string",
+                "enum": [
+                  "Requires",
+                  "ExtendsSemantics",
+                  "OverridesPolicy",
+                  "ProvidesImplementation",
+                  "ComposesUX"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

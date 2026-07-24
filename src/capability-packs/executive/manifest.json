@@ -1,0 +1,17 @@
+{
+  "id": "executive",
+  "version": "1.0.0",
+  "edlVersion": "1.0",
+  "name": "Executive Decisions",
+  "dependencies": [],
+  "objects": [
+    "./objects/Decision.edl.json"
+  ],
+  "relationships": [],
+  "policies": [],
+  "processes": [],
+  "permissions": [],
+  "knowledge": [],
+  "checksum": "mock_checksum_456",
+  "signature": "mock_signature_456"
+}

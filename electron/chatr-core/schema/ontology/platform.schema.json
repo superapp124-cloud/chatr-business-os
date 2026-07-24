@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Platform Layer — Canonical Ontology",
+  "description": "Layer 3: Concepts unique to the CHATR operating system.",
+  "version": "15.0",
+  "layer": "Platform",
+  "law": "Platform entities govern execution, trust, and intelligence. They operate ON Reality and Business entities.",
+  "definitions": {
+    "Intent": {
+      "description": "A formalized user goal or desired outcome.",
+      "layer": "Platform",
+      "domain": "Platform",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","AIDiscoverable","Observable","HistoryEnabled"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["generates", "fulfilled_by", "blocked_by"],
+      "events": ["IntentCaptured","IntentResolved","IntentFailed"],
+      "attributes": {
+        "intentId": { "type": "string" },
+        "utterance": { "type": "string" },
+        "confidence": { "type": "number" },
+        "parameters": { "type": "object" }
+      }
+    },
+    "ExecutionPlan": {
+      "description": "A deterministic graph of operations generated from an Intent.",
+      "layer": "Platform",
+      "domain": "Platform",
+      "traits": ["Auditable","Versioned","Observable","PolicyAware","Federated"],
+      "lifecycle": "Execution Lifecycle",
+      "relationships": ["satisfies", "executes", "depends_on"],
+      "events": ["ExecutionPlanGenerated","ExecutionPlanStarted","ExecutionPlanCompleted","ExecutionPlanFailed"],
+      "attributes": {
+        "planId": { "type": "string" },
+        "nodes": { "type": "array" },
+        "edges": { "type": "array" },
+        "estimatedCost": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" }
+      }
+    },
+    "Capability": {
+      "description": "A governed, reusable unit of business logic.",
+      "layer": "Platform",
+      "domain": "Platform",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Searchable","Packageable","PolicyAware","AIDiscoverable","Federated"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["implemented_by", "operates_on", "requires", "emits"],
+      "events": ["CapabilityRegistered","CapabilityInvoked","CapabilityDeprecated"],
+      "attributes": {
+        "capabilityId": { "type": "string" },
+        "namespace": { "type": "string" },
+        "name": { "type": "string" },
+        "signature": { "type": "object" }
+      }
+    },
+    "Provider": {
+      "description": "An external system or service that implements a Capability.",
+      "layer": "Platform",
+      "domain": "Platform",
+      "traits": ["Auditable","Versioned","Observable","PolicyAware","Federated","ExchangeReady"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["implements", "authenticated_by", "trusted_by"],
+      "events": ["ProviderRegistered","ProviderConnected","ProviderFailed"],
+      "attributes": {
+        "providerId": { "type": "string" },
+        "vendor": { "type": "string" },
+        "endpoint": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/URL" },
+        "rateLimit": { "type": "number" }
+      }
+    },
+    "Package": {
+      "description": "An immutable, signed bundle of Platform assets.",
+      "layer": "Platform",
+      "domain": "Platform",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Searchable","Packageable","ExchangeReady"],
+      "lifecycle": "Package Lifecycle",
+      "relationships": ["contains", "depends_on", "published_by"],
+      "events": ["PackageValidated","PackageCertified","PackagePublished","PackageRevoked"],
+      "attributes": {
+        "urn": { "type": "string" },
+        "hash": { "type": "string" },
+        "signature": { "type": "string" },
+        "manifest": { "type": "object" }
+      }
+    },
+    "Policy": {
+      "description": "A declarative rule governing behavior, access, or compliance.",
+      "layer": "Platform",
+      "domain": "Platform",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Searchable","Packageable","AIDiscoverable"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["applies_to", "overrides", "enforced_by"],
+      "events": ["PolicyCreated","PolicyUpdated","PolicyViolated"],
+      "attributes": {
+        "policyId": { "type": "string" },
+        "effect": { "type": "string", "enum": ["Allow","Deny"] },
+        "condition": { "type": "string" },
+        "resource": { "type": "string" }
+      }
+    }
+  }
+}

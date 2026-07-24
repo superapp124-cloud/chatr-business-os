@@ -1,0 +1,16 @@
+{
+  "policies": [
+    {
+      "id": "pol_rec_base_access",
+      "type": "transition_guard",
+      "condition": "user.role in ['Recruiter', 'Hiring Manager', 'Admin']",
+      "enforcement": "hard_block"
+    },
+    {
+      "id": "pol_rec_offer_approval",
+      "type": "transition_guard",
+      "condition": "offer.salary > requisition.budget_max ? user.role in ['HR Director', 'Admin'] : user.role in ['Recruiter', 'Hiring Manager']",
+      "enforcement": "hard_block"
+    }
+  ]
+}

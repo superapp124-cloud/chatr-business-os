@@ -1,0 +1,29 @@
+{
+  "id": "core.calendar_event",
+  "name": "Calendar Event",
+  "version": "1.0.0",
+  "category": "collaboration",
+  "outcomeType": "SCHEDULE",
+  "providerName": "CalendarProvider",
+  "maxExecutionTime": "2s",
+  "requiresNetwork": true,
+  "requiresAuthentication": true,
+  "supportsRetry": true,
+  "supportsOfflineQueue": false,
+  "estimatedLatency": "500ms",
+  "maturity": 0,
+  "permissions": [],
+  "executionPolicy": "confirmation_required",
+  "capabilityVersion": "1.0.0",
+  "sdkVersion": "1.0.0",
+  "minimumKernel": "1.0.0",
+  "description": "Manages Calendar Event commitments.",
+  "examples": [],
+  "tags": [
+    "collaboration"
+  ],
+  "keywords": [
+    "calendar event"
+  ],
+  "edges": []
+}

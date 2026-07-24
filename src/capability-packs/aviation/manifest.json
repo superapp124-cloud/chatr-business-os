@@ -1,0 +1,18 @@
+{
+  "id": "aviation",
+  "version": "1.0.0",
+  "edlVersion": "1.0",
+  "name": "Aviation Maintenance",
+  "dependencies": [],
+  "objects": [
+    "./objects/Aircraft.edl.json",
+    "./objects/MaintenanceWorkOrder.edl.json"
+  ],
+  "relationships": [],
+  "policies": [],
+  "processes": [],
+  "permissions": [],
+  "knowledge": [],
+  "checksum": "mock_aviation_checksum",
+  "signature": "mock_aviation_signature"
+}

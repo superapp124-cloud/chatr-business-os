@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CHATR AI GSM Layer — AI Assist Drawer
+     Swipe-up bottom sheet over native dialer with captions, notes, scam analysis, summary tabs. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EE0D0D0D"
+    android:elevation="20dp">
+
+    <!-- Drag Handle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:background="#44FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chatr AI Assist"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/btnStudioVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✨ Studio Voice"
+            android:textSize="11sp"
+            android:textColor="#9CA3AF"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/chip_bg"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/liveIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● LIVE"
+            android:textSize="11sp"
+            android:textColor="#22C55E"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22FFFFFF"/>
+
+    <!-- Tab Row -->
+    <LinearLayout
+        android:id="@+id/tabRow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tabCaptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Captions"
+            android:textSize="12sp"
+            android:textColor="#A78BFA"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tabNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notes"
+            android:textSize="12sp"
+            android:textColor="#6B7280"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tabScam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scam AI"
+            android:textSize="12sp"
+            android:textColor="#6B7280"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tabSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Summary"
+            android:textSize="12sp"
+            android:textColor="#6B7280"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tabTranslate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Translate"
+            android:textSize="12sp"
+            android:textColor="#6B7280"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22FFFFFF"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Content Area (Tabs) -->
+    <FrameLayout
+        android:id="@+id/contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="16dp">
+
+        <!-- 1. Captions Container -->
+        <ScrollView
+            android:id="@+id/containerCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/captionsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Listening for captions...\n\nTap 'Start Captions' below to begin live transcription."
+                    android:textSize="14sp"
+                    android:textColor="#D1D5DB"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingMultiplier="1.4"
+                    android:layout_marginBottom="8dp"/>
+                    
+                <!-- Smart Chips Container -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/liveChipsContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- 2. Notes Container -->
+        <LinearLayout
+            android:id="@+id/containerNotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/editNotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="Type important details here..."
+                android:textColorHint="#6B7280"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <!-- 3. Scam AI Container -->
+        <LinearLayout
+            android:id="@+id/containerScam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/scamStatusIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/status_dot_green"
+                android:text="✓"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:id="@+id/scamStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call is safe. Monitoring for suspicious patterns..."
+                android:textColor="#22C55E"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <ProgressBar
+                android:id="@+id/scamRiskBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#22C55E" />
+            <TextView
+                android:id="@+id/scamRiskText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Risk Score: 0/100"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- 4. Summary Container -->
+        <LinearLayout
+            android:id="@+id/containerSummary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/summaryPlaceholderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live summary will be generated immediately after this call ends."
+                android:textColor="#9CA3AF"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:padding="16dp"/>
+        </LinearLayout>
+
+        <!-- 5. Translate / AI Interpreter Mode Container -->
+        <LinearLayout
+            android:id="@+id/containerTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Language Selector Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/btnMyLanguage"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:text="Me: Kashmiri ▾"
+                    android:textSize="11sp"
+                    android:textColor="#A78BFA"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/chip_bg"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  ⇄  "
+                    android:textColor="#6B7280"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/btnCallerLanguage"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:text="Caller: Hindi ▾"
+                    android:textSize="11sp"
+                    android:textColor="#34D399"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/chip_bg"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"/>
+            </LinearLayout>
+
+            <!-- Conversation Log -->
+            <ScrollView
+                android:id="@+id/translateScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+                <TextView
+                    android:id="@+id/translateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌐 AI Interpreter ready.\nTap a button below to start."
+                    android:textColor="#9CA3AF"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.5"/>
+            </ScrollView>
+
+            <!-- Translated text shown large -->
+            <TextView
+                android:id="@+id/translatedLargeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:visibility="gone"/>
+
+            <!-- Voice Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <!-- I'm Speaking — captures user's voice, translates to caller's language -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnISpeaking"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:text="🎤 I'm Speaking"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#7C3AED"
+                    app:cornerRadius="28dp"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <!-- They're Speaking — captures caller's voice, translates to user's language -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTheySpeaking"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:text="👂 They're Speaking"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#059669"
+                    app:cornerRadius="28dp"
+                    android:layout_marginStart="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+            <!-- Text fallback row (collapsed by default, expands on tap) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <EditText
+                    android:id="@+id/inputTranslateText"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:hint="Or type to translate..."
+                    android:textColorHint="#4B5563"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:background="@drawable/chip_bg"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="6dp"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:imeOptions="actionSend"
+                    android:layout_marginEnd="6dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSendTranslate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="→"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#374151"
+                    app:cornerRadius="20dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Bottom Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="4dp"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToggleCaptions"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Start Captions"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            app:backgroundTint="#A78BFA"
+            app:cornerRadius="22dp"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEndSession"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Close"
+            android:textSize="13sp"
+            android:textColor="#9CA3AF"
+            app:backgroundTint="#1F1F1F"
+            app:cornerRadius="22dp"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

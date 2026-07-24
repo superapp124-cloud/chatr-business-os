@@ -1,0 +1,434 @@
+import React, { useEffect, useState } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { formatDistanceToNow } from 'date-fns';
+import { MessageCircle, Loader2, Phone, Video, Check, CheckCheck, User } from 'lucide-react';
+import { toast } from 'sonner';
+import { clearPreCallMediaStream, setPreCallMediaStream } from '@/utils/preCallMedia';
+import { resolveCallAvatar, resolveCallDisplayName } from '@/utils/callIdentity';
+import { AppleSearchBar } from '@/components/ui/AppleInput';
+import { AppleButton, AppleIconButton } from '@/components/ui/AppleButton';
+import { useNativeHaptics } from '@/hooks/useNativeHaptics';
+import { cn } from '@/lib/utils';
+
+interface Conversation {
+ id: string;
+ is_group: boolean;
+ group_name?: string;
+ group_icon_url?: string;
+ updated_at: string;
+ created_at: string;
+ other_user?: {
+ id: string;
+ username: string;
+ avatar_url?: string;
+ is_online: boolean;
+ phone_number?: string;
+ email?: string;
+ };
+ last_message?: {
+ content: string;
+ created_at: string;
+ sender_id: string;
+ read_at?: string;
+ };
+}
+
+interface ConversationListProps {
+ userId: string;
+ onConversationSelect: (conversationId: string, otherUser?: any) => void;
+}
+
+export const ConversationList = ({ userId, onConversationSelect }: ConversationListProps) => {
+ const [conversations, setConversations] = useState<Conversation[]>([]);
+ const [loading, setLoading] = useState(true);
+ const [searchQuery, setSearchQuery] = useState('');
+ const haptics = useNativeHaptics();
+
+ useEffect(() => {
+ if (!userId) {
+ setLoading(false);
+ return;
+ }
+
+ const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+ if (!uuidRegex.test(userId)) {
+ console.error('❌ Invalid userId format:', userId);
+ setLoading(false);
+ return;
+ }
+ 
+ loadConversations();
+
+ let reloadTimeout: NodeJS.Timeout;
+ const debouncedReload = () => {
+ clearTimeout(reloadTimeout);
+ reloadTimeout = setTimeout(loadConversations, 300);
+ };
+
+ const channel = supabase
+ .channel('conversations-list')
+ .on('postgres_changes', { event: '*', schema: 'public', table: 'conversations' }, debouncedReload)
+ .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, debouncedReload)
+ .subscribe();
+
+ return () => {
+ supabase.removeChannel(channel);
+ };
+ }, [userId]);
+
+ const loadConversations = async () => {
+ if (!userId) return;
+
+ try {
+ setLoading(true);
+ 
+ const { data: participations, error: partError } = await supabase
+ .from('conversation_participants')
+ .select(`
+ conversation_id,
+ conversations!inner (
+ id,
+ is_group,
+ group_name,
+ group_icon_url,
+ updated_at,
+ created_at
+ )
+ `)
+ .eq('user_id', userId);
+
+ if (partError || !participations?.length) {
+ setConversations([]);
+ setLoading(false);
+ return;
+ }
+
+ const convIds = participations.map(p => (p.conversations as any).id);
+ 
+ const { data: lastMessages } = await supabase
+ .from('messages')
+ .select('id, conversation_id, content, created_at, sender_id, read_at')
+ .in('conversation_id', convIds)
+ .order('created_at', { ascending: false });
+
+ const { data: allParticipants } = await supabase
+ .from('conversation_participants')
+ .select('conversation_id, user_id')
+ .in('conversation_id', convIds)
+ .neq('user_id', userId);
+
+ const userIds = [...new Set(allParticipants?.map(p => p.user_id) || [])];
+ 
+ const { data: profiles } = await supabase
+ .from('profiles')
+ .select('id, username, avatar_url, is_online, phone_number, email')
+ .in('id', userIds);
+
+ const lastMessageMap = new Map();
+ lastMessages?.forEach(msg => {
+ if (!lastMessageMap.has(msg.conversation_id)) {
+ lastMessageMap.set(msg.conversation_id, msg);
+ }
+ });
+
+ const participantMap = new Map();
+ allParticipants?.forEach(p => {
+ if (!participantMap.has(p.conversation_id)) {
+ participantMap.set(p.conversation_id, p.user_id);
+ }
+ });
+
+ const profileMap = new Map();
+ profiles?.forEach(p => profileMap.set(p.id, p));
+
+ const conversationData = participations.map((p: any) => {
+ const conv = p.conversations;
+ const lastMessage = lastMessageMap.get(conv.id);
+ const otherUserId = participantMap.get(conv.id);
+ const otherUser = otherUserId ? profileMap.get(otherUserId) : null;
+
+ return {
+ ...conv,
+ last_message: lastMessage || null,
+ other_user: otherUser || null
+ };
+ });
+
+ conversationData.sort((a, b) => {
+ const aTime = a.last_message?.created_at || a.updated_at;
+ const bTime = b.last_message?.created_at || b.updated_at;
+ return new Date(bTime).getTime() - new Date(aTime).getTime();
+ });
+ 
+ setConversations(conversationData);
+ setLoading(false);
+ } catch (error) {
+ console.error('Error loading conversations:', error);
+ setLoading(false);
+ }
+ };
+
+ const generateCallId = (): string => {
+ if (typeof crypto !== 'undefined' && crypto.randomUUID) {
+ return crypto.randomUUID();
+ }
+ const bytes = new Uint8Array(16);
+ crypto.getRandomValues(bytes);
+ bytes[6] = (bytes[6] & 0x0f) | 0x40;
+ bytes[8] = (bytes[8] & 0x3f) | 0x80;
+ const toHex = (n: number) => n.toString(16).padStart(2, '0');
+ const b = Array.from(bytes, toHex).join('');
+ return `${b.slice(0, 8)}-${b.slice(8, 12)}-${b.slice(12, 16)}-${b.slice(16, 20)}-${b.slice(20)}`;
+ };
+
+ const startCall = async (conversation: any, callType: 'voice' | 'video', e: React.MouseEvent) => {
+ e.stopPropagation();
+ haptics.medium();
+ const callId = generateCallId();
+ 
+ try {
+ const stream = await navigator.mediaDevices.getUserMedia({
+ audio: true,
+ video: callType === 'video',
+ });
+ setPreCallMediaStream(callId, stream);
+ 
+ const { data: profile } = await supabase
+ .from('profiles')
+ .select('full_name, username, avatar_url, phone_number')
+ .eq('id', userId)
+ .single();
+
+ const callerDisplayName = resolveCallDisplayName(profile);
+ const callerAvatar = resolveCallAvatar(profile);
+
+ const { data, error } = await supabase
+ .from('calls')
+ .insert({
+ id: callId,
+ conversation_id: conversation.id,
+ caller_id: userId,
+ caller_name: callerDisplayName,
+ caller_avatar: callerAvatar || null,
+ caller_phone: profile?.phone_number || null,
+ receiver_id: conversation.other_user?.id,
+ receiver_name: resolveCallDisplayName(conversation.other_user, conversation.other_user?.email),
+ receiver_avatar: conversation.other_user?.avatar_url,
+ receiver_phone: conversation.other_user?.phone_number || null,
+ call_type: callType,
+ status: 'ringing'
+ })
+ .select()
+ .single();
+
+ if (error) {
+ clearPreCallMediaStream(callId);
+ throw error;
+ }
+ 
+ try {
+ await supabase.functions.invoke('fcm-notify', {
+ body: {
+ type: 'call',
+ receiverId: conversation.other_user?.id,
+ callerId: userId,
+ callerName: callerDisplayName,
+ callerAvatar: callerAvatar,
+ callerPhone: profile?.phone_number || '',
+ callId: data.id,
+ callType: callType
+ }
+ });
+ } catch (fcmError) {
+ console.warn('FCM notification failed:', fcmError);
+ }
+ } catch (error: any) {
+ console.error('Error starting call:', error);
+ clearPreCallMediaStream(callId);
+ 
+ if (error?.name === 'NotAllowedError' || error?.name === 'PermissionDeniedError') {
+ toast.error(callType === 'video'
+ ? 'Please allow camera and microphone to make video calls'
+ : 'Please allow microphone to make voice calls'
+ );
+ } else if (error?.name === 'NotReadableError') {
+ toast.error('Microphone is busy. Close other apps and try again.');
+ } else {
+ toast.error('Failed to start call');
+ }
+ }
+ };
+
+ const handleConversationClick = (conv: Conversation) => {
+ haptics.light();
+ onConversationSelect(conv.id, conv.other_user);
+ };
+
+ const filteredConversations = conversations.filter(conv => {
+ if (!searchQuery.trim()) return true;
+ const query = searchQuery.toLowerCase();
+ const displayName = conv.is_group 
+ ? conv.group_name 
+ : (conv.other_user?.username || conv.other_user?.phone_number || conv.other_user?.email || '');
+ return (
+ displayName?.toLowerCase().includes(query) ||
+ conv.other_user?.phone_number?.toLowerCase().includes(query) ||
+ conv.other_user?.email?.toLowerCase().includes(query)
+ );
+ });
+
+ if (loading) {
+ return (
+ <div className="flex items-center justify-center h-full">
+ <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+ </div>
+ );
+ }
+
+ return (
+ <div className="flex flex-col h-full bg-background">
+ {/* Apple-style Search Bar */}
+ <div className="sticky top-0 z-10 bg-background/80 backdrop-blur-xl p-4 pb-3">
+ <AppleSearchBar
+ value={searchQuery}
+ onChange={setSearchQuery}
+ placeholder="Search chats, contacts, numbers"
+ />
+ </div>
+
+ {filteredConversations.length === 0 ? (
+ <div className="flex flex-col items-center justify-center flex-1 p-8">
+ <div className="w-20 h-20 rounded-full bg-muted/30 flex items-center justify-center mb-6">
+ <MessageCircle className="h-10 w-10 text-muted-foreground/50" />
+ </div>
+ <p className="text-body font-medium mb-2 text-foreground">
+ {searchQuery ? 'No conversations found' : 'No contacts yet'}
+ </p>
+ <p className="text-secondary text-muted-foreground text-center mb-6 max-w-xs">
+ {searchQuery ? 'Try a different search term' : 'Click the contacts icon to add people'}
+ </p>
+ {!searchQuery && (
+ <AppleButton
+ variant="primary"
+ onClick={() => {
+ haptics.light();
+ window.location.href = '/contacts';
+ }}
+ icon={<User className="w-4 h-4" />}
+ >
+ Add Contacts
+ </AppleButton>
+ )}
+ </div>
+ ) : (
+ <div className="flex-1 overflow-auto">
+ <div className="px-2 pb-4 space-y-0.5">
+ {filteredConversations.map((conv) => {
+ const displayName = conv.is_group 
+ ? conv.group_name 
+ : (conv.other_user?.username && conv.other_user.username.trim() !== '' 
+ ? conv.other_user.username 
+ : conv.other_user?.phone_number?.replace(/^\+/, '') || 
+ conv.other_user?.email?.split('@')[0] || 
+ 'User');
+ const displayAvatar = conv.is_group ? conv.group_icon_url : conv.other_user?.avatar_url;
+ const lastMessage = conv.last_message;
+ const messagePreview = lastMessage?.content || 'Tap to start chatting';
+ 
+ let timestamp = '';
+ try {
+ if (lastMessage?.created_at) {
+ const date = new Date(lastMessage.created_at);
+ if (!isNaN(date.getTime())) {
+ timestamp = formatDistanceToNow(date, { addSuffix: true });
+ }
+ } else if (conv.created_at) {
+ const date = new Date(conv.created_at);
+ if (!isNaN(date.getTime())) {
+ timestamp = formatDistanceToNow(date, { addSuffix: true });
+ }
+ }
+ } catch (error) {
+ console.error('Error formatting timestamp:', error);
+ }
+ 
+ const isRead = lastMessage?.read_at != null;
+ const isSent = lastMessage?.sender_id === userId;
+
+ return (
+ <div
+ key={conv.id}
+ onClick={() => handleConversationClick(conv)}
+ className={cn(
+ "group flex items-center gap-3.5 p-3.5 rounded-2xl",
+ "hover:bg-accent/40 cursor-pointer transition-all duration-200",
+ "active:bg-accent/60 active:scale-[0.98] touch-manipulation min-h-[76px]"
+ )}
+ style={{ WebkitTapHighlightColor: 'transparent' }}
+ >
+ <div className="relative shrink-0">
+ <Avatar className="w-14 h-14 ring-2 ring-background shadow-sm">
+ <AvatarImage src={displayAvatar} />
+ <AvatarFallback className="bg-gradient-to-br from-primary to-primary/70 text-primary-foreground text-section font-bold">
+ {displayName?.[0]?.toUpperCase() || '?'}
+ </AvatarFallback>
+ </Avatar>
+ {!conv.is_group && conv.other_user?.is_online && (
+ <div className="absolute bottom-0.5 right-0.5 w-3.5 h-3.5 bg-green-500 rounded-full border-2 border-background shadow-sm" />
+ )}
+ </div>
+ 
+ <div className="flex-1 min-w-0">
+ <div className="flex items-center justify-between mb-1.5">
+ <p className="font-bold text-body truncate text-foreground">
+ {displayName}
+ </p>
+ <span className="text-label text-muted-foreground shrink-0 ml-3 ">
+ {timestamp.replace('about ', '').replace(' ago', '')}
+ </span>
+ </div>
+ <div className="flex items-center gap-1.5">
+ {isSent && lastMessage && (
+ <div className="shrink-0">
+ {isRead ? (
+ <CheckCheck className="h-3.5 w-3.5 text-primary" />
+ ) : (
+ <Check className="h-3.5 w-3.5 text-muted-foreground" />
+ )}
+ </div>
+ )}
+ <p className={cn(
+ "text-secondary truncate",
+ !isRead && !isSent ? 'font-semibold text-foreground' : 'text-muted-foreground'
+ )}>
+ {messagePreview}
+ </p>
+ </div>
+ </div>
+
+ {!conv.is_group && conv.other_user && (
+ <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 shrink-0">
+ <AppleIconButton
+ variant="ghost"
+ size="sm"
+ icon={<Phone className="h-4 w-4" />}
+ onClick={(e) => startCall(conv, 'voice', e)}
+ />
+ <AppleIconButton
+ variant="ghost"
+ size="sm"
+ icon={<Video className="h-4 w-4" />}
+ onClick={(e) => startCall(conv, 'video', e)}
+ />
+ </div>
+ )}
+ </div>
+ );
+ })}
+ </div>
+ </div>
+ )}
+ </div>
+ );
+};

@@ -1,0 +1,4851 @@
+{
+  "emptyHandlers": [
+    {
+      "file": "/components/dialer/chatr-calls/screens/FavoritesScreen.tsx",
+      "index": 800
+    },
+    {
+      "file": "/components/dialer/StandaloneKeypad.tsx",
+      "index": 2743
+    }
+  ],
+  "aiEvidence": [
+    {
+      "file": "/components/calling/MeetingCopilotPanel.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/components/calling/SessionWorkspace.tsx",
+      "capabilities": [
+        "PromptBuilder",
+        "Streaming"
+      ]
+    },
+    {
+      "file": "/components/canvas/KnowledgeBrainPanel.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/components/contacts/RelationshipPanel.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/components/desktop/UniversalSearch.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "capabilities": []
+    },
+    {
+      "file": "/components/inbox/CommandCenterPanel.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/components/workspace/WorkspaceOSPanel.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/core/engines/AIEngine.ts",
+      "capabilities": [
+        "PromptBuilder",
+        "ToolCalling",
+        "Execution"
+      ]
+    },
+    {
+      "file": "/core/engines/KnowledgeEngine.ts",
+      "capabilities": []
+    },
+    {
+      "file": "/hooks/useCallSentiment.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/hooks/useCallSummary.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/hooks/useCallSummary.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/hooks/useOnDeviceAI.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/hooks/useSuggestedQuestions.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/lib/ai/AIModelRouter.ts",
+      "capabilities": [
+        "PromptBuilder",
+        "Reasoner",
+        "Execution"
+      ]
+    },
+    {
+      "file": "/lib/ai/CommunicationAgent.ts",
+      "capabilities": [
+        "PromptBuilder",
+        "Reasoner",
+        "Execution"
+      ]
+    },
+    {
+      "file": "/lib/ai/ContextGraph.ts",
+      "capabilities": []
+    },
+    {
+      "file": "/lib/ai/ExecutionEngine.ts",
+      "capabilities": [
+        "Memory/RAG"
+      ]
+    },
+    {
+      "file": "/pages/desktop/chat/DesktopChat.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/pages/desktop/chat/hooks/useCopilot.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/pages/desktop/DesktopChat.tsx",
+      "capabilities": [
+        "PromptBuilder",
+        "ToolCalling",
+        "Execution"
+      ]
+    },
+    {
+      "file": "/pages/desktop/DesktopContacts.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/pages/PrechuAI.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/pages/SmartInbox.tsx",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/platform/AutomationOS/AIProvider.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/platform/AutomationOS/CapabilityRegistry.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/platform/AutomationOS/RuntimeAdapter.ts",
+      "capabilities": [
+        "PromptBuilder",
+        "Execution"
+      ]
+    },
+    {
+      "file": "/services/ai/AICoworkerService.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/services/ai/Summarizer.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/services/chatrBrain/agentPersonas.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/services/chatrBrain/deviceGpt.ts",
+      "capabilities": [
+        "PromptBuilder"
+      ]
+    },
+    {
+      "file": "/services/dashboard/DashboardEngine.ts",
+      "capabilities": []
+    }
+  ],
+  "mockEvidence": [
+    {
+      "file": "/components/AppDrawer.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/BluetoothTester.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/BottomNav.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/business/automation/WorkflowBuilder.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/business/BillingHistoryDialog.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/calling/GlobalCallListener.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/calling/GSMStyleVoiceCall.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/calling/meeting/MeetingLogsDrawer.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/calling/SessionWorkspace.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/calling/UnifiedCallScreen.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/care/DoctorSearch.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/care/OnboardingWizard.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/care/OutcomeProviders.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chat/AIAssistantButton.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chat/ContactInfoScreen.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chat/MessageBubble.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chat/VisualIntelligenceSheet.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chat/WhatsAppContextMenu.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chatr/ChatScreen.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/chatr/CommunitiesScreen.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chatr/LocalServices.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chatr-shield/ShieldTab.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chatr-world/ChatrWorldDeals.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chatr-world/ChatrWorldFood.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/chatr-world/ChatrWorldHealthcare.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/contacts/RelationshipPanel.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/desktop/AdaptiveHome.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/desktop/InfiniteCanvas.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/desktop/ProductivityDock.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/desktop/workspace/WorkspaceTemplates.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/dialer/chatr-calls/CallerRow.tsx",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/components/dialer/chatr-calls/screens/CallerIntelligenceScreen.tsx",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/components/dialer/chatr-calls/screens/FavoritesScreen.tsx",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/components/dialer/StandaloneCallsDashboard.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/famecam/AIGuidanceOverlay.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/AIAirRunnerGame.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/AIBubbleShooterGame.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/games/AICandyCrushGame.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/games/AvaWarsGame.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/EchoChainGame.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/games/EmotionSyncGame.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/EnergyPulseGame.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/ShadowVerseGame.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/SocialStormGame.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/games/VibeLinkGame.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/identity/TrustScoreBreakdown.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/identity/VerifiedBadgePurchase.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/inbox/CommandCenterPanel.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/QuickAccessMenu.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/sharing/QRDeepLink.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/components/SocialShareDialog.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/stealth-mode/SellerModePanel.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/stealth-mode/StealthModeSettings.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/studio/TemplateGallery.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/wellness/HealthAppSync.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/components/wellness/HealthAppSync.tsx",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/components/workspace/WorkspaceOSPanel.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/contexts/CallContext.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/contexts/ThemeCustomizationContext.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/core/capabilities/CommitmentRuntime.ts",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/core/capabilities/task/manifest.ts",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/core/capabilities/task/verifier.ts",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/core/providers/DummyProvider.ts",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/core/services/RealityEngine.ts",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/core/services/SemanticMemory.ts",
+      "type": "Dummy/Mock variables"
+    },
+    {
+      "file": "/hooks/useAutoAttendant.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/hooks/useRingbackTone.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/hooks/useSellerRealtimeNotifications.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/hooks/useSocketTyping.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/hooks/useSpotifyStatus.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/hooks/useTypingIndicator.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/pages/admin/FeatureBuilder.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AIAgentChat.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AIAgentChatNew.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AIAgentCreate.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AIAgentsHub.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AIBrowser.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AIBrowserHome.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AlliedHealthcare.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/AppIconSettings.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/business/Integrations.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/CallBenchmarkDashboard.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/care/MedicineHub.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/care/MedicineRewards.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/care/MedicineSubscribe.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/care/MedicineVitals.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/CareAccess.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrApp.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrGames.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrOS.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrPlusSellerRegistration.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrPlusWallet.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrPoints.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrWallet.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChatrWorld.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/ChronicVitalsPage.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/CommandCenter.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/Contact.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/AgentMarketplace.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/chat/DesktopChat.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/pages/desktop/DesktopAppearance.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/DesktopCalendar.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/DesktopCalls.tsx",
+      "type": "Math.random() data"
+    },
+    {
+      "file": "/pages/desktop/DesktopCalls.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/DesktopIntelligence.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/DesktopWallpaper.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/ProUpgrade.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "type": "Math.random() data"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/desktop/WorkspaceSetup.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/FoodOrdering.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/HealthHub.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/HealthRiskPredictions.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/Help.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/HomeServices.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/Index.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/pages/Launcher.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/LocalDeals.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/LocalHealthcare.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/LocalJobs.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/Marketplace.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/MiniApps.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/NotificationHealth.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/pages/PrechuAI.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/RewardShop.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/SellerAnalytics.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/SellerMessages.tsx",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/pages/SellerServices.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/Settings.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/SmartInbox.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/TeleconsultationPage.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/UnifiedTimeline.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/pages/vendor/VendorSettings.tsx",
+      "type": "Hardcoded useState Array"
+    },
+    {
+      "file": "/utils/iceConnectionMonitor.ts",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/utils/simpleWebRTC.ts",
+      "type": "Simulated setTimeout"
+    },
+    {
+      "file": "/utils/simpleWebRTC.ts",
+      "type": "Dummy/Mock variables"
+    }
+  ],
+  "largeFiles": [
+    {
+      "file": "/App.tsx",
+      "lines": 793,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/calling/GlobalCallListener.tsx",
+      "lines": 2059,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/calling/GSMStyleVoiceCall.tsx",
+      "lines": 1025,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/calling/ProductionVideoCall.tsx",
+      "lines": 753,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/calling/SessionWorkspace.tsx",
+      "lines": 1129,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/calling/UnifiedCallScreen.tsx",
+      "lines": 2007,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/chat/ContactInfoScreen.tsx",
+      "lines": 522,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/chat/EnhancedMessageInput.tsx",
+      "lines": 535,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/chat/MessageBubble.tsx",
+      "lines": 825,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/chat/VirtualizedConversationList.tsx",
+      "lines": 958,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/chat/WhatsAppStyleInput.tsx",
+      "lines": 628,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/chatr-world/ChatrWorldFood.tsx",
+      "lines": 578,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/ContactManager.tsx",
+      "lines": 714,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/desktop/AdaptiveHome.tsx",
+      "lines": 1003,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/desktop/InfiniteCanvas.tsx",
+      "lines": 1168,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/dialer/AdvancedPhoneDialer.tsx",
+      "lines": 1266,
+      "category": "God Component"
+    },
+    {
+      "file": "/components/dialer/StandaloneCallsDashboard.tsx",
+      "lines": 636,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/games/AIAirRunnerGame.tsx",
+      "lines": 862,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/GlobalCallNotifications.tsx",
+      "lines": 806,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/HealthPassportEdit.tsx",
+      "lines": 677,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/OfflineChat.tsx",
+      "lines": 589,
+      "category": "Large Component"
+    },
+    {
+      "file": "/components/ui/sidebar.tsx",
+      "lines": 620,
+      "category": "Large Component"
+    },
+    {
+      "file": "/core/services/CalendarService.ts",
+      "lines": 657,
+      "category": "Large Component"
+    },
+    {
+      "file": "/layouts/DesktopLayout.tsx",
+      "lines": 552,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/admin/MicroTasks.tsx",
+      "lines": 789,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/AIAgentChatNew.tsx",
+      "lines": 579,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/AIAgentCreate.tsx",
+      "lines": 534,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/AIAgents.tsx",
+      "lines": 851,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/AIAgentsHub.tsx",
+      "lines": 670,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/AIBrowserHome.tsx",
+      "lines": 1695,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/AIChat.tsx",
+      "lines": 918,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Automations.tsx",
+      "lines": 580,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/business/Settings.tsx",
+      "lines": 907,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/CallBenchmarkDashboard.tsx",
+      "lines": 718,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/CallHistory.tsx",
+      "lines": 593,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/care/DoctorDetail.tsx",
+      "lines": 579,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/care/MedicineSubscribe.tsx",
+      "lines": 532,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/CareAccess.tsx",
+      "lines": 594,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Chat.tsx",
+      "lines": 1371,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/ChatrGames.tsx",
+      "lines": 547,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrPlusCategoryPage.tsx",
+      "lines": 606,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrPlusSellerRegistration.tsx",
+      "lines": 1228,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/ChatrPlusServiceDetail.tsx",
+      "lines": 640,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrPlusWallet.tsx",
+      "lines": 625,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrPoints.tsx",
+      "lines": 997,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrShield.tsx",
+      "lines": 548,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrWallet.tsx",
+      "lines": 629,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrWorld.tsx",
+      "lines": 528,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/ChatrWorldAdmin.tsx",
+      "lines": 776,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Community.tsx",
+      "lines": 571,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/desktop/chat/DesktopChat.tsx",
+      "lines": 1716,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/desktop/DesktopCalls.tsx",
+      "lines": 1001,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/desktop/DesktopContacts.tsx",
+      "lines": 692,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/desktop/DesktopWorkspace.tsx",
+      "lines": 804,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/desktop/RecruiterWorkspace.tsx",
+      "lines": 565,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "lines": 1862,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/HealthPassport.tsx",
+      "lines": 982,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/HealthReminders.tsx",
+      "lines": 501,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Identity.tsx",
+      "lines": 516,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Index.tsx",
+      "lines": 1113,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/LocalDeals.tsx",
+      "lines": 599,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/LocalHealthcare.tsx",
+      "lines": 516,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/LocalJobs.tsx",
+      "lines": 1014,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/McpDeveloperDashboard.tsx",
+      "lines": 805,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/MentalHealth.tsx",
+      "lines": 630,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/MiniAppsStore.tsx",
+      "lines": 894,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Notifications.tsx",
+      "lines": 520,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/NutritionTracker.tsx",
+      "lines": 546,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerBookings.tsx",
+      "lines": 588,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerMessages.tsx",
+      "lines": 545,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerPayouts.tsx",
+      "lines": 626,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerPortal.tsx",
+      "lines": 504,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerReviews.tsx",
+      "lines": 515,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerServices.tsx",
+      "lines": 1017,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/SellerSettings.tsx",
+      "lines": 606,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SellerSubscription.tsx",
+      "lines": 559,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/SmartInbox.tsx",
+      "lines": 1028,
+      "category": "God Component"
+    },
+    {
+      "file": "/pages/StatusComposer.tsx",
+      "lines": 644,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/Stories.tsx",
+      "lines": 821,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/UnifiedTimeline.tsx",
+      "lines": 522,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/UniversalSearch.tsx",
+      "lines": 787,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/vendor/deals/DealsManagement.tsx",
+      "lines": 528,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/vendor/restaurant/RestaurantMenu.tsx",
+      "lines": 590,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/vendor/restaurant/RestaurantOrders.tsx",
+      "lines": 509,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/vendor/VendorRegister.tsx",
+      "lines": 588,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/vendor/VendorSettings.tsx",
+      "lines": 567,
+      "category": "Large Component"
+    },
+    {
+      "file": "/pages/YouthEngagement.tsx",
+      "lines": 673,
+      "category": "Large Component"
+    },
+    {
+      "file": "/services/chatrBrain/actionsEngine.ts",
+      "lines": 557,
+      "category": "Large Component"
+    },
+    {
+      "file": "/services/chatrBrain/deviceGpt.ts",
+      "lines": 939,
+      "category": "Large Component"
+    },
+    {
+      "file": "/services/chatrBrain/memoryLayer.ts",
+      "lines": 569,
+      "category": "Large Component"
+    },
+    {
+      "file": "/utils/androidBridge.ts",
+      "lines": 585,
+      "category": "Large Component"
+    },
+    {
+      "file": "/utils/callerIdentityResolver.ts",
+      "lines": 588,
+      "category": "Large Component"
+    },
+    {
+      "file": "/utils/chatLowLatencySignaling.ts",
+      "lines": 506,
+      "category": "Large Component"
+    },
+    {
+      "file": "/utils/simpleWebRTC.ts",
+      "lines": 3550,
+      "category": "God Component"
+    }
+  ],
+  "commandBusEvents": [
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "RUN_WORKFLOW"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "COMPILE_WORKFLOW"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "CREATE_NODE"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "CREATE_NODE"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "LOAD_WORKFLOW"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "RUN_WORKFLOW"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "COMPILE_WORKFLOW"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "GENERATE_WORKFLOW"
+    },
+    {
+      "file": "/pages/desktop/WorkflowStudio.tsx",
+      "action": "dispatch",
+      "event": "RUN_WORKFLOW"
+    },
+    {
+      "file": "/platform/AutomationOS/SelfHealingService.ts",
+      "action": "dispatch",
+      "event": "RECOMMEND_FIX"
+    },
+    {
+      "file": "/platform/AutomationOS/SelfHealingService.ts",
+      "action": "dispatch",
+      "event": "RUN_WORKFLOW"
+    }
+  ],
+  "hooks": {
+    "useLocation": [
+      "/App.tsx",
+      "/components/AnalyticsProvider.tsx",
+      "/components/BottomNav.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/care/CareBottomNav.tsx",
+      "/components/care/MedicineBottomNav.tsx",
+      "/components/ChatrAIFab.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/dialer/StandaloneCallsNav.tsx",
+      "/components/health/HealthBottomNav.tsx",
+      "/components/MobileTabFrame.tsx",
+      "/components/navigation/Breadcrumbs.tsx",
+      "/components/navigation/CrossModuleNav.tsx",
+      "/components/ProtectedRoute.tsx",
+      "/contexts/LocationContext.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/hooks/useAppleNativeFeatures.tsx",
+      "/hooks/useFeatureEngagementTracking.tsx",
+      "/layouts/BusinessLayout.tsx",
+      "/layouts/DesktopLayout.tsx",
+      "/pages/AIAssistant.tsx",
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatrWorld.tsx",
+      "/pages/Community.tsx",
+      "/pages/desktop/WorkflowStudio.tsx",
+      "/pages/EmergencyButton.tsx",
+      "/pages/GeoDiscovery.tsx",
+      "/pages/LocalHealthcare.tsx",
+      "/pages/LocalJobs.tsx",
+      "/pages/NotFound.tsx",
+      "/pages/Stories.tsx",
+      "/pages/UniversalSearch.tsx"
+    ],
+    "useNavigate": [
+      "/App.tsx",
+      "/components/AdminLayout.tsx",
+      "/components/AppDrawer.tsx",
+      "/components/BiometricLogin.tsx",
+      "/components/BusinessPortal.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/calling/ProductionCallNotifications.tsx",
+      "/components/care/CareBottomNav.tsx",
+      "/components/care/CareDashboardHeader.tsx",
+      "/components/care/CarePathCard.tsx",
+      "/components/care/CarePathDetail.tsx",
+      "/components/care/DoctorSearch.tsx",
+      "/components/care/HealthWalletCard.tsx",
+      "/components/care/MedicineBottomNav.tsx",
+      "/components/care/MedicineHeroHeader.tsx",
+      "/components/care/OutcomeProviders.tsx",
+      "/components/care/ProviderCard.tsx",
+      "/components/care/ProviderPortalCTA.tsx",
+      "/components/care/QuickActionCard.tsx",
+      "/components/chat/ChannelList.tsx",
+      "/components/chat/ContactInfoScreen.tsx",
+      "/components/chat/MediaViewer.tsx",
+      "/components/chatr/ChatScreen.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/chatr/CommunitiesHome.tsx",
+      "/components/chatr/CommunitiesScreen.tsx",
+      "/components/chatr/CommunitiesTab.tsx",
+      "/components/chatr/ContactsList.tsx",
+      "/components/chatr/EnhancedSettingsPanel.tsx",
+      "/components/chatr/LocalServices.tsx",
+      "/components/chatr/SettingsPanel.tsx",
+      "/components/ChatrAIFab.tsx",
+      "/components/communities/CommunitiesExplorer.tsx",
+      "/components/crm/LeadsList.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/ChatrConsole.tsx",
+      "/components/desktop/CommandPalette.tsx",
+      "/components/desktop/ProductivityDock.tsx",
+      "/components/desktop/QuickActionsBar.tsx",
+      "/components/desktop/workspace/WorkspaceModules.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/components/ErrorFallback.tsx",
+      "/components/health/HealthBottomNav.tsx",
+      "/components/home/ActivityWidgets.tsx",
+      "/components/home/IntelligentHomeFeed.tsx",
+      "/components/home/PersonalizedCard.tsx",
+      "/components/home/QuickActions.tsx",
+      "/components/home/RecentActivity.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/components/jobs/JobPostingForm.tsx",
+      "/components/LoginPromptModal.tsx",
+      "/components/micro-tasks/EarningsCard.tsx",
+      "/components/OSWidgets.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/PointsWallet.tsx",
+      "/components/QuickAccessBrowser.tsx",
+      "/components/QuickAccessMenu.tsx",
+      "/components/seller/SellerNotificationBell.tsx",
+      "/components/stealth-mode/SellerModePanel.tsx",
+      "/components/stories/StoriesCarousel.tsx",
+      "/components/stories/StoryViewer.tsx",
+      "/components/ui/AppleHeader.tsx",
+      "/components/wallet/WithdrawalDialog.tsx",
+      "/contexts/CallContext.tsx",
+      "/hooks/useAndroidBackButton.tsx",
+      "/hooks/useAppleNativeFeatures.tsx",
+      "/hooks/useInitiateCall.tsx",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/useNativeNavigate.ts",
+      "/layouts/DesktopLayout.tsx",
+      "/pages/About.tsx",
+      "/pages/Account.tsx",
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Announcements.tsx",
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/admin/Documents.tsx",
+      "/pages/admin/KYCApprovals.tsx",
+      "/pages/admin/MicroTasks.tsx",
+      "/pages/admin/OfficialAccountsManager.tsx",
+      "/pages/admin/Payments.tsx",
+      "/pages/admin/PaymentVerification.tsx",
+      "/pages/admin/Points.tsx",
+      "/pages/admin/Providers.tsx",
+      "/pages/admin/SellerApprovals.tsx",
+      "/pages/admin/Settings.tsx",
+      "/pages/admin/Users.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/AIAgentChat.tsx",
+      "/pages/AIAgentChatNew.tsx",
+      "/pages/AIAgentCreate.tsx",
+      "/pages/AIAgents.tsx",
+      "/pages/AIAgentsHub.tsx",
+      "/pages/AIAssistant.tsx",
+      "/pages/AIBrowser.tsx",
+      "/pages/AIBrowserView.tsx",
+      "/pages/AIChat.tsx",
+      "/pages/AICloneSettings.tsx",
+      "/pages/AlliedHealthcare.tsx",
+      "/pages/AmbassadorProgram.tsx",
+      "/pages/AppearanceSettings.tsx",
+      "/pages/AppIconSettings.tsx",
+      "/pages/AppStatistics.tsx",
+      "/pages/auth/GoogleCalendarCallback.tsx",
+      "/pages/auth/OutlookCalendarCallback.tsx",
+      "/pages/auth/WorkspaceSelector.tsx",
+      "/pages/Auth.tsx",
+      "/pages/Automations.tsx",
+      "/pages/BMICalculator.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/BookingTracking.tsx",
+      "/pages/business/Automations.tsx",
+      "/pages/business/Catalog.tsx",
+      "/pages/business/CRM.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/Groups.tsx",
+      "/pages/business/Inbox.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/Settings.tsx",
+      "/pages/CallBenchmarkDashboard.tsx",
+      "/pages/CallerIdHub.tsx",
+      "/pages/CallHistory.tsx",
+      "/pages/Calls.tsx",
+      "/pages/Capture.tsx",
+      "/pages/care/AddFamilyMember.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/care/MedicineFamily.tsx",
+      "/pages/care/MedicineHub.tsx",
+      "/pages/care/MedicineOrders.tsx",
+      "/pages/care/MedicinePrescriptions.tsx",
+      "/pages/care/MedicineReminders.tsx",
+      "/pages/care/MedicineRewards.tsx",
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/care/MedicineSubscriptions.tsx",
+      "/pages/care/MedicineVitals.tsx",
+      "/pages/care/MedicineWallet.tsx",
+      "/pages/care/MyAppointments.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/Channel.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatFoldersSettings.tsx",
+      "/pages/chatr-shield/CallerIntelligenceScreen.tsx",
+      "/pages/ChatrApp.tsx",
+      "/pages/ChatrGames.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrOS.tsx",
+      "/pages/ChatrPlus.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx",
+      "/pages/ChatrPlusSearch.tsx",
+      "/pages/ChatrPlusSellerDashboard.tsx",
+      "/pages/ChatrPlusSellerRegistration.tsx",
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/ChatrPlusSubscribe.tsx",
+      "/pages/ChatrPlusWallet.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/ChatrResults.tsx",
+      "/pages/ChatrShield.tsx",
+      "/pages/ChatrStudio.tsx",
+      "/pages/ChatrTutors.tsx",
+      "/pages/ChatrWallet.tsx",
+      "/pages/ChatrWeb.tsx",
+      "/pages/ChatrWorld.tsx",
+      "/pages/ChatrWorldAdmin.tsx",
+      "/pages/ChronicVitalsPage.tsx",
+      "/pages/Communities.tsx",
+      "/pages/Community.tsx",
+      "/pages/CommunitySpace.tsx",
+      "/pages/Contact.tsx",
+      "/pages/Contacts.tsx",
+      "/pages/ContactsPage.tsx",
+      "/pages/CreateCommunity.tsx",
+      "/pages/desktop/AgentMarketplace.tsx",
+      "/pages/desktop/AgentWorkspace.tsx",
+      "/pages/desktop/chat/components/CreateNewModal.tsx",
+      "/pages/desktop/chat/components/EmptyState.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopConnectPairing.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/desktop/DesktopPrivacy.tsx",
+      "/pages/desktop/DesktopProfile.tsx",
+      "/pages/desktop/DesktopSettings.tsx",
+      "/pages/desktop/WorkspaceSetup.tsx",
+      "/pages/DesktopConnectScanner.tsx",
+      "/pages/DeveloperPortal.tsx",
+      "/pages/Dhandha.tsx",
+      "/pages/DigestNotificationSettings.tsx",
+      "/pages/Disclaimer.tsx",
+      "/pages/Discover.tsx",
+      "/pages/DoctorOnboarding.tsx",
+      "/pages/Download.tsx",
+      "/pages/Earn.tsx",
+      "/pages/EarnCampaign.tsx",
+      "/pages/EarnHistory.tsx",
+      "/pages/EmergencyButton.tsx",
+      "/pages/EmergencyServices.tsx",
+      "/pages/ExpertSessions.tsx",
+      "/pages/FameCam.tsx",
+      "/pages/FameLeaderboard.tsx",
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/OrderHistory.tsx",
+      "/pages/food/OrderTracking.tsx",
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/FoodOrdering.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/HealthHub.tsx",
+      "/pages/HealthPassport.tsx",
+      "/pages/HealthReminders.tsx",
+      "/pages/HealthRiskPredictions.tsx",
+      "/pages/HealthStreaksPage.tsx",
+      "/pages/HealthWalletPage.tsx",
+      "/pages/Help.tsx",
+      "/pages/Home.tsx",
+      "/pages/HomeServices.tsx",
+      "/pages/Identity.tsx",
+      "/pages/Index.tsx",
+      "/pages/JobDetail.tsx",
+      "/pages/JoinInvite.tsx",
+      "/pages/KYCVerification.tsx",
+      "/pages/Launcher.tsx",
+      "/pages/LauncherHome.tsx",
+      "/pages/LocalDeals.tsx",
+      "/pages/LocalHealthcare.tsx",
+      "/pages/LocalJobs.tsx",
+      "/pages/marketplace/MarketplaceCheckout.tsx",
+      "/pages/marketplace/OrderSuccess.tsx",
+      "/pages/Marketplace.tsx",
+      "/pages/McpDeveloperDashboard.tsx",
+      "/pages/MedicationInteractionsPage.tsx",
+      "/pages/MentalHealth.tsx",
+      "/pages/MiniApps.tsx",
+      "/pages/MiniAppsStore.tsx",
+      "/pages/More.tsx",
+      "/pages/NotFound.tsx",
+      "/pages/NotificationHealth.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/NotificationSettings.tsx",
+      "/pages/NotificationTemplates.tsx",
+      "/pages/NutritionTracker.tsx",
+      "/pages/OfficialAccounts.tsx",
+      "/pages/Onboarding.tsx",
+      "/pages/OSDetection.tsx",
+      "/pages/PrechuAI.tsx",
+      "/pages/Privacy.tsx",
+      "/pages/PrivacyPolicy.tsx",
+      "/pages/Profile.tsx",
+      "/pages/provider/Appointments.tsx",
+      "/pages/provider/Payments.tsx",
+      "/pages/provider/Services.tsx",
+      "/pages/ProviderDashboard.tsx",
+      "/pages/ProviderDetails.tsx",
+      "/pages/ProviderPortal.tsx",
+      "/pages/ProviderRegister.tsx",
+      "/pages/PublicProfile.tsx",
+      "/pages/QRLogin.tsx",
+      "/pages/QRPayment.tsx",
+      "/pages/Referrals.tsx",
+      "/pages/Refund.tsx",
+      "/pages/RewardShop.tsx",
+      "/pages/seller/SellerSettlements.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerBookings.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SellerPortal.tsx",
+      "/pages/SellerServices.tsx",
+      "/pages/SellerSettings.tsx",
+      "/pages/ServiceListing.tsx",
+      "/pages/Settings.tsx",
+      "/pages/SmartPushPreferences.tsx",
+      "/pages/StandaloneDialer.tsx",
+      "/pages/StandaloneMessenger.tsx",
+      "/pages/StarredMessages.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/StealthMode.tsx",
+      "/pages/store/AppDetail.tsx",
+      "/pages/store/AppUpdates.tsx",
+      "/pages/store/DeveloperDashboard.tsx",
+      "/pages/store/MyApps.tsx",
+      "/pages/store/StoreExplore.tsx",
+      "/pages/Stories.tsx",
+      "/pages/SymptomCheckerPage.tsx",
+      "/pages/TeleconsultationPage.tsx",
+      "/pages/Terms.tsx",
+      "/pages/UnifiedTimeline.tsx",
+      "/pages/UniversalSearch.tsx",
+      "/pages/UserSubscription.tsx",
+      "/pages/vendor/deals/DealsManagement.tsx",
+      "/pages/vendor/healthcare/DoctorAnalytics.tsx",
+      "/pages/vendor/healthcare/DoctorAppointments.tsx",
+      "/pages/vendor/healthcare/DoctorAvailability.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx",
+      "/pages/vendor/restaurant/RestaurantMenu.tsx",
+      "/pages/vendor/restaurant/RestaurantOrders.tsx",
+      "/pages/vendor/VendorDashboard.tsx",
+      "/pages/vendor/VendorLogin.tsx",
+      "/pages/vendor/VendorRegister.tsx",
+      "/pages/vendor/VendorSettings.tsx",
+      "/pages/WallpaperSettings.tsx",
+      "/pages/WellnessCircles.tsx",
+      "/pages/WellnessTracking.tsx",
+      "/pages/YouthEngagement.tsx"
+    ],
+    "useEffect": [
+      "/App.tsx",
+      "/chatr-os/ui/HomeScreen.tsx",
+      "/components/ai-agents/AIAgentTrainingPanel.tsx",
+      "/components/ai-agents/VoiceConversation.tsx",
+      "/components/AIMoments.tsx",
+      "/components/AnalyticsProvider.tsx",
+      "/components/AnnouncementBanner.tsx",
+      "/components/AutoTranslatedMessage.tsx",
+      "/components/AutoTranslateSettings.tsx",
+      "/components/BiometricLogin.tsx",
+      "/components/BottomNav.tsx",
+      "/components/branding/ARBrandFilters.tsx",
+      "/components/branding/ChatBrandSuggestion.tsx",
+      "/components/branding/VideoOverlayRenderer.tsx",
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/components/business/BillingHistoryDialog.tsx",
+      "/components/business/BusinessHoursEditor.tsx",
+      "/components/business/BusinessInbox.tsx",
+      "/components/BusinessPortal.tsx",
+      "/components/calling/ActiveCallScreen.tsx",
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/calling/AudioWaveform.tsx",
+      "/components/calling/CallInsightsPanel.tsx",
+      "/components/calling/DeviceTransferSheet.tsx",
+      "/components/calling/DraggableVideoWindow.tsx",
+      "/components/calling/E2EEVerificationPanel.tsx",
+      "/components/calling/FaceTimeIncomingCall.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/calling/GlobalCallUI.tsx",
+      "/components/calling/GroupVideoCall.tsx",
+      "/components/calling/GroupVoiceCall.tsx",
+      "/components/calling/GSMStyleVoiceCall.tsx",
+      "/components/calling/IncomingCallScreen.tsx",
+      "/components/calling/meeting/AddParticipantsPanel.tsx",
+      "/components/calling/meeting/AIInsightsPanel.tsx",
+      "/components/calling/meeting/HostControls.tsx",
+      "/components/calling/meeting/MeetingLogsDrawer.tsx",
+      "/components/calling/meeting/MeetingPolls.tsx",
+      "/components/calling/MeetingCopilotPanel.tsx",
+      "/components/calling/NetworkDiagnosticsPanel.tsx",
+      "/components/calling/NetworkQualityIndicator.tsx",
+      "/components/calling/PhoneDialer.tsx",
+      "/components/calling/ProductionCallNotifications.tsx",
+      "/components/calling/ProductionVideoCall.tsx",
+      "/components/calling/ProductionVoiceCall.tsx",
+      "/components/calling/PSTNCallUI.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/calling/SubtleCallHint.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/calls/AudioSettingsPanel.tsx",
+      "/components/calls/NetworkStatusBanner.tsx",
+      "/components/calls/VoicemailList.tsx",
+      "/components/canvas/KnowledgeBrainPanel.tsx",
+      "/components/care/CarePathDetail.tsx",
+      "/components/care/DoctorSearch.tsx",
+      "/components/care/HealthWalletCard.tsx",
+      "/components/care/MedicineIntakeCard.tsx",
+      "/components/care/OutcomeProviders.tsx",
+      "/components/care/TodayMedicineCard.tsx",
+      "/components/care/VitalsChart.tsx",
+      "/components/chat/AddParticipantDialog.tsx",
+      "/components/chat/AIStickerPicker.tsx",
+      "/components/chat/BackupRestoreSheet.tsx",
+      "/components/chat/BlockUserDialog.tsx",
+      "/components/chat/CallHistoryDialog.tsx",
+      "/components/chat/ChannelList.tsx",
+      "/components/chat/CommunicationMemoryDialog.tsx",
+      "/components/chat/ContactInfoScreen.tsx",
+      "/components/chat/ContactPicker.tsx",
+      "/components/chat/ContactsDrawer.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chat/EnhancedMessageInput.tsx",
+      "/components/chat/FormattingToolbar.tsx",
+      "/components/chat/GroupSettingsDialog.tsx",
+      "/components/chat/LinkedDevicesSheet.tsx",
+      "/components/chat/MediaLightbox.tsx",
+      "/components/chat/MediaViewer.tsx",
+      "/components/chat/MentionInput.tsx",
+      "/components/chat/MessageBubble.tsx",
+      "/components/chat/MessageForwardDialog.tsx",
+      "/components/chat/MessageSearchSheet.tsx",
+      "/components/chat/MessageThread.tsx",
+      "/components/chat/MessageTranslateButton.tsx",
+      "/components/chat/PinnedMessagesViewer.tsx",
+      "/components/chat/QuickReplyPanel.tsx",
+      "/components/chat/StarredMessages.tsx",
+      "/components/chat/TrueVirtualMessageList.tsx",
+      "/components/chat/UniversalTimelineList.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chat/VirtualMessageList.tsx",
+      "/components/chat/VisualIntelligenceScanner.tsx",
+      "/components/chat/VisualIntelligenceSheet.tsx",
+      "/components/chat/VoiceMessageBubble.tsx",
+      "/components/chat/VoiceTranscript.tsx",
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/components/chatr/AddStoryDialog.tsx",
+      "/components/chatr/CallModal.tsx",
+      "/components/chatr/CallsList.tsx",
+      "/components/chatr/ChatScreen.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/chatr/CommunitiesHome.tsx",
+      "/components/chatr/ContactsList.tsx",
+      "/components/chatr/EnhancedSettingsPanel.tsx",
+      "/components/chatr/LocalServices.tsx",
+      "/components/chatr/NewChatSheet.tsx",
+      "/components/chatr/PinnedMessagesPanel.tsx",
+      "/components/chatr/SettingsPanel.tsx",
+      "/components/chatr/StoryViewer.tsx",
+      "/components/chatr/VideoCallModal.tsx",
+      "/components/chatr/VoiceCallModal.tsx",
+      "/components/chatr-shield/IncomingCallOverlay.tsx",
+      "/components/chatr-shield/LiveCallOverlay.tsx",
+      "/components/chatr-shield/ShieldTab.tsx",
+      "/components/chatr-world/ChatrWorldDeals.tsx",
+      "/components/chatr-world/ChatrWorldFood.tsx",
+      "/components/chatr-world/ChatrWorldHealthcare.tsx",
+      "/components/chatr-world/ChatrWorldJobs.tsx",
+      "/components/chatr-world/ChatrWorldSearch.tsx",
+      "/components/ChatrAIFab.tsx",
+      "/components/ChatrOSProvider.tsx",
+      "/components/CollaborativeNotes.tsx",
+      "/components/command-center/EngineeringAgentPanel.tsx",
+      "/components/command-center/SalesAgentPanel.tsx",
+      "/components/communities/CommunitiesExplorer.tsx",
+      "/components/communities/CommunityFeed.tsx",
+      "/components/ConnectedAccounts.tsx",
+      "/components/ContactInvitation.tsx",
+      "/components/ContactManager.tsx",
+      "/components/contacts/RelationshipPanel.tsx",
+      "/components/crm/LeadsList.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/AIStatusBadge.tsx",
+      "/components/desktop/ChatrConsole.tsx",
+      "/components/desktop/CommandPalette.tsx",
+      "/components/desktop/DailyTimeline.tsx",
+      "/components/desktop/DiagnosticsPanel.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/desktop/OutcomeCenter.tsx",
+      "/components/desktop/ProductivityDock.tsx",
+      "/components/desktop/TinyAIIndicator.tsx",
+      "/components/desktop/UniversalSearch.tsx",
+      "/components/desktop/workspace/StartMyDayModal.tsx",
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "/components/desktop/workspace/WorkspaceCustomers.tsx",
+      "/components/desktop/workspace/WorkspaceModules.tsx",
+      "/components/desktop/workspace/WorkspaceToday.tsx",
+      "/components/DeviceSessions.tsx",
+      "/components/dhandha/DhandhaDashboard.tsx",
+      "/components/dhandha/VoiceBillingCard.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/chatr-calls/screens/KeypadScreen.tsx",
+      "/components/dialer/chatr-calls/screens/RecentsScreen.tsx",
+      "/components/dialer/NetworkConfidencePill.tsx",
+      "/components/dialer/StandaloneCallsApp.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/components/earn/EarnLeaderboard.tsx",
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/components/earn/EarnShareBlock.tsx",
+      "/components/EmotionCircleMatch.tsx",
+      "/components/famecam/AIGuidanceOverlay.tsx",
+      "/components/famecam/CoinsTracker.tsx",
+      "/components/famecam/FameCamViewfinder.tsx",
+      "/components/famecam/FameMeter.tsx",
+      "/components/famecam/PostPreviewDialog.tsx",
+      "/components/FirebasePhoneAuth.tsx",
+      "/components/games/AIAirRunnerGame.tsx",
+      "/components/games/AIBubbleShooterGame.tsx",
+      "/components/games/AICandyCrushGame.tsx",
+      "/components/games/AICarRacingGame.tsx",
+      "/components/games/AIMotorcycleRacingGame.tsx",
+      "/components/games/AIWordFinderGame.tsx",
+      "/components/games/AvaWarsGame.tsx",
+      "/components/games/EchoChainGame.tsx",
+      "/components/games/EmotionSyncGame.tsx",
+      "/components/games/EnergyPulseGame.tsx",
+      "/components/games/FrequencyClashGame.tsx",
+      "/components/games/GameAchievementsPanel.tsx",
+      "/components/games/MapHuntGame.tsx",
+      "/components/games/MindMazeGame.tsx",
+      "/components/games/MirrorMatchGame.tsx",
+      "/components/games/ParallelYouGame.tsx",
+      "/components/games/SocialStormGame.tsx",
+      "/components/games/SyncMindGame.tsx",
+      "/components/games/ThoughtDuelGame.tsx",
+      "/components/games/VibeLinkGame.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/components/GlobalNotificationListener.tsx",
+      "/components/GlobalSearch.tsx",
+      "/components/HealthPassportEdit.tsx",
+      "/components/HealthWallet.tsx",
+      "/components/home/IntelligentHomeFeed.tsx",
+      "/components/home/PersonalizedGreeting.tsx",
+      "/components/identity/CallScreeningOverlay.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/components/inbox/CommandCenterPanel.tsx",
+      "/components/InstallPWAPrompt.tsx",
+      "/components/jobs/QuickApplyModal.tsx",
+      "/components/kyc/KYCVerification.tsx",
+      "/components/LazyImage.tsx",
+      "/components/LiveLocationSharing.tsx",
+      "/components/LiveRooms.tsx",
+      "/components/LocationFilter.tsx",
+      "/components/MessageSearchBar.tsx",
+      "/components/micro-tasks/TaskCompletionSheet.tsx",
+      "/components/micro-tasks/TaskFeed.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/components/MiniAppsStore.tsx",
+      "/components/NativeAppProvider.tsx",
+      "/components/NetworkStatus.tsx",
+      "/components/notifications/GlobalModuleNotificationListener.tsx",
+      "/components/notifications/TokenHealthBanner.tsx",
+      "/components/NotificationSettings.tsx",
+      "/components/OfficialAccountFeed.tsx",
+      "/components/OfflineChat.tsx",
+      "/components/OfflineIndicator.tsx",
+      "/components/OnboardingDialog.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/PINInput.tsx",
+      "/components/PointsWallet.tsx",
+      "/components/PollCreator.tsx",
+      "/components/ProductionMonitor.tsx",
+      "/components/profile/MutualFriendsDisplay.tsx",
+      "/components/profile/PhotoAlbumsGrid.tsx",
+      "/components/profile/ProfileMusicCard.tsx",
+      "/components/profile/SpotifyNowPlaying.tsx",
+      "/components/ProfileEditDialog.tsx",
+      "/components/ProtectedRoute.tsx",
+      "/components/qr/QRLoginScanner.tsx",
+      "/components/RealtimeDebugPanel.tsx",
+      "/components/ReferralLeaderboard.tsx",
+      "/components/ReferralStats.tsx",
+      "/components/ReferralSystem.tsx",
+      "/components/RingtoneSelector.tsx",
+      "/components/search/ChatrSpeakIntegration.tsx",
+      "/components/search/DeviceAIStatus.tsx",
+      "/components/search/FavoriteResults.tsx",
+      "/components/search/SavedSearches.tsx",
+      "/components/search/TrendingSearches.tsx",
+      "/components/SecurityStatus.tsx",
+      "/components/semantic/EntityToken.tsx",
+      "/components/semantic/KernelInspector.tsx",
+      "/components/semantic/OutcomeEngine.tsx",
+      "/components/semantic/UnderstandingLayer.tsx",
+      "/components/settings/AppearanceSettings.tsx",
+      "/components/settings/CalendarSettings.tsx",
+      "/components/settings/LinkedDevices.tsx",
+      "/components/settings/LocationPrivacySettings.tsx",
+      "/components/settings/MediaAutoSaveSettings.tsx",
+      "/components/settings/PrivacySettings.tsx",
+      "/components/settings/ProfileSettings.tsx",
+      "/components/SmartCompose.tsx",
+      "/components/SplashScreen.tsx",
+      "/components/stealth-mode/RewardsModePanel.tsx",
+      "/components/stealth-mode/SellerModePanel.tsx",
+      "/components/stories/StoriesCarousel.tsx",
+      "/components/stories/StoryHighlights.tsx",
+      "/components/stories/StoryViewer.tsx",
+      "/components/stories/StoryViewerAnalytics.tsx",
+      "/components/studio/DesignEditor.tsx",
+      "/components/studio/FabricCanvas.tsx",
+      "/components/studio/MyDesigns.tsx",
+      "/components/studio/TemplateGallery.tsx",
+      "/components/TrustScoreBadge.tsx",
+      "/components/TypingIndicator.tsx",
+      "/components/ui/carousel.tsx",
+      "/components/ui/sidebar.tsx",
+      "/components/UnifiedPermissionsSetup.tsx",
+      "/components/voice/VoiceInterface.tsx",
+      "/components/VoiceMessagePlayer.tsx",
+      "/contexts/CallContext.tsx",
+      "/contexts/ChatContext.tsx",
+      "/contexts/LocationContext.tsx",
+      "/contexts/SocketContext.tsx",
+      "/contexts/ThemeCustomizationContext.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/core/os/useKernelState.ts",
+      "/hooks/native/useFirebaseAnalytics.tsx",
+      "/hooks/native/useFirebaseCrashlytics.tsx",
+      "/hooks/native/useSpeechRecognition.tsx",
+      "/hooks/use-mobile.tsx",
+      "/hooks/use-toast.ts",
+      "/hooks/useActivityTracking.tsx",
+      "/hooks/useAdvancedCache.tsx",
+      "/hooks/useAggressiveCache.tsx",
+      "/hooks/useAndroidBackButton.tsx",
+      "/hooks/useAnonymousSearchLimit.tsx",
+      "/hooks/useAppleNativeFeatures.tsx",
+      "/hooks/useAppUsageTracking.tsx",
+      "/hooks/useAudioDevices.tsx",
+      "/hooks/useAudioInterceptor.ts",
+      "/hooks/useAudioLevel.tsx",
+      "/hooks/useAutoAttendant.tsx",
+      "/hooks/useAutoContactSync.tsx",
+      "/hooks/useBackgroundBlur.tsx",
+      "/hooks/useBackgroundLocation.tsx",
+      "/hooks/useBandwidthEstimation.tsx",
+      "/hooks/useBatteryOptimization.tsx",
+      "/hooks/useBlockedContacts.tsx",
+      "/hooks/useBluetoothMesh.tsx",
+      "/hooks/useBusinessCampaigns.ts",
+      "/hooks/useBusinessPhone.ts",
+      "/hooks/useBusinessWorkflows.ts",
+      "/hooks/useCallAnalytics.tsx",
+      "/hooks/useCallBlocking.tsx",
+      "/hooks/useCallCopilot.tsx",
+      "/hooks/useCallForwarding.tsx",
+      "/hooks/useCallHandoff.tsx",
+      "/hooks/useCallKeepAlive.tsx",
+      "/hooks/useCallPark.tsx",
+      "/hooks/useCallPull.tsx",
+      "/hooks/useCallQuality.tsx",
+      "/hooks/useCallQueue.tsx",
+      "/hooks/useCallSentiment.tsx",
+      "/hooks/useCallStability.tsx",
+      "/hooks/useCallTranscription.ts",
+      "/hooks/useCallUI.tsx",
+      "/hooks/useChatConversations.tsx",
+      "/hooks/useChatPushNotifications.tsx",
+      "/hooks/useChatrBrain.ts",
+      "/hooks/useChatrLocation.ts",
+      "/hooks/useChatrUltra.ts",
+      "/hooks/useContactSync.tsx",
+      "/hooks/useConversationCache.tsx",
+      "/hooks/useDataSaverMode.tsx",
+      "/hooks/useDataUsageTracking.tsx",
+      "/hooks/useDebounce.ts",
+      "/hooks/useDesktopElectronIntegrations.ts",
+      "/hooks/useDeveloperHub.ts",
+      "/hooks/useDialerData.ts",
+      "/hooks/useDisappearingMessages.tsx",
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useEmergencyCall.ts",
+      "/hooks/useEncryptedMessaging.ts",
+      "/hooks/useEnhancedOfflineQueue.tsx",
+      "/hooks/useEnhancedWebRTC.ts",
+      "/hooks/useFeatureEngagementTracking.tsx",
+      "/hooks/useFirebaseMessaging.tsx",
+      "/hooks/useFirebasePhoneAuth.tsx",
+      "/hooks/useGeofencing.tsx",
+      "/hooks/useGeoLocation.tsx",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useGroupChat.tsx",
+      "/hooks/useIdentity.ts",
+      "/hooks/useInstantCache.ts",
+      "/hooks/useInstantData.ts",
+      "/hooks/useIntentObserver.ts",
+      "/hooks/useKnowledgeGraph.ts",
+      "/hooks/useLiteMode.tsx",
+      "/hooks/useLiveTranscription.tsx",
+      "/hooks/useLocalAI.ts",
+      "/hooks/useLocationStatus.tsx",
+      "/hooks/useMessageQueue.tsx",
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useMicroTasks.ts",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/useMultiDeviceSync.tsx",
+      "/hooks/useNativeAppInitialization.tsx",
+      "/hooks/useNativeAuthSync.ts",
+      "/hooks/useNativeCallBridge.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useNativeNavigate.ts",
+      "/hooks/useNativeOptimizations.tsx",
+      "/hooks/useNativePerformance.tsx",
+      "/hooks/useNativePullToRefresh.tsx",
+      "/hooks/useNativeRingtone.tsx",
+      "/hooks/useNativeStorage.tsx",
+      "/hooks/useNetworkQuality.tsx",
+      "/hooks/useNetworkStats.tsx",
+      "/hooks/useNoiseCancellation.tsx",
+      "/hooks/useOfflineQueue.tsx",
+      "/hooks/useOfflineUploadQueue.tsx",
+      "/hooks/useOnboarding.tsx",
+      "/hooks/useOptimizedRealtime.tsx",
+      "/hooks/usePictureInPicture.tsx",
+      "/hooks/usePreCallIntelligence.ts",
+      "/hooks/usePrefetch.tsx",
+      "/hooks/usePresence.ts",
+      "/hooks/usePresenceTracking.tsx",
+      "/hooks/usePSTNCall.ts",
+      "/hooks/usePushNotifications.tsx",
+      "/hooks/useRealParticipants.ts",
+      "/hooks/useRealtimeMessages.tsx",
+      "/hooks/useRealtimeNotifications.tsx",
+      "/hooks/useRecoveryController.tsx",
+      "/hooks/useReliableMessages.tsx",
+      "/hooks/useRingbackTone.tsx",
+      "/hooks/useRingtone.tsx",
+      "/hooks/useSecureStorage.tsx",
+      "/hooks/useSellerRealtimeNotifications.tsx",
+      "/hooks/useSignalProtocol.ts",
+      "/hooks/useSocketIO.tsx",
+      "/hooks/useSocketPresence.tsx",
+      "/hooks/useSocketTyping.tsx",
+      "/hooks/useSpeedDial.tsx",
+      "/hooks/useSpotifyStatus.tsx",
+      "/hooks/useStealthMode.ts",
+      "/hooks/useStreakTracking.tsx",
+      "/hooks/useSuggestedQuestions.ts",
+      "/hooks/useTypingIndicator.tsx",
+      "/hooks/useUISpeedBudget.tsx",
+      "/hooks/useUltraLowBandwidth.tsx",
+      "/hooks/useUniversalTimeline.tsx",
+      "/hooks/useUserLocation.ts",
+      "/hooks/useUserRole.ts",
+      "/hooks/useVendorNotifications.tsx",
+      "/hooks/useVideoZoom.ts",
+      "/hooks/useVirtualBackground.tsx",
+      "/hooks/useVirtualizedMessages.tsx",
+      "/hooks/useVoiceAI.tsx",
+      "/hooks/useWebRTCSignaling.ts",
+      "/hooks/useWebViewManager.tsx",
+      "/hooks/useWorkspaceSync.ts",
+      "/hooks/useWorkspaceTasks.ts",
+      "/layouts/DesktopLayout.tsx",
+      "/lib/fix-react-imports.ts",
+      "/pages/Account.tsx",
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Announcements.tsx",
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/admin/BrandPartnerships.tsx",
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/admin/DoctorApplications.tsx",
+      "/pages/admin/Documents.tsx",
+      "/pages/admin/JobHealth.tsx",
+      "/pages/admin/KYCApprovals.tsx",
+      "/pages/admin/MicroTasks.tsx",
+      "/pages/admin/OfficialAccountsManager.tsx",
+      "/pages/admin/Payments.tsx",
+      "/pages/admin/PaymentVerification.tsx",
+      "/pages/admin/Points.tsx",
+      "/pages/admin/Providers.tsx",
+      "/pages/admin/SchemaManager.tsx",
+      "/pages/admin/SellerApprovals.tsx",
+      "/pages/admin/Settings.tsx",
+      "/pages/admin/TokenHealth.tsx",
+      "/pages/admin/Users.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/AIAgentChat.tsx",
+      "/pages/AIAgentChatNew.tsx",
+      "/pages/AIAgentCreate.tsx",
+      "/pages/AIAgents.tsx",
+      "/pages/AIAgentsHub.tsx",
+      "/pages/AIAssistant.tsx",
+      "/pages/AIBrowser.tsx",
+      "/pages/AIBrowserHome.tsx",
+      "/pages/AIBrowserView.tsx",
+      "/pages/AIChat.tsx",
+      "/pages/AICloneSettings.tsx",
+      "/pages/AISearchPage.tsx",
+      "/pages/AppIconSettings.tsx",
+      "/pages/AppStatistics.tsx",
+      "/pages/auth/GoogleCalendarCallback.tsx",
+      "/pages/auth/OutlookCalendarCallback.tsx",
+      "/pages/Auth.tsx",
+      "/pages/Automations.tsx",
+      "/pages/BMICalculator.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/BookingTracking.tsx",
+      "/pages/business/AIRoles.tsx",
+      "/pages/business/Analytics.tsx",
+      "/pages/business/Automations.tsx",
+      "/pages/business/Broadcasts.tsx",
+      "/pages/business/Catalog.tsx",
+      "/pages/business/CRM.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/Groups.tsx",
+      "/pages/business/Inbox.tsx",
+      "/pages/business/Integrations.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/Settings.tsx",
+      "/pages/business/Team.tsx",
+      "/pages/business/TeamInbox.tsx",
+      "/pages/CallBenchmarkDashboard.tsx",
+      "/pages/CallerIdHub.tsx",
+      "/pages/CallHistory.tsx",
+      "/pages/Calls.tsx",
+      "/pages/Capture.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/care/MedicineFamily.tsx",
+      "/pages/care/MedicineHub.tsx",
+      "/pages/care/MedicineOrders.tsx",
+      "/pages/care/MedicinePrescriptions.tsx",
+      "/pages/care/MedicineReminders.tsx",
+      "/pages/care/MedicineRewards.tsx",
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/care/MedicineSubscriptions.tsx",
+      "/pages/care/MedicineVitals.tsx",
+      "/pages/care/MedicineWallet.tsx",
+      "/pages/care/MyAppointments.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/Channel.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatFoldersSettings.tsx",
+      "/pages/ChatrApp.tsx",
+      "/pages/ChatrGames.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrOS.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx",
+      "/pages/ChatrPlusSearch.tsx",
+      "/pages/ChatrPlusWallet.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/ChatrResults.tsx",
+      "/pages/ChatrShield.tsx",
+      "/pages/ChatrTutors.tsx",
+      "/pages/ChatrWallet.tsx",
+      "/pages/ChatrWeb.tsx",
+      "/pages/ChatrWorld.tsx",
+      "/pages/ChatrWorldAdmin.tsx",
+      "/pages/ChronicVitalsPage.tsx",
+      "/pages/CommandCenter.tsx",
+      "/pages/Communities.tsx",
+      "/pages/Community.tsx",
+      "/pages/Contacts.tsx",
+      "/pages/ContactsPage.tsx",
+      "/pages/CreateCommunity.tsx",
+      "/pages/desktop/AgentMarketplace.tsx",
+      "/pages/desktop/AgentWorkspace.tsx",
+      "/pages/desktop/BetaCommandCenter.tsx",
+      "/pages/desktop/CandidateWorkspace.tsx",
+      "/pages/desktop/chat/components/MessageViewport.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/chat/hooks/useConversation.ts",
+      "/pages/desktop/chat/hooks/useOutcomes.ts",
+      "/pages/desktop/DesktopAccount.tsx",
+      "/pages/desktop/DesktopAppearance.tsx",
+      "/pages/desktop/DesktopCalendar.tsx",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopConnectPairing.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/desktop/DesktopIntelligence.tsx",
+      "/pages/desktop/DesktopNotifications.tsx",
+      "/pages/desktop/DesktopPrivacy.tsx",
+      "/pages/desktop/DesktopProfile.tsx",
+      "/pages/desktop/DesktopWallpaper.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/pages/desktop/KernelConsole.tsx",
+      "/pages/desktop/KernelDashboard.tsx",
+      "/pages/desktop/RecruiterWorkspace.tsx",
+      "/pages/desktop/WorkflowStudio.tsx",
+      "/pages/desktop/WorkspaceSetup.tsx",
+      "/pages/DeveloperPortal.tsx",
+      "/pages/DeviceManagement.tsx",
+      "/pages/Dhandha.tsx",
+      "/pages/DigestNotificationSettings.tsx",
+      "/pages/Discover.tsx",
+      "/pages/EarnHistory.tsx",
+      "/pages/EmergencyServices.tsx",
+      "/pages/ExpertSessions.tsx",
+      "/pages/FameCam.tsx",
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/OrderHistory.tsx",
+      "/pages/food/OrderTracking.tsx",
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/FoodOrdering.tsx",
+      "/pages/GeofenceHistory.tsx",
+      "/pages/Geofences.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/HealthHub.tsx",
+      "/pages/HealthPassport.tsx",
+      "/pages/HealthReminders.tsx",
+      "/pages/HealthRiskPredictions.tsx",
+      "/pages/HealthStreaksPage.tsx",
+      "/pages/Home.tsx",
+      "/pages/HomeServices.tsx",
+      "/pages/Identity.tsx",
+      "/pages/Index.tsx",
+      "/pages/Install.tsx",
+      "/pages/JoinInvite.tsx",
+      "/pages/LabReports.tsx",
+      "/pages/Launcher.tsx",
+      "/pages/LocalDeals.tsx",
+      "/pages/LocalHealthcare.tsx",
+      "/pages/LocalJobs.tsx",
+      "/pages/marketplace/MarketplaceCheckout.tsx",
+      "/pages/marketplace/OrderSuccess.tsx",
+      "/pages/Marketplace.tsx",
+      "/pages/McpDeveloperDashboard.tsx",
+      "/pages/MedicationInteractionsPage.tsx",
+      "/pages/MedicineReminders.tsx",
+      "/pages/MentalHealth.tsx",
+      "/pages/MiniApps.tsx",
+      "/pages/MiniAppsStore.tsx",
+      "/pages/More.tsx",
+      "/pages/NotFound.tsx",
+      "/pages/NotificationHealth.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/NotificationSettings.tsx",
+      "/pages/NutritionTracker.tsx",
+      "/pages/OfficialAccounts.tsx",
+      "/pages/OSDetection.tsx",
+      "/pages/Privacy.tsx",
+      "/pages/Profile.tsx",
+      "/pages/provider/Appointments.tsx",
+      "/pages/provider/Payments.tsx",
+      "/pages/provider/Services.tsx",
+      "/pages/ProviderDashboard.tsx",
+      "/pages/ProviderDetails.tsx",
+      "/pages/ProviderPortal.tsx",
+      "/pages/ProviderRegister.tsx",
+      "/pages/PublicProfile.tsx",
+      "/pages/QRLogin.tsx",
+      "/pages/QRPayment.tsx",
+      "/pages/Referrals.tsx",
+      "/pages/RewardShop.tsx",
+      "/pages/seller/SellerSettlements.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerBookings.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SellerPayouts.tsx",
+      "/pages/SellerPortal.tsx",
+      "/pages/SellerReviews.tsx",
+      "/pages/SellerServices.tsx",
+      "/pages/SellerSettings.tsx",
+      "/pages/SellerSubscription.tsx",
+      "/pages/ServiceListing.tsx",
+      "/pages/Settings.tsx",
+      "/pages/SmartInbox.tsx",
+      "/pages/SmartPushPreferences.tsx",
+      "/pages/StandaloneDialer.tsx",
+      "/pages/StandaloneMessenger.tsx",
+      "/pages/StarredMessages.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/store/AppDetail.tsx",
+      "/pages/store/AppUpdates.tsx",
+      "/pages/store/DeveloperDashboard.tsx",
+      "/pages/store/MyApps.tsx",
+      "/pages/store/StoreExplore.tsx",
+      "/pages/Stories.tsx",
+      "/pages/TeleconsultationPage.tsx",
+      "/pages/UnifiedTimeline.tsx",
+      "/pages/UniversalSearch.tsx",
+      "/pages/UserSubscription.tsx",
+      "/pages/vendor/deals/DealsManagement.tsx",
+      "/pages/vendor/healthcare/DoctorAnalytics.tsx",
+      "/pages/vendor/healthcare/DoctorAppointments.tsx",
+      "/pages/vendor/healthcare/DoctorAvailability.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx",
+      "/pages/vendor/restaurant/RestaurantMenu.tsx",
+      "/pages/vendor/restaurant/RestaurantOrders.tsx",
+      "/pages/vendor/VendorDashboard.tsx",
+      "/pages/vendor/VendorSettings.tsx",
+      "/pages/WallpaperSettings.tsx",
+      "/pages/WellnessCircles.tsx",
+      "/pages/WellnessTracking.tsx",
+      "/pages/YouthEngagement.tsx",
+      "/pages/YouthFeed.tsx",
+      "/platform/Domain/Collaboration/CommentThread.tsx",
+      "/platform/Domain/Collaboration/DocumentLockBadge.tsx",
+      "/platform/Infrastructure/PlatformContext.tsx",
+      "/utils/voipBridgePrewarm.ts"
+    ],
+    "useContext": [
+      "/App.tsx",
+      "/components/ChatrOSProvider.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/components/NativeAppProvider.tsx",
+      "/components/ui/carousel.tsx",
+      "/components/ui/chart.tsx",
+      "/components/ui/form.tsx",
+      "/components/ui/input-otp.tsx",
+      "/components/ui/sidebar.tsx",
+      "/components/ui/toggle-group.tsx",
+      "/contexts/CallContext.tsx",
+      "/contexts/ChatContext.tsx",
+      "/contexts/LocationContext.tsx",
+      "/contexts/SocketContext.tsx",
+      "/contexts/ThemeCustomizationContext.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/lib/fix-react-imports.ts",
+      "/platform/Infrastructure/PlatformContext.tsx"
+    ],
+    "usePlatform": [
+      "/App.tsx"
+    ],
+    "useUISpeedBudget": [
+      "/App.tsx",
+      "/hooks/useUISpeedBudget.tsx"
+    ],
+    "useState": [
+      "/App.tsx",
+      "/chatr-os/ui/HomeScreen.tsx",
+      "/components/ai-agents/AgentActions.tsx",
+      "/components/ai-agents/AIAgentTrainingPanel.tsx",
+      "/components/ai-agents/VoiceConversation.tsx",
+      "/components/ai-search/AILandingView.tsx",
+      "/components/ai-search/SearchInputBar.tsx",
+      "/components/AIChatToolbar.tsx",
+      "/components/AIDocumentSearch.tsx",
+      "/components/AIMoments.tsx",
+      "/components/AISmartReplyPanel.tsx",
+      "/components/AnnouncementBanner.tsx",
+      "/components/AppDrawer.tsx",
+      "/components/automations/RuleBuilderDialog.tsx",
+      "/components/AutoTranslatedMessage.tsx",
+      "/components/AutoTranslateSettings.tsx",
+      "/components/AvailabilityCalendar.tsx",
+      "/components/BiometricLogin.tsx",
+      "/components/BluetoothTester.tsx",
+      "/components/BottomNav.tsx",
+      "/components/branding/ARBrandFilters.tsx",
+      "/components/branding/ChatBrandSuggestion.tsx",
+      "/components/BroadcastCreator.tsx",
+      "/components/browser/BrowserTabs.tsx",
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/components/business/BillingHistoryDialog.tsx",
+      "/components/business/BusinessHoursEditor.tsx",
+      "/components/business/BusinessInbox.tsx",
+      "/components/business/TeamInviteDialog.tsx",
+      "/components/BusinessPortal.tsx",
+      "/components/callerid/CallerIdLookup.tsx",
+      "/components/callerid/ReportCallerSheet.tsx",
+      "/components/calling/ActiveCallScreen.tsx",
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/calling/CallInsightsPanel.tsx",
+      "/components/calling/CallMoreMenu.tsx",
+      "/components/calling/DeviceTransferSheet.tsx",
+      "/components/calling/DraggableVideoWindow.tsx",
+      "/components/calling/E2EEVerificationPanel.tsx",
+      "/components/calling/FaceTimeIncomingCall.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/calling/GlobalCallUI.tsx",
+      "/components/calling/GroupVideoCall.tsx",
+      "/components/calling/GroupVoiceCall.tsx",
+      "/components/calling/GSMStyleVoiceCall.tsx",
+      "/components/calling/IncomingCallScreen.tsx",
+      "/components/calling/meeting/AddParticipantsPanel.tsx",
+      "/components/calling/meeting/AIInsightsPanel.tsx",
+      "/components/calling/meeting/HostControls.tsx",
+      "/components/calling/meeting/InviteModal.tsx",
+      "/components/calling/meeting/LayoutSwitcher.tsx",
+      "/components/calling/meeting/MeetingLogsDrawer.tsx",
+      "/components/calling/meeting/MeetingPolls.tsx",
+      "/components/calling/meeting/ParticipantsPanel.tsx",
+      "/components/calling/meeting/ReactionsBar.tsx",
+      "/components/calling/MeetingCopilotPanel.tsx",
+      "/components/calling/NetworkDiagnosticsPanel.tsx",
+      "/components/calling/NetworkQualityIndicator.tsx",
+      "/components/calling/PhoneDialer.tsx",
+      "/components/calling/ProductionCallNotifications.tsx",
+      "/components/calling/ProductionVideoCall.tsx",
+      "/components/calling/ProductionVoiceCall.tsx",
+      "/components/calling/PSTNCallUI.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/calling/SpamReportModal.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/calling/VideoUpgradeModal.tsx",
+      "/components/calls/AudioSettingsPanel.tsx",
+      "/components/calls/CallRecordingControls.tsx",
+      "/components/calls/NetworkStatusBanner.tsx",
+      "/components/calls/VirtualBackgroundPicker.tsx",
+      "/components/calls/VoicemailList.tsx",
+      "/components/canvas/KnowledgeBrainPanel.tsx",
+      "/components/care/AddressForm.tsx",
+      "/components/care/CarePathDetail.tsx",
+      "/components/care/DoctorSearch.tsx",
+      "/components/care/EmergencyButton.tsx",
+      "/components/care/HealthWalletCard.tsx",
+      "/components/care/MedicineIntakeCard.tsx",
+      "/components/care/OnboardingWizard.tsx",
+      "/components/care/OutcomeProviders.tsx",
+      "/components/care/TodayMedicineCard.tsx",
+      "/components/care/VitalsChart.tsx",
+      "/components/chat/AddParticipantDialog.tsx",
+      "/components/chat/AIAssistantButton.tsx",
+      "/components/chat/AIImageGenerator.tsx",
+      "/components/chat/AIStickerPicker.tsx",
+      "/components/chat/BackupRestoreSheet.tsx",
+      "/components/chat/BlockUserDialog.tsx",
+      "/components/chat/BotIntegration.tsx",
+      "/components/chat/CallHistoryDialog.tsx",
+      "/components/chat/ChannelList.tsx",
+      "/components/chat/ChatrShieldWarning.tsx",
+      "/components/chat/ClusterCreator.tsx",
+      "/components/chat/CommunicationMemoryDialog.tsx",
+      "/components/chat/ContactInfoScreen.tsx",
+      "/components/chat/ContactPicker.tsx",
+      "/components/chat/ContactsDrawer.tsx",
+      "/components/chat/ConversationContextMenu.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chat/EnhancedMessageInput.tsx",
+      "/components/chat/EventCreator.tsx",
+      "/components/chat/FormattingToolbar.tsx",
+      "/components/chat/GroupSettingsDialog.tsx",
+      "/components/chat/MediaLightbox.tsx",
+      "/components/chat/MediaPreviewDialog.tsx",
+      "/components/chat/MediaViewer.tsx",
+      "/components/chat/MentionInput.tsx",
+      "/components/chat/MessageBubble.tsx",
+      "/components/chat/MessageContextMenu.tsx",
+      "/components/chat/MessageForwardDialog.tsx",
+      "/components/chat/MessageReactionPicker.tsx",
+      "/components/chat/MessageReactions.tsx",
+      "/components/chat/MessageReportDialog.tsx",
+      "/components/chat/MessageSearchSheet.tsx",
+      "/components/chat/MessageThread.tsx",
+      "/components/chat/MessageTranslateButton.tsx",
+      "/components/chat/MultiImagePicker.tsx",
+      "/components/chat/MultiMediaPreviewDialog.tsx",
+      "/components/chat/PaymentRequest.tsx",
+      "/components/chat/PinnedMessagesViewer.tsx",
+      "/components/chat/PollMessageWrapper.tsx",
+      "/components/chat/PulseCreator.tsx",
+      "/components/chat/QuickReplyPanel.tsx",
+      "/components/chat/SaveContactSheet.tsx",
+      "/components/chat/ShieldFeedback.tsx",
+      "/components/chat/StarredMessages.tsx",
+      "/components/chat/TrueVirtualMessageList.tsx",
+      "/components/chat/UniversalTimelineList.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chat/VirtualMessageList.tsx",
+      "/components/chat/VisualIntelligenceScanner.tsx",
+      "/components/chat/VisualIntelligenceSheet.tsx",
+      "/components/chat/VoiceMessageBubble.tsx",
+      "/components/chat/VoiceTranscript.tsx",
+      "/components/chat/WhatsAppContextMenu.tsx",
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/components/chatr/AddStoryDialog.tsx",
+      "/components/chatr/CallModal.tsx",
+      "/components/chatr/CallsList.tsx",
+      "/components/chatr/ChatScreen.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/chatr/CommunitiesHome.tsx",
+      "/components/chatr/CommunitiesScreen.tsx",
+      "/components/chatr/CommunitiesTab.tsx",
+      "/components/chatr/ContactsList.tsx",
+      "/components/chatr/ContactSyncOnboarding.tsx",
+      "/components/chatr/EnhancedSettingsPanel.tsx",
+      "/components/chatr/ForwardMessageDialog.tsx",
+      "/components/chatr/LocalServices.tsx",
+      "/components/chatr/MessageReactions.tsx",
+      "/components/chatr/MessageSearchInChat.tsx",
+      "/components/chatr/MessageTypes.tsx",
+      "/components/chatr/NewChatSheet.tsx",
+      "/components/chatr/PinnedMessagesPanel.tsx",
+      "/components/chatr/PrechuAIPanel.tsx",
+      "/components/chatr/SettingsPanel.tsx",
+      "/components/chatr/StoryViewer.tsx",
+      "/components/chatr/VideoCallModal.tsx",
+      "/components/chatr/VoiceCallModal.tsx",
+      "/components/chatr-shield/IncomingCallOverlay.tsx",
+      "/components/chatr-shield/LiveCallOverlay.tsx",
+      "/components/chatr-shield/ShieldTab.tsx",
+      "/components/chatr-shield/SignalBreakdownAccordion.tsx",
+      "/components/chatr-world/ChatrWorldBrowser.tsx",
+      "/components/chatr-world/ChatrWorldDeals.tsx",
+      "/components/chatr-world/ChatrWorldFood.tsx",
+      "/components/chatr-world/ChatrWorldHealthcare.tsx",
+      "/components/chatr-world/ChatrWorldHealthHub.tsx",
+      "/components/chatr-world/ChatrWorldJobs.tsx",
+      "/components/chatr-world/ChatrWorldSearch.tsx",
+      "/components/ChatrAIFab.tsx",
+      "/components/ChatrOSProvider.tsx",
+      "/components/ChatSummarizer.tsx",
+      "/components/CollaborativeNotes.tsx",
+      "/components/command-center/EngineeringAgentPanel.tsx",
+      "/components/command-center/SalesAgentPanel.tsx",
+      "/components/communities/CommunitiesExplorer.tsx",
+      "/components/communities/CommunityFeed.tsx",
+      "/components/ConnectedAccounts.tsx",
+      "/components/ContactInvitation.tsx",
+      "/components/ContactManager.tsx",
+      "/components/contacts/RelationshipPanel.tsx",
+      "/components/ContactsSync.tsx",
+      "/components/CountryCodeSelector.tsx",
+      "/components/crm/CreateLeadDialog.tsx",
+      "/components/crm/LeadsList.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/AIStatusBadge.tsx",
+      "/components/desktop/ChatrConsole.tsx",
+      "/components/desktop/CommandPalette.tsx",
+      "/components/desktop/DailyTimeline.tsx",
+      "/components/desktop/DiagnosticsPanel.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/desktop/IntelligencePanel.tsx",
+      "/components/desktop/OutcomeCenter.tsx",
+      "/components/desktop/ProductivityDock.tsx",
+      "/components/desktop/TinyAIIndicator.tsx",
+      "/components/desktop/UniversalSearch.tsx",
+      "/components/desktop/workspace/StartMyDayModal.tsx",
+      "/components/desktop/workspace/WorkspaceActivities.tsx",
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "/components/desktop/workspace/WorkspaceCustomers.tsx",
+      "/components/desktop/workspace/WorkspaceModules.tsx",
+      "/components/desktop/workspace/WorkspaceTemplates.tsx",
+      "/components/desktop/workspace/WorkspaceToday.tsx",
+      "/components/DeviceSessions.tsx",
+      "/components/dhandha/DhandhaDashboard.tsx",
+      "/components/dhandha/MerchantSetup.tsx",
+      "/components/dhandha/VoiceBillingCard.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/chatr-calls/AISummaryCard.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/chatr-calls/screens/KeypadScreen.tsx",
+      "/components/dialer/chatr-calls/screens/RecentsScreen.tsx",
+      "/components/dialer/NetworkConfidencePill.tsx",
+      "/components/dialer/StandaloneCallsApp.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/components/dialer/StandaloneKeypad.tsx",
+      "/components/DisappearingMessagesDialog.tsx",
+      "/components/earn/EarnLeaderboard.tsx",
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/components/earn/EarnShareBlock.tsx",
+      "/components/EmotionCircleMatch.tsx",
+      "/components/famecam/AIGuidanceOverlay.tsx",
+      "/components/famecam/CoinsTracker.tsx",
+      "/components/famecam/FameCamViewfinder.tsx",
+      "/components/famecam/FameMeter.tsx",
+      "/components/famecam/PostPreviewDialog.tsx",
+      "/components/FirebasePhoneAuth.tsx",
+      "/components/games/AIAirRunnerGame.tsx",
+      "/components/games/AIBubbleShooterGame.tsx",
+      "/components/games/AICandyCrushGame.tsx",
+      "/components/games/AICarRacingGame.tsx",
+      "/components/games/AIMotorcycleRacingGame.tsx",
+      "/components/games/AIWordFinderGame.tsx",
+      "/components/games/AvaWarsGame.tsx",
+      "/components/games/DreamForgeGame.tsx",
+      "/components/games/EchoChainGame.tsx",
+      "/components/games/EmotionSyncGame.tsx",
+      "/components/games/EnergyPulseGame.tsx",
+      "/components/games/FrequencyClashGame.tsx",
+      "/components/games/GameAchievementsPanel.tsx",
+      "/components/games/MapHuntGame.tsx",
+      "/components/games/MindMazeGame.tsx",
+      "/components/games/MirrorMatchGame.tsx",
+      "/components/games/ParallelYouGame.tsx",
+      "/components/games/ShadowVerseGame.tsx",
+      "/components/games/SocialStormGame.tsx",
+      "/components/games/SyncMindGame.tsx",
+      "/components/games/ThoughtDuelGame.tsx",
+      "/components/games/VibeLinkGame.tsx",
+      "/components/geo/GeoSearchBar.tsx",
+      "/components/GhostChatToggle.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/components/GlobalNotificationListener.tsx",
+      "/components/GlobalSearch.tsx",
+      "/components/GroupChatCreator.tsx",
+      "/components/healthcare/AppointmentBooking.tsx",
+      "/components/HealthGoalsDialog.tsx",
+      "/components/HealthPassportEdit.tsx",
+      "/components/HealthWallet.tsx",
+      "/components/home/IntelligentHomeFeed.tsx",
+      "/components/home/PersonalizedGreeting.tsx",
+      "/components/identity/CallScreeningOverlay.tsx",
+      "/components/identity/QRIdentityShare.tsx",
+      "/components/identity/ShareableProfileCard.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/components/identity/VerifiedBadgePurchase.tsx",
+      "/components/inbox/CommandCenterPanel.tsx",
+      "/components/InstallPWAPrompt.tsx",
+      "/components/jobs/JobActionCards.tsx",
+      "/components/jobs/JobPostingForm.tsx",
+      "/components/jobs/QuickApplyModal.tsx",
+      "/components/kyc/KYCVerification.tsx",
+      "/components/LazyImage.tsx",
+      "/components/LiveLocationSharing.tsx",
+      "/components/LiveRooms.tsx",
+      "/components/LocationFilter.tsx",
+      "/components/media/AIPhotoEnhancer.tsx",
+      "/components/MessageForwarding.tsx",
+      "/components/MessageReminder.tsx",
+      "/components/MessageSearchBar.tsx",
+      "/components/micro-tasks/TaskCompletionSheet.tsx",
+      "/components/micro-tasks/TaskFeed.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/components/MiniAppsStore.tsx",
+      "/components/NativeAppProvider.tsx",
+      "/components/NetworkStatus.tsx",
+      "/components/notifications/GlobalModuleNotificationListener.tsx",
+      "/components/notifications/TokenHealthBanner.tsx",
+      "/components/NotificationSettings.tsx",
+      "/components/OfficialAccountFeed.tsx",
+      "/components/OfflineChat.tsx",
+      "/components/OfflineIndicator.tsx",
+      "/components/OnboardingDialog.tsx",
+      "/components/outcomes/OutcomeCard.tsx",
+      "/components/outcomes/UniversalSearchResultsCard.tsx",
+      "/components/payment/UPIPaymentModal.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/PINInput.tsx",
+      "/components/PointsWallet.tsx",
+      "/components/PollCreator.tsx",
+      "/components/PollMessage.tsx",
+      "/components/PricingTierForm.tsx",
+      "/components/ProductionMonitor.tsx",
+      "/components/profile/PhotoAlbumsGrid.tsx",
+      "/components/profile/ProfileMusicCard.tsx",
+      "/components/profile/SpotifyNowPlaying.tsx",
+      "/components/ProfileEditDialog.tsx",
+      "/components/ProtectedRoute.tsx",
+      "/components/qr/QRLoginScanner.tsx",
+      "/components/QRScanner.tsx",
+      "/components/QuickAccessMenu.tsx",
+      "/components/QuickAppSubmission.tsx",
+      "/components/QuickReplyNotification.tsx",
+      "/components/RealtimeDebugPanel.tsx",
+      "/components/ReferralLeaderboard.tsx",
+      "/components/ReferralStats.tsx",
+      "/components/ReferralSystem.tsx",
+      "/components/RingtonePickerDialog.tsx",
+      "/components/RingtoneSelector.tsx",
+      "/components/search/ChatrSpeakIntegration.tsx",
+      "/components/search/DeviceAIStatus.tsx",
+      "/components/search/FavoriteResults.tsx",
+      "/components/search/SavedSearches.tsx",
+      "/components/search/TrendingSearches.tsx",
+      "/components/search/VisualSearchUpload.tsx",
+      "/components/SecurityStatus.tsx",
+      "/components/semantic/EntityToken.tsx",
+      "/components/semantic/KernelInspector.tsx",
+      "/components/semantic/OutcomeEngine.tsx",
+      "/components/semantic/UnderstandingLayer.tsx",
+      "/components/settings/AppearanceSettings.tsx",
+      "/components/settings/CalendarSettings.tsx",
+      "/components/settings/LinkedDevices.tsx",
+      "/components/settings/LocationPrivacySettings.tsx",
+      "/components/settings/MediaAutoSaveSettings.tsx",
+      "/components/settings/PrivacySettings.tsx",
+      "/components/settings/ProfileSettings.tsx",
+      "/components/ShareInviteSheet.tsx",
+      "/components/sharing/QRDeepLink.tsx",
+      "/components/sharing/ShareDeepLink.tsx",
+      "/components/SmartCompose.tsx",
+      "/components/SmartImage.tsx",
+      "/components/SocialShareDialog.tsx",
+      "/components/SplashScreen.tsx",
+      "/components/stealth-mode/RewardsModePanel.tsx",
+      "/components/stealth-mode/SellerModePanel.tsx",
+      "/components/stealth-mode/StealthModeSettings.tsx",
+      "/components/store/HowToInstall.tsx",
+      "/components/stories/StoriesCarousel.tsx",
+      "/components/stories/StoryCreator.tsx",
+      "/components/stories/StoryHighlights.tsx",
+      "/components/stories/StoryReactions.tsx",
+      "/components/stories/StoryViewer.tsx",
+      "/components/stories/StoryViewerAnalytics.tsx",
+      "/components/studio/AdvancedDesignEditor.tsx",
+      "/components/studio/AIBackgroundGenerator.tsx",
+      "/components/studio/DesignEditor.tsx",
+      "/components/studio/FabricCanvas.tsx",
+      "/components/studio/MyDesigns.tsx",
+      "/components/studio/TemplateGallery.tsx",
+      "/components/SymptomChecker.tsx",
+      "/components/TaskFromMessage.tsx",
+      "/components/TrustScoreBadge.tsx",
+      "/components/TypingIndicator.tsx",
+      "/components/ui/AppleInput.tsx",
+      "/components/ui/carousel.tsx",
+      "/components/ui/PremiumButton.tsx",
+      "/components/ui/sidebar.tsx",
+      "/components/UnifiedPermissionsSetup.tsx",
+      "/components/VaccinationDialog.tsx",
+      "/components/voice/VoiceInterface.tsx",
+      "/components/VoiceMessagePlayer.tsx",
+      "/components/VoiceMessageRecorder.tsx",
+      "/components/VoiceRecorder.tsx",
+      "/components/wallet/WithdrawalDialog.tsx",
+      "/components/wellness/HealthAppSync.tsx",
+      "/components/workflow/DynamicForm.tsx",
+      "/components/workspace/WorkspaceOSPanel.tsx",
+      "/components/world/WorldPostCreator.tsx",
+      "/contexts/CallContext.tsx",
+      "/contexts/ChatContext.tsx",
+      "/contexts/LocationContext.tsx",
+      "/contexts/SocketContext.tsx",
+      "/contexts/ThemeCustomizationContext.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/core/os/useKernelCommand.ts",
+      "/core/os/useKernelState.ts",
+      "/hooks/native/useBarcodeScanner.tsx",
+      "/hooks/native/useNativeBiometric.tsx",
+      "/hooks/native/useSpeechRecognition.tsx",
+      "/hooks/use-mobile.tsx",
+      "/hooks/use-toast.ts",
+      "/hooks/useAdvancedCache.tsx",
+      "/hooks/useAgentMonitoring.tsx",
+      "/hooks/useAggressiveCache.tsx",
+      "/hooks/useAIChatAssistant.tsx",
+      "/hooks/useAIChatFeatures.tsx",
+      "/hooks/useAICoaching.tsx",
+      "/hooks/useAIPhotoEnhancement.tsx",
+      "/hooks/useAISearch.ts",
+      "/hooks/useAISmartReplies.tsx",
+      "/hooks/useAIStickers.tsx",
+      "/hooks/useAnonymousSearchLimit.tsx",
+      "/hooks/useAppUsageTracking.tsx",
+      "/hooks/useAudioDevices.tsx",
+      "/hooks/useAudioInterceptor.ts",
+      "/hooks/useAudioLevel.tsx",
+      "/hooks/useAutoAttendant.tsx",
+      "/hooks/useBackgroundBlur.tsx",
+      "/hooks/useBackgroundLocation.tsx",
+      "/hooks/useBandwidthEstimation.tsx",
+      "/hooks/useBiometricAuth.tsx",
+      "/hooks/useBlockedContacts.tsx",
+      "/hooks/useBluetoothMesh.tsx",
+      "/hooks/useBusinessCampaigns.ts",
+      "/hooks/useBusinessPhone.ts",
+      "/hooks/useBusinessWorkflows.ts",
+      "/hooks/useCallAnalytics.tsx",
+      "/hooks/useCallBlocking.tsx",
+      "/hooks/useCallCopilot.tsx",
+      "/hooks/useCallForwarding.tsx",
+      "/hooks/useCallHandoff.tsx",
+      "/hooks/useCallPark.tsx",
+      "/hooks/useCallPull.tsx",
+      "/hooks/useCallQuality.tsx",
+      "/hooks/useCallQueue.tsx",
+      "/hooks/useCallRecording.tsx",
+      "/hooks/useCallSentiment.tsx",
+      "/hooks/useCallStability.tsx",
+      "/hooks/useCallSummary.ts",
+      "/hooks/useCallSummary.tsx",
+      "/hooks/useCallTranscription.ts",
+      "/hooks/useCallTransfer.tsx",
+      "/hooks/useCallUI.tsx",
+      "/hooks/useChatConversations.tsx",
+      "/hooks/useChatFolders.ts",
+      "/hooks/useChatrBrain.ts",
+      "/hooks/useChatrLocation.ts",
+      "/hooks/useChatrUltra.ts",
+      "/hooks/useCloudBackup.tsx",
+      "/hooks/useConversationCache.tsx",
+      "/hooks/useDataSaverMode.tsx",
+      "/hooks/useDataUsageTracking.tsx",
+      "/hooks/useDebounce.ts",
+      "/hooks/useDeveloperHub.ts",
+      "/hooks/useDhandhaVoice.tsx",
+      "/hooks/useDialerData.ts",
+      "/hooks/useDisappearingMessages.tsx",
+      "/hooks/useDocumentPreview.tsx",
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useEmergencyCall.ts",
+      "/hooks/useEncryptedMessaging.ts",
+      "/hooks/useEnhancedOfflineQueue.tsx",
+      "/hooks/useEnhancedWebRTC.ts",
+      "/hooks/useFirebaseMessaging.tsx",
+      "/hooks/useFirebasePhoneAuth.tsx",
+      "/hooks/useFullTextSearch.tsx",
+      "/hooks/useGeminiLive.ts",
+      "/hooks/useGeofencing.tsx",
+      "/hooks/useGeoLocation.tsx",
+      "/hooks/useGestureDetection.tsx",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useGroupChat.tsx",
+      "/hooks/useIdentity.ts",
+      "/hooks/useInstantCache.ts",
+      "/hooks/useInstantData.ts",
+      "/hooks/useIntentObserver.ts",
+      "/hooks/useKnowledgeGraph.ts",
+      "/hooks/useLinkPreview.tsx",
+      "/hooks/useLiteMode.tsx",
+      "/hooks/useLiveTranscription.tsx",
+      "/hooks/useLiveTranslation.tsx",
+      "/hooks/useLocalAI.ts",
+      "/hooks/useLocationStatus.tsx",
+      "/hooks/useMessageBackup.tsx",
+      "/hooks/useMessageQueue.tsx",
+      "/hooks/useMessageRetry.tsx",
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useMessageTranslation.tsx",
+      "/hooks/useMicroTasks.ts",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/useMoodTracking.tsx",
+      "/hooks/useMultiDeviceSync.tsx",
+      "/hooks/useMutualFriends.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useNativePullToRefresh.tsx",
+      "/hooks/useNativeStorage.tsx",
+      "/hooks/useNetworkQuality.tsx",
+      "/hooks/useNetworkStats.tsx",
+      "/hooks/useNoiseCancellation.tsx",
+      "/hooks/useOfflineQueue.tsx",
+      "/hooks/useOfflineUploadQueue.tsx",
+      "/hooks/useOnboarding.tsx",
+      "/hooks/useOnDeviceAI.tsx",
+      "/hooks/useOptimisticChat.tsx",
+      "/hooks/useOptimisticMessages.tsx",
+      "/hooks/usePhotoAlbums.tsx",
+      "/hooks/usePictureInPicture.tsx",
+      "/hooks/usePreCallIntelligence.ts",
+      "/hooks/usePresence.ts",
+      "/hooks/usePresenceTracking.tsx",
+      "/hooks/useProfileMusic.tsx",
+      "/hooks/usePSTNCall.ts",
+      "/hooks/useQuickReplyTemplates.tsx",
+      "/hooks/useRateLimit.tsx",
+      "/hooks/useRealParticipants.ts",
+      "/hooks/useRealtimeMessages.tsx",
+      "/hooks/useRecoveryController.tsx",
+      "/hooks/useReliableMessages.tsx",
+      "/hooks/useRingtone.tsx",
+      "/hooks/useSecureStorage.tsx",
+      "/hooks/useSellerRealtimeNotifications.tsx",
+      "/hooks/useSignalProtocol.ts",
+      "/hooks/useSmartNotifications.tsx",
+      "/hooks/useSmartReplies.tsx",
+      "/hooks/useSMSFallback.ts",
+      "/hooks/useSocketPresence.tsx",
+      "/hooks/useSocketTyping.tsx",
+      "/hooks/useSpeedDial.tsx",
+      "/hooks/useSpotifyStatus.tsx",
+      "/hooks/useSSOToken.tsx",
+      "/hooks/useStealthMode.ts",
+      "/hooks/useStreakTracking.tsx",
+      "/hooks/useSuggestedQuestions.ts",
+      "/hooks/useTrustScore.ts",
+      "/hooks/useTypingIndicator.tsx",
+      "/hooks/useUltraLowBandwidth.tsx",
+      "/hooks/useUniversalTimeline.tsx",
+      "/hooks/useUserLocation.ts",
+      "/hooks/useUserRole.ts",
+      "/hooks/useVerifiedBadge.tsx",
+      "/hooks/useVideoBranding.tsx",
+      "/hooks/useVideoZoom.ts",
+      "/hooks/useVirtualBackground.tsx",
+      "/hooks/useVirtualizedMessages.tsx",
+      "/hooks/useVisualIntelligence.tsx",
+      "/hooks/useVoiceAI.tsx",
+      "/hooks/useVoicemail.tsx",
+      "/hooks/useVoiceTranscription.tsx",
+      "/hooks/useWebRTCSignaling.ts",
+      "/hooks/useWebViewManager.tsx",
+      "/hooks/useWorkspaceSync.ts",
+      "/hooks/useWorkspaceTasks.ts",
+      "/layouts/DesktopLayout.tsx",
+      "/lib/fix-react-imports.ts",
+      "/pages/Account.tsx",
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Announcements.tsx",
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/admin/BrandPartnerships.tsx",
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/admin/DoctorApplications.tsx",
+      "/pages/admin/Documents.tsx",
+      "/pages/admin/FeatureBuilder.tsx",
+      "/pages/admin/JobHealth.tsx",
+      "/pages/admin/KYCApprovals.tsx",
+      "/pages/admin/MicroTasks.tsx",
+      "/pages/admin/OfficialAccountsManager.tsx",
+      "/pages/admin/Payments.tsx",
+      "/pages/admin/PaymentVerification.tsx",
+      "/pages/admin/Points.tsx",
+      "/pages/admin/Providers.tsx",
+      "/pages/admin/SchemaManager.tsx",
+      "/pages/admin/SellerApprovals.tsx",
+      "/pages/admin/Settings.tsx",
+      "/pages/admin/TokenHealth.tsx",
+      "/pages/admin/Users.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/AIAgentChat.tsx",
+      "/pages/AIAgentChatNew.tsx",
+      "/pages/AIAgentCreate.tsx",
+      "/pages/AIAgents.tsx",
+      "/pages/AIAgentsHub.tsx",
+      "/pages/AIAssistant.tsx",
+      "/pages/AIBrowser.tsx",
+      "/pages/AIBrowserHome.tsx",
+      "/pages/AIBrowserView.tsx",
+      "/pages/AIChat.tsx",
+      "/pages/AICloneSettings.tsx",
+      "/pages/AlliedHealthcare.tsx",
+      "/pages/AmbassadorProgram.tsx",
+      "/pages/AppearanceSettings.tsx",
+      "/pages/AppIconSettings.tsx",
+      "/pages/AppStatistics.tsx",
+      "/pages/auth/GoogleCalendarCallback.tsx",
+      "/pages/auth/OutlookCalendarCallback.tsx",
+      "/pages/Auth.tsx",
+      "/pages/Automations.tsx",
+      "/pages/BMICalculator.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/BookingTracking.tsx",
+      "/pages/business/AIRoles.tsx",
+      "/pages/business/Analytics.tsx",
+      "/pages/business/Automations.tsx",
+      "/pages/business/Broadcasts.tsx",
+      "/pages/business/Catalog.tsx",
+      "/pages/business/CRM.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/DeveloperHub.tsx",
+      "/pages/business/Groups.tsx",
+      "/pages/business/Inbox.tsx",
+      "/pages/business/Integrations.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/PhoneSystem.tsx",
+      "/pages/business/Settings.tsx",
+      "/pages/business/Team.tsx",
+      "/pages/business/TeamInbox.tsx",
+      "/pages/CallBenchmarkDashboard.tsx",
+      "/pages/CallerIdHub.tsx",
+      "/pages/CallHistory.tsx",
+      "/pages/Calls.tsx",
+      "/pages/Capture.tsx",
+      "/pages/care/AddFamilyMember.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/care/MedicineFamily.tsx",
+      "/pages/care/MedicineHub.tsx",
+      "/pages/care/MedicineOrders.tsx",
+      "/pages/care/MedicinePrescriptions.tsx",
+      "/pages/care/MedicineReminders.tsx",
+      "/pages/care/MedicineRewards.tsx",
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/care/MedicineSubscriptions.tsx",
+      "/pages/care/MedicineVitals.tsx",
+      "/pages/care/MedicineWallet.tsx",
+      "/pages/care/MyAppointments.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/Channel.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatFoldersSettings.tsx",
+      "/pages/chatr-shield/CallerIntelligenceScreen.tsx",
+      "/pages/ChatrApp.tsx",
+      "/pages/ChatrGames.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrOS.tsx",
+      "/pages/ChatrPlus.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx",
+      "/pages/ChatrPlusSearch.tsx",
+      "/pages/ChatrPlusSellerDashboard.tsx",
+      "/pages/ChatrPlusSellerRegistration.tsx",
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/ChatrPlusSubscribe.tsx",
+      "/pages/ChatrPlusWallet.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/ChatrResults.tsx",
+      "/pages/ChatrShield.tsx",
+      "/pages/ChatrStudio.tsx",
+      "/pages/ChatrTutors.tsx",
+      "/pages/ChatrWallet.tsx",
+      "/pages/ChatrWeb.tsx",
+      "/pages/ChatrWorld.tsx",
+      "/pages/ChatrWorldAdmin.tsx",
+      "/pages/ChronicVitalsPage.tsx",
+      "/pages/CommandCenter.tsx",
+      "/pages/Communities.tsx",
+      "/pages/Community.tsx",
+      "/pages/Contact.tsx",
+      "/pages/Contacts.tsx",
+      "/pages/ContactsPage.tsx",
+      "/pages/CreateCommunity.tsx",
+      "/pages/desktop/AgentMarketplace.tsx",
+      "/pages/desktop/AgentWorkspace.tsx",
+      "/pages/desktop/BetaCommandCenter.tsx",
+      "/pages/desktop/CandidateWorkspace.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/chat/hooks/useConversation.ts",
+      "/pages/desktop/chat/hooks/useCopilot.ts",
+      "/pages/desktop/chat/hooks/useOutcomes.ts",
+      "/pages/desktop/DesktopAccount.tsx",
+      "/pages/desktop/DesktopAppearance.tsx",
+      "/pages/desktop/DesktopCalendar.tsx",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopConnectPairing.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/desktop/DesktopIntelligence.tsx",
+      "/pages/desktop/DesktopNotifications.tsx",
+      "/pages/desktop/DesktopPrivacy.tsx",
+      "/pages/desktop/DesktopProfile.tsx",
+      "/pages/desktop/DesktopWallpaper.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/pages/desktop/KernelConsole.tsx",
+      "/pages/desktop/KernelDashboard.tsx",
+      "/pages/desktop/ProUpgrade.tsx",
+      "/pages/desktop/RecruiterWorkspace.tsx",
+      "/pages/desktop/WorkflowStudio.tsx",
+      "/pages/desktop/WorkspaceSetup.tsx",
+      "/pages/DesktopConnectScanner.tsx",
+      "/pages/DeveloperPortal.tsx",
+      "/pages/DeviceManagement.tsx",
+      "/pages/Dhandha.tsx",
+      "/pages/DigestNotificationSettings.tsx",
+      "/pages/Discover.tsx",
+      "/pages/DoctorOnboarding.tsx",
+      "/pages/EarnHistory.tsx",
+      "/pages/EmergencyButton.tsx",
+      "/pages/EmergencyServices.tsx",
+      "/pages/ExpertSessions.tsx",
+      "/pages/FameCam.tsx",
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/OrderHistory.tsx",
+      "/pages/food/OrderTracking.tsx",
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/FoodOrdering.tsx",
+      "/pages/GeoDiscovery.tsx",
+      "/pages/GeofenceHistory.tsx",
+      "/pages/Geofences.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/HealthHub.tsx",
+      "/pages/HealthPassport.tsx",
+      "/pages/HealthReminders.tsx",
+      "/pages/HealthRiskPredictions.tsx",
+      "/pages/HealthStreaksPage.tsx",
+      "/pages/Help.tsx",
+      "/pages/Home.tsx",
+      "/pages/HomeServices.tsx",
+      "/pages/Identity.tsx",
+      "/pages/Index.tsx",
+      "/pages/Install.tsx",
+      "/pages/JoinInvite.tsx",
+      "/pages/LabReports.tsx",
+      "/pages/Launcher.tsx",
+      "/pages/LocalDeals.tsx",
+      "/pages/LocalHealthcare.tsx",
+      "/pages/LocalJobs.tsx",
+      "/pages/marketplace/MarketplaceCheckout.tsx",
+      "/pages/Marketplace.tsx",
+      "/pages/McpDeveloperDashboard.tsx",
+      "/pages/MedicationInteractionsPage.tsx",
+      "/pages/MedicineReminders.tsx",
+      "/pages/MentalHealth.tsx",
+      "/pages/MiniApps.tsx",
+      "/pages/MiniAppsStore.tsx",
+      "/pages/More.tsx",
+      "/pages/NotificationHealth.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/NotificationSettings.tsx",
+      "/pages/NotificationTemplates.tsx",
+      "/pages/NutritionTracker.tsx",
+      "/pages/OfficialAccounts.tsx",
+      "/pages/Onboarding.tsx",
+      "/pages/OSDetection.tsx",
+      "/pages/PrechuAI.tsx",
+      "/pages/Privacy.tsx",
+      "/pages/Profile.tsx",
+      "/pages/provider/Appointments.tsx",
+      "/pages/provider/Payments.tsx",
+      "/pages/provider/Services.tsx",
+      "/pages/ProviderDashboard.tsx",
+      "/pages/ProviderDetails.tsx",
+      "/pages/ProviderPortal.tsx",
+      "/pages/ProviderRegister.tsx",
+      "/pages/PublicProfile.tsx",
+      "/pages/QRLogin.tsx",
+      "/pages/QRPayment.tsx",
+      "/pages/Referrals.tsx",
+      "/pages/RewardShop.tsx",
+      "/pages/seller/SellerSettlements.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerBookings.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SellerPayouts.tsx",
+      "/pages/SellerPortal.tsx",
+      "/pages/SellerReviews.tsx",
+      "/pages/SellerServices.tsx",
+      "/pages/SellerSettings.tsx",
+      "/pages/SellerSubscription.tsx",
+      "/pages/ServiceListing.tsx",
+      "/pages/Settings.tsx",
+      "/pages/SmartInbox.tsx",
+      "/pages/SmartPushPreferences.tsx",
+      "/pages/StandaloneDialer.tsx",
+      "/pages/StandaloneMessenger.tsx",
+      "/pages/StarredMessages.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/store/AppDetail.tsx",
+      "/pages/store/AppUpdates.tsx",
+      "/pages/store/DeveloperDashboard.tsx",
+      "/pages/store/MyApps.tsx",
+      "/pages/store/StoreExplore.tsx",
+      "/pages/Stories.tsx",
+      "/pages/TeleconsultationPage.tsx",
+      "/pages/UnifiedTimeline.tsx",
+      "/pages/UniversalSearch.tsx",
+      "/pages/UserSubscription.tsx",
+      "/pages/vendor/deals/DealsManagement.tsx",
+      "/pages/vendor/healthcare/DoctorAnalytics.tsx",
+      "/pages/vendor/healthcare/DoctorAppointments.tsx",
+      "/pages/vendor/healthcare/DoctorAvailability.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx",
+      "/pages/vendor/restaurant/RestaurantMenu.tsx",
+      "/pages/vendor/restaurant/RestaurantOrders.tsx",
+      "/pages/vendor/VendorDashboard.tsx",
+      "/pages/vendor/VendorLogin.tsx",
+      "/pages/vendor/VendorRegister.tsx",
+      "/pages/vendor/VendorSettings.tsx",
+      "/pages/WallpaperSettings.tsx",
+      "/pages/WellnessCircles.tsx",
+      "/pages/WellnessTracking.tsx",
+      "/pages/YouthEngagement.tsx",
+      "/pages/YouthFeed.tsx",
+      "/platform/Domain/Collaboration/CommentThread.tsx",
+      "/platform/Domain/Collaboration/DocumentLockBadge.tsx",
+      "/platform/Infrastructure/PlatformContext.tsx"
+    ],
+    "useApp": [
+      "/chatr-os/kernel/AppLifecycleManager.ts"
+    ],
+    "useChatrOS": [
+      "/chatr-os/ui/AppSwitcher.tsx",
+      "/chatr-os/ui/HomeScreen.tsx",
+      "/components/ChatrOSProvider.tsx"
+    ],
+    "useToast": [
+      "/chatr-os/ui/HomeScreen.tsx",
+      "/components/AIDocumentSearch.tsx",
+      "/components/AnnouncementBanner.tsx",
+      "/components/automations/RuleBuilderDialog.tsx",
+      "/components/BiometricLogin.tsx",
+      "/components/BroadcastCreator.tsx",
+      "/components/business/BusinessInbox.tsx",
+      "/components/business/TeamInviteDialog.tsx",
+      "/components/BusinessPortal.tsx",
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/calling/CallMediaCapture.tsx",
+      "/components/calling/ProductionCallNotifications.tsx",
+      "/components/chat/AIImageGenerator.tsx",
+      "/components/chat/ClusterCreator.tsx",
+      "/components/chat/ContactPicker.tsx",
+      "/components/chat/EventCreator.tsx",
+      "/components/chat/PaymentRequest.tsx",
+      "/components/chat/PulseCreator.tsx",
+      "/components/ChatSummarizer.tsx",
+      "/components/CollaborativeNotes.tsx",
+      "/components/ContactManager.tsx",
+      "/components/ContactsSync.tsx",
+      "/components/crm/CreateLeadDialog.tsx",
+      "/components/crm/LeadsList.tsx",
+      "/components/DeviceSessions.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/components/GlobalNotificationListener.tsx",
+      "/components/GroupChatCreator.tsx",
+      "/components/MessageForwarding.tsx",
+      "/components/MessageReminder.tsx",
+      "/components/OfficialAccountFeed.tsx",
+      "/components/OfflineChat.tsx",
+      "/components/OnboardingDialog.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/PollCreator.tsx",
+      "/components/QRScanner.tsx",
+      "/components/RingtoneSelector.tsx",
+      "/components/settings/LocationPrivacySettings.tsx",
+      "/components/SmartCompose.tsx",
+      "/components/TaskFromMessage.tsx",
+      "/components/ui/toaster.tsx",
+      "/components/ui/use-toast.ts",
+      "/components/VoiceMessageRecorder.tsx",
+      "/components/VoiceRecorder.tsx",
+      "/components/wellness/HealthAppSync.tsx",
+      "/hooks/use-toast.ts",
+      "/hooks/useBlockedContacts.tsx",
+      "/hooks/useCallStability.tsx",
+      "/hooks/useEmergencyCall.ts",
+      "/hooks/useFirebaseMessaging.tsx",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useMessageRetry.tsx",
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/useOnboarding.tsx",
+      "/hooks/usePSTNCall.ts",
+      "/hooks/useRealtimeNotifications.tsx",
+      "/hooks/useSellerRealtimeNotifications.tsx",
+      "/hooks/useSMSFallback.ts",
+      "/hooks/useUniversalTimeline.tsx",
+      "/hooks/useVendorNotifications.tsx",
+      "/hooks/useVisualIntelligence.tsx",
+      "/pages/Account.tsx",
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Announcements.tsx",
+      "/pages/admin/Documents.tsx",
+      "/pages/admin/Payments.tsx",
+      "/pages/admin/Points.tsx",
+      "/pages/admin/Providers.tsx",
+      "/pages/admin/TokenHealth.tsx",
+      "/pages/admin/Users.tsx",
+      "/pages/AIAssistant.tsx",
+      "/pages/Auth.tsx",
+      "/pages/Automations.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/business/AIRoles.tsx",
+      "/pages/business/Automations.tsx",
+      "/pages/business/Broadcasts.tsx",
+      "/pages/business/Catalog.tsx",
+      "/pages/business/CRM.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/Groups.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/Settings.tsx",
+      "/pages/business/Team.tsx",
+      "/pages/business/TeamInbox.tsx",
+      "/pages/ChatrPlusWallet.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/Community.tsx",
+      "/pages/DeviceManagement.tsx",
+      "/pages/DigestNotificationSettings.tsx",
+      "/pages/EmergencyButton.tsx",
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/LabReports.tsx",
+      "/pages/LocalHealthcare.tsx",
+      "/pages/LocalJobs.tsx",
+      "/pages/MedicineReminders.tsx",
+      "/pages/MiniApps.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/NotificationSettings.tsx",
+      "/pages/Onboarding.tsx",
+      "/pages/Privacy.tsx",
+      "/pages/provider/Appointments.tsx",
+      "/pages/provider/Payments.tsx",
+      "/pages/provider/Services.tsx",
+      "/pages/ProviderRegister.tsx",
+      "/pages/QRLogin.tsx",
+      "/pages/RewardShop.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerBookings.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SellerPayouts.tsx",
+      "/pages/SellerPortal.tsx",
+      "/pages/SellerReviews.tsx",
+      "/pages/SellerServices.tsx",
+      "/pages/SellerSettings.tsx",
+      "/pages/SellerSubscription.tsx",
+      "/pages/WellnessTracking.tsx",
+      "/pages/YouthEngagement.tsx",
+      "/pages/YouthFeed.tsx"
+    ],
+    "useSidebar": [
+      "/components/AdminLayout.tsx",
+      "/components/ui/sidebar.tsx"
+    ],
+    "useAgentActions": [
+      "/components/ai-agents/AgentActions.tsx",
+      "/pages/AIAgentChatNew.tsx"
+    ],
+    "useQuery": [
+      "/components/ai-agents/AgentAnalyticsDashboard.tsx",
+      "/components/famecam/ChallengeRadar.tsx",
+      "/components/healthcare/AppointmentBooking.tsx",
+      "/pages/ChatrPlus.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx",
+      "/pages/ChatrPlusSearch.tsx",
+      "/pages/ChatrPlusSellerDashboard.tsx",
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/FameLeaderboard.tsx",
+      "/pages/Home.tsx"
+    ],
+    "useRef": [
+      "/components/ai-agents/VoiceConversation.tsx",
+      "/components/branding/VideoOverlayRenderer.tsx",
+      "/components/calling/AudioWaveform.tsx",
+      "/components/calling/CallMediaCapture.tsx",
+      "/components/calling/DraggableVideoWindow.tsx",
+      "/components/calling/E2EEVerificationPanel.tsx",
+      "/components/calling/FaceTimeIncomingCall.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/calling/GlobalCallUI.tsx",
+      "/components/calling/GSMStyleVoiceCall.tsx",
+      "/components/calling/IncomingCallScreen.tsx",
+      "/components/calling/meeting/MeetingLogsDrawer.tsx",
+      "/components/calling/MeetingCopilotPanel.tsx",
+      "/components/calling/NetworkDiagnosticsPanel.tsx",
+      "/components/calling/PhoneDialer.tsx",
+      "/components/calling/ProductionVideoCall.tsx",
+      "/components/calling/ProductionVoiceCall.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/chat/CallTimelineItem.tsx",
+      "/components/chat/CommunicationMemoryDialog.tsx",
+      "/components/chat/EnhancedMessageInput.tsx",
+      "/components/chat/MentionInput.tsx",
+      "/components/chat/MessageBubble.tsx",
+      "/components/chat/MessageThread.tsx",
+      "/components/chat/TrueVirtualMessageList.tsx",
+      "/components/chat/UniversalTimelineList.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chat/VirtualMessageList.tsx",
+      "/components/chat/VoiceMessageBubble.tsx",
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/components/chatr/ChatScreen.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/CommandPalette.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/desktop/ProductivityDock.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/famecam/FameCamViewfinder.tsx",
+      "/components/FirebasePhoneAuth.tsx",
+      "/components/games/AIAirRunnerGame.tsx",
+      "/components/games/EnergyPulseGame.tsx",
+      "/components/games/FrequencyClashGame.tsx",
+      "/components/games/MapHuntGame.tsx",
+      "/components/games/MindMazeGame.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/components/identity/ShareableProfileCard.tsx",
+      "/components/inbox/CommandCenterPanel.tsx",
+      "/components/kyc/KYCVerification.tsx",
+      "/components/micro-tasks/TaskCompletionSheet.tsx",
+      "/components/micro-tasks/TaskFeed.tsx",
+      "/components/payment/UPIPaymentModal.tsx",
+      "/components/PINInput.tsx",
+      "/components/profile/SpotifyNowPlaying.tsx",
+      "/components/ProfileEditDialog.tsx",
+      "/components/RingtoneSelector.tsx",
+      "/components/stories/StoryCreator.tsx",
+      "/components/studio/AdvancedDesignEditor.tsx",
+      "/components/studio/DesignEditor.tsx",
+      "/components/studio/FabricCanvas.tsx",
+      "/components/SwipeableMessage.tsx",
+      "/components/voice/VoiceInterface.tsx",
+      "/components/VoiceMessagePlayer.tsx",
+      "/components/VoiceMessageRecorder.tsx",
+      "/components/VoiceRecorder.tsx",
+      "/contexts/CallContext.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/hooks/useAgentMonitoring.tsx",
+      "/hooks/useAICoaching.tsx",
+      "/hooks/useAISearch.ts",
+      "/hooks/useAppleNativeFeatures.tsx",
+      "/hooks/useAppUsageTracking.tsx",
+      "/hooks/useAudioDevices.tsx",
+      "/hooks/useAudioLevel.tsx",
+      "/hooks/useBackgroundAudio.tsx",
+      "/hooks/useBackgroundBlur.tsx",
+      "/hooks/useBackgroundLocation.tsx",
+      "/hooks/useCallCopilot.tsx",
+      "/hooks/useCallHandoff.tsx",
+      "/hooks/useCallKeepAlive.tsx",
+      "/hooks/useCallRecording.tsx",
+      "/hooks/useCallSentiment.tsx",
+      "/hooks/useCallStability.tsx",
+      "/hooks/useCallTranscription.ts",
+      "/hooks/useCallUI.tsx",
+      "/hooks/useDhandhaVoice.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useEnhancedOfflineQueue.tsx",
+      "/hooks/useEnhancedWebRTC.ts",
+      "/hooks/useFeatureEngagementTracking.tsx",
+      "/hooks/useFirebasePhoneAuth.tsx",
+      "/hooks/useFullTextSearch.tsx",
+      "/hooks/useGeofencing.tsx",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useInstantCache.ts",
+      "/hooks/useIntentObserver.ts",
+      "/hooks/useLiveTranscription.tsx",
+      "/hooks/useLiveTranslation.tsx",
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useNativePullToRefresh.tsx",
+      "/hooks/useNativeRingtone.tsx",
+      "/hooks/useNetworkStats.tsx",
+      "/hooks/useNoiseCancellation.tsx",
+      "/hooks/useOfflineQueue.tsx",
+      "/hooks/useOptimisticChat.tsx",
+      "/hooks/useOptimisticMessages.tsx",
+      "/hooks/useOptimizedRealtime.tsx",
+      "/hooks/usePictureInPicture.tsx",
+      "/hooks/usePresence.ts",
+      "/hooks/usePresenceTracking.tsx",
+      "/hooks/useRealtimeMessages.tsx",
+      "/hooks/useRecoveryController.tsx",
+      "/hooks/useRequestBatcher.tsx",
+      "/hooks/useRingbackTone.tsx",
+      "/hooks/useRingtone.tsx",
+      "/hooks/useSocketIO.tsx",
+      "/hooks/useSocketTyping.tsx",
+      "/hooks/useSuggestedQuestions.ts",
+      "/hooks/useUISpeedBudget.tsx",
+      "/hooks/useUltraLowBandwidth.tsx",
+      "/hooks/useVideoBranding.tsx",
+      "/hooks/useVideoZoom.ts",
+      "/hooks/useVirtualBackground.tsx",
+      "/hooks/useVirtualizedMessages.tsx",
+      "/hooks/useVoicemail.tsx",
+      "/hooks/useWebRTCSignaling.ts",
+      "/pages/AIAgentChat.tsx",
+      "/pages/AIAgentChatNew.tsx",
+      "/pages/AIAssistant.tsx",
+      "/pages/AIBrowser.tsx",
+      "/pages/AIBrowserHome.tsx",
+      "/pages/AIChat.tsx",
+      "/pages/Automations.tsx",
+      "/pages/CallBenchmarkDashboard.tsx",
+      "/pages/Capture.tsx",
+      "/pages/care/MedicinePrescriptions.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatrWorld.tsx",
+      "/pages/desktop/AgentWorkspace.tsx",
+      "/pages/desktop/chat/components/MessageViewport.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/chat/hooks/useConversation.ts",
+      "/pages/desktop/chat/hooks/useCopilot.ts",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopIntelligence.tsx",
+      "/pages/desktop/WorkflowStudio.tsx",
+      "/pages/FameCam.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/UniversalSearch.tsx",
+      "/pages/YouthEngagement.tsx",
+      "/platform/Domain/Collaboration/CommentThread.tsx"
+    ],
+    "useCallback": [
+      "/components/ai-agents/VoiceConversation.tsx",
+      "/components/BottomNav.tsx",
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/components/calling/GlobalCallUI.tsx",
+      "/components/calling/GroupVideoCall.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/chat/ContactsDrawer.tsx",
+      "/components/chat/MentionInput.tsx",
+      "/components/chat/MessageBubble.tsx",
+      "/components/chat/MessageSearchSheet.tsx",
+      "/components/chat/TrueVirtualMessageList.tsx",
+      "/components/chat/UniversalTimelineList.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chat/VirtualMessageList.tsx",
+      "/components/desktop/CommandPalette.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/desktop/TinyAIIndicator.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/chatr-calls/screens/RecentsScreen.tsx",
+      "/components/dialer/StandaloneKeypad.tsx",
+      "/components/games/AIAirRunnerGame.tsx",
+      "/components/games/AICarRacingGame.tsx",
+      "/components/games/AIMotorcycleRacingGame.tsx",
+      "/components/games/EnergyPulseGame.tsx",
+      "/components/games/MirrorMatchGame.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/components/home/IntelligentHomeFeed.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/ProfileEditDialog.tsx",
+      "/components/stories/StoriesCarousel.tsx",
+      "/components/studio/AdvancedDesignEditor.tsx",
+      "/components/studio/FabricCanvas.tsx",
+      "/components/ui/carousel.tsx",
+      "/components/ui/sidebar.tsx",
+      "/contexts/LocationContext.tsx",
+      "/contexts/SocketContext.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/core/os/useKernelCommand.ts",
+      "/hooks/native/useBackgroundTask.tsx",
+      "/hooks/native/useBarcodeScanner.tsx",
+      "/hooks/native/useFileOpener.tsx",
+      "/hooks/native/useFirebaseAnalytics.tsx",
+      "/hooks/native/useFirebaseCrashlytics.tsx",
+      "/hooks/native/useNativeBiometric.tsx",
+      "/hooks/native/useSecureStorageNative.tsx",
+      "/hooks/native/useSpeechRecognition.tsx",
+      "/hooks/native/useVideoPlayer.tsx",
+      "/hooks/useActivityTracking.tsx",
+      "/hooks/useAdvancedCache.tsx",
+      "/hooks/useAgentMonitoring.tsx",
+      "/hooks/useAggressiveCache.tsx",
+      "/hooks/useAIChatAssistant.tsx",
+      "/hooks/useAICoaching.tsx",
+      "/hooks/useAIPhotoEnhancement.tsx",
+      "/hooks/useAISearch.ts",
+      "/hooks/useAISmartReplies.tsx",
+      "/hooks/useAIStickers.tsx",
+      "/hooks/useAnonymousSearchLimit.tsx",
+      "/hooks/useAppleNativeFeatures.tsx",
+      "/hooks/useAudioDevices.tsx",
+      "/hooks/useAutoAttendant.tsx",
+      "/hooks/useBackgroundAudio.tsx",
+      "/hooks/useBackgroundBlur.tsx",
+      "/hooks/useBackgroundLocation.tsx",
+      "/hooks/useBandwidthEstimation.tsx",
+      "/hooks/useBiometricAuth.tsx",
+      "/hooks/useBluetoothMesh.tsx",
+      "/hooks/useCallAnalytics.tsx",
+      "/hooks/useCallBlocking.tsx",
+      "/hooks/useCallCopilot.tsx",
+      "/hooks/useCallForwarding.tsx",
+      "/hooks/useCallHandoff.tsx",
+      "/hooks/useCallHaptics.tsx",
+      "/hooks/useCallPark.tsx",
+      "/hooks/useCallPull.tsx",
+      "/hooks/useCallQuality.tsx",
+      "/hooks/useCallQueue.tsx",
+      "/hooks/useCallRecording.tsx",
+      "/hooks/useCallSentiment.tsx",
+      "/hooks/useCallStability.tsx",
+      "/hooks/useCallSummary.tsx",
+      "/hooks/useCallTransfer.tsx",
+      "/hooks/useCallUI.tsx",
+      "/hooks/useChatConversations.tsx",
+      "/hooks/useChatrBrain.ts",
+      "/hooks/useChatrUltra.ts",
+      "/hooks/useCloudBackup.tsx",
+      "/hooks/useContactSync.tsx",
+      "/hooks/useConversationCache.tsx",
+      "/hooks/useDataUsageTracking.tsx",
+      "/hooks/useDhandhaVoice.tsx",
+      "/hooks/useDocumentPreview.tsx",
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useEmergencyCall.ts",
+      "/hooks/useEncryptedMessaging.ts",
+      "/hooks/useEnhancedOfflineQueue.tsx",
+      "/hooks/useEnhancedWebRTC.ts",
+      "/hooks/useFirebasePhoneAuth.tsx",
+      "/hooks/useFullTextSearch.tsx",
+      "/hooks/useGeminiLive.ts",
+      "/hooks/useGeofencing.tsx",
+      "/hooks/useGeoLocation.tsx",
+      "/hooks/useGestureDetection.tsx",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useGroupChat.tsx",
+      "/hooks/useIdentity.ts",
+      "/hooks/useInstantCache.ts",
+      "/hooks/useInstantData.ts",
+      "/hooks/useIntentObserver.ts",
+      "/hooks/useLinkPreview.tsx",
+      "/hooks/useLiveTranscription.tsx",
+      "/hooks/useLiveTranslation.tsx",
+      "/hooks/useLocalAI.ts",
+      "/hooks/useMessageBackup.tsx",
+      "/hooks/useMessageFormatting.tsx",
+      "/hooks/useMessageQueue.tsx",
+      "/hooks/useMessageRetry.tsx",
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useMessageTranslation.tsx",
+      "/hooks/useMicroTasks.ts",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/useMultiDeviceSync.tsx",
+      "/hooks/useMutualFriends.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useNoiseCancellation.tsx",
+      "/hooks/useOfflineQueue.tsx",
+      "/hooks/useOfflineUploadQueue.tsx",
+      "/hooks/useOnDeviceAI.tsx",
+      "/hooks/useOptimisticChat.tsx",
+      "/hooks/useOptimisticMessages.tsx",
+      "/hooks/useOptimizedRealtime.tsx",
+      "/hooks/usePhotoAlbums.tsx",
+      "/hooks/usePictureInPicture.tsx",
+      "/hooks/usePresence.ts",
+      "/hooks/usePresenceTracking.tsx",
+      "/hooks/useProfileMusic.tsx",
+      "/hooks/usePSTNCall.ts",
+      "/hooks/useQuickReplyTemplates.tsx",
+      "/hooks/useRealtimeMessages.tsx",
+      "/hooks/useRecoveryController.tsx",
+      "/hooks/useRequestBatcher.tsx",
+      "/hooks/useRingbackTone.tsx",
+      "/hooks/useSecureAuthStorage.tsx",
+      "/hooks/useSignalProtocol.ts",
+      "/hooks/useSmartNotifications.tsx",
+      "/hooks/useSmartReplies.tsx",
+      "/hooks/useSMSFallback.ts",
+      "/hooks/useSocketIO.tsx",
+      "/hooks/useSocketPresence.tsx",
+      "/hooks/useSocketTyping.tsx",
+      "/hooks/useSpeedDial.tsx",
+      "/hooks/useSpotifyStatus.tsx",
+      "/hooks/useTrustScore.ts",
+      "/hooks/useUltraLowBandwidth.tsx",
+      "/hooks/useUniversalTimeline.tsx",
+      "/hooks/useVendorNotifications.tsx",
+      "/hooks/useVerifiedBadge.tsx",
+      "/hooks/useVideoBranding.tsx",
+      "/hooks/useVideoZoom.ts",
+      "/hooks/useVirtualBackground.tsx",
+      "/hooks/useVirtualizedMessages.tsx",
+      "/hooks/useVisualIntelligence.tsx",
+      "/hooks/useVoicemail.tsx",
+      "/hooks/useVoiceTranscription.tsx",
+      "/hooks/useWakeLock.tsx",
+      "/hooks/useWebRTCSignaling.ts",
+      "/layouts/DesktopLayout.tsx",
+      "/pages/admin/JobHealth.tsx",
+      "/pages/AIAgentChatNew.tsx",
+      "/pages/CallBenchmarkDashboard.tsx",
+      "/pages/ChatrWallet.tsx",
+      "/pages/ChatrWeb.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/chat/hooks/useConversation.ts",
+      "/pages/desktop/chat/hooks/useCopilot.ts",
+      "/pages/desktop/DesktopCalendar.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopConnectPairing.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/desktop/DesktopNotifications.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/pages/Discover.tsx",
+      "/pages/Home.tsx",
+      "/pages/Index.tsx",
+      "/pages/McpDeveloperDashboard.tsx",
+      "/pages/More.tsx",
+      "/pages/NotificationHealth.tsx",
+      "/pages/Stories.tsx",
+      "/pages/UnifiedTimeline.tsx",
+      "/pages/UniversalSearch.tsx",
+      "/platform/Domain/Collaboration/CommentThread.tsx"
+    ],
+    "useAIChatFeatures": [
+      "/components/AIChatToolbar.tsx",
+      "/hooks/useAIChatFeatures.tsx"
+    ],
+    "useFirebaseAnalytics": [
+      "/components/AnalyticsProvider.tsx",
+      "/components/BiometricLogin.tsx",
+      "/hooks/native/index.ts",
+      "/hooks/native/useFirebaseAnalytics.tsx"
+    ],
+    "useFirebaseCrashlytics": [
+      "/components/AnalyticsProvider.tsx",
+      "/hooks/native/index.ts",
+      "/hooks/native/useFirebaseCrashlytics.tsx"
+    ],
+    "useNativeBiometric": [
+      "/components/BiometricLogin.tsx",
+      "/hooks/native/index.ts",
+      "/hooks/native/useNativeBiometric.tsx"
+    ],
+    "useNativeHaptics": [
+      "/components/BottomNav.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chat/MessageContextMenu.tsx",
+      "/components/chat/WhatsAppContextMenu.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/StandaloneCallsNav.tsx",
+      "/components/dialer/StandaloneKeypad.tsx",
+      "/components/NativeAppProvider.tsx",
+      "/components/NativeButton.tsx",
+      "/components/stories/StoryViewer.tsx",
+      "/components/ui/AppleButton.tsx",
+      "/components/ui/AppleGroupedList.tsx",
+      "/components/ui/AppleHeader.tsx",
+      "/components/ui/AppleSegmentedControl.tsx",
+      "/components/ui/AppleSheet.tsx",
+      "/components/ui/AppleToggle.tsx",
+      "/hooks/useNativeHaptics.tsx",
+      "/hooks/useNativePullToRefresh.tsx",
+      "/pages/Account.tsx",
+      "/pages/CallHistory.tsx",
+      "/pages/Calls.tsx",
+      "/pages/Contacts.tsx",
+      "/pages/DigestNotificationSettings.tsx",
+      "/pages/Home.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/NotificationTemplates.tsx",
+      "/pages/Profile.tsx",
+      "/pages/Settings.tsx",
+      "/pages/StandaloneDialer.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/Stories.tsx"
+    ],
+    "useInstantCache": [
+      "/components/BottomNav.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/components/dialer/StandaloneRecents.tsx",
+      "/components/home/ActivityWidgets.tsx",
+      "/components/home/PersonalizedGreeting.tsx",
+      "/components/home/RecentActivity.tsx",
+      "/components/stories/StoriesCarousel.tsx",
+      "/hooks/useInstantCache.ts",
+      "/pages/Home.tsx",
+      "/pages/More.tsx",
+      "/pages/UnifiedTimeline.tsx",
+      "/utils/logout.ts"
+    ],
+    "useEnter": [
+      "/components/BottomNav.tsx",
+      "/components/calling/meeting/ParticipantsPanel.tsx",
+      "/components/desktop/CommandPalette.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/games/AIWordFinderGame.tsx",
+      "/pages/AIBrowserHome.tsx",
+      "/pages/desktop/WorkflowStudio.tsx"
+    ],
+    "useMemo": [
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/chat/ContactsDrawer.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/chatr-calls/screens/RecentsScreen.tsx",
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/components/home/PersonalizedSection.tsx",
+      "/components/NativeAppProvider.tsx",
+      "/components/ShareInviteSheet.tsx",
+      "/components/SmartImage.tsx",
+      "/components/ui/chart.tsx",
+      "/components/ui/sidebar.tsx",
+      "/hooks/useConversationCache.tsx",
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useMessageFormatting.tsx",
+      "/hooks/useOptimisticChat.tsx",
+      "/hooks/useSubdomain.ts",
+      "/pages/admin/JobHealth.tsx",
+      "/pages/AIBrowserHome.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatrWallet.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/Home.tsx",
+      "/pages/More.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/NotificationTemplates.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/Stories.tsx"
+    ],
+    "useNodesState": [
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/pages/desktop/WorkflowStudio.tsx"
+    ],
+    "useEdgesState": [
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/pages/desktop/WorkflowStudio.tsx"
+    ],
+    "useCallTransfer": [
+      "/components/calling/CallMoreMenu.tsx",
+      "/hooks/useCallTransfer.tsx"
+    ],
+    "useCallPark": [
+      "/components/calling/CallMoreMenu.tsx",
+      "/hooks/useCallPark.tsx"
+    ],
+    "useCallRecording": [
+      "/components/calling/CallMoreMenu.tsx",
+      "/components/calls/CallRecordingControls.tsx",
+      "/hooks/useCallRecording.tsx",
+      "/pages/desktop/DesktopCalls.tsx"
+    ],
+    "useNoiseCancellation": [
+      "/components/calling/CallMoreMenu.tsx",
+      "/components/calls/AudioSettingsPanel.tsx",
+      "/hooks/useNoiseCancellation.tsx"
+    ],
+    "useCallHandoff": [
+      "/components/calling/CallMoreMenu.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/hooks/useCallHandoff.tsx"
+    ],
+    "useMotionValue": [
+      "/components/calling/DraggableVideoWindow.tsx",
+      "/components/calling/IncomingCallScreen.tsx"
+    ],
+    "useTransform": [
+      "/components/calling/DraggableVideoWindow.tsx",
+      "/components/calling/IncomingCallScreen.tsx"
+    ],
+    "useNativeRingtone": [
+      "/components/calling/FaceTimeIncomingCall.tsx",
+      "/components/calling/IncomingCallScreen.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/hooks/useNativeRingtone.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/utils/callProgressTones.ts"
+    ],
+    "useCall": [
+      "/components/calling/GlobalCallUI.tsx",
+      "/components/chat/CallTimelineItem.tsx",
+      "/components/dialer/StandaloneKeypad.tsx",
+      "/contexts/CallContext.tsx",
+      "/hooks/useInitiateCall.tsx",
+      "/pages/Chat.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopContacts.tsx"
+    ],
+    "useGroupCall": [
+      "/components/calling/GroupVideoCall.tsx",
+      "/components/calling/GroupVoiceCall.tsx",
+      "/hooks/useGroupCall.tsx"
+    ],
+    "useAudioLevel": [
+      "/components/calling/GroupVideoCall.tsx",
+      "/components/calling/GroupVoiceCall.tsx",
+      "/hooks/useAudioLevel.tsx"
+    ],
+    "useCallKeepAlive": [
+      "/components/calling/GSMStyleVoiceCall.tsx",
+      "/components/calling/ProductionVideoCall.tsx",
+      "/components/calling/ProductionVoiceCall.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/hooks/useCallKeepAlive.tsx"
+    ],
+    "useAnimation": [
+      "/components/calling/IncomingCallScreen.tsx"
+    ],
+    "useCallContext": [
+      "/components/calling/meeting/MeetingPolls.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/contexts/CallContext.tsx",
+      "/layouts/DesktopLayout.tsx",
+      "/pages/Calls.tsx",
+      "/pages/desktop/DesktopCalls.tsx"
+    ],
+    "useLeave": [
+      "/components/calling/meeting/ParticipantsPanel.tsx",
+      "/components/chat/MessageContextMenu.tsx",
+      "/components/chat/WhatsAppContextMenu.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/games/AIWordFinderGame.tsx",
+      "/pages/AIBrowserHome.tsx",
+      "/pages/desktop/WorkflowStudio.tsx"
+    ],
+    "useCHATROS": [
+      "/components/calling/MeetingCopilotPanel.tsx",
+      "/components/canvas/KnowledgeBrainPanel.tsx",
+      "/components/ChatrAIFab.tsx",
+      "/components/contacts/RelationshipPanel.tsx",
+      "/components/desktop/IntelligencePanel.tsx",
+      "/components/desktop/TinyAIIndicator.tsx",
+      "/components/inbox/CommandCenterPanel.tsx",
+      "/components/workspace/WorkspaceOSPanel.tsx",
+      "/core/os/GlobalIntentProvider.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopIntelligence.tsx"
+    ],
+    "useDown": [
+      "/components/calling/PhoneDialer.tsx",
+      "/components/chat/MessageContextMenu.tsx",
+      "/components/chat/WhatsAppContextMenu.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/games/AIWordFinderGame.tsx",
+      "/pages/Home.tsx"
+    ],
+    "useUp": [
+      "/components/calling/PhoneDialer.tsx",
+      "/components/chat/MessageContextMenu.tsx",
+      "/components/chat/WhatsAppContextMenu.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/games/AIWordFinderGame.tsx"
+    ],
+    "useCallUI": [
+      "/components/calling/ProductionVideoCall.tsx",
+      "/hooks/useCallUI.tsx"
+    ],
+    "useVideoZoom": [
+      "/components/calling/ProductionVideoCall.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/hooks/useVideoZoom.ts"
+    ],
+    "useCallTranscription": [
+      "/components/calling/SessionWorkspace.tsx",
+      "/hooks/useCallTranscription.ts"
+    ],
+    "useSuggestedQuestions": [
+      "/components/calling/SessionWorkspace.tsx",
+      "/hooks/useSuggestedQuestions.ts"
+    ],
+    "useCallSummary": [
+      "/components/calling/SessionWorkspace.tsx",
+      "/hooks/useCallSummary.ts",
+      "/hooks/useCallSummary.tsx",
+      "/pages/desktop/DesktopCalls.tsx"
+    ],
+    "useAppearanceStore": [
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/desktop/AppearanceSettings.tsx",
+      "/components/desktop/ProductivityDock.tsx",
+      "/hooks/useAppearanceStore.ts",
+      "/layouts/DesktopLayout.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopAccount.tsx",
+      "/pages/desktop/DesktopAppearance.tsx",
+      "/pages/desktop/DesktopCalendar.tsx",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopIntelligence.tsx",
+      "/pages/desktop/DesktopPrivacy.tsx",
+      "/pages/desktop/DesktopProfile.tsx",
+      "/pages/desktop/DesktopSettings.tsx",
+      "/pages/desktop/DesktopWallpaper.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/pages/desktop/ProUpgrade.tsx",
+      "/platform/Domain/Collaboration/DocumentLockBadge.tsx"
+    ],
+    "useUltraLowBandwidth": [
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/hooks/useUltraLowBandwidth.tsx"
+    ],
+    "useBandwidthEstimation": [
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/hooks/useBandwidthEstimation.tsx",
+      "/pages/Account.tsx"
+    ],
+    "useAudioInterceptor": [
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/hooks/useAudioInterceptor.ts"
+    ],
+    "useAudioDevices": [
+      "/components/calls/AudioSettingsPanel.tsx",
+      "/hooks/useAudioDevices.tsx"
+    ],
+    "useVirtualBackground": [
+      "/components/calls/VirtualBackgroundPicker.tsx",
+      "/hooks/useVirtualBackground.tsx"
+    ],
+    "useVoicemail": [
+      "/components/calls/VoicemailList.tsx",
+      "/hooks/useVoicemail.tsx"
+    ],
+    "useParams": [
+      "/components/care/CarePathDetail.tsx",
+      "/components/chat/MediaViewer.tsx",
+      "/pages/AIAgentChat.tsx",
+      "/pages/AIAgentChatNew.tsx",
+      "/pages/BookingTracking.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/Channel.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx",
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/desktop/AgentWorkspace.tsx",
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/OrderTracking.tsx",
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/JobDetail.tsx",
+      "/pages/ProviderDetails.tsx",
+      "/pages/PublicProfile.tsx",
+      "/pages/ServiceListing.tsx",
+      "/pages/StandaloneMessenger.tsx",
+      "/pages/store/AppDetail.tsx",
+      "/pages/WellnessCircles.tsx"
+    ],
+    "useAIStickers": [
+      "/components/chat/AIStickerPicker.tsx",
+      "/hooks/useAIStickers.tsx"
+    ],
+    "useMessageBackup": [
+      "/components/chat/BackupRestoreSheet.tsx",
+      "/hooks/useMessageBackup.tsx"
+    ],
+    "useGesture": [
+      "/components/chat/CallTimelineItem.tsx",
+      "/components/SwipeableMessage.tsx"
+    ],
+    "useAIChatAssistant": [
+      "/components/chat/ContactInfoScreen.tsx",
+      "/hooks/useAIChatAssistant.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useEvent": [
+      "/components/chat/ConversationList.tsx",
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/desktop/ProductivityDock.tsx",
+      "/components/NativeButton.tsx",
+      "/components/ui/AppleButton.tsx",
+      "/components/ui/AppleCard.tsx",
+      "/components/ui/PremiumButton.tsx",
+      "/pages/CallHistory.tsx"
+    ],
+    "useDisappearingMessages": [
+      "/components/chat/DisappearingMessagesSheet.tsx",
+      "/hooks/useDisappearingMessages.tsx"
+    ],
+    "useDocumentPreview": [
+      "/components/chat/DocumentPreviewModal.tsx",
+      "/hooks/useDocumentPreview.tsx"
+    ],
+    "useMessageFormatting": [
+      "/components/chat/FormattingToolbar.tsx",
+      "/hooks/useMessageFormatting.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useMultiDeviceSync": [
+      "/components/chat/LinkedDevicesSheet.tsx",
+      "/hooks/useMultiDeviceSync.tsx"
+    ],
+    "useMentions": [
+      "/components/chat/MentionInput.tsx"
+    ],
+    "useFullTextSearch": [
+      "/components/chat/MessageSearchSheet.tsx",
+      "/hooks/useFullTextSearch.tsx"
+    ],
+    "useMessageTranslation": [
+      "/components/chat/MessageTranslateButton.tsx",
+      "/hooks/useMessageTranslation.tsx"
+    ],
+    "useQuickReplyTemplates": [
+      "/components/chat/QuickReplyPanel.tsx",
+      "/hooks/useQuickReplyTemplates.tsx"
+    ],
+    "useTemplate": [
+      "/components/chat/QuickReplyPanel.tsx",
+      "/hooks/useQuickReplyTemplates.tsx"
+    ],
+    "useSmartReplies": [
+      "/components/chat/SmartReplySuggestions.tsx",
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/hooks/useOnDeviceAI.tsx",
+      "/hooks/useSmartReplies.tsx"
+    ],
+    "useUniversalTimeline": [
+      "/components/chat/UniversalTimelineList.tsx",
+      "/hooks/useUniversalTimeline.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useConversationCache": [
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/hooks/useConversationCache.tsx"
+    ],
+    "useChatContext": [
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chatr/ChatScreen.tsx",
+      "/contexts/ChatContext.tsx",
+      "/hooks/useRealtimeNotifications.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useLayoutEffect": [
+      "/components/chat/VirtualMessageList.tsx"
+    ],
+    "useVisualIntelligence": [
+      "/components/chat/VisualIntelligenceScanner.tsx",
+      "/hooks/useVisualIntelligence.tsx"
+    ],
+    "useVoiceTranscription": [
+      "/components/chat/VoiceTranscript.tsx",
+      "/hooks/useVoiceTranscription.tsx"
+    ],
+    "useInputValidation": [
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/hooks/useInputValidation.tsx"
+    ],
+    "useMessageQueue": [
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/components/ProductionMonitor.tsx",
+      "/hooks/useMessageQueue.tsx"
+    ],
+    "useAISmartReplies": [
+      "/components/chat/WhatsAppStyleInput.tsx",
+      "/hooks/useAISmartReplies.tsx"
+    ],
+    "useReliableMessages": [
+      "/components/chatr/ChatScreen.tsx",
+      "/hooks/useReliableMessages.tsx"
+    ],
+    "useChatConversations": [
+      "/components/chatr/ChatsList.tsx",
+      "/hooks/useChatConversations.tsx"
+    ],
+    "useChatrLocation": [
+      "/components/chatr/LocalServices.tsx",
+      "/hooks/useChatrLocation.ts",
+      "/pages/ChatrResults.tsx",
+      "/pages/FoodOrdering.tsx",
+      "/pages/HomeServices.tsx",
+      "/pages/LocalDeals.tsx"
+    ],
+    "useKernelState": [
+      "/components/contacts/RelationshipPanel.tsx",
+      "/components/desktop/DailyTimeline.tsx",
+      "/core/os/useKernelState.ts"
+    ],
+    "useService": [
+      "/components/desktop/AdaptiveHome.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/desktop/DesktopNotifications.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/pages/desktop/WorkflowStudio.tsx",
+      "/platform/Infrastructure/PlatformContext.tsx"
+    ],
+    "usePlatformReady": [
+      "/components/desktop/AdaptiveHome.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopNotifications.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/platform/Infrastructure/PlatformContext.tsx"
+    ],
+    "useLocalAI": [
+      "/components/desktop/AIStatusBadge.tsx",
+      "/hooks/useLocalAI.ts",
+      "/pages/UniversalSearch.tsx"
+    ],
+    "useOptionalService": [
+      "/components/desktop/CommandPalette.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/platform/Infrastructure/PlatformContext.tsx"
+    ],
+    "useKnowledgeGraph": [
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/hooks/useKnowledgeGraph.ts"
+    ],
+    "useMove": [
+      "/components/desktop/InfiniteCanvas.tsx",
+      "/components/games/AIMotorcycleRacingGame.tsx"
+    ],
+    "useTheme": [
+      "/components/desktop/TinyAIIndicator.tsx",
+      "/components/settings/AppearanceSettings.tsx",
+      "/components/ui/sonner.tsx",
+      "/contexts/ThemeCustomizationContext.tsx",
+      "/layouts/DesktopLayout.tsx"
+    ],
+    "useWorkspaceTasks": [
+      "/components/desktop/workspace/StartMyDayModal.tsx",
+      "/components/desktop/workspace/WorkspaceToday.tsx",
+      "/hooks/useWorkspaceTasks.ts"
+    ],
+    "useDhandhaVoice": [
+      "/components/dhandha/VoiceBillingCard.tsx",
+      "/hooks/useDhandhaVoice.tsx"
+    ],
+    "useDialerData": [
+      "/components/dialer/chatr-calls/screens/RecentsScreen.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/hooks/useDialerData.ts"
+    ],
+    "useNetworkQuality": [
+      "/components/dialer/NetworkConfidencePill.tsx",
+      "/components/LazyImage.tsx",
+      "/components/LoadingSkeleton.tsx",
+      "/components/NetworkQualityIndicator.tsx",
+      "/hooks/useDataSaverMode.tsx",
+      "/hooks/useLiteMode.tsx",
+      "/hooks/useNetworkQuality.tsx",
+      "/hooks/useOptimizedRealtime.tsx",
+      "/pages/Account.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "usePointerClick": [
+      "/components/earn/EarnExplainer.tsx",
+      "/pages/admin/BrandPartnerships.tsx"
+    ],
+    "useFeatureEngagementTracking": [
+      "/components/FeatureEngagementTracker.tsx",
+      "/hooks/useFeatureEngagementTracking.tsx"
+    ],
+    "useFirebasePhoneAuth": [
+      "/components/FirebasePhoneAuth.tsx",
+      "/hooks/useFirebasePhoneAuth.tsx"
+    ],
+    "useHint": [
+      "/components/games/MapHuntGame.tsx"
+    ],
+    "useGeoLocation": [
+      "/components/geo/GeoSearchBar.tsx",
+      "/hooks/useGeoLocation.tsx"
+    ],
+    "useCallActiveState": [
+      "/components/GlobalNotificationListener.tsx",
+      "/hooks/useChatConversations.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/usePresenceTracking.tsx"
+    ],
+    "useModuleNotifications": [
+      "/components/GlobalNotificationListener.tsx",
+      "/components/notifications/GlobalModuleNotificationListener.tsx",
+      "/hooks/useChatConversations.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/usePresenceTracking.tsx"
+    ],
+    "useForm": [
+      "/components/jobs/JobPostingForm.tsx"
+    ],
+    "useBackgroundLocation": [
+      "/components/LiveLocationSharing.tsx",
+      "/hooks/useBackgroundLocation.tsx"
+    ],
+    "useLocationStatus": [
+      "/components/LocationFilter.tsx",
+      "/hooks/useLocationStatus.tsx"
+    ],
+    "useGPS": [
+      "/components/LocationFilter.tsx"
+    ],
+    "useAIPhotoEnhancement": [
+      "/components/media/AIPhotoEnhancer.tsx",
+      "/hooks/useAIPhotoEnhancement.tsx"
+    ],
+    "useMicroTasks": [
+      "/components/micro-tasks/EarningsCard.tsx",
+      "/components/micro-tasks/TaskCard.tsx",
+      "/components/micro-tasks/TaskCompletionSheet.tsx",
+      "/components/micro-tasks/TaskFeed.tsx",
+      "/hooks/useMicroTasks.ts"
+    ],
+    "useMiniAppSDK": [
+      "/components/MiniAppSDK.tsx"
+    ],
+    "useNativeAppInitialization": [
+      "/components/NativeAppProvider.tsx",
+      "/hooks/useNativeAppInitialization.tsx"
+    ],
+    "useNativeAuthSync": [
+      "/components/NativeAppProvider.tsx",
+      "/hooks/useNativeAuthSync.ts"
+    ],
+    "useNativeCallBridge": [
+      "/components/NativeAppProvider.tsx",
+      "/hooks/useNativeCallBridge.tsx"
+    ],
+    "useAppleNativeFeatures": [
+      "/components/NativeAppProvider.tsx",
+      "/hooks/useAppleNativeFeatures.tsx"
+    ],
+    "useNativeNavigate": [
+      "/components/NativeAppProvider.tsx",
+      "/hooks/useNativeNavigate.ts",
+      "/pages/CallHistory.tsx",
+      "/utils/deepLinkHandler.ts"
+    ],
+    "useNativeApp": [
+      "/components/NativeAppProvider.tsx"
+    ],
+    "useAutoContactSync": [
+      "/components/NativeBackgroundServices.tsx",
+      "/hooks/useAutoContactSync.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useBatteryOptimization": [
+      "/components/NativeBackgroundServices.tsx",
+      "/hooks/useBatteryOptimization.tsx"
+    ],
+    "useGeofencing": [
+      "/components/NativeBackgroundServices.tsx",
+      "/hooks/useGeofencing.tsx",
+      "/pages/Geofences.tsx"
+    ],
+    "useOfflineUploadQueue": [
+      "/components/NativeBackgroundServices.tsx",
+      "/hooks/useOfflineUploadQueue.tsx"
+    ],
+    "usePushNotifications": [
+      "/components/NativeBackgroundServices.tsx",
+      "/hooks/usePushNotifications.tsx"
+    ],
+    "useVendorNotifications": [
+      "/components/notifications/GlobalModuleNotificationListener.tsx",
+      "/hooks/useVendorNotifications.tsx"
+    ],
+    "useBluetoothMesh": [
+      "/components/OfflineChat.tsx",
+      "/hooks/useBluetoothMesh.tsx"
+    ],
+    "useMutualFriends": [
+      "/components/profile/MutualFriendsDisplay.tsx",
+      "/hooks/useMutualFriends.tsx"
+    ],
+    "usePhotoAlbums": [
+      "/components/profile/PhotoAlbumsGrid.tsx",
+      "/hooks/usePhotoAlbums.tsx"
+    ],
+    "useProfileMusic": [
+      "/components/profile/ProfileMusicCard.tsx",
+      "/hooks/useProfileMusic.tsx"
+    ],
+    "useSpotifyStatus": [
+      "/components/profile/SpotifyNowPlaying.tsx",
+      "/hooks/useSpotifyStatus.tsx"
+    ],
+    "usePointer": [
+      "/components/ReferralStats.tsx"
+    ],
+    "useSocketContext": [
+      "/components/SocketStatusIndicator.tsx",
+      "/contexts/SocketContext.tsx",
+      "/hooks/useSocketIO.tsx"
+    ],
+    "useStealthMode": [
+      "/components/stealth-mode/StealthModeSettings.tsx",
+      "/hooks/useStealthMode.ts",
+      "/pages/Index.tsx"
+    ],
+    "useEmblaCarousel": [
+      "/components/ui/carousel.tsx"
+    ],
+    "useCarousel": [
+      "/components/ui/carousel.tsx"
+    ],
+    "useChart": [
+      "/components/ui/chart.tsx"
+    ],
+    "useId": [
+      "/components/ui/chart.tsx",
+      "/components/ui/form.tsx"
+    ],
+    "useFormContext": [
+      "/components/ui/form.tsx"
+    ],
+    "useFormField": [
+      "/components/ui/form.tsx"
+    ],
+    "useIsMobile": [
+      "/components/ui/sidebar.tsx",
+      "/hooks/use-mobile.tsx"
+    ],
+    "useSocketPresence": [
+      "/contexts/ChatContext.tsx",
+      "/hooks/useSocketPresence.tsx"
+    ],
+    "useThemeCustomization": [
+      "/contexts/ThemeCustomizationContext.tsx",
+      "/pages/AppearanceSettings.tsx"
+    ],
+    "useKernelCommand": [
+      "/core/os/useKernelCommand.ts"
+    ],
+    "useDefault": [
+      "/core/services/CalendarService.ts"
+    ],
+    "useSecureStorageNative": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useSecureStorageNative.tsx",
+      "/hooks/useSecureAuthStorage.tsx"
+    ],
+    "useBarcodeScanner": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useBarcodeScanner.tsx"
+    ],
+    "useFileOpener": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useFileOpener.tsx"
+    ],
+    "useSpeechRecognition": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useSpeechRecognition.tsx",
+      "/pages/AIAssistant.tsx"
+    ],
+    "useBackgroundTask": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useBackgroundTask.tsx"
+    ],
+    "useVideoPlayer": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useVideoPlayer.tsx"
+    ],
+    "useChatrUltra": [
+      "/hooks/native/index.ts",
+      "/hooks/native/useChatrUltra.ts",
+      "/hooks/useChatrUltra.ts"
+    ],
+    "useActivityTracking": [
+      "/hooks/useActivityTracking.tsx"
+    ],
+    "useAdvancedCache": [
+      "/hooks/useAdvancedCache.tsx"
+    ],
+    "useAgentMonitoring": [
+      "/hooks/useAgentMonitoring.tsx"
+    ],
+    "useAggressiveCache": [
+      "/hooks/useAggressiveCache.tsx",
+      "/hooks/usePrefetch.tsx"
+    ],
+    "useAICoaching": [
+      "/hooks/useAICoaching.tsx"
+    ],
+    "useAISearch": [
+      "/hooks/useAISearch.ts",
+      "/pages/AISearchPage.tsx"
+    ],
+    "useAndroidBackButton": [
+      "/hooks/useAndroidBackButton.tsx"
+    ],
+    "useAnonymousSearchLimit": [
+      "/hooks/useAnonymousSearchLimit.tsx"
+    ],
+    "useAppUsageTracking": [
+      "/hooks/useAppUsageTracking.tsx"
+    ],
+    "useAutoAttendant": [
+      "/hooks/useAutoAttendant.tsx"
+    ],
+    "useBackgroundAudio": [
+      "/hooks/useBackgroundAudio.tsx"
+    ],
+    "useBackgroundBlur": [
+      "/hooks/useBackgroundBlur.tsx"
+    ],
+    "useBiometricAuth": [
+      "/hooks/useBiometricAuth.tsx"
+    ],
+    "useBlockedContacts": [
+      "/hooks/useBlockedContacts.tsx"
+    ],
+    "useBusinessCampaigns": [
+      "/hooks/useBusinessCampaigns.ts"
+    ],
+    "useBusinessPhone": [
+      "/hooks/useBusinessPhone.ts",
+      "/pages/business/PhoneSystem.tsx"
+    ],
+    "useBusinessWorkflows": [
+      "/hooks/useBusinessWorkflows.ts",
+      "/pages/business/Automations.tsx",
+      "/pages/desktop/WorkflowStudio.tsx"
+    ],
+    "useCallAnalytics": [
+      "/hooks/useCallAnalytics.tsx"
+    ],
+    "useCallBlocking": [
+      "/hooks/useCallBlocking.tsx"
+    ],
+    "useCallCopilot": [
+      "/hooks/useCallCopilot.tsx"
+    ],
+    "useCallForwarding": [
+      "/hooks/useCallForwarding.tsx"
+    ],
+    "useCallHaptics": [
+      "/hooks/useCallHaptics.tsx"
+    ],
+    "useCallPull": [
+      "/hooks/useCallPull.tsx"
+    ],
+    "useCallQuality": [
+      "/hooks/useCallQuality.tsx"
+    ],
+    "useCallQueue": [
+      "/hooks/useCallQueue.tsx"
+    ],
+    "useCallSentiment": [
+      "/hooks/useCallSentiment.tsx"
+    ],
+    "useCallStability": [
+      "/hooks/useCallStability.tsx"
+    ],
+    "useChatFolders": [
+      "/hooks/useChatFolders.ts",
+      "/pages/ChatFoldersSettings.tsx"
+    ],
+    "useChatPushNotifications": [
+      "/hooks/useChatPushNotifications.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useChatrBrain": [
+      "/hooks/useChatrBrain.ts",
+      "/pages/AIChat.tsx"
+    ],
+    "useMultiModel": [
+      "/hooks/useChatrUltra.ts"
+    ],
+    "useCloudBackup": [
+      "/hooks/useCloudBackup.tsx"
+    ],
+    "useContactSync": [
+      "/hooks/useContactSync.tsx"
+    ],
+    "useDataSaverMode": [
+      "/hooks/useDataSaverMode.tsx",
+      "/pages/Account.tsx"
+    ],
+    "useDataUsageTracking": [
+      "/hooks/useDataUsageTracking.tsx",
+      "/pages/Account.tsx"
+    ],
+    "useDebounce": [
+      "/hooks/useDebounce.ts",
+      "/pages/Discover.tsx"
+    ],
+    "useDesktopElectronIntegrations": [
+      "/hooks/useDesktopElectronIntegrations.ts",
+      "/layouts/DesktopLayout.tsx"
+    ],
+    "useDeveloperHub": [
+      "/hooks/useDeveloperHub.ts",
+      "/pages/business/DeveloperHub.tsx"
+    ],
+    "useEfficientChat": [
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEfficientChat.tsx"
+    ],
+    "useEncryptedMessaging": [
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEncryptedMessaging.ts"
+    ],
+    "useE2EChat": [
+      "/hooks/useE2EChat.tsx"
+    ],
+    "useEmergencyCall": [
+      "/hooks/useEmergencyCall.ts"
+    ],
+    "useEnhancedOfflineQueue": [
+      "/hooks/useEnhancedOfflineQueue.tsx"
+    ],
+    "useEnhancedWebRTC": [
+      "/hooks/useEnhancedWebRTC.ts"
+    ],
+    "useErrorReporting": [
+      "/hooks/useErrorReporting.tsx"
+    ],
+    "useFirebaseMessaging": [
+      "/hooks/useFirebaseMessaging.tsx"
+    ],
+    "useGeminiLive": [
+      "/hooks/useGeminiLive.ts"
+    ],
+    "useGestureDetection": [
+      "/hooks/useGestureDetection.tsx",
+      "/pages/Capture.tsx"
+    ],
+    "useGroupChat": [
+      "/hooks/useGroupChat.tsx"
+    ],
+    "useIdentity": [
+      "/hooks/useIdentity.ts",
+      "/pages/Discover.tsx",
+      "/pages/Identity.tsx"
+    ],
+    "useInitiateCall": [
+      "/hooks/useInitiateCall.tsx"
+    ],
+    "useInstantData": [
+      "/hooks/useInstantData.ts"
+    ],
+    "useIntentObserver": [
+      "/hooks/useIntentObserver.ts",
+      "/pages/Chat.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx"
+    ],
+    "useLinkPreview": [
+      "/hooks/useLinkPreview.tsx"
+    ],
+    "useLiteMode": [
+      "/hooks/useLiteMode.tsx",
+      "/hooks/useOptimizedRealtime.tsx",
+      "/pages/Account.tsx"
+    ],
+    "useLiveTranscription": [
+      "/hooks/useLiveTranscription.tsx"
+    ],
+    "useLiveTranslation": [
+      "/hooks/useLiveTranslation.tsx"
+    ],
+    "useMessageRetry": [
+      "/hooks/useMessageRetry.tsx"
+    ],
+    "useMessageSync": [
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useRealtimeMessages.tsx",
+      "/hooks/useSocketIO.tsx"
+    ],
+    "useFoodOrderNotifications": [
+      "/hooks/useModuleNotifications.tsx"
+    ],
+    "useAppointmentNotifications": [
+      "/hooks/useModuleNotifications.tsx"
+    ],
+    "usePaymentNotifications": [
+      "/hooks/useModuleNotifications.tsx"
+    ],
+    "useHealthNotifications": [
+      "/hooks/useModuleNotifications.tsx"
+    ],
+    "useMoodTracking": [
+      "/hooks/useMoodTracking.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useNativeClipboard": [
+      "/hooks/useNativeClipboard.tsx"
+    ],
+    "useNativeHydration": [
+      "/hooks/useNativeHydration.ts"
+    ],
+    "useNativeOptimizations": [
+      "/hooks/useNativeOptimizations.tsx"
+    ],
+    "useNativePerformance": [
+      "/hooks/useNativePerformance.tsx"
+    ],
+    "useNativePullToRefresh": [
+      "/hooks/useNativePullToRefresh.tsx"
+    ],
+    "useNativeShare": [
+      "/hooks/useNativeShare.tsx"
+    ],
+    "useNativeStorage": [
+      "/hooks/useNativeStorage.tsx",
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "useNativeToast": [
+      "/hooks/useNativeToast.tsx"
+    ],
+    "useNetworkStats": [
+      "/hooks/useNetworkStats.tsx"
+    ],
+    "useOfflineQueue": [
+      "/hooks/useOfflineQueue.tsx"
+    ],
+    "useOnboarding": [
+      "/hooks/useOnboarding.tsx",
+      "/pages/Auth.tsx"
+    ],
+    "useOnDeviceAI": [
+      "/hooks/useOnDeviceAI.tsx"
+    ],
+    "useOptimisticChat": [
+      "/hooks/useOptimisticChat.tsx"
+    ],
+    "useOptimisticMessages": [
+      "/hooks/useOptimisticMessages.tsx"
+    ],
+    "useOptimizedRealtime": [
+      "/hooks/useOptimizedRealtime.tsx"
+    ],
+    "usePermissions": [
+      "/hooks/usePermissions.ts"
+    ],
+    "usePictureInPicture": [
+      "/hooks/usePictureInPicture.tsx"
+    ],
+    "usePreCallIntelligence": [
+      "/hooks/usePreCallIntelligence.ts"
+    ],
+    "usePrefetch": [
+      "/hooks/usePrefetch.tsx"
+    ],
+    "usePresence": [
+      "/hooks/usePresence.ts",
+      "/layouts/DesktopLayout.tsx"
+    ],
+    "usePresenceTracking": [
+      "/hooks/usePresenceTracking.tsx",
+      "/hooks/useSocketPresence.tsx"
+    ],
+    "usePSTNCall": [
+      "/hooks/usePSTNCall.ts"
+    ],
+    "useRateLimit": [
+      "/hooks/useRateLimit.tsx"
+    ],
+    "useRealParticipants": [
+      "/hooks/useRealParticipants.ts",
+      "/pages/desktop/DesktopCalls.tsx"
+    ],
+    "useRealtimeMessages": [
+      "/hooks/useRealtimeMessages.tsx",
+      "/services/messaging/socketMessagingBridge.ts"
+    ],
+    "useSocketIO": [
+      "/hooks/useRealtimeMessages.tsx",
+      "/hooks/useSocketIO.tsx",
+      "/hooks/useSocketPresence.tsx",
+      "/hooks/useSocketTyping.tsx"
+    ],
+    "useRealtimeNotifications": [
+      "/hooks/useRealtimeNotifications.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useRecoveryController": [
+      "/hooks/useRecoveryController.tsx"
+    ],
+    "useRequestBatcher": [
+      "/hooks/useRequestBatcher.tsx"
+    ],
+    "useRingbackTone": [
+      "/hooks/useRingbackTone.tsx"
+    ],
+    "useRingtone": [
+      "/hooks/useRingtone.tsx"
+    ],
+    "useSecureAuthStorage": [
+      "/hooks/useSecureAuthStorage.tsx"
+    ],
+    "useSecureStorage": [
+      "/hooks/useSecureStorage.tsx"
+    ],
+    "useSellerRealtimeNotifications": [
+      "/hooks/useSellerRealtimeNotifications.tsx",
+      "/pages/SellerPortal.tsx"
+    ],
+    "useSignalProtocol": [
+      "/hooks/useSignalProtocol.ts"
+    ],
+    "useSmartNotifications": [
+      "/hooks/useSmartNotifications.tsx"
+    ],
+    "useAI": [
+      "/hooks/useSmartReplies.tsx"
+    ],
+    "useSMSFallback": [
+      "/hooks/useSMSFallback.ts"
+    ],
+    "useSocketTyping": [
+      "/hooks/useSocketTyping.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useTypingIndicator": [
+      "/hooks/useSocketTyping.tsx",
+      "/hooks/useTypingIndicator.tsx"
+    ],
+    "useSpeedDial": [
+      "/hooks/useSpeedDial.tsx"
+    ],
+    "useSSOToken": [
+      "/hooks/useSSOToken.tsx",
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "useStreakTracking": [
+      "/hooks/useStreakTracking.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useSubdomain": [
+      "/hooks/useSubdomain.ts"
+    ],
+    "useTrustScore": [
+      "/hooks/useTrustScore.ts",
+      "/pages/Identity.tsx"
+    ],
+    "useUserLocation": [
+      "/hooks/useUserLocation.ts"
+    ],
+    "useUserRole": [
+      "/hooks/useUserRole.ts",
+      "/pages/CommandCenter.tsx",
+      "/pages/Earn.tsx"
+    ],
+    "useFoodVendorNotifications": [
+      "/hooks/useVendorNotifications.tsx"
+    ],
+    "useServiceVendorNotifications": [
+      "/hooks/useVendorNotifications.tsx"
+    ],
+    "useHealthcareVendorNotifications": [
+      "/hooks/useVendorNotifications.tsx"
+    ],
+    "useChatrPlusSellerNotifications": [
+      "/hooks/useVendorNotifications.tsx"
+    ],
+    "useVerifiedBadge": [
+      "/hooks/useVerifiedBadge.tsx"
+    ],
+    "useVideoBranding": [
+      "/hooks/useVideoBranding.tsx"
+    ],
+    "useVirtualizedMessages": [
+      "/hooks/useVirtualizedMessages.tsx",
+      "/pages/Chat.tsx"
+    ],
+    "useVoiceAI": [
+      "/hooks/useVoiceAI.tsx",
+      "/pages/AIBrowserHome.tsx"
+    ],
+    "useWakeLock": [
+      "/hooks/useWakeLock.tsx"
+    ],
+    "useWebRTCSignaling": [
+      "/hooks/useWebRTCSignaling.ts"
+    ],
+    "useWebViewManager": [
+      "/hooks/useWebViewManager.tsx",
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "useWorkspaceSync": [
+      "/hooks/useWorkspaceSync.ts",
+      "/hooks/useWorkspaceTasks.ts"
+    ],
+    "useSearchParams": [
+      "/pages/AIAgentCreate.tsx",
+      "/pages/AIBrowserView.tsx",
+      "/pages/auth/GoogleCalendarCallback.tsx",
+      "/pages/auth/OutlookCalendarCallback.tsx",
+      "/pages/Automations.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/care/MedicineVitals.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/ChatrPlusSearch.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/ChatrResults.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopChat.tsx",
+      "/pages/Earn.tsx",
+      "/pages/JoinInvite.tsx",
+      "/pages/LocalDeals.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/store/StoreExplore.tsx",
+      "/pages/TeleconsultationPage.tsx",
+      "/pages/UniversalSearch.tsx"
+    ],
+    "useAutoReply": [
+      "/pages/AIAgentsHub.tsx",
+      "/services/agentAutoReply.ts"
+    ],
+    "useConversation": [
+      "/pages/desktop/chat/hooks/useConversation.ts",
+      "/pages/desktop/DesktopChat.tsx"
+    ],
+    "useCopilot": [
+      "/pages/desktop/chat/hooks/useCopilot.ts",
+      "/pages/desktop/DesktopChat.tsx"
+    ],
+    "useOutcomes": [
+      "/pages/desktop/chat/hooks/useOutcomes.ts",
+      "/pages/desktop/DesktopChat.tsx"
+    ],
+    "useCallProgressTone": [
+      "/utils/androidBridge.ts",
+      "/utils/callProgressTones.ts"
+    ],
+    "useDTX": [
+      "/utils/audioOptimization.ts"
+    ],
+    "useFEC": [
+      "/utils/audioOptimization.ts"
+    ],
+    "useStereo": [
+      "/utils/audioOptimization.ts"
+    ],
+    "useWebWorker": [
+      "/utils/imageCompression.ts"
+    ],
+    "usePagination": [
+      "/utils/queryOptimization.ts"
+    ],
+    "useIndexes": [
+      "/utils/queryOptimization.ts"
+    ],
+    "usePrewarmStream": [
+      "/utils/simpleWebRTC.ts"
+    ],
+    "useWebTransport": [
+      "/utils/webTransportSignaling.ts"
+    ],
+    "useBrowserCache": [
+      "/workers/whisper.worker.ts"
+    ]
+  }
+}

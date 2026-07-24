@@ -1,0 +1,12 @@
+{
+  "id": "core.finance",
+  "name": "FINANCE",
+  "version": "1.0.0",
+  "category": "business",
+  "tags": [
+    "finance"
+  ],
+  "keywords": [
+    "finance"
+  ]
+}

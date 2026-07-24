@@ -1,0 +1,351 @@
+{
+  "generatedAt": "2026-07-15T10:53:38.272Z",
+  "note": "Architecture lint baseline. Keep counts flat or decreasing; new or increased drift fails lint.",
+  "targets": [
+    "electron/chatr-core",
+    "src/core",
+    "tools/provider-onboarding",
+    "scripts/create-capability.cjs",
+    "scripts/scaffold-core-15.cjs",
+    "scripts/workflow-cli.cjs"
+  ],
+  "totals": {
+    "violations": 188,
+    "files": 51
+  },
+  "rules": {
+    "domain-capability-id": {
+      "count": 152
+    },
+    "domain-event-name": {
+      "count": 13
+    },
+    "domain-scaffold-generator": {
+      "count": 6
+    },
+    "industry-branch": {
+      "count": 3
+    },
+    "industry-ui-widget": {
+      "count": 1
+    },
+    "static-provider-route": {
+      "count": 13
+    }
+  },
+  "files": {
+    "electron/chatr-core/background-jobs.cjs": {
+      "count": 1,
+      "rules": {
+        "static-provider-route": 1
+      }
+    },
+    "electron/chatr-core/capabilities/capability-catalog.json": {
+      "count": 11,
+      "rules": {
+        "domain-capability-id": 11
+      }
+    },
+    "electron/chatr-core/capabilities/capability-contract-validator.cjs": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/capabilities/capability-contracts.json": {
+      "count": 10,
+      "rules": {
+        "domain-capability-id": 10
+      }
+    },
+    "electron/chatr-core/connectors/connector-generator.cjs": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/connectors/food/connector.cjs": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "electron/chatr-core/connectors/food/manifest.json": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/connectors/food/providers.json": {
+      "count": 3,
+      "rules": {
+        "domain-capability-id": 3
+      }
+    },
+    "electron/chatr-core/connectors/healthcare/connector.cjs": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "electron/chatr-core/connectors/healthcare/manifest.json": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/connectors/jobs/connector.cjs": {
+      "count": 3,
+      "rules": {
+        "domain-capability-id": 3
+      }
+    },
+    "electron/chatr-core/connectors/jobs/manifest.json": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/connectors/shopping/connector.cjs": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "electron/chatr-core/connectors/shopping/manifest.json": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "electron/chatr-core/connectors/shopping/providers.json": {
+      "count": 5,
+      "rules": {
+        "domain-capability-id": 5
+      }
+    },
+    "electron/chatr-core/connectors/transport/connector.cjs": {
+      "count": 3,
+      "rules": {
+        "domain-capability-id": 3
+      }
+    },
+    "electron/chatr-core/connectors/transport/manifest.json": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/connectors/transport/providers.json": {
+      "count": 9,
+      "rules": {
+        "domain-capability-id": 9
+      }
+    },
+    "electron/chatr-core/connectors/transport/workflow.json": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "electron/chatr-core/context/capability-discovery.cjs": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 1,
+        "domain-event-name": 1
+      }
+    },
+    "electron/chatr-core/context/personal-context-engine.cjs": {
+      "count": 4,
+      "rules": {
+        "static-provider-route": 4
+      }
+    },
+    "electron/chatr-core/context/policy-engine.cjs": {
+      "count": 8,
+      "rules": {
+        "domain-capability-id": 8
+      }
+    },
+    "electron/chatr-core/discovery/connector-manager.cjs": {
+      "count": 4,
+      "rules": {
+        "domain-capability-id": 3,
+        "domain-event-name": 1
+      }
+    },
+    "electron/chatr-core/discovery/discovery-engine.cjs": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/discovery/sdk.cjs": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "electron/chatr-core/execution/execution-runtime.cjs": {
+      "count": 3,
+      "rules": {
+        "domain-capability-id": 3
+      }
+    },
+    "electron/chatr-core/execution/workflow-engine.cjs": {
+      "count": 23,
+      "rules": {
+        "domain-capability-id": 14,
+        "domain-event-name": 9
+      }
+    },
+    "electron/chatr-core/executors/api-executor.cjs": {
+      "count": 3,
+      "rules": {
+        "domain-capability-id": 2,
+        "domain-event-name": 1
+      }
+    },
+    "electron/chatr-core/executors/PlaywrightExecutor.cjs": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/kernel/decision-engine.cjs": {
+      "count": 12,
+      "rules": {
+        "domain-capability-id": 12
+      }
+    },
+    "electron/chatr-core/kernel/execution-adapter.cjs": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "electron/chatr-core/kernel/intent-intelligence-engine.cjs": {
+      "count": 12,
+      "rules": {
+        "domain-capability-id": 12
+      }
+    },
+    "electron/chatr-core/kernel/planner.cjs": {
+      "count": 7,
+      "rules": {
+        "domain-capability-id": 7
+      }
+    },
+    "electron/chatr-core/kernel/trust-engine.cjs": {
+      "count": 11,
+      "rules": {
+        "domain-capability-id": 11
+      }
+    },
+    "electron/chatr-core/outcomes/travel.outcome.json": {
+      "count": 3,
+      "rules": {
+        "domain-capability-id": 3
+      }
+    },
+    "electron/chatr-core/world-model/world-model.cjs": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "scripts/scaffold-core-15.cjs": {
+      "count": 4,
+      "rules": {
+        "domain-capability-id": 2,
+        "domain-scaffold-generator": 2
+      }
+    },
+    "scripts/workflow-cli.cjs": {
+      "count": 4,
+      "rules": {
+        "domain-scaffold-generator": 4
+      }
+    },
+    "src/core/capabilities/commerce/FoodOrderingWorkflow.ts": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 1,
+        "domain-event-name": 1
+      }
+    },
+    "src/core/capabilities/flight_booking/executor.ts": {
+      "count": 2,
+      "rules": {
+        "static-provider-route": 2
+      }
+    },
+    "src/core/capabilities/flight_booking/manifest.json": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "src/core/capabilities/hotel_booking/executor.ts": {
+      "count": 1,
+      "rules": {
+        "static-provider-route": 1
+      }
+    },
+    "src/core/capabilities/hotel_booking/manifest.json": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "src/core/capabilities/travel/travelPlanner.ts": {
+      "count": 2,
+      "rules": {
+        "static-provider-route": 2
+      }
+    },
+    "src/core/os/GlobalIntentProvider.tsx": {
+      "count": 1,
+      "rules": {
+        "domain-capability-id": 1
+      }
+    },
+    "src/core/providers/ExecutionOrchestrator.ts": {
+      "count": 1,
+      "rules": {
+        "industry-ui-widget": 1
+      }
+    },
+    "src/core/services/CommitmentPlanner.ts": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "src/core/services/ComplianceEngine.ts": {
+      "count": 1,
+      "rules": {
+        "industry-branch": 1
+      }
+    },
+    "src/core/services/PlaybookEngine.ts": {
+      "count": 2,
+      "rules": {
+        "domain-capability-id": 2
+      }
+    },
+    "src/core/services/PolicyEngine.ts": {
+      "count": 4,
+      "rules": {
+        "static-provider-route": 2,
+        "industry-branch": 2
+      }
+    },
+    "src/core/services/SchedulerService.ts": {
+      "count": 1,
+      "rules": {
+        "static-provider-route": 1
+      }
+    }
+  }
+}

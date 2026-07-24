@@ -1,0 +1,24 @@
+name: Architecture Lint
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  architecture-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Run Architecture Lint
+        run: node scripts/architecture-lint.cjs
+
+      - name: Run Event Schema Validation
+        run: node scripts/event-schema-validation.cjs

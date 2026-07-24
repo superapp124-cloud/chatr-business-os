@@ -1,0 +1,463 @@
+{
+  "generatedAt": "2026-05-15T18:41:57.552Z",
+  "note": "Incremental Supabase Edge Function governance baseline. Reduce counts over time; new or increased risk fails edge:functions:audit.",
+  "totals": {
+    "functions": 109,
+    "critical": 12,
+    "high": 88,
+    "medium": 132,
+    "low": 15,
+    "wildcardCors": 88,
+    "serviceRoleWithoutAuth": 9,
+    "highValueWithoutAuth": 3,
+    "legacySecurityWrapper": 89
+  },
+  "functions": {
+    "agent-voice-tts": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-agent-chat": {},
+    "ai-answer": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-assistant": {
+      "wildcardCors": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-browser-search": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-chat-assistant": {
+      "wildcardCors": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-chat-summary": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-clone-respond": {
+      "wildcardCors": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-coaching": {
+      "wildcardCors": 1,
+      "highValueWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-health-assistant": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-image-generator": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-message-insights": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-smart-reply": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "ai-voice-summarize": {
+      "wildcardCors": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "analyze-chat-brands": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "analyze-fame-content": {
+      "wildcardCors": 1,
+      "jsonWithoutValidation": 1,
+      "legacySecurityWrapper": 1
+    },
+    "app-version": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "auth-phone-otp": {},
+    "auto-translate": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "backfill-phone-hashes": {
+      "serviceRoleWithoutAuth": 1,
+      "missingOptionsHandler": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "call-sentiment": {
+      "wildcardCors": 1,
+      "highValueWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "call-summary": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "cc-ai-ceo": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "cc-engineering-agent": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "cc-sales-agent": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "chatr-brain": {},
+    "chatr-games-ai": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "chatr-mcp-server": {
+      "wildcardCors": 1,
+      "missingOptionsHandler": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "chatr-plus-ai-search": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "chatr-world": {
+      "wildcardCors": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "chatr-world-ai": {
+      "wildcardCors": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "chatr-world-search": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "cleanup-expired-messages": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "click-log": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "crawl-jobs": {
+      "wildcardCors": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "detect-video-objects": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "fcm-call-trigger": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "fcm-notify": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "fetch-healthcare": {
+      "wildcardCors": 1,
+      "highValueWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "fetch-jobs": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "firebase-phone-auth": {},
+    "generate-feature": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "generate-media-url": {},
+    "generate-referral-code": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "generate-signed-url": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "generate-sticker": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "geo-search": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "get-turn-credentials": {},
+    "health-bmi-calculator": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "health-passport-export": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "health-predictions": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "health-wallet-transaction": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "healthcare-booking": {},
+    "job-matching": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "jsonWithoutValidation": 1,
+      "legacySecurityWrapper": 1
+    },
+    "live-transcription": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "live-translate": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "lookup-chatr-users": {},
+    "medication-interactions": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "mental-health-assistant": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "native-call-update": {},
+    "notify-referral-join": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "nutrition-tracker": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "parse-prescription": {},
+    "perplexity-search": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "process-coin-reward": {},
+    "process-daily-login": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "process-daily-login-streak": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "process-referral": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "process-scheduled-notifications": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "pstn-call": {},
+    "qr-login": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "qr-payment": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "realtime-token": {},
+    "register-device-token": {
+      "highValueWithoutRateLimit": 1
+    },
+    "saved-search-alerts": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "schedule-notification": {},
+    "scrape-jobs": {
+      "wildcardCors": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "screen-incoming-call": {},
+    "search-alerts-notifier": {
+      "wildcardCors": 1,
+      "serviceRoleWithoutAuth": 1,
+      "legacySecurityWrapper": 1
+    },
+    "search-suggestions": {
+      "wildcardCors": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-broadcast-email": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-call-notification": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-chat-notification": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-digest-notifications": {},
+    "send-invite": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-module-notification": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-push": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-push-notification": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-sms": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "send-whatsapp-invite": {
+      "wildcardCors": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "smart-compose": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "smart-notification-orchestrator": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "inconsistentErrors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "smart-push-engine": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "summarize-chat": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "symptom-checker": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "sync-google-contacts": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "sync-health-data": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "transcribe-voice": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "translate-message": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "universal-ai-search": {
+      "wildcardCors": 1,
+      "highValueWithoutAudit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "universal-search": {},
+    "universal-search-engine": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "update-location": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "verify-micro-task": {},
+    "visual-search": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "web-search-aggregator": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "webrtc-signaling": {
+      "wildcardCors": 1,
+      "highValueWithoutRateLimit": 1,
+      "legacySecurityWrapper": 1
+    },
+    "websocket-signaling": {
+      "wildcardCors": 1,
+      "legacySecurityWrapper": 1
+    },
+    "world-content-moderation": {}
+  }
+}

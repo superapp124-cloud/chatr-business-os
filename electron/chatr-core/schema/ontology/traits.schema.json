@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Canonical Trait Library",
+  "description": "Composable trait families. Objects select traits; they do not re-implement them.",
+  "version": "15.0",
+  "traitFamilies": {
+    "Governance": {
+      "description": "Traits ensuring compliance, visibility, and policy enforcement.",
+      "traits": {
+        "Auditable": { "provides": ["auditLog", "lastModifiedBy", "lastModifiedAt", "changeHistory"] },
+        "Versioned": { "provides": ["version", "previousVersion", "changeSet"] },
+        "PolicyAware": { "provides": ["applicablePolicies", "policyDecisions"] },
+        "PermissionAware": { "provides": ["acl", "ownerPrincipal", "visibility"] },
+        "Classified": { "provides": ["dataClassification", "sensitivity"] },
+        "Compliant": { "provides": ["complianceFrameworks", "complianceStatus"] }
+      }
+    },
+    "Collaboration": {
+      "description": "Traits enabling human teamwork on objects.",
+      "traits": {
+        "Commentable": { "provides": ["comments", "addComment", "resolveComment"] },
+        "Mentionable": { "provides": ["mentions", "onMentioned"] },
+        "Shareable": { "provides": ["shareWith", "sharedWith", "shareLink"] },
+        "Assignable": { "provides": ["assignedTo", "assignedAt", "reassign"] },
+        "Watchable": { "provides": ["watchers", "watch", "unwatch", "onChanged"] },
+        "Subscribable": { "provides": ["subscribers", "subscribe", "onEvent"] }
+      }
+    },
+    "Knowledge": {
+      "description": "Traits enabling AI, indexing, and knowledge retrieval.",
+      "traits": {
+        "Searchable": { "provides": ["searchIndex", "keywords", "fullTextSearch"] },
+        "VectorSearchable": { "provides": ["embedding", "similaritySearch", "semanticSearch"] },
+        "Summarizable": { "provides": ["summary", "generateSummary", "keyPoints"] },
+        "Embeddable": { "provides": ["embedding", "embeddingModel", "embeddingVersion"] },
+        "Referenceable": { "provides": ["canonicalUrl", "citedBy", "references"] },
+        "Indexable": { "provides": ["indexedAt", "indexVersion", "reindex"] }
+      }
+    },
+    "Platform": {
+      "description": "Traits connecting entities to the CHATR OS planes.",
+      "traits": {
+        "Observable": { "provides": ["telemetryId", "metricsEndpoint", "traces"] },
+        "EventProducing": { "provides": ["events", "emit", "subscribe"] },
+        "Packageable": { "provides": ["packageId", "packageVersion", "exportToExchange"] },
+        "Federated": { "provides": ["federationId", "sourceOrg", "importedAt"] },
+        "ExchangeReady": { "provides": ["exchangeURN", "catalogEntry", "installationRecord"] }
+      }
+    },
+    "Operational": {
+      "description": "Traits for day-to-day operational management.",
+      "traits": {
+        "LifecycleManaged": { "provides": ["lifecycleState", "transition", "lifecycleHistory"] },
+        "HistoryEnabled": { "provides": ["history", "revertTo", "diffVersions"] },
+        "Taggable": { "provides": ["tags", "addTag", "removeTag", "filterByTag"] },
+        "Localizable": { "provides": ["locale", "timezone", "currency", "translations"] },
+        "TimeAware": { "provides": ["createdAt", "updatedAt", "scheduledAt", "expiresAt"] },
+        "Archivable": { "provides": ["archive", "restore", "purge", "archivedAt"] }
+      }
+    },
+    "AI": {
+      "description": "Traits making objects understandable and actionable by AI systems.",
+      "traits": {
+        "AIDiscoverable": { "provides": ["ontologyMetadata", "capabilityHints", "promptContext"] },
+        "AIReasonable": { "provides": ["reasoningContext", "evidence", "inferenceChain"] },
+        "EmbeddingEnabled": { "provides": ["embedding", "similarObjects", "cluster"] },
+        "ContextAware": { "provides": ["contextWindow", "relatedEntities", "narrative"] },
+        "ExplainabilitySupported": { "provides": ["explanation", "confidence", "reasoning"] }
+      }
+    },
+    "Security": {
+      "description": "Traits enforcing data security at the entity level.",
+      "traits": {
+        "EncryptionAtRest": { "provides": ["encryptionKeyId", "encryptedFields"] },
+        "AccessControlled": { "provides": ["accessPolicy", "denyList", "allowList"] },
+        "SecretAware": { "provides": ["secretRefs", "resolveSecrets"] },
+        "DataClassified": { "provides": ["classification", "retentionPolicy", "purgeAfter"] }
+      }
+    },
+    "Experience": {
+      "description": "Traits enabling automatic UI generation from the ontology.",
+      "traits": {
+        "Renderable": { "provides": ["defaultView", "compactView", "detailView"] },
+        "FormGeneratable": { "provides": ["formSchema", "validationRules", "fieldHints"] },
+        "DashboardReady": { "provides": ["kpiBindings", "chartBindings", "alertBindings"] },
+        "ExportFormattable": { "provides": ["toCSV", "toPDF", "toJSON", "toXLSX"] }
+      }
+    }
+  }
+}

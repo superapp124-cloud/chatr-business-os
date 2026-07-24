@@ -1,0 +1,37 @@
+{
+  "agents": [
+    {
+      "id": "agent_sales_coach",
+      "role": "Sales Coach providing contextual guidance on deals",
+      "model_requirements": {
+        "reasoning": "llama3.1:8b",
+        "context_window": 8192
+      },
+      "tools": ["mcp_crm_fetch_history", "mcp_crm_suggest_email"],
+      "memory_strategy": ["working", "observational"],
+      "latency_sla": 2000
+    },
+    {
+      "id": "agent_pipeline_health",
+      "role": "Pipeline Health monitor and revenue risk predictor",
+      "model_requirements": {
+        "reasoning": "qwen2.5:14b",
+        "context_window": 16384
+      },
+      "tools": ["mcp_crm_fetch_pipeline", "mcp_crm_flag_risk"],
+      "memory_strategy": ["semantic", "observational"],
+      "latency_sla": 5000
+    },
+    {
+      "id": "agent_next_best_action",
+      "role": "Recommends the next best action for a lead or opportunity",
+      "model_requirements": {
+        "reasoning": "llama3.1:8b",
+        "context_window": 8192
+      },
+      "tools": ["mcp_crm_recommend_action"],
+      "memory_strategy": ["working", "semantic"],
+      "latency_sla": 1500
+    }
+  ]
+}

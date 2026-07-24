@@ -1,0 +1,16 @@
+{
+  "id": "package.travel",
+  "version": "1.0.0",
+  "displayName": "Travel Intelligence",
+  "author": "CHATR Core",
+  "certification": "Core",
+  "dependencies": ["package.knowledge", "package.finance"],
+  "provides": [
+    "ontology",
+    "intents",
+    "goals",
+    "workflows",
+    "policies",
+    "knowledge"
+  ]
+}

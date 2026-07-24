@@ -1,38 +1,75 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# Dependencies
-node_modules
-.pnp
-.pnp.js
-
-# Local env files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Testing
-coverage
-
-# Turbo
-.turbo
-
-# Vercel
-.vercel
-
-# Build Outputs
-.next/
-out/
-build
-dist
-
-
-# Debug
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Misc
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+dist-electron
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-*.pem
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Android/Capacitor ignores
+android/.gradle/
+android/**/build/
+android/local.properties
+android/.idea/
+android/**/*.iml
+
+# Decompiled APK artifacts (jadx/apktool output — not source code)
+android/realapp/
+android/calloverlay/decoded/
+android/audioprocessing/decoded/
+
+# iOS
+ios/Pods/
+ios/.xcode.env.local
+
+# Backups folder (large, not source code)
+backups/
+
+# Large binary / build artifacts
+*.apk
+*.aab
+*.jar
+*.zip
+jadx/
+temp_apk/
+temp_apk_2/
+temp_apk_3/
+app.zip
+
+# Logcat / debug dumps
+logcat*.txt
+call_logs*.txt
+browser-logs.txt
+list_out.txt
+
+# Vite timestamp caches
+vite.config.ts.timestamp-*.mjs
+.vite-nocache/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Local config overrides
+*.local

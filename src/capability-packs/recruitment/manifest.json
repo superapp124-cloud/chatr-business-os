@@ -1,0 +1,17 @@
+{
+  "id": "recruitment",
+  "version": "1.0.0",
+  "edlVersion": "1.0",
+  "name": "Recruitment",
+  "dependencies": [],
+  "objects": [
+    "./objects/Candidate.edl.json"
+  ],
+  "relationships": [],
+  "policies": [],
+  "processes": [],
+  "permissions": [],
+  "knowledge": [],
+  "checksum": "mock_checksum_123",
+  "signature": "mock_signature_123"
+}

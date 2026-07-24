@@ -1,0 +1,14 @@
+--------- beginning of main
+05-20 18:49:28.967 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:49:28.968 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd
+05-20 18:49:28.969 I/ChatrMainActivity(31119): WebView console: [Presence] User left: 65b871c5-4f95-459e-8be5-230d99c011cd (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:49:28.970 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User left: 65b871c5-4f95-459e-8be5-230d99c011cd
+05-20 18:49:32.289 I/ChatrMainActivity(31119): WebView console: [GlobalCallListener] Removed call 2966b2b5 from terminated set (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:49:32.290 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: [GlobalCallListener] Removed call 2966b2b5 from terminated set
+05-20 18:49:32.430 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:49:32.431 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:49:32.431 I/ChatrMainActivity(31119): WebView console: [Presence] User left: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:49:32.432 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User left: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:49:33.658 D/ChatrMainActivity(31119): ChatrCall.hasActiveConnection() queried: false
+05-20 18:49:34.232 I/ChatrMainActivity(31119): WebView console: [Signaling] [object Object] (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:49:34.233 D/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [Signaling] [object Object]

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shield_bg">
+
+    <!-- Blurred background avatar -->
+    <ImageView
+        android:id="@+id/backgroundBlurImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/topSpacer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Caller Avatar -->
+    <FrameLayout
+        android:id="@+id/avatarContainer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/topSpacer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        
+        <View
+            android:id="@+id/pulseRing1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_shield_pulse_ring" />
+
+        <ImageView
+            android:id="@+id/callerAvatarImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_shield_pulse_ring"
+            android:scaleType="centerCrop" />
+            
+        <TextView
+            android:id="@+id/callerInitialText"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/shield_text_primary"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Caller Details -->
+    <TextView
+        android:id="@+id/callerNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center"
+        android:text="Unknown"
+        android:textColor="@color/shield_text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/avatarContainer" />
+
+    <TextView
+        android:id="@+id/callStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Calling..."
+        android:textColor="@color/shield_text_secondary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/callerNameText" />
+
+    <!-- Control Buttons Grid -->
+    <GridLayout
+        android:id="@+id/controlsGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/callStatusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds">
+
+        <LinearLayout
+            android:id="@+id/btnMute"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_shield_pulse_ring"
+            android:backgroundTint="@color/shield_glass_bg"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_mic"
+                app:tint="@color/shield_text_primary" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/btnVideo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_shield_pulse_ring"
+            android:backgroundTint="@color/shield_glass_bg"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@android:drawable/presence_video_online"
+                app:tint="@color/shield_text_primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnSpeaker"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_shield_pulse_ring"
+            android:backgroundTint="@color/shield_glass_bg"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_volume_up"
+                app:tint="@color/shield_text_primary" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- End Call Button -->
+    <LinearLayout
+        android:id="@+id/btnEndCall"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bg_shield_pulse_ring"
+        android:backgroundTint="@color/shield_decline"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_call_end"
+            app:tint="@color/shield_text_primary" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

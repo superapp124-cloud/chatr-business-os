@@ -1,0 +1,46 @@
+{
+  "id": "def_it_support",
+  "name": "IT Support Ticket",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "issue_type": {
+        "type": "string",
+        "enum": ["Hardware", "Software Access", "Network/VPN", "Security", "Other"]
+      },
+      "urgency": {
+        "type": "string",
+        "enum": ["Low", "Medium", "High", "Critical"]
+      },
+      "description": {
+        "type": "string"
+      },
+      "device_asset_tag": {
+        "type": "string"
+      }
+    },
+    "required": ["issue_type", "urgency", "description"]
+  },
+  "relationships": [
+    {
+      "targetObjectId": "Employee",
+      "type": "one_to_one",
+      "label": "Reported By"
+    }
+  ],
+  "permissions": {
+    "roles": ["employee", "it_agent", "manager"],
+    "actions": ["create", "read", "update"]
+  },
+  "lifecycle": {
+    "states": ["New", "In Progress", "Waiting on User", "Resolved", "Closed"],
+    "transitions": {
+      "New": ["In Progress", "Closed"],
+      "In Progress": ["Waiting on User", "Resolved"],
+      "Waiting on User": ["In Progress", "Resolved"],
+      "Resolved": ["Closed"],
+      "Closed": []
+    },
+    "initialState": "New"
+  }
+}

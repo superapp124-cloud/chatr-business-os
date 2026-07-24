@@ -1,0 +1,42 @@
+{
+  "execution_graphs": [
+    {
+      "id": "dag_crm_discount_approval",
+      "intent_id": "intent_close_deal",
+      "nodes": [
+        {
+          "id": "node_analyze_quote",
+          "type": "agent_task",
+          "depends_on": [],
+          "participant_id": "agent_sales_coach",
+          "sla": "5m"
+        },
+        {
+          "id": "node_policy_check",
+          "type": "policy_gate",
+          "depends_on": ["node_analyze_quote"],
+          "participant_id": "system_policy_engine",
+          "sla": "1s"
+        },
+        {
+          "id": "node_finance_approval",
+          "type": "human_approval",
+          "depends_on": ["node_policy_check"],
+          "participant_id": "role_cfo",
+          "sla": "4h"
+        },
+        {
+          "id": "node_update_crm",
+          "type": "system_action",
+          "depends_on": ["node_finance_approval"],
+          "participant_id": "system_workflow_engine",
+          "sla": "1m"
+        }
+      ],
+      "error_handling": {
+        "on_timeout": "escalate_to_cro",
+        "on_reject": "fallback_reduce_discount_to_max_allowed"
+      }
+    }
+  ]
+}

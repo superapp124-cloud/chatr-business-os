@@ -1,0 +1,23 @@
+{
+  "decision_cards": [
+    {
+      "id": "card_encourage_leave",
+      "type": "recommendation",
+      "title": "High Leave Balance Alert",
+      "description": "{{employee.name}} has accrued {{employee.leave_balance}} days of leave. To prevent burnout and liability, recommend scheduling time off.",
+      "actions": [
+        { "label": "Draft Email to Manager", "action_id": "draft_leave_suggestion", "style": "primary" },
+        { "label": "Dismiss", "action_id": "dismiss_alert", "style": "secondary" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp_hr_employee_directory",
+      "view_type": "polymorphic",
+      "default_mode": "list",
+      "supported_modes": ["list", "kanban", "org_chart"],
+      "context_drawer": true
+    }
+  ]
+}

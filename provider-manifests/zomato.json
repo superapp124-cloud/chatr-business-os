@@ -1,0 +1,110 @@
+{
+  "abi": "chatr.provider_manifest.v0_9_rc",
+  "provider_id": "provider.zomato",
+  "provider_version": "1.0.0",
+  "display_name": "Zomato",
+  "manifest_version": "1.0.0",
+  "capabilities": [
+    {
+      "capability": "DISCOVER",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Dish", "Restaurant", "Cuisine", "MerchantItem"],
+      "input_schema": {
+        "type": "object",
+        "required": ["context_ref", "entity_graph_ref"],
+        "properties": {
+          "context_ref":      { "type": "string" },
+          "entity_graph_ref": { "type": "string" },
+          "location":         { "type": "string" },
+          "cuisine":          { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["candidate_options"],
+        "properties": {
+          "candidate_options": { "type": "array" }
+        }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["fastest", "highest_rated", "most_trusted", "local_first"],
+      "authentication": { "type": "session_cookie", "required": false },
+      "permissions": ["location.read"],
+      "rate_limits": { "requests_per_minute": 30 },
+      "latency": { "p50_ms": 1200, "p95_ms": 4000 },
+      "reliability": { "declared_success_rate": 0.93 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": false, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "rate_limited"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 2 },
+      "audit": { "emits_action_receipts": false, "emits_state_transitions": false }
+    },
+    {
+      "capability": "COMPARE",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Dish", "Restaurant", "MerchantItem"],
+      "input_schema": {
+        "type": "object",
+        "required": ["candidate_options", "constraints"],
+        "properties": {
+          "candidate_options": { "type": "array" },
+          "constraints":       { "type": "object" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["ranked_options"],
+        "properties": { "ranked_options": { "type": "array" } }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["cheapest", "fastest", "highest_rated"],
+      "authentication": { "type": "none", "required": false },
+      "permissions": [],
+      "rate_limits": { "requests_per_minute": 30 },
+      "latency": { "p50_ms": 400, "p95_ms": 1200 },
+      "reliability": { "declared_success_rate": 0.96 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": false, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 2 },
+      "audit": { "emits_action_receipts": false, "emits_state_transitions": false }
+    },
+    {
+      "capability": "EXECUTE",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Dish", "Restaurant", "MerchantItem"],
+      "input_schema": {
+        "type": "object",
+        "required": ["selected_option", "provider_ref", "policy_decision_ref"],
+        "properties": {
+          "selected_option":      { "type": "object" },
+          "provider_ref":         { "type": "string" },
+          "policy_decision_ref":  { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["execution_receipt"],
+        "properties": { "execution_receipt": { "type": "object" } }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["fastest", "most_trusted"],
+      "authentication": { "type": "session_cookie", "required": true },
+      "permissions": ["location.read", "payment.initiate"],
+      "rate_limits": { "requests_per_minute": 10 },
+      "latency": { "p50_ms": 3000, "p95_ms": 10000 },
+      "reliability": { "declared_success_rate": 0.91 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "temporary_unavailable"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 1 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    }
+  ],
+  "health_check": { "mode": "browser", "url": "https://www.zomato.com" },
+  "compatibility": { "kernel_abi": ">=0.9 <1.0" },
+  "trust_evidence": { "manifest_signature": "optional", "attestation": "optional" }
+}

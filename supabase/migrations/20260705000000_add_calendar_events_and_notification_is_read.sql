@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS public.calendar_events (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, workspace_id uuid, title text NOT NULL, description text, start_at timestamptz NOT NULL, end_at timestamptz NOT NULL, attendees jsonb DEFAULT '[]'::jsonb, created_at timestamptz DEFAULT now()); ALTER TABLE public.notifications ADD COLUMN IF NOT EXISTS is_read boolean DEFAULT false;

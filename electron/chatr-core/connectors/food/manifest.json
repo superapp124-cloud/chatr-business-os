@@ -1,0 +1,13 @@
+{
+  "id": "food",
+  "name": "Food Ordering",
+  "version": "1.0.0",
+  "capabilities": ["food.search", "food.order"],
+  "providers": [
+    { "id": "swiggy", "name": "Swiggy", "priority": 1, "loginUrl": "https://www.swiggy.com/", "regions": ["IN"] },
+    { "id": "zomato", "name": "Zomato", "priority": 2, "loginUrl": "https://www.zomato.com/", "regions": ["IN"] }
+  ],
+  "authMethod": "browser_session",
+  "country": ["IN"],
+  "category": "food"
+}

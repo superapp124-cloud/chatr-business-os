@@ -1,0 +1,51 @@
+{
+  "business_objects": [
+    {
+      "id": "hr_obj_employee",
+      "name": "Employee",
+      "type": "system",
+      "fields": [
+        { "name": "first_name", "type": "string" },
+        { "name": "last_name", "type": "string" },
+        { "name": "work_email", "type": "email" },
+        { "name": "department", "type": "string" },
+        { "name": "manager_id", "type": "string" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "has_many", "target": "hr_obj_leave_request", "alias": "leave_requests" },
+        { "type": "has_many", "target": "hr_obj_performance_review", "alias": "performance_reviews" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "hr_obj_leave_request",
+      "name": "Leave Request",
+      "type": "system",
+      "fields": [
+        { "name": "start_date", "type": "date" },
+        { "name": "end_date", "type": "date" },
+        { "name": "leave_type", "type": "string" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "hr_obj_employee", "alias": "employee" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "hr_obj_performance_review",
+      "name": "Performance Review",
+      "type": "system",
+      "fields": [
+        { "name": "review_period", "type": "string" },
+        { "name": "overall_rating", "type": "float" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "hr_obj_employee", "alias": "employee" }
+      ],
+      "audit": true
+    }
+  ]
+}

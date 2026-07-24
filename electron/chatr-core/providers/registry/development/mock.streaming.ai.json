@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "mock.streaming.ai",
+      "version": "1.0.0",
+      "displayName": "Mock Streaming AI Provider",
+      "description": "Streaming AI chat provider.",
+      "author": "CHATR",
+      "license": "MIT"
+    },
+    "capabilities": [
+      "ai.chat"
+    ],
+    "authentication": {
+      "type": "bearer",
+      "scopes": []
+    },
+    "operations": {
+      "patterns": [
+        "Streaming"
+      ],
+      "rateLimits": "100/min",
+      "regions": [
+        "global"
+      ]
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "securityClassification": "standard"
+    }
+  },
+  "certificate": {
+    "providerId": "mock.streaming.ai",
+    "version": "1.0.0",
+    "manifestHash": "3bef3c7cc0cd4ee825243c0105a328f6cbb6c855720e7466e441562605b6a923",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:40:52.678Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

@@ -1,0 +1,119 @@
+{
+	"appId": "com.chatr.app",
+	"appName": "Chatr+",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"backgroundColor": "#030308",
+	"server": {
+		"androidScheme": "https"
+	},
+	"plugins": {
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			],
+			"iconColor": "#6200ee",
+			"sound": "notification.mp3"
+		},
+		"SplashScreen": {
+			"launchShowDuration": 0,
+			"launchAutoHide": false,
+			"backgroundColor": "#030308",
+			"androidScaleType": "CENTER",
+			"showSpinner": false,
+			"launchFadeOutDuration": 0,
+			"splashFullScreen": true,
+			"splashImmersive": true
+		},
+		"StatusBar": {
+			"style": "light"
+		},
+		"Keyboard": {
+			"resize": "native",
+			"style": "DARK",
+			"resizeOnFullScreen": true
+		},
+		"Haptics": {
+			"selectionStart": true
+		},
+		"BarcodeScanner": {
+			"targetedFormats": [
+				"QR_CODE",
+				"EAN_13",
+				"EAN_8",
+				"UPC_A",
+				"UPC_E",
+				"CODE_39",
+				"CODE_128"
+			]
+		},
+		"NativeBiometric": {
+			"useFallback": true,
+			"fallbackTitle": "Use Passcode",
+			"fallbackButtonLabel": "Cancel",
+			"biometryTitle": "Chatr+ Login",
+			"biometrySubTitle": "Authenticate to access your account"
+		},
+		"SpeechRecognition": {
+			"language": "en-US",
+			"maxResults": 5,
+			"popup": false,
+			"partialResults": true
+		},
+		"FirebaseAnalytics": {
+			"enabled": true,
+			"automaticDataCollectionEnabled": true
+		},
+		"FirebaseCrashlytics": {
+			"enabled": true,
+			"automaticDataCollectionEnabled": true
+		},
+		"BackgroundTask": {
+			"enableLogs": true
+		}
+	},
+	"ios": {
+		"contentInset": "always",
+		"backgroundColor": "#ffffff",
+		"preferredContentMode": "mobile"
+	},
+	"android": {
+		"backgroundColor": "#030308",
+		"allowMixedContent": true,
+		"captureInput": true,
+		"webContentsDebuggingEnabled": false
+	},
+	"packageClassList": [
+		"BarcodeScanner",
+		"BluetoothLe",
+		"ContactsPlugin",
+		"FileOpenerPlugin",
+		"SpeechRecognition",
+		"FirebaseAnalyticsPlugin",
+		"FirebaseCrashlyticsPlugin",
+		"AppPlugin",
+		"CAPBrowserPlugin",
+		"CAPCameraPlugin",
+		"ClipboardPlugin",
+		"DevicePlugin",
+		"FilesystemPlugin",
+		"GeolocationPlugin",
+		"HapticsPlugin",
+		"KeyboardPlugin",
+		"LocalNotificationsPlugin",
+		"CAPNetworkPlugin",
+		"PreferencesPlugin",
+		"PushNotificationsPlugin",
+		"ScreenReaderPlugin",
+		"SharePlugin",
+		"SplashScreenPlugin",
+		"StatusBarPlugin",
+		"ToastPlugin",
+		"BackgroundTaskPlugin",
+		"NativeBiometric",
+		"SecureStoragePlugin",
+		"CapacitorVideoPlayerPlugin"
+	]
+}

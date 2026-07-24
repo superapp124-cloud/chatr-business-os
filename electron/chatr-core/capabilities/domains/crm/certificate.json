@@ -1,0 +1,12 @@
+{
+  "capabilityId": "sales.lead.qualification",
+  "version": "1.0.0",
+  "manifestHash": "17016dfaa85e68bbc5ed9a91f09dec94cfa1fdac46be28f0724edf794744033f",
+  "interfaceHash": "8577e8f865f89dc26f02f059a54c9cb48d4dd63943ccf9df0780c822383796d9",
+  "schemaVersion": "1.0",
+  "abiVersion": "1.0",
+  "certificationDate": "2026-07-17T06:30:16.392Z",
+  "certificationToolVersion": "1.0.0",
+  "result": "CERTIFIED",
+  "warnings": []
+}

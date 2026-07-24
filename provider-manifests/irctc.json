@@ -1,0 +1,137 @@
+{
+  "abi": "chatr.provider_manifest.v0_9_rc",
+  "provider_id": "provider.irctc",
+  "provider_version": "1.0.0",
+  "display_name": "IRCTC",
+  "manifest_version": "1.0.0",
+  "capabilities": [
+    {
+      "capability": "DISCOVER",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["TransportLeg", "Train", "Route", "Seat"],
+      "input_schema": {
+        "type": "object",
+        "required": ["context_ref", "entity_graph_ref"],
+        "properties": {
+          "context_ref":      { "type": "string" },
+          "entity_graph_ref": { "type": "string" },
+          "origin":           { "type": "string" },
+          "destination":      { "type": "string" },
+          "date":             { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["candidate_options"],
+        "properties": { "candidate_options": { "type": "array" } }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["fastest", "cheapest", "most_trusted"],
+      "authentication": { "type": "session_cookie", "required": false },
+      "permissions": [],
+      "rate_limits": { "requests_per_minute": 20 },
+      "latency": { "p50_ms": 2000, "p95_ms": 8000 },
+      "reliability": { "declared_success_rate": 0.85 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": false, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "temporary_unavailable"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 1 },
+      "audit": { "emits_action_receipts": false, "emits_state_transitions": false }
+    },
+    {
+      "capability": "AUTHENTICATE",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Identity"],
+      "input_schema": {
+        "type": "object",
+        "required": ["identity_ref", "auth_requirement"],
+        "properties": {
+          "identity_ref":      { "type": "string" },
+          "auth_requirement":  { "type": "object" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["session_ref"],
+        "properties": { "session_ref": { "type": "string" } }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["most_trusted", "privacy_first"],
+      "authentication": { "type": "username_password", "required": true },
+      "permissions": ["identity.read"],
+      "rate_limits": { "requests_per_minute": 5 },
+      "latency": { "p50_ms": 3000, "p95_ms": 12000 },
+      "reliability": { "declared_success_rate": 0.88 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": false, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 1 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    },
+    {
+      "capability": "EXECUTE",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["TransportLeg", "Seat"],
+      "input_schema": {
+        "type": "object",
+        "required": ["selected_option", "provider_ref", "policy_decision_ref"],
+        "properties": {
+          "selected_option":     { "type": "object" },
+          "provider_ref":        { "type": "string" },
+          "policy_decision_ref": { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["execution_receipt"],
+        "properties": { "execution_receipt": { "type": "object" } }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["most_trusted"],
+      "authentication": { "type": "session_cookie", "required": true },
+      "permissions": ["payment.initiate"],
+      "rate_limits": { "requests_per_minute": 5 },
+      "latency": { "p50_ms": 8000, "p95_ms": 30000 },
+      "reliability": { "declared_success_rate": 0.82 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 1 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    },
+    {
+      "capability": "TRACK",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["TransportLeg"],
+      "input_schema": {
+        "type": "object",
+        "required": ["execution_receipt"],
+        "properties": { "execution_receipt": { "type": "object" } }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["status_snapshot"],
+        "properties": { "status_snapshot": { "type": "object" } }
+      },
+      "execution_modes": ["browser_runtime"],
+      "strategy_support": ["fastest", "most_trusted"],
+      "authentication": { "type": "session_cookie", "required": true },
+      "permissions": [],
+      "rate_limits": { "requests_per_minute": 10 },
+      "latency": { "p50_ms": 2500, "p95_ms": 8000 },
+      "reliability": { "declared_success_rate": 0.87 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "temporary_unavailable"], "supports_idempotency_key": false },
+      "resource_profile": { "requires": ["network", "browser_session"], "optional": [], "max_concurrency": 1 },
+      "audit": { "emits_action_receipts": false, "emits_state_transitions": false }
+    }
+  ],
+  "health_check": { "mode": "browser", "url": "https://www.irctc.co.in" },
+  "compatibility": { "kernel_abi": ">=0.9 <1.0" },
+  "trust_evidence": { "manifest_signature": "optional", "attestation": "optional" }
+}

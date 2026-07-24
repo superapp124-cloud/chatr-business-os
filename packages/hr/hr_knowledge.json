@@ -1,0 +1,32 @@
+{
+  "knowledge_sources": [
+    {
+      "id": "know_hr_company_handbook",
+      "source_type": "document",
+      "embedding_model": "nomic-embed-text",
+      "vector_store": "typesense_local",
+      "sync_frequency": "scheduled_batch_daily"
+    },
+    {
+      "id": "know_hr_compliance_guidelines",
+      "source_type": "document",
+      "embedding_model": "nomic-embed-text",
+      "vector_store": "typesense_local",
+      "sync_frequency": "scheduled_batch_weekly"
+    }
+  ],
+  "situation_signals": [
+    {
+      "id": "sig_hr_high_leave_balance",
+      "trigger_condition": "employee.leave_balance > 25.days",
+      "priority": "medium",
+      "action_type": "raise_decision_card"
+    },
+    {
+      "id": "sig_hr_offboarding_incomplete",
+      "trigger_condition": "employee.state == 'Offboarding' && execution_graph.dag_hr_offboarding.status == 'Blocked'",
+      "priority": "high",
+      "action_type": "broadcast_event"
+    }
+  ]
+}

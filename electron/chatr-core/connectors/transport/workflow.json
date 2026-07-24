@@ -1,0 +1,17 @@
+{
+  "transport.search": [
+    { "step": "navigate",   "target": "searchUrl",    "description": "Navigate to search page" },
+    { "step": "type_and_select", "target": "fromField",     "value": "{{from}}" },
+    { "step": "type_and_select", "target": "toField",       "value": "{{to}}" },
+    { "step": "fill",       "target": "dateField",     "value": "{{date}}" },
+    { "step": "click",      "target": "searchButton",  "description": "Submit search" },
+    { "step": "wait",       "target": "resultsPanel",  "timeout": 5000 },
+    { "step": "extract",    "target": "resultsPanel",  "as": "options" }
+  ],
+  "transport.book": [
+    { "step": "select",     "target": "optionRow",     "value": "{{optionId}}", "description": "Select the chosen option" },
+    { "step": "click",      "target": "bookButton",    "timeout": 2000, "description": "Initiate booking" },
+    { "step": "wait",       "target": "confirmationPanel", "timeout": 8000 },
+    { "step": "extract",    "target": "confirmationPanel", "as": "bookingConfirmation" }
+  ]
+}

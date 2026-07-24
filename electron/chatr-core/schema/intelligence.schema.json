@@ -1,0 +1,73 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Intelligence Plane Schema",
+  "description": "Schemas for CHATR Intelligence Artifacts and Explainability",
+  "definitions": {
+    "ExplainabilityMetadata": {
+      "type": "object",
+      "required": ["reasoning", "expectedImpact", "generatedBy", "timestamp", "governance"],
+      "properties": {
+        "reasoning": { "type": "string" },
+        "expectedImpact": { "type": "string" },
+        "evidence": { "type": "array", "items": { "type": "string" } },
+        "generatedBy": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "governance": {
+          "type": "object",
+          "properties": {
+            "sourceModel": { "type": "string" },
+            "version": { "type": "string" },
+            "trainingWindow": { "type": "string" },
+            "generationMethod": { "type": "string" },
+            "reproducibility": { "type": "string", "enum": ["Deterministic", "Stochastic"] }
+          }
+        }
+      }
+    },
+    "ConfidenceBands": {
+      "type": "object",
+      "required": ["predictionConfidence", "evidenceQuality", "modelConfidence"],
+      "properties": {
+        "predictionConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidenceQuality": { "type": "string", "enum": ["Low", "Medium", "High"] },
+        "modelConfidence": { "type": "string", "enum": ["Low", "Medium", "High"] }
+      }
+    },
+    "IntelligenceArtifact": {
+      "type": "object",
+      "required": ["id", "type", "explainability", "confidence"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string", "enum": ["Recommendation", "Prediction", "LearningArtifact", "OptimizationProposal", "SimulationReport", "RiskAssessment"] },
+        "explainability": { "$ref": "#/definitions/ExplainabilityMetadata" },
+        "confidence": { "$ref": "#/definitions/ConfidenceBands" }
+      }
+    },
+    "Recommendation": {
+      "allOf": [
+        { "$ref": "#/definitions/IntelligenceArtifact" },
+        {
+          "type": "object",
+          "required": ["category", "recommendedAction"],
+          "properties": {
+            "category": { "type": "string" },
+            "recommendedAction": { "type": "object" }
+          }
+        }
+      ]
+    },
+    "Prediction": {
+      "allOf": [
+        { "$ref": "#/definitions/IntelligenceArtifact" },
+        {
+          "type": "object",
+          "required": ["targetMetric", "estimatedValue"],
+          "properties": {
+            "targetMetric": { "type": "string" },
+            "estimatedValue": { "type": "number" }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemini Live Test</title>
+</head>
+<body>
+  <h1>Gemini Live WebAudio Test</h1>
+  <button id="startBtn">Start AI Translation</button>
+  <div id="logs" style="white-space: pre-wrap; font-family: monospace;"></div>
+
+  <script type="module">
+    // Mock the environment
+    const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"; // Playwright will intercept or we can just see if onaudioprocess fires
+    
+    function log(msg) {
+      console.log(msg);
+      document.getElementById('logs').innerText += msg + '\n';
+    }
+
+    let globalProcessor = null;
+
+    document.getElementById('startBtn').addEventListener('click', async () => {
+      log("Button clicked!");
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        log("Got microphone stream: " + stream.id);
+
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        const ctx = new AudioContextClass({ sampleRate: 16000 });
+        if (ctx.state === 'suspended') {
+          await ctx.resume();
+        }
+        log("AudioContext state: " + ctx.state + ", sampleRate: " + ctx.sampleRate);
+
+        const sourceNode = ctx.createOscillator();
+        sourceNode.start();
+        const processorNode = ctx.createScriptProcessor(4096, 1, 1);
+        globalProcessor = processorNode;
+
+        let processCount = 0;
+        let nonZeroCount = 0;
+
+        processorNode.onaudioprocess = (e) => {
+          processCount++;
+          const inputData = e.inputBuffer.getChannelData(0);
+          
+          let hasAudio = false;
+          for (let i = 0; i < inputData.length; i++) {
+            if (inputData[i] !== 0) {
+              hasAudio = true;
+              break;
+            }
+          }
+          
+          if (hasAudio) {
+            nonZeroCount++;
+          }
+
+          if (processCount % 50 === 0) {
+            log(`Processed ${processCount} chunks. Non-zero chunks: ${nonZeroCount}`);
+          }
+        };
+
+        const destNode = ctx.createMediaStreamDestination();
+        sourceNode.connect(processorNode);
+        processorNode.connect(ctx.destination); // Required for Chrome to fire onaudioprocess
+        
+        // Also feed something into destNode
+        const osc = ctx.createOscillator();
+        osc.connect(destNode);
+        osc.start();
+
+        log("WebAudio nodes connected!");
+
+      } catch (e) {
+        log("Error: " + e.message);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Business Journey Catalog Schema",
+  "description": "Schema for end-to-end reference implementations (Business Journeys).",
+  "version": "15.0",
+  "definitions": {
+    "BusinessJourney": {
+      "type": "object",
+      "required": ["journeyId", "businessGoal", "actors", "canonicalObjects", "intentGraph"],
+      "properties": {
+        "journeyId": { "type": "string" },
+        "domain": { "type": "string" },
+        "businessGoal": { "type": "string" },
+        "actors": { "type": "array", "items": { "type": "string", "description": "Personas involved" } },
+        "canonicalObjects": { "type": "array", "items": { "type": "string", "description": "Ontology entities manipulated" } },
+        "capabilities": { "type": "array", "items": { "type": "string", "description": "Capabilities invoked" } },
+        "intentGraph": {
+          "type": "object",
+          "properties": {
+            "entryIntent": { "type": "string" },
+            "executionPlan": { "type": "string", "description": "Reference to typical ExecutionPlan" }
+          }
+        },
+        "providerResolution": { "type": "array", "items": { "type": "string", "description": "Typical providers resolved" } },
+        "policyDecisions": { "type": "array", "items": { "type": "string" } },
+        "intelligence": {
+          "type": "object",
+          "properties": {
+            "aiRecommendations": { "type": "array", "items": { "type": "string" } },
+            "observabilityTimeline": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "businessMetrics": {
+          "type": "object",
+          "properties": {
+            "cycleTime": { "type": "string" },
+            "cost": { "type": "string" },
+            "sla": { "type": "string" },
+            "customerSatisfaction": { "type": "string" },
+            "revenueImpact": { "type": "string" },
+            "riskScore": { "type": "string" }
+          }
+        },
+        "failureScenarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "scenario": { "type": "string", "enum": ["ProviderUnavailable", "ApprovalDenied", "PolicyViolation", "Timeout"] },
+              "recoveryStrategy": { "type": "string", "enum": ["Compensation", "Retry", "ManualIntervention"] }
+            }
+          }
+        },
+        "auditTrail": { "type": "boolean" },
+        "federationBehavior": { "type": "string" },
+        "extensionPoints": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

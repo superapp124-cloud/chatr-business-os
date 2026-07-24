@@ -1,0 +1,88 @@
+--------- beginning of main
+05-20 18:50:37.845 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:37.845 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8
+05-20 18:50:37.846 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:37.846 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd
+05-20 18:50:38.057 I/ChatrMainActivity(31119): WebView console: ?? Auth event: INITIAL_SESSION (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:38.057 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: ?? Auth event: INITIAL_SESSION
+05-20 18:50:38.097 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:38.098 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:50:40.420 I/ChatrMainActivity(31119): WebView console: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:40.421 W/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist
+05-20 18:50:40.448 E/ChatrMainActivity(31119): WebView HTTP error main=false url=https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/profiles?select=id%2Cusername%2Cfull_name%2Cdisplay_name%2Cavatar_url%2Cphone_number%2Cemail%2Cis_online%2Clast_seen&id=eq.29f65ca9-a811-492b-b024-09689a44dbf0 status=400 reason=
+05-20 18:50:41.129 I/ChatrMainActivity(31119): WebView console: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:41.129 W/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist
+05-20 18:50:41.155 E/ChatrMainActivity(31119): WebView HTTP error main=false url=https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/profiles?select=id%2Cusername%2Cfull_name%2Cdisplay_name%2Cavatar_url%2Cphone_number%2Cemail%2Cis_online%2Clast_seen&id=eq.29f65ca9-a811-492b-b024-09689a44dbf0 status=400 reason=
+05-20 18:50:41.534 I/ChatrMainActivity(31119): WebView page finished: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 progress=100
+05-20 18:50:41.646 I/ChatrMainActivity(31119): WebView console: [SocketService] Queued offline event: join_conversation (queue size: 5) (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:50:41.646 D/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [SocketService] Queued offline event: join_conversation (queue size: 5)
+05-20 18:50:41.683 I/ChatrMainActivity(31119): WebView page finished: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 progress=100
+05-20 18:50:41.831 I/ChatrMainActivity(31119): WebView console: [Real-time] ? Connected to message stream (http://localhost/assets/Chat-B4pPLs1A.js:23)
+05-20 18:50:41.831 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 23 - Msg: [Real-time] ? Connected to message stream
+05-20 18:50:41.937 I/ChatrMainActivity(31119): WebView console: [SocketService] Queued offline event: leave_conversation (queue size: 6) (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:50:41.938 D/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [SocketService] Queued offline event: leave_conversation (queue size: 6)
+05-20 18:50:41.939 I/ChatrMainActivity(31119): WebView console: [SocketService] Queued offline event: join_conversation (queue size: 7) (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:50:41.939 D/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [SocketService] Queued offline event: join_conversation (queue size: 7)
+05-20 18:50:41.940 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseAnalytics.logEvent (#39624217) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:50:41.941 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:50:41.941 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:50:41.967 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#39624218) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:50:41.968 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:50:41.968 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:50:41.969 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.addListener (#39624219) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:50:41.970 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:50:41.970 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:50:41.971 I/ChatrMainActivity(31119): WebView console: %cnative %cKeyboard.removeListener (#39624220) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:50:41.971 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:50:41.972 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:50:41.972 I/ChatrMainActivity(31119): WebView console: %cnative %cKeyboard.removeListener (#39624221) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:50:41.973 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:50:41.974 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:50:41.974 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.removeListener (#39624222) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:50:41.975 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:50:41.975 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:50:41.985 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624217, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:50:41.985 V/Capacitor(31119): callback: 39624217, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"chat\/d7f0bb7f-6294-47e9-8c05-738b8c4f3561","screen_class":"chat\/d7f0bb7f-6294-47e9-8c05-738b8c4f3561"}}
+05-20 18:50:41.987 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624218, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:50:41.987 V/Capacitor(31119): callback: 39624218, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"chat\/d7f0bb7f-6294-47e9-8c05-738b8c4f3561","type":"string"}
+05-20 18:50:41.991 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624219, pluginId: App, methodName: addListener
+05-20 18:50:41.992 V/Capacitor(31119): callback: 39624219, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:50:41.993 I/NativeCallSyncWorker(31119): Skipped native call sync enqueue reason=auth_token_updated bucket=startup
+05-20 18:50:41.994 I/ChatrMainActivity(31119): WebView console: ? Session restored: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:41.994 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: ? Session restored: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:50:41.995 I/ChatrMainActivity(31119): WebView console: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 29f65ca9... (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:50:41.996 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 29f65ca9...
+05-20 18:50:41.999 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624220, pluginId: Keyboard, methodName: removeListener
+05-20 18:50:41.999 V/Capacitor(31119): callback: 39624220, pluginId: Keyboard, methodName: removeListener, methodData: {"eventName":"keyboardWillShow","callbackId":"39624211"}
+05-20 18:50:42.000 I/NativeCallSyncWorker(31119): Skipped native call sync enqueue reason=auth_user_updated bucket=startup
+05-20 18:50:42.001 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624221, pluginId: Keyboard, methodName: removeListener
+05-20 18:50:42.001 V/Capacitor(31119): callback: 39624221, pluginId: Keyboard, methodName: removeListener, methodData: {"eventName":"keyboardWillHide","callbackId":"39624216"}
+05-20 18:50:42.004 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624222, pluginId: App, methodName: removeListener
+05-20 18:50:42.004 V/Capacitor(31119): callback: 39624222, pluginId: App, methodName: removeListener, methodData: {"eventName":"backButton","callbackId":"39624214"}
+05-20 18:50:42.004 I/ChatrMainActivity(31119): WebView console: [NativeAuth] Auth credentials synced to native SharedPreferences (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:50:42.005 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [NativeAuth] Auth credentials synced to native SharedPreferences
+05-20 18:50:42.005 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseAnalytics.logEvent (#39624217) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:50:42.006 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:50:42.006 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:50:42.006 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:50:42.059 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#39624218) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:50:42.060 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:50:42.061 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:50:42.062 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:50:42.062 I/ChatrMainActivity(31119): WebView console: ?? Auth event: INITIAL_SESSION (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:42.063 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: ?? Auth event: INITIAL_SESSION
+05-20 18:50:42.260 I/ChatrMainActivity(31119): WebView console: [Real-time] ? Connected to message stream (http://localhost/assets/Chat-B4pPLs1A.js:23)
+05-20 18:50:42.260 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 23 - Msg: [Real-time] ? Connected to message stream
+05-20 18:50:42.318 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:42.319 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8
+05-20 18:50:42.319 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:42.320 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd
+05-20 18:50:42.430 I/ChatrMainActivity(31119): WebView console: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:42.430 I/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:50:42.498 E/ChatrMainActivity(31119): WebView HTTP error main=false url=https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/profiles?select=id%2Cusername%2Cfull_name%2Cdisplay_name%2Cavatar_url%2Cphone_number%2Cemail&id=in.%28becb4854-d93d-4bd9-a16d-7054ecc07ce1%2Ccf4f552b-1a1e-472d-8fbd-b96e50e4804c%2C65b871c5-4f95-459e-8be5-230d99c011cd%29 status=400 reason=
+05-20 18:50:43.009 E/ChatrMainActivity(31119): WebView HTTP error main=false url=https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/profiles?select=id%2Cusername%2Cfull_name%2Cdisplay_name%2Cavatar_url%2Cphone_number%2Cemail%2Cis_online%2Clast_seen&id=eq.29f65ca9-a811-492b-b024-09689a44dbf0 status=400 reason=
+05-20 18:50:43.100 I/ChatrMainActivity(31119): WebView console: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:43.100 W/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist
+05-20 18:50:44.379 E/ChatrMainActivity(31119): WebView HTTP error main=false url=https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/profiles?select=id%2Cusername%2Cfull_name%2Cdisplay_name%2Cavatar_url%2Cphone_number%2Cemail%2Cis_online%2Clast_seen&id=eq.29f65ca9-a811-492b-b024-09689a44dbf0 status=400 reason=
+05-20 18:50:44.518 I/ChatrMainActivity(31119): WebView console: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist (http://localhost/assets/Chat-B4pPLs1A.js:2)
+05-20 18:50:44.518 W/Capacitor/Console(31119): File: http://localhost/assets/Chat-B4pPLs1A.js - Line 2 - Msg: [platformParity] profile hydration failed user=29f65ca9-a811-492b-b024-09689a44dbf0 code=42703 message=column profiles.display_name does not exist

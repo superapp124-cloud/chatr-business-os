@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0",
+  "title": "CHATR Business OS v1.0 Capability Audit",
+  "scoring": {
+    "ui": 10,
+    "runtime": 20,
+    "objects": 15,
+    "eventBus": 15,
+    "connectors": 15,
+    "ai": 15,
+    "security": 5,
+    "performance": 5
+  },
+  "gates": ["Concept", "Prototype", "Integrated", "Operational", "Production", "Certified"],
+  "capabilities": [
+    {
+      "id": "identity-auth",
+      "name": "Identity & Auth",
+      "route": "/auth",
+      "scores": { "ui": 10, "runtime": 20, "objects": 15, "eventBus": 12, "connectors": 12, "ai": 10, "security": 5, "performance": 5 },
+      "gate": "Production",
+      "evidence": ["src/hooks/useUserRole.ts", "src/utils/secureAuthStorage.ts"]
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "route": "/chat, /calls",
+      "scores": { "ui": 10, "runtime": 18, "objects": 14, "eventBus": 14, "connectors": 12, "ai": 12, "security": 4, "performance": 4 },
+      "gate": "Operational",
+      "evidence": ["src/pages/desktop/DesktopChat.tsx", "src/utils/nativeCallUI.ts"]
+    },
+    {
+      "id": "calendar-time",
+      "name": "Calendar & Time",
+      "route": "/calendar",
+      "scores": { "ui": 10, "runtime": 16, "objects": 12, "eventBus": 12, "connectors": 10, "ai": 10, "security": 4, "performance": 4 },
+      "gate": "Integrated",
+      "evidence": ["src/pages/auth/GoogleCalendarCallback.tsx", "src/pages/auth/OutlookCalendarCallback.tsx"]
+    },
+    {
+      "id": "documents",
+      "name": "Documents",
+      "route": "/files",
+      "scores": { "ui": 10, "runtime": 16, "objects": 13, "eventBus": 11, "connectors": 10, "ai": 12, "security": 4, "performance": 4 },
+      "gate": "Integrated",
+      "evidence": ["src/pages/desktop/Files.tsx", "src/core/storage/StorageEngine.ts"]
+    },
+    {
+      "id": "crm-sales",
+      "name": "CRM & Sales",
+      "route": "/crm",
+      "scores": { "ui": 10, "runtime": 12, "objects": 10, "eventBus": 9, "connectors": 6, "ai": 8, "security": 4, "performance": 4 },
+      "gate": "Integrated",
+      "evidence": ["src/pages/business/CRM.tsx", "src/sdk/capabilities/LeadManagement.sdk.ts"]
+    },
+    {
+      "id": "hr-talent",
+      "name": "HR & Talent",
+      "route": "/recruitment",
+      "scores": { "ui": 10, "runtime": 11, "objects": 9, "eventBus": 8, "connectors": 5, "ai": 7, "security": 4, "performance": 4 },
+      "gate": "Integrated",
+      "evidence": ["src/pages/desktop/RecruiterWorkspace.tsx", "src/pages/desktop/HiringWorkflow.tsx"]
+    },
+    {
+      "id": "finance-ledger",
+      "name": "Finance & Ledger",
+      "route": "/business-os",
+      "scores": { "ui": 10, "runtime": 8, "objects": 6, "eventBus": 5, "connectors": 2, "ai": 4, "security": 3, "performance": 3 },
+      "gate": "Prototype",
+      "evidence": ["src/pages/desktop/BusinessOS.tsx", "supabase/migrations/20260722133000_business_os_kernel.sql"]
+    },
+    {
+      "id": "knowledge-memory",
+      "name": "Knowledge & Memory",
+      "route": "/intelligence",
+      "scores": { "ui": 10, "runtime": 14, "objects": 12, "eventBus": 11, "connectors": 8, "ai": 12, "security": 4, "performance": 4 },
+      "gate": "Integrated",
+      "evidence": ["src/pages/desktop/DesktopIntelligence.tsx", "src/sdk/engines/KnowledgeBrain.ts"]
+    },
+    {
+      "id": "workflow-automations",
+      "name": "Workflow Automations",
+      "route": "/studio",
+      "scores": { "ui": 10, "runtime": 17, "objects": 13, "eventBus": 13, "connectors": 11, "ai": 12, "security": 4, "performance": 4 },
+      "gate": "Operational",
+      "evidence": ["src/pages/desktop/WorkflowStudio.tsx", "src/core/WorkflowEngine.ts"]
+    },
+    {
+      "id": "settings-control",
+      "name": "Settings & Control",
+      "route": "/settings",
+      "scores": { "ui": 10, "runtime": 15, "objects": 12, "eventBus": 10, "connectors": 10, "ai": 8, "security": 5, "performance": 4 },
+      "gate": "Integrated",
+      "evidence": ["src/pages/desktop/DesktopSettings.tsx", "src/core/runtime/PermissionManager.ts"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "mock.webhook.payment",
+      "version": "1.0.0",
+      "displayName": "Mock Webhook Payment Provider",
+      "description": "Asynchronous webhook payment provider.",
+      "author": "CHATR",
+      "license": "MIT"
+    },
+    "capabilities": [
+      "payment.process"
+    ],
+    "authentication": {
+      "type": "api_key",
+      "scopes": []
+    },
+    "operations": {
+      "patterns": [
+        "Asynchronous"
+      ],
+      "rateLimits": "100/min",
+      "regions": [
+        "global"
+      ]
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "securityClassification": "standard"
+    }
+  },
+  "certificate": {
+    "providerId": "mock.webhook.payment",
+    "version": "1.0.0",
+    "manifestHash": "dd7133b9736bc0e58304d46bb7639f9dbfc1ac50aa2fc4467ff8ee34b851f782",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:40:52.530Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

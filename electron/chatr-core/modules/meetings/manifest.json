@@ -1,0 +1,23 @@
+{
+  "capability": "Meetings",
+  "version": "1.0",
+  "consumes": [
+    "KERNEL.UNDERSTANDING.CREATED",
+    "KERNEL.CONTEXT.RESOLVED",
+    "KERNEL.ACTION.CONFIRMED",
+    "KERNEL.JOURNAL.APPENDED"
+  ],
+  "produces": [
+    "Meeting Entity",
+    "Calendar Action"
+  ],
+  "permissions": [
+    "Calendar",
+    "Contacts"
+  ],
+  "journal_events": [
+    "Meeting Created",
+    "Meeting Updated",
+    "Meeting Cancelled"
+  ]
+}

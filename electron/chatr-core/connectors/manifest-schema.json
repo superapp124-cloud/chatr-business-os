@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Connector Manifest",
+  "description": "Declarative manifest for CHATR execution connectors",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "category",
+    "capabilities",
+    "executor"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the connector (e.g. 'swiggy-web')"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["communication", "documents", "commerce", "travel", "healthcare", "recruitment", "finance", "government", "productivity", "crm", "erp", "media", "education", "development", "security", "home-automation", "iot", "food"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "executor": {
+      "type": "string",
+      "enum": ["browser", "api", "local", "mcp"]
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Required capabilities (e.g. 'read-file', 'spend-money')"
+    },
+    "authentication": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string", "enum": ["none", "oauth2", "api-key", "cookie", "basic"] },
+        "domain": { "type": "string" }
+      }
+    },
+    "supportedCountries": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supportedLanguages": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supportedCurrencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "estimatedLatency": {
+      "type": "integer",
+      "description": "Estimated latency in milliseconds"
+    },
+    "cost": {
+      "type": "string",
+      "enum": ["free", "paid", "subscription"]
+    },
+    "priority": {
+      "type": "integer",
+      "default": 100
+    },
+    "healthCheck": {
+      "type": "string",
+      "description": "URL or script to verify connector health"
+    },
+    "selectors": {
+      "type": "object",
+      "description": "For browser executors: DOM selectors used for primitives"
+    },
+    "workflowTemplates": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "versionCompatibility": {
+      "type": "string",
+      "description": "Semver range for CHATR kernel compatibility"
+    }
+  }
+}

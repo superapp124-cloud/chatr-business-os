@@ -1,0 +1,42 @@
+{
+  "id": "core.documents.search",
+  "name": "core.documents.search",
+  "version": "1.0.0",
+  "description": "Searches the user's local document index (Desktop, Documents, etc.) for files matching a query.",
+  "category": "utility",
+  "inputs": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "The search query (e.g. 'resume', 'invoice'). Leave empty to get recently modified files."
+      },
+      "limit": {
+        "type": "number",
+        "description": "Maximum number of results to return (default 20)"
+      }
+    },
+    "required": []
+  },
+  "outputs": {
+    "type": "object",
+    "properties": {
+      "files": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "path": { "type": "string" },
+            "name": { "type": "string" },
+            "extension": { "type": "string" },
+            "modified_at": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "ui": {
+    "icon": "Search",
+    "color": "#3B82F6"
+  }
+}

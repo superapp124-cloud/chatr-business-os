@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chatr+</string>
+    <string name="title_activity_main">Chatr+</string>
+
+    <!-- ChatrCalls launcher alias labels -->
+    <string name="chatrcalls_app_name">ChatrCalls</string>
+    <string name="chatrcalls_shortcut_short">Calls</string>
+    <string name="chatrcalls_shortcut_long">Open ChatrCalls</string>
+
+    <!-- Supabase config for native overlay caller ID lookup -->
+    <string name="supabase_url">https://sbayuqgomlflmxgicplz.supabase.co</string>
+    <string name="supabase_anon_key">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNiYXl1cWdvbWxmbG14Z2ljcGx6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk0MTc2MDAsImV4cCI6MjA3NDk5MzYwMH0.gVSObpMtsv5W2nuLBHKT8G1_hXIprWXdn5l7Bnnj7jw</string>
+</resources>

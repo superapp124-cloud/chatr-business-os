@@ -1,0 +1,50 @@
+{
+  "business_objects": [
+    {
+      "id": "crm_obj_lead",
+      "name": "Lead",
+      "type": "system",
+      "fields": [
+        { "name": "first_name", "type": "string" },
+        { "name": "last_name", "type": "string" },
+        { "name": "email", "type": "email" },
+        { "name": "phone", "type": "phone" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "crm_obj_company", "alias": "company" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "crm_obj_opportunity",
+      "name": "Opportunity",
+      "type": "system",
+      "fields": [
+        { "name": "title", "type": "string" },
+        { "name": "amount", "type": "currency" },
+        { "name": "closing_date", "type": "date" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "crm_obj_contact", "alias": "contact" },
+        { "type": "has_many", "target": "crm_obj_quote", "alias": "quotes" }
+      ],
+      "audit": true
+    },
+    {
+      "id": "crm_obj_quote",
+      "name": "Quote",
+      "type": "system",
+      "fields": [
+        { "name": "total", "type": "currency" },
+        { "name": "discount_percentage", "type": "float" },
+        { "name": "custom_attributes", "type": "JSONB" }
+      ],
+      "relationships": [
+        { "type": "belongs_to", "target": "crm_obj_opportunity", "alias": "opportunity" }
+      ],
+      "audit": true
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Solution Template Schema",
+  "description": "Pre-composed sets of packs forming a complete solution for an organization archetype.",
+  "version": "15.0",
+  "definitions": {
+    "SolutionTemplate": {
+      "type": "object",
+      "required": ["templateId", "name", "targetArchetype", "composedPacks"],
+      "properties": {
+        "templateId": { "type": "string" },
+        "name": { "type": "string", "description": "e.g., Enterprise CRM, Hospital Solution" },
+        "description": { "type": "string" },
+        "targetArchetype": {
+          "type": "string",
+          "enum": [
+            "SmallBusiness",
+            "Enterprise",
+            "Government",
+            "HealthcareProvider",
+            "EducationalInstitution",
+            "RetailChain",
+            "ManufacturingPlant",
+            "Agency"
+          ]
+        },
+        "composedPacks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "packRef": { "type": "string" },
+              "installationOrder": { "type": "number" },
+              "isRequired": { "type": "boolean" }
+            }
+          },
+          "description": "The packs that make up this solution"
+        },
+        "defaultPolicies": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Tenant-level policies applied when this template is provisioned"
+        },
+        "referenceDataSetup": {
+          "type": "string",
+          "description": "Pointer to the reference data generation script"
+        }
+      }
+    }
+  }
+}

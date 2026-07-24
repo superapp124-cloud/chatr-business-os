@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shield_bg">
+
+    <!-- Remote video fills full screen background (populated programmatically) -->
+    <FrameLayout
+        android:id="@+id/remoteVideoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Blurred background avatar shown when no remote video -->
+    <ImageView
+        android:id="@+id/backgroundBlurImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.2" />
+
+    <!-- Local video PiP – top-right corner, shown when camera is on -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/localVideoContainer"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#33000000">
+        <!-- SurfaceViewRenderer added programmatically -->
+
+        <!-- Flip camera button overlaid on local video -->
+        <LinearLayout
+            android:id="@+id/btnFlipCamera"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_shield_pulse_ring"
+            android:backgroundTint="#88000000"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="12dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_flip_camera"
+                app:tint="@color/shield_text_primary" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Caller Info – top-center, hides when video is active -->
+    <LinearLayout
+        android:id="@+id/callerInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/avatarContainer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/callerAvatarImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/callerInitialText"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/shield_text_primary"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/callerNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:gravity="center"
+            android:text="Unknown Caller"
+            android:textColor="@color/shield_text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/callDurationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/shield_text_secondary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Caller name overlay shown on top of video when video is active -->
+    <LinearLayout
+        android:id="@+id/videoCallerNameOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/videoCallerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shield_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:shadowColor="#99000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:id="@+id/videoDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/shield_text_secondary"
+            android:textSize="13sp"
+            android:shadowColor="#99000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="4" />
+    </LinearLayout>
+
+    <!-- Zoom Options Panel (Hidden by default) -->
+    <LinearLayout
+        android:id="@+id/zoomOptionsPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_shield_pulse_ring"
+        android:backgroundTint="#88000000"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:elevation="10dp">
+        
+        <TextView android:id="@+id/btnZoom05" android:layout_width="48dp" android:layout_height="48dp" android:text="0.5x" android:textColor="@color/shield_text_primary" android:gravity="center" android:clickable="true" android:focusable="true"/>
+        <TextView android:id="@+id/btnZoom1" android:layout_width="48dp" android:layout_height="48dp" android:text="1x" android:textColor="@color/shield_text_primary" android:gravity="center" android:clickable="true" android:focusable="true"/>
+        <TextView android:id="@+id/btnZoom2" android:layout_width="48dp" android:layout_height="48dp" android:text="2x" android:textColor="@color/shield_text_primary" android:gravity="center" android:clickable="true" android:focusable="true"/>
+        <TextView android:id="@+id/btnZoom3" android:layout_width="48dp" android:layout_height="48dp" android:text="3x" android:textColor="@color/shield_text_primary" android:gravity="center" android:clickable="true" android:focusable="true"/>
+        <TextView android:id="@+id/btnZoom5" android:layout_width="48dp" android:layout_height="48dp" android:text="5x" android:textColor="@color/shield_text_primary" android:gravity="center" android:clickable="true" android:focusable="true"/>
+    </LinearLayout>
+
+    <!-- Floating Zoom Toggle -->
+    <LinearLayout
+        android:id="@+id/btnZoomToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_shield_pulse_ring"
+        android:backgroundTint="#88000000"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="8dp">
+        <TextView
+            android:id="@+id/tvZoomLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍 Zoom"
+            android:textColor="@color/shield_text_primary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Compact Bottom Dock (v2.1 Premium) -->
+    <LinearLayout
+        android:id="@+id/bottomControlsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="12dp">
+
+        <!-- Mute -->
+        <LinearLayout
+            android:id="@+id/btnMute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:backgroundTint="@color/shield_glass_bg">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_mic"
+                    app:tint="@color/shield_text_primary" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Mute"
+                android:textSize="11sp"
+                android:textColor="@color/shield_text_primary" />
+        </LinearLayout>
+
+        <!-- Video -->
+        <LinearLayout
+            android:id="@+id/btnVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:backgroundTint="@color/shield_glass_bg">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_videocam"
+                    app:tint="@color/shield_text_primary" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Video"
+                android:textSize="11sp"
+                android:textColor="@color/shield_text_primary" />
+        </LinearLayout>
+
+        <!-- End Call (Prominent Red) -->
+        <LinearLayout
+            android:id="@+id/btnEndCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:backgroundTint="@color/shield_decline"
+                android:elevation="2dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_call_end"
+                    app:tint="@color/shield_text_primary" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="End"
+                android:textSize="11sp"
+                android:textColor="@color/shield_text_primary" />
+        </LinearLayout>
+
+        <!-- Speaker -->
+        <LinearLayout
+            android:id="@+id/btnSpeaker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:backgroundTint="@color/shield_glass_bg">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_volume_up"
+                    app:tint="@color/shield_text_primary" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Speaker"
+                android:textSize="11sp"
+                android:textColor="@color/shield_text_primary" />
+        </LinearLayout>
+
+        <!-- Add -->
+        <LinearLayout
+            android:id="@+id/btnAddParticipant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:backgroundTint="@color/shield_glass_bg">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_person_add"
+                    app:tint="@color/shield_text_primary" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Add"
+                android:textSize="11sp"
+                android:textColor="@color/shield_text_primary" />
+        </LinearLayout>
+        
+        <!-- More -->
+        <LinearLayout
+            android:id="@+id/btnMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_shield_pulse_ring"
+                android:backgroundTint="@color/shield_glass_bg">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_more_horiz"
+                    app:tint="@color/shield_text_primary" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="More"
+                android:textSize="11sp"
+                android:textColor="@color/shield_text_primary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Overlay for floating reactions -->
+    <FrameLayout
+        android:id="@+id/reactionsOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false" />
+
+
+</FrameLayout>

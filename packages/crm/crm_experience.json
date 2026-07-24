@@ -1,0 +1,23 @@
+{
+  "decision_cards": [
+    {
+      "id": "card_approve_discount",
+      "type": "approval",
+      "title": "High Discount Approval",
+      "description": "Quote #{{quote.id}} requires approval for a {{quote.discount_percentage}}% discount.",
+      "actions": [
+        { "label": "Approve", "action_id": "approve_discount", "style": "primary" },
+        { "label": "Reject", "action_id": "reject_discount", "style": "danger" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp_crm_opportunity_view",
+      "view_type": "polymorphic",
+      "default_mode": "kanban",
+      "supported_modes": ["list", "kanban", "timeline"],
+      "context_drawer": true
+    }
+  ]
+}

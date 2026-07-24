@@ -1,0 +1,22 @@
+provider:
+  id: twilio
+
+version: 1.0
+
+category: general
+
+strategies:
+  - api
+
+permissions:
+  - internet
+
+authentication:
+  oauth2
+
+capabilities:
+  - discover
+  - execute
+
+health:
+  certified

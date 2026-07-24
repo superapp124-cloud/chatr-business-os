@@ -1,0 +1,12 @@
+{
+  "id": "core.travel",
+  "name": "TRAVEL",
+  "version": "1.0.0",
+  "category": "business",
+  "tags": [
+    "travel"
+  ],
+  "keywords": [
+    "travel"
+  ]
+}

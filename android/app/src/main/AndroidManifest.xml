@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="com.google.mlkit.genai.prompt,com.google.mlkit.genai.common" />
+
+    <!-- ============================================================ -->
+    <!-- CHATR+ HYBRID NATIVE MANIFEST - PRODUCTION GRADE             -->
+    <!-- Ensures fullscreen calls even when app is killed             -->
+    <!-- ============================================================ -->
+
+    <!-- INTERNET & NETWORK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- CALLING & TELEPHONY (GSM-LIKE) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <!-- Retained for CallStateReceiver to know when calls connect/end -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Retained for future roadmap features: Save Contact, Add Verified Business, Merge Contacts -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- SMS / MMS — required for Safe SMS and OTP protection -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH" />
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE" />
+
+    <!-- AUDIO/VIDEO -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+
+    <!-- NOTIFICATIONS & BACKGROUND -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+
+    <!-- LOCATION -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!-- STORAGE -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <!-- BIOMETRICS -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <!-- HEALTH CONNECT -->
+    <uses-permission android:name="android.permission.health.READ_STEPS"/>
+    <uses-permission android:name="android.permission.health.WRITE_STEPS"/>
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE"/>
+    <uses-permission android:name="android.permission.health.WRITE_HEART_RATE"/>
+    <uses-permission android:name="android.permission.health.READ_SLEEP"/>
+    <uses-permission android:name="android.permission.health.WRITE_SLEEP"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+
+    <!-- HARDWARE FEATURES -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:name=".ChatrApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        tools:targetApi="34">
+
+        <!-- Post Call Summary Popup -->
+        <activity
+            android:name=".PostCallSummaryActivity"
+            android:theme="@style/Theme.Transparent"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:exported="true" />
+
+        <!-- ============================================================ -->
+        <!-- CHATR AI DIALER â€” Supabase endpoint for native overlay lookup -->
+        <!-- Replace values with your actual Supabase project details      -->
+        <!-- ============================================================ -->
+        <meta-data android:name="supabase_url"
+            android:value="@string/supabase_url" />
+        <meta-data android:name="supabase_anon_key"
+            android:value="@string/supabase_anon_key" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="merge">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                tools:node="remove" />
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                tools:node="remove" />
+        </provider>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            tools:node="remove" />
+
+        <!-- ============================================================ -->
+        <!-- MAIN ACTIVITY (Capacitor WebView)                            -->
+        <!-- ============================================================ -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBarLaunch"
+            android:windowSoftInputMode="adjustResize">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Deep Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="chatr" />
+                <data android:scheme="https" android:host="chatr.app" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tel" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.telecom.action.CALL_BACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- DYNAMIC APP ICON ALIASES (Phase 3)                           -->
+        <!-- ============================================================ -->
+        <activity-alias
+            android:name=".MainActivityMinimalWhite"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        
+        <activity-alias
+            android:name=".MainActivityMinimalBlack"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityNeonBlue"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityNeonGreen"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityAmoledBlack"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityGlassmorphism"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- ============================================================ -->
+        <!-- FULLSCREEN INCOMING CALL ACTIVITY                            -->
+        <!-- Shows over lock screen when app is killed                    -->
+        <!-- ============================================================ -->
+        <activity
+            android:name=".webrtc.ShieldIncomingCallActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.IncomingCall"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:showWhenLocked="true"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- ============================================================ -->
+        <!-- NATIVE ACTIVE CALL ACTIVITY (No React)                       -->
+        <!-- Natively renders WebRTC video to avoid WebView latency       -->
+        <!-- ============================================================ -->
+        <activity
+            android:name=".webrtc.ShieldActiveCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.IncomingCall"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:showWhenLocked="true"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".webrtc.ShieldOutgoingCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.IncomingCall"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:showWhenLocked="true"
+            android:configChanges="orientation|screenSize" />
+
+        <!-- ============================================================ -->
+        <!-- CHATRCALLS LAUNCHER ALIAS                                     -->
+        <!-- Creates a second "ChatrCalls" icon in app drawer automatically -->
+        <!-- when Chatr+ APK is installed. No extra steps needed.         -->
+        <!-- Tapping it routes MainActivity directly to /standalone-dialer. -->
+        <!-- ============================================================ -->
+        <activity-alias
+            android:name=".ChatrCallsActivity"
+            android:targetActivity=".MainActivity"
+            android:label="@string/chatrcalls_app_name"
+            android:icon="@mipmap/ic_launcher_chatrcalls"
+            android:roundIcon="@mipmap/ic_launcher_chatrcalls"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="chatrcalls_launch"
+                android:value="true" />
+        </activity-alias>
+
+        <!-- ============================================================ -->
+        <!-- FIREBASE CLOUD MESSAGING SERVICE                             -->
+        <!-- Handles FCM when app is killed - CRITICAL for calls          -->
+        <!-- ============================================================ -->
+        <!-- Remove Capacitor's default MessagingService to prevent conflict -->
+        <service
+            android:name="com.capacitorjs.plugins.pushnotifications.MessagingService"
+            tools:node="remove" />
+
+        <service
+            android:name=".services.ChatrFirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- CALL FOREGROUND SERVICE                                      -->
+        <!-- Keeps calls alive in background                              -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.CallForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="phoneCall|microphone|camera" />
+
+        <!-- ============================================================ -->
+        <!-- WEBRTC MEDIA FOREGROUND SERVICE                              -->
+        <!-- Handles active WebRTC tracks outside of WebView              -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".webrtc.WebRTCMediaService"
+            android:exported="false"
+            android:foregroundServiceType="camera|microphone" />
+            
+        <service
+            android:name=".webrtc.ScreenCaptureService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- ============================================================ -->
+        <!-- VOIP PREWARM SERVICE                                         -->
+        <!-- Boots a lightweight context on FCM push so ICE gathering    -->
+        <!-- completes BEFORE the user taps Accept. STATELESS.           -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.VoIPPrewarmService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <!-- ============================================================ -->
+        <!-- TELECOM CONNECTION SERVICE (GSM-LIKE INTEGRATION)            -->
+        <!-- Allows system-level call management                          -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.ChatrConnectionService"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- BACKGROUND SYNC SERVICE                                      -->
+        <!-- Syncs messages and data in background                        -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.BackgroundSyncService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- ============================================================ -->
+        <!-- CALL SCREENING SERVICE (SPAM/BLOCK)                          -->
+        <!-- Intelligent call screening and blocking                      -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.ChatrCallScreeningService"
+            android:permission="android.permission.BIND_SCREENING_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService" />
+            </intent-filter>
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- CALL REDIRECTION SERVICE (OUTGOING GSM DEFENSE)              -->
+        <!-- Scores outgoing carrier calls before Android places them     -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.ChatrCallRedirectionService"
+            android:permission="android.permission.BIND_CALL_REDIRECTION_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.CallRedirectionService" />
+            </intent-filter>
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- INCOMING CALL OVERLAY SERVICE (Truecaller Style)             -->
+        <!-- Draws the floating caller ID bubble over other apps          -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.IncomingCallOverlayService"
+            android:exported="true"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="caller_id_overlay" />
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- CHATR AI GSM LAYER â€” InCall Overlay Service                  -->
+        <!-- Intelligent AI strip on top of native dialer (active calls). -->
+        <!-- ISOLATED from CHATR VoIP / WebRTC. GSM-only.                -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.InCallOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="microphone|specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="gsm_ai_layer" />
+        </service>
+
+        <service
+            android:name=".services.VoipTranslatorService"
+            android:exported="false" />
+
+        <service
+            android:name=".services.CallSummaryEngine"
+            android:exported="false" />
+
+        <!-- ============================================================ -->
+        <!-- CHATR AI GSM LAYER â€” AI Screening Service                    -->
+        <!-- Pre-screens unknown incoming calls via TTS & SpeechRec       -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.AIScreeningService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- ============================================================ -->
+        <!-- CHATR GSM INCALL SERVICE (Tier 2)                           -->
+        <!-- Background listener for GSM call events â€” NOT a dialer UI  -->
+        <!-- android:value="false" means we don't replace the system UI -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".services.ChatrInCallService"
+            android:permission="android.permission.BIND_INCALL_SERVICE"
+            android:exported="true">
+            <meta-data
+                android:name="android.telecom.IN_CALL_SERVICE_UI"
+                android:value="false" />
+            <intent-filter>
+                <action android:name="android.telecom.InCallService" />
+            </intent-filter>
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- SOS EMERGENCY SERVICES                                       -->
+        <!-- SosService sends SMS + location to emergency contacts        -->
+        <!-- SosTileService adds a Quick Settings tile                    -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".sos.SosService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <service
+            android:name=".sos.SosTileService"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="SOS"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".sos.SosAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.chatr.app.SOS_RETRY" />
+                <action android:name="com.chatr.app.SOS_ALARM_CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ============================================================ -->
+        <!-- PHONE ACCOUNT LIFECYCLE RECEIVER (Tier 2)                   -->
+        <!-- Re-registers Chatr+ phone account if cleared by OS/upgrade  -->
+        <!-- ============================================================ -->
+        <receiver
+            android:name=".receivers.ChatrPhoneAccountLifecycleReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.action.PHONE_ACCOUNT_REGISTERED" />
+                <action android:name="android.telecom.action.PHONE_ACCOUNT_UNREGISTERED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ============================================================ -->
+        <!-- CALL STATE RECEIVER                                          -->
+        <!-- Triggers post-call AI summarization when call ends           -->
+        <!-- ============================================================ -->
+        <receiver
+            android:name=".receivers.CallStateReceiver"
+            android:exported="true"
+            android:permission="android.permission.READ_PHONE_STATE">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ============================================================ -->
+        <!-- BOOT RECEIVER                                                -->
+        <!-- Restores services after device restart                       -->
+        <!-- ============================================================ -->
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:exported="true"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ============================================================ -->
+        <!-- NOTIFICATION ACTION RECEIVER                                 -->
+        <!-- Handles Answer/Reject/Reply from notifications               -->
+        <!-- ============================================================ -->
+        <receiver
+            android:name=".receivers.NotificationActionReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receivers.CallReminderReceiver"
+            android:exported="false" />
+
+        <!-- ============================================================ -->
+        <!-- NETWORK CHANGE RECEIVER                                      -->
+        <!-- Triggers sync when network becomes available                 -->
+        <!-- ============================================================ -->
+        <receiver
+            android:name=".receivers.NetworkChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Firebase Default Notification Channel -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="messages_visible_v2" />
+
+        <!-- Firebase Auto-Init -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+
+        <!-- Health Connect Integration -->
+        <activity-alias
+            android:name="ViewPermissionUsageActivity"
+            android:exported="true"
+            android:targetActivity=".MainActivity"
+            android:permission="android.permission.START_VIEW_PERMISSION_USAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE"/>
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS"/>
+            </intent-filter>
+        </activity-alias>
+
+        <activity android:name=".webrtc.TelecomIsolationTestActivity" android:exported="true"/>
+
+        <!-- ============================================================ -->
+        <!-- CHATR SHIELD â€” Accessibility context capture                 -->
+        <!-- Reads on-screen text to power AI Smart Replies               -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".shield.ChatrShieldAccessibilityService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/chatr_shield_accessibility_service" />
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- CHATR ANTI-TRACKER â€” DNS-level tracker blocking VPN          -->
+        <!-- Blocks known ad/tracker domains locally without a server     -->
+        <!-- ============================================================ -->
+        <service
+            android:name=".shield.TrackerProtectionService"
+            android:exported="false"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+
+            <!-- ============================================================ -->
+        <!-- SAFE SMS                                                     -->
+        <!-- Fraud link detection and OTP protection                      -->
+        <!-- ============================================================ -->
+        <receiver
+            android:name=".sms.NativeSmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".sms.NativeMmsReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".sms.NativeSmsStatusReceiver" android:exported="false" />
+        <receiver android:name=".sms.NativeSmsActionReceiver" android:exported="false" />
+
+        <service
+            android:name=".sms.NativeSmsRespondService"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+
+        <!-- Shield Chat Service (Phase 3) -->
+        <service
+            android:name=".shield.ShieldChatService"
+            android:exported="false" />
+            
+    </application>
+
+    <!-- Queries for external app interactions -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+</manifest>

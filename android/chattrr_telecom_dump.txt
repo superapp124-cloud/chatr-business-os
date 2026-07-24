@@ -1,0 +1,78 @@
+CallsManager: 
+  mCalls: 
+  mCallAudioManager:
+    All calls:
+    Active dialing, or connecting calls:
+    Ringing calls:
+    Holding calls:
+    Foreground call:
+    null
+    CallAudioModeStateMachine pending messages:
+      Looper (CallAudioModeStateMachine, tid 151) {b8357fd}
+        (Total messages: 0, polling=true, quitting=false)
+    CallAudioRouteStateMachine pending messages:
+      Looper (com.android.server.telecom.CallAudioRouteStateMachine, tid 150) {669bcf2}
+        (Total messages: 0, polling=true, quitting=false)
+  mTtyManager:
+    mCurrentTtyMode: 0
+  mInCallController:
+    mInCallServices (InCalls registered):
+    ServiceConnections (InCalls bound):
+  mDefaultDialerCache:
+    User 0: com.google.android.dialer
+  mConnectionServiceRepository:
+    mServiceCache:
+      ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}
+  mRoleManager:
+    DefaultCallRedirectionApp: 
+    DefaultCallScreeningApp: 
+    DefaultCarModeDialerApp: 
+    DefaultCallCompanionApps: (override ) 
+PhoneAccountRegistrar: 
+  xmlVersion: 9
+  defaultOutgoing: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
+  simCallManager: null
+  phoneAccounts:
+    [[X] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0} Capabilities: SuppVideo CallProvider MultiUser PlaceEmerg SimSub  Audio Routes: BESW Schemes: tel voicemail  Extras: Bundle[{android.telecom.extra.SUPPORTS_VIDEO_CALLING_FALLBACK=true, mediatek.telecom.extra.PHONE_ACCOUNT_CARRIER_CAPABILITIES=1, android.telecom.extra.SORT_ORDER=0}] GroupId: ***]
+    [[X] PhoneAccount: ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0} Capabilities: SelfManaged SuppVideo Video  Audio Routes: BESW Schemes: tel chatr  Extras: Bundle[{android.telecom.extra.LOG_SELF_MANAGED_CALLS=true}] GroupId: ***]
+Analytics:
+  Call TC@1: {
+      startTime: 0
+      endTime: 1779350202779
+      direction: INCOMING
+      isAdditionalCall: false
+      isInterrupted: false
+      isEmergency: false
+      callTechnologies: []
+      callTerminationReason: DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: () Tone: (-1) ]
+      connectionService: com.chatr.app/.services.ChatrConnectionService
+      isVideoCall: false
+      inCallServices: [
+  ]
+      callProperties: []
+      callSource: UNSPECIFIED
+  }
+  
+  CSW.hCCC: 658.00
+  CSW.sDc: 91.00
+  CSW.rC: 2014.00
+  Hardware Version: 
+  Past analytics dumps: 
+Historical Events:
+  SelfMgd CallTC@1 [21-May-2026 1:26:36 pm](MT - incoming)
+  	Via PhoneAccount: ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0} (Chatr+)
+  	To address: tel:********** Presentation: Allowed
+    13:26:36.998 - PROPERTY_CHANGE (Current: [[ self_mng]], Removed [[]], Added [[ self_mng]]):TSI.aNIC@AN0
+    13:26:37.003 - CREATED:TSI.aNIC@AN0
+    13:26:37.032 - BIND_CS (ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}):TSI.aNIC@AN0
+    13:26:37.070 - CS_BOUND (ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}):SBC.oSC@AN4
+    13:26:37.081 - START_CONNECTION (tel:**********):SBC.oSC@AN4
+    13:26:37.160 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut VTlrx VTltx VTlbi VTrrx VTrtx VTrbi]], Removed [[]], Added [[ hld sup_hld mut VTlrx VTltx VTlbi VTrrx VTrtx VTrbi]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-AN4
+    13:26:37.180 - SET_RINGING (successful incoming call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-AN4
+    13:26:37.783 - AUDIO_ROUTE (Leaving state QuiescentEarpieceRoute):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->CAMSM.pM_2002->CARSM.pM_SWITCH_FOCUS@E-E-AN4
+    13:26:37.784 - AUDIO_ROUTE (Entering state ActiveEarpieceRoute):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->CAMSM.pM_2002->CARSM.pM_SWITCH_FOCUS@E-E-AN4
+    13:26:37.784 - AUDIO_ROUTE_EARPIECE:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->CAMSM.pM_2002->CARSM.pM_SWITCH_FOCUS@E-E-AN4
+    13:26:42.779 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: () Tone: (-1) ]):CSW.sDc@AOQ
+    13:26:42.841 - DESTROYED:CSW.rC->CM.mCAR@AOY
+    Timings (average for this call, milliseconds):
+      bind_cs: 38.00

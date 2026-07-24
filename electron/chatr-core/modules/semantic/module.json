@@ -1,0 +1,8 @@
+{
+  "name": "semantic",
+  "version": "0.1.0",
+  "codename": "Semantic Engine",
+  "description": "Orchestrates understanding. Resolves context via Knowledge and Time, then falls back to LLM if needed.",
+  "dependencies": ["runtime", "events", "knowledge", "time"],
+  "status": "stable"
+}

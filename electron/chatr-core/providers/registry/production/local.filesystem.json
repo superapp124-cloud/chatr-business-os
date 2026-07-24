@@ -1,0 +1,42 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "local-file-system",
+      "version": "1.0.0",
+      "displayName": "Local File System",
+      "description": "Provides raw read and write access to the filesystem.",
+      "author": "CHATR Core",
+      "license": "MIT"
+    },
+    "executionStrategy": "Local Code",
+    "capabilities": [
+      "System.Persist",
+      "Knowledge.Retrieve"
+    ],
+    "dependencies": [],
+    "lifecycle": "stable",
+    "authentication": { "type": "none" },
+    "permissions": ["read_filesystem", "write_filesystem"],
+    "health": "healthy",
+    "trust": 1.0,
+    "latency": 5,
+    "cost": 0,
+    "offline": true,
+    "jurisdiction": "local",
+    "certification": "Core",
+    "evidence": "detailed",
+    "supportedABI": "chatr.capability_catalog.v1_0_rc",
+    "lastValidation": "2026-07-20T00:00:00Z",
+    "deprecationStatus": "active"
+  },
+  "certificate": {
+    "providerId": "local-file-system",
+    "version": "1.0.0",
+    "manifestHash": "auto",
+    "schemaVersion": "1.1",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-20T00:00:00Z",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

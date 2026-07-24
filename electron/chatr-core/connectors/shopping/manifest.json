@@ -1,0 +1,15 @@
+{
+  "id": "shopping",
+  "name": "Shopping Connector",
+  "version": "1.0.0",
+  "description": "Mock connector for shopping and grocery orders.",
+  "capabilities": [
+    "shopping.search",
+    "shopping.purchase"
+  ],
+  "providers": [
+    { "id": "instamart", "name": "Instamart" },
+    { "id": "blinkit", "name": "Blinkit" },
+    { "id": "zepto", "name": "Zepto" }
+  ]
+}

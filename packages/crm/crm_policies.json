@@ -1,0 +1,22 @@
+{
+  "policies": [
+    {
+      "id": "pol_crm_base_access",
+      "type": "transition_guard",
+      "condition": "user.role in ['Sales Rep', 'Sales Manager', 'Admin']",
+      "enforcement": "hard_block"
+    },
+    {
+      "id": "pol_crm_won_approval",
+      "type": "transition_guard",
+      "condition": "object.amount > 50000 ? user.role in ['Sales Director', 'Admin'] : user.role in ['Sales Rep', 'Sales Manager', 'Admin']",
+      "enforcement": "soft_warning"
+    },
+    {
+      "id": "pol_crm_discount_approval",
+      "type": "workflow_trigger",
+      "condition": "object.discount_percentage > 20.0",
+      "enforcement": "hard_block"
+    }
+  ]
+}

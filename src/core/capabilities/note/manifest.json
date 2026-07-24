@@ -1,0 +1,29 @@
+{
+  "id": "core.note",
+  "name": "Note",
+  "version": "1.0.0",
+  "category": "productivity",
+  "outcomeType": "CREATE",
+  "providerName": "PersistenceProvider",
+  "maxExecutionTime": "2s",
+  "requiresNetwork": true,
+  "requiresAuthentication": true,
+  "supportsRetry": true,
+  "supportsOfflineQueue": false,
+  "estimatedLatency": "500ms",
+  "maturity": 0,
+  "permissions": [],
+  "executionPolicy": "immediate",
+  "capabilityVersion": "1.0.0",
+  "sdkVersion": "1.0.0",
+  "minimumKernel": "1.0.0",
+  "description": "Manages Note commitments.",
+  "examples": [],
+  "tags": [
+    "productivity"
+  ],
+  "keywords": [
+    "note"
+  ],
+  "edges": []
+}

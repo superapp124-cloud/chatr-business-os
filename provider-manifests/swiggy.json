@@ -1,0 +1,104 @@
+{
+  "abi": "chatr.provider_manifest.v0_9_rc",
+  "provider_id": "provider.swiggy",
+  "provider_version": "1.0.0",
+  "display_name": "Swiggy",
+  "manifest_version": "1.0.0",
+  "capabilities": [
+    {
+      "capability": "DISCOVER",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Dish", "Restaurant", "Cuisine", "MerchantItem"],
+      "input_schema": {
+        "type": "object",
+        "required": ["context_ref", "entity_graph_ref"],
+        "properties": {
+          "context_ref":      { "type": "string" },
+          "entity_graph_ref": { "type": "string" },
+          "location":         { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["candidate_options"],
+        "properties": { "candidate_options": { "type": "array" } }
+      },
+      "execution_modes": ["api", "browser_runtime"],
+      "strategy_support": ["fastest", "cheapest", "highest_rated", "most_trusted", "local_first"],
+      "authentication": { "type": "api_key", "required": false },
+      "permissions": ["location.read"],
+      "rate_limits": { "requests_per_minute": 60 },
+      "latency": { "p50_ms": 600, "p95_ms": 2000 },
+      "reliability": { "declared_success_rate": 0.96 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "rate_limited", "temporary_unavailable"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": ["browser_session"], "max_concurrency": 4 },
+      "audit": { "emits_action_receipts": false, "emits_state_transitions": false }
+    },
+    {
+      "capability": "EXECUTE",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Dish", "Restaurant", "MerchantItem"],
+      "input_schema": {
+        "type": "object",
+        "required": ["selected_option", "provider_ref", "policy_decision_ref"],
+        "properties": {
+          "selected_option":     { "type": "object" },
+          "provider_ref":        { "type": "string" },
+          "policy_decision_ref": { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["execution_receipt"],
+        "properties": { "execution_receipt": { "type": "object" } }
+      },
+      "execution_modes": ["api"],
+      "strategy_support": ["fastest", "most_trusted", "cheapest"],
+      "authentication": { "type": "api_key", "required": true },
+      "permissions": ["location.read", "payment.initiate"],
+      "rate_limits": { "requests_per_minute": 10 },
+      "latency": { "p50_ms": 800, "p95_ms": 3000 },
+      "reliability": { "declared_success_rate": 0.94 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": true },
+      "recovery": { "retryable_errors": ["timeout", "temporary_unavailable"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 2 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    },
+    {
+      "capability": "TRACK",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Dish", "MerchantItem"],
+      "input_schema": {
+        "type": "object",
+        "required": ["execution_receipt"],
+        "properties": { "execution_receipt": { "type": "object" } }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["status_snapshot"],
+        "properties": { "status_snapshot": { "type": "object" } }
+      },
+      "execution_modes": ["api"],
+      "strategy_support": ["fastest", "most_trusted"],
+      "authentication": { "type": "api_key", "required": true },
+      "permissions": [],
+      "rate_limits": { "requests_per_minute": 30 },
+      "latency": { "p50_ms": 300, "p95_ms": 1000 },
+      "reliability": { "declared_success_rate": 0.98 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": true },
+      "recovery": { "retryable_errors": ["timeout", "rate_limited"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 8 },
+      "audit": { "emits_action_receipts": false, "emits_state_transitions": true }
+    }
+  ],
+  "health_check": { "mode": "api", "endpoint": "https://api.swiggy.in/health" },
+  "compatibility": { "kernel_abi": ">=0.9 <1.0" },
+  "trust_evidence": { "manifest_signature": "optional", "attestation": "optional" }
+}

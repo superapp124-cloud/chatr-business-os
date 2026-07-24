@@ -1,0 +1,51 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trust & Federation Schema",
+  "description": "Schemas for the CHATR Federation Contract (The 7th Frozen Contract)",
+  "definitions": {
+    "TrustRelationship": {
+      "type": "object",
+      "required": ["id", "sourceOrg", "targetOrg", "trustLevel", "allowedCapabilities", "lifecycleState"],
+      "properties": {
+        "id": { "type": "string" },
+        "sourceOrg": { "type": "string" },
+        "targetOrg": { "type": "string" },
+        "trustLevel": {
+          "type": "object",
+          "properties": {
+            "identityTrust": { "type": "string", "enum": ["Low", "High"] },
+            "publisherTrust": { "type": "string", "enum": ["Low", "High"] },
+            "packageTrust": { "type": "string", "enum": ["Low", "High"] },
+            "operationalTrust": { "type": "string", "enum": ["Low", "High"] },
+            "complianceTrust": { "type": "string", "enum": ["Low", "High"] }
+          }
+        },
+        "allowedCapabilities": { "type": "array", "items": { "type": "string" } },
+        "policies": { "type": "array", "items": { "type": "string" } },
+        "lifecycleState": { "type": "string", "enum": ["Proposed", "Verified", "Negotiated", "Active", "Suspended", "Revoked", "Archived"] }
+      }
+    },
+    "FederationSession": {
+      "type": "object",
+      "required": ["sessionId", "trustRelationshipId", "identityMapping", "policyCompatibility", "validUntil", "auditCorrelationId"],
+      "properties": {
+        "sessionId": { "type": "string" },
+        "trustRelationshipId": { "type": "string" },
+        "identityMapping": { "type": "object" },
+        "policyCompatibility": { "type": "boolean" },
+        "validUntil": { "type": "string", "format": "date-time" },
+        "auditCorrelationId": { "type": "string" }
+      }
+    },
+    "IdentityAssertion": {
+      "type": "object",
+      "required": ["issuer", "subject", "signature", "claims"],
+      "properties": {
+        "issuer": { "type": "string" },
+        "subject": { "type": "string" },
+        "signature": { "type": "string" },
+        "claims": { "type": "object" }
+      }
+    }
+  }
+}

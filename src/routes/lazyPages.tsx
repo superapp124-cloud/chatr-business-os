@@ -1,0 +1,397 @@
+import { lazy } from 'react';
+
+/**
+ * PERFORMANCE-OPTIMIZED LAZY LOADING
+ * Reduces initial bundle from ~5MB to ~150KB
+ * Uses intelligent prefetching for instant navigation
+ */
+
+const isNativeShell = () => {
+  if (typeof window === 'undefined') return false;
+  return Boolean((window as any).Capacitor?.isNativePlatform?.());
+};
+
+// ============================================
+// PRELOAD CORE ROUTES - light on native startup
+// ============================================
+export const preloadCriticalRoutes = () => {
+  const nativeShell = isNativeShell();
+
+  // Warm the most likely next tabs, but let the native WebView paint Home first.
+  const criticalRoutes = [
+    () => import('@/pages/Calls'),
+    () => import('@/pages/Chat'),
+    () => import('@/pages/Stories'),
+    () => import('@/pages/More'),
+    () => import('@/pages/ChatrWorld'),
+    () => import('@/pages/Profile'),
+  ];
+
+  // Preload during idle time for web. On native, use a real delay so idle
+  // callbacks cannot start a route-chunk storm before the first screen paints.
+  const preloadBatch = (routes: (() => Promise<any>)[], delay: number) => {
+    const run = () => routes.forEach(route => route().catch(() => {}));
+
+    if (nativeShell) {
+      window.setTimeout(run, delay);
+      return;
+    }
+
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(
+        run,
+        { timeout: delay }
+      );
+    } else {
+      setTimeout(run, delay);
+    }
+  };
+
+  preloadBatch(criticalRoutes, nativeShell ? 1000 : 500);
+
+  // Secondary pages are useful on web, but too expensive during native startup.
+  const secondaryRoutes = [
+    () => import('@/pages/Contacts'),
+    () => import('@/pages/Settings'),
+    () => import('@/pages/HealthHub'),
+    () => import('@/pages/Dhandha'),
+  ];
+  preloadBatch(secondaryRoutes, nativeShell ? 3000 : 1500);
+};
+
+// Route-based prefetch helper (call before navigation)
+export const prefetchRoute = (routeImport: () => Promise<any>) => {
+  // Start loading immediately
+  routeImport().catch(() => {});
+};
+
+// ============================================
+// CRITICAL PAGES (Changed to lazy loaded to reduce bundle size)
+// ============================================
+export const Index = lazy(() => import('@/pages/Index'));
+export const Auth = lazy(() => import('@/pages/Auth'));
+export const Home = lazy(() => import('@/pages/Home'));
+export const WorkspaceSelector = lazy(() => import('@/pages/auth/WorkspaceSelector').then(m => ({ default: m.WorkspaceSelector })));
+export const WorkspaceIDE = lazy(() => import('@/pages/desktop/WorkspaceIDE').then(m => ({ default: m.WorkspaceIDE })));
+export const ProUpgrade = lazy(() => import('@/pages/ProUpgrade'));
+export const AdminJobHealth = lazy(() => import('@/pages/AdminJobHealth'));
+export const CarePathDetail = lazy(() => import('@/pages/CarePathDetail'));
+
+// ============================================
+// LAZY LOADED PAGES
+// ============================================
+
+// Core Features
+export const Chat = lazy(() => import('@/pages/Chat'));
+export const Calls = lazy(() => import('@/pages/Calls'));
+export const Profile = lazy(() => import('@/pages/Profile'));
+export const StarredMessages = lazy(() => import('@/pages/StarredMessages'));
+export const Contacts = lazy(() => import('@/pages/Contacts'));
+export const GlobalContacts = lazy(() => import('@/pages/GlobalContacts'));
+export const ContactsPage = lazy(() => import('@/pages/ContactsPage'));
+export const SmartInbox = lazy(() => import('@/pages/SmartInbox'));
+export const ConnectedAccounts = lazy(() => import('@/pages/ConnectedAccounts'));
+
+export const Stories = lazy(() => import('@/pages/Stories'));
+export const StatusComposer = lazy(() => import('@/pages/StatusComposer'));
+export const More = lazy(() => import('@/pages/More'));
+export const GeoDiscovery = lazy(() => import('@/pages/GeoDiscovery'));
+export const CallHistory = lazy(() => import('@/pages/CallHistory'));
+export const StandaloneDialer = lazy(() => import('@/pages/StandaloneDialer'));
+
+// Earning / Micro-Tasks
+export const Earn = lazy(() => import('@/pages/Earn'));
+export const EarnHistory = lazy(() => import('@/pages/EarnHistory'));
+export const AdminMicroTasks = lazy(() => import('@/pages/admin/MicroTasks'));
+
+// Business / Dhandha
+export const Dhandha = lazy(() => import('@/pages/Dhandha'));
+
+// Communities
+export const Communities = lazy(() => import('@/pages/Communities'));
+export const CreateCommunity = lazy(() => import('@/pages/CreateCommunity'));
+export const Community = lazy(() => import('@/pages/Community'));
+export const CommunitySpace = lazy(() => import('@/pages/CommunitySpace'));
+
+// Health & Wellness
+export const HealthHub = lazy(() => import('@/pages/HealthHub'));
+export const CareAccess = lazy(() => import('@/pages/CareAccess'));
+export const WellnessTracking = lazy(() => import('@/pages/WellnessTracking'));
+export const HealthPassport = lazy(() => import('@/pages/HealthPassport'));
+export const LabReports = lazy(() => import('@/pages/LabReports'));
+export const MedicineReminders = lazy(() => import('@/pages/MedicineReminders'));
+export const BMICalculator = lazy(() => import('@/pages/BMICalculator'));
+export const NutritionTracker = lazy(() => import('@/pages/NutritionTracker'));
+export const MentalHealth = lazy(() => import('@/pages/MentalHealth'));
+export const HealthReminders = lazy(() => import('@/pages/HealthReminders'));
+export const HealthRiskPredictions = lazy(() => import('@/pages/HealthRiskPredictions'));
+export const SymptomCheckerPage = lazy(() => import('@/pages/SymptomCheckerPage'));
+export const HealthWalletPage = lazy(() => import('@/pages/HealthWalletPage'));
+export const TeleconsultationPage = lazy(() => import('@/pages/TeleconsultationPage'));
+export const MedicationInteractionsPage = lazy(() => import('@/pages/MedicationInteractionsPage'));
+export const HealthStreaksPage = lazy(() => import('@/pages/HealthStreaksPage'));
+export const ChronicVitalsPage = lazy(() => import('@/pages/ChronicVitalsPage'));
+export const WellnessCircles = lazy(() => import('@/pages/WellnessCircles'));
+export const ExpertSessions = lazy(() => import('@/pages/ExpertSessions'));
+export const AlliedHealthcare = lazy(() => import('@/pages/AlliedHealthcare'));
+export const LocalHealthcare = lazy(() => import('@/pages/LocalHealthcare'));
+
+// Care System
+export const DoctorDetail = lazy(() => import('@/pages/care/DoctorDetail'));
+export const AddFamilyMember = lazy(() => import('@/pages/care/AddFamilyMember'));
+export const MyAppointments = lazy(() => import('@/pages/care/MyAppointments'));
+export const MedicineHubPage = lazy(() => import('@/pages/care/MedicineHub'));
+export const MedicineSubscribePage = lazy(() => import('@/pages/care/MedicineSubscribe'));
+export const MedicineSubscriptionsPage = lazy(() => import('@/pages/care/MedicineSubscriptions'));
+export const MedicineFamilyPage = lazy(() => import('@/pages/care/MedicineFamily'));
+export const MedicineVitalsPage = lazy(() => import('@/pages/care/MedicineVitals'));
+export const MedicinePrescriptionsPage = lazy(() => import('@/pages/care/MedicinePrescriptions'));
+export const MedicineRemindersPage = lazy(() => import('@/pages/care/MedicineReminders'));
+export const MedicineRewardsPage = lazy(() => import('@/pages/care/MedicineRewards'));
+
+// Booking & Providers
+export const BookingPage = lazy(() => import('@/pages/BookingPage'));
+export const BookingTracking = lazy(() => import('@/pages/BookingTracking'));
+export const ProviderPortal = lazy(() => import('@/pages/ProviderPortal'));
+export const ProviderRegister = lazy(() => import('@/pages/ProviderRegister'));
+export const ProviderDetails = lazy(() => import('@/pages/ProviderDetails'));
+export const ProviderDashboard = lazy(() => import('@/pages/ProviderDashboard'));
+export const DoctorOnboarding = lazy(() => import('@/pages/DoctorOnboarding'));
+
+// AI Features
+export const AIAgentsHub = lazy(() => import('@/pages/AIAgentsHub'));
+export const AIAgentCreate = lazy(() => import('@/pages/AIAgentCreate'));
+export const AIAgentChatNew = lazy(() => import('@/pages/AIAgentChatNew'));
+export const AIAgents = lazy(() => import('@/pages/AIAgents'));
+export const AIAgentChat = lazy(() => import('@/pages/AIAgentChat'));
+export const AIAssistant = lazy(() => import('@/pages/AIAssistant'));
+export const AIBrowser = lazy(() => import('@/pages/AIBrowser'));
+export const AIBrowserHome = lazy(() => import('@/pages/AIBrowserHome'));
+export const AIBrowserView = lazy(() => import('@/pages/AIBrowserView'));
+export const AIChat = lazy(() => import('@/pages/AIChat'));
+export const PrechuAI = lazy(() => import('@/pages/PrechuAI'));
+
+// Marketplace & Services
+export const Marketplace = lazy(() => import('@/pages/Marketplace'));
+export const ServiceListing = lazy(() => import('@/pages/ServiceListing'));
+export const HomeServices = lazy(() => import('@/pages/HomeServices'));
+export const MarketplaceCheckout = lazy(() => import('@/pages/marketplace/MarketplaceCheckout'));
+export const OrderSuccessPage = lazy(() => import('@/pages/marketplace/OrderSuccess'));
+
+// Food & Deals
+export const FoodOrdering = lazy(() => import('@/pages/FoodOrdering'));
+export const LocalDeals = lazy(() => import('@/pages/LocalDeals'));
+export const RestaurantDetail = lazy(() => import('@/pages/food/RestaurantDetail'));
+export const FoodCheckout = lazy(() => import('@/pages/food/FoodCheckout'));
+export const OrderTracking = lazy(() => import('@/pages/food/OrderTracking'));
+export const OrderHistory = lazy(() => import('@/pages/food/OrderHistory'));
+
+// Mini Apps & Games
+export const MiniAppsStore = lazy(() => import('@/pages/MiniAppsStore'));
+export const MiniApps = lazy(() => import('@/pages/MiniApps'));
+export const AppStatistics = lazy(() => import('@/pages/AppStatistics'));
+export const DeveloperPortal = lazy(() => import('@/pages/DeveloperPortal'));
+export const McpDeveloperDashboard = lazy(() => import('@/pages/McpDeveloperDashboard'));
+export const ChatrGames = lazy(() => import('@/pages/ChatrGames'));
+export const ChatrApp = lazy(() => import('@/pages/ChatrApp'));
+export const ChatrOS = lazy(() => import('@/pages/ChatrOS'));
+export const OSDetection = lazy(() => import('@/pages/OSDetection'));
+export const Launcher = lazy(() => import('@/pages/Launcher'));
+
+// CHATR Store
+export const StoreAppDetail = lazy(() => import('@/pages/store/AppDetail'));
+export const StoreMyApps = lazy(() => import('@/pages/store/MyApps'));
+export const StoreUpdates = lazy(() => import('@/pages/store/AppUpdates'));
+export const StoreExplore = lazy(() => import('@/pages/store/StoreExplore'));
+export const StoreDeveloperDashboard = lazy(() => import('@/pages/store/DeveloperDashboard'));
+
+// Chatr Features
+export const ChatrWorld = lazy(() => import('@/pages/ChatrWorld'));
+
+export const ChatrResults = lazy(() => import('@/pages/ChatrResults'));
+export const ChatrStudio = lazy(() => import('@/pages/ChatrStudio'));
+export const ChatrPoints = lazy(() => import('@/pages/ChatrPoints'));
+export const RewardShop = lazy(() => import('@/pages/RewardShop'));
+export const ChatrGrowth = lazy(() => import('@/pages/ChatrGrowth'));
+export const ChatrTutors = lazy(() => import('@/pages/ChatrTutors'));
+export const ChatrWallet = lazy(() => import('@/pages/ChatrWallet'));
+export const ChatrPlus = lazy(() => import('@/pages/ChatrPlus'));
+export const ChatrPlusSearch = lazy(() => import('@/pages/ChatrPlusSearch'));
+export const ChatrPlusSubscribe = lazy(() => import('@/pages/ChatrPlusSubscribe'));
+export const ChatrPlusServiceDetail = lazy(() => import('@/pages/ChatrPlusServiceDetail'));
+export const ChatrPlusSellerRegistration = lazy(() => import('@/pages/ChatrPlusSellerRegistration'));
+export const ChatrPlusSellerDashboard = lazy(() => import('@/pages/ChatrPlusSellerDashboard'));
+export const ChatrPlusCategoryPage = lazy(() => import('@/pages/ChatrPlusCategoryPage'));
+export const ChatrPlusWallet = lazy(() => import('@/pages/ChatrPlusWallet'));
+
+// Social & Youth
+export const YouthEngagement = lazy(() => import('@/pages/YouthEngagement'));
+export const YouthFeed = lazy(() => import('@/pages/YouthFeed'));
+export const FameCam = lazy(() => import('@/pages/FameCam'));
+export const FameLeaderboard = lazy(() => import('@/pages/FameLeaderboard'));
+export const Capture = lazy(() => import('@/pages/Capture'));
+export const Referrals = lazy(() => import('@/pages/Referrals'));
+export const AmbassadorProgram = lazy(() => import('@/pages/AmbassadorProgram'));
+
+// Seller Portal
+export const SellerPortal = lazy(() => import('@/pages/SellerPortal'));
+export const SellerBookings = lazy(() => import('@/pages/SellerBookings'));
+export const SellerServices = lazy(() => import('@/pages/SellerServices'));
+export const SellerAnalytics = lazy(() => import('@/pages/SellerAnalytics'));
+export const SellerMessages = lazy(() => import('@/pages/SellerMessages'));
+export const SellerSettings = lazy(() => import('@/pages/SellerSettings'));
+export const SellerReviews = lazy(() => import('@/pages/SellerReviews'));
+export const SellerPayouts = lazy(() => import('@/pages/SellerPayouts'));
+export const SellerSubscription = lazy(() => import('@/pages/SellerSubscription'));
+export const SellerSettlements = lazy(() => import('@/pages/seller/SellerSettlements'));
+
+export const BetaCommandCenter = lazy(() => import('@/pages/desktop/BetaCommandCenter').then(m => ({ default: m.BetaCommandCenter })));
+export const ProductionValidationReport = lazy(() => import('@/pages/desktop/ProductionValidationReport').then(m => ({ default: m.ProductionValidationReport })));
+
+// Business Portal
+export const BusinessDashboard = lazy(() => import('@/pages/business/Dashboard'));
+export const BusinessOnboarding = lazy(() => import('@/pages/business/Onboarding'));
+export const BusinessInbox = lazy(() => import('@/pages/business/TeamInbox'));
+export const CRMPage = lazy(() => import('@/pages/business/CRM'));
+export const BusinessAnalytics = lazy(() => import('@/pages/business/Analytics'));
+export const BusinessTeam = lazy(() => import('@/pages/business/Team'));
+export const BusinessSettings = lazy(() => import('@/pages/business/Settings'));
+export const BusinessCatalog = lazy(() => import('@/pages/business/Catalog'));
+export const BusinessBroadcasts = lazy(() => import('@/pages/business/Broadcasts'));
+export const BusinessGroups = lazy(() => import('@/pages/business/Groups'));
+export const AIRoles = lazy(() => import('@/pages/business/AIRoles'));
+export const Integrations = lazy(() => import('@/pages/business/Integrations'));
+export const BusinessAutomations = lazy(() => import('@/pages/business/Automations'));
+export const PhoneSystem = lazy(() => import('@/pages/business/PhoneSystem'));
+export const AppStore = lazy(() => import('@/pages/business/AppStore'));
+export const DeveloperHub = lazy(() => import('@/pages/business/DeveloperHub'));
+export const WorkHub = lazy(() => import('@/pages/business/WorkHub').then(m => ({ default: m.WorkHub })));
+
+// Vendor Portal
+export const VendorLogin = lazy(() => import('@/pages/vendor/VendorLogin'));
+export const VendorRegister = lazy(() => import('@/pages/vendor/VendorRegister'));
+export const VendorDashboard = lazy(() => import('@/pages/vendor/VendorDashboard'));
+export const VendorSettings = lazy(() => import('@/pages/vendor/VendorSettings'));
+export const RestaurantMenu = lazy(() => import('@/pages/vendor/restaurant/RestaurantMenu'));
+export const RestaurantOrders = lazy(() => import('@/pages/vendor/restaurant/RestaurantOrders'));
+export const DealsManagement = lazy(() => import('@/pages/vendor/deals/DealsManagement'));
+export const DoctorAppointments = lazy(() => import('@/pages/vendor/healthcare/DoctorAppointments'));
+export const DoctorPatients = lazy(() => import('@/pages/vendor/healthcare/DoctorPatients'));
+export const DoctorAnalytics = lazy(() => import('@/pages/vendor/healthcare/DoctorAnalytics'));
+export const DoctorAvailability = lazy(() => import('@/pages/vendor/healthcare/DoctorAvailability'));
+
+// Provider Pages
+export const ProviderAppointments = lazy(() => import('@/pages/provider/Appointments'));
+export const ProviderServices = lazy(() => import('@/pages/provider/Services'));
+export const ProviderPayments = lazy(() => import('@/pages/provider/Payments'));
+
+// Admin Pages
+export const AdminDashboard = lazy(() => import('@/pages/AdminDashboard'));
+export const AdminUsers = lazy(() => import('@/pages/admin/Users'));
+export const AdminProviders = lazy(() => import('@/pages/admin/Providers'));
+export const AdminAnalytics = lazy(() => import('@/pages/admin/Analytics'));
+export const AdminPayments = lazy(() => import('@/pages/admin/Payments'));
+export const AdminPoints = lazy(() => import('@/pages/admin/Points'));
+export const AdminSettings = lazy(() => import('@/pages/admin/Settings'));
+export const AdminAnnouncements = lazy(() => import('@/pages/admin/Announcements'));
+export const AdminDocuments = lazy(() => import('@/pages/admin/Documents'));
+export const AdminDoctorApplications = lazy(() => import('@/pages/admin/DoctorApplications'));
+export const FeatureBuilder = lazy(() => import('@/pages/admin/FeatureBuilder'));
+export const SchemaManager = lazy(() => import('@/pages/admin/SchemaManager'));
+export const KYCApprovals = lazy(() => import('@/pages/admin/KYCApprovals'));
+export const CommandCenter = lazy(() => import('@/pages/CommandCenter'));
+export const BrandPartnerships = lazy(() => import('@/pages/admin/BrandPartnerships'));
+export const AppApprovals = lazy(() => import('@/pages/admin/AppApprovals'));
+export const OfficialAccountsManager = lazy(() => import('@/pages/admin/OfficialAccountsManager'));
+export const BroadcastManager = lazy(() => import('@/pages/admin/BroadcastManager'));
+export const PaymentVerification = lazy(() => import('@/pages/admin/PaymentVerification'));
+
+export const AdminTokenHealth = lazy(() => import('@/pages/admin/TokenHealth'));
+export const ChatrWorldAdmin = lazy(() => import('@/pages/ChatrWorldAdmin'));
+
+// Settings & Account
+export const Account = lazy(() => import('@/pages/Account'));
+export const Settings = lazy(() => import('@/pages/Settings'));
+export const Automations = lazy(() => import('@/pages/Automations'));
+export const AppearanceSettings = lazy(() => import('@/pages/AppearanceSettings'));
+export const AppIconSettings = lazy(() => import('@/pages/AppIconSettings'));
+export const WallpaperSettings = lazy(() => import('@/pages/WallpaperSettings'));
+export const ChatFoldersSettings = lazy(() => import('@/pages/ChatFoldersSettings'));
+export const NotificationSettings = lazy(() => import('@/pages/NotificationSettings'));
+export const NotificationHealth = lazy(() => import('@/pages/NotificationHealth'));
+export const SmartPushPreferences = lazy(() => import('@/pages/SmartPushPreferences'));
+export const NotificationTemplates = lazy(() => import('@/pages/NotificationTemplates'));
+export const Notifications = lazy(() => import('@/pages/Notifications'));
+export const DigestNotificationSettings = lazy(() => import('@/pages/DigestNotificationSettings'));
+export const DeviceManagement = lazy(() => import('@/pages/DeviceManagement'));
+export const StealthMode = lazy(() => import('@/pages/StealthMode'));
+export const Privacy = lazy(() => import('@/pages/Privacy'));
+export const ChatrShield = lazy(() => import('@/pages/ChatrShield'));
+
+// Utility Pages
+export const Geofences = lazy(() => import('@/pages/Geofences'));
+export const GeofenceHistory = lazy(() => import('@/pages/GeofenceHistory'));
+export const QRPayment = lazy(() => import('@/pages/QRPayment'));
+export const QRLogin = lazy(() => import('@/pages/QRLogin'));
+export const EmergencyButton = lazy(() => import('@/pages/EmergencyButton'));
+export const EmergencyServices = lazy(() => import('@/pages/EmergencyServices'));
+export const BluetoothTest = lazy(() => import('@/pages/BluetoothTest'));
+export const UniversalSearch = lazy(() => import('@/pages/UniversalSearch'));
+export const UserSubscription = lazy(() => import('@/pages/UserSubscription'));
+export const KYCVerificationPage = lazy(() => import('@/pages/KYCVerification'));
+export const LocalJobs = lazy(() => import('@/pages/LocalJobs'));
+export const JobDetail = lazy(() => import('@/pages/JobDetail'));
+export const OfficialAccounts = lazy(() => import('@/pages/OfficialAccounts'));
+
+// Static Pages
+export const About = lazy(() => import('@/pages/About'));
+export const Help = lazy(() => import('@/pages/Help'));
+export const Contact = lazy(() => import('@/pages/Contact'));
+export const Download = lazy(() => import('@/pages/Download'));
+export const Install = lazy(() => import('@/pages/Install'));
+export const Onboarding = lazy(() => import('@/pages/Onboarding'));
+export const PrivacyPolicy = lazy(() => import('@/pages/PrivacyPolicy'));
+export const Terms = lazy(() => import('@/pages/Terms'));
+export const Refund = lazy(() => import('@/pages/Refund'));
+export const Disclaimer = lazy(() => import('@/pages/Disclaimer'));
+export const JoinInvite = lazy(() => import('@/pages/JoinInvite'));
+export const ChatrWeb = lazy(() => import('@/pages/ChatrWeb'));
+export const NotFound = lazy(() => import('@/pages/NotFound'));
+
+// CHATR++ Identity System
+export const Identity = lazy(() => import('@/pages/Identity'));
+export const Discover = lazy(() => import('@/pages/Discover'));
+export const PublicProfile = lazy(() => import('@/pages/PublicProfile'));
+export const AICloneSettings = lazy(() => import('@/pages/AICloneSettings'));
+export const CallerIdHub = lazy(() => import('@/pages/CallerIdHub'));
+export const EarnCampaign = lazy(() => import('@/pages/EarnCampaign'));
+
+// Desktop Layout
+export const DesktopConnectPairing = lazy(() => import('@/pages/desktop/DesktopConnectPairing').then(m => ({ default: m.DesktopConnectPairing })));
+export const DesktopConnectScanner = lazy(() => import('@/pages/DesktopConnectScanner').then(m => ({ default: m.DesktopConnectScanner })));
+export const DesktopChat = lazy(() => import('@/pages/desktop/DesktopChat'));
+export const DesktopContacts = lazy(() => import('@/pages/desktop/DesktopContacts'));
+export const InfiniteCanvas = lazy(() => import('@/components/desktop/InfiniteCanvas').then(module => ({ default: module.InfiniteCanvas })));
+export const DesktopCalls = lazy(() => import('@/pages/desktop/DesktopCalls'));
+export const DesktopWorkspace = lazy(() => import('@/pages/desktop/DesktopWorkspace').then(m => ({ default: m.DesktopWorkspace })));
+export const DesktopTickets = lazy(() => import('@/pages/desktop/Tickets').then(m => ({ default: m.Tickets })));
+export const DesktopFiles = lazy(() => import('@/pages/desktop/Files').then(m => ({ default: m.Files })));
+export const DesktopIntelligence = lazy(() => import('@/pages/desktop/DesktopIntelligence'));
+export const DesktopSettings = lazy(() => import('@/pages/desktop/DesktopSettings').then(m => ({ default: m.DesktopSettings })));
+export const RecruiterWorkspace = lazy(() => import('@/pages/desktop/RecruiterWorkspace').then(m => ({ default: m.RecruiterWorkspace })));
+export const CandidateWorkspace = lazy(() => import('@/pages/desktop/CandidateWorkspace').then(m => ({ default: m.CandidateWorkspace })));
+export const AgentMarketplace = lazy(() => import('@/pages/desktop/AgentMarketplace').then(m => ({ default: m.AgentMarketplace })));
+export const DesktopConnectorStore = lazy(() => import('@/pages/desktop/DesktopConnectorStore').then(m => ({ default: m.default })));
+export const WorkflowStudio = lazy(() => import('@/pages/desktop/WorkflowStudio').then(m => ({ default: m.WorkflowStudio })));
+export const AgentWorkspace = lazy(() => import('@/pages/desktop/AgentWorkspace').then(m => ({ default: m.AgentWorkspace })));
+export const DesktopNotifications = lazy(() => import('@/pages/desktop/DesktopNotifications'));
+export const DesktopProfile = lazy(() => import('@/pages/desktop/DesktopProfile').then(m => ({ default: m.DesktopProfile ?? m.default })));
+export const DesktopPrivacy = lazy(() => import('@/pages/desktop/DesktopPrivacy').then(m => ({ default: m.DesktopPrivacy ?? m.default })));
+export const DesktopAccount = lazy(() => import('@/pages/desktop/DesktopAccount').then(m => ({ default: m.DesktopAccount ?? m.default })));
+export const DesktopAppearance = lazy(() => import('@/pages/desktop/DesktopAppearance').then(m => ({ default: m.DesktopAppearance ?? m.default })));
+export const DesktopWallpaper = lazy(() => import('@/pages/desktop/DesktopWallpaper').then(m => ({ default: m.DesktopWallpaper ?? m.default })));
+export const DesktopCalendar = lazy(() => import('@/pages/desktop/DesktopCalendar').then(m => ({ default: m.DesktopCalendar ?? m.default })));
+export const BusinessOS = lazy(() => import('@/pages/desktop/BusinessOS').then(m => ({ default: m.default })));
+export const ProcessMonitor = lazy(() => import('@/pages/desktop/ProcessMonitor').then(m => ({ default: m.ProcessMonitor ?? m.default })));
+export const WorldExplorer = lazy(() => import('@/pages/desktop/WorldExplorer').then(m => ({ default: m.WorldExplorer ?? m.default })));
+

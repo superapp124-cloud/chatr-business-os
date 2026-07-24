@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Solution Pack Lifecycle Schema",
+  "description": "The governed lifecycle of a Solution Pack.",
+  "version": "15.0",
+  "definitions": {
+    "PackLifecycle": {
+      "type": "object",
+      "required": ["packId", "currentState"],
+      "properties": {
+        "packId": { "type": "string" },
+        "currentState": {
+          "type": "string",
+          "enum": [
+            "Draft",
+            "Validated",
+            "Certified",
+            "Signed",
+            "Published",
+            "Installed",
+            "Active",
+            "Deprecated",
+            "Archived"
+          ]
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "state": { "type": "string" },
+              "timestamp": { "type": "string", "format": "date-time" },
+              "actor": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "knowledge_sources": [
+    {
+      "id": "know_crm_email_history",
+      "source_type": "email",
+      "embedding_model": "nomic-embed-text",
+      "vector_store": "typesense_local",
+      "sync_frequency": "real_time"
+    },
+    {
+      "id": "know_crm_meeting_notes",
+      "source_type": "document",
+      "embedding_model": "nomic-embed-text",
+      "vector_store": "typesense_local",
+      "sync_frequency": "scheduled_batch_hourly"
+    }
+  ],
+  "situation_signals": [
+    {
+      "id": "sig_crm_stalled_deal",
+      "trigger_condition": "opportunity.last_activity_date < now() - 14.days",
+      "priority": "high",
+      "action_type": "raise_decision_card"
+    },
+    {
+      "id": "sig_crm_high_value_win",
+      "trigger_condition": "opportunity.state == 'Won' && opportunity.amount > 100000",
+      "priority": "medium",
+      "action_type": "broadcast_event"
+    }
+  ]
+}

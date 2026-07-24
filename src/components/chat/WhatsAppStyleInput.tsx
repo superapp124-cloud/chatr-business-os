@@ -1,0 +1,627 @@
+import React, { useState, KeyboardEvent, useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
+import { Send, Paperclip, Mic, WifiOff, X, Plus, Camera, Image as ImageIcon, FileText, Mic2, MapPin, User, Zap } from 'lucide-react';
+import { toast } from 'sonner';
+import { useInputValidation } from '@/hooks/useInputValidation';
+import { useMessageQueue } from '@/hooks/useMessageQueue';
+import { supabase } from '@/integrations/supabase/client';
+import { VoiceRecorder } from '@/components/VoiceRecorder';
+import { AIAssistantButton, AIAction } from './AIAssistantButton';
+import { useAISmartReplies } from '@/hooks/useAISmartReplies';
+import { MediaPreviewDialog } from './MediaPreviewDialog';
+import { MultiMediaPreviewDialog } from './MultiMediaPreviewDialog';
+import { ContactPicker } from './ContactPicker';
+import { capturePhoto, pickImage, getCurrentLocation } from '@/utils/mediaUtils';
+import { SmartReplySuggestions } from './SmartReplySuggestions';
+import { useSmartReplies } from '@/hooks/useSmartReplies';
+import {
+ Popover,
+ PopoverContent,
+ PopoverTrigger,
+} from '@/components/ui/popover';
+
+interface WhatsAppStyleInputProps {
+ onSendMessage: (content: string, type?: string, mediaAttachments?: any[]) => Promise<void>;
+ conversationId: string;
+ userId: string;
+ disabled?: boolean;
+ lastMessage?: string;
+ conversationContext?: string[];
+ onAIAction?: (action: AIAction) => void;
+ replyToMessage?: any;
+ onCancelReply?: () => void;
+ onTyping?: (text: string) => void;
+}
+
+export const WhatsAppStyleInput: React.FC<WhatsAppStyleInputProps> = ({ 
+ onSendMessage, 
+ conversationId, 
+ userId, 
+ disabled,
+ lastMessage,
+ conversationContext = [],
+ onAIAction,
+ replyToMessage,
+ onCancelReply,
+ onTyping,
+}) => {
+ const [message, setMessage] = useState('');
+ const [sending, setSending] = useState(false);
+ const [showVoiceRecorder, setShowVoiceRecorder] = useState(false);
+ const [uploadingFile, setUploadingFile] = useState(false);
+ const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+ const [showAttachMenu, setShowAttachMenu] = useState(false);
+ const [showMediaPreview, setShowMediaPreview] = useState(false);
+ const [previewMedia, setPreviewMedia] = useState<Array<{ url: string; type: 'image' | 'video' | 'document'; fileName?: string; fileSize?: number; file: File }>>([]);
+ const [showContactPicker, setShowContactPicker] = useState(false);
+ const fileInputRef = useRef<HTMLInputElement>(null);
+ const imageInputRef = useRef<HTMLInputElement>(null);
+ const { validateMessage, sanitizeHtml } = useInputValidation();
+ const { addToQueue, isOnline, queueLength } = useMessageQueue(userId);
+ const { loading: aiLoading, generateSmartReplies } = useAISmartReplies();
+ const { suggestions, isLoading: suggestionsLoading, generateReplies } = useSmartReplies();
+
+ // Generate smart replies when last message changes
+ useEffect(() => {
+ if (lastMessage) {
+ generateReplies(lastMessage, conversationContext);
+ }
+ }, [lastMessage, conversationContext, generateReplies]);
+
+ const handleSend = async () => {
+ if (!message.trim() || sending || disabled) return;
+
+ const validation = validateMessage(message.trim());
+ if (!validation.success) {
+ toast.error(validation.error?.issues[0]?.message || 'Invalid message');
+ return;
+ }
+
+ const sanitizedMessage = sanitizeHtml(message.trim());
+
+ setSending(true);
+ try {
+ if (!isOnline) {
+ addToQueue({
+ conversation_id: conversationId,
+ content: sanitizedMessage,
+ message_type: 'text',
+ });
+ setMessage('');
+ toast.info('Message queued - will send when back online');
+ } else {
+ await onSendMessage(sanitizedMessage);
+ setMessage('');
+ }
+ } catch (error) {
+ console.error('Error sending message:', error);
+ addToQueue({
+ conversation_id: conversationId,
+ content: sanitizedMessage,
+ message_type: 'text',
+ });
+ toast.error('Failed to send - message queued for retry');
+ } finally {
+ setSending(false);
+ }
+ };
+
+ const handleKeyPress = (e: KeyboardEvent<HTMLTextAreaElement>) => {
+ if (e.key === 'Enter' && !e.shiftKey) {
+ e.preventDefault();
+ handleSend();
+ }
+ };
+
+ const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
+ const files = Array.from(e.target.files || []);
+ if (files.length === 0) return;
+
+ // Check file limit
+ const maxFiles = 40;
+ if (files.length > maxFiles) {
+ toast.error(`You can only select up to ${maxFiles} files at once`);
+ return;
+ }
+
+ // Check file size limit for each file
+ const maxSize = 50 * 1024 * 1024; // 50MB
+ const oversizedFiles = files.filter(f => f.size > maxSize);
+ if (oversizedFiles.length > 0) {
+ toast.error(`Some files exceed ${maxSize / (1024 * 1024)}MB limit`);
+ return;
+ }
+
+ // Process all files
+ const previews: Array<{ url: string; type: 'image' | 'video' | 'document'; fileName?: string; fileSize?: number; file: File }> = [];
+ 
+ for (const file of files) {
+ if (file.type.startsWith('image/') || file.type.startsWith('video/')) {
+ try {
+ const url = await new Promise<string>((resolve, reject) => {
+ const reader = new FileReader();
+ reader.onload = (event) => resolve(event.target?.result as string);
+ reader.onerror = () => reject(new Error('Failed to read file'));
+ reader.readAsDataURL(file);
+ });
+ 
+ previews.push({
+ url,
+ type: file.type.startsWith('image/') ? 'image' : 'video',
+ fileName: file.name,
+ fileSize: file.size,
+ file
+ });
+ } catch (error) {
+ console.error('File read error:', error);
+ toast.error(`Failed to process ${file.name}`);
+ }
+ } else {
+ // Document
+ previews.push({
+ url: '',
+ type: 'document',
+ fileName: file.name,
+ fileSize: file.size,
+ file
+ });
+ }
+ }
+
+ setPreviewMedia(previews);
+ setSelectedFiles(files);
+ setShowMediaPreview(true);
+
+ // Clear input
+ if (fileInputRef.current) fileInputRef.current.value = '';
+ if (imageInputRef.current) imageInputRef.current.value = '';
+ setShowAttachMenu(false);
+ };
+
+ const uploadAndSendFiles = async (files: File[], caption?: string) => {
+ setUploadingFile(true);
+ 
+ try {
+ toast.info(`Uploading ${files.length} file${files.length > 1 ? 's' : ''}...`);
+ 
+ const mediaAttachments = [];
+ 
+ // Upload all files
+ for (const file of files) {
+ const fileExt = file.name.split('.').pop()?.toLowerCase() || 'file';
+ const timestamp = Date.now() + Math.random(); // Unique timestamp
+ const fileName = `${userId}/${conversationId}/${timestamp}.${fileExt}`;
+
+ const { error: uploadError } = await supabase.storage
+ .from('chat-media')
+ .upload(fileName, file, {
+ cacheControl: '3600',
+ upsert: false,
+ contentType: file.type
+ });
+
+ if (uploadError) {
+ console.error('Upload error:', uploadError);
+ throw new Error(`Failed to upload ${file.name}: ${uploadError.message}`);
+ }
+
+ // Get public URL
+ const { data: { publicUrl } } = supabase.storage
+ .from('chat-media')
+ .getPublicUrl(fileName);
+
+ // Determine message type
+ let messageType = 'file';
+ if (file.type.startsWith('image/')) messageType = 'image';
+ else if (file.type.startsWith('video/')) messageType = 'video';
+ else if (file.type.startsWith('audio/')) messageType = 'audio';
+ else if (file.type.includes('pdf') || file.type.includes('document')) messageType = 'document';
+
+ mediaAttachments.push({
+ url: publicUrl,
+ type: messageType,
+ name: file.name,
+ size: file.size,
+ mimeType: file.type
+ });
+ }
+
+ // Determine primary message type (image if any images, video if any videos, etc.)
+ let primaryType = 'file';
+ if (mediaAttachments.some(m => m.type === 'image')) primaryType = 'image';
+ else if (mediaAttachments.some(m => m.type === 'video')) primaryType = 'video';
+ else if (mediaAttachments.some(m => m.type === 'document')) primaryType = 'document';
+
+ // Format content
+ let messageContent = caption || `${files.length} file${files.length > 1 ? 's' : ''}`;
+ if (primaryType === 'image' && !caption) {
+ messageContent = `image_${Date.now()}`;
+ } else if (primaryType === 'document' && !caption) {
+ messageContent = `[Document] ${files[0].name}`;
+ }
+
+ // Send message with all attachments
+ console.log('📤 Sending media:', { messageContent, primaryType, attachments: mediaAttachments.length });
+ await onSendMessage(
+ messageContent, 
+ primaryType, 
+ mediaAttachments
+ );
+ 
+ toast.success(`${files.length} file${files.length > 1 ? 's' : ''} sent successfully!`);
+ } catch (error: any) {
+ console.error('File upload error:', error);
+ toast.error(error.message || 'Failed to upload files. Please try again.');
+ } finally {
+ setUploadingFile(false);
+ setSelectedFiles([]);
+ }
+ };
+
+ const handleMediaPreviewSend = async (caption?: string) => {
+ if (selectedFiles.length > 0) {
+ await uploadAndSendFiles(selectedFiles, caption);
+ setShowMediaPreview(false);
+ setPreviewMedia([]);
+ }
+ };
+
+ const handleRemoveMedia = (index: number) => {
+ setPreviewMedia(prev => prev.filter((_, i) => i !== index));
+ setSelectedFiles(prev => prev.filter((_, i) => i !== index));
+ };
+
+ const handleCameraCapture = async () => {
+ try {
+ toast.info('Opening camera...');
+ const photoDataUrl = await capturePhoto();
+ 
+ if (photoDataUrl) {
+ const response = await fetch(photoDataUrl);
+ const blob = await response.blob();
+ const file = new File([blob], `photo_${Date.now()}.jpg`, { type: 'image/jpeg' });
+ 
+ setPreviewMedia([{
+ url: photoDataUrl,
+ type: 'image',
+ fileName: `Photo ${new Date().toLocaleTimeString()}`,
+ fileSize: blob.size,
+ file
+ }]);
+ setSelectedFiles([file]);
+ setShowMediaPreview(true);
+ } else {
+ toast.error('No photo captured');
+ }
+ } catch (error: any) {
+ console.error('Camera capture error:', error);
+ toast.error(error.message || 'Failed to access camera. Please enable camera permissions.');
+ }
+ setShowAttachMenu(false);
+ };
+
+ const handleGalleryPick = async () => {
+ try {
+ toast.info('Opening gallery...');
+ // Trigger the image input which now supports multiple
+ imageInputRef.current?.click();
+ } catch (error: any) {
+ console.error('Gallery pick error:', error);
+ toast.error(error.message || 'Failed to access gallery. Please enable photo permissions.');
+ }
+ setShowAttachMenu(false);
+ };
+
+ const handleLocationShare = async () => {
+ try {
+ toast.info('Getting your location...');
+ const location = await getCurrentLocation();
+ if (location) {
+ // Create rich location message
+ const locationData = {
+ latitude: location.latitude,
+ longitude: location.longitude,
+ mapUrl: `https://maps.google.com/?q=${location.latitude},${location.longitude}`
+ };
+ 
+ await onSendMessage(
+ `📍 Location\nhttps://maps.google.com/?q=${location.latitude},${location.longitude}`,
+ 'location',
+ [locationData]
+ );
+ toast.success('Location shared successfully!');
+ } else {
+ toast.error('Could not get your location');
+ }
+ } catch (error: any) {
+ console.error('Location share error:', error);
+ toast.error(error.message || 'Failed to share location. Please enable location permissions.');
+ }
+ setShowAttachMenu(false);
+ };
+
+ const handleContactShare = async (contact: any) => {
+ try {
+ // Format: [Contact] Name - Phone
+ const formattedContact = `[Contact] ${contact.contact_name} - ${contact.contact_phone}`;
+ 
+ const contactCard = {
+ name: contact.contact_name,
+ phone: contact.contact_phone,
+ avatar: contact.avatar_url
+ };
+ 
+ await onSendMessage(
+ formattedContact, 
+ 'contact', 
+ [contactCard]
+ );
+ 
+ toast.success(`Shared ${contact.contact_name}'s contact`);
+ setShowContactPicker(false);
+ } catch (error) {
+ console.error('Contact share error:', error);
+ toast.error('Failed to share contact');
+ }
+ };
+
+ const handleVoiceMessage = async (transcription: string, audioUrl?: string) => {
+ try {
+ if (audioUrl) {
+ const response = await fetch(audioUrl);
+ const blob = await response.blob();
+ 
+ const fileName = `${userId}/${conversationId}/${Date.now()}.webm`;
+ const { error: uploadError } = await supabase.storage
+ .from('chat-media')
+ .upload(fileName, blob, {
+ contentType: 'audio/webm',
+ cacheControl: '3600',
+ upsert: false
+ });
+
+ if (uploadError) throw uploadError;
+
+ const { data: { publicUrl } } = supabase.storage
+ .from('chat-media')
+ .getPublicUrl(fileName);
+
+ await onSendMessage(transcription, 'voice', [{ url: publicUrl, type: 'voice' }]);
+ } else {
+ await onSendMessage(transcription, 'text');
+ }
+ 
+ setShowVoiceRecorder(false);
+ } catch (error) {
+ console.error('Voice message error:', error);
+ toast.error('Failed to send voice message');
+ }
+ };
+
+ const handleAIAction = (action: AIAction) => {
+ if (onAIAction) {
+ onAIAction(action);
+ }
+ };
+
+ const attachmentOptions = [
+ { 
+ icon: Camera, 
+ label: 'Camera', 
+ action: handleCameraCapture, 
+ color: 'bg-gradient-to-br from-pink-500 to-pink-600',
+ description: 'Take a photo'
+ },
+ { 
+ icon: ImageIcon, 
+ label: 'Gallery', 
+ action: handleGalleryPick, 
+ color: 'bg-gradient-to-br from-purple-500 to-purple-600',
+ description: 'Choose from gallery'
+ },
+ { 
+ icon: FileText, 
+ label: 'Document', 
+ action: () => { fileInputRef.current?.click(); setShowAttachMenu(false); }, 
+ color: 'bg-gradient-to-br from-blue-500 to-blue-600',
+ description: 'Share a file'
+ },
+ { 
+ icon: MapPin, 
+ label: 'Location', 
+ action: handleLocationShare, 
+ color: 'bg-gradient-to-br from-green-500 to-green-600',
+ description: 'Share your location'
+ },
+ { 
+ icon: User, 
+ label: 'Contact', 
+ action: () => { setShowContactPicker(true); setShowAttachMenu(false); }, 
+ color: 'bg-gradient-to-br from-orange-500 to-orange-600',
+ description: 'Share a contact'
+ },
+ ];
+
+ return (
+ <div className="bg-transparent p-0">
+ {/* Smart Reply Suggestions */}
+ {suggestions.length > 0 && !message && (
+ <SmartReplySuggestions
+ suggestions={suggestions}
+ onSelect={(text) => setMessage(text)}
+ isLoading={suggestionsLoading}
+ className="mb-2"
+ />
+ )}
+
+ {!isOnline && (
+ <div className="mb-2 flex items-center gap-2 text-secondary text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/30 px-3 py-2 rounded-lg">
+ <WifiOff className="w-4 h-4" />
+ <span>Offline - messages will be queued</span>
+ {queueLength > 0 && (
+ <span className="ml-auto text-label bg-amber-100 dark:bg-amber-900 px-2 py-1 rounded-full">
+ {queueLength} queued
+ </span>
+ )}
+ </div>
+ )}
+ 
+ {showVoiceRecorder ? (
+ <VoiceRecorder
+ onTranscription={handleVoiceMessage}
+ onCancel={() => setShowVoiceRecorder(false)}
+ />
+ ) : (
+ <>
+ {uploadingFile && (
+ <div className="mb-3 flex items-center gap-3 text-secondary bg-gradient-to-r from-primary/10 to-primary/5 px-4 py-3 rounded-2xl border border-primary/20">
+ <div className="h-4 w-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+ <div className="flex-1">
+ <p className="font-medium text-primary">Uploading...</p>
+ <p className="text-label text-muted-foreground">{selectedFiles[0]?.name}</p>
+ </div>
+ </div>
+ )}
+ 
+ <div className="flex items-end gap-[8px] bg-[#F0F0F8] px-[8px] py-[8px]">
+ {/* Hidden file inputs */}
+ <input
+ ref={fileInputRef}
+ type="file"
+ className="hidden"
+ onChange={handleFileSelect}
+ accept=".pdf,.doc,.docx,.xls,.xlsx,.txt"
+ />
+ <input
+ ref={imageInputRef}
+ type="file"
+ className="hidden"
+ onChange={handleFileSelect}
+ accept="image/*,video/*"
+ multiple
+ />
+
+ {/* Attachment Menu */}
+ <Popover open={showAttachMenu} onOpenChange={setShowAttachMenu}>
+ <PopoverTrigger asChild>
+ <Button
+ variant="ghost"
+ size="icon"
+ className="w-[48px] h-[48px] shrink-0 rounded-full text-[#3D3D5C] hover:bg-black/[0.04] transition-colors"
+ disabled={disabled || uploadingFile}
+ >
+ <Plus className="w-[24px] h-[24px]" />
+ </Button>
+ </PopoverTrigger>
+ <PopoverContent className="w-64 p-2" align="start" side="top">
+ <div className="grid gap-1">
+ {attachmentOptions.map((option, idx) => (
+ <Button
+ key={idx}
+ variant="ghost"
+ className="w-full justify-start h-auto py-3 px-3 hover:bg-accent transition-colors"
+ onClick={() => {
+ option.action();
+ }}
+ >
+ <div className={`w-10 h-10 rounded-full ${option.color} flex items-center justify-center mr-3 shadow-md`}>
+ <option.icon className="w-5 h-5 text-white" />
+ </div>
+ <div className="flex-1 text-left">
+ <p className="text-secondary font-medium">{option.label}</p>
+ <p className="text-label text-muted-foreground">{option.description}</p>
+ </div>
+ </Button>
+ ))}
+ </div>
+ </PopoverContent>
+ </Popover>
+
+ {/* Message Input Pill */}
+ <div className="flex-1 flex items-end bg-[#FFFFFF] rounded-[24px] min-h-[48px] relative pl-[16px] pr-[40px] shadow-sm">
+ <Textarea
+ value={message}
+ onChange={(e) => {
+ const val = e.target.value;
+ setMessage(val);
+ onTyping?.(val);
+ }}
+ onKeyDown={handleKeyPress}
+ placeholder="Message"
+ className="w-full resize-none border-0 bg-transparent py-[13px] text-[15px] leading-relaxed text-[#1A1A2E] shadow-none focus-visible:ring-0 px-0 placeholder:text-[#9898B3]"
+ disabled={disabled || sending}
+ rows={1}
+ style={{ minHeight: '24px', maxHeight: '120px' }}
+ />
+ <div className="absolute right-[6px] bottom-[4px]">
+ {/* AI Assistant Button */}
+ <AIAssistantButton 
+ onAction={handleAIAction}
+ loading={aiLoading}
+ />
+ </div>
+ </div>
+
+ {/* Send / Voice Button */}
+ {message.trim() ? (
+ <motion.div
+ initial={{ scale: 0.8, opacity: 0 }}
+ animate={{ scale: 1, opacity: 1 }}
+ transition={{ type: "spring", stiffness: 500, damping: 25 }}
+ >
+ <Button
+ onClick={handleSend}
+ disabled={!message.trim() || sending || disabled}
+ size="icon"
+ className="w-[48px] h-[48px] shrink-0 rounded-full bg-[#6C63FF] text-white hover:bg-[#4A44CC] transition-colors shadow-[0_4px_14px_rgba(108,99,255,0.25)]"
+ >
+ <Send className="w-[20px] h-[20px]" />
+ </Button>
+ </motion.div>
+ ) : (
+ <motion.div
+ initial={{ scale: 0.8, opacity: 0 }}
+ animate={{ scale: 1, opacity: 1 }}
+ transition={{ type: "spring", stiffness: 500, damping: 25 }}
+ >
+ <Button
+ variant="ghost"
+ size="icon"
+ className="w-[48px] h-[48px] shrink-0 rounded-full bg-[#6C63FF] text-white hover:bg-[#4A44CC] transition-colors shadow-[0_4px_14px_rgba(108,99,255,0.25)]"
+ disabled={disabled}
+ onClick={() => setShowVoiceRecorder(true)}
+ >
+ <Mic className="w-[20px] h-[20px]" />
+ </Button>
+ </motion.div>
+ )}
+ </div>
+ </>
+ )}
+
+ {/* Media Preview Dialog */}
+ {previewMedia.length > 0 && (
+ <MultiMediaPreviewDialog
+ open={showMediaPreview}
+ onClose={() => {
+ setShowMediaPreview(false);
+ setPreviewMedia([]);
+ setSelectedFiles([]);
+ }}
+ onSend={handleMediaPreviewSend}
+ media={previewMedia}
+ onRemove={handleRemoveMedia}
+ />
+ )}
+
+ {/* Contact Picker */}
+ <ContactPicker
+ open={showContactPicker}
+ onClose={() => setShowContactPicker(false)}
+ onSend={handleContactShare}
+ />
+ </div>
+ );
+};

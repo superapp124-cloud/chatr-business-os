@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "mock.deferred.export",
+      "version": "1.0.0",
+      "displayName": "Mock Deferred Export Provider",
+      "description": "Deferred data export provider.",
+      "author": "CHATR",
+      "license": "MIT"
+    },
+    "capabilities": [
+      "data.export"
+    ],
+    "authentication": {
+      "type": "api_key",
+      "scopes": []
+    },
+    "operations": {
+      "patterns": [
+        "Deferred"
+      ],
+      "rateLimits": "100/min",
+      "regions": [
+        "global"
+      ]
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "securityClassification": "standard"
+    }
+  },
+  "certificate": {
+    "providerId": "mock.deferred.export",
+    "version": "1.0.0",
+    "manifestHash": "2a868052044dfe51f61ebbe0d7067659fa00e68f3e9a04a82b02d6f7f4041ba5",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:40:52.833Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

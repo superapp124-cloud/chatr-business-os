@@ -1,0 +1,74 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "sales.lead.qualification",
+      "version": "1.0.0",
+      "displayName": "Lead Qualification Lifecycle",
+      "description": "Ongoing, event-driven, recurring CRM lifecycle.",
+      "author": "CHATR Enterprise",
+      "license": "MIT",
+      "category": "CRM",
+      "tags": [
+        "sales",
+        "lead",
+        "crm"
+      ]
+    },
+    "runtime": {
+      "intentTypes": [
+        "sales.lead.qualification"
+      ],
+      "permissions": [
+        "email",
+        "calendar",
+        "contacts"
+      ],
+      "inputs": [
+        "leadId",
+        "contactInfo",
+        "source"
+      ],
+      "outputs": [
+        "qualificationScore",
+        "nextAction"
+      ],
+      "events": [
+        "sales.lead.contacted",
+        "sales.lead.converted"
+      ],
+      "policies": [
+        "sales.outreach.limits"
+      ],
+      "verification": {
+        "strategy": "crm_sync@1.0"
+      },
+      "stewardship": {
+        "renewable": true,
+        "expiration": "closed_lost"
+      }
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "maxKernelVersion": "2.0",
+      "dependencies": [],
+      "supportedPlatforms": [
+        "desktop",
+        "web"
+      ],
+      "securityClassification": "internal",
+      "profile": "Automation"
+    }
+  },
+  "certificate": {
+    "capabilityId": "sales.lead.qualification",
+    "version": "1.0.0",
+    "manifestHash": "17016dfaa85e68bbc5ed9a91f09dec94cfa1fdac46be28f0724edf794744033f",
+    "interfaceHash": "8577e8f865f89dc26f02f059a54c9cb48d4dd63943ccf9df0780c822383796d9",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:30:16.392Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

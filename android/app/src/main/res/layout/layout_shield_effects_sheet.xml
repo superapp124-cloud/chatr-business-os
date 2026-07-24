@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shield_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_shield_drag_handle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Video Effects"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Apply AI effects to your video feed."
+        android:textColor="@color/shield_text_secondary"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+        
+        <Button
+            android:id="@+id/btnEffectNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:backgroundTint="#333333"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"/>
+            
+        <Button
+            android:id="@+id/btnEffectBlur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blur Background (Beta)"
+            android:backgroundTint="#2962FF"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"/>
+            
+        <Button
+            android:id="@+id/btnEffectStudioLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Studio Lighting (Beta)"
+            android:backgroundTint="#2962FF"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"/>
+            
+        <Button
+            android:id="@+id/btnEffectBnW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black &amp; White"
+            android:backgroundTint="#333333"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"/>
+            
+    </LinearLayout>
+    
+</LinearLayout>

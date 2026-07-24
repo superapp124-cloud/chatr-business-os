@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Provider Manifest",
+  "description": "Declarative contract for CHATR Providers",
+  "type": "object",
+  "required": ["identity", "capabilities", "authentication", "operations"],
+  "properties": {
+    "identity": {
+      "type": "object",
+      "required": ["id", "version", "displayName"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_\\.]+$" },
+        "version": { "type": "string" },
+        "displayName": { "type": "string" },
+        "description": { "type": "string" },
+        "author": { "type": "string" },
+        "license": { "type": "string" }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of capability IDs this provider supports"
+    },
+    "authentication": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "enum": ["oauth2", "api_key", "bearer", "basic", "none"] },
+        "scopes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "operations": {
+      "type": "object",
+      "required": ["patterns"],
+      "properties": {
+        "patterns": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["Synchronous", "Asynchronous", "Streaming", "Deferred", "Human"] }
+        },
+        "rateLimits": { "type": "string" },
+        "regions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "minKernelVersion": { "type": "string" },
+        "securityClassification": { "type": "string" }
+      }
+    }
+  }
+}

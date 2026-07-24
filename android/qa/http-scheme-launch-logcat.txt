@@ -1,0 +1,500 @@
+--------- beginning of main
+05-20 18:45:02.581 I/com.chatr.app(30559): Late-enabling -Xcheck:jni
+05-20 18:45:02.620 E/com.chatr.app(30559): Unknown bits set in runtime_flags: 0x8000
+05-20 18:45:05.181 D/SessionsDependencies(30559): Dependency to CRASHLYTICS added.
+05-20 18:45:05.206 I/FirebaseApp(30559): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+05-20 18:45:05.239 I/FirebaseCrashlytics(30559): Initializing Firebase Crashlytics 19.4.0 for com.chatr.app
+05-20 18:45:05.347 D/SessionsDependencies(30559): Subscriber CRASHLYTICS registered.
+05-20 18:45:05.382 I/DynamiteModule(30559): Considering local module com.google.android.gms.measurement.dynamite:136 and remote module com.google.android.gms.measurement.dynamite:191
+05-20 18:45:05.382 I/DynamiteModule(30559): Selected remote version of com.google.android.gms.measurement.dynamite, version >= 191
+05-20 18:45:05.382 V/DynamiteModule(30559): Dynamite loader version >= 2, using loadModule2NoCrashUtils
+05-20 18:45:05.581 I/FirebaseCrashlytics(30559): No version control information found
+05-20 18:45:05.595 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+05-20 18:45:05.595 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+05-20 18:45:05.595 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapInt(Ljava/lang/Object;JII)Z (greylist, linking, allowed)
+05-20 18:45:05.596 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z (greylist, linking, allowed)
+05-20 18:45:05.596 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.596 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.596 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+05-20 18:45:05.596 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObjectVolatile(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:05.596 W/com.chatr.app(30559): Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+05-20 18:45:05.618 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 18:45:05.618 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.729 D/FirebaseSessions(30559): Initializing Firebase Sessions SDK.
+05-20 18:45:05.736 W/com.chatr.app(30559): Accessing hidden method Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (greylist, linking, allowed)
+05-20 18:45:05.741 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.741 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:45:05.742 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:45:05.742 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:45:05.742 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:05.742 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putOrderedInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:45:05.742 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putOrderedLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:45:05.742 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putOrderedObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:05.758 I/FirebaseInitProvider(30559): FirebaseApp initialization successful
+05-20 18:45:05.764 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.765 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:05.769 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.770 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:45:05.773 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:45:05.774 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.774 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:45:05.784 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.785 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+05-20 18:45:05.786 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+05-20 18:45:05.787 D/WM-WrkMgrInitializer(30559): Initializing WorkManager with default configuration.
+05-20 18:45:05.788 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:45:05.789 W/com.chatr.app(30559): Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+05-20 18:45:05.789 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 18:45:05.789 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 18:45:05.789 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:45:05.789 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 18:45:05.789 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 18:45:05.790 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 18:45:05.830 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+05-20 18:45:05.831 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.831 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:05.833 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.834 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+05-20 18:45:05.834 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.844 I/FA      (30559): App measurement initialized, version: 167000
+05-20 18:45:05.844 I/FA      (30559): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+05-20 18:45:05.845 I/FA      (30559): To enable faster debug mode event logging run:
+05-20 18:45:05.845 I/FA      (30559):   adb shell setprop debug.firebase.analytics.app com.chatr.app
+05-20 18:45:05.863 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:05.864 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.865 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:45:05.865 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:45:05.873 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:05.874 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-20 18:45:05.885 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+05-20 18:45:05.885 W/com.chatr.app(30559): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+05-20 18:45:05.886 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:45:05.887 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+05-20 18:45:05.887 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+05-20 18:45:05.887 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+05-20 18:45:05.887 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+05-20 18:45:05.887 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-20 18:45:05.887 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-20 18:45:05.892 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:05.915 D/WM-PackageManagerHelper(30559): Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+05-20 18:45:05.915 D/WM-Schedulers(30559): Created SystemJobScheduler and enabled SystemJobService
+05-20 18:45:05.917 D/LifecycleServiceBinder(30559): Binding service to application.
+05-20 18:45:05.962 I/ChatrApplication(30559): ?? CHATR+ Application starting...
+05-20 18:45:05.964 I/ChatrApplication(30559): ? Firebase initialized
+05-20 18:45:05.967 D/ChatrApplication(30559): ?? Created notification channel: calls
+05-20 18:45:05.968 D/ChatrApplication(30559): ?? Created notification channel: calls_high_v2
+05-20 18:45:05.970 D/ChatrApplication(30559): ?? Created notification channel: messages
+05-20 18:45:05.971 D/ChatrApplication(30559): ?? Created notification channel: urgent
+05-20 18:45:05.972 D/ChatrApplication(30559): ?? Created notification channel: location
+05-20 18:45:05.973 D/ChatrApplication(30559): ?? Created notification channel: health
+05-20 18:45:05.975 D/ChatrApplication(30559): ?? Created notification channel: foreground_service
+05-20 18:45:05.975 I/ChatrApplication(30559): ? All notification channels created
+05-20 18:45:05.983 I/ChatrApplication(30559): ? PhoneAccount registered with TelecomManager
+05-20 18:45:06.001 I/NativeCallSyncWorker(30559): Skipped native call sync enqueue reason=app_start bucket=startup
+05-20 18:45:06.003 I/ChatrApplication(30559): ? CHATR+ Application initialized successfully
+05-20 18:45:06.023 I/libMEOW_gift(30559): open /vendor/etc/arc.ini
+05-20 18:45:06.024 D/libMEOW (30559): applied 1 plugins for [com.chatr.app]:
+05-20 18:45:06.024 D/libMEOW (30559):   plugin 1: [libMEOW_gift.so]:
+05-20 18:45:06.206 D/AppCompatDelegate(30559): Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-20 18:45:06.366 W/com.chatr.app(30559): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+05-20 18:45:06.403 I/WebViewFactory(30559): Loading com.google.android.webview version 148.0.7778.120 (code 777812003)
+05-20 18:45:06.418 W/linker  (30559): Warning: "/data/app/com.google.android.webview-Vew6vFYlrIraywuxQdO2GQ==/base.apk!/lib/arm64-v8a/libwebviewchromium.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+05-20 18:45:06.471 I/cr_WVCFactoryProvider(30559): version=148.0.7778.120 (777812003) minSdkVersion=29 multiprocess=true packageId=127 splits=<none>
+05-20 18:45:06.486 E/chromium(30559): [0520/184506.486728:ERROR:android_webview/browser/variations/variations_seed_loader.cc:39] Seed missing signature.
+05-20 18:45:06.528 I/cr_LibraryLoader(30559): Successfully loaded native library
+05-20 18:45:06.531 I/cr_CachingUmaRecorder(30559): Flushed 14 samples from 13 histograms, 0 samples were dropped.
+05-20 18:45:06.536 I/cr_ChildProcLH(30559): ScopedServiceBindingBatch.tryActivate: false
+05-20 18:45:06.540 I/cr_CombinedPProvider(30559): #registerProvider() provider:WV.wk@3e99be2 isPolicyCacheEnabled:false policyProvidersSize:0
+05-20 18:45:06.542 I/cr_PolicyProvider(30559): #setManagerAndSource() 0
+05-20 18:45:06.551 I/cr_DisplayManager(30559): Is Display Topology available: false
+05-20 18:45:06.591 I/cr_CombinedPProvider(30559): #linkNativeInternal() 1
+05-20 18:45:06.593 I/cr_AppResProvider(30559): #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+05-20 18:45:06.594 I/cr_PolicyProvider(30559): #notifySettingsAvailable() 0
+05-20 18:45:06.594 I/cr_CombinedPProvider(30559): #onSettingsAvailable() 0
+05-20 18:45:06.594 I/cr_CombinedPProvider(30559): #flushPolicies()
+05-20 18:45:06.656 E/libc    (30559): Access denied finding property "ro.vendor.api_level"
+05-20 18:45:06.652 W/ThreadPoolForeg(30559): type=1400 audit(0.0:414207): avc: denied { read } for name="u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=12143 scontext=u:r:untrusted_app:s0:c11,c257,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=0
+05-20 18:45:06.678 W/chromium(30559): [WARNING:android_webview/browser/network_service/net_helpers.cc:137] HTTP Cache size is: 20971520
+05-20 18:45:06.888 D/Capacitor(30559): Starting BridgeActivity
+05-20 18:45:06.965 D/Capacitor(30559): Registering plugin instance: CapacitorCookies
+05-20 18:45:06.979 D/Capacitor(30559): Registering plugin instance: WebView
+05-20 18:45:06.986 D/Capacitor(30559): Registering plugin instance: CapacitorHttp
+05-20 18:45:06.995 D/Capacitor(30559): Registering plugin instance: BarcodeScanner
+05-20 18:45:07.003 D/Capacitor(30559): Registering plugin instance: BluetoothLe
+05-20 18:45:07.013 D/Capacitor(30559): Registering plugin instance: Contacts
+05-20 18:45:07.023 D/Capacitor(30559): Registering plugin instance: FileOpener
+05-20 18:45:07.026 D/Capacitor(30559): Registering plugin instance: SpeechRecognition
+05-20 18:45:07.031 D/Capacitor(30559): Registering plugin instance: FirebaseAnalytics
+05-20 18:45:07.038 D/Capacitor(30559): Registering plugin instance: FirebaseCrashlytics
+05-20 18:45:07.044 D/Capacitor(30559): Registering plugin instance: App
+05-20 18:45:07.049 D/Capacitor(30559): Registering plugin instance: Browser
+05-20 18:45:07.056 D/Capacitor(30559): Registering plugin instance: Camera
+05-20 18:45:07.062 D/Capacitor(30559): Registering plugin instance: Clipboard
+05-20 18:45:07.068 D/Capacitor(30559): Registering plugin instance: Device
+05-20 18:45:07.072 D/Capacitor(30559): Registering plugin instance: Filesystem
+05-20 18:45:07.081 D/Capacitor(30559): Registering plugin instance: Geolocation
+05-20 18:45:07.136 D/Capacitor(30559): Registering plugin instance: Haptics
+05-20 18:45:07.142 D/Capacitor(30559): Registering plugin instance: Keyboard
+05-20 18:45:07.149 D/Capacitor(30559): Registering plugin instance: LocalNotifications
+05-20 18:45:07.167 D/Capacitor(30559): Registering plugin instance: Network
+05-20 18:45:07.172 D/Capacitor(30559): Registering plugin instance: Preferences
+05-20 18:45:07.180 D/Capacitor(30559): Registering plugin instance: PushNotifications
+05-20 18:45:07.189 D/Capacitor(30559): Registering plugin instance: ScreenReader
+05-20 18:45:07.194 D/Capacitor(30559): Registering plugin instance: Share
+05-20 18:45:07.200 D/Capacitor(30559): Registering plugin instance: SplashScreen
+05-20 18:45:07.207 W/com.chatr.app(30559): Accessing hidden method Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController; (blacklist, linking, allowed)
+05-20 18:45:07.207 W/com.chatr.app(30559): Accessing hidden method Landroid/view/WindowInsetsController;->hide(I)V (blacklist, linking, allowed)
+05-20 18:45:07.216 D/Capacitor(30559): Registering plugin instance: StatusBar
+05-20 18:45:07.230 V/Capacitor/StatusBarPlugin(30559): Notifying listeners for event statusBarOverlayChanged
+05-20 18:45:07.230 D/Capacitor/StatusBarPlugin(30559): No listeners found for event statusBarOverlayChanged
+05-20 18:45:07.232 V/Capacitor/StatusBarPlugin(30559): Notifying listeners for event statusBarOverlayChanged
+05-20 18:45:07.232 D/Capacitor/StatusBarPlugin(30559): No listeners found for event statusBarOverlayChanged
+05-20 18:45:07.234 D/Capacitor(30559): Registering plugin instance: Toast
+05-20 18:45:07.238 D/Capacitor(30559): Registering plugin instance: BackgroundTask
+05-20 18:45:07.242 D/Capacitor(30559): Registering plugin instance: NativeBiometric
+05-20 18:45:07.247 D/Capacitor(30559): Registering plugin instance: SecureStoragePlugin
+05-20 18:45:07.278 D/Capacitor(30559): Registering plugin instance: CapacitorVideoPlayer
+05-20 18:45:07.371 W/Capacitor(30559): Unable to read file at path public/plugins
+05-20 18:45:07.388 D/Capacitor(30559): Loading app at http://localhost
+05-20 18:45:07.426 D/libMEOW (30559): applied 1 plugins for [com.chatr.app]:
+05-20 18:45:07.426 D/libMEOW (30559):   plugin 1: [libMEOW_gift.so]:
+05-20 18:45:07.438 I/GPUD    (30559): @gpudInitialize: successfully initialized with GL, dbg=0 mmdump_dbg=0 mmpath_dbg=0
+05-20 18:45:07.459 I/libMEOW_gift(30559): ctx:0x790ff2be80, ARC not Enabled.
+05-20 18:45:07.472 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.473 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.479 D/Capacitor/LN(30559): LocalNotification received: null
+05-20 18:45:07.479 D/Capacitor/LN(30559): Activity started without notification attached
+05-20 18:45:07.480 I/ChatrMainActivity(30559): MainActivity onNewIntent: android.intent.action.MAIN
+05-20 18:45:07.480 D/Capacitor(30559): Handling local request: http://localhost/
+05-20 18:45:07.483 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.583 I/ChatrMainActivity(30559): Handling action=null intentAction=android.intent.action.MAIN data=null
+05-20 18:45:07.583 I/ChatrMainActivity(30559): MainActivity onCreate
+05-20 18:45:07.593 I/CallForegroundService(30559): Clearing stale call notification (main_activity_start)
+05-20 18:45:07.602 I/ChatrMainActivity(30559): All permissions already granted
+05-20 18:45:07.613 I/ChatrCallScreening(30559): Block anonymous: false
+05-20 18:45:07.614 I/ChatrCallScreening(30559): Block unknown: false
+05-20 18:45:07.614 I/ChatrCallScreening(30559): Require name announcement: false
+05-20 18:45:07.614 I/CallBlockingManager(30559): Call blocking settings loaded
+05-20 18:45:07.614 I/ChatrMainActivity(30559): VoIP services initialized
+05-20 18:45:07.630 I/CallForwardingManager(30559): ?? CallForwardingManager initialized
+05-20 18:45:07.633 I/CallParkService(30559): ?? CallParkService initialized
+05-20 18:45:07.637 I/CallQueueService(30559): ?? CallQueueService initialized
+05-20 18:45:07.642 I/SpeedDialService(30559): ?? SpeedDialService initialized
+05-20 18:45:07.642 I/VoIPBridgeService(30559): ?? VoIPBridgeService initialized
+05-20 18:45:07.659 I/ChatrMainActivity(30559): WebView configured with native bridges
+05-20 18:45:07.660 I/ChatrMainActivity(30559): Skipping duplicate intent action=null intentAction=android.intent.action.MAIN callId=null
+05-20 18:45:07.678 D/Capacitor(30559): App started
+05-20 18:45:07.678 I/ChatrMainActivity(30559): MainActivity onStart: isActivityVisible=true
+05-20 18:45:07.692 D/Capacitor/AppPlugin(30559): Firing change: true
+05-20 18:45:07.693 V/Capacitor/AppPlugin(30559): Notifying listeners for event appStateChange
+05-20 18:45:07.693 D/Capacitor/AppPlugin(30559): No listeners found for event appStateChange
+05-20 18:45:07.697 D/SessionLifecycleClient(30559): Queued message 1. Queue size 1
+05-20 18:45:07.704 I/FA      (30559): Tag Manager is not found and thus will not be used
+05-20 18:45:07.707 V/Capacitor/NetworkPlugin(30559): Notifying listeners for event networkStatusChange
+05-20 18:45:07.707 D/Capacitor/NetworkPlugin(30559): No listeners found for event networkStatusChange
+05-20 18:45:07.720 V/Capacitor/BrowserPlugin(30559): Notifying listeners for event browserFinished
+05-20 18:45:07.720 D/Capacitor/BrowserPlugin(30559): No listeners found for event browserFinished
+05-20 18:45:07.722 D/Capacitor(30559): App resumed
+05-20 18:45:07.729 I/SurfaceFactory(30559): [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@3082e42
+05-20 18:45:07.745 D/ViewRootImpl[MainActivity](30559): hardware acceleration = true , fakeHwAccelerated = false, sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-20 18:45:07.755 D/libMEOW (30559): applied 1 plugins for [com.chatr.app]:
+05-20 18:45:07.755 D/libMEOW (30559):   plugin 1: [libMEOW_gift.so]:
+05-20 18:45:07.757 I/InputTransport(30559): Create ARC handle: 0x7909ae3c00
+05-20 18:45:07.757 D/libMEOW_gift(30559): etEventThreadFunc()::thread Begin. eventRefCnt: 1
+05-20 18:45:07.758 V/PhoneWindow(30559): DecorView setVisiblity: visibility = 0, Parent = android.view.ViewRootImpl@e71439a, this = DecorView@beee4cb[MainActivity]
+05-20 18:45:07.793 I/CameraManagerGlobal(30559): Connecting to camera service
+05-20 18:45:07.799 I/libMEOW_gift(30559): ctx:0x78aec1b480, ARC not Enabled.
+05-20 18:45:07.812 D/Capacitor(30559): Handling local request: http://localhost/assets/index-CwRZyNBE.js
+05-20 18:45:07.817 W/CameraManagerGlobal(30559): [soar.cts] ignore the status update of camera: 2
+05-20 18:45:07.822 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.825 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.828 D/Capacitor(30559): Handling local request: http://localhost/assets/react-vendor-DAtO1BG8.js
+05-20 18:45:07.832 D/Capacitor(30559): Handling local request: http://localhost/assets/framer-motion-Bu9l-0Si.js
+05-20 18:45:07.838 D/Capacitor(30559): Handling local request: http://localhost/assets/ui-radix-Cv21Vne4.js
+05-20 18:45:07.838 D/Capacitor(30559): Handling local request: http://localhost/assets/lucide-icons-CibWKBoE.js
+05-20 18:45:07.842 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.843 D/SessionLifecycleService(30559): Service bound to new client on process 30559
+05-20 18:45:07.845 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.845 W/IMGSRV  (30559): glGetString:4370: Override GL_RENDERER PowerVR SGX Doma 
+05-20 18:45:07.851 I/Choreographer(30559): Skipped 113 frames!  The application may be doing too much work on its main thread.
+05-20 18:45:07.860 D/SessionLifecycleService(30559): App has not yet foregrounded. Using previously stored session.
+05-20 18:45:07.860 D/SessionLifecycleService(30559): Client android.os.Messenger@cbd57d8 bound at 29967547. Clients: 1
+05-20 18:45:07.876 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:07.878 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:07.879 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:45:07.885 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:07.886 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:07.888 W/com.chatr.app(30559): Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+05-20 18:45:07.889 W/com.chatr.app(30559): Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+05-20 18:45:07.889 W/com.chatr.app(30559): Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+05-20 18:45:07.928 D/libMEOW (30559): applied 1 plugins for [com.chatr.app]:
+05-20 18:45:07.928 D/libMEOW (30559):   plugin 1: [libMEOW_gift.so]:
+05-20 18:45:07.942 I/libMEOW_gift(30559): ctx:0x790ffa6f80, ARC not Enabled.
+05-20 18:45:07.954 W/AudioCapabilities(30559): Unsupported mime audio/x-adpcm-ms
+05-20 18:45:07.955 W/AudioCapabilities(30559): Unsupported mime audio/x-adpcm-dvi-ima
+05-20 18:45:07.956 W/AudioCapabilities(30559): Unsupported mime audio/alac
+05-20 18:45:07.956 D/Surface (30559): Surface::connect(this=0x78b4436000,api=1)
+05-20 18:45:07.957 W/AudioCapabilities(30559): Unsupported mime audio/ape
+05-20 18:45:07.960 D/Surface (30559): Surface::setBufferCount(this=0x78b4436000,bufferCount=3)
+05-20 18:45:07.961 D/Surface (30559): Surface::allocateBuffers(this=0x78b4436000)
+05-20 18:45:07.978 W/VideoCapabilities(30559): Unrecognized profile/level 1/32 for video/mp4v-es
+05-20 18:45:07.978 W/Gralloc3(30559): mapper 3.x is not supported
+05-20 18:45:07.978 W/VideoCapabilities(30559): Unrecognized profile/level 32768/2 for video/mp4v-es
+05-20 18:45:07.978 W/VideoCapabilities(30559): Unrecognized profile/level 32768/64 for video/mp4v-es
+05-20 18:45:07.982 E/ion     (30559): ioctl c0044901 failed with code -1: Invalid argument
+05-20 18:45:07.987 W/VideoCapabilities(30559): Unsupported mime video/x-ms-wmv
+05-20 18:45:07.989 W/VideoCapabilities(30559): Unsupported mime video/xvid
+05-20 18:45:08.002 D/Capacitor(30559): Handling local request: http://localhost/assets/firebase-core-oTls-BLf.js
+05-20 18:45:08.002 D/Capacitor(30559): Handling local request: http://localhost/assets/index-B06nBRP0.css
+05-20 18:45:08.003 W/VideoCapabilities(30559): Unrecognized profile/level 1/32 for video/mp4v-es
+05-20 18:45:08.091 I/OpenGLRenderer(30559): Davey! duration=2112ms; Flags=1, IntendedVsync=29965669395181, Vsync=29967552728552, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=29967554359400, AnimationStart=29967554541169, PerformTraversalsStart=29967555612708, DrawStart=29967664637938, SyncQueued=29967675728246, SyncStart=29967686908938, IssueDrawCommandsStart=29967693253092, SwapBuffers=29967789952092, FrameCompleted=29967793341092, DequeueBufferDuration=0, QueueBufferDuration=2149000, 
+05-20 18:45:08.098 D/NetworkSecurityConfig(30559): Using Network Security Config from resource network_security_config debugBuild: true
+05-20 18:45:08.128 I/ChatrApplication(30559): ?? FCM Token: cNPTkk-CQViSaUObArL4...
+05-20 18:45:08.176 I/ChatrMainActivity(30559): WebView page started: http://localhost/
+05-20 18:45:08.180 D/SessionLifecycleClient(30559): Connected to SessionLifecycleService. Queue size 1
+05-20 18:45:08.181 I/ChatrMainActivity(30559): WebView console: Skipping SW registration in native shell (http://localhost/:228)
+05-20 18:45:08.184 I/Capacitor/Console(30559): File: http://localhost/ - Line 228 - Msg: Skipping SW registration in native shell
+05-20 18:45:08.202 I/Capacitor/SpeechRecognition(30559): Instantiated SpeechRecognizer in load()
+05-20 18:45:08.211 D/SessionLifecycleClient(30559): Sending lifecycle 1 to service
+05-20 18:45:08.212 D/SessionLifecycleService(30559): Activity foregrounding at 29967914.
+05-20 18:45:08.212 D/SessionLifecycleService(30559): Cold start detected.
+05-20 18:45:08.217 D/SessionLifecycleService(30559): Generated new session.
+05-20 18:45:08.218 D/SessionLifecycleService(30559): Broadcasting new session
+05-20 18:45:08.261 D/SessionFirelogPublisher(30559): Data Collection is enabled for at least one Subscriber
+05-20 18:45:08.280 D/SessionLifecycleClient(30559): Session update received.
+05-20 18:45:08.297 D/SessionLifecycleClient(30559): Notified CRASHLYTICS of new session d692733eb6aa4a08a10cc10dded21b15
+05-20 18:45:08.349 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:45:08.403 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:08.410 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:45:08.411 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-20 18:45:08.411 W/com.chatr.app(30559): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:45:08.415 W/com.chatr.app(30559): Accessing hidden field Landroid/content/pm/ApplicationInfo;->primaryCpuAbi:Ljava/lang/String; (greylist, reflection, allowed)
+05-20 18:45:08.498 D/EventGDTLogger(30559): Session Event Type: SESSION_START
+05-20 18:45:08.499 D/SessionFirelogPublisher(30559): Successfully logged Session Start event.
+05-20 18:45:08.561 W/ChatrMainActivity(30559): WebView early startup check: url=http://localhost/ progress=70
+05-20 18:45:08.603 I/com.chatr.app(30559): Background concurrent copying GC freed 20746(1071KB) AllocSpace objects, 5(100KB) LOS objects, 49% free, 5423KB/10MB, paused 358us total 327.639ms
+05-20 18:45:09.149 I/ChatrMainActivity(30559): WebView console: ?? [Main] Starting React mount... (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:09.150 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [Main] Starting React mount...
+05-20 18:45:09.151 I/ChatrMainActivity(30559): WebView console: ?? [Main] Root element found, rendering App... (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:09.152 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [Main] Root element found, rendering App...
+05-20 18:45:09.160 I/ChatrMainActivity(30559): WebView console: ?? [Main] Render call completed (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:09.161 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [Main] Render call completed
+05-20 18:45:09.192 I/ChatrMainActivity(30559): WebView page finished: http://localhost/ progress=100
+05-20 18:45:09.211 I/ChatrMainActivity(30559): WebView console: ?? [App] Component rendering... (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:09.213 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [App] Component rendering...
+05-20 18:45:09.227 I/ChatrMainActivity(30559): WebView page finished: http://localhost/#/home progress=100
+05-20 18:45:09.258 I/ChatrMainActivity(30559): WebView page finished: http://localhost/#/home progress=100
+05-20 18:45:09.332 D/Capacitor(30559): Handling local request: http://localhost/icons/icon-192x192.png
+05-20 18:45:09.333 D/Capacitor(30559): Handling local request: http://localhost/icons/icon-512x512.png
+05-20 18:45:09.338 D/Capacitor(30559): Handling local request: http://localhost/chatr-logo.png
+05-20 18:45:09.382 I/ChatrMainActivity(30559): WebView console: ?? [Performance] Initializing optimizations... (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:09.383 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? [Performance] Initializing optimizations...
+05-20 18:45:09.384 I/ChatrMainActivity(30559): WebView console: ? [Performance] Optimizations complete (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:09.385 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ? [Performance] Optimizations complete
+05-20 18:45:09.397 D/ChatrMainActivity(30559): ChatrCall.hasActiveConnection() queried: false
+05-20 18:45:09.524 D/Capacitor(30559): Handling local request: http://localhost/assets/FeatureEngagementTracker-CGVBr_zP.js
+05-20 18:45:09.801 I/ChatrMainActivity(30559): WebView console: ?? Initializing native app features... (http://localhost/assets/index-CwRZyNBE.js:42)
+05-20 18:45:09.802 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 42 - Msg: ?? Initializing native app features...
+05-20 18:45:09.803 I/ChatrMainActivity(30559): WebView console: [useNativeAuthSync] NativeAuth bridge detected, setting up auth sync (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:09.804 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [useNativeAuthSync] NativeAuth bridge detected, setting up auth sync
+05-20 18:45:09.805 I/ChatrMainActivity(30559): WebView console: [NativeCallBridge] Active (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:09.806 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [NativeCallBridge] Active
+05-20 18:45:09.816 D/Capacitor(30559): Handling local request: http://localhost/assets/chatr-icon-logo-B8XxUvak.png
+05-20 18:45:09.822 I/ChatrMainActivity(30559): WebView console: %cnative %cKeyboard.addListener (#43574530) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.822 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.823 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.825 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseAnalytics.setEnabled (#43574531) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.826 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.827 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.828 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseCrashlytics.setEnabled (#43574532) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.829 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.830 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.831 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseAnalytics.logEvent (#43574533) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.832 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.834 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.836 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#43574534) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.837 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.838 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.839 I/ChatrMainActivity(30559): WebView console: %cnative %cNetwork.addListener (#43574535) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.839 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.840 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.841 I/ChatrMainActivity(30559): WebView console: %cnative %cSplashScreen.hide (#43574536) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.842 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.843 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.845 I/ChatrMainActivity(30559): WebView console: %cnative %cKeyboard.addListener (#43574537) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.846 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.847 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.848 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.addListener (#43574538) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.848 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.849 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.850 I/ChatrMainActivity(30559): WebView console: %cnative %cStatusBar.setOverlaysWebView (#43574539) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.851 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.852 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.853 I/ChatrMainActivity(30559): WebView console: %cnative %cKeyboard.addListener (#43574540) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.854 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.855 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.856 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.addListener (#43574541) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.857 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.858 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.858 I/ChatrMainActivity(30559): WebView console: %cnative %cKeyboard.addListener (#43574542) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.859 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.860 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.861 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.addListener (#43574543) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:09.862 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:09.863 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:09.864 I/ChatrMainActivity(30559): WebView console: ?? [App] Signaling WebApp Ready to Native Shell (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:09.865 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [App] Signaling WebApp Ready to Native Shell
+05-20 18:45:09.868 I/ChatrMainActivity(30559): Web app reported ready
+05-20 18:45:09.895 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574530, pluginId: Keyboard, methodName: addListener
+05-20 18:45:09.897 V/Capacitor(30559): callback: 43574530, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillShow"}
+05-20 18:45:09.900 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574531, pluginId: FirebaseAnalytics, methodName: setEnabled
+05-20 18:45:09.900 V/Capacitor(30559): callback: 43574531, pluginId: FirebaseAnalytics, methodName: setEnabled, methodData: {"enabled":true}
+05-20 18:45:09.902 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574532, pluginId: FirebaseCrashlytics, methodName: setEnabled
+05-20 18:45:09.903 V/Capacitor(30559): callback: 43574532, pluginId: FirebaseCrashlytics, methodName: setEnabled, methodData: {"enabled":true}
+05-20 18:45:09.905 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574533, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:45:09.905 V/Capacitor(30559): callback: 43574533, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"home","screen_class":"home"}}
+05-20 18:45:09.908 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574534, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:45:09.908 V/Capacitor(30559): callback: 43574534, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"home","type":"string"}
+05-20 18:45:09.909 I/ChatrMainActivity(30559): Web app reported ready
+05-20 18:45:09.912 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574535, pluginId: Network, methodName: addListener
+05-20 18:45:09.913 V/Capacitor(30559): callback: 43574535, pluginId: Network, methodName: addListener, methodData: {"eventName":"networkStatusChange"}
+05-20 18:45:09.916 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574536, pluginId: SplashScreen, methodName: hide
+05-20 18:45:09.916 V/Capacitor(30559): callback: 43574536, pluginId: SplashScreen, methodName: hide, methodData: {}
+05-20 18:45:09.918 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574537, pluginId: Keyboard, methodName: addListener
+05-20 18:45:09.918 V/Capacitor(30559): callback: 43574537, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillShow"}
+05-20 18:45:09.921 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574538, pluginId: App, methodName: addListener
+05-20 18:45:09.921 V/Capacitor(30559): callback: 43574538, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:45:09.923 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574539, pluginId: StatusBar, methodName: setOverlaysWebView
+05-20 18:45:09.924 V/Capacitor(30559): callback: 43574539, pluginId: StatusBar, methodName: setOverlaysWebView, methodData: {"overlay":false}
+05-20 18:45:09.926 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574540, pluginId: Keyboard, methodName: addListener
+05-20 18:45:09.927 V/Capacitor(30559): callback: 43574540, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillHide"}
+05-20 18:45:09.929 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574541, pluginId: App, methodName: addListener
+05-20 18:45:09.929 V/Capacitor(30559): callback: 43574541, pluginId: App, methodName: addListener, methodData: {"eventName":"appStateChange"}
+05-20 18:45:09.931 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574542, pluginId: Keyboard, methodName: addListener
+05-20 18:45:09.932 V/Capacitor(30559): callback: 43574542, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillHide"}
+05-20 18:45:09.934 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574543, pluginId: App, methodName: addListener
+05-20 18:45:09.935 V/Capacitor(30559): callback: 43574543, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:45:09.946 V/Capacitor/StatusBarPlugin(30559): Notifying listeners for event statusBarOverlayChanged
+05-20 18:45:09.947 D/Capacitor/StatusBarPlugin(30559): No listeners found for event statusBarOverlayChanged
+05-20 18:45:10.082 I/ChatrMainActivity(30559): Web app reported ready
+05-20 18:45:10.083 I/ChatrMainActivity(30559): WebView console: ?? [App] Signaling WebApp Ready to Native Shell (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:10.084 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [App] Signaling WebApp Ready to Native Shell
+05-20 18:45:11.585 I/OpenGLRenderer(30559): Davey! duration=1517ms; Flags=0, IntendedVsync=29969770149675, Vsync=29969770149675, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=29969770863631, AnimationStart=29969770881708, PerformTraversalsStart=29969773510477, DrawStart=29969774011169, SyncQueued=29969775668323, SyncStart=29969776495631, IssueDrawCommandsStart=29969776644092, SwapBuffers=29971286877862, FrameCompleted=29971288542939, DequeueBufferDuration=457000, QueueBufferDuration=880000, 
+05-20 18:45:11.588 I/ChatrMainActivity(30559): WebView console: ?? Setting up native call UI for android (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.589 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? Setting up native call UI for android
+05-20 18:45:11.590 I/ChatrMainActivity(30559): WebView console: ?? CallKit plugin not found. Install @capacitor-community/callkit (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.591 W/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? CallKit plugin not found. Install @capacitor-community/callkit
+05-20 18:45:11.592 I/ChatrMainActivity(30559): WebView console: Run: npm install @capacitor-community/callkit (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.593 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: Run: npm install @capacitor-community/callkit
+05-20 18:45:11.594 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseAnalytics.setEnabled (#43574531) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.594 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.595 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.596 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.597 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseCrashlytics.setEnabled (#43574532) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.598 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.599 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.600 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.601 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseAnalytics.logEvent (#43574533) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.602 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.603 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.603 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.604 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#43574534) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.605 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.606 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.607 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.608 I/ChatrMainActivity(30559): WebView console: %cresult %cSplashScreen.hide (#43574536) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.609 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.611 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.611 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.612 I/ChatrMainActivity(30559): WebView console: %cnative %cStatusBar.setStyle (#43574544) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:11.612 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:11.613 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:11.614 I/ChatrMainActivity(30559): WebView console: %cresult %cStatusBar.setOverlaysWebView (#43574539) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.615 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.616 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.617 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.618 I/ChatrMainActivity(30559): WebView console: %cnative %cStatusBar.setStyle (#43574545) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:11.618 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:11.619 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:11.629 I/ChatrMainActivity(30559): WebView console: [BatteryOptimization] Requesting exemption... (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.631 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [BatteryOptimization] Requesting exemption...
+05-20 18:45:11.634 I/ChatrMainActivity(30559): WebView console: ? Service Worker state reset (native-shell): registrations=0, caches=0 (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.635 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ? Service Worker state reset (native-shell): registrations=0, caches=0
+05-20 18:45:11.636 I/ChatrMainActivity(30559): WebView console: ?? Service worker disabled for native shell (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:45:11.637 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? Service worker disabled for native shell
+05-20 18:45:11.638 I/ChatrMainActivity(30559): WebView console: +----------------------------------------+ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.639 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: +----------------------------------------+
+05-20 18:45:11.640 I/ChatrMainActivity(30559): WebView console: ¦                                        ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.641 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦                                        ¦
+05-20 18:45:11.642 I/ChatrMainActivity(30559): WebView console: ¦     ?? CHATR OS - Third OS Layer      ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.643 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦     ?? CHATR OS - Third OS Layer      ¦
+05-20 18:45:11.644 I/ChatrMainActivity(30559): WebView console: ¦          Initializing...               ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.645 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦          Initializing...               ¦
+05-20 18:45:11.646 I/ChatrMainActivity(30559): WebView console: ¦                                        ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.647 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦                                        ¦
+05-20 18:45:11.648 I/ChatrMainActivity(30559): WebView console: +----------------------------------------+ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.650 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: +----------------------------------------+
+05-20 18:45:11.650 I/ChatrMainActivity(30559): WebView console: ?? CHATR OS: Initializing App Lifecycle Manager (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:45:11.652 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? CHATR OS: Initializing App Lifecycle Manager
+05-20 18:45:11.660 I/Choreographer(30559): Skipped 93 frames!  The application may be doing too much work on its main thread.
+05-20 18:45:11.675 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574544, pluginId: StatusBar, methodName: setStyle
+05-20 18:45:11.676 V/Capacitor(30559): callback: 43574544, pluginId: StatusBar, methodName: setStyle, methodData: {"style":"DARK"}
+05-20 18:45:11.678 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574545, pluginId: StatusBar, methodName: setStyle
+05-20 18:45:11.679 V/Capacitor(30559): callback: 43574545, pluginId: StatusBar, methodName: setStyle, methodData: {"style":"DARK"}
+05-20 18:45:11.774 I/OpenGLRenderer(30559): Davey! duration=1672ms; Flags=0, IntendedVsync=29969803624653, Vsync=29971353624684, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=29971363541400, AnimationStart=29971363651323, PerformTraversalsStart=29971367752323, DrawStart=29971368291093, SyncQueued=29971369806400, SyncStart=29971370679477, IssueDrawCommandsStart=29971370822785, SwapBuffers=29971475703246, FrameCompleted=29971477246554, DequeueBufferDuration=359000, QueueBufferDuration=714000, 
+05-20 18:45:11.848 I/ChatrMainActivity(30559): WebView console: %cresult %cStatusBar.setStyle (#43574544) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.850 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.852 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.852 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.854 I/ChatrMainActivity(30559): WebView console: %cnative %cStatusBar.setBackgroundColor (#43574546) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:11.855 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:11.855 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:11.858 I/ChatrMainActivity(30559): WebView console: %cresult %cStatusBar.setStyle (#43574545) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:11.859 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:11.860 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:11.860 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:11.861 I/ChatrMainActivity(30559): WebView console: %cnative %cStatusBar.setBackgroundColor (#43574547) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:11.861 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:11.862 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:11.883 I/com.chatr.app(30559): NativeAlloc concurrent copying GC freed 30380(1494KB) AllocSpace objects, 11(288KB) LOS objects, 49% free, 5456KB/10MB, paused 139us total 173.672ms
+05-20 18:45:12.002 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574546, pluginId: StatusBar, methodName: setBackgroundColor
+05-20 18:45:12.002 V/Capacitor(30559): callback: 43574546, pluginId: StatusBar, methodName: setBackgroundColor, methodData: {"color":"#f4efff"}
+05-20 18:45:12.005 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574547, pluginId: StatusBar, methodName: setBackgroundColor
+05-20 18:45:12.006 V/Capacitor(30559): callback: 43574547, pluginId: StatusBar, methodName: setBackgroundColor, methodData: {"color":"#f4efff"}
+05-20 18:45:12.086 I/ChatrMainActivity(30559): WebView console: %cresult %cStatusBar.setBackgroundColor (#43574546) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:12.087 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:12.090 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:12.091 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:12.099 I/ChatrMainActivity(30559): WebView console: %cnative %cStatusBar.setOverlaysWebView (#43574548) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:12.099 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:12.100 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:12.101 I/ChatrMainActivity(30559): WebView console: %cresult %cStatusBar.setBackgroundColor (#43574547) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:12.101 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:12.102 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:12.103 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:12.135 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574548, pluginId: StatusBar, methodName: setOverlaysWebView
+05-20 18:45:12.136 V/Capacitor(30559): callback: 43574548, pluginId: StatusBar, methodName: setOverlaysWebView, methodData: {"overlay":false}
+05-20 18:45:12.181 V/Capacitor/StatusBarPlugin(30559): Notifying listeners for event statusBarOverlayChanged
+05-20 18:45:12.181 D/Capacitor/StatusBarPlugin(30559): No listeners found for event statusBarOverlayChanged
+05-20 18:45:12.211 I/ChatrMainActivity(30559): WebView console: %cresult %cStatusBar.setOverlaysWebView (#43574548) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:12.212 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:12.213 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:12.213 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:12.214 I/ChatrMainActivity(30559): WebView console: [DeepLink] Initializing listener (http://localhost/assets/index-CwRZyNBE.js:42)
+05-20 18:45:12.215 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 42 - Msg: [DeepLink] Initializing listener
+05-20 18:45:12.215 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.addListener (#43574549) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:12.216 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:12.217 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:12.221 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.getLaunchUrl (#43574550) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:12.221 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:12.222 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:12.261 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574549, pluginId: App, methodName: addListener
+05-20 18:45:12.262 V/Capacitor(30559): callback: 43574549, pluginId: App, methodName: addListener, methodData: {"eventName":"appUrlOpen"}
+05-20 18:45:12.265 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574550, pluginId: App, methodName: getLaunchUrl
+05-20 18:45:12.265 V/Capacitor(30559): callback: 43574550, pluginId: App, methodName: getLaunchUrl, methodData: {}

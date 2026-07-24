@@ -1,0 +1,18 @@
+{
+  "schema": "chatr.certification.v1",
+  "certification_id": "cert-platform-milestone-c-resolution-layer-2026-07-15",
+  "milestone": "Platform Milestone C — Resolution Layer",
+  "milestone_key": "PlatformMilestoneC",
+  "kernel_version": "0.9.1-pre",
+  "abi_version": "chatr.kernel.v0_9_rc",
+  "certified": true,
+  "certification_date": "2026-07-15T17:09:34.777Z",
+  "status": "CERTIFIED",
+  "tests_passed": 14,
+  "tests_failed": 0,
+  "performance_snapshot": {
+    "ci_regression_gate_ms": 50,
+    "measurement": "avg, 100 runs, no I/O (dry_run)",
+    "value_ms": 0.37
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "hr.job.application",
+      "version": "1.0.0",
+      "displayName": "Job Application Lifecycle",
+      "description": "Manages the multi-stage, human-driven lifecycle of a candidate application.",
+      "author": "CHATR Enterprise",
+      "license": "MIT",
+      "category": "Human Resources",
+      "tags": [
+        "recruitment",
+        "hr",
+        "candidate"
+      ]
+    },
+    "runtime": {
+      "intentTypes": [
+        "hr.job.application"
+      ],
+      "permissions": [
+        "calendar",
+        "email",
+        "document_store"
+      ],
+      "inputs": [
+        "candidateId",
+        "jobId",
+        "resumeUrl"
+      ],
+      "outputs": [
+        "applicationStatus",
+        "offerDetails"
+      ],
+      "events": [
+        "hr.interview.scheduled",
+        "hr.offer.sent"
+      ],
+      "policies": [
+        "hr.compliance.eeoc"
+      ],
+      "verification": {
+        "strategy": "hr_ats_sync@1.0"
+      },
+      "stewardship": {
+        "renewable": false,
+        "expiration": "offer_accepted"
+      }
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "maxKernelVersion": "2.0",
+      "dependencies": [],
+      "supportedPlatforms": [
+        "desktop",
+        "web"
+      ],
+      "securityClassification": "confidential",
+      "profile": "Full"
+    }
+  },
+  "certificate": {
+    "capabilityId": "hr.job.application",
+    "version": "1.0.0",
+    "manifestHash": "168ceb20049914ad990169f9de901f9a54a259b824fb27f2559bda865f2ef30f",
+    "interfaceHash": "af1aa43099aa84c79e3d60c1e7439d3c05f6bc59d8a166248c00a1edac332ab0",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:30:16.181Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

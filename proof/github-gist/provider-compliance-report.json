@@ -1,0 +1,37 @@
+{
+  "journey": "developer.createArtifact",
+  "provider": "provider.github",
+  "idempotencyMode": "DETERMINISTIC_LOOKUP",
+  "recoveryTest": "PASS",
+  "duplicatePrevention": "PASS",
+  "normalizedResult": {
+    "artifactId": "gist_88192a",
+    "url": "https://gist.github.com/gist_88192a",
+    "createdAt": "2026-07-17T09:50:32.088Z",
+    "status": "SUCCESS"
+  },
+  "complianceResults": {
+    "health": {
+      "status": "PASS",
+      "duration_ms": 0,
+      "evidence": {
+        "msg": "Health OK",
+        "latency": 42
+      }
+    },
+    "discoverCapabilities": {
+      "status": "PASS",
+      "duration_ms": 0,
+      "evidence": {
+        "capabilities": [
+          "developer.createArtifact"
+        ]
+      }
+    }
+  },
+  "environment": {
+    "os": "win32",
+    "runtimeVersion": "v25.6.1",
+    "kernelVersion": "CHATR-1.0.0"
+  }
+}

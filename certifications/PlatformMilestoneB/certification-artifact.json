@@ -1,0 +1,77 @@
+{
+  "schema": "chatr.certification.v1",
+  "certification_id": "cert-platform-milestone-b-cap-resolver-2026-07-15",
+  "milestone": "Platform Milestone B — Capability Resolver",
+  "milestone_key": "PlatformMilestoneB",
+  "kernel_version": "0.9.1-pre",
+  "abi_version": "chatr.kernel.v0_9_rc",
+  "certified": true,
+  "certification_date": "2026-07-15T00:00:00Z",
+  "tsc_review_date": "2026-07-15T00:00:00Z",
+  "tsc_resolution_id": "TSC-2026-07-15-B",
+  "status": "CERTIFIED",
+  "review_type": "Capability Resolver ABI Review",
+  "tsc_decision": "APPROVED",
+  "tests_passed": 305,
+  "tests_failed": 0,
+  "certification_suite": "electron/chatr-core/tests/certification/PlatformMilestoneB/capability_resolver_certification.cjs",
+  "sections": {
+    "architecture_purity": "PASS",
+    "abi_compliance": "PASS",
+    "universality_shared_pipeline": "PASS",
+    "graph_topology_equality": "PASS",
+    "determinism": "PASS",
+    "immutability": "PASS",
+    "persistence": "PASS",
+    "event_lifecycle": "PASS",
+    "rejection": "PASS",
+    "performance_regression_gate": "PASS",
+    "full_purity_scan": "PASS"
+  },
+  "architecture_purity_snapshot": {
+    "domain_runtime_files": 0,
+    "industry_capability_ids": 0,
+    "domain_branches_in_kernel": 0,
+    "hardcoded_provider_ids": 0,
+    "abi_changes_without_adr": 0,
+    "lowercase_capability_names_in_kernel": 0,
+    "namespaced_capability_names_in_catalog": 0,
+    "architecture_purity_score": 100
+  },
+  "abi_compatibility_snapshot": {
+    "abi_version": "chatr.kernel.v0_9_rc",
+    "capability_graph_abi": "chatr.capability_graph.v0_9_rc",
+    "capability_request_abi": "chatr.capability_request.v0_9_rc",
+    "capability_contract_version": "1.0.0",
+    "goal_plan_abi": "chatr.goal_plan.v0_9_rc",
+    "breaking_changes": 0,
+    "abi_compatible": true
+  },
+  "performance_snapshot": {
+    "platform_slo_ms": 5,
+    "ci_regression_gate_ms": 50,
+    "measurement": "p95, 100 runs, JIT-warmed, no I/O (dry_run)",
+    "environment": "Windows, Node.js v25.6.1",
+    "note": "Production SLO enforced via telemetry. CI gate detects catastrophic regressions only."
+  },
+  "defects_remediated": ["B-01", "B-02", "B-03", "B-04", "B-05"],
+  "open_conditions": [
+    {
+      "id": "TSC-001",
+      "description": "Remove LEGACY_CAPABILITY_ALIASES after all ABI producers emit canonical names",
+      "status": "DEFERRED",
+      "prerequisites": [
+        "Every GoalPlanner emits canonical capability IDs",
+        "No compatibility tests depend on aliases",
+        "Architecture Lint rejects lowercase capabilities"
+      ]
+    }
+  ],
+  "architecture_impact": "None",
+  "abi_impact": "None",
+  "governance_impact": "None",
+  "implementation_quality": "Improvement",
+  "approved_by": ["Technical Steering Committee"],
+  "tsc_assessment": "This is the first point where CHATR is described not as an ambitious AI application, but as an operating system platform under disciplined engineering governance.",
+  "next_milestone": "Platform Milestone C — Strategy Resolver → Provider Intelligence → Trust Service → Policy Service → Resource Manager"
+}

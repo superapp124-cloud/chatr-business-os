@@ -1,0 +1,15 @@
+{
+  "id": "jobs",
+  "name": "Job Posting & Recruitment",
+  "version": "1.0.0",
+  "capabilities": ["jobs.generate_jd", "jobs.post", "jobs.search_candidates"],
+  "providers": [
+    { "id": "linkedin", "name": "LinkedIn", "priority": 1, "loginUrl": "https://www.linkedin.com/login",          "regions": ["*"] },
+    { "id": "naukri",   "name": "Naukri",   "priority": 2, "loginUrl": "https://www.naukri.com/",                 "regions": ["IN"] },
+    { "id": "indeed",   "name": "Indeed",   "priority": 3, "loginUrl": "https://www.indeed.com/account/login",    "regions": ["*"] },
+    { "id": "foundit",  "name": "Foundit",  "priority": 4, "loginUrl": "https://www.foundit.in/",                 "regions": ["IN"] }
+  ],
+  "authMethod": "browser_session",
+  "country": ["IN", "US", "GB"],
+  "category": "jobs"
+}

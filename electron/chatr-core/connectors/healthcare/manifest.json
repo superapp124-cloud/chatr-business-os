@@ -1,0 +1,13 @@
+{
+  "id": "healthcare",
+  "name": "Healthcare & Doctors",
+  "version": "1.0.0",
+  "capabilities": ["healthcare.search_doctors", "healthcare.book_appointment"],
+  "providers": [
+    { "id": "practo", "name": "Practo",     "priority": 1, "loginUrl": "https://www.practo.com/",     "regions": ["IN"] },
+    { "id": "apollo", "name": "Apollo 247", "priority": 2, "loginUrl": "https://www.apollo247.com/",  "regions": ["IN"] }
+  ],
+  "authMethod": "browser_session",
+  "country": ["IN"],
+  "category": "healthcare"
+}

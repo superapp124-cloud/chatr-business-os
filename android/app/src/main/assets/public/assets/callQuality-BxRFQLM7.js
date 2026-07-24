@@ -1,0 +1,1 @@
+import"./index-BxFTw0b2.js";function f(e,n,a){const r=e+a*2;let t=94.2;if(r>177.3?t-=.024*r+.11*(r-177.3):t-=.024*r,t-=2.5*n,t=Math.max(0,Math.min(100,t)),t<0)return 1;if(t>100)return 4.5;const i=1+.035*t+7e-6*t*(t-60)*(100-t);return parseFloat(Math.max(1,Math.min(4.5,i)).toFixed(2))}function u(e){return e>=4?"#10b981":e>=3.6?"#f59e0b":"#ef4444"}export{f as c,u as m};

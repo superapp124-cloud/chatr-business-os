@@ -1,0 +1,28 @@
+{
+  "policies": [
+    {
+      "id": "pol_hr_base_access",
+      "type": "transition_guard",
+      "condition": "user.role in ['HR Admin', 'HR Manager']",
+      "enforcement": "hard_block"
+    },
+    {
+      "id": "pol_hr_leave_approval",
+      "type": "transition_guard",
+      "condition": "user.id == employee.manager_id || user.role == 'HR Admin'",
+      "enforcement": "hard_block"
+    },
+    {
+      "id": "pol_hr_extended_leave_approval",
+      "type": "workflow_trigger",
+      "condition": "leave_request.end_date - leave_request.start_date > 14.days",
+      "enforcement": "soft_warning"
+    },
+    {
+      "id": "pol_hr_termination_approval",
+      "type": "transition_guard",
+      "condition": "user.role in ['HR Director', 'Legal']",
+      "enforcement": "hard_block"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_sheet_bg"
+        android:padding="24dp"
+        android:elevation="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ AI SUMMARY"
+            android:textColor="#A78BFA"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/summaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading summary..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/keyPointsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#D1D5DB"
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.3"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Action Chips Container -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="24dp">
+            
+            <LinearLayout
+                android:id="@+id/actionChipsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#374151"
+            app:cornerRadius="25dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shield_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="20dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <!-- Drag Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_shield_drag_handle"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false">
+        
+        <LinearLayout android:id="@+id/btnScreenShare" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_videocam" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Screen Share" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnSnapshot" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_flip_camera" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Snapshot" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnAiAssistant" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_shield_check" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assistant" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/btnBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_person" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Background" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:baselineAligned="false">
+        
+        <LinearLayout android:id="@+id/btnEffects2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_sync" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Effects" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnThemes" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_sync" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Themes" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/btnSettings" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_more_horiz" app:tint="@color/shield_text_secondary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings" android:textColor="@color/shield_text_secondary" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        
+        <!-- Empty view to pad the 4th spot in the grid -->
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+{
+  "id": "knowledge.travel.airports",
+  "type": "reference_data",
+  "domain": "travel",
+  "data": [
+    { "code": "JFK", "name": "John F. Kennedy International", "city": "New York" },
+    { "code": "SFO", "name": "San Francisco International", "city": "San Francisco" },
+    { "code": "LHR", "name": "London Heathrow", "city": "London" }
+  ]
+}

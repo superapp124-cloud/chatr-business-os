@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "registryVersion": "1.0.0",
+  "generatedAt": "2026-07-12T00:00:00Z",
+  "policies": {
+    "system": {
+      "privacy": "local-preferred",
+      "offlineOnly": true,
+      "allowCloud": false,
+      "maxCost": 0,
+      "allowPaidProviders": false,
+      "allowUserAPIKeys": true,
+      "budget": "FREE_ONLY"
+    },
+    "enterprise": {},
+    "workspace": {},
+    "user": {}
+  }
+}

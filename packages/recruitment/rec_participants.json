@@ -1,0 +1,22 @@
+{
+  "participants": [
+    {
+      "id": "role_recruiter",
+      "type": "human_role",
+      "capabilities": ["screen_candidate", "schedule_interview"],
+      "escalation_path": "role_hr_director"
+    },
+    {
+      "id": "role_hiring_manager",
+      "type": "human_role",
+      "capabilities": ["conduct_interview", "propose_offer"],
+      "escalation_path": "role_department_head"
+    },
+    {
+      "id": "role_hr_director",
+      "type": "human_role",
+      "capabilities": ["approve_out_of_band_offer", "override_policy"],
+      "escalation_path": "role_vp_hr"
+    }
+  ]
+}

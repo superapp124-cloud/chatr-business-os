@@ -1,0 +1,459 @@
+--------- beginning of system
+05-20 18:47:30.584 I/TelecomFramework(31119): ChatrConnectionService: notifyCreateConnectionComplete TC@46_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-Cqg
+--------- beginning of main
+05-20 18:47:47.716 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 4, Parent = android.view.ViewRootImpl@206c7b6, this = DecorView@890ddb[IncomingCallActivity]
+05-20 18:47:47.737 D/View    (31119): [Warning] assignParent to null: this = DecorView@890ddb[IncomingCallActivity]
+05-20 18:47:47.740 I/InputTransport(31119): Destroy ARC handle: 0x790b695600
+05-20 18:47:48.104 I/com.chatr.app(31119): Background concurrent copying GC freed 48452(2470KB) AllocSpace objects, 9(372KB) LOS objects, 42% free, 8280KB/14MB, paused 29.090ms total 535.032ms
+05-20 18:47:48.143 D/MediaPlayer(31119): finalize() native_finalize called
+05-20 18:47:48.143 D/MediaPlayer(31119): finalize() native_finalize finished
+05-20 18:47:48.167 D/Capacitor/AppPlugin(31119): Firing change: false
+05-20 18:47:48.168 V/Capacitor/AppPlugin(31119): Notifying listeners for event appStateChange
+05-20 18:47:48.170 D/Capacitor(31119): App stopped
+05-20 18:47:48.170 I/ChatrMainActivity(31119): MainActivity onStop: isActivityVisible=false
+05-20 18:47:48.171 I/ChatrMainActivity(31119): Forcing WebView to remain resumed in onStop
+05-20 18:47:48.183 D/Capacitor(31119): Saving instance state!
+05-20 18:47:48.186 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 4, Parent = android.view.ViewRootImpl@a6b151c, this = DecorView@faeb525[MainActivity]
+05-20 18:47:48.188 I/ChatrMainActivity(31119): WebView console: %cresult %cApp.addListener (#77728365) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:47:48.188 I/ChatrMainActivity(31119): WebView console: [object Object] (:333)
+05-20 18:47:48.189 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:47:48.190 I/ChatrMainActivity(31119): WebView console: App state changed. Active: false (http://localhost/assets/index-CwRZyNBE.js:42)
+05-20 18:47:48.191 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 42 - Msg: App state changed. Active: false
+05-20 18:47:48.201 D/Surface (31119): Surface::disconnect(this=0x78b52d6000,api=1)
+05-20 18:47:48.231 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseAnalytics.logEvent (#77728395) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:47:48.231 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:47:48.232 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:47:48.266 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 77728395, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:47:48.267 V/Capacitor(31119): callback: 77728395, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"app_backgrounded","params":{}}
+05-20 18:47:48.280 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseAnalytics.logEvent (#77728395) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:47:48.281 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:47:48.289 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:47:48.289 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:47:48.299 I/ChatrMainActivity(31119): WebView console: The resource http://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/home:0)
+05-20 18:47:48.300 W/Capacitor/Console(31119): File: http://localhost/#/home - Line 0 - Msg: The resource http://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:47:48.301 I/ChatrMainActivity(31119): WebView console: The resource http://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/home:0)
+05-20 18:47:48.302 W/Capacitor/Console(31119): File: http://localhost/#/home - Line 0 - Msg: The resource http://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:47:48.303 I/ChatrMainActivity(31119): WebView console: The resource http://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/home:0)
+05-20 18:47:48.303 W/Capacitor/Console(31119): File: http://localhost/#/home - Line 0 - Msg: The resource http://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:47:48.491 I/ChatrMainActivity(31119): WebView console: %cresult %cContacts.getContacts (#77728394) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:47:48.492 I/ChatrMainActivity(31119): WebView console: [object Object] (:333)
+05-20 18:47:48.492 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:47:49.565 E/ChatrMainActivity(31119): WebView HTTP error main=false url=https://sbayuqgomlflmxgicplz.supabase.co/rest/v1/rpc/sync_user_contacts status=403 reason=
+05-20 18:47:49.576 I/ChatrMainActivity(31119): WebView console: Contact sync RPC error: [object Object] (http://localhost/assets/index-CwRZyNBE.js:55)
+05-20 18:47:49.577 E/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 55 - Msg: Contact sync RPC error: [object Object]
+05-20 18:47:49.578 I/ChatrMainActivity(31119): WebView console: ?? [ContactSync] Skipped: permission denied for function sync_user_contacts (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:47:49.579 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? [ContactSync] Skipped: permission denied for function sync_user_contacts
+05-20 18:47:49.671 E/chromium(31119): [ERROR:components/page_load_metrics/browser/page_load_metrics_update_dispatcher.cc:179] Invalid first_paint 16.568 s for first_image_paint 16.54 s
+05-20 18:47:50.059 I/ChatrMainActivity(31119): MainActivity onDestroy
+05-20 18:47:50.088 D/Capacitor(31119): App destroyed
+05-20 18:47:50.102 I/GED     (31119): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+05-20 18:47:50.103 I/GED     (31119): ged_boost_gpu_freq, level 100, eOrigin 2, final_idx 2, oppidx_max 2, oppidx_min 0
+05-20 18:47:50.114 D/View    (31119): [Warning] assignParent to null: this = DecorView@faeb525[MainActivity]
+05-20 18:47:50.114 I/InputTransport(31119): Destroy ARC handle: 0x78b5128ae0
+05-20 18:47:50.115 D/libMEOW_gift(31119): etEventThreadFunc()::thread End. eventRefCnt: 0
+05-20 18:47:50.325 I/FA      (31119): Application backgrounded at: timestamp_millis: 1779283068320
+05-20 18:47:51.265 I/NativeCallLogSync(31119): Native call event upload skipped; schema backoff active pending=50 reason=phone_state_idle
+05-20 18:47:51.265 I/NativeCallLogSync(31119): Native call sync finished. imported=60 pending=50 remoteLookups=0 reason=phone_state_idle
+05-20 18:47:51.278 I/WM-WorkerWrapper(31119): Worker result SUCCESS for Work [ id=5e4fd9b5-b682-4e4d-91bf-51eae0a76261, tags={ com.chatr.app.nativecalls.NativeCallSyncWorker } ]
+05-20 18:47:59.643 I/TRuntime.CctTransportBackend(31119): Making request to: https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog
+05-20 18:47:59.650 I/CapacitorCookies(31119): Getting cookies at: 'https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/batchlog'
+05-20 18:47:59.654 I/System.out(31119): [okhttp]:check permission begin!
+05-20 18:47:59.654 I/System.out(31119): [okhttp]:not MMS!
+05-20 18:47:59.654 I/System.out(31119): [okhttp]:not Email!
+05-20 18:47:59.664 I/System.out(31119): [socket]:check permission begin!
+05-20 18:47:59.792 I/System.out(31119): [OkHttp] sendRequest>>
+05-20 18:47:59.793 I/System.out(31119): [OkHttp] sendRequest<<
+05-20 18:47:59.952 I/ChatrFCM(31119): FCM message received with keys: androidx.collection.ArrayMap$KeySet@4816b7be
+05-20 18:47:59.952 I/ChatrFCM(31119): FCM resolvedType=call callId=2966b2b5-4618-453e-ae51-5a9e302d740b payload={caller_id=65b871c5-4f95-459e-8be5-230d99c011cd, conversation_id=d7f0bb7f-6294-47e9-8c05-738b8c4f3561, type=call, timestamp=1779283079931, is_video=false, caller_avatar=https://sbayuqgomlflmxgicplz.supabase.co/storage/v1/object/public/social-media/65b871c5-4f95-459e-8be5-230d99c011cd-1766863793539.jpg, call_id=2966b2b5-4618-453e-ae51-5a9e302d740b, caller_name=TalentXcel SERVICES, caller_phone=9717161809}
+05-20 18:48:00.009 I/ChatrFCM(31119): Handling call notification for 2966b2b5-4618-453e-ae51-5a9e302d740b from TalentXcel SERVICES / 9717161809
+05-20 18:48:00.012 I/VoIPPrewarm(31119): ?? VoIPPrewarmService start requested for call 2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:00.067 I/ChatrNotifications(31119): Showing incoming call for 2966b2b5-4618-453e-ae51-5a9e302d740b from TalentXcel SERVICES via fcm
+05-20 18:48:00.094 I/ChatrNotifications(31119): Registered incoming call with TelecomManager for 2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:00.094 I/ChatrNotifications(31119): Attempting to prewarm MainActivity for call 2966b2b5-4618-453e-ae51-5a9e302d740b (package: com.chatr.app)
+05-20 18:48:00.121 I/ChatrNotifications(31119): Prewarm triggered successfully using candidate 0: ComponentInfo{com.chatr.app/com.chatr.app.MainActivity}
+05-20 18:48:00.128 W/ActivityThread(31119): handleWindowVisibility: no activity for token android.os.BinderProxy@94a56d6
+05-20 18:48:00.140 D/libMEOW (31119): applied 1 plugins for [com.chatr.app]:
+05-20 18:48:00.140 D/libMEOW (31119):   plugin 1: [libMEOW_gift.so]:
+05-20 18:48:00.346 D/Capacitor(31119): Starting BridgeActivity
+05-20 18:48:00.372 D/Capacitor(31119): Registering plugin instance: CapacitorCookies
+05-20 18:48:00.379 D/Capacitor(31119): Registering plugin instance: WebView
+05-20 18:48:00.383 D/Capacitor(31119): Registering plugin instance: CapacitorHttp
+05-20 18:48:00.387 D/Capacitor(31119): Registering plugin instance: BarcodeScanner
+05-20 18:48:00.393 D/Capacitor(31119): Registering plugin instance: BluetoothLe
+05-20 18:48:00.401 D/Capacitor(31119): Registering plugin instance: Contacts
+05-20 18:48:00.405 D/Capacitor(31119): Registering plugin instance: FileOpener
+05-20 18:48:00.408 D/Capacitor(31119): Registering plugin instance: SpeechRecognition
+05-20 18:48:00.413 D/Capacitor(31119): Registering plugin instance: FirebaseAnalytics
+05-20 18:48:00.417 D/Capacitor(31119): Registering plugin instance: FirebaseCrashlytics
+05-20 18:48:00.420 D/Capacitor(31119): Registering plugin instance: App
+05-20 18:48:00.423 D/Capacitor(31119): Registering plugin instance: Browser
+05-20 18:48:00.427 D/Capacitor(31119): Registering plugin instance: Camera
+05-20 18:48:00.431 D/Capacitor(31119): Registering plugin instance: Clipboard
+05-20 18:48:00.437 D/Capacitor(31119): Registering plugin instance: Device
+05-20 18:48:00.440 D/Capacitor(31119): Registering plugin instance: Filesystem
+05-20 18:48:00.446 D/Capacitor(31119): Registering plugin instance: Geolocation
+05-20 18:48:00.451 D/Capacitor(31119): Registering plugin instance: Haptics
+05-20 18:48:00.455 D/Capacitor(31119): Registering plugin instance: Keyboard
+05-20 18:48:00.459 D/Capacitor(31119): Registering plugin instance: LocalNotifications
+05-20 18:48:00.466 D/Capacitor(31119): Registering plugin instance: Network
+05-20 18:48:00.469 D/Capacitor(31119): Registering plugin instance: Preferences
+05-20 18:48:00.473 D/Capacitor(31119): Registering plugin instance: PushNotifications
+05-20 18:48:00.478 D/Capacitor(31119): Registering plugin instance: ScreenReader
+05-20 18:48:00.480 D/Capacitor(31119): Registering plugin instance: Share
+05-20 18:48:00.486 D/Capacitor(31119): Registering plugin instance: SplashScreen
+05-20 18:48:00.490 D/Capacitor(31119): Registering plugin instance: StatusBar
+05-20 18:48:00.495 V/Capacitor/StatusBarPlugin(31119): Notifying listeners for event statusBarOverlayChanged
+05-20 18:48:00.496 D/Capacitor/StatusBarPlugin(31119): No listeners found for event statusBarOverlayChanged
+05-20 18:48:00.496 V/Capacitor/StatusBarPlugin(31119): Notifying listeners for event statusBarOverlayChanged
+05-20 18:48:00.497 D/Capacitor/StatusBarPlugin(31119): No listeners found for event statusBarOverlayChanged
+05-20 18:48:00.498 D/Capacitor(31119): Registering plugin instance: Toast
+05-20 18:48:00.501 D/Capacitor(31119): Registering plugin instance: BackgroundTask
+05-20 18:48:00.503 D/Capacitor(31119): Registering plugin instance: NativeBiometric
+05-20 18:48:00.506 D/Capacitor(31119): Registering plugin instance: SecureStoragePlugin
+05-20 18:48:00.532 D/Capacitor(31119): Registering plugin instance: CapacitorVideoPlayer
+05-20 18:48:00.566 W/Capacitor(31119): Unable to read file at path public/plugins
+05-20 18:48:00.575 D/Capacitor(31119): Loading app at http://localhost
+05-20 18:48:00.628 D/Capacitor(31119): Handling local request: http://localhost/
+05-20 18:48:00.630 I/ChatrMainActivity(31119): MainActivity onNewIntent: android.intent.action.VIEW
+05-20 18:48:00.631 I/ChatrMainActivity(31119): Handling action=prewarm_call intentAction=android.intent.action.VIEW data=null
+05-20 18:48:00.631 I/ChatrMainActivity(31119): Pre-warming VoIP session for 2966b2b5-4618-453e-ae51-5a9e302d740b (callerId=)
+05-20 18:48:00.632 I/ChatrMainActivity(31119): MainActivity is not visible. Moving task to back to stay backgrounded during prewarm.
+05-20 18:48:00.652 I/ChatrMainActivity(31119): MainActivity onCreate
+05-20 18:48:00.656 I/CallForegroundService(31119): Clearing stale call notification (main_activity_start)
+05-20 18:48:00.677 E/cr_ChildProcLauncher(31119): ChildProcessConnection.start failed, trying again
+05-20 18:48:00.714 I/ChatrMainActivity(31119): All permissions already granted
+05-20 18:48:00.714 I/ChatrMainActivity(31119): VoIP services initialized
+05-20 18:48:00.720 I/VoIPBridgeService(31119): ?? VoIPBridgeService initialized
+05-20 18:48:00.741 I/ChatrMainActivity(31119): WebView configured with native bridges
+05-20 18:48:00.743 I/ChatrMainActivity(31119): Skipping duplicate intent action=prewarm_call intentAction=android.intent.action.VIEW callId=2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:00.791 D/Capacitor(31119): App started
+05-20 18:48:00.792 I/ChatrMainActivity(31119): MainActivity onStart: isActivityVisible=true
+05-20 18:48:00.812 D/Capacitor/AppPlugin(31119): Firing change: true
+05-20 18:48:00.812 V/Capacitor/AppPlugin(31119): Notifying listeners for event appStateChange
+05-20 18:48:00.812 D/Capacitor/AppPlugin(31119): No listeners found for event appStateChange
+05-20 18:48:00.826 D/SessionLifecycleClient(31119): Sending lifecycle 1 to service
+05-20 18:48:00.827 D/SessionLifecycleService(31119): Activity foregrounding at 30140529.
+05-20 18:48:00.839 V/Capacitor/NetworkPlugin(31119): Notifying listeners for event networkStatusChange
+05-20 18:48:00.839 D/Capacitor/NetworkPlugin(31119): No listeners found for event networkStatusChange
+05-20 18:48:00.845 V/Capacitor/BrowserPlugin(31119): Notifying listeners for event browserFinished
+05-20 18:48:00.846 D/Capacitor/BrowserPlugin(31119): No listeners found for event browserFinished
+05-20 18:48:00.847 D/Capacitor(31119): App resumed
+05-20 18:48:00.850 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 4, Parent = null, this = DecorView@5532a9[]
+05-20 18:48:00.870 D/ViewRootImpl[MainActivity](31119): hardware acceleration = true , fakeHwAccelerated = false, sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-20 18:48:00.885 I/InputTransport(31119): Create ARC handle: 0x78b5854f60
+05-20 18:48:00.887 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 0, Parent = android.view.ViewRootImpl@fa155c, this = DecorView@5532a9[MainActivity]
+05-20 18:48:00.888 D/libMEOW_gift(31119): etEventThreadFunc()::thread Begin. eventRefCnt: 1
+05-20 18:48:01.115 D/Surface (31119): Surface::connect(this=0x78b5295000,api=1)
+05-20 18:48:01.122 D/Surface (31119): Surface::setBufferCount(this=0x78b5295000,bufferCount=3)
+05-20 18:48:01.122 D/Surface (31119): Surface::allocateBuffers(this=0x78b5295000)
+05-20 18:48:01.131 I/com.chatr.app(31119): Background young concurrent copying GC freed 37786(2352KB) AllocSpace objects, 39(3140KB) LOS objects, 38% free, 8902KB/14MB, paused 809us total 114.147ms
+05-20 18:48:01.270 V/Capacitor/AppPlugin(31119): Notifying listeners for event pause
+05-20 18:48:01.270 D/Capacitor/AppPlugin(31119): No listeners found for event pause
+05-20 18:48:01.277 D/SessionLifecycleClient(31119): Sending lifecycle 2 to service
+05-20 18:48:01.278 D/SessionLifecycleService(31119): Activity backgrounding at 30140980
+05-20 18:48:01.283 D/Capacitor(31119): App paused
+05-20 18:48:01.283 I/ChatrMainActivity(31119): MainActivity onPause
+05-20 18:48:01.283 I/ChatrMainActivity(31119): Forcing WebView to remain resumed in onPause
+05-20 18:48:01.294 I/ChatrConnectionService(31119): onCreateIncomingConnection address=tel:9717161809 extras=Bundle[{android.telecom.extra.INCOMING_CALL_ADDRESS=tel:9717161809, call_type=audio, caller_id=65b871c5-4f95-459e-8be5-230d99c011cd, conversation_id=d7f0bb7f-6294-47e9-8c05-738b8c4f3561, caller_avatar=https://sbayuqgomlflmxgicplz.supabase.co/storage/v1/object/public/social-media/65b871c5-4f95-459e-8be5-230d99c011cd-1766863793539.jpg, call_id=2966b2b5-4618-453e-ae51-5a9e302d740b, caller_name=TalentXcel SERVICES, caller_number=9717161809, caller_phone=9717161809, android.telecom.extra.CALL_TELECOM_ROUTING_START_TIME_MILLIS=30274066}]
+05-20 18:48:01.357 I/ChatrConnection(31119): onShowIncomingCallUi: 2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:01.377 I/ChatrConnection(31119): IncomingCallActivity launched from Connection.onShowIncomingCallUi
+05-20 18:48:01.427 D/Capacitor(31119): Handling local request: http://localhost/assets/index-CwRZyNBE.js
+05-20 18:48:01.436 D/Capacitor(31119): Handling local request: http://localhost/assets/framer-motion-Bu9l-0Si.js
+05-20 18:48:01.436 D/Capacitor(31119): Handling local request: http://localhost/assets/ui-radix-Cv21Vne4.js
+05-20 18:48:01.440 D/Capacitor(31119): Handling local request: http://localhost/assets/react-vendor-DAtO1BG8.js
+05-20 18:48:01.476 D/Capacitor(31119): Handling local request: http://localhost/assets/index-B06nBRP0.css
+05-20 18:48:01.478 D/Capacitor(31119): Handling local request: http://localhost/assets/lucide-icons-CibWKBoE.js
+05-20 18:48:01.484 D/Capacitor(31119): Handling local request: http://localhost/assets/firebase-core-oTls-BLf.js
+05-20 18:48:01.490 I/ChatrFCM(31119): Ignoring duplicate FCM for call_id: 2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:01.519 I/Capacitor/SpeechRecognition(31119): Instantiated SpeechRecognizer in load()
+05-20 18:48:01.584 D/Capacitor/AppPlugin(31119): Firing change: false
+05-20 18:48:01.584 V/Capacitor/AppPlugin(31119): Notifying listeners for event appStateChange
+05-20 18:48:01.584 D/Capacitor/AppPlugin(31119): No listeners found for event appStateChange
+05-20 18:48:01.584 D/Capacitor(31119): App stopped
+05-20 18:48:01.585 I/ChatrMainActivity(31119): MainActivity onStop: isActivityVisible=false
+05-20 18:48:01.585 I/ChatrMainActivity(31119): Forcing WebView to remain resumed in onStop
+05-20 18:48:01.595 D/Capacitor(31119): Saving instance state!
+05-20 18:48:01.598 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 4, Parent = android.view.ViewRootImpl@fa155c, this = DecorView@5532a9[MainActivity]
+05-20 18:48:01.600 W/ActivityThread(31119): handleWindowVisibility: no activity for token android.os.BinderProxy@51a96f9
+05-20 18:48:01.610 D/libMEOW (31119): applied 1 plugins for [com.chatr.app]:
+05-20 18:48:01.610 D/libMEOW (31119):   plugin 1: [libMEOW_gift.so]:
+05-20 18:48:01.626 I/IncomingCallActivity(31119): IncomingCallActivity onCreate
+05-20 18:48:01.735 I/IncomingCallActivity(31119): Incoming audio call for TalentXcel SERVICES (2966b2b5-4618-453e-ae51-5a9e302d740b)
+05-20 18:48:01.962 D/IncomingCallActivity(31119): Ringtone started
+05-20 18:48:01.979 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 4, Parent = null, this = DecorView@ffe3c52[]
+05-20 18:48:01.982 D/SessionLifecycleClient(31119): Sending lifecycle 1 to service
+05-20 18:48:01.982 D/SessionLifecycleService(31119): Activity foregrounding at 30141685.
+05-20 18:48:01.986 D/ViewRootImpl[IncomingCallActivity](31119): hardware acceleration = true , fakeHwAccelerated = false, sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-20 18:48:01.994 I/InputTransport(31119): Create ARC handle: 0x78b578e2a0
+05-20 18:48:01.997 V/PhoneWindow(31119): DecorView setVisiblity: visibility = 0, Parent = android.view.ViewRootImpl@e1b05d9, this = DecorView@ffe3c52[IncomingCallActivity]
+05-20 18:48:02.002 I/ChatrMainActivity(31119): WebView console: Skipping SW registration in native shell (http://localhost/:228)
+05-20 18:48:02.002 I/Capacitor/Console(31119): File: http://localhost/ - Line 228 - Msg: Skipping SW registration in native shell
+05-20 18:48:02.008 I/ChatrMainActivity(31119): WebView page started: http://localhost/
+05-20 18:48:02.011 I/TelecomFramework(31119): ChatrConnectionService: notifyCreateConnectionComplete TC@47_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-Crk
+05-20 18:48:02.013 D/ChatrConnection(31119): Audio state changed: 1
+05-20 18:48:02.013 D/ChatrConnection(31119): Notifying WebView: audio_route:earpiece for call 2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:02.013 D/CallStateReceiver(31119): Phone state changed: RINGING (Number: null)
+05-20 18:48:02.014 I/CallStateReceiver(31119): Suppressing GSM Caller ID overlay while Chatr VoIP call is ringing.
+05-20 18:48:02.014 D/BufferPoolAccessor(31119): bufferpool2 0x7862f47420 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 4/12 (fetch/transfer)
+05-20 18:48:02.015 D/BufferPoolAccessor(31119): Destruction - bufferpool2 0x7862f47420 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 12, 67% unfetced
+05-20 18:48:02.015 D/BufferPoolAccessor(31119): bufferpool2 0x7862f47820 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 2/4 (fetch/transfer)
+05-20 18:48:02.015 D/BufferPoolAccessor(31119): Destruction - bufferpool2 0x7862f47820 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 4, 50% unfetced
+05-20 18:48:02.015 D/BufferPoolAccessor(31119): bufferpool2 0x7862f47620 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 1/2 (fetch/transfer)
+05-20 18:48:02.016 D/BufferPoolAccessor(31119): Destruction - bufferpool2 0x7862f47620 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 2, 50% unfetced
+05-20 18:48:02.016 D/BufferPoolAccessor(31119): bufferpool2 0x7862f47c20 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 1/2 (fetch/transfer)
+05-20 18:48:02.016 D/BufferPoolAccessor(31119): Destruction - bufferpool2 0x7862f47c20 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 2, 50% unfetced
+05-20 18:48:02.016 D/BufferPoolAccessor(31119): bufferpool2 0x78b5572220 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 1/2 (fetch/transfer)
+05-20 18:48:02.016 D/BufferPoolAccessor(31119): Destruction - bufferpool2 0x78b5572220 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 2, 50% unfetced
+05-20 18:48:02.024 D/Surface (31119): Surface::disconnect(this=0x78b5295000,api=1)
+05-20 18:48:02.096 D/Surface (31119): Surface::connect(this=0x78b5780000,api=1)
+05-20 18:48:02.105 D/Surface (31119): Surface::setBufferCount(this=0x78b5780000,bufferCount=3)
+05-20 18:48:02.105 D/Surface (31119): Surface::allocateBuffers(this=0x78b5780000)
+05-20 18:48:02.192 W/ChatrMainActivity(31119): WebView early startup check: url=http://localhost/ progress=70
+05-20 18:48:02.199 I/ChatrMainActivity(31119): Handling action=audio_route:earpiece intentAction=com.chatr.app.CALL_ACTION data=null
+05-20 18:48:02.212 D/CallStateReceiver(31119): Phone state changed: RINGING (Number: null)
+05-20 18:48:02.309 D/ChatrConnection(31119): Audio state changed: 1
+05-20 18:48:02.309 D/ChatrConnection(31119): Notifying WebView: audio_route:earpiece for call 2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:02.316 I/ChatrMainActivity(31119): Skipping duplicate intent action=audio_route:earpiece intentAction=com.chatr.app.CALL_ACTION callId=2966b2b5-4618-453e-ae51-5a9e302d740b
+05-20 18:48:02.922 I/ChatrMainActivity(31119): WebView console: ?? [Main] Starting React mount... (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:48:02.923 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [Main] Starting React mount...
+05-20 18:48:02.923 I/ChatrMainActivity(31119): WebView console: ?? [Main] Root element found, rendering App... (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:48:02.924 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [Main] Root element found, rendering App...
+05-20 18:48:02.938 I/ChatrMainActivity(31119): WebView console: ?? [Main] Render call completed (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:48:02.938 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [Main] Render call completed
+05-20 18:48:02.983 I/ChatrMainActivity(31119): WebView page finished: http://localhost/ progress=100
+05-20 18:48:03.008 I/ChatrMainActivity(31119): WebView console: ?? [App] Component rendering... (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:48:03.008 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [App] Component rendering...
+05-20 18:48:03.020 I/ChatrMainActivity(31119): WebView page finished: http://localhost/#/home progress=100
+05-20 18:48:03.066 I/ChatrMainActivity(31119): WebView page finished: http://localhost/#/home progress=100
+05-20 18:48:03.156 I/ChatrMainActivity(31119): WebView console: ?? Using cached location (instant) (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:03.157 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? Using cached location (instant)
+05-20 18:48:03.167 I/ChatrMainActivity(31119): WebView console: ?? [Performance] Initializing optimizations... (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:03.168 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? [Performance] Initializing optimizations...
+05-20 18:48:03.173 D/Capacitor(31119): Handling local request: http://localhost/chatr-logo.png
+05-20 18:48:03.175 D/Capacitor(31119): Handling local request: http://localhost/icons/icon-192x192.png
+05-20 18:48:03.179 I/ChatrMainActivity(31119): WebView console: ? [Performance] Optimizations complete (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:03.180 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ? [Performance] Optimizations complete
+05-20 18:48:03.182 D/Capacitor(31119): Handling local request: http://localhost/icons/icon-512x512.png
+05-20 18:48:03.238 D/ChatrMainActivity(31119): ChatrCall.hasActiveConnection() queried: true
+05-20 18:48:03.318 I/TRuntime.CctTransportBackend(31119): Status Code: 200
+05-20 18:48:03.335 D/ChatrMainActivity(31119): ChatrCall.hasActiveConnection() queried: true
+05-20 18:48:03.638 I/ChatrMainActivity(31119): WebView console: ?? Initializing native app features... (http://localhost/assets/index-CwRZyNBE.js:42)
+05-20 18:48:03.639 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 42 - Msg: ?? Initializing native app features...
+05-20 18:48:03.647 I/ChatrMainActivity(31119): WebView console: [useNativeAuthSync] NativeAuth bridge detected, setting up auth sync (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:03.647 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [useNativeAuthSync] NativeAuth bridge detected, setting up auth sync
+05-20 18:48:03.649 I/ChatrMainActivity(31119): WebView console: [NativeCallBridge] Active (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:03.649 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [NativeCallBridge] Active
+05-20 18:48:03.652 I/ChatrMainActivity(31119): Web app reported ready
+05-20 18:48:03.668 I/ChatrMainActivity(31119): WebView console: %cnative %cKeyboard.addListener (#39624147) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.669 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.670 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.671 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseAnalytics.setEnabled (#39624148) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.671 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.672 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.672 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseCrashlytics.setEnabled (#39624149) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.675 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624147, pluginId: Keyboard, methodName: addListener
+05-20 18:48:03.676 V/Capacitor(31119): callback: 39624147, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillShow"}
+05-20 18:48:03.677 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.678 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.678 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseAnalytics.logEvent (#39624150) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.679 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.679 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.680 I/ChatrMainActivity(31119): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#39624151) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.681 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.681 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.682 I/ChatrMainActivity(31119): WebView console: %cnative %cNetwork.addListener (#39624152) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.683 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.683 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.684 I/ChatrMainActivity(31119): WebView console: %cnative %cSplashScreen.hide (#39624153) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.685 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.685 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.686 I/ChatrMainActivity(31119): WebView console: %cnative %cKeyboard.addListener (#39624154) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.687 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.687 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.688 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.addListener (#39624155) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.689 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.690 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.691 I/ChatrMainActivity(31119): WebView console: %cnative %cStatusBar.setOverlaysWebView (#39624156) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.691 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.692 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.693 I/ChatrMainActivity(31119): WebView console: %cnative %cKeyboard.addListener (#39624157) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.693 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.694 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.695 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.addListener (#39624158) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.695 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.696 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.700 I/ChatrMainActivity(31119): WebView console: %cnative %cKeyboard.addListener (#39624159) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.700 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.701 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.702 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.addListener (#39624160) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:03.702 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:03.703 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:03.706 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624148, pluginId: FirebaseAnalytics, methodName: setEnabled
+05-20 18:48:03.707 V/Capacitor(31119): callback: 39624148, pluginId: FirebaseAnalytics, methodName: setEnabled, methodData: {"enabled":true}
+05-20 18:48:03.709 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624149, pluginId: FirebaseCrashlytics, methodName: setEnabled
+05-20 18:48:03.709 V/Capacitor(31119): callback: 39624149, pluginId: FirebaseCrashlytics, methodName: setEnabled, methodData: {"enabled":true}
+05-20 18:48:03.712 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624150, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:48:03.712 V/Capacitor(31119): callback: 39624150, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"home","screen_class":"home"}}
+05-20 18:48:03.714 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624151, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:48:03.714 V/Capacitor(31119): callback: 39624151, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"home","type":"string"}
+05-20 18:48:03.716 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624152, pluginId: Network, methodName: addListener
+05-20 18:48:03.717 V/Capacitor(31119): callback: 39624152, pluginId: Network, methodName: addListener, methodData: {"eventName":"networkStatusChange"}
+05-20 18:48:03.722 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624153, pluginId: SplashScreen, methodName: hide
+05-20 18:48:03.722 V/Capacitor(31119): callback: 39624153, pluginId: SplashScreen, methodName: hide, methodData: {}
+05-20 18:48:03.724 D/Capacitor(31119): Handling local request: http://localhost/assets/FeatureEngagementTracker-CGVBr_zP.js
+05-20 18:48:03.724 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624154, pluginId: Keyboard, methodName: addListener
+05-20 18:48:03.724 V/Capacitor(31119): callback: 39624154, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillShow"}
+05-20 18:48:03.727 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624155, pluginId: App, methodName: addListener
+05-20 18:48:03.728 V/Capacitor(31119): callback: 39624155, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:48:03.741 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624156, pluginId: StatusBar, methodName: setOverlaysWebView
+05-20 18:48:03.742 V/Capacitor(31119): callback: 39624156, pluginId: StatusBar, methodName: setOverlaysWebView, methodData: {"overlay":false}
+05-20 18:48:03.745 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624157, pluginId: Keyboard, methodName: addListener
+05-20 18:48:03.745 V/Capacitor(31119): callback: 39624157, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillHide"}
+05-20 18:48:03.747 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624158, pluginId: App, methodName: addListener
+05-20 18:48:03.748 V/Capacitor(31119): callback: 39624158, pluginId: App, methodName: addListener, methodData: {"eventName":"appStateChange"}
+05-20 18:48:03.750 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624159, pluginId: Keyboard, methodName: addListener
+05-20 18:48:03.750 V/Capacitor(31119): callback: 39624159, pluginId: Keyboard, methodName: addListener, methodData: {"eventName":"keyboardWillHide"}
+05-20 18:48:03.752 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624160, pluginId: App, methodName: addListener
+05-20 18:48:03.753 V/Capacitor(31119): callback: 39624160, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:48:03.768 V/Capacitor/StatusBarPlugin(31119): Notifying listeners for event statusBarOverlayChanged
+05-20 18:48:03.768 D/Capacitor/StatusBarPlugin(31119): No listeners found for event statusBarOverlayChanged
+05-20 18:48:04.013 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseAnalytics.setEnabled (#39624148) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.014 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.015 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.015 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.016 I/ChatrMainActivity(31119): WebView console: ? Service Worker state reset (native-shell): registrations=0, caches=0 (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.017 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ? Service Worker state reset (native-shell): registrations=0, caches=0
+05-20 18:48:04.017 I/ChatrMainActivity(31119): WebView console: ?? Service worker disabled for native shell (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:48:04.018 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? Service worker disabled for native shell
+05-20 18:48:04.018 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseCrashlytics.setEnabled (#39624149) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.018 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.019 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.019 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.020 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseAnalytics.logEvent (#39624150) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.020 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.021 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.021 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.021 I/ChatrMainActivity(31119): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#39624151) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.022 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.022 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.023 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.023 I/ChatrMainActivity(31119): WebView console: %cresult %cSplashScreen.hide (#39624153) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.024 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.024 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.025 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.025 D/Capacitor(31119): Handling local request: http://localhost/assets/chatr-icon-logo-B8XxUvak.png
+05-20 18:48:04.026 I/ChatrMainActivity(31119): WebView console: %cnative %cStatusBar.setStyle (#39624161) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.026 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.027 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.028 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624161, pluginId: StatusBar, methodName: setStyle
+05-20 18:48:04.029 V/Capacitor(31119): callback: 39624161, pluginId: StatusBar, methodName: setStyle, methodData: {"style":"DARK"}
+05-20 18:48:04.039 I/ChatrMainActivity(31119): WebView console: %cresult %cStatusBar.setOverlaysWebView (#39624156) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.040 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.041 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.041 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.061 V/Capacitor/KeyboardPlugin(31119): Notifying listeners for event keyboardWillHide
+05-20 18:48:04.067 I/ChatrMainActivity(31119): WebView console: %cnative %cStatusBar.setStyle (#39624162) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.067 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.068 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.071 I/ChatrMainActivity(31119): WebView console: %cresult %cStatusBar.setStyle (#39624161) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.072 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.072 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.073 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.073 I/ChatrMainActivity(31119): WebView console: %cnative %cStatusBar.setBackgroundColor (#39624163) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.073 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.073 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.088 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624162, pluginId: StatusBar, methodName: setStyle
+05-20 18:48:04.089 V/Capacitor(31119): callback: 39624162, pluginId: StatusBar, methodName: setStyle, methodData: {"style":"DARK"}
+05-20 18:48:04.094 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624163, pluginId: StatusBar, methodName: setBackgroundColor
+05-20 18:48:04.097 V/Capacitor(31119): callback: 39624163, pluginId: StatusBar, methodName: setBackgroundColor, methodData: {"color":"#f4efff"}
+05-20 18:48:04.102 I/ChatrMainActivity(31119): WebView console: %cresult %cKeyboard.addListener (#39624157) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.102 I/ChatrMainActivity(31119): WebView console: [object Object] (:333)
+05-20 18:48:04.103 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.103 I/ChatrMainActivity(31119): WebView console: %cresult %cKeyboard.addListener (#39624159) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.104 I/ChatrMainActivity(31119): WebView console: [object Object] (:333)
+05-20 18:48:04.105 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.135 I/ChatrMainActivity(31119): WebView console: %cresult %cStatusBar.setStyle (#39624162) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.135 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.136 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.136 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.137 I/ChatrMainActivity(31119): WebView console: %cnative %cStatusBar.setBackgroundColor (#39624164) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.138 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.138 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.139 I/ChatrMainActivity(31119): WebView console: %cresult %cStatusBar.setBackgroundColor (#39624163) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.140 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.140 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.141 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.142 I/ChatrMainActivity(31119): WebView console: %cnative %cStatusBar.setOverlaysWebView (#39624165) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.142 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.143 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.145 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624164, pluginId: StatusBar, methodName: setBackgroundColor
+05-20 18:48:04.146 V/Capacitor(31119): callback: 39624164, pluginId: StatusBar, methodName: setBackgroundColor, methodData: {"color":"#f4efff"}
+05-20 18:48:04.149 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624165, pluginId: StatusBar, methodName: setOverlaysWebView
+05-20 18:48:04.149 V/Capacitor(31119): callback: 39624165, pluginId: StatusBar, methodName: setOverlaysWebView, methodData: {"overlay":false}
+05-20 18:48:04.154 V/Capacitor/StatusBarPlugin(31119): Notifying listeners for event statusBarOverlayChanged
+05-20 18:48:04.154 D/Capacitor/StatusBarPlugin(31119): No listeners found for event statusBarOverlayChanged
+05-20 18:48:04.171 I/ChatrMainActivity(31119): WebView console: %cresult %cStatusBar.setBackgroundColor (#39624164) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.171 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.172 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.173 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.173 I/ChatrMainActivity(31119): WebView console: %cresult %cStatusBar.setOverlaysWebView (#39624165) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.173 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.174 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.174 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.175 I/ChatrMainActivity(31119): WebView console: [DeepLink] Initializing listener (http://localhost/assets/index-CwRZyNBE.js:42)
+05-20 18:48:04.175 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 42 - Msg: [DeepLink] Initializing listener
+05-20 18:48:04.176 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.addListener (#39624166) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.176 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.176 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.177 I/ChatrMainActivity(31119): WebView console: %cnative %cApp.getLaunchUrl (#39624167) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:48:04.178 I/ChatrMainActivity(31119): WebView console: [object Object] (:349)
+05-20 18:48:04.178 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:350)
+05-20 18:48:04.180 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624166, pluginId: App, methodName: addListener
+05-20 18:48:04.180 V/Capacitor(31119): callback: 39624166, pluginId: App, methodName: addListener, methodData: {"eventName":"appUrlOpen"}
+05-20 18:48:04.183 V/Capacitor/Plugin(31119): To native (Capacitor plugin): callbackId: 39624167, pluginId: App, methodName: getLaunchUrl
+05-20 18:48:04.183 V/Capacitor(31119): callback: 39624167, pluginId: App, methodName: getLaunchUrl, methodData: {}
+05-20 18:48:04.187 I/ChatrMainActivity(31119): WebView console: %cresult %cApp.getLaunchUrl (#39624167) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:48:04.188 I/ChatrMainActivity(31119): WebView console: undefined (:333)
+05-20 18:48:04.188 I/Capacitor/Console(31119): File:  - Line 333 - Msg: undefined
+05-20 18:48:04.189 I/ChatrMainActivity(31119): WebView console: console.groupEnd (:335)
+05-20 18:48:04.227 V/Capacitor/KeyboardPlugin(31119): Notifying listeners for event keyboardDidHide
+05-20 18:48:04.227 D/Capacitor/KeyboardPlugin(31119): No listeners found for event keyboardDidHide
+05-20 18:48:04.342 I/ChatrMainActivity(31119): WebView console: ?? [App] Signaling WebApp Ready to Native Shell (http://localhost/assets/index-CwRZyNBE.js:2591)
+05-20 18:48:04.343 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 2591 - Msg: ?? [App] Signaling WebApp Ready to Native Shell
+05-20 18:48:04.343 I/ChatrMainActivity(31119): Web app reported ready
+05-20 18:48:04.347 I/ChatrMainActivity(31119): WebView console: ?? Setting up native call UI for android (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.348 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? Setting up native call UI for android
+05-20 18:48:04.349 I/ChatrMainActivity(31119): WebView console: ?? CallKit plugin not found. Install @capacitor-community/callkit (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.350 W/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? CallKit plugin not found. Install @capacitor-community/callkit
+05-20 18:48:04.350 I/ChatrMainActivity(31119): WebView console: Run: npm install @capacitor-community/callkit (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.351 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: Run: npm install @capacitor-community/callkit
+05-20 18:48:04.351 I/ChatrMainActivity(31119): WebView console: +----------------------------------------+ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.352 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: +----------------------------------------+
+05-20 18:48:04.353 I/ChatrMainActivity(31119): WebView console: ¦                                        ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.353 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦                                        ¦
+05-20 18:48:04.354 I/ChatrMainActivity(31119): WebView console: ¦     ?? CHATR OS - Third OS Layer      ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.355 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦     ?? CHATR OS - Third OS Layer      ¦
+05-20 18:48:04.355 I/ChatrMainActivity(31119): WebView console: ¦          Initializing...               ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.356 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦          Initializing...               ¦
+05-20 18:48:04.357 I/ChatrMainActivity(31119): WebView console: ¦                                        ¦ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.358 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ¦                                        ¦
+05-20 18:48:04.359 I/ChatrMainActivity(31119): WebView console: +----------------------------------------+ (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.359 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: +----------------------------------------+
+05-20 18:48:04.360 I/ChatrMainActivity(31119): WebView console: ?? CHATR OS: Initializing App Lifecycle Manager (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.361 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? CHATR OS: Initializing App Lifecycle Manager
+05-20 18:48:04.471 I/ChatrMainActivity(31119): WebView console: [Signaling] [object Object] (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.472 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [Signaling] [object Object]
+05-20 18:48:04.474 I/ChatrMainActivity(31119): WebView console: [Signaling] [object Object] (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.474 D/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [Signaling] [object Object]
+05-20 18:48:04.496 I/ChatrMainActivity(31119): WebView console: [SocketService] Connecting to http://192.168.1.189:3000... (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.497 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: [SocketService] Connecting to http://192.168.1.189:3000...
+05-20 18:48:04.759 I/ChatrMainActivity(31119): WebView console: ?? Loaded 0 installed apps (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.760 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? Loaded 0 installed apps
+05-20 18:48:04.760 I/ChatrMainActivity(31119): WebView console: ?? Native lifecycle listeners ready (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.761 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? Native lifecycle listeners ready
+05-20 18:48:04.762 I/ChatrMainActivity(31119): WebView console: ? App Lifecycle Manager ready (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.763 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ? App Lifecycle Manager ready
+05-20 18:48:04.763 I/ChatrMainActivity(31119): WebView console: ?? CHATR OS: Initializing Inter-App Communication (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:04.764 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? CHATR OS: Initializing Inter-App Communication
+05-20 18:48:05.173 I/ChatrMainActivity(31119): WebView console: ?? Listening for inter-app messages (http://localhost/assets/index-CwRZyNBE.js:86)
+05-20 18:48:05.174 I/Capacitor/Console(31119): File: http://localhost/assets/index-CwRZyNBE.js - Line 86 - Msg: ?? Listening for inter-app messages

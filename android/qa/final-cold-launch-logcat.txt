@@ -1,0 +1,177 @@
+--------- beginning of main
+05-20 18:56:03.711 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:56:03.716 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+05-20 18:56:03.718 E/FilePhenotypeFlags( 1190): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 18:56:03.719 E/FilePhenotypeFlags( 1190): Config package com.google.android.gms.clearcut_client#com.chatr.app cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more information. This will lead to stale flags.
+05-20 18:56:05.578 E/IMGSRV  ( 1190): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:56:05.805 W/com.chatr.app( 1190): Accessing hidden method Landroid/view/MotionEvent;->getEventTimeNano()J (greylist, reflection, allowed)
+05-20 18:56:06.682 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-20 18:56:06.684 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:56:06.785 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:56:06.890 I/com.chatr.app( 1190): Background concurrent copying GC freed 97980(3522KB) AllocSpace objects, 4(1504KB) LOS objects, 49% free, 5717KB/11MB, paused 201us total 116.074ms
+05-20 18:56:07.912 I/ChatrMainActivity( 1190): WebView console: %cnative %cHaptics.impact (#80552846) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:07.913 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:07.913 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:07.934 I/ChatrMainActivity( 1190): WebView page finished: http://localhost/#/chat progress=100
+05-20 18:56:07.937 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552846, pluginId: Haptics, methodName: impact
+05-20 18:56:07.937 V/Capacitor( 1190): callback: 80552846, pluginId: Haptics, methodName: impact, methodData: {"style":"LIGHT"}
+05-20 18:56:08.024 I/ChatrMainActivity( 1190): WebView console: %cresult %cHaptics.impact (#80552846) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:56:08.024 I/ChatrMainActivity( 1190): WebView console: undefined (:333)
+05-20 18:56:08.025 I/Capacitor/Console( 1190): File:  - Line 333 - Msg: undefined
+05-20 18:56:08.026 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:335)
+05-20 18:56:08.109 I/ChatrMainActivity( 1190): WebView console: %cnative %cFirebaseAnalytics.logEvent (#80552847) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:08.110 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:08.110 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:08.111 I/ChatrMainActivity( 1190): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#80552848) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:08.112 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:08.112 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:08.113 I/ChatrMainActivity( 1190): WebView console: %cnative %cApp.addListener (#80552849) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:08.114 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:08.114 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:08.115 I/ChatrMainActivity( 1190): WebView console: %cnative %cApp.removeListener (#80552850) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:08.116 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:08.116 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:08.178 E/IMGSRV  ( 1190): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:56:08.178 I/chatty  ( 1190): uid=10267(com.chatr.app) identical 3 lines
+05-20 18:56:08.178 E/IMGSRV  ( 1190): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:56:08.189 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552847, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:56:08.190 V/Capacitor( 1190): callback: 80552847, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"chat","screen_class":"chat"}}
+05-20 18:56:08.192 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552848, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:56:08.193 V/Capacitor( 1190): callback: 80552848, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"chat","type":"string"}
+05-20 18:56:08.195 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552849, pluginId: App, methodName: addListener
+05-20 18:56:08.195 V/Capacitor( 1190): callback: 80552849, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:56:08.198 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552850, pluginId: App, methodName: removeListener
+05-20 18:56:08.198 V/Capacitor( 1190): callback: 80552850, pluginId: App, methodName: removeListener, methodData: {"eventName":"backButton","callbackId":"80552797"}
+05-20 18:56:08.201 I/NativeCallSyncWorker( 1190): Skipped native call sync enqueue reason=auth_token_updated bucket=startup
+05-20 18:56:08.204 I/NativeCallSyncWorker( 1190): Skipped native call sync enqueue reason=auth_user_updated bucket=startup
+05-20 18:56:08.214 I/ChatrMainActivity( 1190): WebView console: ? Session restored: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:08.215 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: ? Session restored: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:56:08.215 I/ChatrMainActivity( 1190): WebView console: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 29f65ca9... (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:08.216 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 29f65ca9...
+05-20 18:56:08.216 I/ChatrMainActivity( 1190): WebView console: [NativeAuth] Auth credentials synced to native SharedPreferences (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:08.217 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [NativeAuth] Auth credentials synced to native SharedPreferences
+05-20 18:56:08.218 I/ChatrMainActivity( 1190): WebView console: %cresult %cFirebaseAnalytics.logEvent (#80552847) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:56:08.218 I/ChatrMainActivity( 1190): WebView console: undefined (:333)
+05-20 18:56:08.219 I/Capacitor/Console( 1190): File:  - Line 333 - Msg: undefined
+05-20 18:56:08.220 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:335)
+05-20 18:56:08.602 I/ChatrMainActivity( 1190): WebView console: ?? Auth event: INITIAL_SESSION (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:08.603 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: ?? Auth event: INITIAL_SESSION
+05-20 18:56:08.604 I/ChatrMainActivity( 1190): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#80552848) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:56:08.604 I/ChatrMainActivity( 1190): WebView console: undefined (:333)
+05-20 18:56:08.605 I/Capacitor/Console( 1190): File:  - Line 333 - Msg: undefined
+05-20 18:56:08.605 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:335)
+05-20 18:56:08.782 I/ChatrMainActivity( 1190): WebView console: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8 (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:08.783 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8
+05-20 18:56:08.783 I/ChatrMainActivity( 1190): WebView console: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:08.784 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd
+05-20 18:56:08.785 I/ChatrMainActivity( 1190): WebView console: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:08.786 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:56:09.815 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-20 18:56:09.818 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:56:09.824 W/com.chatr.app( 1190): Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-20 18:56:10.066 D/Capacitor( 1190): Handling local request: http://localhost/assets/Contacts-Dj-5LJYL.js
+05-20 18:56:10.068 D/Capacitor( 1190): Handling local request: http://localhost/assets/index-Ahs7M4ru.js
+05-20 18:56:10.074 D/Capacitor( 1190): Handling local request: http://localhost/assets/AppleHeader-BXjMUo4t.js
+05-20 18:56:10.090 D/Capacitor( 1190): Handling local request: http://localhost/assets/Settings-CQLQF_gA.js
+05-20 18:56:10.112 D/Capacitor( 1190): Handling local request: http://localhost/assets/slider-Dr0Ys2fL.js
+05-20 18:56:10.123 D/Capacitor( 1190): Handling local request: http://localhost/assets/ConnectedAccounts-D_cBvvV_.js
+05-20 18:56:10.129 D/Capacitor( 1190): Handling local request: http://localhost/assets/HealthHub-C0VK7GyK.js
+05-20 18:56:10.129 D/Capacitor( 1190): Handling local request: http://localhost/assets/Dhandha-znhVTEPE.js
+05-20 18:56:10.136 D/Capacitor( 1190): Handling local request: http://localhost/assets/Breadcrumbs-DSb26qOE.js
+05-20 18:56:12.352 I/ChatrMainActivity( 1190): WebView console: [SocketService] Connection error (attempt 2): timeout (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.353 W/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [SocketService] Connection error (attempt 2): timeout
+05-20 18:56:12.354 I/ChatrMainActivity( 1190): WebView console: [Signaling] [object Object] (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.354 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [Signaling] [object Object]
+05-20 18:56:12.399 I/ChatrMainActivity( 1190): WebView page finished: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 progress=100
+05-20 18:56:12.553 I/ChatrMainActivity( 1190): WebView console: [SocketService] Queued offline event: join_conversation (queue size: 1) (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.554 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [SocketService] Queued offline event: join_conversation (queue size: 1)
+05-20 18:56:12.573 I/ChatrMainActivity( 1190): WebView page finished: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 progress=100
+05-20 18:56:12.816 I/ChatrMainActivity( 1190): WebView console: [SocketService] Queued offline event: leave_conversation (queue size: 2) (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.817 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [SocketService] Queued offline event: leave_conversation (queue size: 2)
+05-20 18:56:12.818 I/ChatrMainActivity( 1190): WebView console: [SocketService] Queued offline event: join_conversation (queue size: 3) (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.819 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [SocketService] Queued offline event: join_conversation (queue size: 3)
+05-20 18:56:12.845 I/ChatrMainActivity( 1190): WebView console: %cnative %cFirebaseAnalytics.logEvent (#80552851) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:12.845 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:12.846 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:12.846 I/ChatrMainActivity( 1190): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#80552852) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:12.847 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:12.847 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:12.848 I/ChatrMainActivity( 1190): WebView console: %cnative %cApp.addListener (#80552853) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:12.848 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:12.848 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:12.849 I/ChatrMainActivity( 1190): WebView console: %cnative %cKeyboard.removeListener (#80552854) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:12.850 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:12.850 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:12.851 I/ChatrMainActivity( 1190): WebView console: %cnative %cKeyboard.removeListener (#80552855) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:12.851 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:12.851 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:12.852 I/ChatrMainActivity( 1190): WebView console: %cnative %cApp.removeListener (#80552856) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:56:12.852 I/ChatrMainActivity( 1190): WebView console: [object Object] (:349)
+05-20 18:56:12.853 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:350)
+05-20 18:56:12.859 I/NativeCallSyncWorker( 1190): Skipped native call sync enqueue reason=auth_token_updated bucket=startup
+05-20 18:56:12.862 I/NativeCallSyncWorker( 1190): Skipped native call sync enqueue reason=auth_user_updated bucket=startup
+05-20 18:56:12.944 I/ChatrMainActivity( 1190): WebView console: ? Session restored: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:12.945 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: ? Session restored: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:56:12.945 I/ChatrMainActivity( 1190): WebView console: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 29f65ca9... (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.946 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 29f65ca9...
+05-20 18:56:12.947 I/ChatrMainActivity( 1190): WebView console: [NativeAuth] Auth credentials synced to native SharedPreferences (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:12.948 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [NativeAuth] Auth credentials synced to native SharedPreferences
+05-20 18:56:12.954 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552851, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:56:12.955 V/Capacitor( 1190): callback: 80552851, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"chat\/d7f0bb7f-6294-47e9-8c05-738b8c4f3561","screen_class":"chat\/d7f0bb7f-6294-47e9-8c05-738b8c4f3561"}}
+05-20 18:56:12.957 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552852, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:56:12.958 V/Capacitor( 1190): callback: 80552852, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"chat\/d7f0bb7f-6294-47e9-8c05-738b8c4f3561","type":"string"}
+05-20 18:56:12.960 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552853, pluginId: App, methodName: addListener
+05-20 18:56:12.960 V/Capacitor( 1190): callback: 80552853, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:56:12.963 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552854, pluginId: Keyboard, methodName: removeListener
+05-20 18:56:12.963 V/Capacitor( 1190): callback: 80552854, pluginId: Keyboard, methodName: removeListener, methodData: {"eventName":"keyboardWillShow","callbackId":"80552789"}
+05-20 18:56:12.965 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552855, pluginId: Keyboard, methodName: removeListener
+05-20 18:56:12.966 V/Capacitor( 1190): callback: 80552855, pluginId: Keyboard, methodName: removeListener, methodData: {"eventName":"keyboardWillHide","callbackId":"80552799"}
+05-20 18:56:12.968 V/Capacitor/Plugin( 1190): To native (Capacitor plugin): callbackId: 80552856, pluginId: App, methodName: removeListener
+05-20 18:56:12.969 V/Capacitor( 1190): callback: 80552856, pluginId: App, methodName: removeListener, methodData: {"eventName":"backButton","callbackId":"80552849"}
+05-20 18:56:13.065 I/ChatrMainActivity( 1190): WebView console: %cresult %cFirebaseAnalytics.logEvent (#80552851) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:56:13.066 I/ChatrMainActivity( 1190): WebView console: undefined (:333)
+05-20 18:56:13.067 I/Capacitor/Console( 1190): File:  - Line 333 - Msg: undefined
+05-20 18:56:13.067 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:335)
+05-20 18:56:13.068 I/ChatrMainActivity( 1190): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#80552852) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:56:13.068 I/ChatrMainActivity( 1190): WebView console: undefined (:333)
+05-20 18:56:13.069 I/Capacitor/Console( 1190): File:  - Line 333 - Msg: undefined
+05-20 18:56:13.070 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:335)
+05-20 18:56:13.081 I/ChatrMainActivity( 1190): WebView console: [Real-time] ? Connected to message stream (http://localhost/assets/Chat-GR9-Fs0_.js:23)
+05-20 18:56:13.082 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 23 - Msg: [Real-time] ? Connected to message stream
+05-20 18:56:13.087 I/ChatrMainActivity( 1190): WebView console: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8 (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:13.088 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: [Presence] User joined: 63c1d4e4-bd98-4683-9a16-1182b5d0ded8
+05-20 18:56:13.089 I/ChatrMainActivity( 1190): WebView console: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:13.090 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: [Presence] User joined: 65b871c5-4f95-459e-8be5-230d99c011cd
+05-20 18:56:13.091 I/ChatrMainActivity( 1190): WebView console: ?? Auth event: INITIAL_SESSION (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:13.091 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: ?? Auth event: INITIAL_SESSION
+05-20 18:56:13.624 I/ChatrMainActivity( 1190): WebView console: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0 (http://localhost/assets/Chat-GR9-Fs0_.js:2)
+05-20 18:56:13.625 I/Capacitor/Console( 1190): File: http://localhost/assets/Chat-GR9-Fs0_.js - Line 2 - Msg: [Presence] User joined: 29f65ca9-a811-492b-b024-09689a44dbf0
+05-20 18:56:13.627 I/Choreographer( 1190): Skipped 31 frames!  The application may be doing too much work on its main thread.
+05-20 18:56:14.398 I/ChatrMainActivity( 1190): WebView console: ?? Attempting GPS location... (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:14.399 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: ?? Attempting GPS location...
+05-20 18:56:14.402 D/Capacitor( 1190): onGeolocationPermissionsShowPrompt: DOING IT HERE FOR ORIGIN: http://localhost/
+05-20 18:56:14.404 D/Capacitor( 1190): onGeolocationPermissionsShowPrompt: has required permission
+05-20 18:56:15.085 I/ChatrMainActivity( 1190): WebView console: [Signaling] [object Object] (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:15.086 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [Signaling] [object Object]
+05-20 18:56:15.886 I/ChatrMainActivity( 1190): WebView console: ? GPS location obtained: [object Object] (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:15.887 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: ? GPS location obtained: [object Object]
+05-20 18:56:16.146 I/com.chatr.app( 1190): NativeAlloc concurrent copying GC freed 28884(1493KB) AllocSpace objects, 11(388KB) LOS objects, 49% free, 5989KB/11MB, paused 153us total 100.022ms
+05-20 18:56:18.795 I/ChatrMainActivity( 1190): WebView console: ? Backend location updated (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:18.796 I/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: ? Backend location updated
+05-20 18:56:19.717 D/ChatrMainActivity( 1190): ChatrCall.hasActiveConnection() queried: false
+05-20 18:56:21.795 I/ChatrMainActivity( 1190): WebView console: The resource http://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561:0)
+05-20 18:56:21.796 W/Capacitor/Console( 1190): File: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 - Line 0 - Msg: The resource http://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:56:21.796 I/ChatrMainActivity( 1190): WebView console: The resource http://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561:0)
+05-20 18:56:21.797 W/Capacitor/Console( 1190): File: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 - Line 0 - Msg: The resource http://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:56:21.798 I/ChatrMainActivity( 1190): WebView console: The resource http://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561:0)
+05-20 18:56:21.799 W/Capacitor/Console( 1190): File: http://localhost/#/chat/d7f0bb7f-6294-47e9-8c05-738b8c4f3561 - Line 0 - Msg: The resource http://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:56:25.090 I/ChatrMainActivity( 1190): WebView console: [SocketService] Connection error (attempt 3): timeout (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:25.091 W/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [SocketService] Connection error (attempt 3): timeout
+05-20 18:56:25.092 I/ChatrMainActivity( 1190): WebView console: [Signaling] [object Object] (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:25.093 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [Signaling] [object Object]
+05-20 18:56:28.960 V/Capacitor/NetworkPlugin( 1190): Notifying listeners for event networkStatusChange
+05-20 18:56:28.966 I/ChatrMainActivity( 1190): WebView console: %cresult %cNetwork.addListener (#80552814) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:56:28.967 I/ChatrMainActivity( 1190): WebView console: [object Object] (:333)
+05-20 18:56:28.967 I/ChatrMainActivity( 1190): WebView console: console.groupEnd (:335)
+05-20 18:56:30.195 I/ChatrMainActivity( 1190): WebView console: [Signaling] [object Object] (http://localhost/assets/index-D1JxZdCq.js:86)
+05-20 18:56:30.196 D/Capacitor/Console( 1190): File: http://localhost/assets/index-D1JxZdCq.js - Line 86 - Msg: [Signaling] [object Object]

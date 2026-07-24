@@ -1,0 +1,1 @@
+const a=new Map;function s(e,t){a.set(e,t)}function n(e){const t=a.get(e)??null;return a.delete(e),t}function o(e){const t=a.get(e);t&&(t.getTracks().forEach(r=>r.stop()),a.delete(e))}export{o as c,s,n as t};

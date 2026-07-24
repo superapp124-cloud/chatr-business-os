@@ -1,0 +1,252 @@
+{
+  "razorpay": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "cashfree": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "phonepe_business": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "paytm_business": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "ccavenue": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "easebuzz": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "juspay": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "decentro": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "setu": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "m2p_fintech": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "icici_apis": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "axis_apis": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "yesbank_apis": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "hdfc_business": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "sbi_apis": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "idfc_first": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "federal_bank": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "open_financial": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "perfios": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "hyperverge": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "digilocker": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "api_setu": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "gst_apis": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "pan_verification": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "aadhaar_ekyc": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "mca_apis": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "fastag": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "edistrict": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "umang": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "cowin": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "ondc": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "delhivery": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "shiprocket": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "bluedart": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "dtdc": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "xpressbees": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "ecom_express": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "india_post": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "porter": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "shadowfax": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "msg91": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "gupshup": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "exotel": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "knowlarity": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "kaleyra": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "zoho": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "freshworks": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "tally": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "darwinbox": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  },
+  "keka": {
+    "lifecycleState": "DISCOVERED",
+    "hasOpenAPI": false,
+    "hasOAuth": false
+  }
+}

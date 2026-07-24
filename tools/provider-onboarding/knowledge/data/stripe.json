@@ -1,0 +1,8 @@
+{
+  "providerName": "Stripe",
+  "authenticationMethod": "api_key",
+  "oauthFlow": "authorization_code",
+  "sandboxUrl": "https://sandbox.api.example.com",
+  "productionUrl": "https://api.example.com",
+  "lastVerifiedDate": "2026-07-10T18:43:03.367Z"
+}

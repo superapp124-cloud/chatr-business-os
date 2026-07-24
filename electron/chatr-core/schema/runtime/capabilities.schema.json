@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Capability System Schema",
+  "description": "Governed business verbs conforming to the Capability Constitution.",
+  "version": "15.0",
+  "definitions": {
+    "Capability": {
+      "type": "object",
+      "required": ["identity", "semantics", "execution", "runtime", "intelligence", "governance"],
+      "properties": {
+        "identity": {
+          "type": "object",
+          "required": ["namespace", "canonicalName", "version", "owner"],
+          "properties": {
+            "namespace": { "type": "string", "description": "e.g., identity, commerce, workflow" },
+            "canonicalName": { "type": "string", "description": "e.g., identity.person.create" },
+            "version": { "type": "string" },
+            "category": { "type": "string" },
+            "owner": { "type": "string" }
+          }
+        },
+        "semantics": {
+          "type": "object",
+          "required": ["businessPurpose", "canonicalObjects", "preconditions", "postconditions"],
+          "properties": {
+            "businessPurpose": { "type": "string" },
+            "supportedIntents": { "type": "array", "items": { "type": "string" } },
+            "canonicalObjects": { "type": "array", "items": { "type": "string" } },
+            "preconditions": { "type": "array", "items": { "type": "string" } },
+            "postconditions": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "execution": {
+          "type": "object",
+          "required": ["businessActions", "policies"],
+          "properties": {
+            "businessActions": { "type": "array", "items": { "$ref": "actions.schema.json#/definitions/BusinessAction" } },
+            "requiredPermissions": { "type": "array", "items": { "type": "string" } },
+            "policies": { "type": "array", "items": { "type": "string" } },
+            "workflowCompatibility": { "type": "array", "items": { "type": "string" } },
+            "providerRequirements": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "runtime": {
+          "type": "object",
+          "required": ["telemetry", "events", "businessOutcomes"],
+          "properties": {
+            "telemetry": { "type": "object" },
+            "events": { "type": "array", "items": { "type": "string" } },
+            "businessOutcomes": { "type": "array", "items": { "type": "string" } },
+            "compensationStrategy": { "type": "string", "enum": ["Revert", "CompensatingAction", "ManualIntervention", "None"] },
+            "retryPolicy": { "type": "object" },
+            "timeoutProfile": { "type": "string" },
+            "isIdempotent": { "type": "boolean" }
+          }
+        },
+        "intelligence": {
+          "type": "object",
+          "properties": {
+            "optimizationSignals": { "type": "array", "items": { "type": "string" } },
+            "predictionInputs": { "type": "array", "items": { "type": "string" } },
+            "learningOutputs": { "type": "array", "items": { "type": "string" } },
+            "recommendationHooks": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "governance": {
+          "type": "object",
+          "required": ["compatibilityVersion", "securityClassification", "federationSupport"],
+          "properties": {
+            "deprecationPolicy": { "type": "object" },
+            "compatibilityVersion": { "type": "string" },
+            "securityClassification": { "type": "string" },
+            "federationSupport": { "type": "boolean" },
+            "exchangeMetadata": {
+              "type": "object",
+              "properties": {
+                "licensing": { "type": "string" },
+                "certificationLevel": { "type": "string" },
+                "trustRequirements": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

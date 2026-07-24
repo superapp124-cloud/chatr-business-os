@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0",
+  "registryVersion": "1.0.0",
+  "generatedAt": "2026-07-12T00:00:00Z",
+  "capabilities": [
+    {
+      "id": "summarization",
+      "requirements": {
+        "quality": "medium",
+        "reasoning": "low",
+        "json": false,
+        "vision": false,
+        "longContext": true
+      }
+    },
+    {
+      "id": "coding",
+      "requirements": {
+        "quality": "high",
+        "reasoning": "high",
+        "json": true,
+        "vision": false,
+        "longContext": true,
+        "toolCalling": true
+      }
+    },
+    {
+      "id": "routing",
+      "requirements": {
+        "quality": "low",
+        "latency": "fast",
+        "reasoning": "low",
+        "json": true,
+        "vision": false,
+        "longContext": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Business Layer — Canonical Ontology",
+  "description": "Layer 2: Business concepts. Compositions of Reality Layer objects. Extended by Industry Packs.",
+  "version": "15.0",
+  "layer": "Business",
+  "law": "Every Business entity must trace back to at least one Reality entity. No Business entity may exist without a Reality parent.",
+  "definitions": {
+    "Customer": {
+      "description": "A Person or Organization that purchases or receives products/services.",
+      "extends": "reality.Person | reality.Organization",
+      "layer": "Business",
+      "domain": "Commerce",
+      "traits": ["Auditable","Versioned","Searchable","VectorSearchable","Observable","AIDiscoverable","Commentable","Taggable"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["places", "subscribes_to", "contracted_with", "associated_with"],
+      "events": ["CustomerCreated","CustomerUpgraded","CustomerChurned"],
+      "inheritedBy": ["VIPCustomer","EnterpriseAccount"],
+      "industryExtensions": ["Patient (Healthcare)", "Student (Education)", "Guest (Hospitality)"],
+      "attributes": {
+        "customerId": { "type": "string" },
+        "tier": { "type": "string", "enum": ["Free","Standard","Professional","Enterprise"] },
+        "lifetimeValue": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" }
+      }
+    },
+    "Candidate": {
+      "description": "A Person being considered for a position or role.",
+      "extends": "reality.Person",
+      "layer": "Business",
+      "domain": "HumanCapital",
+      "traits": ["Auditable","Versioned","Searchable","VectorSearchable","AIDiscoverable","Commentable"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["applied_for", "interviewed_by", "assessed_by"],
+      "events": ["CandidateApplied","CandidateShortlisted","OfferMade","OfferAccepted","OfferDeclined"],
+      "inheritedBy": ["Employee"],
+      "attributes": {
+        "currentTitle": { "type": "string" },
+        "currentEmployer": { "type": "string" },
+        "noticePeriodDays": { "type": "number" },
+        "expectedSalary": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" }
+      }
+    },
+    "Employee": {
+      "description": "A Person employed by an Organization under a formal agreement.",
+      "extends": "Business.Candidate",
+      "layer": "Business",
+      "domain": "HumanCapital",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Observable","PolicyAware","HistoryEnabled","Localizable"],
+      "lifecycle": "Identity Lifecycle",
+      "relationships": ["works_for", "reports_to", "manages", "member_of"],
+      "events": ["EmployeeOnboarded","EmployeePromoted","EmployeeOffboarded"],
+      "attributes": {
+        "employeeId": { "type": "string" },
+        "startDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" },
+        "department": { "type": "string" },
+        "jobTitle": { "type": "string" },
+        "salary": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" }
+      }
+    },
+    "Lead": {
+      "description": "A Person or Organization with potential commercial interest.",
+      "extends": "reality.Person | reality.Organization",
+      "layer": "Business",
+      "domain": "Commerce",
+      "traits": ["Auditable","Searchable","VectorSearchable","Taggable","AIDiscoverable","Observable"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["converted_to", "assigned_to", "sourced_from"],
+      "events": ["LeadCreated","LeadQualified","LeadConverted","LeadLost"],
+      "inheritedBy": ["Opportunity"],
+      "attributes": {
+        "source": { "type": "string" },
+        "score": { "type": "number" },
+        "estimatedValue": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" }
+      }
+    },
+    "Order": {
+      "description": "A formal request to purchase Products or Services.",
+      "extends": "reality.Agreement",
+      "layer": "Business",
+      "domain": "Commerce",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Observable","PolicyAware","HistoryEnabled"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["placed_by", "contains", "invoices", "shipped_via"],
+      "events": ["OrderPlaced","OrderApproved","OrderFulfilled","OrderCancelled"],
+      "contains": ["LineItem","Payment","Invoice","Shipment","Approval"],
+      "attributes": {
+        "orderId": { "type": "string" },
+        "totalAmount": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" },
+        "currency": { "$ref": "types.schema.json#/definitions/MoneyTypes/Currency" }
+      }
+    },
+    "Invoice": {
+      "description": "A formal request for payment issued after delivery.",
+      "extends": "reality.Document",
+      "layer": "Business",
+      "domain": "Finance",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","PolicyAware","HistoryEnabled","Searchable"],
+      "lifecycle": "Financial Lifecycle",
+      "relationships": ["issued_to", "generated_from", "settled_by"],
+      "events": ["InvoiceIssued","InvoicePaid","InvoiceOverdue","InvoiceCancelled"],
+      "attributes": {
+        "invoiceNumber": { "type": "string" },
+        "subtotal": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" },
+        "tax": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" },
+        "total": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" },
+        "dueDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" }
+      }
+    },
+    "Project": {
+      "description": "A temporary endeavor with a defined scope and outcome.",
+      "extends": "reality.Event",
+      "layer": "Business",
+      "domain": "Work",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Observable","Searchable","Assignable","Taggable","HistoryEnabled"],
+      "lifecycle": "Workflow Lifecycle",
+      "relationships": ["owned_by", "contains", "depends_on", "assigned_to"],
+      "events": ["ProjectCreated","MilestoneReached","ProjectCompleted","ProjectCancelled"],
+      "contains": ["Task","Milestone","Workflow","Approval","Document"],
+      "attributes": {
+        "projectCode": { "type": "string" },
+        "budget": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" },
+        "startDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" },
+        "targetDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" }
+      }
+    },
+    "Task": {
+      "description": "A discrete unit of work assigned to a Person.",
+      "extends": "reality.Event",
+      "layer": "Business",
+      "domain": "Work",
+      "traits": ["Auditable","Assignable","Observable","Taggable","Commentable","HistoryEnabled","TimeAware"],
+      "lifecycle": "Workflow Lifecycle",
+      "relationships": ["assigned_to", "belongs_to", "blocks", "depends_on"],
+      "events": ["TaskCreated","TaskAssigned","TaskCompleted","TaskOverdue"],
+      "inheritedBy": ["Subtask","Approval","Decision"],
+      "attributes": {
+        "title": { "type": "string" },
+        "priority": { "type": "string", "enum": ["Critical","High","Medium","Low"] },
+        "dueDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Timestamp" },
+        "estimateHours": { "type": "number" }
+      }
+    },
+    "Case": {
+      "description": "A support or service request requiring resolution.",
+      "extends": "reality.Event",
+      "layer": "Business",
+      "domain": "CustomerSuccess",
+      "aggregateRoot": true,
+      "traits": ["Auditable","Versioned","Observable","Searchable","Assignable","PolicyAware"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["submitted_by", "assigned_to", "resolved_by", "escalated_to"],
+      "events": ["CaseCreated","CaseAssigned","CaseEscalated","CaseResolved","CaseClosed"],
+      "contains": ["Ticket","Message","Approval"],
+      "attributes": {
+        "caseNumber": { "type": "string" },
+        "severity": { "type": "string", "enum": ["Critical","High","Medium","Low"] },
+        "slaDeadline": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Timestamp" }
+      }
+    }
+  }
+}

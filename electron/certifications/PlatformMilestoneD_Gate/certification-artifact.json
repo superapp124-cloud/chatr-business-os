@@ -1,0 +1,12 @@
+{
+  "schema": "chatr.certification.v1",
+  "certification_id": "cert-platform-milestone-d-gate-2026-07-15",
+  "milestone": "Platform Milestone D — Gate",
+  "milestone_key": "PlatformMilestoneD_Gate",
+  "kernel_version": "0.9.1-pre",
+  "certified": true,
+  "certification_date": "2026-07-15T17:48:19.922Z",
+  "status": "CERTIFIED",
+  "tests_passed": 8,
+  "tests_failed": 0
+}

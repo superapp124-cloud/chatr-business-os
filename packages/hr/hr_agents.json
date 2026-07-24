@@ -1,0 +1,26 @@
+{
+  "agents": [
+    {
+      "id": "agent_onboarding_coordinator",
+      "role": "Manages the execution graph for new hire onboarding, scheduling syncs and checking in",
+      "model_requirements": {
+        "reasoning": "llama3.1:8b",
+        "context_window": 8192
+      },
+      "tools": ["mcp_hr_check_task_status", "mcp_cal_schedule_sync"],
+      "memory_strategy": ["working", "observational"],
+      "latency_sla": 5000
+    },
+    {
+      "id": "agent_hr_assistant",
+      "role": "Answers policy questions and calculates leave balances",
+      "model_requirements": {
+        "reasoning": "qwen2.5:14b",
+        "context_window": 16384
+      },
+      "tools": ["mcp_hr_query_policy", "mcp_hr_calculate_balance"],
+      "memory_strategy": ["semantic"],
+      "latency_sla": 3000
+    }
+  ]
+}

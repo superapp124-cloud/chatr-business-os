@@ -1,0 +1,75 @@
+{
+  "abi": "chatr.provider_manifest.v0_9_rc",
+  "provider_id": "provider.razorpay",
+  "provider_version": "1.0.0",
+  "display_name": "Razorpay",
+  "manifest_version": "1.0.0",
+  "capabilities": [
+    {
+      "capability": "PAY",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Bill", "Order", "Invoice", "Ticket"],
+      "input_schema": {
+        "type": "object",
+        "required": ["amount_or_payment_authorization", "payment_instrument_ref", "policy_refs"],
+        "properties": {
+          "amount_or_payment_authorization": { "type": "object" },
+          "payment_instrument_ref":          { "type": "string" },
+          "policy_refs":                     { "type": "array" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["payment_receipt"],
+        "properties": { "payment_receipt": { "type": "object" } }
+      },
+      "execution_modes": ["api", "native_app"],
+      "strategy_support": ["fastest", "most_trusted", "cheapest"],
+      "authentication": { "type": "api_key", "required": true },
+      "permissions": ["payment.initiate", "wallet.read"],
+      "rate_limits": { "requests_per_minute": 60 },
+      "latency": { "p50_ms": 500, "p95_ms": 2000 },
+      "reliability": { "declared_success_rate": 0.99 },
+      "cost": { "model": "percentage", "rate": 0.02 },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["*"] },
+      "observation": { "supports_polling": true, "supports_webhooks": true },
+      "recovery": { "retryable_errors": ["timeout", "rate_limited", "temporary_unavailable"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 8 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    },
+    {
+      "capability": "VERIFY",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Bill", "Order", "Invoice"],
+      "input_schema": {
+        "type": "object",
+        "required": ["expected_outcome", "evidence_refs"],
+        "properties": {
+          "expected_outcome": { "type": "object" },
+          "evidence_refs":    { "type": "array" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["verification_report"],
+        "properties": { "verification_report": { "type": "object" } }
+      },
+      "execution_modes": ["api"],
+      "strategy_support": ["most_trusted", "fastest"],
+      "authentication": { "type": "api_key", "required": true },
+      "permissions": [],
+      "rate_limits": { "requests_per_minute": 60 },
+      "latency": { "p50_ms": 200, "p95_ms": 800 },
+      "reliability": { "declared_success_rate": 0.999 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["*"] },
+      "observation": { "supports_polling": true, "supports_webhooks": true },
+      "recovery": { "retryable_errors": ["timeout", "rate_limited"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 16 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    }
+  ],
+  "health_check": { "mode": "api", "endpoint": "https://api.razorpay.com/v1/payments" },
+  "compatibility": { "kernel_abi": ">=0.9 <1.0" },
+  "trust_evidence": { "manifest_signature": "required", "attestation": "optional" }
+}

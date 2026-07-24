@@ -1,0 +1,4216 @@
+{
+  "chatr_os_apps": {
+    "files": [
+      "/chatr-os/kernel/AppLifecycleManager.ts",
+      "/chatr-os/kernel/InterAppCommunication.ts",
+      "/chatr-os/ui/HomeScreen.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_sessions": {
+    "files": [
+      "/chatr-os/kernel/AppLifecycleManager.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "inter_app_messages": {
+    "files": [
+      "/chatr-os/kernel/InterAppCommunication.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 3,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_permissions": {
+    "files": [
+      "/chatr-os/kernel/PermissionManager.ts"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 2,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "appointments": {
+    "files": [
+      "/components/ai-agents/AgentActions.tsx",
+      "/components/home/ActivityWidgets.tsx",
+      "/pages/admin/Analytics.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/care/MyAppointments.tsx",
+      "/pages/HealthPassport.tsx",
+      "/pages/Home.tsx",
+      "/pages/provider/Appointments.tsx",
+      "/pages/ProviderPortal.tsx",
+      "/pages/TeleconsultationPage.tsx",
+      "/pages/vendor/healthcare/DoctorAnalytics.tsx",
+      "/pages/vendor/healthcare/DoctorAppointments.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx"
+    ],
+    "select": 14,
+    "insert": 4,
+    "update": 4,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "conversations": {
+    "files": [
+      "/components/ai-agents/AgentActions.tsx",
+      "/components/chat/AddParticipantDialog.tsx",
+      "/components/chat/ClusterCreator.tsx",
+      "/components/chat/GroupSettingsDialog.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/chatr/CommunitiesHome.tsx",
+      "/components/chatr/ContactsList.tsx",
+      "/components/communities/CommunitiesExplorer.tsx",
+      "/components/DisappearingMessagesDialog.tsx",
+      "/components/GhostChatToggle.tsx",
+      "/components/GroupChatCreator.tsx",
+      "/components/home/RecentActivity.tsx",
+      "/hooks/useCloudBackup.tsx",
+      "/hooks/useDisappearingMessages.tsx",
+      "/hooks/useGroupChat.tsx",
+      "/hooks/useMessageBackup.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/lib/ai/CommunicationAgent.ts",
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/Chat.tsx",
+      "/pages/ContactsPage.tsx",
+      "/pages/CreateCommunity.tsx",
+      "/pages/PublicProfile.tsx",
+      "/pages/StarredMessages.tsx",
+      "/platform/Domain/Communication/MessagingService.ts",
+      "/utils/messageExport.ts"
+    ],
+    "select": 24,
+    "insert": 11,
+    "update": 10,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "messages": {
+    "files": [
+      "/components/ai-agents/AgentActions.tsx",
+      "/components/BroadcastCreator.tsx",
+      "/components/chat/ContactInfoScreen.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chat/MediaViewer.tsx",
+      "/components/chat/MessageForwardDialog.tsx",
+      "/components/chat/PulseCreator.tsx",
+      "/components/chat/StarredMessages.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chatr/MessageSearchInChat.tsx",
+      "/components/chatr/PinnedMessagesPanel.tsx",
+      "/components/chatr/PrechuAIPanel.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "/components/desktop/workspace/WorkspaceModules.tsx",
+      "/components/GlobalSearch.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/components/MessageForwarding.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/components/QuickReplyNotification.tsx",
+      "/components/stories/StoryReactions.tsx",
+      "/hooks/useBluetoothMesh.tsx",
+      "/hooks/useCloudBackup.tsx",
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEfficientChat.tsx",
+      "/hooks/useEnhancedOfflineQueue.tsx",
+      "/hooks/useFullTextSearch.tsx",
+      "/hooks/useMessageBackup.tsx",
+      "/hooks/useMessageQueue.tsx",
+      "/hooks/useMessageRetry.tsx",
+      "/hooks/useMessageSync.tsx",
+      "/hooks/useNativeCallBridge.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useOfflineQueue.tsx",
+      "/hooks/useOptimisticChat.tsx",
+      "/hooks/useOptimisticMessages.tsx",
+      "/hooks/useReliableMessages.tsx",
+      "/hooks/useVirtualizedMessages.tsx",
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/Chat.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/chat/hooks/useOutcomes.ts",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/SellerMessages.tsx",
+      "/platform/apis/conversation/SupabaseConversationApi.ts",
+      "/platform/Domain/Communication/MessagingService.ts",
+      "/services/agentAutoReply.ts",
+      "/services/ai/AICoworkerService.ts",
+      "/services/messageQueueService.ts",
+      "/utils/messageExport.ts"
+    ],
+    "select": 44,
+    "insert": 32,
+    "update": 12,
+    "delete": 3,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "ai_agent_analytics": {
+    "files": [
+      "/components/ai-agents/AgentAnalyticsDashboard.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "ai_agents": {
+    "files": [
+      "/components/ai-agents/AgentAnalyticsDashboard.tsx",
+      "/components/ai-agents/AIAgentTrainingPanel.tsx",
+      "/pages/desktop/AgentMarketplace.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "ai_agent_training": {
+    "files": [
+      "/components/ai-agents/AIAgentTrainingPanel.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "announcements": {
+    "files": [
+      "/components/AnnouncementBanner.tsx",
+      "/pages/admin/Announcements.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "announcement_reads": {
+    "files": [
+      "/components/AnnouncementBanner.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "automation_rules": {
+    "files": [
+      "/components/automations/RuleBuilderDialog.tsx",
+      "/pages/Automations.tsx"
+    ],
+    "select": 1,
+    "insert": 2,
+    "update": 2,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "profiles": {
+    "files": [
+      "/components/AutoTranslateSettings.tsx",
+      "/components/BottomNav.tsx",
+      "/components/business/TeamInviteDialog.tsx",
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/calling/meeting/AddParticipantsPanel.tsx",
+      "/components/calling/meeting/AIInsightsPanel.tsx",
+      "/components/calling/meeting/MeetingLogsDrawer.tsx",
+      "/components/calling/PhoneDialer.tsx",
+      "/components/calling/ProductionCallNotifications.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/chat/AddParticipantDialog.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chat/PinnedMessagesViewer.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/chatr/EnhancedSettingsPanel.tsx",
+      "/components/chatr/SettingsPanel.tsx",
+      "/components/ConnectedAccounts.tsx",
+      "/components/ContactManager.tsx",
+      "/components/ContactsSync.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/workspace/WorkspaceToday.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/StandaloneCallsApp.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/components/earn/EarnLeaderboard.tsx",
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/components/GlobalNotificationListener.tsx",
+      "/components/GlobalSearch.tsx",
+      "/components/HealthPassportEdit.tsx",
+      "/components/home/PersonalizedGreeting.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/components/jobs/QuickApplyModal.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/components/NotificationSettings.tsx",
+      "/components/OnboardingDialog.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/ProfileEditDialog.tsx",
+      "/components/ReferralLeaderboard.tsx",
+      "/components/RingtoneSelector.tsx",
+      "/components/settings/LocationPrivacySettings.tsx",
+      "/components/settings/PrivacySettings.tsx",
+      "/components/settings/ProfileSettings.tsx",
+      "/components/TypingIndicator.tsx",
+      "/components/UnifiedPermissionsSetup.tsx",
+      "/contexts/CallContext.tsx",
+      "/core/platformParity/sharedProfileCache.ts",
+      "/hooks/useAutoAttendant.tsx",
+      "/hooks/useBackgroundLocation.tsx",
+      "/hooks/useCallBlocking.tsx",
+      "/hooks/useCallForwarding.tsx",
+      "/hooks/useCallPark.tsx",
+      "/hooks/useChatPushNotifications.tsx",
+      "/hooks/useE2EChat.tsx",
+      "/hooks/useEncryptedMessaging.ts",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useIdentity.ts",
+      "/hooks/useKnowledgeGraph.ts",
+      "/hooks/useLocationStatus.tsx",
+      "/hooks/useModuleNotifications.tsx",
+      "/hooks/useMutualFriends.tsx",
+      "/hooks/useNativeAppInitialization.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useOnboarding.tsx",
+      "/hooks/usePreCallIntelligence.ts",
+      "/hooks/usePresenceTracking.tsx",
+      "/hooks/useRealtimeNotifications.tsx",
+      "/hooks/useSpeedDial.tsx",
+      "/hooks/useVirtualizedMessages.tsx",
+      "/hooks/useVoicemail.tsx",
+      "/layouts/DesktopLayout.tsx",
+      "/lib/chatr-shield/shield-pipeline.ts",
+      "/packages/communication-engine/signaling/DatabaseSignalingProvider.ts",
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/KYCApprovals.tsx",
+      "/pages/admin/Settings.tsx",
+      "/pages/admin/Users.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/Auth.tsx",
+      "/pages/Automations.tsx",
+      "/pages/business/Team.tsx",
+      "/pages/CallHistory.tsx",
+      "/pages/Calls.tsx",
+      "/pages/care/MedicineHub.tsx",
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/Channel.tsx",
+      "/pages/Chat.tsx",
+      "/pages/desktop/CandidateWorkspace.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/chat/hooks/useConversation.ts",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/desktop/DesktopPrivacy.tsx",
+      "/pages/desktop/DesktopProfile.tsx",
+      "/pages/desktop/DesktopWallpaper.tsx",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/HealthHub.tsx",
+      "/pages/HealthPassport.tsx",
+      "/pages/Home.tsx",
+      "/pages/JoinInvite.tsx",
+      "/pages/Launcher.tsx",
+      "/pages/More.tsx",
+      "/pages/NotificationSettings.tsx",
+      "/pages/Onboarding.tsx",
+      "/pages/Profile.tsx",
+      "/pages/ProviderDashboard.tsx",
+      "/pages/ProviderDetails.tsx",
+      "/pages/QRPayment.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SmartInbox.tsx",
+      "/pages/StandaloneDialer.tsx",
+      "/pages/StarredMessages.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/store/DeveloperDashboard.tsx",
+      "/pages/Stories.tsx",
+      "/pages/UnifiedTimeline.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx",
+      "/pages/WallpaperSettings.tsx",
+      "/pages/YouthEngagement.tsx",
+      "/platform/AutomationOS/PresenceManager.ts",
+      "/platform/Domain/Collaboration/DocumentLockBadge.tsx",
+      "/platform/Domain/Collaboration/NotificationService.ts",
+      "/platform/Domain/Communication/MessagingService.ts",
+      "/platform/Domain/Knowledge/SearchService.ts",
+      "/services/calling/PSTNService.ts",
+      "/services/messaging/SMSGatewayService.ts",
+      "/utils/callerIdentityResolver.ts",
+      "/utils/phoneHashUtil.ts",
+      "/utils/pushNotifications.ts"
+    ],
+    "select": 167,
+    "insert": 2,
+    "update": 43,
+    "delete": 0,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "caller_reports": {
+    "files": [
+      "/components/BottomNav.tsx",
+      "/pages/ChatrShield.tsx",
+      "/pages/Home.tsx",
+      "/services/callerIntelligenceService.ts"
+    ],
+    "select": 4,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "ar_brand_filters": {
+    "files": [
+      "/components/branding/ARBrandFilters.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_track_brand_impression": {
+    "files": [
+      "/components/branding/ARBrandFilters.tsx",
+      "/components/branding/ChatBrandSuggestion.tsx",
+      "/hooks/useVideoBranding.tsx"
+    ],
+    "calls": 3
+  },
+  "broadcast_lists": {
+    "files": [
+      "/components/BroadcastCreator.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "broadcast_recipients": {
+    "files": [
+      "/components/BroadcastCreator.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_create_direct_conversation": {
+    "files": [
+      "/components/BroadcastCreator.tsx",
+      "/components/chat/ContactsDrawer.tsx",
+      "/components/chat/PulseCreator.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/StandaloneCallsApp.tsx",
+      "/components/EmotionCircleMatch.tsx",
+      "/components/GlobalSearch.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/contexts/CallContext.tsx",
+      "/packages/communication-engine/signaling/DatabaseSignalingProvider.ts",
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/Chat.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/StandaloneDialer.tsx"
+    ],
+    "calls": 21
+  },
+  "business_workflows": {
+    "files": [
+      "/components/business/automation/WorkflowBuilder.tsx",
+      "/hooks/useBusinessWorkflows.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_subscriptions": {
+    "files": [
+      "/components/business/BillingHistoryDialog.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/Settings.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_conversations": {
+    "files": [
+      "/components/business/BusinessInbox.tsx",
+      "/pages/business/Analytics.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/TeamInbox.tsx"
+    ],
+    "select": 5,
+    "insert": 0,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_team_members": {
+    "files": [
+      "/components/business/TeamInviteDialog.tsx",
+      "/pages/business/Analytics.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/Settings.tsx",
+      "/pages/business/Team.tsx"
+    ],
+    "select": 5,
+    "insert": 3,
+    "update": 1,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "service_providers": {
+    "files": [
+      "/components/BusinessPortal.tsx",
+      "/components/healthcare/AppointmentBooking.tsx",
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Documents.tsx",
+      "/pages/admin/Providers.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/BookingTracking.tsx",
+      "/pages/provider/Appointments.tsx",
+      "/pages/provider/Payments.tsx",
+      "/pages/provider/Services.tsx",
+      "/pages/ProviderDashboard.tsx",
+      "/pages/ProviderDetails.tsx",
+      "/pages/ProviderPortal.tsx",
+      "/pages/ProviderRegister.tsx",
+      "/pages/ServiceListing.tsx",
+      "/pages/vendor/healthcare/DoctorAnalytics.tsx",
+      "/pages/vendor/healthcare/DoctorAppointments.tsx",
+      "/pages/vendor/healthcare/DoctorAvailability.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx"
+    ],
+    "select": 21,
+    "insert": 2,
+    "update": 3,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_lookup_caller_id": {
+    "files": [
+      "/components/callerid/CallerIdLookup.tsx",
+      "/services/callerIntelligenceService.ts",
+      "/services/intelligenceService.ts"
+    ],
+    "calls": 4
+  },
+  "contacts": {
+    "files": [
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/chat/AddParticipantDialog.tsx",
+      "/components/chat/ContactPicker.tsx",
+      "/components/chat/ContactsDrawer.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chatr/ContactsList.tsx",
+      "/components/chatr/NewChatSheet.tsx",
+      "/components/ContactManager.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/chatr-calls/screens/ContactsScreen.tsx",
+      "/components/dialer/chatr-calls/screens/RecentsScreen.tsx",
+      "/components/dialer/StandaloneCallsDashboard.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/hooks/useMutualFriends.tsx",
+      "/hooks/usePrefetch.tsx",
+      "/pages/Chat.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/utils/callerIdentityResolver.ts"
+    ],
+    "select": 19,
+    "insert": 3,
+    "update": 1,
+    "delete": 0,
+    "upsert": 4,
+    "realtime": 0
+  },
+  "calls": {
+    "files": [
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/calling/GlobalCallListener.tsx",
+      "/components/calling/GlobalCallUI.tsx",
+      "/components/calling/GSMStyleVoiceCall.tsx",
+      "/components/calling/meeting/AddParticipantsPanel.tsx",
+      "/components/calling/meeting/AIInsightsPanel.tsx",
+      "/components/calling/ProductionCallNotifications.tsx",
+      "/components/calling/ProductionVideoCall.tsx",
+      "/components/calling/ProductionVoiceCall.tsx",
+      "/components/calling/SessionWorkspace.tsx",
+      "/components/calling/UnifiedCallScreen.tsx",
+      "/components/chat/CallHistoryDialog.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chatr/CallsList.tsx",
+      "/components/contacts/RelationshipPanel.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/components/dialer/StandaloneCallsApp.tsx",
+      "/components/dialer/StandaloneRecents.tsx",
+      "/components/GlobalCallNotifications.tsx",
+      "/components/home/RecentActivity.tsx",
+      "/components/identity/TrustScoreBreakdown.tsx",
+      "/contexts/CallContext.tsx",
+      "/hooks/useAgentMonitoring.tsx",
+      "/hooks/useCallAnalytics.tsx",
+      "/hooks/useCallPark.tsx",
+      "/hooks/useCallPull.tsx",
+      "/hooks/useCallTransfer.tsx",
+      "/hooks/useDialerData.ts",
+      "/hooks/useGroupCall.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/packages/communication-engine/signaling/DatabaseSignalingProvider.ts",
+      "/packages/communication-engine/signaling/SharedSignalingAdapter.ts",
+      "/pages/CallHistory.tsx",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/GlobalContacts.tsx",
+      "/pages/StandaloneDialer.tsx",
+      "/utils/simpleWebRTC.ts"
+    ],
+    "select": 32,
+    "insert": 14,
+    "update": 46,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "call_participants": {
+    "files": [
+      "/components/calling/AddParticipantDialog.tsx",
+      "/components/calling/GroupVideoCall.tsx",
+      "/components/calling/GroupVoiceCall.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "session_rooms": {
+    "files": [
+      "/components/calling/meeting/HostControls.tsx",
+      "/components/calling/meeting/MeetingLogsDrawer.tsx",
+      "/components/calling/meeting/MeetingPolls.tsx",
+      "/contexts/CallContext.tsx"
+    ],
+    "select": 7,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "session_room_participants": {
+    "files": [
+      "/components/calling/meeting/HostControls.tsx",
+      "/contexts/CallContext.tsx",
+      "/hooks/useRealParticipants.ts",
+      "/packages/communication-engine/signaling/GroupCallSignalingProvider.ts"
+    ],
+    "select": 4,
+    "insert": 3,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "meeting_polls": {
+    "files": [
+      "/components/calling/meeting/MeetingPolls.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "meeting_poll_votes": {
+    "files": [
+      "/components/calling/meeting/MeetingPolls.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "user_contacts": {
+    "files": [
+      "/components/calling/PhoneDialer.tsx",
+      "/components/LiveLocationSharing.tsx",
+      "/pages/ContactsPage.tsx",
+      "/pages/Stories.tsx"
+    ],
+    "select": 4,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chronic_vitals": {
+    "files": [
+      "/components/care/CarePathDetail.tsx",
+      "/components/care/VitalsChart.tsx",
+      "/pages/care/MedicineVitals.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/ChronicVitalsPage.tsx"
+    ],
+    "select": 5,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medication_reminders": {
+    "files": [
+      "/components/care/CarePathDetail.tsx",
+      "/hooks/useModuleNotifications.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/HealthHub.tsx",
+      "/pages/MedicineReminders.tsx"
+    ],
+    "select": 5,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_healthcare": {
+    "files": [
+      "/components/care/DoctorSearch.tsx",
+      "/components/care/OutcomeProviders.tsx",
+      "/components/chatr-world/ChatrWorldHealthcare.tsx",
+      "/pages/care/DoctorDetail.tsx",
+      "/pages/care/MyAppointments.tsx",
+      "/pages/CareAccess.tsx",
+      "/pages/ChatrWorldAdmin.tsx",
+      "/pages/LocalHealthcare.tsx",
+      "/pages/MentalHealth.tsx",
+      "/pages/TeleconsultationPage.tsx"
+    ],
+    "select": 12,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_wallet": {
+    "files": [
+      "/components/care/HealthWalletCard.tsx",
+      "/components/HealthWallet.tsx",
+      "/pages/care/MedicineWallet.tsx"
+    ],
+    "select": 4,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_wallet_transactions": {
+    "files": [
+      "/components/care/HealthWalletCard.tsx",
+      "/pages/care/MedicineWallet.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medicine_reminders": {
+    "files": [
+      "/components/care/MedicineIntakeCard.tsx",
+      "/components/care/TodayMedicineCard.tsx",
+      "/pages/care/MedicineReminders.tsx",
+      "/pages/care/MedicineSubscribe.tsx"
+    ],
+    "select": 3,
+    "insert": 2,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medicine_intake_log": {
+    "files": [
+      "/components/care/MedicineIntakeCard.tsx",
+      "/components/care/TodayMedicineCard.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "health_streaks": {
+    "files": [
+      "/components/care/MedicineIntakeCard.tsx",
+      "/components/care/TodayMedicineCard.tsx",
+      "/pages/care/MedicineHub.tsx",
+      "/pages/care/MedicineRewards.tsx",
+      "/pages/HealthStreaksPage.tsx"
+    ],
+    "select": 5,
+    "insert": 0,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "conversation_participants": {
+    "files": [
+      "/components/chat/AddParticipantDialog.tsx",
+      "/components/chat/ClusterCreator.tsx",
+      "/components/chat/ContactInfoScreen.tsx",
+      "/components/chat/ConversationContextMenu.tsx",
+      "/components/chat/ConversationList.tsx",
+      "/components/chat/GroupSettingsDialog.tsx",
+      "/components/chat/MentionInput.tsx",
+      "/components/chat/MessageForwardDialog.tsx",
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/components/chatr/ChatScreen.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/chatr/CommunitiesHome.tsx",
+      "/components/chatr/ContactsList.tsx",
+      "/components/communities/CommunitiesExplorer.tsx",
+      "/components/desktop/AdaptiveHome.tsx",
+      "/components/desktop/workspace/WorkspaceModules.tsx",
+      "/components/GlobalNotificationListener.tsx",
+      "/components/GroupChatCreator.tsx",
+      "/components/home/RecentActivity.tsx",
+      "/core/platformParity/sharedConversationHydrator.ts",
+      "/hooks/useCloudBackup.tsx",
+      "/hooks/useFullTextSearch.tsx",
+      "/hooks/useGroupChat.tsx",
+      "/hooks/useMessageBackup.tsx",
+      "/hooks/useNativeHydration.ts",
+      "/hooks/useRealtimeNotifications.tsx",
+      "/hooks/useWorkspaceSync.ts",
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/Chat.tsx",
+      "/pages/CreateCommunity.tsx",
+      "/pages/desktop/chat/DesktopChat.tsx",
+      "/pages/desktop/DesktopCalls.tsx",
+      "/pages/desktop/DesktopContacts.tsx",
+      "/pages/PublicProfile.tsx",
+      "/platform/apis/conversation/SupabaseConversationApi.ts",
+      "/platform/Domain/Communication/MessagingService.ts",
+      "/utils/pushNotifications.ts"
+    ],
+    "select": 45,
+    "insert": 13,
+    "update": 7,
+    "delete": 5,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "blocked_contacts": {
+    "files": [
+      "/components/chat/BlockUserDialog.tsx",
+      "/components/dialer/AdvancedPhoneDialer.tsx",
+      "/hooks/useBlockedContacts.tsx",
+      "/hooks/useCallBlocking.tsx"
+    ],
+    "select": 3,
+    "insert": 4,
+    "update": 0,
+    "delete": 3,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "channel_members": {
+    "files": [
+      "/components/chat/ChannelList.tsx",
+      "/pages/Channel.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_toggle_message_reaction": {
+    "files": [
+      "/components/chat/MessageBubble.tsx"
+    ],
+    "calls": 2
+  },
+  "message_reports": {
+    "files": [
+      "/components/chat/MessageReportDialog.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "pinned_messages": {
+    "files": [
+      "/components/chat/PinnedMessagesViewer.tsx",
+      "/pages/Chat.tsx",
+      "/utils/messageExport.ts"
+    ],
+    "select": 4,
+    "insert": 1,
+    "update": 0,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "message_security_scans": {
+    "files": [
+      "/components/chat/ShieldFeedback.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_get_user_conversations_optimized": {
+    "files": [
+      "/components/chat/VirtualizedConversationList.tsx",
+      "/pages/Home.tsx"
+    ],
+    "calls": 2
+  },
+  "stories": {
+    "files": [
+      "/components/chatr/AddStoryDialog.tsx",
+      "/components/chatr/ChatsList.tsx",
+      "/components/stories/StoriesCarousel.tsx",
+      "/components/stories/StoryCreator.tsx",
+      "/components/stories/StoryHighlights.tsx",
+      "/hooks/usePrefetch.tsx",
+      "/pages/StatusComposer.tsx",
+      "/pages/Stories.tsx"
+    ],
+    "select": 5,
+    "insert": 5,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "message_reactions": {
+    "files": [
+      "/components/chatr/MessageReactions.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 1,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "chatr_deals": {
+    "files": [
+      "/components/chatr-world/ChatrWorldDeals.tsx",
+      "/pages/ChatrWorldAdmin.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_restaurants": {
+    "files": [
+      "/components/chatr-world/ChatrWorldFood.tsx",
+      "/pages/ChatrWorldAdmin.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_menu_items": {
+    "files": [
+      "/components/chatr-world/ChatrWorldFood.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_food_orders": {
+    "files": [
+      "/components/chatr-world/ChatrWorldFood.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_healthcare_appointments": {
+    "files": [
+      "/components/chatr-world/ChatrWorldHealthcare.tsx",
+      "/pages/ChatrWorldAdmin.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_jobs": {
+    "files": [
+      "/components/chatr-world/ChatrWorldJobs.tsx",
+      "/components/jobs/QuickApplyModal.tsx",
+      "/pages/ChatrWorldAdmin.tsx",
+      "/pages/UniversalSearch.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_job_applications": {
+    "files": [
+      "/components/chatr-world/ChatrWorldJobs.tsx",
+      "/pages/ChatrWorldAdmin.tsx",
+      "/pages/LocalJobs.tsx"
+    ],
+    "select": 2,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "conversation_notes": {
+    "files": [
+      "/components/CollaborativeNotes.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "cc_dev_tasks": {
+    "files": [
+      "/components/command-center/EngineeringAgentPanel.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "cc_leads": {
+    "files": [
+      "/components/command-center/SalesAgentPanel.tsx",
+      "/pages/CommandCenter.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "cc_outreach": {
+    "files": [
+      "/components/command-center/SalesAgentPanel.tsx",
+      "/pages/CommandCenter.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_increment_community_members": {
+    "files": [
+      "/components/communities/CommunitiesExplorer.tsx"
+    ],
+    "calls": 1
+  },
+  "referrals": {
+    "files": [
+      "/components/ContactInvitation.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_sync_user_contacts": {
+    "files": [
+      "/components/ContactsSync.tsx",
+      "/components/UnifiedPermissionsSetup.tsx",
+      "/pages/Index.tsx",
+      "/utils/contactSync.ts"
+    ],
+    "calls": 4
+  },
+  "crm_leads": {
+    "files": [
+      "/components/crm/CreateLeadDialog.tsx",
+      "/components/crm/LeadsList.tsx",
+      "/pages/business/CRM.tsx"
+    ],
+    "select": 5,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "workspace_members": {
+    "files": [
+      "/components/desktop/AdaptiveHome.tsx",
+      "/hooks/useWorkspaceSync.ts",
+      "/pages/desktop/DesktopWorkspace.tsx",
+      "/platform/Domain/Activity/ActivityService.ts",
+      "/platform/Domain/Collaboration/PresenceService.ts"
+    ],
+    "select": 4,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "workspace_broadcasts": {
+    "files": [
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "workspaces": {
+    "files": [
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "/components/desktop/workspace/WorkspaceCustomers.tsx",
+      "/hooks/useWorkspaceSync.ts",
+      "/pages/desktop/DesktopWorkspace.tsx"
+    ],
+    "select": 6,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "workspace_customers": {
+    "files": [
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx",
+      "/components/desktop/workspace/WorkspaceCustomers.tsx",
+      "/hooks/useWorkspaceSync.ts"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "workspace_activities": {
+    "files": [
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_get_or_create_conversation": {
+    "files": [
+      "/components/desktop/workspace/WorkspaceBroadcasts.tsx"
+    ],
+    "calls": 1
+  },
+  "workspace_tasks": {
+    "files": [
+      "/components/desktop/workspace/WorkspaceModules.tsx",
+      "/hooks/useWorkspaceSync.ts",
+      "/hooks/useWorkspaceTasks.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "device_sessions": {
+    "files": [
+      "/components/DeviceSessions.tsx",
+      "/components/QRScanner.tsx",
+      "/components/SecurityStatus.tsx",
+      "/hooks/useNativeAppInitialization.tsx",
+      "/hooks/useSecureStorage.tsx",
+      "/pages/Auth.tsx",
+      "/pages/DeviceManagement.tsx",
+      "/pages/QRLogin.tsx",
+      "/utils/logout.ts"
+    ],
+    "select": 4,
+    "insert": 2,
+    "update": 4,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "dhandha_transactions": {
+    "files": [
+      "/components/dhandha/DhandhaDashboard.tsx",
+      "/components/dhandha/VoiceBillingCard.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "merchant_profiles": {
+    "files": [
+      "/components/dhandha/MerchantSetup.tsx",
+      "/pages/Dhandha.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "point_transactions": {
+    "files": [
+      "/components/dhandha/VoiceBillingCard.tsx",
+      "/components/famecam/PostPreviewDialog.tsx",
+      "/components/identity/VerifiedBadgePurchase.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/hooks/useActivityTracking.tsx",
+      "/pages/admin/Points.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/ChatrPlusWallet.tsx",
+      "/pages/ChatrPoints.tsx"
+    ],
+    "select": 2,
+    "insert": 8,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_coin_balances": {
+    "files": [
+      "/components/earn/EarnLeaderboard.tsx",
+      "/components/home/ActivityWidgets.tsx",
+      "/pages/admin/MicroTasks.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/Home.tsx"
+    ],
+    "select": 6,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_referral_network": {
+    "files": [
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrPoints.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_referrals": {
+    "files": [
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/components/ReferralLeaderboard.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrPoints.tsx"
+    ],
+    "select": 6,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_coin_transactions": {
+    "files": [
+      "/components/earn/EarnReferralAnalytics.tsx",
+      "/pages/admin/MicroTasks.tsx",
+      "/pages/ChatrPoints.tsx"
+    ],
+    "select": 1,
+    "insert": 3,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_referral_codes": {
+    "files": [
+      "/components/earn/EarnShareBlock.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/Index.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "RPC_find_emotion_matches": {
+    "files": [
+      "/components/EmotionCircleMatch.tsx"
+    ],
+    "calls": 1
+  },
+  "fame_cam_challenges": {
+    "files": [
+      "/components/famecam/ChallengeRadar.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "fame_cam_posts": {
+    "files": [
+      "/components/famecam/PostPreviewDialog.tsx",
+      "/pages/FameLeaderboard.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_points": {
+    "files": [
+      "/components/famecam/PostPreviewDialog.tsx",
+      "/components/identity/VerifiedBadgePurchase.tsx",
+      "/components/MiniAppSDK.tsx",
+      "/components/PhoneAuth.tsx",
+      "/components/PointsWallet.tsx",
+      "/hooks/useActivityTracking.tsx",
+      "/pages/admin/Points.tsx",
+      "/pages/BookingPage.tsx",
+      "/pages/ChatrPlusWallet.tsx",
+      "/pages/ChatrPoints.tsx",
+      "/pages/FameCam.tsx",
+      "/pages/Identity.tsx",
+      "/pages/Index.tsx",
+      "/pages/More.tsx",
+      "/pages/Profile.tsx",
+      "/pages/QRPayment.tsx",
+      "/pages/RewardShop.tsx"
+    ],
+    "select": 21,
+    "insert": 0,
+    "update": 7,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "game_achievements": {
+    "files": [
+      "/components/games/GameAchievementsPanel.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "game_user_achievements": {
+    "files": [
+      "/components/games/GameAchievementsPanel.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "game_daily_challenges": {
+    "files": [
+      "/components/games/GameAchievementsPanel.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "game_leaderboards": {
+    "files": [
+      "/components/games/GameAchievementsPanel.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "ghost_chat_sessions": {
+    "files": [
+      "/components/GhostChatToggle.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_goals": {
+    "files": [
+      "/components/HealthGoalsDialog.tsx",
+      "/pages/HealthPassport.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_passport": {
+    "files": [
+      "/components/HealthPassportEdit.tsx",
+      "/pages/HealthPassport.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "wallet_transactions": {
+    "files": [
+      "/components/HealthWallet.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chat_messages": {
+    "files": [
+      "/components/home/ActivityWidgets.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "notifications": {
+    "files": [
+      "/components/home/ActivityWidgets.tsx",
+      "/hooks/useDesktopElectronIntegrations.ts",
+      "/hooks/usePrefetch.tsx",
+      "/pages/Chat.tsx",
+      "/pages/Home.tsx",
+      "/pages/More.tsx",
+      "/pages/Notifications.tsx",
+      "/pages/SmartInbox.tsx",
+      "/platform/Domain/Collaboration/NotificationService.ts"
+    ],
+    "select": 10,
+    "insert": 1,
+    "update": 4,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "job_applications": {
+    "files": [
+      "/components/jobs/QuickApplyModal.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "kyc_documents": {
+    "files": [
+      "/components/kyc/KYCVerification.tsx",
+      "/pages/admin/KYCApprovals.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "location_shares": {
+    "files": [
+      "/components/LiveLocationSharing.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "message_forwards": {
+    "files": [
+      "/components/MessageForwarding.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "message_reminders": {
+    "files": [
+      "/components/MessageReminder.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_push_health": {
+    "files": [
+      "/components/notifications/TokenHealthBanner.tsx",
+      "/pages/NotificationHealth.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "notification_preferences": {
+    "files": [
+      "/components/NotificationSettings.tsx",
+      "/hooks/useRealtimeNotifications.tsx",
+      "/pages/DigestNotificationSettings.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "official_account_posts": {
+    "files": [
+      "/components/OfficialAccountFeed.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "post_likes": {
+    "files": [
+      "/components/OfficialAccountFeed.tsx",
+      "/pages/YouthEngagement.tsx",
+      "/pages/YouthFeed.tsx"
+    ],
+    "select": 5,
+    "insert": 3,
+    "update": 0,
+    "delete": 3,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "users": {
+    "files": [
+      "/components/OnboardingDialog.tsx",
+      "/hooks/useOnboarding.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "avatars": {
+    "files": [
+      "/components/OnboardingDialog.tsx",
+      "/core/platformParity/sharedIdentityResolver.ts"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "upi_payments": {
+    "files": [
+      "/components/payment/UPIPaymentModal.tsx",
+      "/pages/admin/PaymentVerification.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_streaks": {
+    "files": [
+      "/components/PointsWallet.tsx",
+      "/components/voice/VoiceInterface.tsx",
+      "/pages/Index.tsx",
+      "/pages/More.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "error_logs": {
+    "files": [
+      "/components/ProductionMonitor.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "message_delivery_status": {
+    "files": [
+      "/components/ProductionMonitor.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "developer_profiles": {
+    "files": [
+      "/components/QuickAppSubmission.tsx",
+      "/pages/DeveloperPortal.tsx",
+      "/pages/store/DeveloperDashboard.tsx"
+    ],
+    "select": 4,
+    "insert": 3,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_categories": {
+    "files": [
+      "/components/QuickAppSubmission.tsx",
+      "/pages/DeveloperPortal.tsx",
+      "/pages/MiniApps.tsx",
+      "/pages/MiniAppsStore.tsx",
+      "/pages/store/DeveloperDashboard.tsx",
+      "/pages/store/StoreExplore.tsx"
+    ],
+    "select": 6,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_submissions": {
+    "files": [
+      "/components/QuickAppSubmission.tsx",
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/DeveloperPortal.tsx",
+      "/pages/store/DeveloperDashboard.tsx"
+    ],
+    "select": 3,
+    "insert": 3,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "contact_invites": {
+    "files": [
+      "/components/ReferralStats.tsx",
+      "/components/ShareInviteSheet.tsx",
+      "/pages/JoinInvite.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "referral_codes": {
+    "files": [
+      "/components/ReferralSystem.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_generate_user_referral_code": {
+    "files": [
+      "/components/ReferralSystem.tsx"
+    ],
+    "calls": 1
+  },
+  "RPC_process_referral_reward": {
+    "files": [
+      "/components/ReferralSystem.tsx"
+    ],
+    "calls": 1
+  },
+  "favorite_results": {
+    "files": [
+      "/components/search/FavoriteResults.tsx",
+      "/pages/UniversalSearch.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "saved_searches": {
+    "files": [
+      "/components/search/SavedSearches.tsx",
+      "/pages/UniversalSearch.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 1,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "trending_searches": {
+    "files": [
+      "/components/search/TrendingSearches.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "two_factor_auth": {
+    "files": [
+      "/components/SecurityStatus.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "linked_devices": {
+    "files": [
+      "/components/settings/LinkedDevices.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "story_views": {
+    "files": [
+      "/components/stories/StoryViewer.tsx",
+      "/components/stories/StoryViewerAnalytics.tsx",
+      "/pages/Stories.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "symptom_checks": {
+    "files": [
+      "/components/SymptomChecker.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "tasks": {
+    "files": [
+      "/components/TaskFromMessage.tsx",
+      "/platform/Domain/Execution/TaskService.ts",
+      "/platform/Domain/Knowledge/SearchService.ts"
+    ],
+    "select": 3,
+    "insert": 2,
+    "update": 3,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "typing_indicators": {
+    "files": [
+      "/components/TypingIndicator.tsx",
+      "/hooks/useReliableMessages.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 2,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "vaccination_records": {
+    "files": [
+      "/components/VaccinationDialog.tsx",
+      "/pages/HealthPassport.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_wallet": {
+    "files": [
+      "/components/wallet/WithdrawalDialog.tsx",
+      "/pages/ChatrWallet.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_wallet_transactions": {
+    "files": [
+      "/components/wallet/WithdrawalDialog.tsx",
+      "/pages/ChatrWallet.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "semantic_memory": {
+    "files": [
+      "/core/services/SemanticMemory.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 3,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_match_semantic_memory": {
+    "files": [
+      "/core/services/SemanticMemory.ts"
+    ],
+    "calls": 1
+  },
+  "user_activities": {
+    "files": [
+      "/hooks/useActivityTracking.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "ai_stickers": {
+    "files": [
+      "/hooks/useAIStickers.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_locations": {
+    "files": [
+      "/hooks/useBackgroundLocation.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_campaigns": {
+    "files": [
+      "/hooks/useBusinessCampaigns.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_call_logs": {
+    "files": [
+      "/hooks/useBusinessPhone.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_devices": {
+    "files": [
+      "/hooks/useCallHandoff.tsx",
+      "/hooks/useMultiDeviceSync.tsx",
+      "/pages/Profile.tsx"
+    ],
+    "select": 4,
+    "insert": 1,
+    "update": 2,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "call_handoffs": {
+    "files": [
+      "/hooks/useCallHandoff.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "backup_history": {
+    "files": [
+      "/hooks/useCloudBackup.tsx",
+      "/hooks/useMessageBackup.tsx"
+    ],
+    "select": 3,
+    "insert": 2,
+    "update": 0,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "api_keys": {
+    "files": [
+      "/hooks/useDeveloperHub.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "webhooks": {
+    "files": [
+      "/hooks/useDeveloperHub.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "native_call_events": {
+    "files": [
+      "/hooks/useDialerData.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_feature_engagement": {
+    "files": [
+      "/hooks/useFeatureEngagementTracking.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "device_tokens": {
+    "files": [
+      "/hooks/useFirebaseMessaging.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "geofence_events": {
+    "files": [
+      "/hooks/useGeofencing.tsx",
+      "/pages/GeofenceHistory.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "geofences": {
+    "files": [
+      "/hooks/useGeofencing.tsx",
+      "/pages/Geofences.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "knowledge_nodes": {
+    "files": [
+      "/hooks/useKnowledgeGraph.ts"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "knowledge_edges": {
+    "files": [
+      "/hooks/useKnowledgeGraph.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "knowledge_events": {
+    "files": [
+      "/hooks/useKnowledgeGraph.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "link_previews": {
+    "files": [
+      "/hooks/useLinkPreview.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "backups": {
+    "files": [
+      "/hooks/useMessageBackup.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "message_translations": {
+    "files": [
+      "/hooks/useMessageTranslation.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "micro_tasks": {
+    "files": [
+      "/hooks/useMicroTasks.ts",
+      "/pages/admin/MicroTasks.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "micro_task_assignments": {
+    "files": [
+      "/hooks/useMicroTasks.ts",
+      "/pages/admin/MicroTasks.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 3,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "micro_task_user_scores": {
+    "files": [
+      "/hooks/useMicroTasks.ts",
+      "/pages/admin/MicroTasks.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "micro_task_submissions": {
+    "files": [
+      "/hooks/useMicroTasks.ts",
+      "/pages/admin/MicroTasks.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mutual_friends": {
+    "files": [
+      "/hooks/useMutualFriends.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "onboarding_progress": {
+    "files": [
+      "/hooks/useOnboarding.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "photo_albums": {
+    "files": [
+      "/hooks/usePhotoAlbums.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "album_photos": {
+    "files": [
+      "/hooks/usePhotoAlbums.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "profile_music": {
+    "files": [
+      "/hooks/useProfileMusic.tsx",
+      "/hooks/useSpotifyStatus.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 2,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "quick_reply_templates": {
+    "files": [
+      "/hooks/useQuickReplyTemplates.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "rate_limits": {
+    "files": [
+      "/hooks/useRateLimit.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 1,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "chatr_plus_bookings": {
+    "files": [
+      "/hooks/useSellerRealtimeNotifications.tsx",
+      "/pages/ChatrPlusSellerDashboard.tsx",
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerBookings.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SellerPortal.tsx"
+    ],
+    "select": 7,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_consume_prekey": {
+    "files": [
+      "/hooks/useSignalProtocol.ts"
+    ],
+    "calls": 1
+  },
+  "notification_bundles": {
+    "files": [
+      "/hooks/useSmartNotifications.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "sso_tokens": {
+    "files": [
+      "/hooks/useSSOToken.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_generate_sso_token": {
+    "files": [
+      "/hooks/useSSOToken.tsx"
+    ],
+    "calls": 1
+  },
+  "RPC_get_universal_timeline": {
+    "files": [
+      "/hooks/useUniversalTimeline.tsx"
+    ],
+    "calls": 1
+  },
+  "user_roles": {
+    "files": [
+      "/hooks/useUserRole.ts",
+      "/pages/admin/Points.tsx",
+      "/pages/admin/Settings.tsx",
+      "/pages/admin/Users.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/Auth.tsx"
+    ],
+    "select": 6,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_badges": {
+    "files": [
+      "/hooks/useVerifiedBadge.tsx",
+      "/pages/Profile.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "voicemails": {
+    "files": [
+      "/hooks/useVoicemail.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "voice_transcriptions": {
+    "files": [
+      "/hooks/useVoiceTranscription.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "webrtc_signals": {
+    "files": [
+      "/packages/communication-engine/signaling/DatabaseSignalingProvider.ts",
+      "/packages/communication-engine/signaling/SharedSignalingAdapter.ts",
+      "/services/signaling/signalingFallback.ts",
+      "/utils/simpleWebRTC.ts",
+      "/utils/webrtcManager.ts",
+      "/utils/webrtcSignaling.ts"
+    ],
+    "select": 3,
+    "insert": 6,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_settings": {
+    "files": [
+      "/pages/Account.tsx",
+      "/pages/NotificationSettings.tsx",
+      "/pages/Privacy.tsx"
+    ],
+    "select": 4,
+    "insert": 3,
+    "update": 3,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "payments": {
+    "files": [
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Payments.tsx",
+      "/pages/AdminDashboard.tsx",
+      "/pages/provider/Payments.tsx",
+      "/pages/ProviderPortal.tsx"
+    ],
+    "select": 6,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_has_role": {
+    "files": [
+      "/pages/admin/Analytics.tsx",
+      "/pages/admin/Announcements.tsx",
+      "/pages/admin/Documents.tsx",
+      "/pages/admin/Payments.tsx",
+      "/pages/admin/Providers.tsx",
+      "/pages/admin/Users.tsx"
+    ],
+    "calls": 6
+  },
+  "mini_apps": {
+    "files": [
+      "/pages/admin/AppApprovals.tsx",
+      "/pages/MiniApps.tsx",
+      "/pages/MiniAppsStore.tsx",
+      "/pages/store/AppDetail.tsx",
+      "/pages/store/StoreExplore.tsx"
+    ],
+    "select": 6,
+    "insert": 1,
+    "update": 5,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "brand_partnerships": {
+    "files": [
+      "/pages/admin/BrandPartnerships.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "brand_impressions": {
+    "files": [
+      "/pages/admin/BrandPartnerships.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "official_accounts": {
+    "files": [
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/admin/OfficialAccountsManager.tsx",
+      "/pages/OfficialAccounts.tsx"
+    ],
+    "select": 4,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "account_followers": {
+    "files": [
+      "/pages/admin/BroadcastManager.tsx",
+      "/pages/OfficialAccounts.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_find_shared_conversation": {
+    "files": [
+      "/pages/admin/BroadcastManager.tsx"
+    ],
+    "calls": 1
+  },
+  "doctor_applications": {
+    "files": [
+      "/pages/admin/DoctorApplications.tsx",
+      "/pages/DoctorOnboarding.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_get_cron_jobs_health": {
+    "files": [
+      "/pages/admin/JobHealth.tsx"
+    ],
+    "calls": 1
+  },
+  "earning_events": {
+    "files": [
+      "/pages/admin/MicroTasks.tsx",
+      "/pages/EarnHistory.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_reward_redemptions": {
+    "files": [
+      "/pages/admin/Points.tsx",
+      "/pages/ChatrPoints.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_plus_sellers": {
+    "files": [
+      "/pages/admin/SellerApprovals.tsx",
+      "/pages/ChatrPlusSellerDashboard.tsx",
+      "/pages/ChatrPlusSellerRegistration.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerBookings.tsx",
+      "/pages/SellerMessages.tsx",
+      "/pages/SellerPortal.tsx",
+      "/pages/SellerServices.tsx",
+      "/pages/SellerSettings.tsx"
+    ],
+    "select": 8,
+    "insert": 1,
+    "update": 6,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_get_push_token_diagnostics": {
+    "files": [
+      "/pages/admin/TokenHealth.tsx"
+    ],
+    "calls": 1
+  },
+  "ambassador_applications": {
+    "files": [
+      "/pages/AmbassadorProgram.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "automation_logs": {
+    "files": [
+      "/pages/Automations.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_get_automation_metrics": {
+    "files": [
+      "/pages/Automations.tsx"
+    ],
+    "calls": 1
+  },
+  "bmi_records": {
+    "files": [
+      "/pages/BMICalculator.tsx",
+      "/pages/HealthRiskPredictions.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "service_bookings": {
+    "files": [
+      "/pages/BookingTracking.tsx",
+      "/pages/LocalDeals.tsx",
+      "/pages/ProviderDashboard.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "service_categories": {
+    "files": [
+      "/pages/BookingTracking.tsx",
+      "/pages/ProviderDashboard.tsx",
+      "/pages/ServiceListing.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_profiles": {
+    "files": [
+      "/pages/business/AIRoles.tsx",
+      "/pages/business/Analytics.tsx",
+      "/pages/business/Broadcasts.tsx",
+      "/pages/business/Catalog.tsx",
+      "/pages/business/CRM.tsx",
+      "/pages/business/Dashboard.tsx",
+      "/pages/business/Groups.tsx",
+      "/pages/business/Inbox.tsx",
+      "/pages/business/Onboarding.tsx",
+      "/pages/business/Settings.tsx",
+      "/pages/business/Team.tsx",
+      "/pages/business/TeamInbox.tsx"
+    ],
+    "select": 13,
+    "insert": 1,
+    "update": 3,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_ai_roles": {
+    "files": [
+      "/pages/business/AIRoles.tsx",
+      "/pages/desktop/AgentWorkspace.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_analytics_snapshots": {
+    "files": [
+      "/pages/business/Analytics.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_leads": {
+    "files": [
+      "/pages/business/Analytics.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_broadcasts": {
+    "files": [
+      "/pages/business/Analytics.tsx",
+      "/pages/business/Broadcasts.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_deals": {
+    "files": [
+      "/pages/business/Analytics.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_catalog": {
+    "files": [
+      "/pages/business/Catalog.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_groups": {
+    "files": [
+      "/pages/business/Groups.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "identity_providers": {
+    "files": [
+      "/pages/business/Integrations.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "subscription_plans": {
+    "files": [
+      "/pages/business/Settings.tsx",
+      "/pages/SellerSubscription.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "business_conversation_events": {
+    "files": [
+      "/pages/business/TeamInbox.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "call_quality_metrics": {
+    "files": [
+      "/pages/CallBenchmarkDashboard.tsx",
+      "/services/callBenchmark.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "call_benchmark_summary": {
+    "files": [
+      "/pages/CallBenchmarkDashboard.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "screenshots": {
+    "files": [
+      "/pages/Capture.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_family_members": {
+    "files": [
+      "/pages/care/AddFamilyMember.tsx",
+      "/pages/care/MedicineFamily.tsx",
+      "/pages/CareAccess.tsx"
+    ],
+    "select": 2,
+    "insert": 2,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_conditions": {
+    "files": [
+      "/pages/care/MedicineHub.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medicine_subscriptions": {
+    "files": [
+      "/pages/care/MedicineHub.tsx",
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/care/MedicineSubscriptions.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medicine_orders": {
+    "files": [
+      "/pages/care/MedicineOrders.tsx",
+      "/pages/care/MedicineSubscribe.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "prescription_uploads": {
+    "files": [
+      "/pages/care/MedicinePrescriptions.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "prescriptions": {
+    "files": [
+      "/pages/care/MedicinePrescriptions.tsx",
+      "/pages/HealthPassport.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medicine_catalog": {
+    "files": [
+      "/pages/care/MedicineSubscribe.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "subscription_items": {
+    "files": [
+      "/pages/care/MedicineSubscribe.tsx",
+      "/pages/care/MedicineSubscriptions.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "channels": {
+    "files": [
+      "/pages/Channel.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "channel_messages": {
+    "files": [
+      "/pages/Channel.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "starred_messages": {
+    "files": [
+      "/pages/Chat.tsx",
+      "/pages/StarredMessages.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_leaderboards": {
+    "files": [
+      "/pages/ChatrGames.tsx",
+      "/pages/ChatrGrowth.tsx",
+      "/pages/ChatrPoints.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_plus_categories": {
+    "files": [
+      "/pages/ChatrPlus.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx"
+    ],
+    "select": 2,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_plus_services": {
+    "files": [
+      "/pages/ChatrPlus.tsx",
+      "/pages/ChatrPlusCategoryPage.tsx",
+      "/pages/ChatrPlusSearch.tsx",
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/SellerPortal.tsx",
+      "/pages/SellerServices.tsx"
+    ],
+    "select": 6,
+    "insert": 2,
+    "update": 4,
+    "delete": 2,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "seller_kyc_documents": {
+    "files": [
+      "/pages/ChatrPlusSellerRegistration.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_plus_reviews": {
+    "files": [
+      "/pages/ChatrPlusServiceDetail.tsx",
+      "/pages/SellerAnalytics.tsx",
+      "/pages/SellerPortal.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_process_chatr_plus_payment": {
+    "files": [
+      "/pages/ChatrPlusServiceDetail.tsx"
+    ],
+    "calls": 1
+  },
+  "tutors": {
+    "files": [
+      "/pages/ChatrTutors.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "tutor_bookings": {
+    "files": [
+      "/pages/ChatrTutors.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "cc_plans": {
+    "files": [
+      "/pages/CommandCenter.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "cc_logs": {
+    "files": [
+      "/pages/CommandCenter.tsx"
+    ],
+    "select": 1,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "cc_revenue_metrics": {
+    "files": [
+      "/pages/CommandCenter.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "cc_approvals": {
+    "files": [
+      "/pages/CommandCenter.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "contact_submissions": {
+    "files": [
+      "/pages/Contact.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "ai_agent_installations": {
+    "files": [
+      "/pages/desktop/AgentMarketplace.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "workflow_runs": {
+    "files": [
+      "/pages/desktop/AgentWorkspace.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "agent_sessions": {
+    "files": [
+      "/pages/desktop/AgentWorkspace.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "media": {
+    "files": [
+      "/pages/desktop/DesktopWallpaper.tsx"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "requisitions": {
+    "files": [
+      "/pages/desktop/RecruiterWorkspace.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "candidates": {
+    "files": [
+      "/pages/desktop/RecruiterWorkspace.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "communication_events": {
+    "files": [
+      "/pages/desktop/RecruiterWorkspace.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mobile_action_queue": {
+    "files": [
+      "/pages/desktop/RecruiterWorkspace.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "emergency_contacts": {
+    "files": [
+      "/pages/EmergencyServices.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "expert_sessions": {
+    "files": [
+      "/pages/ExpertSessions.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "session_attendees": {
+    "files": [
+      "/pages/ExpertSessions.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "fame_leaderboard": {
+    "files": [
+      "/pages/FameLeaderboard.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "food_vendors": {
+    "files": [
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/OrderHistory.tsx",
+      "/pages/food/OrderTracking.tsx",
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/FoodOrdering.tsx"
+    ],
+    "select": 5,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "food_orders": {
+    "files": [
+      "/pages/food/FoodCheckout.tsx",
+      "/pages/food/OrderHistory.tsx",
+      "/pages/food/OrderTracking.tsx",
+      "/pages/vendor/restaurant/RestaurantOrders.tsx",
+      "/pages/vendor/VendorDashboard.tsx"
+    ],
+    "select": 4,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "menu_items": {
+    "files": [
+      "/pages/food/RestaurantDetail.tsx",
+      "/pages/vendor/restaurant/RestaurantMenu.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "lab_reports": {
+    "files": [
+      "/pages/HealthHub.tsx",
+      "/pages/HealthPassport.tsx",
+      "/pages/LabReports.tsx"
+    ],
+    "select": 3,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "wellness_tracking": {
+    "files": [
+      "/pages/HealthPassport.tsx",
+      "/pages/HealthRiskPredictions.tsx",
+      "/pages/WellnessTracking.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "health_reminders": {
+    "files": [
+      "/pages/HealthReminders.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 2,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_challenges": {
+    "files": [
+      "/pages/HealthStreaksPage.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chat_folders": {
+    "files": [
+      "/pages/Home.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "home_service_bookings": {
+    "files": [
+      "/pages/HomeServices.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "saved_jobs": {
+    "files": [
+      "/pages/LocalJobs.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "local_jobs_db": {
+    "files": [
+      "/pages/LocalJobs.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "monetization_leads": {
+    "files": [
+      "/pages/LocalJobs.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "medications": {
+    "files": [
+      "/pages/MedicationInteractionsPage.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mental_health_assessments": {
+    "files": [
+      "/pages/MentalHealth.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_installs": {
+    "files": [
+      "/pages/MiniApps.tsx",
+      "/pages/store/AppDetail.tsx",
+      "/pages/store/AppUpdates.tsx",
+      "/pages/store/MyApps.tsx"
+    ],
+    "select": 4,
+    "insert": 0,
+    "update": 1,
+    "delete": 2,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "user_installed_apps": {
+    "files": [
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_usage": {
+    "files": [
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "app_analytics": {
+    "files": [
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "select": 0,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_track_app_usage": {
+    "files": [
+      "/pages/MiniAppsStore.tsx"
+    ],
+    "calls": 1
+  },
+  "nutrition_logs": {
+    "files": [
+      "/pages/NutritionTracker.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "nutrition_daily_summary": {
+    "files": [
+      "/pages/NutritionTracker.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "identities": {
+    "files": [
+      "/pages/Profile.tsx"
+    ],
+    "select": 4,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "discover_profiles": {
+    "files": [
+      "/pages/Profile.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "health_records": {
+    "files": [
+      "/pages/Profile.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "services": {
+    "files": [
+      "/pages/provider/Services.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 2,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "service_reviews": {
+    "files": [
+      "/pages/ProviderDetails.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "specializations": {
+    "files": [
+      "/pages/ProviderRegister.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "provider_specializations": {
+    "files": [
+      "/pages/ProviderRegister.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "connection_requests": {
+    "files": [
+      "/pages/PublicProfile.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_get_public_profile": {
+    "files": [
+      "/pages/PublicProfile.tsx"
+    ],
+    "calls": 1
+  },
+  "reward_items": {
+    "files": [
+      "/pages/RewardShop.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "reward_redemptions": {
+    "files": [
+      "/pages/RewardShop.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "seller_settlements": {
+    "files": [
+      "/pages/seller/SellerSettlements.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "home_service_providers": {
+    "files": [
+      "/pages/SellerPayouts.tsx",
+      "/pages/SellerReviews.tsx",
+      "/pages/SellerSubscription.tsx"
+    ],
+    "select": 3,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "seller_transactions": {
+    "files": [
+      "/pages/SellerPayouts.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "seller_withdrawal_requests": {
+    "files": [
+      "/pages/SellerPayouts.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "seller_invoices": {
+    "files": [
+      "/pages/SellerPayouts.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "home_service_reviews": {
+    "files": [
+      "/pages/SellerReviews.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "review_replies": {
+    "files": [
+      "/pages/SellerReviews.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "reported_reviews": {
+    "files": [
+      "/pages/SellerReviews.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "smart_push_preferences": {
+    "files": [
+      "/pages/SmartPushPreferences.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "feature_catalog": {
+    "files": [
+      "/pages/SmartPushPreferences.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "call_insights": {
+    "files": [
+      "/pages/StandaloneDialer.tsx",
+      "/services/callerIntelligenceService.ts"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 2,
+    "realtime": 0
+  },
+  "app_reviews": {
+    "files": [
+      "/pages/store/AppDetail.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_search_interactions": {
+    "files": [
+      "/pages/UniversalSearch.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "chatr_user_subscriptions": {
+    "files": [
+      "/pages/UserSubscription.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "vendors": {
+    "files": [
+      "/pages/vendor/deals/DealsManagement.tsx",
+      "/pages/vendor/healthcare/DoctorAnalytics.tsx",
+      "/pages/vendor/healthcare/DoctorAppointments.tsx",
+      "/pages/vendor/healthcare/DoctorAvailability.tsx",
+      "/pages/vendor/healthcare/DoctorPatients.tsx",
+      "/pages/vendor/restaurant/RestaurantMenu.tsx",
+      "/pages/vendor/restaurant/RestaurantOrders.tsx",
+      "/pages/vendor/VendorDashboard.tsx",
+      "/pages/vendor/VendorLogin.tsx",
+      "/pages/vendor/VendorRegister.tsx",
+      "/pages/vendor/VendorSettings.tsx"
+    ],
+    "select": 10,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "merchant_deals": {
+    "files": [
+      "/pages/vendor/deals/DealsManagement.tsx",
+      "/pages/vendor/VendorDashboard.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "provider_availability": {
+    "files": [
+      "/pages/vendor/healthcare/DoctorAvailability.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "menu_categories": {
+    "files": [
+      "/pages/vendor/restaurant/RestaurantMenu.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "vendor_notifications": {
+    "files": [
+      "/pages/vendor/VendorDashboard.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "restaurant_details": {
+    "files": [
+      "/pages/vendor/VendorRegister.tsx",
+      "/pages/vendor/VendorSettings.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "deal_merchant_details": {
+    "files": [
+      "/pages/vendor/VendorRegister.tsx"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "wellness_circles": {
+    "files": [
+      "/pages/WellnessCircles.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "circle_messages": {
+    "files": [
+      "/pages/WellnessCircles.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "wellness_circle_members": {
+    "files": [
+      "/pages/WellnessCircles.tsx"
+    ],
+    "select": 1,
+    "insert": 2,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "user_preferences": {
+    "files": [
+      "/pages/WellnessTracking.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "youth_posts": {
+    "files": [
+      "/pages/YouthEngagement.tsx",
+      "/pages/YouthFeed.tsx"
+    ],
+    "select": 8,
+    "insert": 2,
+    "update": 5,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "post_comments": {
+    "files": [
+      "/pages/YouthFeed.tsx"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "activity_logs": {
+    "files": [
+      "/platform/Domain/Activity/ActivityService.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "comments": {
+    "files": [
+      "/platform/Domain/Collaboration/CommentThread.tsx"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 2,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "document_locks": {
+    "files": [
+      "/platform/Domain/Collaboration/DocumentLockBadge.tsx"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "presence_sessions": {
+    "files": [
+      "/platform/Domain/Collaboration/PresenceService.ts"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "chat_attachments": {
+    "files": [
+      "/platform/Domain/Communication/MessagingService.ts"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "calendar_events": {
+    "files": [
+      "/platform/Domain/Execution/CalendarService.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "event_attendees": {
+    "files": [
+      "/platform/Domain/Execution/CalendarService.ts"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 1,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "task_lists": {
+    "files": [
+      "/platform/Domain/Execution/TaskService.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "search_index": {
+    "files": [
+      "/platform/Domain/Knowledge/SearchService.ts"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "RPC_search_workspace": {
+    "files": [
+      "/platform/Domain/Knowledge/SearchService.ts"
+    ],
+    "calls": 1
+  },
+  "spam_reports": {
+    "files": [
+      "/services/callerIntelligenceService.ts"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mcp_api_keys": {
+    "files": [
+      "/services/mcpService.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mcp_request_logs": {
+    "files": [
+      "/services/mcpService.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mcp_webhooks": {
+    "files": [
+      "/services/mcpWebhookService.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 1,
+    "delete": 1,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "mcp_webhook_deliveries": {
+    "files": [
+      "/services/mcpWebhookService.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "security_audit_events": {
+    "files": [
+      "/services/securityService.ts"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "media_files": {
+    "files": [
+      "/services/storageService.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "trust_factors": {
+    "files": [
+      "/services/trustEventService.ts"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_recalculate_trust_score": {
+    "files": [
+      "/services/trustEventService.ts"
+    ],
+    "calls": 1
+  },
+  "network_metrics": {
+    "files": [
+      "/utils/adaptiveBitrateEngine.ts"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "caller_identity_observations": {
+    "files": [
+      "/utils/callerIdentityResolver.ts",
+      "/utils/contactSync.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "contacts_hash": {
+    "files": [
+      "/utils/callerIdentityResolver.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "caller_id_aggregates": {
+    "files": [
+      "/utils/callerIdentityResolver.ts"
+    ],
+    "select": 1,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "call_event_store": {
+    "files": [
+      "/utils/callQuality.ts"
+    ],
+    "select": 0,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "device_capabilities": {
+    "files": [
+      "/utils/deviceCapabilities.ts"
+    ],
+    "select": 0,
+    "insert": 0,
+    "update": 0,
+    "delete": 0,
+    "upsert": 1,
+    "realtime": 0
+  },
+  "invite_links": {
+    "files": [
+      "/utils/inviteLinkGenerator.ts"
+    ],
+    "select": 2,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "login_attempts": {
+    "files": [
+      "/utils/pinSecurity.ts"
+    ],
+    "select": 1,
+    "insert": 1,
+    "update": 0,
+    "delete": 0,
+    "upsert": 0,
+    "realtime": 0
+  },
+  "RPC_create_mutual_contact": {
+    "files": [
+      "/utils/testUserSetup.ts"
+    ],
+    "calls": 1
+  }
+}

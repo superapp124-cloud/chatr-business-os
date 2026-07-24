@@ -1,0 +1,44 @@
+{
+  "id": "goal.travel.flight.book",
+  "intent_type": "travel.flight.book",
+  "name": "Book Flight Goal Template",
+  "successCriteria": [
+    "Ticket issued for {destination}",
+    "Receipt stored in Knowledge Base",
+    "Flight added to Calendar"
+  ],
+  "subgoals": [
+    {
+      "name": "search_flights",
+      "parameters": {
+        "query": "flights to {destination}"
+      }
+    },
+    {
+      "name": "pay_ticket",
+      "requires": ["search_flights"],
+      "parameters": {
+        "amount": "{flight.price}"
+      }
+    },
+    {
+      "name": "schedule_trip",
+      "requires": ["pay_ticket"],
+      "parameters": {
+        "title": "Flight to {destination}",
+        "time_range": "upcoming"
+      }
+    },
+    {
+      "name": "store_receipt",
+      "requires": ["pay_ticket"],
+      "parameters": {
+        "id": "receipt_{destination}",
+        "label": "Flight Receipt to {destination}",
+        "properties": {
+          "status": "paid"
+        }
+      }
+    }
+  ]
+}

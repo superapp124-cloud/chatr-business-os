@@ -1,0 +1,1981 @@
+﻿
+05-19 14:33:31.667 I/FcmSvc  (23709): Getting FCM token from the source
+05-19 14:33:31.675 I/FcmSvc  (23709): Received FCM token result [true]
+05-19 14:33:31.676 I/FcmSvc  (23709): Returning FCM token - IsValid[true]
+05-19 14:33:32.226 I/FcmTokenReaderWriter(23709): isPushSyncAvailable: Token[true] PlaySvc[true] 
+ForceUnavailable[false]
+05-19 14:33:32.248 I/HxForceSyncUtil(23709): shouldSchedulePeriodicSyncWorker isFcmPushSyncAvailable[true] 
+isOEMPushAvailable[false] Gallatin[false] DirectSync[false]
+05-19 14:33:41.341 I/ActivityTaskManager( 1147): START u0 {act=android.intent.action.MAIN 
+cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.chatr.app/.MainActivity bnds=[427,372][561,546]} from 
+uid 10088
+05-19 14:33:41.367 D/PowerHalWrapper( 1147): <amsBoostResume> last:com.motorola.launcher3, next:com.chatr.app 
+05-19 14:33:41.383 D/PowerHalWrapper( 1147): amsBoostProcessCreate package:com.chatr.app 
+05-19 14:33:41.412 I/BufferQueueConsumer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca8551800,id:2121,api:0,p:-1,c:582) setConsumerName: Splash Screen com.chatr.app#0
+05-19 14:33:41.412 I/BufferQueueConsumer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca8551800,id:2121,api:0,p:-1,c:582) setDefaultBufferSize: width=720 height=1600
+05-19 14:33:41.415 I/ActivityManager( 1147): Start proc 24274:com.chatr.app/u0a266 for activity 
+{com.chatr.app/com.chatr.app.MainActivity}
+05-19 14:33:41.417 I/BufferQueueProducer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca8551800,id:2121,api:2,p:1147,c:582) connect(P): api=2 producer=(1147:system_server) 
+producerControlledByApp=false
+05-19 14:33:41.420 I/com.chatr.app(24274): Late-enabling -Xcheck:jni
+05-19 14:33:41.456 E/com.chatr.app(24274): Unknown bits set in runtime_flags: 0x8000
+05-19 14:33:41.501 D/PowerHalWrapper( 1147): amsBoostNotify pid:24274,activity:com.chatr.app.MainActivity, 
+package:com.chatr.app, mProcessCreatePackcom.chatr.app 
+05-19 14:33:41.502 I/libPowerHal(  564): [perfNotifyAppState] foreground:com.chatr.app, pid:24274, uid:10266
+05-19 14:33:41.502 I/UxUtility(  564): notifyForegroundApp pack:com.chatr.app, uid:10266
+05-19 14:33:41.502 I/powerd  (  564): [powerd_req] POWER_MSG_NOTIFY_STATE, pc:1, com.motorola.launcher3 => 
+com.chatr.app
+05-19 14:33:41.970 E/Layer   (  582): [Surface(name=AppWindowToken{fad04e3 token=Token{141f512 ActivityRecord{d76dc9d 
+u0 com.chatr.app/.MainActivity t384}}})/@0xc375010 - animation-leash#0] No local sync point found
+05-19 14:33:41.970 E/Layer   (  582): [Surface(name=AppWindowToken{fad04e3 token=Token{141f512 ActivityRecord{d76dc9d 
+u0 com.chatr.app/.MainActivity t384}}})/@0xc375010 - animation-leash#0] No local sync point found
+05-19 14:33:42.000 E/Layer   (  582): [Surface(name=AppWindowToken{fad04e3 token=Token{141f512 ActivityRecord{d76dc9d 
+u0 com.chatr.app/.MainActivity t384}}})/@0xc375010 - animation-leash#0] No local sync point found
+05-19 14:33:44.202 I/FirebaseCrashlytics(24274): Initializing Firebase Crashlytics 19.4.0 for com.chatr.app
+05-19 14:33:44.365 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.365 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.366 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, linking, allowed)
+05-19 14:33:44.366 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, linking, allowed)
+05-19 14:33:44.366 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.372 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+05-19 14:33:44.374 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:44.374 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.375 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, linking, allowed)
+05-19 14:33:44.383 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.386 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, 
+reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, 
+reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, 
+reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, 
+reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, 
+reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, 
+reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V 
+(greylist, reflection, allowed)
+05-19 14:33:44.387 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V 
+(greylist, reflection, allowed)
+05-19 14:33:44.388 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+05-19 14:33:44.388 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+05-19 14:33:44.389 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, reflection, allowed)
+05-19 14:33:44.389 W/com.chatr.app(24274): Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, 
+allowed)
+05-19 14:33:44.389 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, reflection, allowed)
+05-19 14:33:44.390 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, reflection, allowed)
+05-19 14:33:44.390 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, reflection, allowed)
+05-19 14:33:44.390 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, reflection, allowed)
+05-19 14:33:44.390 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-19 14:33:44.390 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-19 14:33:44.395 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.401 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.476 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->compareAndSwapInt(Ljava/lang/Object;JII)Z (greylist, linking, allowed)
+05-19 14:33:44.476 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z (greylist, linking, allowed)
+05-19 14:33:44.476 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+05-19 14:33:44.477 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.477 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObjectVolatile(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:44.477 W/com.chatr.app(24274): Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; 
+(greylist, reflection, allowed)
+05-19 14:33:44.500 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, 
+allowed)
+05-19 14:33:44.500 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.532 I/PhenotypeResourceReader(17676): unable to find any Phenotype resource metadata for com.chatr.app
+05-19 14:33:44.610 I/ChatrApplication(24274): ≡ƒÜÇ CHATR+ Application starting...
+05-19 14:33:44.610 W/com.chatr.app(24274): Accessing hidden method 
+Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class; (greylist, linking, allowed)
+05-19 14:33:44.616 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.616 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, linking, allowed)
+05-19 14:33:44.616 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, linking, allowed)
+05-19 14:33:44.616 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, linking, allowed)
+05-19 14:33:44.616 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:44.617 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putOrderedInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+05-19 14:33:44.617 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putOrderedLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+05-19 14:33:44.617 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putOrderedObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:44.637 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.637 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:44.640 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.640 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, linking, allowed)
+05-19 14:33:44.643 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, linking, allowed)
+05-19 14:33:44.644 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.644 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, linking, allowed)
+05-19 14:33:44.644 I/IncomingCallActivity(24274): MediaPlayer background pre-warm skipped to prevent media conflicts
+05-19 14:33:44.647 I/ChatrApplication(24274): Γ£à Firebase initialized
+05-19 14:33:44.650 D/ChatrApplication(24274): ≡ƒôó Created notification channel: calls
+05-19 14:33:44.651 D/ChatrApplication(24274): ≡ƒôó Created notification channel: calls_high_v2
+05-19 14:33:44.656 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, 
+reflection, allowed)
+05-19 14:33:44.656 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, 
+reflection, allowed)
+05-19 14:33:44.658 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, reflection, allowed)
+05-19 14:33:44.658 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, reflection, allowed)
+05-19 14:33:44.658 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, reflection, allowed)
+05-19 14:33:44.658 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, reflection, allowed)
+05-19 14:33:44.658 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, reflection, allowed)
+05-19 14:33:44.659 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-19 14:33:44.659 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-19 14:33:44.662 D/ChatrApplication(24274): ≡ƒôó Created notification channel: messages_v2
+05-19 14:33:44.663 D/ChatrApplication(24274): ≡ƒôó Created notification channel: urgent
+05-19 14:33:44.665 D/ChatrApplication(24274): ≡ƒôó Created notification channel: location
+05-19 14:33:44.666 D/ChatrApplication(24274): ≡ƒôó Created notification channel: health
+05-19 14:33:44.667 D/ChatrApplication(24274): ≡ƒôó Created notification channel: foreground_service
+05-19 14:33:44.667 I/ChatrApplication(24274): Γ£à All notification channels created
+05-19 14:33:44.677 I/Telecom-PhoneAccountRegistrar( 1147): Modify account: 
+[ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0}(lbl: Chatr+ Calls -> 
+Chatr+)]: TSI.rPA@G34
+05-19 14:33:44.680 I/Telecom-CallsManager( 1147): handlePhoneAccountChanged: phoneAccount=[[X] PhoneAccount: 
+ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0} Capabilities: 
+SelfManaged SuppVideo Video  Audio Routes: BESW Schemes: tel chatr  Extras: 
+Bundle[{android.telecom.extra.LOG_SELF_MANAGED_CALLS=true}] GroupId: ***]: TSI.rPA@G34
+05-19 14:33:44.681 I/ChatrApplication(24274): Γ£à PhoneAccount registered with TelecomManager
+05-19 14:33:44.711 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:44.711 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; 
+(greylist,core-platform-api, linking, allowed)
+05-19 14:33:44.712 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:44.713 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.714 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:44.715 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, 
+allowed)
+05-19 14:33:44.718 I/FA      (24274):   adb shell setprop debug.firebase.analytics.app com.chatr.app
+05-19 14:33:44.817 I/ChatrApplication(24274): Γ£à CHATR+ Application initialized successfully
+05-19 14:33:44.841 D/libMEOW (24274): applied 1 plugins for [com.chatr.app]:
+05-19 14:33:44.926 I/com.chatr.app(24274): Waiting for a blocking GC ClassLinker
+05-19 14:33:44.945 I/com.chatr.app(24274): WaitForGcToComplete blocked ClassLinker on ClassLinker for 18.800ms
+05-19 14:33:45.198 W/com.chatr.app(24274): Accessing hidden method 
+Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+05-19 14:33:45.446 I/ActivityManager( 1147): Start proc 
+24346:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i211 for  
+{com.chatr.app/org.chromium.content.app.SandboxedProcessService0:0}
+05-19 14:33:45.704 I/com.chatr.app(24274): Waiting for a blocking GC ClassLinker
+05-19 14:33:45.747 I/com.chatr.app(24274): WaitForGcToComplete blocked ClassLinker on ClassLinker for 43.571ms
+05-19 14:33:45.978 D/ImsResolver( 1612): maybeAddedImsService, packageName: com.chatr.app
+05-19 14:33:46.174 W/com.chatr.app(24274): Accessing hidden method 
+Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController; (blacklist, linking, allowed)
+05-19 14:33:46.174 W/com.chatr.app(24274): Accessing hidden method Landroid/view/WindowInsetsController;->hide(I)V 
+(blacklist, linking, allowed)
+05-19 14:33:46.244 I/StartupNotificationsHelper(23709): Is FCM token valid: true
+05-19 14:33:46.410 D/libMEOW (24274): applied 1 plugins for [com.chatr.app]:
+05-19 14:33:46.484 I/ChatrMainActivity(24274): MainActivity onNewIntent: android.intent.action.MAIN
+05-19 14:33:46.489 I/ChatrMainActivity(24274): Handling action=null intentAction=android.intent.action.MAIN data=null
+05-19 14:33:46.489 I/ChatrMainActivity(24274): MainActivity onCreate
+05-19 14:33:46.501 I/ChatrMainActivity(24274): All permissions already granted
+05-19 14:33:46.511 I/ChatrCallScreening(24274): Block anonymous: false
+05-19 14:33:46.512 I/ChatrCallScreening(24274): Block unknown: false
+05-19 14:33:46.512 I/ChatrCallScreening(24274): Require name announcement: false
+05-19 14:33:46.512 I/ChatrMainActivity(24274): VoIP services initialized
+05-19 14:33:46.589 I/ChatrMainActivity(24274): WebView configured with native bridges
+05-19 14:33:46.590 I/ChatrMainActivity(24274): Skipping duplicate intent action=null 
+intentAction=android.intent.action.MAIN callId=null
+05-19 14:33:46.661 I/FcmTokenUpdateJob(23709): Hx FCM token update job starting
+05-19 14:33:46.685 D/ViewRootImpl[MainActivity](24274): hardware acceleration = true , fakeHwAccelerated = false, 
+sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-19 14:33:46.697 D/libMEOW (24274): applied 1 plugins for [com.chatr.app]:
+05-19 14:33:46.700 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 0, Parent = 
+android.view.ViewRootImpl@9fa52e3, this = DecorView@368a4e0[MainActivity]
+05-19 14:33:46.744 I/HxFcmTokenUpdater(23709): FCM token updated successfully in HxCore
+05-19 14:33:46.752 I/WM-WorkerWrapper(23709): Worker result SUCCESS for Work [ 
+id=862e7a3a-fa1b-42ad-9ca6-85adfde5907f, tags={ com.microsoft.office.outlook.fcm.FcmTokenUpdateJob, FcmTokenUpdateJob 
+} ]
+05-19 14:33:46.839 W/com.chatr.app(24274): Accessing hidden method 
+Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+05-19 14:33:46.839 W/com.chatr.app(24274): Accessing hidden field 
+Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+05-19 14:33:46.841 W/com.chatr.app(24274): Accessing hidden field 
+Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+05-19 14:33:46.863 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:46.866 I/WindowManager( 1147): Relayout Window{256b28b u0 com.chatr.app/com.chatr.app.MainActivity}: 
+oldVis=4 newVis=0 focusMayChange = true
+05-19 14:33:46.870 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:46.871 I/BufferQueueConsumer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:0,p:-1,c:582) setConsumerName: 
+com.chatr.app/com.chatr.app.MainActivity#0
+05-19 14:33:46.871 I/BufferQueueConsumer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:0,p:-1,c:582) setDefaultBufferSize: 
+width=720 height=1600
+05-19 14:33:46.874 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, linking, allowed)
+05-19 14:33:46.879 I/WindowManager( 1147): ***** PhoneWindowManager, focusChangedLw, newFocus=Token{141f512 
+ActivityRecord{d76dc9d u0 com.chatr.app/.MainActivity t384}}
+05-19 14:33:46.920 D/libMEOW (24274): applied 1 plugins for [com.chatr.app]:
+05-19 14:33:46.941 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) connect(P): api=1 
+producer=(24274:com.chatr.app) producerControlledByApp=false
+05-19 14:33:47.095 I/BufferQueueProducer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca8551800,id:2121,api:2,p:1147,c:582) disconnect(P): api 2
+05-19 14:33:47.106 I/ChatrApplication(24274): ≡ƒô▒ FCM Token: cNPTkk-CQViSaUObArL4...
+05-19 14:33:47.123 I/ActivityTaskManager( 1147): Displayed com.chatr.app/.MainActivity: +5s746ms
+05-19 14:33:47.215 I/GoogleInputMethodService( 1722): GoogleInputMethodService.onStartInput():1446 
+onStartInput(EditorInfo{EditorInfo{packageName=com.chatr.app, inputType=0, inputTypeString=NULL, enableLearning=false, 
+autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, 
+actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=2131362515, 
+fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-19 14:33:47.220 I/ChatrMainActivity(24274): WebView console: Skipping SW registration in native shell 
+(https://localhost/:228)
+05-19 14:33:47.277 I/BufferQueue(  582): [Splash Screen com.chatr.app#0](this:0x7ca8551800,id:2121,api:2,p:-1,c:-1) 
+~BufferQueueCore
+05-19 14:33:47.384 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:33:47.384 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:33:47.407 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:47.415 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, linking, allowed)
+05-19 14:33:47.416 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:33:47.491 W/ChatrMainActivity(24274): WebView startup check: url=https://localhost/ progress=70
+05-19 14:33:47.528 W/com.chatr.app(24274): Accessing hidden field 
+Landroid/content/pm/ApplicationInfo;->primaryCpuAbi:Ljava/lang/String; (greylist, reflection, allowed)
+05-19 14:33:47.663 I/com.chatr.app(24274): Background concurrent copying GC freed 22885(1129KB) AllocSpace objects, 
+6(120KB) LOS objects, 49% free, 5844KB/11MB, paused 8.136ms total 323.327ms
+05-19 14:33:47.685 I/ChatrApplication(24274): Background pre-warming of classes complete
+05-19 14:33:48.101 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [Main] Starting React mount... 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:48.103 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [Main] Root element found, rendering App... 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:48.114 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [Main] Render call completed 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:48.173 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [App] Component rendering... 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:48.288 D/Capacitor(24274): Handling local request: https://localhost/chatr-logo.png
+05-19 14:33:48.389 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=2.27 
+dur=1319.96 max=1141.82 min=57.00
+05-19 14:33:48.393 I/ChatrMainActivity(24274): WebView console: ≡ƒôì Using cached location (instant) 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:48.395 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [Performance] Initializing optimizations... 
+(https://localhost/assets/index-CmMpmulh.js:81)
+05-19 14:33:48.397 I/ChatrMainActivity(24274): WebView console: Γ£à [Performance] Optimizations complete 
+(https://localhost/assets/index-CmMpmulh.js:81)
+05-19 14:33:48.726 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ Initializing native app features... 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:48.728 I/ChatrMainActivity(24274): WebView console: [useNativeAuthSync] NativeAuth bridge detected, 
+setting up auth sync (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:48.730 I/ChatrMainActivity(24274): WebView console: [NativeCallBridge] Active 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:48.732 I/ChatrMainActivity(24274): Web app reported ready
+05-19 14:33:48.739 D/Capacitor(24274): Handling local request: https://localhost/assets/chatr-icon-logo-B8XxUvak.png
+05-19 14:33:48.742 I/ChatrMainActivity(24274): WebView console: %cnative %cKeyboard.addListener (#33454211) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.743 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.744 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.747 I/ChatrMainActivity(24274): WebView console: %cnative %cKeyboard.addListener (#33454212) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.747 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.748 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.749 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseAnalytics.setEnabled (#33454213) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.750 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.750 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.751 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseCrashlytics.setEnabled (#33454214) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.752 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.753 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.753 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseAnalytics.logEvent (#33454215) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.754 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.755 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.755 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey 
+(#33454216) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.756 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.757 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.758 I/ChatrMainActivity(24274): WebView console: %cnative %cNetwork.addListener (#33454217) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.759 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.760 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.761 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454218) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.761 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.762 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.763 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454219) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.763 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.764 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.765 I/ChatrMainActivity(24274): WebView console: %cnative %cSplashScreen.hide (#33454220) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.766 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.766 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.767 I/ChatrMainActivity(24274): WebView console: %cnative %cKeyboard.addListener (#33454221) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.768 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.769 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.770 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454222) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.770 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.771 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.772 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setOverlaysWebView (#33454223) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.773 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.774 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.775 I/ChatrMainActivity(24274): WebView console: %cnative %cKeyboard.addListener (#33454224) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:48.776 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:48.777 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:48.777 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [App] Signaling WebApp Ready to Native Shell 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:48.819 I/ChatrMainActivity(24274): Web app reported ready
+05-19 14:33:49.036 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [App] Signaling WebApp Ready to Native Shell 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:49.038 I/ChatrMainActivity(24274): Web app reported ready
+05-19 14:33:49.039 I/ChatrMainActivity(24274): WebView console: ≡ƒÄ» Setting up native call UI for android 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:49.041 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å CallKit plugin not found. Install 
+@capacitor-community/callkit (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:49.043 I/ChatrMainActivity(24274): WebView console: Run: npm install @capacitor-community/callkit 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:49.045 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseAnalytics.setEnabled (#33454213) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:49.045 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:49.047 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:49.047 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseCrashlytics.setEnabled (#33454214) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:49.048 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:49.050 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:49.051 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseAnalytics.logEvent (#33454215) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:49.051 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:49.054 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:49.054 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey 
+(#33454216) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 
+(:328)
+05-19 14:33:49.055 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:49.058 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:49.059 I/ChatrMainActivity(24274): WebView console: %cresult %cSplashScreen.hide (#33454220) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:49.059 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:49.061 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:49.062 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setStyle (#33454225) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:49.063 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:49.063 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:49.065 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setOverlaysWebView (#33454223) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:49.065 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:49.067 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:49.068 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setStyle (#33454226) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:49.069 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:49.069 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:51.394 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=10.65 
+dur=3005.65 max=2368.05 min=5.91
+05-19 14:33:51.419 I/ChatrMainActivity(24274): WebView console: [BatteryOptimization] Requesting exemption... 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.421 I/ChatrMainActivity(24274): WebView console: Γ£à Service Worker state reset (native-shell): 
+registrations=0, caches=0 (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.423 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ Service worker disabled for native shell 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:51.424 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setStyle (#33454225) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.425 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:51.427 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:51.427 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setBackgroundColor (#33454227) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:51.428 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:51.428 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:51.429 I/ChatrMainActivity(24274): WebView console: ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓ
+òÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.431 I/ChatrMainActivity(24274): WebView console: Γòæ                                        Γòæ 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.433 I/ChatrMainActivity(24274): WebView console: Γòæ     ≡ƒÜÇ CHATR OS - Third OS Layer      Γòæ 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.434 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: Γòæ   
+  ≡ƒÜÇ CHATR OS - Third OS Layer      Γòæ
+05-19 14:33:51.435 I/ChatrMainActivity(24274): WebView console: Γòæ          Initializing...               Γòæ 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.437 I/ChatrMainActivity(24274): WebView console: Γòæ                                        Γòæ 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.439 I/ChatrMainActivity(24274): WebView console: ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓ
+òÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥ (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.441 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ CHATR OS: Initializing App Lifecycle Manager 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.442 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: ≡ƒÜÇ 
+CHATR OS: Initializing App Lifecycle Manager
+05-19 14:33:51.445 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ Loaded 0 installed apps 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.446 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ Native lifecycle listeners ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.448 I/ChatrMainActivity(24274): WebView console: Γ£à App Lifecycle Manager ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.450 I/ChatrMainActivity(24274): WebView console: ≡ƒôí CHATR OS: Initializing Inter-App Communication 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.451 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: ≡ƒôí 
+CHATR OS: Initializing Inter-App Communication
+05-19 14:33:51.599 I/com.chatr.app(24274): NativeAlloc concurrent copying GC freed 32734(1616KB) AllocSpace objects, 
+10(268KB) LOS objects, 49% free, 5486KB/10MB, paused 421us total 107.214ms
+05-19 14:33:51.728 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454217) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.729 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:51.730 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:51.731 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setStyle (#33454226) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.731 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:51.733 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:51.734 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setBackgroundColor (#33454228) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:51.735 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:51.735 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:51.778 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setBackgroundColor (#33454227) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.779 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:51.780 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:51.781 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setOverlaysWebView (#33454229) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:51.781 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:51.782 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:51.801 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setBackgroundColor (#33454228) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.802 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:51.803 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:51.821 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setOverlaysWebView (#33454229) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.822 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:51.823 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:51.824 I/ChatrMainActivity(24274): WebView console: [DeepLink] Initializing listener 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:51.825 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454230) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:51.825 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:51.826 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:51.826 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.getLaunchUrl (#33454231) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:51.826 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:51.827 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:51.843 I/ChatrMainActivity(24274): WebView console: %cresult %cApp.getLaunchUrl (#33454231) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:51.844 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:51.845 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:52.226 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/icons/icon-512x512.png 
+was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it 
+has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:33:52.227 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/chatr-logo.png was 
+preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has 
+an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:33:52.228 W/Capacitor/Console(24274): File: https://localhost/#/home - Line 0 - Msg: The resource 
+https://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's 
+load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-19 14:33:52.228 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/icons/icon-192x192.png 
+was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it 
+has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:33:52.337 I/ChatrMainActivity(24274): WebView console: [WebRTC] Pre-fetching TURN configurations in the 
+background... (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:33:52.353 I/ChatrMainActivity(24274): WebView console: ≡ƒöö GlobalCallListener active for user: 
+29f65ca9-a811-492b-b024-09689a44dbf0 (hasNativeUI: true) (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.408 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=27.63 
+dur=1013.32 max=331.71 min=6.23
+05-19 14:33:52.432 D/ProfileInstaller(24274): Installing profile for com.chatr.app
+05-19 14:33:52.536 I/ChatrMainActivity(24274): WebView console: ≡ƒôí incoming-calls channel status: SUBSCRIBED 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.537 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] incoming channel subscribed: 
+incoming recovery already running (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.561 I/ChatrMainActivity(24274): WebView console: ≡ƒôí call-updates channel status: SUBSCRIBED 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.562 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] call-updates channel subscribed: 
+incoming recovery already running (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.570 I/ChatrMainActivity(24274): WebView console: ≡ƒôí outgoing-calls channel status: SUBSCRIBED 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.595 I/ChatrMainActivity(24274): WebView console: ≡ƒôí outgoing-updates channel status: SUBSCRIBED 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.602 I/ChatrMainActivity(24274): WebView console: ≡ƒôí video-upgrade channel status: SUBSCRIBED 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:52.836 I/ChatrMainActivity(24274): WebView console: ≡ƒöö GlobalNotificationListener active for user: 
+29f65ca9-a811-492b-b024-09689a44dbf0 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:53.007 I/ChatrMainActivity(24274): WebView console: ≡ƒôí global-messages-notifications channel status: 
+SUBSCRIBED (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:53.010 I/ChatrMainActivity(24274): WebView console: ≡ƒôí global-appointments-notifications channel status: 
+SUBSCRIBED (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:53.039 I/WM-WorkerWrapper(24274): Worker result SUCCESS for Work [ 
+id=a92c0749-b223-495d-aed2-428675f50e57, tags={ com.chatr.app.nativecalls.NativeCallSyncWorker } ]
+05-19 14:33:53.099 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454217) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:53.099 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:53.100 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:53.146 I/ChatrMainActivity(24274): WebView console: [WebRTC] Background pre-fetch failed: Error: Edge 
+Timeout (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:33:53.411 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=47.84 
+dur=1003.40 max=218.53 min=14.09
+05-19 14:33:54.224 D/ImsResolver( 1612): maybeAddedImsService, packageName: com.chatr.app
+05-19 14:33:54.343 I/ChatrMainActivity(24274): WebView console: Initializing deferred native app features... 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:54.345 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ Native permissions ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:54.346 I/ChatrMainActivity(24274): WebView console: Γ£à Native app initialization complete 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:54.416 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=46.78 
+dur=1004.66 max=239.11 min=14.53
+05-19 14:33:55.246 I/ChatrMainActivity(24274): WebView console: [DeepLink] Removing listener 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.251 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ Initializing native app features... 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.253 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.addListener (#33454232) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.254 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.255 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.256 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseAnalytics.setUserId (#33454233) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.256 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.256 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.257 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseCrashlytics.setUserId (#33454234) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.257 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.258 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.258 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey 
+(#33454235) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.259 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.259 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.260 I/ChatrMainActivity(24274): WebView console: %cnative %cNetwork.addListener (#33454236) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.261 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.261 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.262 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454237) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.262 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.263 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.263 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454238) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.264 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.264 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.265 I/ChatrMainActivity(24274): WebView console: %cnative %cSplashScreen.hide (#33454239) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.265 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.266 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.266 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.removeListener (#33454240) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.266 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.267 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.267 I/ChatrMainActivity(24274): WebView console: %cnative %cNetwork.removeListener (#33454241) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.268 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.268 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.269 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.removeListener (#33454242) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.269 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.269 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.270 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.removeListener (#33454243) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.271 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.271 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.272 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.addListener (#33454244) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.272 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.272 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.273 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.addListener (#33454245) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.273 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.274 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.274 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.addListener (#33454246) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.275 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.275 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.276 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.createChannel (#33454247) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.276 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.277 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.283 I/ChatrMainActivity(24274): WebView console: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 
+29f65ca9... (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.290 I/ChatrMainActivity(24274): WebView console: [NativeAuth] Auth credentials synced to native 
+SharedPreferences (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.291 I/ChatrMainActivity(24274): WebView console: [useNativeAuthSync] Auth event: INITIAL_SESSION 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.292 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseAnalytics.setUserId (#33454233) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.293 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.294 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.300 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseCrashlytics.setUserId (#33454234) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.301 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.302 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.304 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey 
+(#33454235) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 
+(:328)
+05-19 14:33:55.304 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.305 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.313 I/ChatrMainActivity(24274): WebView console: %cresult %cSplashScreen.hide (#33454239) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.313 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.314 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.314 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setStyle (#33454248) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.315 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.315 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.334 I/ChatrMainActivity(24274): WebView console: %cresult %cPushNotifications.createChannel (#33454247) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.335 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.336 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.336 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.createChannel (#33454249) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.337 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.337 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.350 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setStyle (#33454248) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.350 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.351 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.351 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setBackgroundColor (#33454250) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.352 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.352 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.357 I/ChatrMainActivity(24274): WebView console: %cresult %cPushNotifications.createChannel (#33454249) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.357 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.358 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.359 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.requestPermissions 
+(#33454251) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.359 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.359 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.374 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setBackgroundColor (#33454250) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.374 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.377 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.377 I/ChatrMainActivity(24274): WebView console: %cnative %cStatusBar.setOverlaysWebView (#33454252) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.378 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.378 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.379 I/ChatrMainActivity(24274): WebView console: %cresult %cPushNotifications.requestPermissions 
+(#33454251) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 
+(:328)
+05-19 14:33:55.379 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:55.380 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.397 I/ChatrMainActivity(24274): WebView console: %cnative %cPushNotifications.register (#33454253) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.397 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.398 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.417 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=42.95 
+dur=1001.05 max=236.56 min=11.53
+05-19 14:33:55.426 I/ChatrMainActivity(24274): WebView console: %cresult %cStatusBar.setOverlaysWebView (#33454252) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.427 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.428 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.428 I/ChatrMainActivity(24274): WebView console: [DeepLink] Initializing listener 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.429 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.addListener (#33454254) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.429 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.429 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.430 I/ChatrMainActivity(24274): WebView console: %cnative %cApp.getLaunchUrl (#33454255) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:55.430 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:55.431 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:55.434 I/ChatrMainActivity(24274): WebView console: %cresult %cPushNotifications.register (#33454253) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.435 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.437 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.437 I/ChatrMainActivity(24274): WebView console: %cresult %cPushNotifications.addListener (#33454232) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.438 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:55.438 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.439 I/ChatrMainActivity(24274): WebView console: Push registration success, token: 
+cNPTkk-CQViSaUObArL4... (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.456 I/ChatrMainActivity(24274): WebView console: %cresult %cApp.getLaunchUrl (#33454255) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:55.456 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:33:55.457 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:55.803 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+eaa5cc45-73fd-4aaa-975e-938f299110b8 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:55.818 I/ChatrMainActivity(24274): WebView console: [NativeCall] Requested native incoming call dismissal 
+via ChatrCall bridge (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.819 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Requested native incoming call dismissal via ChatrCall bridge
+05-19 14:33:55.820 I/ChatrMainActivity(24274): WebView console: ≡ƒæé Listening for inter-app messages 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:55.821 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+eaa5cc45-73fd-4aaa-975e-938f299110b8 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:56.087 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:56.088 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:56.088 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:56.423 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=47.72 
+dur=1005.97 max=233.37 min=9.48
+05-19 14:33:56.468 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+eaa5cc45-73fd-4aaa-975e-938f299110b8 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:56.477 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+eaa5cc45-73fd-4aaa-975e-938f299110b8 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:56.484 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+eaa5cc45-73fd-4aaa-975e-938f299110b8 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:56.486 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+eaa5cc45-73fd-4aaa-975e-938f299110b8 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:56.572 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] user bootstrap: no pending 
+ringing call found (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:33:56.587 I/ChatrMainActivity(24274): WebView console: ≡ƒôì Loaded 3 active geofences 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:56.772 I/ChatrMainActivity(24274): WebView console: %cnative %cGeolocation.requestPermissions (#33454256) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:56.773 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:56.773 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:56.939 I/ChatrMainActivity(24274): WebView console: Γ£à Inter-App Communication ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:56.940 I/ChatrMainActivity(24274): WebView console: ≡ƒöÆ CHATR OS: Initializing Permission Manager 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:56.941 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: ≡ƒöÆ 
+CHATR OS: Initializing Permission Manager
+05-19 14:33:56.964 I/ChatrMainActivity(24274): WebView console: %cresult %cGeolocation.requestPermissions (#33454256) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:56.964 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:56.965 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:56.965 I/ChatrMainActivity(24274): WebView console: %cnative %cGeolocation.watchPosition (#33454257) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:56.966 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:56.966 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:56.967 I/ChatrMainActivity(24274): WebView console: Γ£à Geofencing monitoring started 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:56.968 I/ChatrMainActivity(24274): WebView console: %cnative %cGeolocation.clearWatch (#33454258) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:56.969 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:56.970 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:57.059 I/ChatrMainActivity(24274): WebView console: %cresult %cGeolocation.clearWatch (#33454258) 
+font-style: italic; font-weight: lighter; color: red font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:57.059 I/ChatrMainActivity(24274): WebView console: [object Object] (:330)
+05-19 14:33:57.059 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:57.059 I/ChatrMainActivity(24274): WebView console: Uncaught (in promise) Error: WatchId not found. 
+(https://localhost/#/home:951)
+05-19 14:33:57.487 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=29.13 
+dur=1064.27 max=195.35 min=8.22
+05-19 14:33:57.925 I/ChatrMainActivity(24274): WebView console: Initializing deferred native app features... 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:57.926 I/ChatrMainActivity(24274): WebView console: %cnative %cDevice.getId (#33454259) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:57.926 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:57.927 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:57.934 I/ChatrMainActivity(24274): WebView console: %cresult %cDevice.getId (#33454259) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:57.934 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:57.934 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:57.934 I/ChatrMainActivity(24274): WebView console: %cnative %cDevice.getInfo (#33454260) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:57.935 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:57.935 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:57.941 I/ChatrMainActivity(24274): WebView console: %cresult %cDevice.getInfo (#33454260) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:57.941 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:57.941 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:57.944 I/ChatrMainActivity(24274): WebView console: %cnative %cDevice.getInfo (#33454261) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:57.944 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:57.944 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:57.949 I/ChatrMainActivity(24274): WebView console: %cresult %cDevice.getInfo (#33454261) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:57.950 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:57.950 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:57.950 I/ChatrMainActivity(24274): WebView console: %cnative %cDevice.getInfo (#33454262) font-weight: 
+lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:33:57.950 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:33:57.950 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:33:57.955 I/ChatrMainActivity(24274): WebView console: %cresult %cDevice.getInfo (#33454262) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:57.956 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:57.956 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:58.004 I/ChatrMainActivity(24274): WebView console: ≡ƒöæ Loaded 0 granted permissions 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.005 I/ChatrMainActivity(24274): WebView console: Γ£à Permission Manager ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.006 I/ChatrMainActivity(24274): WebView console: ≡ƒöù CHATR OS: Initializing Deep Link Manager 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.007 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: ≡ƒöù 
+CHATR OS: Initializing Deep Link Manager
+05-19 14:33:58.007 I/ChatrMainActivity(24274): WebView console: ≡ƒô¥ Registered deep link handler: app 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.007 I/ChatrMainActivity(24274): WebView console: ≡ƒô¥ Registered deep link handler: chat 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.008 I/ChatrMainActivity(24274): WebView console: ≡ƒô¥ Registered deep link handler: browser 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.009 I/ChatrMainActivity(24274): WebView console: ≡ƒô¥ Registered deep link handler: profile 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.010 I/ChatrMainActivity(24274): WebView console: Γ£à Deep Link Manager ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.010 I/ChatrMainActivity(24274): WebView console: Γ£à CHATR OS successfully initialized 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.011 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: Γ£à 
+CHATR OS successfully initialized
+05-19 14:33:58.299 I/com.chatr.app(24274): Compiler allocated 5171KB to compile void 
+android.view.ViewRootImpl.performTraversals()
+05-19 14:33:58.340 D/Capacitor(24274): Handling local request: https://localhost/assets/ChatrWorld-DC-jy59C.js
+05-19 14:33:58.386 I/ChatrMainActivity(24274): WebView console: ΓÅ░ [ContactSync] Next sync in ~560 min 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.500 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=34.56 
+dur=1012.86 max=249.83 min=6.92
+05-19 14:33:58.997 I/ChatrMainActivity(24274): WebView console: Γ£à Device session registered 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.998 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ Native permissions ready 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:58.999 I/ChatrMainActivity(24274): WebView console: Γ£à Native app initialization complete 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:59.000 I/ChatrMainActivity(24274): WebView console: Device token saved successfully 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:33:59.190 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:33:59.191 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:33:59.191 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:33:59.501 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=46.93 
+dur=1001.59 max=234.30 min=13.66
+05-19 14:34:00.056 I/ChatrMainActivity(24274): WebView console: ≡ƒô₧ New call INSERT (receiver match): [object Object] 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:00.419 I/ChatrMainActivity(24274): WebView console: Γ£à [DeviceCaps] Persisted: [object Object] 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:00.505 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=46.84 
+dur=1003.44 max=234.54 min=12.36
+05-19 14:34:00.575 I/ChatrNotifications(24274): Showing incoming call for bb5f3504-6fec-4912-bc38-ad9263e32cd2 from 
+TalentXcel SERVICES via web_background
+05-19 14:34:00.579 I/ChatrNotifications(24274): Async Call Setup: Starting contact resolution and sync...
+05-19 14:34:00.582 I/ChatrNotifications(24274): Launching CHATR fullscreen UI for killed-state reliability for 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:00.634 I/ActivityTaskManager( 1147): START u0 {flg=0x34000000 cmp=com.chatr.app/.IncomingCallActivity (has 
+extras)} from uid 10266
+05-19 14:34:00.647 D/PowerHalWrapper( 1147): <amsBoostResume> last:com.chatr.app, next:com.chatr.app 
+05-19 14:34:00.650 I/ChatrNotifications(24274): Requested IncomingCallActivity via fullscreen PendingIntent
+05-19 14:34:00.650 I/ChatrMainActivity(24274): WebView console: [NativeCall] Requested native incoming call UI via 
+ChatrCall bridge (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:00.651 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Requested native incoming call UI via ChatrCall bridge
+05-19 14:34:00.652 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] receiver insert: app 
+backgrounded, requested native incoming UI (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:00.675 I/BufferQueueConsumer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca863c000,id:2123,api:0,p:-1,c:582) setConsumerName: Splash Screen com.chatr.app#0
+05-19 14:34:00.675 I/BufferQueueConsumer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca863c000,id:2123,api:0,p:-1,c:582) setDefaultBufferSize: width=720 height=1600
+05-19 14:34:00.680 I/BufferQueueProducer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca863c000,id:2123,api:2,p:1147,c:582) connect(P): api=2 producer=(1147:system_server) 
+producerControlledByApp=false
+05-19 14:34:00.689 D/PowerHalWrapper( 1147): amsBoostNotify pid:24274,activity:com.chatr.app.IncomingCallActivity, 
+package:com.chatr.app, mProcessCreatePackcom.chatr.app 
+05-19 14:34:00.708 D/libMEOW (24274): applied 1 plugins for [com.chatr.app]:
+05-19 14:34:00.723 I/SurfaceFlinger(  582): screenshot (com.chatr.app/com.chatr.app.MainActivity#0)
+05-19 14:34:00.762 I/IncomingCallActivity(24274): IncomingCallActivity onCreate
+05-19 14:34:00.775 I/ActivityTaskManager( 1147): Activity requesting to dismiss Keyguard: ActivityRecord{b31a336 u0 
+com.chatr.app/.IncomingCallActivity t385}
+05-19 14:34:00.797 I/IncomingCallActivity(24274): Incoming audio call for TalentXcel SERVICES 
+(bb5f3504-6fec-4912-bc38-ad9263e32cd2)
+05-19 14:34:01.240 D/IncomingCallActivity(24274): Ringtone started via cold path
+05-19 14:34:01.257 I/IncomingCallActivity(24274): IncomingCallActivity onStart: stopped overlay service to prevent UI 
+overlap
+05-19 14:34:01.273 D/ViewRootImpl[IncomingCallActivity](24274): hardware acceleration = true , fakeHwAccelerated = 
+false, sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-19 14:34:01.283 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 0, Parent = 
+android.view.ViewRootImpl@fa090bf, this = DecorView@45b3160[IncomingCallActivity]
+05-19 14:34:01.334 I/WindowManager( 1147): Relayout Window{be1be94 u0 
+com.chatr.app/com.chatr.app.IncomingCallActivity}: oldVis=4 newVis=0 focusMayChange = true
+05-19 14:34:01.341 I/BufferQueueConsumer(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:0,p:-1,c:582) setConsumerName: 
+com.chatr.app/com.chatr.app.IncomingCallActivity#0
+05-19 14:34:01.341 I/BufferQueueConsumer(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:0,p:-1,c:582) setDefaultBufferSize: 
+width=720 height=1600
+05-19 14:34:01.344 I/WindowManager( 1147): ***** PhoneWindowManager, focusChangedLw, newFocus=Token{5a12237 
+ActivityRecord{b31a336 u0 com.chatr.app/.IncomingCallActivity t385}}
+05-19 14:34:01.358 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:1,p:24274,c:582) connect(P): api=1 
+producer=(24274:com.chatr.app) producerControlledByApp=false
+05-19 14:34:01.578 I/ChatrNotifications(24274): Async Call Setup: Registering with TelecomManager...
+05-19 14:34:01.590 I/Telecom-Common( 1147): Adding new incoming call with phoneAccountHandle 
+ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0}: TSI.aNIC@G4I
+05-19 14:34:01.635 I/Telecom-CreateConnectionProcessor( 1147): Trying attempt 
+CallAttemptRecord(ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, 
+UserHandle{0},ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, ***, UserHandle{0}): 
+TSI.aNIC@G4I
+05-19 14:34:01.641 I/Telecom ( 1147): Event: RecordEntry TC@197: BIND_CS, 
+ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}: TSI.aNIC@G4I
+05-19 14:34:01.657 I/ChatrNotifications(24274): Async Call Setup: TelecomManager registration complete for 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:01.895 I/com.chatr.app(24274): NativeAlloc concurrent copying GC freed 44960(2301KB) AllocSpace objects, 
+8(288KB) LOS objects, 49% free, 6063KB/11MB, paused 147us total 138.582ms
+05-19 14:34:01.955 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) queueBuffer: fps=4.83 
+dur=1449.83 max=1248.91 min=15.77
+05-19 14:34:01.979 I/BufferQueueProducer(  582): [Splash Screen 
+com.chatr.app#0](this:0x7ca863c000,id:2123,api:2,p:1147,c:582) disconnect(P): api 2
+05-19 14:34:02.003 I/GoogleInputMethodService( 1722): GoogleInputMethodService.onStartInput():1446 
+onStartInput(EditorInfo{EditorInfo{packageName=com.chatr.app, inputType=0, inputTypeString=NULL, enableLearning=false, 
+autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, 
+actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, 
+extras=null, hintText=null, hintLocales=[]}}, false)
+05-19 14:34:02.011 I/Telecom-ServiceBinderConnection( 1147): Service bound 
+ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}: SBC.oSC@G4M
+05-19 14:34:02.011 I/Telecom ( 1147): Event: RecordEntry TC@197: CS_BOUND, 
+ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}: SBC.oSC@G4M
+05-19 14:34:02.019 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:24274,c:582) disconnect(P): api 1
+05-19 14:34:02.065 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseAnalytics.logEvent (#33454263) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:34:02.065 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:34:02.066 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:34:02.107 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 4, Parent = 
+android.view.ViewRootImpl@9fa52e3, this = DecorView@368a4e0[MainActivity]
+05-19 14:34:02.108 I/ChatrMainActivity(24274): WebView console: %cresult %cApp.addListener (#33454237) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:02.108 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:02.109 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:02.109 I/ChatrMainActivity(24274): WebView console: App state changed. Active: false 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:02.111 I/ChatrConnectionService(24274): onCreateIncomingConnection address=tel:%2B919717161809 
+extras=Bundle[{android.telecom.extra.INCOMING_CALL_ADDRESS=tel:%2B919717161809, call_type=audio, 
+caller_id=65b871c5-4f95-459e-8be5-230d99c011cd, conversation_id=d7f0bb7f-6294-47e9-8c05-738b8c4f3561, caller_avatar=htt
+ps://sbayuqgomlflmxgicplz.supabase.co/storage/v1/object/public/social-media/65b871c5-4f95-459e-8be5-230d99c011cd-176686
+3793539.jpg, call_id=bb5f3504-6fec-4912-bc38-ad9263e32cd2, caller_name=TalentXcel SERVICES, 
+caller_number=+919717161809, caller_phone=+919717161809, 
+android.telecom.extra.CALL_TELECOM_ROUTING_START_TIME_MILLIS=172966032}]
+05-19 14:34:02.119 I/ChatrConnection(24274): onShowIncomingCallUi: bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:02.132 I/ActivityTaskManager( 1147): START u0 {flg=0x34000000 cmp=com.chatr.app/.IncomingCallActivity (has 
+extras)} from uid 10266
+05-19 14:34:02.136 I/Telecom-CallsManager( 1147): setCallState NEW -> RINGING, call: [TC@197, NEW, 
+com.chatr.app/.services.ChatrConnectionService, tel:*************, A, childs(0), has_parent(false), [Capabilities: 
+CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX 
+CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX 
+CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]: 
+(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-G4M
+05-19 14:34:02.137 I/ChatrConnection(24274): IncomingCallActivity launched from Connection.onShowIncomingCallUi
+05-19 14:34:02.138 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseAnalytics.logEvent (#33454263) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:02.138 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:34:02.139 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:02.157 I/IncomingCallActivity(24274): IncomingCallActivity onNewIntent
+05-19 14:34:02.157 I/IncomingCallActivity(24274): Already showing call bb5f3504-6fec-4912-bc38-ad9263e32cd2, ignoring 
+duplicate intent
+05-19 14:34:02.159 I/BufferQueue(  582): [Splash Screen com.chatr.app#0](this:0x7ca863c000,id:2123,api:2,p:-1,c:-1) 
+~BufferQueueCore
+05-19 14:34:02.164 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 0, Parent = 
+android.view.ViewRootImpl@fa090bf, this = DecorView@45b3160[IncomingCallActivity]
+05-19 14:34:02.173 I/BufferQueue(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7ca83f8800,id:2122,api:1,p:-1,c:-1) ~BufferQueueCore
+05-19 14:34:02.175 I/Telecom-InCallController( 1147): onCallAdded: [TC@197, RINGING, 
+com.chatr.app/.services.ChatrConnectionService, tel:*************, A, childs(0), has_parent(false), [Capabilities: 
+CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX 
+CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX 
+CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]; 
+not bound or connected.: (...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-G4M
+05-19 14:34:02.184 I/Telecom ( 1147): IncomingCallNotifier: updateIncomingCall: foundIncomingcall = null: 
+(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC@E-E-G4M
+05-19 14:34:02.201 I/TelecomFramework(24274): ChatrConnectionService: notifyCreateConnectionComplete TC@197_1: 
+(...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-G4M
+05-19 14:34:02.209 D/ChatrConnection(24274): Audio state changed: 1
+05-19 14:34:02.209 D/ChatrConnection(24274): Notifying WebView: audio_route:earpiece for call 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:02.218 W/BroadcastQueue( 1147): Permission Denial: receiving Intent { 
+act=android.intent.action.PHONE_STATE flg=0x1000010 (has extras) } to com.chatr.app/.receivers.CallStateReceiver 
+requires android.permission.READ_PRIVILEGED_PHONE_STATE due to sender android (uid 1000)
+05-19 14:34:02.237 I/ChatrMainActivity(24274): Handling action=audio_route:earpiece 
+intentAction=com.chatr.app.CALL_ACTION data=null
+05-19 14:34:02.296 I/IncomingCallOverlay(24274): IncomingCallActivity is currently visible, skipping overlay creation
+05-19 14:34:02.509 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.512 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.513 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.520 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.521 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.522 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.523 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.548 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ringing (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:02.830 D/ChatrConnection(24274): Audio state changed: 8
+05-19 14:34:02.830 D/ChatrConnection(24274): Notifying WebView: audio_route:speaker for call 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:02.834 I/ChatrMainActivity(24274): Handling action=audio_route:speaker 
+intentAction=com.chatr.app.CALL_ACTION data=null
+05-19 14:34:03.153 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [GlobalCallListener] Received signal: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:03.390 I/ChatrNotifications(24274): Skipping duplicate incoming call alert for 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 from web_background
+05-19 14:34:03.392 I/ChatrMainActivity(24274): WebView console: [NativeCall] Requested native incoming call UI via 
+ChatrCall bridge (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:03.393 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Requested native incoming call UI via ChatrCall bridge
+05-19 14:34:03.393 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] receiver update: app 
+backgrounded, requested native incoming UI (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:04.197 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:1,p:24274,c:582) queueBuffer: 
+fps=1.33 dur=2253.33 max=2122.72 min=43.19
+05-19 14:34:04.565 I/IncomingCallActivity(24274): Answering call bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.640 I/ActivityTaskManager( 1147): START u0 {flg=0x14000000 cmp=com.chatr.app/.MainActivity (has 
+extras)} from uid 10266
+05-19 14:34:04.646 D/PowerHalWrapper( 1147): <amsBoostResume> last:com.chatr.app, next:com.chatr.app 
+05-19 14:34:04.671 D/PowerHalWrapper( 1147): amsBoostNotify pid:24274,activity:com.chatr.app.MainActivity, 
+package:com.chatr.app, mProcessCreatePackcom.chatr.app 
+05-19 14:34:04.697 I/ChatrMainActivity(24274): MainActivity onNewIntent: null
+05-19 14:34:04.698 I/ChatrMainActivity(24274): Handling action=answer_call intentAction=null data=null
+05-19 14:34:04.699 I/ChatrMainActivity(24274): Answering call bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.700 I/ChatrConnection(24274): onAnswer: bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.702 D/ChatrConnection(24274): Notifying WebView: answer for call bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.714 I/Telecom-CallsManager( 1147): setCallState RINGING -> ACTIVE, call: [TC@197, RINGING, 
+com.chatr.app/.services.ChatrConnectionService, tel:*************, A, childs(0), has_parent(false), [Capabilities: 
+CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX 
+CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX 
+CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]: 
+CSW.sA->CSFM.rF@G4g
+05-19 14:34:04.723 I/Telecom ( 1147): IncomingCallNotifier: updateIncomingCall: foundIncomingcall = null: 
+CSW.sA->CSFM.rF@G4g
+05-19 14:34:04.735 W/BroadcastQueue( 1147): Permission Denial: receiving Intent { 
+act=android.intent.action.PHONE_STATE flg=0x1000010 (has extras) } to com.chatr.app/.receivers.CallStateReceiver 
+requires android.permission.READ_PRIVILEGED_PHONE_STATE due to sender android (uid 1000)
+05-19 14:34:04.811 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 0, Parent = 
+android.view.ViewRootImpl@9fa52e3, this = DecorView@368a4e0[MainActivity]
+05-19 14:34:04.813 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] nativeCallAction: answer for 
+call bb5f3504 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:04.814 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] Set __CALL_STATE__ for native 
+answer call: bb5f3504 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:04.815 I/ChatrMainActivity(24274): WebView console: [NativeCallBridge] Action: answer for call bb5f3504 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:04.817 I/ChatrMainActivity(24274): WebView console: %cresult %cApp.addListener (#33454237) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:04.817 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:04.818 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:04.818 I/ChatrMainActivity(24274): WebView console: App state changed. Active: true 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:04.832 I/WindowManager( 1147): Relayout Window{256b28b u0 com.chatr.app/com.chatr.app.MainActivity}: 
+oldVis=8 newVis=0 focusMayChange = true
+05-19 14:34:04.838 I/BufferQueueConsumer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:0,p:-1,c:582) setConsumerName: 
+com.chatr.app/com.chatr.app.MainActivity#0
+05-19 14:34:04.838 I/BufferQueueConsumer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:0,p:-1,c:582) setDefaultBufferSize: 
+width=720 height=1600
+05-19 14:34:04.841 I/WindowManager( 1147): ***** PhoneWindowManager, focusChangedLw, newFocus=Token{141f512 
+ActivityRecord{d76dc9d u0 com.chatr.app/.MainActivity t384}}
+05-19 14:34:04.881 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) connect(P): api=1 
+producer=(24274:com.chatr.app) producerControlledByApp=false
+05-19 14:34:04.941 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:04.942 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:04.942 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:04.948 I/ChatrMainActivity(24274): Handling action=answer intentAction=com.chatr.app.CALL_ACTION data=null
+05-19 14:34:04.949 I/ChatrMainActivity(24274): Answering call bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.949 I/ChatrConnection(24274): onAnswer: bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.949 D/ChatrConnection(24274): Notifying WebView: answer for call bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:04.992 I/SurfaceFlinger(  582): screenshot (com.chatr.app/com.chatr.app.IncomingCallActivity#0)
+05-19 14:34:05.014 I/ChatrMainActivity(24274): WebView console: %cresult %cKeyboard.addListener (#33454212) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.015 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:05.015 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.017 I/ChatrMainActivity(24274): WebView console: %cresult %cKeyboard.addListener (#33454224) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.017 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:05.018 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.018 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseAnalytics.logEvent (#33454264) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:34:05.019 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:34:05.019 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:34:05.020 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] document visible: skipping 
+recovery while another call UI or active answer is in progress (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:05.022 I/IncomingCallActivity(24274): Closing incoming UI after external call action
+05-19 14:34:05.026 W/ActivityTaskManager( 1147): Duplicate finish request for ActivityRecord{b31a336 u0 
+com.chatr.app/.IncomingCallActivity t385 f}
+05-19 14:34:05.027 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] nativeCallAction: answer for 
+call bb5f3504 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:05.029 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] Set __CALL_STATE__ for native 
+answer call: bb5f3504 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:05.030 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] Native answer already in flight, 
+skipping duplicate (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:05.031 I/ChatrMainActivity(24274): WebView console: [NativeCallBridge] Action: answer for call bb5f3504 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:05.034 I/ChatrMainActivity(24274): Skipping duplicate intent action=answer 
+intentAction=com.chatr.app.CALL_ACTION callId=bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:05.035 I/IncomingCallActivity(24274): Closing incoming UI after external call action
+05-19 14:34:05.036 W/ActivityTaskManager( 1147): Duplicate finish request for ActivityRecord{b31a336 u0 
+com.chatr.app/.IncomingCallActivity t385 f}
+05-19 14:34:05.070 I/ChatrMainActivity(24274): WebView console: [WebRTC] Pre-fetching TURN configurations in the 
+background... (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:05.071 I/ChatrMainActivity(24274): WebView console: [useNativeAuthSync] Auth event: SIGNED_IN 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:05.072 I/ChatrMainActivity(24274): WebView console: [NativeAuth] Syncing auth state: SIGNED_IN, userId: 
+29f65ca9... (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:05.073 I/ChatrMainActivity(24274): WebView console: [NativeAuth] Auth credentials synced to native 
+SharedPreferences (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:05.077 D/ChatrMainActivity(24274): JavaScript result: null
+05-19 14:34:05.117 I/ChatrMainActivity(24274): Skipping duplicate intent action=answer 
+intentAction=com.chatr.app.CALL_ACTION callId=bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:05.118 I/IncomingCallActivity(24274): Closing incoming UI after external call action
+05-19 14:34:05.120 W/ActivityTaskManager( 1147): Duplicate finish request for ActivityRecord{b31a336 u0 
+com.chatr.app/.IncomingCallActivity t385 f}
+05-19 14:34:05.122 I/ChatrMainActivity(24274): Skipping duplicate intent action=answer 
+intentAction=com.chatr.app.CALL_ACTION callId=bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:05.122 I/IncomingCallActivity(24274): Closing incoming UI after external call action
+05-19 14:34:05.124 W/ActivityTaskManager( 1147): Duplicate finish request for ActivityRecord{b31a336 u0 
+com.chatr.app/.IncomingCallActivity t385 f}
+05-19 14:34:05.127 I/GoogleInputMethodService( 1722): GoogleInputMethodService.onStartInput():1446 
+onStartInput(EditorInfo{EditorInfo{packageName=com.chatr.app, inputType=0, inputTypeString=NULL, enableLearning=false, 
+autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, 
+actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=2131362515, 
+fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-19 14:34:05.163 D/ChatrMainActivity(24274): JavaScript result: null
+05-19 14:34:05.246 W/com.chatr.app(24274): Accessing hidden method Landroid/view/MotionEvent;->getEventTimeNano()J 
+(greylist, reflection, allowed)
+05-19 14:34:05.249 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:1,p:24274,c:582) queueBuffer: 
+fps=27.57 dur=1052.01 max=386.67 min=5.40
+05-19 14:34:05.612 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:1,p:24274,c:582) disconnect(P): api 
+1
+05-19 14:34:05.630 I/ChatrMainActivity(24274): WebView console: %cresult %cKeyboard.addListener (#33454212) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.630 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:05.631 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.631 I/ChatrMainActivity(24274): WebView console: %cresult %cKeyboard.addListener (#33454224) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.632 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:05.632 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.632 I/ChatrMainActivity(24274): WebView console: %cresult %cKeyboard.addListener (#33454212) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.633 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:05.633 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.634 I/ChatrMainActivity(24274): WebView console: %cresult %cKeyboard.addListener (#33454224) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.634 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:05.634 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.635 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseAnalytics.logEvent (#33454264) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:05.635 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:34:05.636 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:05.647 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 4, Parent = 
+android.view.ViewRootImpl@fa090bf, this = DecorView@45b3160[IncomingCallActivity]
+05-19 14:34:05.662 D/View    (24274): [Warning] assignParent to null: this = DecorView@45b3160[IncomingCallActivity]
+05-19 14:34:05.670 I/BufferQueue(  582): 
+[com.chatr.app/com.chatr.app.IncomingCallActivity#0](this:0x7cb432e000,id:2124,api:1,p:-1,c:-1) ~BufferQueueCore
+05-19 14:34:05.960 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=31.31 
+dur=1021.88 max=196.72 min=11.25
+05-19 14:34:06.403 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:06.404 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:06.404 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:06.405 I/ChatrMainActivity(24274): WebView console: [WebRTC] Background pre-fetch failed: Error: Edge 
+Timeout (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:06.919 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:06.922 I/ChatrMainActivity(24274): WebView console: [NativeCall] Requested native incoming call dismissal 
+via ChatrCall bridge (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:06.923 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Requested native incoming call dismissal via ChatrCall bridge
+05-19 14:34:06.933 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] Successfully updated call status 
+to active in DB (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:06.934 I/ChatrMainActivity(24274): WebView console: Γ£à Updated last seen 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:06.976 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:06.979 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:06.992 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] Successfully updated call status 
+to active in DB (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:07.072 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:07.084 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=32.91 
+dur=1124.21 max=233.40 min=7.28
+05-19 14:34:07.667 I/ChatrMainActivity(24274): WebView console: [NativeCall] System dialer identity synced via 
+ChatrCall bridge (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:07.668 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] System dialer identity synced via ChatrCall bridge
+05-19 14:34:07.669 I/ChatrMainActivity(24274): WebView console: [GlobalCallListener] Native answered call - starting 
+WebRTC as receiver (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:08.088 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=46.82 
+dur=1003.77 max=235.06 min=15.04
+05-19 14:34:08.088 I/ChatrMainActivity(24274): WebView console: ≡ƒöò [Global] Emergency ringtone stop 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:08.096 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [LossBridge] Active ΓÇô watching network 
+transitions. (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:08.097 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] ==================================== 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.098 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] Ultra-Low Bandwidth Mode Initializing 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.099 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] ==================================== 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.103 I/ChatrMainActivity(24274): WebView console: ≡ƒô╢ [NetworkBridge] Initializing... 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:08.104 I/ChatrMainActivity(24274): WebView console: ≡ƒô╢ [NetworkBridge] Initialized. Current mode: 
+MODE_4_HIGH (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:08.105 I/ChatrMainActivity(24274): WebView console: ≡ƒô╣ [VideoKillSwitch] Initializing... 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:08.106 I/ChatrMainActivity(24274): WebView console: ≡ƒô╣ [VideoKillSwitch] Initialized. Current policy: 
+Video available (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:08.108 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [LANMode] Initializing... 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.121 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [LANMode] BroadcastChannel created 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.122 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [LANMode] Starting peer discovery... 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.123 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [UIState] Initializing... 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.124 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] Initialization complete 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.125 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] Network Mode: MODE_4_HIGH 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.126 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] UI State: Excellent network 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:08.235 I/ChatrMainActivity(24274): WebView console: ≡ƒöï [Thermal] Battery Status API active. 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:09.745 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=6.64 
+dur=1657.46 max=1482.99 min=6.93
+05-19 14:34:09.899 I/com.chatr.app(24274): Background concurrent copying GC freed 8571(400KB) AllocSpace objects, 
+3(4728KB) LOS objects, 42% free, 8310KB/14MB, paused 232us total 165.794ms
+05-19 14:34:10.114 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:10.115 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:10.115 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:10.762 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=10.82 
+dur=1016.53 max=366.53 min=42.82
+05-19 14:34:10.860 I/ChatrMainActivity(24274): WebView console: ≡ƒÄ¼ [UnifiedCall] Starting incoming voice call 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:10.861 I/ChatrMainActivity(24274): WebView console: ≡ƒöÉ [WebRTC] Acquired creation lock for: bb5f3504 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.862 I/ChatrMainActivity(24274): WebView console: ≡ƒÄñ [WebRTC] Using pre-acquired media stream 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.862 I/ChatrMainActivity(24274): WebView console: ≡ƒÄ¼ [WebRTC] Init [bb5f3504-mpcep5jk]: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.863 I/ChatrMainActivity(24274): WebView console: ≡ƒô╢ [Network] Classification input: [object Object] 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:10.864 I/ChatrMainActivity(24274): WebView console: ≡ƒô╢ [Network] Classified: MODERATE 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:10.866 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [Preset] Using INDIA_SURVIVAL (moderate + audio) 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:10.868 I/ChatrMainActivity(24274): WebView console: ≡ƒç«≡ƒç│ [WebRTC] India-first preset: 
+INDIA_SURVIVAL_MODERATE (network: MODERATE) (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.869 I/ChatrMainActivity(24274): WebView console: ≡ƒÜÇ [WebRTC] FAST START - targeting <2s connection... 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.871 I/ChatrMainActivity(24274): WebView console: [WebRTC] Pre-fetching TURN configurations in the 
+background... (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:10.919 I/ChatrMainActivity(24274): WebView console: Γ£à [InsertableStreams] Workers initialized 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.920 I/ChatrMainActivity(24274): WebView console: Γä╣∩╕Å [HybridSignaling] Using Supabase Realtime 
+fallback (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:10.921 I/ChatrMainActivity(24274): WebView console: ≡ƒöî [WebRTC] Signaling initialized: fallback 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.922 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Subscribing to signals (DUAL-PATH: 
+Socket + Supabase)... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:10.985 I/ChatrMainActivity(24274): WebView console: [InsertableStreamsWorker] Initialized 
+(blob:https://localhost/b4a4f405-ad68-452c-8a29-e6d035b665a1:74)
+05-19 14:34:11.040 I/ChatrMainActivity(24274): WebView console: [InsertableStreamsWorker] Initialized 
+(blob:https://localhost/b4a4f405-ad68-452c-8a29-e6d035b665a1:74)
+05-19 14:34:11.091 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Subscription status: SUBSCRIBED 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:11.144 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [LANMode] Local IP detected: null 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:11.244 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:11.245 I/ChatrMainActivity(24274): WebView console: Γ£à [UnifiedCall] Sync: backend says connected 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:11.246 I/ChatrMainActivity(24274): WebView console: [NativeCall] Syncing call state: bb5f3504 -> connected 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:11.314 I/ChatrMainActivity(24274): WebView console: [NativeCall] Call state synced via ChatrCall bridge 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:11.314 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Call state synced via ChatrCall bridge
+05-19 14:34:11.315 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:11.381 I/ChatrMainActivity(24274): WebView console: ≡ƒÆô [CallKeepAlive] Starting keepalive for call: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:11.383 I/ChatrMainActivity(24274): WebView console: Blocked call to navigator.vibrate because user hasn't 
+tapped on the frame or any embedded frame yet: https://www.chromestatus.com/feature/5644273861001216. 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:11.703 I/ChatrMainActivity(24274): WebView console: [WebRTC] Background pre-fetch failed: Error: Edge 
+Timeout (https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:11.704 I/ChatrMainActivity(24274): WebView console: ≡ƒöº [WebRTC] Creating FAST peer connection (Android: 
+true) (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:11.705 I/ChatrMainActivity(24274): WebView console: Γ£à [WebRTC] Peer connection created with 10000ms 
+disconnect tolerance (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:11.706 I/ChatrMainActivity(24274): WebView console: ≡ƒô╣ [UnifiedCall] Local stream received/updated 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:11.707 I/ChatrMainActivity(24274): WebView console: Γ₧ò [WebRTC] Adding track: audio 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:11.709 I/ChatrMainActivity(24274): WebView console: ≡ƒôÑ [WebRTC] Fetching past signals... 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:11.767 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=16.92 
+dur=1004.97 max=74.94 min=39.70
+05-19 14:34:12.349 I/chatty  (24274): uid=10266(com.chatr.app) RenderThread identical 8 lines
+05-19 14:34:12.488 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.490 I/ChatrMainActivity(24274): WebView console: ≡ƒôÑ [WebRTC] Found 8 past signals for user 29f65ca9 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.492 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: 9295320b) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.493 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: 6b5ea876) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.495 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: 36e585f1) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.496 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: ae749116) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.497 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: 7c489e43) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.498 I/ChatrMainActivity(24274): WebView console:   ΓåÆ offer from 65b871c5 (id: 568f83d2) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.500 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: ec1bde7b) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.502 I/ChatrMainActivity(24274): WebView console:   ΓåÆ ice-candidate from 65b871c5 (id: 7e958213) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.503 I/ChatrMainActivity(24274): WebView console: ≡ƒôÑ [WebRTC] Processing LATEST offer from 65b871c5 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.504 I/ChatrMainActivity(24274): WebView console: ≡ƒôÑ [WebRTC] Processing INITIAL OFFER... 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.505 I/ChatrMainActivity(24274): WebView console: ≡ƒô║ [WebRTC] Remote track received: audio, id: 
+7995e078, stream tracks: 1 (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.506 I/ChatrMainActivity(24274): WebView console: ≡ƒô║ [UnifiedCall] Remote stream received 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:12.507 I/ChatrMainActivity(24274): WebView console:   ΓåÆ Audio tracks: 1, Video tracks: 0 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:12.509 I/ChatrMainActivity(24274): WebView console:     ≡ƒöè Audio: 7995e078-6813-4cef-938e-c8b7026f2617, 
+enabled: true, muted: true (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:12.511 I/ChatrMainActivity(24274): WebView console: ≡ƒô║ [UnifiedCall] Assigning stream (no video tracks 
+yet) (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:12.624 I/chatty  (24274): uid=10266(com.chatr.app) RenderThread identical 3 lines
+05-19 14:34:12.632 I/ChatrMainActivity(24274): WebView console: ≡ƒöè [UnifiedCall] Audio playing (direct) 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:12.685 I/ChatrMainActivity(24274): WebView console: ≡ƒºè [WebRTC] ICE gathering state: gathering 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:12.687 I/ChatrMainActivity(24274): WebView console: ≡ƒºè [WebRTC] ICE candidate: host (udp) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:13.008 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=15.31 
+dur=1241.24 max=324.64 min=34.20
+05-19 14:34:13.010 I/ChatrMainActivity(24274): WebView console: ≡ƒºè [WebRTC] ICE candidate: srflx (udp) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:13.325 I/ChatrMainActivity(24274): WebView console: ≡ƒÄ» Attempting GPS location... 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:13.392 D/LocationManagerService( 1147): request 866b7a fused Request[ACCURACY_BLOCK fused requested=0 
+fastest=0] from com.chatr.app(10266 foreground)
+05-19 14:34:13.401 D/LocationManagerService( 1147): request ed98f88 fused Request[ACCURACY_FINE fused requested=0 
+fastest=0] from com.chatr.app(10266 foreground)
+05-19 14:34:13.410 D/LocationManagerService( 1147): request e3c1c34 fused Request[ACCURACY_FINE fused requested=0 
+fastest=0] from com.chatr.app(10266 foreground)
+05-19 14:34:13.480 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for answer (Attempt 1). 
+Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:13.481 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 1). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:13.545 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 1). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:13.724 D/WifiScanningService( 1147): addSingleScanRequest: 
+ClientInfo[uid=10098,android.os.Messenger@8fe0f17],Id=150,WorkSource{10266 com.chatr.app}, ScanSettings {  type:LOW 
+LATENCY band:24Ghz & 5Ghz (no DFS) ignoreLocationSettings:false period:0 reportEvents:3 numBssidsPerScan:25 
+maxScansToCache:0 channels:[  ]  hiddenNetworks:[  ]  } 
+05-19 14:34:14.046 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=16.38 
+dur=1037.86 max=94.68 min=45.75
+05-19 14:34:14.302 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:14.303 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:14.652 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for answer (Attempt 2). 
+Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:14.704 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 2). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:14.705 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:14.753 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 2). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:14.775 I/chatty  (24274): uid=10266(com.chatr.app) RenderThread identical 3 lines
+05-19 14:34:15.057 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=15.82 
+dur=1011.21 max=90.65 min=49.65
+05-19 14:34:15.132 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:15.187 I/ChatrMainActivity(24274): WebView console: Γ£à GPS location obtained: [object Object] 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:15.530 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: answer 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:15.585 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:15.586 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:15.586 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:15.977 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:16.066 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=17.85 
+dur=1008.47 max=74.24 min=36.09
+05-19 14:34:16.438 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for answer (Attempt 3). 
+Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:16.468 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 3). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:16.530 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 3). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:16.637 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:17.075 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=28.73 
+dur=1009.47 max=51.31 min=29.53
+05-19 14:34:18.102 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=29.20 
+dur=1027.25 max=46.17 min=27.92
+05-19 14:34:19.110 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=29.78 
+dur=1007.38 max=41.06 min=27.86
+05-19 14:34:19.153 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for answer (Attempt 4). 
+Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:19.193 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 4). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:19.237 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 4). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:19.753 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:19.857 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, 
+reflection, allowed)
+05-19 14:34:19.858 W/com.chatr.app(24274): Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, 
+reflection, allowed)
+05-19 14:34:19.861 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, reflection, allowed)
+05-19 14:34:19.863 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, reflection, allowed)
+05-19 14:34:19.863 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, reflection, allowed)
+05-19 14:34:19.863 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, reflection, allowed)
+05-19 14:34:19.863 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, reflection, allowed)
+05-19 14:34:19.863 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+05-19 14:34:19.863 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+05-19 14:34:19.865 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I 
+(greylist, linking, allowed)
+05-19 14:34:19.868 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:34:19.870 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V 
+(greylist, linking, allowed)
+05-19 14:34:19.871 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:34:19.873 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V 
+(greylist, linking, allowed)
+05-19 14:34:19.897 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:19.911 W/com.chatr.app(24274): Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J 
+(greylist,core-platform-api, linking, allowed)
+05-19 14:34:19.930 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, 
+allowed)
+05-19 14:34:19.955 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:34:19.970 E/FilePhenotypeFlags(24274): Config package com.google.android.gms.clearcut_client#com.chatr.app 
+cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more 
+information. This will lead to stale flags.
+05-19 14:34:19.989 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.032 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.074 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:34:20.077 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.078 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.081 E/FilePhenotypeFlags(24274): Config package com.google.android.gms.clearcut_client#com.chatr.app 
+cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more 
+information. This will lead to stale flags.
+05-19 14:34:20.082 E/FilePhenotypeFlags(24274): Config package com.google.android.gms.clearcut_client#com.chatr.app 
+cannot use FILE backing without declarative registration. See go/phenotype-android-integration#phenotype for more 
+information. This will lead to stale flags.
+05-19 14:34:20.118 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=25.80 
+dur=1007.79 max=46.38 min=27.96
+05-19 14:34:20.195 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.351 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.390 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:20.391 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:20.458 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: answer 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.554 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:20.554 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:20.555 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:20.770 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: answer 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:20.814 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:20.815 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:21.150 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=23.25 
+dur=1032.05 max=62.33 min=30.43
+05-19 14:34:21.362 I/ChatrMainActivity(24274): WebView console: ≡ƒÆô [CallKeepAlive] Heartbeat (13470ms since last) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:22.057 I/ChatrMainActivity(24274): WebView console: Γ£à Backend location updated 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:22.058 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:22.111 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:22.113 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:22.115 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:22.116 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:22.159 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=20.79 
+dur=1009.91 max=57.95 min=37.22
+05-19 14:34:22.718 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: answer 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.022 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+05-19 14:34:23.084 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:34:23.105 W/com.chatr.app(24274): Accessing hidden method 
+Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+05-19 14:34:23.172 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=20.75 
+dur=1012.11 max=65.49 min=37.60
+05-19 14:34:23.224 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for answer (Attempt 5). 
+Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.226 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 5). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.279 I/ChatrMainActivity(24274): WebView console: ΓÜá∩╕Å [Signaling] ACK timeout for ice-candidate 
+(Attempt 5). Retrying transmission... (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.345 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.665 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:23.667 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:23.716 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.813 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.862 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:23.962 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:24.016 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:24.187 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=20.68 
+dur=1015.71 max=66.00 min=38.20
+05-19 14:34:24.745 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: answer 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:24.789 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:24.789 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:24.790 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:25.203 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=22.64 
+dur=1015.80 max=57.20 min=37.30
+05-19 14:34:25.617 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.701 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.703 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.756 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.757 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: ice-candidate 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.852 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Signal sent via Realtime: answer 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.853 I/ChatrMainActivity(24274): WebView console: Γ£à [WebRTC] ANSWER sent 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.854 I/ChatrMainActivity(24274): WebView console: ≡ƒôÑ [WebRTC] Processing 7 ICE candidates 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.855 I/ChatrMainActivity(24274): WebView console: Γ¥ä∩╕Å [ICEMonitor] State: checking 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:25.857 I/ChatrMainActivity(24274): WebView console: Γ¥ä∩╕Å [WebRTC] ICE state: checking 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.858 I/ChatrMainActivity(24274): WebView console: ≡ƒöî [WebRTC] Connection state: connecting 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.859 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.901 I/ChatrMainActivity(24274): WebView console: Γ£à [WebRTC] Setup complete in 15030ms 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.954 I/ChatrMainActivity(24274): WebView console: Γ¥ä∩╕Å [ICEMonitor] State: connected 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:25.955 I/ChatrMainActivity(24274): WebView console: Γ¥ä∩╕Å [WebRTC] ICE state: connected 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.957 I/ChatrMainActivity(24274): WebView console: ≡ƒÄë [WebRTC] CONNECTED! [bb5f3504-mpcep5jk] 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:25.957 I/ChatrMainActivity(24274): WebView console: ≡ƒÄë [UnifiedCall] Connected! 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:25.969 I/ChatrMainActivity(24274): Audio route applied: earpiece
+05-19 14:34:26.006 I/ChatrMainActivity(24274): WebView console: [NativeCall] Syncing call state: bb5f3504 -> connected 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:26.007 I/ChatrMainActivity(24274): WebView console: [NativeCall] Call state synced via ChatrCall bridge 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:26.008 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Call state synced via ChatrCall bridge
+05-19 14:34:26.008 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:26.009 I/ChatrMainActivity(24274): WebView console: ≡ƒºè [WebRTC] ICE gathering state: complete 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:26.010 I/ChatrMainActivity(24274): WebView console: Γ£à [WebRTC] ICE gathering complete 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:26.060 I/ChatrMainActivity(24274): WebView console: ≡ƒöî [WebRTC] Connection state: connected 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:26.251 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=21.00 
+dur=1047.67 max=58.90 min=40.41
+05-19 14:34:26.501 I/ChatrMainActivity(24274): WebView console: Γ£à [WebRTC] Call status updated to active 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:26.565 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:26.566 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:26.567 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:26.568 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:26.569 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:26.570 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:27.269 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=19.64 
+dur=1018.37 max=65.00 min=41.26
+05-19 14:34:27.794 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:27.795 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:27.795 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:27.972 I/chatty  (24274): uid=10266(com.chatr.app) RenderThread identical 3 lines
+05-19 14:34:28.195 I/ChatrMainActivity(24274): WebView console: ≡ƒÜ¿ [Signaling] Fatal Delivery Collapse: Failed to 
+deliver signal answer after 5 attempts. (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:28.243 I/ChatrMainActivity(24274): WebView console: ≡ƒÜ¿ [Signaling] Fatal Delivery Collapse: Failed to 
+deliver signal ice-candidate after 5 attempts. (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:28.283 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=21.69 
+dur=1014.34 max=57.76 min=36.76
+05-19 14:34:28.285 I/ChatrMainActivity(24274): WebView console: ≡ƒÜ¿ [Signaling] Fatal Delivery Collapse: Failed to 
+deliver signal ice-candidate after 5 attempts. (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:28.374 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:28.375 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:29.293 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=19.81 
+dur=1009.60 max=58.71 min=38.53
+05-19 14:34:29.527 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/icons/icon-512x512.png 
+was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it 
+has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:34:29.528 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/chatr-logo.png was 
+preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has 
+an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:34:29.528 W/Capacitor/Console(24274): File: https://localhost/#/home - Line 0 - Msg: The resource 
+https://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's 
+load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-19 14:34:29.529 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/icons/icon-192x192.png 
+was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it 
+has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:34:30.313 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=19.62 
+dur=1019.52 max=67.55 min=36.69
+05-19 14:34:30.814 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:30.814 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:30.815 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:31.359 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=19.12 
+dur=1046.13 max=67.42 min=40.11
+05-19 14:34:31.361 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:31.362 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:31.363 I/ChatrMainActivity(24274): WebView console: ≡ƒÆô [CallKeepAlive] Heartbeat (10000ms since last) 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:32.394 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=14.49 
+dur=1034.97 max=78.90 min=64.72
+05-19 14:34:33.425 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=16.48 
+dur=1031.73 max=66.20 min=53.19
+05-19 14:34:33.815 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:33.816 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:33.817 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:34.349 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: active 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:34.350 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: active (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:34.437 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=16.81 
+dur=1011.10 max=69.88 min=42.93
+05-19 14:34:35.435 I/ChatrConnection(24274): Ending call programmatically: bb5f3504-6fec-4912-bc38-ad9263e32cd2
+05-19 14:34:35.437 I/Telecom-CallsManager( 1147): setCallState ACTIVE -> DISCONNECTED, call: [TC@197, ACTIVE, 
+com.chatr.app/.services.ChatrConnectionService, tel:*************, A, childs(0), has_parent(false), [Capabilities: 
+CAPABILITY_HOLD CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE CAPABILITY_SUPPORTS_VT_LOCAL_RX 
+CAPABILITY_SUPPORTS_VT_LOCAL_TX CAPABILITY_SUPPORTS_VT_LOCAL_BIDIRECTIONAL CAPABILITY_SUPPORTS_VT_REMOTE_RX 
+CAPABILITY_SUPPORTS_VT_REMOTE_TX CAPABILITY_SUPPORTS_VT_REMOTE_BIDIRECTIONAL], [Properties: PROPERTY_SELF_MANAGED]]: 
+CSW.sDc@G5Q
+05-19 14:34:35.461 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=19.52 
+dur=1024.62 max=60.04 min=40.45
+05-19 14:34:35.462 I/Telecom ( 1147): IncomingCallNotifier: updateIncomingCall: foundIncomingcall = null: CSW.sDc@G5Q
+05-19 14:34:35.464 I/ChatrMainActivity(24274): WebView console: ≡ƒæï [WebRTC] Ending call... 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:35.466 I/ChatrMainActivity(24274): WebView console: ≡ƒöò [Global] Emergency ringtone stop 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:35.468 I/ChatrMainActivity(24274): WebView console: [NativeCall] Syncing call state: bb5f3504 -> ended 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:35.469 I/ChatrMainActivity(24274): WebView console: [NativeCall] Call state synced via ChatrCall bridge 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:35.469 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Call state synced via ChatrCall bridge
+05-19 14:34:35.471 I/ChatrMainActivity(24274): WebView console: ≡ƒº╣ [InsertableStreams] Cleaned up 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:35.480 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [WebRTC] Subscription status: CLOSED 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:35.481 W/BroadcastQueue( 1147): Permission Denial: receiving Intent { 
+act=android.intent.action.PHONE_STATE flg=0x1000010 (has extras) } to com.chatr.app/.receivers.CallStateReceiver 
+requires android.permission.READ_PRIVILEGED_PHONE_STATE due to sender android (uid 1000)
+05-19 14:34:35.482 I/ChatrMainActivity(24274): WebView console: ≡ƒæï [UnifiedCall] Ended by remote 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:35.482 I/ChatrMainActivity(24274): WebView console: ≡ƒöò [Global] Emergency ringtone stop 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:35.483 I/ChatrMainActivity(24274): WebView console: [NativeCall] Syncing call state: bb5f3504 -> ended 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:35.540 I/ChatrMainActivity(24274): WebView console: [NativeCall] Call state synced via ChatrCall bridge 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:35.540 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Call state synced via ChatrCall bridge
+05-19 14:34:35.549 I/MediaFocusControl( 1147): requestAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853 
+callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 14:34:35.629 I/Telecom-ConnectionServiceWrapper( 1147): Service unbound 
+ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}, from unbind.: CSW.rC->CM.mCAR@G5c
+05-19 14:34:35.636 I/Telecom-CallsManager( 1147): handleConnectionServiceDeath: service [ConnectionServiceWrapper 
+componentName=ComponentInfo{com.chatr.app/com.chatr.app.services.ChatrConnectionService}] died: CSW.rC->CM.mCAR@G5c
+05-19 14:34:35.640 I/Telecom ( 1147): IncomingCallNotifier: updateIncomingCall: foundIncomingcall = null: 
+CSW.rC->CM.mCAR@G5c
+05-19 14:34:36.703 I/MediaFocusControl( 1147): abandonAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853
+05-19 14:34:36.709 I/MediaFocusControl( 1147): requestAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853 
+callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 14:34:36.780 I/MediaFocusControl( 1147): requestAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853 
+callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 14:34:36.805 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:36.805 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:36.805 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:36.833 I/MediaFocusControl( 1147): abandonAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853
+05-19 14:34:36.834 I/MediaFocusControl( 1147): requestAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853 
+callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 14:34:36.942 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=2.03 
+dur=1480.48 max=1332.75 min=70.74
+05-19 14:34:37.439 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [UnifiedCall] Call status update: ended 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.440 I/ChatrMainActivity(24274): WebView console: ≡ƒô╡ [UnifiedCall] Call ended by partner 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.441 I/ChatrMainActivity(24274): WebView console: ≡ƒöò [Global] Emergency ringtone stop 
+(https://localhost/assets/index-CmMpmulh.js:2488)
+05-19 14:34:37.442 I/ChatrMainActivity(24274): WebView console: ≡ƒô╡ Ending active call: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.444 I/ChatrMainActivity(24274): WebView console: [NativeCall] Native call state cleared 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.445 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.446 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Already have active call for 
+this ID, skipping (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.448 I/ChatrMainActivity(24274): WebView console: ≡ƒô╡ [GlobalCallListener] Active call ended by partner 
+(receiver side) (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.487 I/ChatrMainActivity(24274): WebView console: ≡ƒÆô [CallKeepAlive] Stopping keepalive 
+(https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:37.489 I/ChatrMainActivity(24274): WebView console: ≡ƒöï [Thermal] Monitor stopped. 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.492 I/MediaFocusControl( 1147): abandonAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853
+05-19 14:34:37.493 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [LANMode] Discovery stopped 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:37.495 I/ChatrMainActivity(24274): WebView console: ≡ƒôí [ULB] Cleaned up 
+(https://localhost/assets/index-CmMpmulh.js:2564)
+05-19 14:34:37.498 I/MediaFocusControl( 1147): requestAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853 
+callingPack=com.chatr.app req=2 flags=0x0 sdk=35
+05-19 14:34:37.555 I/ChatrMainActivity(24274): WebView console: [Security] Failed to persist audit event: [object 
+Object] (https://localhost/assets/index-CmMpmulh.js:2562)
+05-19 14:34:37.556 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.557 I/ChatrMainActivity(24274): WebView console: [NativeCall] Requested native incoming call dismissal 
+via ChatrCall bridge (https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:37.558 I/Capacitor/Console(24274): File: https://localhost/assets/index-CmMpmulh.js - Line 42 - Msg: 
+[NativeCall] Requested native incoming call dismissal via ChatrCall bridge
+05-19 14:34:37.581 I/MediaFocusControl( 1147): abandonAudioFocus() from uid/pid 10266/24274 
+clientId=android.media.AudioManager@91f4042com.chatr.app.nativecallaudio.ToneManager$$ExternalSyntheticLambda9@ceea853
+05-19 14:34:37.921 I/ChatrMainActivity(24274): WebView console: ≡ƒô╡ Ending active call: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:37.922 I/ChatrMainActivity(24274): WebView console: [NativeCall] Native call state cleared 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:38.044 I/ChatrMainActivity(24274): WebView console: ≡ƒô╡ Ending active call: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:38.045 I/ChatrMainActivity(24274): WebView console: [NativeCall] Native call state cleared 
+(https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:38.085 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=27.11 
+dur=1143.63 max=228.75 min=6.06
+05-19 14:34:38.126 D/ImsResolver( 1612): maybeAddedImsService, packageName: com.chatr.app
+05-19 14:34:39.094 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=46.60 
+dur=1008.48 max=243.23 min=13.51
+05-19 14:34:39.664 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:39.669 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:39.673 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.099 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=47.73 
+dur=1005.65 max=225.74 min=12.90
+05-19 14:34:40.293 I/ChatrMainActivity(24274): WebView console: %cresult %cNetwork.addListener (#33454236) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:40.294 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:40.294 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:40.602 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.606 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.622 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.626 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.629 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.639 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.789 I/ChatrMainActivity(24274): WebView console: ≡ƒô▒ [GlobalCallListener] Receiver call UPDATE: 
+bb5f3504-6fec-4912-bc38-ad9263e32cd2 status: ended (https://localhost/assets/index-CmMpmulh.js:2568)
+05-19 14:34:40.890 I/WM-WorkerWrapper(24274): Worker result SUCCESS for Work [ 
+id=feca0bad-551a-45c3-b046-f77c4a847407, tags={ com.chatr.app.nativecalls.NativeCallSyncWorker } ]
+05-19 14:34:41.101 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=46.94 
+dur=1001.17 max=237.04 min=13.63
+05-19 14:34:42.104 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=46.84 
+dur=1003.50 max=243.54 min=11.64
+05-19 14:34:42.109 D/ImsResolver( 1612): maybeAddedImsService, packageName: com.chatr.app
+05-19 14:34:42.680 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/icons/icon-512x512.png 
+was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it 
+has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:34:42.681 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/chatr-logo.png was 
+preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has 
+an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:34:42.682 W/Capacitor/Console(24274): File: https://localhost/#/home - Line 0 - Msg: The resource 
+https://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's 
+load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-19 14:34:42.682 I/ChatrMainActivity(24274): WebView console: The resource https://localhost/icons/icon-192x192.png 
+was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it 
+has an appropriate `as` value and it is preloaded intentionally. (https://localhost/#/home:0)
+05-19 14:34:43.107 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=46.84 
+dur=1003.32 max=236.03 min=14.70
+05-19 14:34:44.127 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) queueBuffer: fps=48.07 
+dur=1019.34 max=223.35 min=13.12
+05-19 14:34:44.135 D/PowerHalWrapper( 1147): <amsBoostResume> last:com.chatr.app, next:com.motorola.launcher3 
+05-19 14:34:44.137 D/PowerHalWrapper( 1147): amsBoostNotify 
+pid:26323,activity:com.android.launcher3.CustomizationPanelLauncher, package:com.motorola.launcher3, 
+mProcessCreatePackcom.chatr.app 
+05-19 14:34:44.140 I/powerd  (  564): [powerd_req] POWER_MSG_NOTIFY_STATE, pc:0, com.chatr.app => 
+com.motorola.launcher3
+05-19 14:34:44.344 I/SurfaceFlinger(  582): screenshot (com.chatr.app/com.chatr.app.MainActivity#0)
+05-19 14:34:44.627 E/Layer   (  582): [Surface(name=AppWindowToken{fad04e3 token=Token{141f512 ActivityRecord{d76dc9d 
+u0 com.chatr.app/.MainActivity t384}}})/@0xc375010 - animation-leash#0] No local sync point found
+05-19 14:34:44.627 E/Layer   (  582): [Surface(name=AppWindowToken{fad04e3 token=Token{141f512 ActivityRecord{d76dc9d 
+u0 com.chatr.app/.MainActivity t384}}})/@0xc375010 - animation-leash#0] No local sync point found
+05-19 14:34:44.668 E/Layer   (  582): [Surface(name=AppWindowToken{fad04e3 token=Token{141f512 ActivityRecord{d76dc9d 
+u0 com.chatr.app/.MainActivity t384}}})/@0xc375010 - animation-leash#0] No local sync point found
+05-19 14:34:44.694 I/BufferQueueProducer(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:24274,c:582) disconnect(P): api 1
+05-19 14:34:44.733 V/PhoneWindow(24274): DecorView setVisiblity: visibility = 4, Parent = 
+android.view.ViewRootImpl@9fa52e3, this = DecorView@368a4e0[MainActivity]
+05-19 14:34:44.734 I/ChatrMainActivity(24274): WebView console: %cnative %cFirebaseAnalytics.logEvent (#33454265) 
+font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-19 14:34:44.735 I/ChatrMainActivity(24274): WebView console: [object Object] (:349)
+05-19 14:34:44.735 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:350)
+05-19 14:34:44.736 I/ChatrMainActivity(24274): WebView console: %cresult %cApp.addListener (#33454237) font-style: 
+italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:44.737 I/ChatrMainActivity(24274): WebView console: [object Object] (:333)
+05-19 14:34:44.737 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:44.737 I/ChatrMainActivity(24274): WebView console: App state changed. Active: false 
+(https://localhost/assets/index-CmMpmulh.js:42)
+05-19 14:34:44.754 I/BufferQueue(  582): 
+[com.chatr.app/com.chatr.app.MainActivity#0](this:0x7cb430c000,id:2125,api:1,p:-1,c:-1) ~BufferQueueCore
+05-19 14:34:44.756 I/ChatrMainActivity(24274): WebView console: %cresult %cFirebaseAnalytics.logEvent (#33454265) 
+font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-19 14:34:44.757 I/ChatrMainActivity(24274): WebView console: undefined (:333)
+05-19 14:34:44.757 I/ChatrMainActivity(24274): WebView console: console.groupEnd (:335)
+05-19 14:34:45.899 I/ChatrMainActivity(24274): MainActivity onDestroy
+05-19 14:34:45.956 D/View    (24274): [Warning] assignParent to null: this = DecorView@368a4e0[MainActivity]
+05-19 14:35:08.716 I/DialerMainActivityStartupMonitor(25312): 
+com.android.dialer.startup.mainactivitystartup.MainActivityStartupMonitor.onApplicationCreated$lambda$0:32 
+mainActivityCreated: false
+05-19 14:35:08.730 I/DialerInternalSemanticEventLoggerImpl(25312): 
+com.android.dialer.cui.impl.InternalSemanticEventLoggerImpl.processPotentialCancelEvent:232 Cancelled logging CUI 
+AppStartToMainActivity to GIL due to cancelEvent
+05-19 14:35:08.793 E/ClipboardService( 1147): Denying clipboard access to com.chatr.app, application is not in focus 
+neither is a system service for user 0
+
+

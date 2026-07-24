@@ -1,0 +1,11 @@
+{
+  "name": "Twilio",
+  "version": "1.0.0",
+  "description": "Auto-generated provider plugin for Twilio",
+  "author": "CHATR Onboarding Agent",
+  "endpoints": [],
+  "capabilities": [
+    "discover",
+    "execute"
+  ]
+}

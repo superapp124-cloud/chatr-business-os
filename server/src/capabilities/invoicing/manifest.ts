@@ -1,0 +1,30 @@
+import { ICapabilityManifest } from '../../../types.js';
+export const manifest: ICapabilityManifest = {
+  id: 'Finance.Invoicing',
+  name: 'Invoicing & Billing',
+  description: 'Professional invoice generation, payment tracking, recurring billing, and overdue reminders.',
+  department: 'Finance',
+  category: 'Finance & Accounting',
+  version: '1.3.0',
+  maturity: 'L5',
+  icon: '🧾',
+  rating: 4.7,
+  installs: 14500,
+  verbs: ['create', 'send', 'pay', 'remind', 'void'],
+  nouns: ['invoice', 'payment', 'billing', 'receipt'],
+  permissions: ['finance.invoice.create', 'finance.invoice.send'],
+  eventsProduced: ['InvoiceCreated', 'InvoicePaid', 'PaymentOverdue'],
+  eventsConsumed: [],
+  dependencies: [],
+  search: ['invoice_number', 'client', 'amount', 'status'],
+  configSchema: [
+    { key: 'payment_terms', label: 'Default Payment Terms (days)', type: 'number', defaultValue: 30, group: 'Terms' },
+    { key: 'currency', label: 'Default Currency', type: 'select', defaultValue: 'USD', options: ['USD', 'EUR', 'GBP', 'INR'], group: 'Currency' },
+    { key: 'tax_rate', label: 'Default Tax Rate (%)', type: 'number', defaultValue: 18, group: 'Tax' },
+    { key: 'overdue_reminder_days', label: 'Overdue Reminder (days)', type: 'number', defaultValue: 7, group: 'Reminders' },
+    { key: 'invoice_prefix', label: 'Invoice Number Prefix', type: 'text', defaultValue: 'INV-', group: 'Numbering' },
+    { key: 'company_logo', label: 'Company Logo URL', type: 'url', defaultValue: '', group: 'Branding' },
+  ],
+  tags: ['finance', 'invoicing', 'billing', 'payments'],
+};
+export default manifest;

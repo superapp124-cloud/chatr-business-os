@@ -1,0 +1,31 @@
+{
+  "morning": [
+    "Good morning, {UserName}.",
+    "Rise and shine, {UserName}.",
+    "A new day begins, {UserName}."
+  ],
+  "afternoon": [
+    "Good afternoon, {UserName}.",
+    "Hope your day is going well, {UserName}.",
+    "Ready for the afternoon, {UserName}?"
+  ],
+  "evening": [
+    "Good evening, {UserName}.",
+    "The sun sets, but we continue, {UserName}.",
+    "Hope you had a productive day, {UserName}."
+  ],
+  "night": [
+    "Good evening, {UserName}.",
+    "Working late, {UserName}?",
+    "The world sleeps, but we are ready, {UserName}."
+  ],
+  "suffixes": [
+    "Happy Monday.",
+    "Happy Tuesday.",
+    "Happy Wednesday.",
+    "Happy Thursday.",
+    "Happy Friday.",
+    "Happy Saturday.",
+    "Happy Sunday."
+  ]
+}

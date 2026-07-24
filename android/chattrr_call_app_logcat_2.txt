@@ -1,0 +1,15 @@
+--------- beginning of system
+05-21 13:26:37.886 I/TelecomFramework(16722): ChatrConnectionService: notifyCreateConnectionComplete TC@1_1: (...->CSW.hCCC)->CS.crCoC->H.CS.crCoC@E-E-E-AN4
+--------- beginning of main
+05-21 13:27:57.893 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.91 dur=1005.34 max=80.84 min=38.92
+05-21 13:27:58.897 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.95 dur=1003.19 max=85.91 min=38.45
+05-21 13:27:59.903 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.88 dur=1006.95 max=65.78 min=51.89
+05-21 13:28:00.921 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.70 dur=1017.73 max=78.12 min=44.36
+05-21 13:28:01.976 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=17.06 dur=1054.94 max=69.45 min=49.31
+05-21 13:28:02.980 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.93 dur=1004.13 max=75.64 min=44.95
+05-21 13:28:03.988 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.88 dur=1007.09 max=81.01 min=38.17
+05-21 13:28:04.993 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.91 dur=1005.12 max=66.72 min=53.38
+05-21 13:28:06.002 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.84 dur=1009.57 max=64.73 min=51.03
+05-21 13:28:07.009 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.89 dur=1006.70 max=68.23 min=49.11
+05-21 13:28:08.010 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.97 dur=1001.59 max=66.92 min=53.97
+05-21 13:28:09.020 I/BufferQueueProducer(16722): [ImageReader-640x480f23m2-16722-0](this:0x7c1ae8b800,id:0,api:4,p:671,c:16722) queueBuffer: fps=16.84 dur=1009.64 max=70.81 min=49.08

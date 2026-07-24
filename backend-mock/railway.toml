@@ -1,0 +1,27 @@
+# ─── Railway Deployment — CHATR Real-Time Backend ────────────────────────────
+#
+# 1. Install Railway CLI:  npm install -g @railway/cli
+# 2. railway login
+# 3. railway init  (select existing project or create new)
+# 4. railway up --service realtime
+#
+# Set these env vars in Railway Dashboard → Variables:
+#   SUPABASE_JWT_SECRET   → Supabase Dashboard → Settings → API → JWT Secret
+#   REDIS_URL             → Railway Redis plugin URL  OR  Upstash rediss://...
+#   CORS_ORIGIN           → https://your-frontend-domain.com
+#   PORT                  → 3000 (Railway sets this automatically)
+# ─────────────────────────────────────────────────────────────────────────────
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile.realtime"
+
+[deploy]
+startCommand = "node server-enhanced.js"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
+
+[[services]]
+name = "realtime"

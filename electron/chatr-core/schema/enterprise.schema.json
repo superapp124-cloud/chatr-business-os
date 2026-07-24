@@ -1,0 +1,67 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enterprise Control Plane Schema",
+  "description": "Schemas for CHATR Enterprise Control Plane Objects",
+  "definitions": {
+    "Principal": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string", "enum": ["Human", "AIAgent", "ServiceAccount", "MCPServer", "Device", "ExternalSystem"] },
+        "identityRef": { "type": "string" }
+      }
+    },
+    "Workspace": {
+      "type": "object",
+      "required": ["id", "hierarchy", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "hierarchy": {
+          "type": "object",
+          "properties": {
+            "enterprise": { "type": "string" },
+            "region": { "type": "string" },
+            "businessUnit": { "type": "string" },
+            "department": { "type": "string" },
+            "project": { "type": "string" }
+          }
+        }
+      }
+    },
+    "EnterpriseResource": {
+      "type": "object",
+      "required": ["id", "type", "version", "owner", "workspace", "classification", "trustLevel"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string", "enum": ["IntentGraph", "PolicyPack", "Template", "Capability", "Connection", "Provider"] },
+        "version": { "type": "string" },
+        "owner": { "$ref": "#/definitions/Principal" },
+        "workspace": { "type": "string" },
+        "classification": { "type": "string", "enum": ["Public", "Internal", "Confidential", "Restricted", "Regulated"] },
+        "trustLevel": { "type": "string", "enum": ["Trusted", "Verified", "External", "Experimental", "Untrusted"] },
+        "labels": { "type": "object" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "createdBy": { "$ref": "#/definitions/Principal" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "GovernanceDecision": {
+      "type": "object",
+      "required": ["id", "resourceId", "resourceVersion", "policy", "decision", "approver", "timestamp", "signature"],
+      "properties": {
+        "id": { "type": "string" },
+        "resourceId": { "type": "string" },
+        "resourceVersion": { "type": "string" },
+        "policy": { "type": "string" },
+        "decision": { "type": "string", "enum": ["APPROVED", "DENIED", "CONDITIONALLY_APPROVED"] },
+        "approver": { "$ref": "#/definitions/Principal" },
+        "reason": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "signature": { "type": "string" }
+      }
+    }
+  }
+}

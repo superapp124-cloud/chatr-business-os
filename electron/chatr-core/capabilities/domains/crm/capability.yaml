@@ -1,0 +1,30 @@
+identity:
+  id: sales.lead.qualification
+  version: 1.0.0
+  displayName: "Lead Qualification Lifecycle"
+  description: "Ongoing, event-driven, recurring CRM lifecycle."
+  author: "CHATR Enterprise"
+  license: "MIT"
+  category: "CRM"
+  tags: ["sales", "lead", "crm"]
+
+runtime:
+  intentTypes: ["sales.lead.qualification"]
+  permissions: ["email", "calendar", "contacts"]
+  inputs: ["leadId", "contactInfo", "source"]
+  outputs: ["qualificationScore", "nextAction"]
+  events: ["sales.lead.contacted", "sales.lead.converted"]
+  policies: ["sales.outreach.limits"]
+  verification:
+    strategy: crm_sync@1.0
+  stewardship:
+    renewable: true
+    expiration: closed_lost
+
+metadata:
+  minKernelVersion: "1.0"
+  maxKernelVersion: "2.0"
+  dependencies: []
+  supportedPlatforms: ["desktop", "web"]
+  securityClassification: "internal"
+  profile: "Automation"

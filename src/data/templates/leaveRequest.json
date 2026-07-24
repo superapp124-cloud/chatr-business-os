@@ -1,0 +1,76 @@
+{
+  "id": "def_leave_request",
+  "name": "Leave Request",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "leave_type": {
+        "type": "string",
+        "enum": ["Annual", "Sick", "Maternity", "Unpaid"]
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "reason": {
+        "type": "string"
+      }
+    },
+    "required": ["leave_type", "start_date", "end_date"]
+  },
+  "relationships": [
+    {
+      "targetObjectId": "Employee",
+      "type": "one_to_one",
+      "label": "Requested By"
+    }
+  ],
+  "permissions": {
+    "roles": ["employee", "manager", "hr"],
+    "actions": ["create", "read", "update"]
+  },
+  "validation": [
+    {
+      "field": "end_date",
+      "rule": "end_date >= start_date",
+      "errorMessage": "End date must be after start date"
+    }
+  ],
+  "automation": [
+    {
+      "event": "STATUS_CHANGED",
+      "conditions": [
+        { "field": "status", "operator": "equals", "value": "Approved" }
+      ],
+      "actions": [
+        { "type": "notify", "template": "leave_approved" },
+        { "type": "update_calendar", "target": "team_calendar" }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "id": "view_my_leaves",
+      "name": "My Leaves",
+      "type": "list",
+      "filters": [
+        { "field": "owner_id", "operator": "equals", "value": "$CURRENT_USER" }
+      ],
+      "columns": ["id", "leave_type", "start_date", "end_date", "status"]
+    }
+  ],
+  "lifecycle": {
+    "states": ["Draft", "Pending Approval", "Approved", "Rejected", "Cancelled"],
+    "transitions": {
+      "Draft": ["Pending Approval", "Cancelled"],
+      "Pending Approval": ["Approved", "Rejected", "Cancelled"],
+      "Approved": ["Cancelled"],
+      "Rejected": []
+    },
+    "initialState": "Draft"
+  }
+}

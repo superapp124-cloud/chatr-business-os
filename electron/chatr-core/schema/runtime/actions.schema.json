@@ -1,0 +1,52 @@
+{
+  "": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Business Actions Schema",
+  "description": "Atomic operations decomposing a capability",
+  "version": "15.0",
+  "definitions": {
+    "BusinessAction": {
+      "type": "object",
+      "required": [
+        "actionId",
+        "name",
+        "actionType",
+        "inputs",
+        "expectedOutputs"
+      ],
+      "properties": {
+        "actionId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "actionType": {
+          "type": "string",
+          "enum": [
+            "Validation",
+            "Calculation",
+            "Generation",
+            "Persistence",
+            "EventEmission",
+            "Notification",
+            "Integration"
+          ]
+        },
+        "inputs": {
+          "type": "object"
+        },
+        "expectedOutputs": {
+          "type": "object"
+        },
+        "compensation": {
+          "type": "object",
+          "description": "Instructions to rollback this action if a subsequent action fails"
+        },
+        "providerResolved": {
+          "type": "boolean",
+          "description": "True if this action was mapped to a specific provider adapter"
+        }
+      }
+    }
+  }
+}

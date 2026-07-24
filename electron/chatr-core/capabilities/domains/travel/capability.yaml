@@ -1,0 +1,30 @@
+identity:
+  id: travel.hotel.booking
+  version: 1.0.0
+  displayName: "Hotel Booking Lifecycle"
+  description: "Manages the time-bound, transactional lifecycle of a hotel reservation."
+  author: "CHATR Ecosystem"
+  license: "MIT"
+  category: "Travel"
+  tags: ["hotel", "booking", "reservation"]
+
+runtime:
+  intentTypes: ["travel.hotel.booking"]
+  permissions: ["location", "payment"]
+  inputs: ["destination", "checkIn", "checkOut"]
+  outputs: ["reservation"]
+  events: ["reservation.created", "reservation.cancelled"]
+  policies: ["booking.default", "travel.corporate.policy"]
+  verification:
+    strategy: hotel_confirmation@1.0
+  stewardship:
+    renewable: false
+    expiration: checkout
+
+metadata:
+  minKernelVersion: "1.0"
+  maxKernelVersion: "2.0"
+  dependencies: []
+  supportedPlatforms: ["desktop", "mobile"]
+  securityClassification: "standard"
+  profile: "Transaction"

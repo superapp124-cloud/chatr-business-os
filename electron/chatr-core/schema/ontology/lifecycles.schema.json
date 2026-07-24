@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Reusable Lifecycle Profile Library",
+  "description": "Entities reference a lifecycle profile. They do not define their own from scratch.",
+  "version": "15.0",
+  "law": "No canonical entity may define a bespoke lifecycle. It must adopt or extend a library profile.",
+  "profiles": {
+    "ContentLifecycle": {
+      "description": "For documents, articles, templates, and knowledge assets.",
+      "states": ["Draft", "Review", "Approved", "Published", "Archived"],
+      "transitions": [
+        { "from": "Draft", "to": "Review", "event": "SubmitForReview" },
+        { "from": "Review", "to": "Approved", "event": "Approve" },
+        { "from": "Review", "to": "Draft", "event": "RequestRevision" },
+        { "from": "Approved", "to": "Published", "event": "Publish" },
+        { "from": "Published", "to": "Archived", "event": "Archive" }
+      ]
+    },
+    "BusinessLifecycle": {
+      "description": "General-purpose lifecycle for business entities.",
+      "states": ["Created", "Active", "Suspended", "Closed", "Archived"],
+      "transitions": [
+        { "from": "Created", "to": "Active", "event": "Activate" },
+        { "from": "Active", "to": "Suspended", "event": "Suspend" },
+        { "from": "Suspended", "to": "Active", "event": "Resume" },
+        { "from": "Active", "to": "Closed", "event": "Close" },
+        { "from": "Closed", "to": "Archived", "event": "Archive" }
+      ]
+    },
+    "FinancialLifecycle": {
+      "description": "For invoices, payments, and financial instruments.",
+      "states": ["Draft", "Issued", "Paid", "Settled", "Cancelled", "Overdue"],
+      "transitions": [
+        { "from": "Draft", "to": "Issued", "event": "Issue" },
+        { "from": "Issued", "to": "Paid", "event": "RecordPayment" },
+        { "from": "Paid", "to": "Settled", "event": "Settle" },
+        { "from": "Issued", "to": "Overdue", "event": "PassDueDate" },
+        { "from": "Issued", "to": "Cancelled", "event": "Cancel" }
+      ]
+    },
+    "IdentityLifecycle": {
+      "description": "For people, organizations, and credentials.",
+      "states": ["Invited", "Active", "Suspended", "Disabled", "Archived"],
+      "transitions": [
+        { "from": "Invited", "to": "Active", "event": "AcceptInvitation" },
+        { "from": "Active", "to": "Suspended", "event": "Suspend" },
+        { "from": "Suspended", "to": "Active", "event": "Reinstate" },
+        { "from": "Active", "to": "Disabled", "event": "Disable" },
+        { "from": "Disabled", "to": "Archived", "event": "Archive" }
+      ]
+    },
+    "ResourceLifecycle": {
+      "description": "For physical and digital assets.",
+      "states": ["Acquired", "Available", "InUse", "Maintenance", "Retired"],
+      "transitions": [
+        { "from": "Acquired", "to": "Available", "event": "Provision" },
+        { "from": "Available", "to": "InUse", "event": "Assign" },
+        { "from": "InUse", "to": "Available", "event": "Release" },
+        { "from": "InUse", "to": "Maintenance", "event": "SendForMaintenance" },
+        { "from": "Maintenance", "to": "Available", "event": "ReturnFromMaintenance" },
+        { "from": "Available", "to": "Retired", "event": "Retire" }
+      ]
+    },
+    "WorkflowLifecycle": {
+      "description": "For workflows, projects, and tasks.",
+      "states": ["Draft", "Published", "Running", "Paused", "Completed", "Failed", "Archived"],
+      "transitions": [
+        { "from": "Draft", "to": "Published", "event": "Publish" },
+        { "from": "Published", "to": "Running", "event": "Start" },
+        { "from": "Running", "to": "Paused", "event": "Pause" },
+        { "from": "Paused", "to": "Running", "event": "Resume" },
+        { "from": "Running", "to": "Completed", "event": "Complete" },
+        { "from": "Running", "to": "Failed", "event": "Fail" },
+        { "from": "Completed", "to": "Archived", "event": "Archive" }
+      ]
+    },
+    "PackageLifecycle": {
+      "description": "For exchange packages. Mirrors the frozen Package Contract.",
+      "states": ["Draft", "Validated", "Certified", "Signed", "Published", "Revoked", "Archived"],
+      "transitions": [
+        { "from": "Draft", "to": "Validated", "event": "Validate" },
+        { "from": "Validated", "to": "Certified", "event": "Certify" },
+        { "from": "Certified", "to": "Signed", "event": "Sign" },
+        { "from": "Signed", "to": "Published", "event": "Publish" },
+        { "from": "Published", "to": "Revoked", "event": "Revoke" },
+        { "from": "Revoked", "to": "Archived", "event": "Archive" }
+      ]
+    },
+    "TrustLifecycle": {
+      "description": "For federated trust relationships.",
+      "states": ["Proposed", "Verified", "Negotiated", "Active", "Suspended", "Revoked", "Archived"],
+      "transitions": [
+        { "from": "Proposed", "to": "Verified", "event": "Verify" },
+        { "from": "Verified", "to": "Negotiated", "event": "Negotiate" },
+        { "from": "Negotiated", "to": "Active", "event": "Activate" },
+        { "from": "Active", "to": "Suspended", "event": "Suspend" },
+        { "from": "Suspended", "to": "Active", "event": "Reinstate" },
+        { "from": "Active", "to": "Revoked", "event": "Revoke" },
+        { "from": "Revoked", "to": "Archived", "event": "Archive" }
+      ]
+    },
+    "ExecutionLifecycle": {
+      "description": "For execution plans and kernel operations.",
+      "states": ["Queued", "Running", "Paused", "Completed", "Failed", "RolledBack"],
+      "transitions": [
+        { "from": "Queued", "to": "Running", "event": "Start" },
+        { "from": "Running", "to": "Paused", "event": "Pause" },
+        { "from": "Paused", "to": "Running", "event": "Resume" },
+        { "from": "Running", "to": "Completed", "event": "Complete" },
+        { "from": "Running", "to": "Failed", "event": "Fail" },
+        { "from": "Failed", "to": "RolledBack", "event": "Rollback" }
+      ]
+    },
+    "AILifecycle": {
+      "description": "For intelligence artifacts.",
+      "states": ["Generated", "Reviewed", "Accepted", "Applied", "Superseded", "Expired"],
+      "transitions": [
+        { "from": "Generated", "to": "Reviewed", "event": "Review" },
+        { "from": "Reviewed", "to": "Accepted", "event": "Accept" },
+        { "from": "Accepted", "to": "Applied", "event": "Apply" },
+        { "from": "Applied", "to": "Superseded", "event": "Supersede" },
+        { "from": "Accepted", "to": "Expired", "event": "Expire" }
+      ]
+    },
+    "FederationLifecycle": {
+      "description": "For federation sessions and cross-org interactions.",
+      "states": ["Proposed", "Negotiated", "Active", "Suspended", "Revoked"],
+      "transitions": [
+        { "from": "Proposed", "to": "Negotiated", "event": "Negotiate" },
+        { "from": "Negotiated", "to": "Active", "event": "Activate" },
+        { "from": "Active", "to": "Suspended", "event": "Suspend" },
+        { "from": "Active", "to": "Revoked", "event": "Revoke" }
+      ]
+    }
+  }
+}

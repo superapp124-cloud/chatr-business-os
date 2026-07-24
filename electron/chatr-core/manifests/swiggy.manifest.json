@@ -1,0 +1,69 @@
+{
+  "provider": "swiggy",
+  "version": "1.0",
+  "runtime_version": "1.0",
+  "maturity": "experimental",
+  "description": "Swiggy provider manifest. Mapped to L3 for discovery/menu, L2 for checkout due to Bot Protection (403).",
+  "flows": {
+    "discover": [
+      {
+        "step": "navigate",
+        "url": "https://www.swiggy.com/city/{{city}}/search?query={{query}}"
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='rest-card']",
+        "timeout_ms": 5000
+      },
+      {
+        "step": "extract",
+        "selector": "[data-testid='rest-card']",
+        "schema": {
+          "name":   ".rest-name",
+          "rating": ".rest-rating",
+          "eta":    ".rest-eta",
+          "price":  ".rest-price"
+        }
+      },
+      {
+        "step": "verify",
+        "condition": "count > 0"
+      }
+    ],
+    "fetch_menu": [
+      {
+        "step": "navigate",
+        "url": "https://www.swiggy.com/restaurants/{{restaurant_slug}}"
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='menu-item']",
+        "timeout_ms": 5000
+      },
+      {
+        "step": "extract",
+        "selector": "[data-testid='menu-item']",
+        "schema": {
+          "name":        ".item-name",
+          "price":       ".item-price",
+          "description": ".item-desc"
+        }
+      },
+      {
+        "step": "verify",
+        "condition": "count > 0"
+      }
+    ],
+    "authenticate": [
+      {
+        "step": "navigate",
+        "url": "https://www.swiggy.com/auth"
+      },
+      {
+        "step": "observe",
+        "selector": "[data-testid='user-profile']",
+        "timeout_ms": 3000
+      }
+    ]
+  }
+}

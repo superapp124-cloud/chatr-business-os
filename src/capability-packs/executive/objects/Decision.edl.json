@@ -1,0 +1,31 @@
+{
+  "urn": "urn:chatr:object:decision",
+  "type": "Decision",
+  "name": "Executive Decision",
+  "primitiveType": "LivingObject",
+  "metadata": {},
+  "properties": [
+    { "key": "title", "type": "string", "required": true },
+    { "key": "context", "type": "string", "required": true },
+    { "key": "status", "type": "string", "required": true },
+    { "key": "impact_level", "type": "string", "required": true }
+  ],
+  "relationships": [
+    { "predicate": "owned_by", "class": "authority", "targetType": "Employee", "required": true, "multiple": false }
+  ],
+  "lifecycle": {
+    "initialState": "proposed",
+    "states": [
+      { "name": "proposed" },
+      { "name": "under_review" },
+      { "name": "approved" },
+      { "name": "rejected" }
+    ],
+    "transitions": [
+      { "from": ["proposed"], "to": "under_review", "triggeredByEvent": "DecisionReviewStarted" },
+      { "from": ["under_review"], "to": "approved", "triggeredByEvent": "DecisionApproved" },
+      { "from": ["under_review"], "to": "rejected", "triggeredByEvent": "DecisionRejected" }
+    ]
+  },
+  "eventsProduced": ["DecisionCreated", "DecisionTransitioned"]
+}

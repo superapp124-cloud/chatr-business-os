@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "identity": {
+      "id": "mock.crud.notes",
+      "version": "1.0.0",
+      "displayName": "Mock Notes CRUD Provider",
+      "description": "A synchronous CRUD provider for notes.",
+      "author": "CHATR",
+      "license": "MIT"
+    },
+    "capabilities": [
+      "notes.manage"
+    ],
+    "authentication": {
+      "type": "api_key",
+      "scopes": []
+    },
+    "operations": {
+      "patterns": [
+        "Synchronous"
+      ],
+      "rateLimits": "100/min",
+      "regions": [
+        "us-east-1"
+      ]
+    },
+    "metadata": {
+      "minKernelVersion": "1.0",
+      "securityClassification": "standard"
+    }
+  },
+  "certificate": {
+    "providerId": "mock.crud.notes",
+    "version": "1.0.0",
+    "manifestHash": "42bdfcf042ee7e6819969627067025512e752d6b017e4c67fac13dd60975f351",
+    "schemaVersion": "1.0",
+    "abiVersion": "1.0",
+    "certificationDate": "2026-07-17T06:40:52.246Z",
+    "certificationToolVersion": "1.0.0",
+    "result": "CERTIFIED",
+    "warnings": []
+  }
+}

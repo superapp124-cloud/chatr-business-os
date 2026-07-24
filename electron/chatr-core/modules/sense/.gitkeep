@@ -1,0 +1,3 @@
+// Reserved — Intent Module (CHATR Kernel v0.2+)
+// This module will extract structured intents from conversation streams.
+// Activation: Set feature.config.cjs modules.intent.enabled = true

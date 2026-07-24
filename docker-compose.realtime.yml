@@ -1,0 +1,74 @@
+version: '3.9'
+
+# ─── CHATR Real-Time Stack (local development + staging) ──────────────────
+#
+# Usage:
+#   docker-compose -f docker-compose.realtime.yml up
+#
+# This starts:
+#   - Redis (Upstash-compatible)
+#   - CHATR Real-Time Node.js server
+#   - NGINX load balancer (port 80 → port 3000)
+#
+# For multi-instance test: scale the realtime service:
+#   docker-compose -f docker-compose.realtime.yml up --scale realtime=3
+
+services:
+
+  # ── Redis ──────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --save "" --appendonly no --maxmemory 256mb --maxmemory-policy allkeys-lru
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - chatr_net
+
+  # ── Real-Time Node.js Server ───────────────────────────────────────────
+  realtime:
+    build:
+      context: ./backend-mock
+      dockerfile: Dockerfile.realtime
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      NODE_ENV: development
+      REDIS_URL: redis://redis:6379
+      SUPABASE_JWT_SECRET: ${SUPABASE_JWT_SECRET:-}
+      CORS_ORIGIN: ${CORS_ORIGIN:-*}
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - chatr_net
+    # Port exposed directly (bypass NGINX) for local dev convenience
+    ports:
+      - "3000:3000"
+
+  # ── NGINX Load Balancer ────────────────────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - ./backend-mock/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - realtime
+    networks:
+      - chatr_net
+
+networks:
+  chatr_net:
+    driver: bridge

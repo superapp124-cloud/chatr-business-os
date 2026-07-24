@@ -1,0 +1,109 @@
+{
+  "abi": "chatr.provider_manifest.v0_9_rc",
+  "provider_id": "provider.upi",
+  "provider_version": "1.0.0",
+  "display_name": "UPI",
+  "manifest_version": "1.0.0",
+  "capabilities": [
+    {
+      "capability": "PAY",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Bill", "Order", "Transfer", "Invoice"],
+      "input_schema": {
+        "type": "object",
+        "required": ["amount_or_payment_authorization", "payment_instrument_ref", "policy_refs"],
+        "properties": {
+          "amount_or_payment_authorization": { "type": "object" },
+          "payment_instrument_ref":          { "type": "string" },
+          "policy_refs":                     { "type": "array" },
+          "upi_id":                          { "type": "string" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["payment_receipt"],
+        "properties": { "payment_receipt": { "type": "object" } }
+      },
+      "execution_modes": ["native_app"],
+      "strategy_support": ["fastest", "cheapest", "most_trusted", "privacy_first", "offline_first"],
+      "authentication": { "type": "upi_pin", "required": true },
+      "permissions": ["payment.initiate", "identity.read"],
+      "rate_limits": { "requests_per_minute": 10 },
+      "latency": { "p50_ms": 1500, "p95_ms": 5000 },
+      "reliability": { "declared_success_rate": 0.97 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "temporary_unavailable"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 2 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    },
+    {
+      "capability": "TRANSFER",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Transfer", "Identity"],
+      "input_schema": {
+        "type": "object",
+        "required": ["value_ref", "source_ref", "target_ref", "policy_refs"],
+        "properties": {
+          "value_ref":   { "type": "string" },
+          "source_ref":  { "type": "string" },
+          "target_ref":  { "type": "string" },
+          "policy_refs": { "type": "array" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["transfer_receipt"],
+        "properties": { "transfer_receipt": { "type": "object" } }
+      },
+      "execution_modes": ["native_app"],
+      "strategy_support": ["fastest", "cheapest", "most_trusted"],
+      "authentication": { "type": "upi_pin", "required": true },
+      "permissions": ["payment.initiate", "identity.read"],
+      "rate_limits": { "requests_per_minute": 5 },
+      "latency": { "p50_ms": 2000, "p95_ms": 8000 },
+      "reliability": { "declared_success_rate": 0.96 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": true, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout", "temporary_unavailable"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 1 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    },
+    {
+      "capability": "VERIFY",
+      "capability_contract_version": "1.0.0",
+      "supported_entities": ["Bill", "Order", "Transfer"],
+      "input_schema": {
+        "type": "object",
+        "required": ["expected_outcome", "evidence_refs"],
+        "properties": {
+          "expected_outcome": { "type": "object" },
+          "evidence_refs":    { "type": "array" }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "required": ["verification_report"],
+        "properties": { "verification_report": { "type": "object" } }
+      },
+      "execution_modes": ["native_app"],
+      "strategy_support": ["most_trusted", "fastest"],
+      "authentication": { "type": "none", "required": false },
+      "permissions": [],
+      "rate_limits": { "requests_per_minute": 30 },
+      "latency": { "p50_ms": 500, "p95_ms": 2000 },
+      "reliability": { "declared_success_rate": 0.98 },
+      "cost": { "model": "free" },
+      "policies": { "requires_user_approval": false, "allowed_regions": ["IN"] },
+      "observation": { "supports_polling": true, "supports_webhooks": false },
+      "recovery": { "retryable_errors": ["timeout"], "supports_idempotency_key": true },
+      "resource_profile": { "requires": ["network"], "optional": [], "max_concurrency": 4 },
+      "audit": { "emits_action_receipts": true, "emits_state_transitions": true }
+    }
+  ],
+  "health_check": { "mode": "native", "package": "in.org.npci.upiapp" },
+  "compatibility": { "kernel_abi": ">=0.9 <1.0" },
+  "trust_evidence": { "manifest_signature": "required", "attestation": "required" }
+}

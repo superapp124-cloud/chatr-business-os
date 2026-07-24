@@ -1,0 +1,181 @@
+--------- beginning of main
+05-20 18:45:44.195 V/Capacitor/NetworkPlugin(30559): Notifying listeners for event networkStatusChange
+05-20 18:45:44.235 I/ChatrMainActivity(30559): WebView console: %cresult %cNetwork.addListener (#43574535) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:44.236 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:44.236 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:46.141 W/com.chatr.app(30559): Accessing hidden method Landroid/view/MotionEvent;->getEventTimeNano()J (greylist, reflection, allowed)
+05-20 18:45:47.140 D/Capacitor(30559): Handling local request: http://localhost/assets/ChatrShield-B49XLJnV.js
+05-20 18:45:47.219 V/Capacitor/NetworkPlugin(30559): Notifying listeners for event networkStatusChange
+05-20 18:45:47.256 I/ChatrMainActivity(30559): WebView console: %cresult %cNetwork.addListener (#43574535) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:47.257 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:47.257 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:48.467 E/IMGSRV  (30559): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:45:48.467 I/chatty  (30559): uid=10267(com.chatr.app) Chrome_InProcGp identical 2 lines
+05-20 18:45:48.467 E/IMGSRV  (30559): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:45:48.763 E/IMGSRV  (30559): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:45:48.763 I/chatty  (30559): uid=10267(com.chatr.app) Chrome_InProcGp identical 3 lines
+05-20 18:45:48.763 E/IMGSRV  (30559): :0: BufPoolFreeBuffer: fragment buffer for render surface still in use
+05-20 18:45:49.210 I/ChatrMainActivity(30559): WebView console: %cnative %cHaptics.impact (#43574551) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.210 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.211 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.230 I/ChatrMainActivity(30559): WebView page finished: http://localhost/#/chat progress=100
+05-20 18:45:49.234 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574551, pluginId: Haptics, methodName: impact
+05-20 18:45:49.234 V/Capacitor(30559): callback: 43574551, pluginId: Haptics, methodName: impact, methodData: {"style":"LIGHT"}
+05-20 18:45:49.294 I/ChatrMainActivity(30559): WebView console: %cresult %cHaptics.impact (#43574551) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:49.295 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:49.296 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:49.297 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:49.393 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseAnalytics.logEvent (#43574552) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.394 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.395 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.396 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#43574553) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.396 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.397 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.398 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.addListener (#43574554) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.398 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.399 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.400 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.removeListener (#43574555) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.400 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.401 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.429 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574552, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:45:49.430 V/Capacitor(30559): callback: 43574552, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"chat","screen_class":"chat"}}
+05-20 18:45:49.433 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574553, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:45:49.433 V/Capacitor(30559): callback: 43574553, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"chat","type":"string"}
+05-20 18:45:49.437 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574554, pluginId: App, methodName: addListener
+05-20 18:45:49.438 V/Capacitor(30559): callback: 43574554, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:45:49.439 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574555, pluginId: App, methodName: removeListener
+05-20 18:45:49.440 V/Capacitor(30559): callback: 43574555, pluginId: App, methodName: removeListener, methodData: {"eventName":"backButton","callbackId":"43574538"}
+05-20 18:45:49.525 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseAnalytics.logEvent (#43574552) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:49.525 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:49.526 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:49.527 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:49.528 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#43574553) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:49.528 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:49.529 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:49.530 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:49.706 I/ChatrMainActivity(30559): WebView console: [AUTH 2026-05-20T13:15:49.689Z] Auth page: Checking session  (http://localhost/assets/index-CwRZyNBE.js:2492)
+05-20 18:45:49.707 I/Capacitor/Console(30559): File: http://localhost/assets/index-CwRZyNBE.js - Line 2492 - Msg: [AUTH 2026-05-20T13:15:49.689Z] Auth page: Checking session 
+05-20 18:45:49.707 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseAnalytics.logEvent (#43574556) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.708 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.709 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.710 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseCrashlytics.setCustomKey (#43574557) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.710 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.711 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.712 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.addListener (#43574558) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.712 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.713 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.714 I/ChatrMainActivity(30559): WebView console: %cnative %cKeyboard.removeListener (#43574559) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.715 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.715 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.717 I/ChatrMainActivity(30559): WebView console: %cnative %cKeyboard.removeListener (#43574560) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.717 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.718 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.719 I/ChatrMainActivity(30559): WebView console: %cnative %cApp.removeListener (#43574561) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.719 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.720 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.749 I/ChatrMainActivity(30559): WebView console: %cnative %cDevice.getId (#43574562) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.750 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.750 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.752 I/ChatrMainActivity(30559): WebView page finished: http://localhost/#/auth progress=100
+05-20 18:45:49.756 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574556, pluginId: FirebaseAnalytics, methodName: logEvent
+05-20 18:45:49.756 V/Capacitor(30559): callback: 43574556, pluginId: FirebaseAnalytics, methodName: logEvent, methodData: {"name":"screen_view","params":{"screen_name":"auth","screen_class":"auth"}}
+05-20 18:45:49.758 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574557, pluginId: FirebaseCrashlytics, methodName: setCustomKey
+05-20 18:45:49.759 V/Capacitor(30559): callback: 43574557, pluginId: FirebaseCrashlytics, methodName: setCustomKey, methodData: {"key":"last_screen","value":"auth","type":"string"}
+05-20 18:45:49.762 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574558, pluginId: App, methodName: addListener
+05-20 18:45:49.762 V/Capacitor(30559): callback: 43574558, pluginId: App, methodName: addListener, methodData: {"eventName":"backButton"}
+05-20 18:45:49.764 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574559, pluginId: Keyboard, methodName: removeListener
+05-20 18:45:49.765 V/Capacitor(30559): callback: 43574559, pluginId: Keyboard, methodName: removeListener, methodData: {"eventName":"keyboardWillShow","callbackId":"43574530"}
+05-20 18:45:49.767 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574560, pluginId: Keyboard, methodName: removeListener
+05-20 18:45:49.768 V/Capacitor(30559): callback: 43574560, pluginId: Keyboard, methodName: removeListener, methodData: {"eventName":"keyboardWillHide","callbackId":"43574540"}
+05-20 18:45:49.771 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574561, pluginId: App, methodName: removeListener
+05-20 18:45:49.772 V/Capacitor(30559): callback: 43574561, pluginId: App, methodName: removeListener, methodData: {"eventName":"backButton","callbackId":"43574554"}
+05-20 18:45:49.776 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574562, pluginId: Device, methodName: getId
+05-20 18:45:49.776 V/Capacitor(30559): callback: 43574562, pluginId: Device, methodName: getId, methodData: {}
+05-20 18:45:49.819 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseAnalytics.logEvent (#43574556) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:49.819 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:49.820 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:49.821 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:49.821 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseCrashlytics.setCustomKey (#43574557) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:49.822 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:49.823 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:49.823 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:49.824 I/ChatrMainActivity(30559): WebView console: %cresult %cDevice.getId (#43574562) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:49.825 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:49.825 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:49.826 I/ChatrMainActivity(30559): WebView console: %cnative %cDevice.getInfo (#43574563) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:49.826 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:49.827 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:49.856 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574563, pluginId: Device, methodName: getInfo
+05-20 18:45:49.856 V/Capacitor(30559): callback: 43574563, pluginId: Device, methodName: getInfo, methodData: {}
+05-20 18:45:50.175 I/ChatrMainActivity(30559): WebView console: %cresult %cDevice.getInfo (#43574563) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:50.175 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:50.176 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:50.331 I/com.chatr.app(30559): NativeAlloc concurrent copying GC freed 74625(3483KB) AllocSpace objects, 13(424KB) LOS objects, 49% free, 5740KB/11MB, paused 157us total 137.365ms
+05-20 18:45:50.831 D/Capacitor(30559): Handling local request: http://localhost/assets/chatr-logo-B0_US-yW.png
+05-20 18:45:50.911 I/ChatrMainActivity(30559): WebView console: %cnative %cFirebaseAnalytics.setEnabled (#43574564) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:50.912 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:50.912 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:50.913 I/ChatrMainActivity(30559): WebView console: %cnative %cNativeBiometric.isAvailable (#43574565) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:50.914 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:50.915 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:50.945 I/AssistStructure(30559): Flattened final assist data: 2024 bytes, containing 1 windows, 5 views
+05-20 18:45:50.952 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574564, pluginId: FirebaseAnalytics, methodName: setEnabled
+05-20 18:45:50.953 V/Capacitor(30559): callback: 43574564, pluginId: FirebaseAnalytics, methodName: setEnabled, methodData: {"enabled":true}
+05-20 18:45:50.955 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574565, pluginId: NativeBiometric, methodName: isAvailable
+05-20 18:45:50.955 V/Capacitor(30559): callback: 43574565, pluginId: NativeBiometric, methodName: isAvailable, methodData: {}
+05-20 18:45:51.279 I/ChatrMainActivity(30559): WebView console: %cresult %cFirebaseAnalytics.setEnabled (#43574564) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:51.279 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:51.280 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:51.281 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:51.281 I/ChatrMainActivity(30559): WebView console: %cresult %cNativeBiometric.isAvailable (#43574565) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:51.282 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:51.282 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): onViewTypeAvailable 
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): java.lang.NullPointerException: Attempt to get length of null array
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at android.os.Parcel.createException(Parcel.java:2078)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at android.os.Parcel.readException(Parcel.java:2040)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at android.os.Parcel.readException(Parcel.java:1988)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at WV.x11.l(chromium-SystemWebViewGoogle6432.aab-stable-777812003:59)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at WV.ke.onTransact(chromium-SystemWebViewGoogle6432.aab-stable-777812003:61)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+05-20 18:45:51.361 E/cr_AutofillHintsService(30559): 	at android.os.Binder.execTransact(Binder.java:994)
+05-20 18:45:52.899 I/OpenGLRenderer(30559): Davey! duration=1355ms; Flags=0, IntendedVsync=30010995519689, Vsync=30011178853026, OldestInputEvent=30010976000000, NewestInputEvent=30011027000000, HandleInputStart=30011183578172, AnimationStart=30011187012403, PerformTraversalsStart=30011190045249, DrawStart=30011190381480, SyncQueued=30011190989864, SyncStart=30011442288249, IssueDrawCommandsStart=30011442545018, SwapBuffers=30012599466018, FrameCompleted=30012602595633, DequeueBufferDuration=304000, QueueBufferDuration=1808000, 
+05-20 18:45:52.913 I/Choreographer(30559): Skipped 69 frames!  The application may be doing too much work on its main thread.
+05-20 18:45:53.339 I/OpenGLRenderer(30559): Davey! duration=1216ms; Flags=0, IntendedVsync=30011464171543, Vsync=30012614171566, OldestInputEvent=30011736000000, NewestInputEvent=30012215000000, HandleInputStart=30012616539787, AnimationStart=30012620940941, PerformTraversalsStart=30012622981018, DrawStart=30012623293633, SyncQueued=30012623843249, SyncStart=30012986044941, IssueDrawCommandsStart=30012986225557, SwapBuffers=30013040956941, FrameCompleted=30013042750634, DequeueBufferDuration=391000, QueueBufferDuration=733000, 
+05-20 18:45:53.375 V/Capacitor/KeyboardPlugin(30559): Notifying listeners for event keyboardWillShow
+05-20 18:45:53.386 I/ChatrMainActivity(30559): WebView console: %cresult %cKeyboard.addListener (#43574537) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:53.386 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:53.387 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:53.388 I/ChatrMainActivity(30559): WebView console: %cnative %cHaptics.impact (#43574566) font-weight: lighter; color: gray font-weight: bold; color: #000 (:348)
+05-20 18:45:53.388 I/ChatrMainActivity(30559): WebView console: [object Object] (:349)
+05-20 18:45:53.389 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:350)
+05-20 18:45:53.409 V/Capacitor/Plugin(30559): To native (Capacitor plugin): callbackId: 43574566, pluginId: Haptics, methodName: impact
+05-20 18:45:53.409 V/Capacitor(30559): callback: 43574566, pluginId: Haptics, methodName: impact, methodData: {"style":"LIGHT"}
+05-20 18:45:53.500 I/ChatrMainActivity(30559): WebView console: %cresult %cHaptics.impact (#43574566) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:53.501 I/ChatrMainActivity(30559): WebView console: undefined (:333)
+05-20 18:45:53.502 I/Capacitor/Console(30559): File:  - Line 333 - Msg: undefined
+05-20 18:45:53.503 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:53.653 V/Capacitor/KeyboardPlugin(30559): Notifying listeners for event keyboardDidShow
+05-20 18:45:53.653 D/Capacitor/KeyboardPlugin(30559): No listeners found for event keyboardDidShow
+05-20 18:45:56.259 V/Capacitor/NetworkPlugin(30559): Notifying listeners for event networkStatusChange
+05-20 18:45:56.262 I/ChatrMainActivity(30559): WebView console: %cresult %cNetwork.addListener (#43574535) font-style: italic; font-weight: lighter; color: gray font-style: italic; font-weight: bold; color: #444 (:328)
+05-20 18:45:56.262 I/ChatrMainActivity(30559): WebView console: [object Object] (:333)
+05-20 18:45:56.263 I/ChatrMainActivity(30559): WebView console: console.groupEnd (:335)
+05-20 18:45:58.541 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : warmUpIntegrityToken(608683999913)
+05-20 18:45:58.545 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : Initiate binding to the service.
+05-20 18:45:58.578 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : ServiceConnectionImpl.onServiceConnected(ComponentInfo{com.android.vending/com.google.android.finsky.expressintegrityservice.ExpressIntegrityService})
+05-20 18:45:58.580 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : linkToDeath
+05-20 18:45:58.904 I/PlayCore(30559): UID: [10267]  PID: [30559] OnWarmUpIntegrityTokenCallback : onWarmUpExpressIntegrityToken
+05-20 18:45:58.905 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : Unbind from service.
+05-20 18:45:59.096 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : requestExpressIntegrityToken(-6537160367609201074)
+05-20 18:45:59.096 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : Initiate binding to the service.
+05-20 18:45:59.837 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : ServiceConnectionImpl.onServiceConnected(ComponentInfo{com.android.vending/com.google.android.finsky.expressintegrityservice.ExpressIntegrityService})
+05-20 18:45:59.838 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : linkToDeath
+05-20 18:45:59.954 I/PlayCore(30559): UID: [10267]  PID: [30559] StandardIntegrity : Unbind from service.
+05-20 18:45:59.954 I/PlayCore(30559): UID: [10267]  PID: [30559] OnRequestIntegrityTokenCallback : onRequestExpressIntegrityToken
+05-20 18:46:02.908 I/ChatrMainActivity(30559): WebView console: The resource http://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/auth:0)
+05-20 18:46:02.908 W/Capacitor/Console(30559): File: http://localhost/#/auth - Line 0 - Msg: The resource http://localhost/icons/icon-192x192.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:46:02.909 I/ChatrMainActivity(30559): WebView console: The resource http://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/auth:0)
+05-20 18:46:02.910 W/Capacitor/Console(30559): File: http://localhost/#/auth - Line 0 - Msg: The resource http://localhost/chatr-logo.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+05-20 18:46:02.910 I/ChatrMainActivity(30559): WebView console: The resource http://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. (http://localhost/#/auth:0)
+05-20 18:46:02.911 W/Capacitor/Console(30559): File: http://localhost/#/auth - Line 0 - Msg: The resource http://localhost/icons/icon-512x512.png was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.

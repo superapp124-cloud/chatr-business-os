@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CHATR Reality Layer — Canonical Ontology",
+  "description": "Layer 1: Concepts that exist independently of any software. Most stable semantic layer.",
+  "version": "15.0",
+  "layer": "Reality",
+  "law": "Reality Layer entities may not be redefined by Industry Packs. They are the root of all semantic inheritance.",
+  "definitions": {
+    "Person": {
+      "description": "A human individual. The root of all human-centric business concepts.",
+      "aggregateRoot": true,
+      "layer": "Reality",
+      "domain": "Identity",
+      "traits": ["Auditable","Versioned","Searchable","VectorSearchable","Observable","AIDiscoverable","Localizable","HistoryEnabled","PolicyAware","Federated"],
+      "lifecycle": "Identity Lifecycle",
+      "relationships": ["works_for", "reports_to", "belongs_to", "member_of", "owns", "manages"],
+      "events": ["PersonCreated", "PersonUpdated"],
+      "inheritedBy": ["Customer","Candidate","Employee","Patient","Student","Merchant"],
+      "attributes": {
+        "id": { "type": "string" },
+        "name": { "$ref": "types.schema.json#/definitions/CompositeTypes/PersonName" },
+        "email": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Email" },
+        "phone": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Phone" },
+        "dateOfBirth": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" },
+        "address": { "$ref": "types.schema.json#/definitions/CompositeTypes/Address" }
+      }
+    },
+    "Organization": {
+      "description": "A legal or formal group of people sharing a purpose.",
+      "aggregateRoot": true,
+      "layer": "Reality",
+      "domain": "Identity",
+      "traits": ["Auditable","Versioned","Searchable","Observable","Federated","PolicyAware"],
+      "lifecycle": "Business Lifecycle",
+      "relationships": ["employs", "owns", "contracts_with", "partners_with", "trusts"],
+      "events": ["OrganizationCreated", "OrganizationUpdated"],
+      "inheritedBy": ["Enterprise","Department","BusinessUnit","Team"],
+      "attributes": {
+        "id": { "type": "string" },
+        "legalName": { "type": "string" },
+        "tradingName": { "type": "string" },
+        "taxId": { "type": "string" },
+        "address": { "$ref": "types.schema.json#/definitions/CompositeTypes/Address" },
+        "industry": { "type": "string" }
+      }
+    },
+    "Place": {
+      "description": "A physical or virtual location.",
+      "layer": "Reality",
+      "domain": "Resource",
+      "traits": ["Searchable","Localizable"],
+      "inheritedBy": ["Facility","Room","Warehouse","Branch"],
+      "attributes": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "address": { "$ref": "types.schema.json#/definitions/CompositeTypes/Address" },
+        "geo": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/GeoPoint" },
+        "virtual": { "type": "boolean" },
+        "url": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/URL" }
+      }
+    },
+    "Asset": {
+      "description": "A valuable thing owned or controlled by an organization.",
+      "layer": "Reality",
+      "domain": "Resource",
+      "traits": ["Auditable","Versioned","HistoryEnabled","LifecycleManaged"],
+      "lifecycle": "Resource Lifecycle",
+      "events": ["AssetAcquired","AssetRetired"],
+      "inheritedBy": ["Equipment","Vehicle","License","Credential","Certificate"],
+      "attributes": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "value": { "$ref": "types.schema.json#/definitions/MoneyTypes/Money" },
+        "acquiredAt": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Timestamp" }
+      }
+    },
+    "Product": {
+      "description": "A tangible or intangible item of economic value that can be bought or sold.",
+      "aggregateRoot": true,
+      "layer": "Reality",
+      "domain": "Product",
+      "traits": ["Auditable","Versioned","Searchable","VectorSearchable","AIDiscoverable"],
+      "lifecycle": "Business Lifecycle",
+      "events": ["ProductCreated","ProductPriceChanged","ProductDiscontinued"],
+      "inheritedBy": ["PhysicalProduct","DigitalProduct","Service","Bundle"],
+      "attributes": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "sku": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "$ref": "types.schema.json#/definitions/CompositeTypes/Price" }
+      }
+    },
+    "Document": {
+      "description": "A structured or unstructured record of information.",
+      "aggregateRoot": true,
+      "layer": "Reality",
+      "domain": "Knowledge",
+      "traits": ["Auditable","Versioned","Searchable","VectorSearchable","Summarizable","Embeddable","HistoryEnabled","PolicyAware","AIDiscoverable"],
+      "lifecycle": "Content Lifecycle",
+      "events": ["DocumentCreated","DocumentPublished","DocumentVersioned"],
+      "inheritedBy": ["Article","Wiki","Contract","Invoice","Resume","Prescription","Playbook","Policy"],
+      "attributes": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "body": { "type": "string" },
+        "mimeType": { "type": "string" },
+        "version": { "type": "number" },
+        "language": { "type": "string", "description": "ISO 639-1 code" }
+      }
+    },
+    "Conversation": {
+      "description": "An exchange of messages between two or more Persons.",
+      "aggregateRoot": true,
+      "layer": "Reality",
+      "domain": "Communication",
+      "traits": ["Auditable","Searchable","VectorSearchable","Summarizable","AIDiscoverable","HistoryEnabled"],
+      "lifecycle": "Business Lifecycle",
+      "events": ["ConversationStarted","ConversationClosed"],
+      "inheritedBy": ["Chat","EmailThread","MeetingTranscript","SupportThread"],
+      "attributes": {
+        "id": { "type": "string" },
+        "participants": { "type": "array", "items": { "type": "string" } },
+        "startedAt": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Timestamp" },
+        "channel": { "type": "string", "enum": ["Email","Chat","Voice","Video","SMS"] }
+      }
+    },
+    "Event": {
+      "description": "Something that happens at a point or range in time.",
+      "layer": "Reality",
+      "domain": "Scheduling",
+      "traits": ["Auditable","Observable","Searchable","TimeAware"],
+      "lifecycle": "Business Lifecycle",
+      "events": ["EventScheduled","EventRescheduled","EventCancelled","EventCompleted"],
+      "inheritedBy": ["Appointment","Meeting","Interview","Webinar","Booking","Shift"],
+      "attributes": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "schedule": { "$ref": "types.schema.json#/definitions/CompositeTypes/Schedule" },
+        "location": { "type": "string" }
+      }
+    },
+    "Agreement": {
+      "description": "A mutual commitment between two or more parties.",
+      "layer": "Reality",
+      "domain": "Commerce",
+      "traits": ["Auditable","Versioned","HistoryEnabled","PolicyAware"],
+      "lifecycle": "Business Lifecycle",
+      "events": ["AgreementSigned","AgreementExpired","AgreementTerminated"],
+      "inheritedBy": ["Contract","SLA","TrustRelationship","PolicyAgreement"],
+      "attributes": {
+        "id": { "type": "string" },
+        "parties": { "type": "array", "items": { "type": "string" } },
+        "effectiveDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" },
+        "expiryDate": { "$ref": "types.schema.json#/definitions/PrimitiveTypes/types/Date" }
+      }
+    }
+  }
+}
